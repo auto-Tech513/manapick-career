@@ -19,7 +19,7 @@ export const metadata: Metadata={
   robots:{index:true,follow:true,googleBot:{index:true,follow:true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1}},
   openGraph:{title:SITE_NAME,description,url:SITE_URL,siteName:SITE_NAME,locale:"ja_JP",type:"website",images:[{url:absoluteUrl("/og.png"),width:1200,height:630,alt:`${SITE_NAME} - ${TAGLINE}`}]},
   twitter:{card:"summary_large_image",title:SITE_NAME,description,images:[absoluteUrl("/og.png")]},
-  icons:{icon:"/favicon.svg"},
+  icons:{icon:{url:"/favicon.png",type:"image/png",sizes:"40x40"}},
   verification:process.env.NEXT_PUBLIC_GSC_VERIFICATION?{google:process.env.NEXT_PUBLIC_GSC_VERIFICATION}:undefined,
 };
 export const viewport:Viewport={themeColor:"#f5a524",width:"device-width",initialScale:1,viewportFit:"cover"};
