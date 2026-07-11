@@ -1,0 +1,3 @@
+import type { Metadata } from "next";import Link from "next/link";import { InfoPage } from "@/components/InfoPage";import { publishedJobs } from "@/content/jobs";
+export const metadata:Metadata={title:"仕事から見るスキル",alternates:{canonical:"/skills/"}};
+export default function Page(){const skills=[...new Set(publishedJobs.flatMap(x=>x.skills))].sort((a,b)=>a.localeCompare(b,"ja"));return <InfoPage eyebrow="Skills" title="仕事から見るスキル" lead="スキルを点数化せず、どの仕事のどの場面で使うかから確認します。"><h2>共通して見つかったスキル</h2><div className="skill-index">{skills.map(skill=><span key={skill}>{skill}</span>)}</div><h2>学び方</h2><p>ツール名だけを覚えるのではなく、仕事の課題を1つ選び、成果物・確認手順・注意点まで一周します。</p><p><Link href="/all/">職業一覧から使う場面を確認する</Link></p></InfoPage>}

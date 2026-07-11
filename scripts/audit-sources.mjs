@@ -1,0 +1,5 @@
+import fs from "node:fs/promises";import {loadJobs} from "./load-jobs.mjs";
+const {jobs}=await loadJobs();const sources=JSON.parse(await fs.readFile(new URL("../content/source-registry.json",import.meta.url),"utf8"));const today=new Date();const errors=[];const warnings=[];
+for(const source of sources){for(const key of ["sourceId","provider","url","isPrimary","claims","checkedAt","updateFrequency","republication","notes"]){if(source[key]===undefined||source[key]===null||source[key]==="")errors.push(`${source.sourceId||"unknown"}: missing ${key}`)}if(!/^https:\/\//.test(source.url))errors.push(`${source.sourceId}: non-HTTPS source`)}
+for(const job of jobs)for(const claim of job.claims){const age=Math.floor((today-new Date(`${claim.lastCheckedAt}T00:00:00+09:00`))/86400000);if(age>claim.freshnessDays){const message=`${job.slug}/${claim.id}: ${age}d old (limit ${claim.freshnessDays}d)`;(claim.critical?errors:warnings).push(message)}}
+warnings.forEach(x=>console.warn(`WARN ${x}`));if(errors.length){errors.forEach(x=>console.error(`ERROR ${x}`));process.exit(1)}console.log(`sources: ${sources.length} registered; freshness within limits`);

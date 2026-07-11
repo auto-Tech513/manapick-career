@@ -1,0 +1,4 @@
+import { publishedJobs } from "@/content/jobs";import { absoluteUrl, SITE_NAME } from "@/lib/site";
+export const dynamic="force-static";
+const esc=(s:string)=>s.replace(/[<>&'"]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;","'":"&apos;",'"':"&quot;"}[c]!));
+export function GET(){const items=publishedJobs.map(job=>`<item><title>${esc(job.name)}</title><link>${absoluteUrl(`/career/${job.slug}/`)}</link><guid>${absoluteUrl(`/career/${job.slug}/`)}</guid><description>${esc(job.conclusion.join(" "))}</description><pubDate>${new Date(`${job.checkedAt}T00:00:00+09:00`).toUTCString()}</pubDate></item>`).join("");const xml=`<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>${SITE_NAME}</title><link>${absoluteUrl("/")}</link><description>公開品質条件を満たした職業情報</description>${items}</channel></rss>`;return new Response(xml,{headers:{"Content-Type":"application/rss+xml; charset=utf-8"}})}

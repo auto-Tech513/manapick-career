@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-07-11T16:04:18.369Z",
+  "report": [
+    {
+      "itemId": "learning:ai",
+      "url": "https://manapick.app/?genre=ai#search",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "learning:prog",
+      "url": "https://manapick.app/guide/python/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "learning:data",
+      "url": "https://manapick.app/guide/excel-data/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "learning:marketing",
+      "url": "https://manapick.app/guide/web-marketing/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "learning:video",
+      "url": "https://manapick.app/guide/video-editing/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "learning:office",
+      "url": "https://manapick.app/guide/office-skills/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "learning:english",
+      "url": "https://manapick.app/guide/english/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "learning:qualification",
+      "url": "https://manapick.app/guide/certification/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "ai:chatgpt",
+      "url": "https://ai.manapick.app/tool/chatgpt/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "ai:copilot",
+      "url": "https://ai.manapick.app/tool/copilot/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "ai:github-copilot",
+      "url": "https://ai.manapick.app/tool/github-copilot/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "ai:notebooklm",
+      "url": "https://ai.manapick.app/tool/notebooklm/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "ai:canva",
+      "url": "https://ai.manapick.app/tool/canva/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "ai:deepl",
+      "url": "https://ai.manapick.app/tool/deepl/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:it-passport",
+      "url": "https://license.manapick.app/license/it-passport/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:fe",
+      "url": "https://license.manapick.app/license/fe/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:g-kentei",
+      "url": "https://license.manapick.app/license/g-kentei/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:boki-3",
+      "url": "https://license.manapick.app/license/boki-3/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:toeic-lr",
+      "url": "https://license.manapick.app/license/toeic-lr/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:mos",
+      "url": "https://license.manapick.app/license/mos/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:webdesign-3",
+      "url": "https://license.manapick.app/license/webdesign-3/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:touroku-hanbai",
+      "url": "https://license.manapick.app/license/touroku-hanbai/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:kaigo-fukushi",
+      "url": "https://license.manapick.app/license/kaigo-fukushi/",
+      "status": 200,
+      "state": "ok"
+    }
+  ]
+}

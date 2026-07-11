@@ -1,0 +1,32 @@
+{
+  "sites": {
+    "learning":{"baseUrl":"https://manapick.app"},
+    "ai":{"baseUrl":"https://ai.manapick.app"},
+    "license":{"baseUrl":"https://license.manapick.app"}
+  },
+  "items": {
+    "learning:ai":{"siteId":"learning","path":"/?genre=ai#search"},
+    "learning:prog":{"siteId":"learning","path":"/guide/python/"},
+    "learning:data":{"siteId":"learning","path":"/guide/excel-data/"},
+    "learning:marketing":{"siteId":"learning","path":"/guide/web-marketing/"},
+    "learning:video":{"siteId":"learning","path":"/guide/video-editing/"},
+    "learning:office":{"siteId":"learning","path":"/guide/office-skills/"},
+    "learning:english":{"siteId":"learning","path":"/guide/english/"},
+    "learning:qualification":{"siteId":"learning","path":"/guide/certification/"},
+    "ai:chatgpt":{"siteId":"ai","path":"/tool/chatgpt/"},
+    "ai:copilot":{"siteId":"ai","path":"/tool/copilot/"},
+    "ai:github-copilot":{"siteId":"ai","path":"/tool/github-copilot/"},
+    "ai:notebooklm":{"siteId":"ai","path":"/tool/notebooklm/"},
+    "ai:canva":{"siteId":"ai","path":"/tool/canva/"},
+    "ai:deepl":{"siteId":"ai","path":"/tool/deepl/"},
+    "license:it-passport":{"siteId":"license","path":"/license/it-passport/"},
+    "license:fe":{"siteId":"license","path":"/license/fe/"},
+    "license:g-kentei":{"siteId":"license","path":"/license/g-kentei/"},
+    "license:boki-3":{"siteId":"license","path":"/license/boki-3/"},
+    "license:toeic-lr":{"siteId":"license","path":"/license/toeic-lr/"},
+    "license:mos":{"siteId":"license","path":"/license/mos/"},
+    "license:webdesign-3":{"siteId":"license","path":"/license/webdesign-3/"},
+    "license:touroku-hanbai":{"siteId":"license","path":"/license/touroku-hanbai/"},
+    "license:kaigo-fukushi":{"siteId":"license","path":"/license/kaigo-fukushi/"}
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "version":"1.0.0",
+  "selectionCriteria":["読者が仕事内容と入口を具体的に比較できる","公式または公的な一次情報が確認できる","独自本文と注意点を用意できる","関連する学習・資格・AIの確認済み導線がある"],
+  "publicationRequirements":["originalBody","officialSources","checkedAt","relatedVideos","relatedQualifications","relatedAi","editorReviewed"],
+  "rankingPolicy":"職業を点数化・順位付けしない。報酬額、承認状況、EPCを掲載順に使わない。",
+  "aiPolicy":"AI補助を利用した場合も、公開前に人が全主張とリンクを確認する。",
+  "correctionPolicy":"訂正依頼の対象ページはreviewedへ戻すか一時非公開にし、確認後に再公開する。"
+}

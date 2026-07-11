@@ -1,0 +1,4 @@
+import {loadJobs} from "./load-jobs.mjs";const {jobs}=await loadJobs();
+const stop=new Set(["仕事","ます","です","こと","ため","確認","作業","学ぶ","入口","必要"]);const tokens=job=>new Set([job.conclusion,...job.work,...job.cautions,...job.learningSteps].flat().join(" ").replace(/[、。・「」]/g," ").split(/\s+/).flatMap(x=>x.match(/.{2,4}/g)||[]).filter(x=>!stop.has(x)));const warnings=[];
+for(let i=0;i<jobs.length;i++)for(let j=i+1;j<jobs.length;j++){const a=tokens(jobs[i]),b=tokens(jobs[j]);const common=[...a].filter(x=>b.has(x)).length;const score=common/(a.size+b.size-common||1);if(score>=0.58)warnings.push(`${jobs[i].slug} <-> ${jobs[j].slug}: ${(score*100).toFixed(1)}%`)}
+warnings.forEach(x=>console.warn(`WARN high similarity ${x}`));console.log(`similarity: checked ${jobs.length} jobs; ${warnings.length} warning(s)`);
