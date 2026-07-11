@@ -24,6 +24,7 @@ export const metadata: Metadata={
       {url:"/brand/career-icon-32.png",type:"image/png",sizes:"32x32"},
       {url:"/brand/career-icon-192.png",type:"image/png",sizes:"192x192"},
     ],
+    shortcut:{url:"/favicon.ico",type:"image/x-icon"},
     apple:{url:"/brand/career-icon-180.png",type:"image/png",sizes:"180x180"},
   },
   verification:process.env.NEXT_PUBLIC_GSC_VERIFICATION?{google:process.env.NEXT_PUBLIC_GSC_VERIFICATION}:undefined,
