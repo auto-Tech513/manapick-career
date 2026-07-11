@@ -37,6 +37,8 @@ npm audit --omit=dev
 
 `published` 以外は職業ページ、sitemap、llms.txt、JSON-LDに出力されません。更新日にはビルド日ではなく、実際に人が確認した日を記録します。
 
-## 公開ゲート
+## デプロイ
 
-GitHub push、Cloudflare Pages、DNS、Search Console、GA4、AdSense、既存3サイトの復路リンク変更は、ユーザーの公開承認後に実施します。詳細は `docs/release-checklist.md` を参照してください。
+Cloudflare Pagesの本番ブランチは `main`、ビルドコマンドは `npm run build`、出力先は `out` です。Node.js 22.13.0以上を使います。GitHub／Cloudflare／DNS／Search Console／GA4／AdSenseの実施状況は `docs/release-checklist.md` と `docs/qa-report.md` に記録します。
+
+既存3サイトからcareerへの復路リンクは、career本番公開とHTTP確認の完了後に、関連ページだけへ文脈リンクとして追加します。一律相互リンクや職業本文の複製は行いません。

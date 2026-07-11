@@ -2,14 +2,15 @@
 
 ## 公開前（必須）
 
-- [ ] ユーザーから「公開承認」を受ける
+- [x] ユーザーからGitHub／Cloudflareへの公開指示を受ける（2026-07-12）
 - [ ] 商標の指定役務・類似称呼を含む追加確認を行う
 - [ ] 問い合わせ先として承認済みGoogleフォームを設定、または非表示を維持する
 - [ ] 全外部リンクのHTTP確認結果を人が確認する
 - [ ] GA4 ID、Search Console、canonical、sitemap、robotsを本番で確認する
 - [ ] AdSenseを使う場合、手動枠だけで表示を確認し、自動広告を無効のままにする
 - [ ] 広告スクリプトなし／ありで375/768/1280pxの横あふれとコンソールを確認する
-- [ ] Cloudflare Pages、DNS、GitHub pushは承認後に実施する
+- [ ] GitHub `auto-Tech513/manapick-career` の `main` へpushする
+- [ ] Cloudflare Pagesへ接続し、`career.manapick.app` のDNS／TLSを確認する
 
 ## 公開後
 

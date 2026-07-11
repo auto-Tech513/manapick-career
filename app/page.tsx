@@ -11,6 +11,6 @@ export default function Home(){return <>
     <a className="step blue" href="https://manapick.app/" target="_blank" rel="noopener noreferrer"><GraduationCap/><span>01</span><strong>学ぶ</strong><p>確認済み動画とロードマップ</p></a>
     <a className="step red" href="https://ai.manapick.app/" target="_blank" rel="noopener noreferrer"><Bot/><span>02</span><strong>AIを選ぶ</strong><p>仕事に使う具体的なAI</p></a>
     <a className="step green" href="https://license.manapick.app/" target="_blank" rel="noopener noreferrer"><BadgeCheck/><span>03</span><strong>資格で証明</strong><p>公式要件を確認して比較</p></a>
-    <div className="step amber current"><ArrowRight/><span>04</span><strong>仕事につなぐ</strong><p>仕事内容と入口を整理</p></div>
+    <div className="step gold current"><ArrowRight/><span>04</span><strong>仕事につなぐ</strong><p>仕事内容と入口を整理</p></div>
   </div></section>
 </>}
