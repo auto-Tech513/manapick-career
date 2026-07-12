@@ -5,7 +5,7 @@ Last checked: 2026-07-12 (JST)
 ## Google Analytics 4
 
 - Account: Manapick (`397005594`)
-- Property: manapick career
+- Property: manapick career (`545251351`)
 - Industry: 仕事、教育
 - Reporting timezone: Japan (GMT+09:00)
 - Currency: JPY
@@ -13,6 +13,7 @@ Last checked: 2026-07-12 (JST)
 - Website: `https://career.manapick.app`
 - Measurement ID: `G-WW5XWW0YFE`
 - Route-guide answers are not included in GA4 events or parameters.
+- The GA4 property is linked to the independent Search Console URL-prefix property below (linked on 2026-07-12).
 
 ## Google Search Console
 
