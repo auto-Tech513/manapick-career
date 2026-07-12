@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, BadgeCheck, Bot, CheckCircle2, GraduationCap, Search } from "lucide-react";
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
+import { EditorialPreview } from "@/components/EditorialPreview";
 import { HeroCareerSlider } from "@/components/HeroCareerSlider";
 
 export default function Home(){return <>
@@ -14,6 +15,7 @@ export default function Home(){return <>
   </div></section>
   <div id="jobs" className="scroll-anchor" />
   <CareerExplorer jobs={publishedJobs} categories={categories.map(x=>({...x}))}/>
+  <EditorialPreview />
   <section className="route-banner"><div><span className="eyebrow">3つの質問だけ</span><h2>キャリア候補の入口案内</h2><p>興味・取り組みたい作業・学習時間から、調べ始める候補を3つ提示します。回答はこの端末だけに保存されます。</p></div><Link className="button primary" href="/route/">入口案内を始める <ArrowRight aria-hidden="true"/></Link></section>
   <section className="network-section"><div className="section-heading"><span className="eyebrow">manapick network</span><h2>知るところから、仕事の入口まで。</h2></div><div className="network-steps">
     <a className="step blue" href="https://manapick.app/" target="_blank" rel="noopener noreferrer"><GraduationCap/><span>01</span><strong>学ぶ</strong><p>確認済み動画とロードマップ</p></a>

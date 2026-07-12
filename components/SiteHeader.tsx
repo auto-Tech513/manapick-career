@@ -7,23 +7,42 @@ import {
   ArrowUpRight,
   BadgeCheck,
   Bot,
+  BookOpenText,
   BriefcaseBusiness,
   Compass,
   FileCheck2,
   GitCompareArrows,
   GraduationCap,
   Home,
+  Info,
   Menu,
+  Newspaper,
+  ScrollText,
   Search,
   X,
 } from "lucide-react";
 import { Brand } from "./Brand";
 
-const primary = [
+type NavItem = { href: string; label: string; description: string; icon: typeof Search };
+
+const primary: NavItem[] = [
   { href: "/all/", label: "職業を探す", description: "公開中の職業を一覧", icon: Search },
   { href: "/route/", label: "入口案内", description: "3つの質問から候補へ", icon: Compass },
   { href: "/compare/", label: "比較", description: "仕事内容と学び方を比較", icon: GitCompareArrows },
+  { href: "/guide/", label: "ガイド", description: "職業情報の読み方", icon: BookOpenText },
+  { href: "/news/", label: "ニュース", description: "掲載内容の更新情報", icon: Newspaper },
+];
+
+const support: NavItem[] = [
+  { href: "/skills/", label: "スキル", description: "入口スキルから探す", icon: ScrollText },
+  { href: "/glossary/", label: "用語集", description: "職業用語を確認", icon: BookOpenText },
   { href: "/about-method/", label: "編集方針", description: "出典と公開基準", icon: FileCheck2 },
+  { href: "/faq/", label: "FAQ", description: "できることを確認", icon: Info },
+];
+
+const drawerGroups: Array<{ label: string; items: NavItem[] }> = [
+  { label: "仕事を調べる", items: primary.slice(0, 3).concat(support[0]) },
+  { label: "読む・確認する", items: primary.slice(3).concat(support.slice(1)) },
 ];
 
 const network = [
@@ -91,10 +110,12 @@ export function SiteHeader() {
         <button ref={closeRef} type="button" className="menu-close" aria-label="メニューを閉じる" onClick={close}><X aria-hidden="true" /></button>
       </div>
       <Link className="menu-home" href="/" onClick={close}><Home aria-hidden="true" />トップへ戻る</Link>
-      <p className="menu-heading">仕事を調べる</p>
-      <div className="menu-link-grid">
-        {primary.map((item) => { const Icon = item.icon; return <Link key={item.href} href={item.href} onClick={close}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.description}</small></span></Link>; })}
-      </div>
+      {drawerGroups.map((group) => <div className="menu-group" key={group.label}>
+        <p className="menu-heading">{group.label}</p>
+        <div className="menu-link-grid">
+          {group.items.map((item) => { const Icon = item.icon; return <Link key={item.href} href={item.href} onClick={close}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.description}</small></span></Link>; })}
+        </div>
+      </div>)}
       <p className="menu-heading">学びにつなぐ</p>
       <div className="menu-network-grid">
         {network.map((item) => { const Icon = item.icon; return <a key={item.href} className={item.tone} href={item.href} target="_blank" rel="noopener noreferrer" onClick={close}><Icon aria-hidden="true" /><span><strong>{item.label}</strong><small>{item.description}</small></span><ArrowUpRight aria-hidden="true" /></a>; })}

@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Noto_Sans_JP } from "next/font/google";
 import { Analytics } from "@/components/Analytics";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import { BottomNav } from "@/components/BottomNav";
@@ -9,8 +8,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { absoluteUrl, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
 import "./globals.css";
 
-const noto = Noto_Sans_JP({subsets:["latin"],variable:"--font-ja",display:"swap"});
-const inter = Inter({subsets:["latin"],variable:"--font-en",display:"swap"});
 const description="仕事内容、必要スキル、学ぶ順番、資格、AI活用を公式情報から整理。職業を順位付けせず、次に調べる入口を見つけるサイトです。";
 
 export const metadata: Metadata={
@@ -43,6 +40,6 @@ const graph={"@context":"https://schema.org","@graph":[
   ]}
 ]};
 
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja" className={`${noto.variable} ${inter.variable}`}><body>
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><body>
   <JsonLd data={graph}/><Analytics/><AdSenseScript/><a className="skip-link" href="#main">本文へ移動</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/>
 </body></html>}

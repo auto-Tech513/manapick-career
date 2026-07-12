@@ -38,7 +38,7 @@ export function HeroCareerSlider({ jobs }: { jobs: CareerJob[] }) {
 
   return <div className="hero-visual" aria-label="職業の入口ピックアップ" aria-roledescription="carousel" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)} onFocusCapture={() => setPaused(true)} onBlurCapture={() => setPaused(false)}>
     <div className="hero-visual-head">
-      <div className="hero-brand-image"><Image src="/brand/career-icon.png" width={1254} height={1254} priority sizes="64px" alt="manapick career アイコン" /></div>
+      <div className="hero-brand-image"><Image src="/brand/career-icon-192.png" width={192} height={192} priority sizes="64px" alt="manapick career アイコン" /></div>
       <div><span>CAREER STARTER</span><strong>仕事から学びを選ぶ</strong></div>
       <span className="hero-visual-count">{String(index + 1).padStart(2, "0")} / {String(jobs.length).padStart(2, "0")}</span>
     </div>

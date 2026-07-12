@@ -4,15 +4,17 @@
 
 ## 静的生成・コンテンツ
 
-- Next.js 16.2.10 `output: "export"`: 成功（38 routes、manifestを含む）
+- Next.js 16.2.10 `output: "export"`: 成功（46静的ページ、manifestを含む）
 - 職業: 12件 published / 0件 draft・reviewed
 - カテゴリ: 6件
 - 出典レジストリ: 15件
 - 職業詳細SSG: 12件
+- ガイド: 一覧1件 / 詳細3件
+- 更新情報: 一覧1件 / 詳細3件
 - sitemap / llms.txt / JSON-LDのdraft混入: 0件
 - JobPosting、架空rating、reviewCount、salary、employmentType: 0件
 - 本文類似度警告: 0件
-- 内部リンク404: 0件（34 HTML）
+- 内部リンク404: 0件（42 HTML）
 - 姉妹サイト個別リンク: 23件 ok / 0件 404 / 0件 bot制限 / 0件未確認
 
 ## コマンド
@@ -48,7 +50,11 @@
 - JobPosting: なし
 - 外部リンク: `target="_blank" rel="noopener noreferrer"`
 - ホーム、入口案内、比較、職業詳細のconsole warn/error: 0件
-- GA4・AdSense環境変数なし: 外部スクリプト0件
+- ホームの見出し: 導入行weight 550 / 強調行weight 900。1440pxで45.36px
+- ヒーロー後の一覧上余白: 375pxで36px / 1440pxで43.2px
+- ハンバーガーメニュー: 2列タイル、375pxで横あふれ0、縦スクロール可能
+- ガイド詳細: 執筆者、編集者、確認方法、最終確認日、公式出典2件を表示
+- 既定ビルド: AdSenseスクリプトなし、全指定幅で横あふれ・hydration errorなし
 
 ## 本番配信
 
@@ -61,11 +67,11 @@
 - DNS: `career.manapick.app` → `manapick-career.pages.dev`、Cloudflare proxy有効
 - TLS: HTTP/2 200、HSTS / CSP / nosniff / Referrer-Policy / frame制限を応答ヘッダーで確認
 - robots / sitemap / llms.txt / manifest / 職業詳細 / カテゴリ: すべてHTTP 200
-- sitemap: 31 URL、llms.txtの職業URL: 12件
+- sitemap: 39 URL、llms.txtの職業URL: 12件（ガイド・更新情報も追加）
 - 本番HTML・sitemap・llms.txt: draft / reviewed / JobPosting / rating / reviewCountの混入0件
 - 本番375 / 390 / 768 / 1024 / 1280 / 1440 / 1920px: 横あふれ0件、console warn/error 0件
 - 本番入口案内: 3問完了、理由付き候補3件、順位・適性判定ではない旨を表示
-- GA4・AdSense環境変数なし: 本番の該当外部スクリプト0件
+- GA4: career専用 `G-WW5XWW0YFE` を設定済み
 - 親ゾーンのCloudflare RUM自動挿入は、Configuration Rule `(http.host eq "career.manapick.app")` でcareerだけ無効化。姉妹サイト設定は変更なし
 - 上記ルール反映後の新規ブラウザ: 外部RUMビーコン0件、console warn/error 0件
 - 公開方式: Cloudflare Pages Git integration。`main` へのpushが本番デプロイを起動
@@ -74,27 +80,27 @@
 
 | Category | Score |
 | --- | ---: |
-| Performance | 61 |
+| Performance | 91 |
 | Accessibility | 100 |
 | Best Practices | 100 |
 | SEO | 100 |
 
-Performanceは95目安に未達。LCP 8.0秒、FCP 5.6秒で、Next.jsが出力する初期CSSとnext/fontの日本語フォントが主なレンダリング待ち。TBT 0ms、CLS 0。Cloudflare本番のキャッシュ・HTTP/2/3条件では再測定が必要だが、改善を保証しない。詳細は `docs/lighthouse.json`。
+今回のUI変更後に再計測。FCP 0.9秒、LCP 3.5秒、TBT 10ms、CLS 0。日本語Webフォントの配信をやめて端末標準フォントへ切り替え、表示64px以下のアイコンを907KB版から31KB版へ変更した。Cloudflare本番のキャッシュ・HTTP/2/3条件とは異なるため、本番値を保証しない。詳細は `docs/lighthouse.json`。
 
 ## 広告
 
 - 手動広告feature flag: 既定OFF
 - AdSense自動広告: 実装・有効化していない
 - 広告スクリプトなし: 全指定幅で横あふれなし、hydration/console errorなし
-- 広告スクリプトあり: **未確認**。承認済みクライアントIDがなく、公開前に有効化しない要件を優先した
+- 広告スクリプトあり: 承認済みクライアントIDで375 / 768 / 1280pxを確認。横あふれ0、hydration error 0
+- localhostではGoogle広告リクエストが403となるため、広告クリエイティブの充填表示は**未確認**。403とアプリの404・レイアウト不良を区別して記録
 - 管理画面での自動広告OFF確認: **未確認**
 
 ## 公開前に残る未確認
 
 - 指定役務・類似称呼を含む専門的な商標確認
-- Search Console、GA4、AdSenseの本番設定
+- AdSense管理画面でのcareer向け手動枠の実広告充填表示
 - 承認済み問い合わせフォーム
 - 本番配信でのLighthouse再測定
-- 広告スクリプトありの375/768/1280px確認
 
 GitHub push、Cloudflare Pages、DNSは2026-07-12に実施した。career公開前の導線を維持する要件に従い、既存3サイトの復路リンク変更はまだ実施していない。
