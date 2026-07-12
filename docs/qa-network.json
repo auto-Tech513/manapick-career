@@ -1,6 +1,24 @@
 {
-  "checkedAt": "2026-07-12T15:21:32.779Z",
+  "checkedAt": "2026-07-12T17:25:44.097Z",
   "report": [
+    {
+      "itemId": "learning:home",
+      "url": "https://manapick.app/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "ai:home",
+      "url": "https://ai.manapick.app/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:home",
+      "url": "https://license.manapick.app/",
+      "status": 200,
+      "state": "ok"
+    },
     {
       "itemId": "learning:ai",
       "url": "https://manapick.app/?genre=ai#search",
