@@ -1,0 +1,6414 @@
+{
+  "source": {
+    "sourceId": "jilpt-jobtag-description-7-01",
+    "title": "職業情報データベース 解説系ダウンロードデータ ver.7.01",
+    "provider": "独立行政法人労働政策研究・研修機構（JILPT）",
+    "downloadPage": "https://shigoto.mhlw.go.jp/User/download",
+    "importedAt": "2026-07-13",
+    "usage": "職業名・別名・職業分類・公式詳細IDだけを抽出し、本文は転載していません。"
+  },
+  "categories": [
+    {
+      "code": "10",
+      "key": "security",
+      "label": "警備・保安",
+      "description": "人、施設、地域の安全を守る仕事"
+    },
+    {
+      "code": "11",
+      "key": "agriculture",
+      "label": "農林漁業",
+      "description": "農作物、森林、水産資源の生産と管理を担う仕事"
+    },
+    {
+      "code": "12",
+      "key": "manufacturing",
+      "label": "製造・修理・製図",
+      "description": "製品を作り、加工し、修理・検査する仕事"
+    },
+    {
+      "code": "13",
+      "key": "transport",
+      "label": "配送・輸送・機械運転",
+      "description": "人や物を運び、設備や機械を運転する仕事"
+    },
+    {
+      "code": "14",
+      "key": "construction",
+      "label": "建設・土木・電気工事",
+      "description": "建物、道路、設備を施工・維持する仕事"
+    },
+    {
+      "code": "15",
+      "key": "logistics-cleaning",
+      "label": "運搬・清掃・包装・選別",
+      "description": "物流、清掃、包装、選別など現場を支える仕事"
+    },
+    {
+      "code": "01",
+      "key": "management",
+      "label": "管理",
+      "description": "組織・事業・施設の方針と運営を担う仕事"
+    },
+    {
+      "code": "02",
+      "key": "research-engineering",
+      "label": "研究・技術",
+      "description": "科学・工学・情報技術を調べ、設計し、実装する仕事"
+    },
+    {
+      "code": "03",
+      "key": "professional-creative",
+      "label": "法務・経営・文化芸術",
+      "description": "専門知識、相談、表現、報道などを担う仕事"
+    },
+    {
+      "code": "04",
+      "key": "medical-health",
+      "label": "医療・看護・保健",
+      "description": "診療、看護、検査、健康支援を担う仕事"
+    },
+    {
+      "code": "05",
+      "key": "education-childcare",
+      "label": "保育・教育",
+      "description": "子どもの生活と学び、学校・社会教育を支える仕事"
+    },
+    {
+      "code": "06",
+      "key": "office",
+      "label": "事務",
+      "description": "文書、会計、調査、連絡、業務運営を支える仕事"
+    },
+    {
+      "code": "07",
+      "key": "sales",
+      "label": "販売・営業",
+      "description": "商品・サービスを説明し、販売や取引を担う仕事"
+    },
+    {
+      "code": "08",
+      "key": "welfare-care",
+      "label": "福祉・介護",
+      "description": "生活上の相談、支援、介護を担う仕事"
+    },
+    {
+      "code": "09",
+      "key": "service",
+      "label": "サービス",
+      "description": "生活、飲食、接客、施設利用を支える仕事"
+    }
+  ],
+  "occupations": [
+    {
+      "catalogId": "1",
+      "recordNumber": "1",
+      "name": "豆腐製造、豆腐職人",
+      "aliases": [
+        "油揚製造工",
+        "がんもどき製造工",
+        "豆腐製造工",
+        "生揚製造工",
+        "焼豆腐製造工"
+      ],
+      "classificationCode": "12_072-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "2",
+      "recordNumber": "2",
+      "name": "パン製造、パン職人",
+      "aliases": [
+        "パン製造設備オペレーター",
+        "食パン製造工",
+        "パン生地仕込工",
+        "パン製造工",
+        "パン焼成工"
+      ],
+      "classificationCode": "12_072-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "3",
+      "recordNumber": "3",
+      "name": "洋菓子製造、パティシエ",
+      "aliases": [
+        "ケーキ製造工",
+        "洋菓子製造工",
+        "洋菓子製造設備オペレーター"
+      ],
+      "classificationCode": "12_072-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "4",
+      "recordNumber": "4",
+      "name": "和菓子製造、和菓子職人",
+      "aliases": [
+        "せんべい製造工",
+        "大福製造工",
+        "どらやき製造工",
+        "もなか製造工",
+        "ようかん製造工",
+        "和菓子製造工"
+      ],
+      "classificationCode": "12_072-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "5",
+      "recordNumber": "5",
+      "name": "乳製品製造",
+      "aliases": [
+        "牛乳製造工",
+        "チーズ製造工",
+        "バター製造工",
+        "ヨーグルト製造工",
+        "チーズ製造設備オペレーター",
+        "乳製品製造設備オペレーター"
+      ],
+      "classificationCode": "12_072-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "6",
+      "recordNumber": "6",
+      "name": "水産ねり製品製造",
+      "aliases": [
+        "蒲鉾製造工",
+        "魚肉ソーセージ製造工",
+        "さつま揚製造工",
+        "水産ねり製品製造工",
+        "水産ねり物製造工",
+        "ちくわ製造工",
+        "はんぺん製造工"
+      ],
+      "classificationCode": "12_072-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "7",
+      "recordNumber": "7",
+      "name": "冷凍加工食品製造",
+      "aliases": [
+        "冷凍うどん製造工",
+        "冷凍えびフライ製造工",
+        "冷凍コロッケ製造工",
+        "冷凍ピラフ製造工",
+        "保存食品製造設備オペレーター",
+        "冷凍加工食品製造設備オペレーター"
+      ],
+      "classificationCode": "12_072-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "8",
+      "recordNumber": "8",
+      "name": "惣菜製造",
+      "aliases": [
+        "揚物製造工",
+        "惣菜製造工",
+        "洋風惣菜製造工（デリカテッセン店）"
+      ],
+      "classificationCode": "12_072-05",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "9",
+      "recordNumber": "9",
+      "name": "清酒製造",
+      "aliases": [
+        "清酒製造工",
+        "杜氏"
+      ],
+      "classificationCode": "12_072-07",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "10",
+      "recordNumber": "10",
+      "name": "みそ製造",
+      "aliases": [
+        "味そ製造工"
+      ],
+      "classificationCode": "12_072-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "11",
+      "recordNumber": "11",
+      "name": "しょうゆ製造",
+      "aliases": [
+        "しょう油製造工"
+      ],
+      "classificationCode": "12_072-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "12",
+      "recordNumber": "12",
+      "name": "ハム・ソーセージ・ベーコン製造",
+      "aliases": [
+        "ウインナー製造工",
+        "カッター工（肉製品）",
+        "くん煙工（肉製品）",
+        "仕込工（鳥獣肉製品）",
+        "肉詰工（ハム・ソーセージ製造）",
+        "ハム・ベーコン・ソーセージ製造工",
+        "ボイル工（ハム・ソーセージ製造）"
+      ],
+      "classificationCode": "12_072-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "13",
+      "recordNumber": "13",
+      "name": "ワイン製造",
+      "aliases": [
+        "果実酒製造工",
+        "酒類製造工（清酒を除く）",
+        "ワイン製造工"
+      ],
+      "classificationCode": "12_072-07",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "14",
+      "recordNumber": "14",
+      "name": "ビール製造",
+      "aliases": [
+        "酒類製造工（清酒を除く）",
+        "ビール製造工"
+      ],
+      "classificationCode": "12_072-07",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "15",
+      "recordNumber": "15",
+      "name": "かん詰・びん詰・レトルト食品製造",
+      "aliases": [
+        "缶詰食品原料調理工",
+        "缶詰食品殺菌加熱工",
+        "缶詰食品充填工",
+        "缶詰食品密封工",
+        "びん詰食品原料調理工",
+        "びん詰食品殺菌加熱工",
+        "びん詰食品充填工",
+        "びん詰食品密封工",
+        "レトルト食品原料調理工",
+        "レトルト食品殺菌加熱工",
+        "レトルト食品充填工",
+        "レトルト食品製造工",
+        "缶詰食品製造設備オペレーター",
+        "びん詰食品製造設備オペレーター",
+        "保存食品製造設備オペレーター",
+        "レトルト食品製造設備オペレーター"
+      ],
+      "classificationCode": "12_072-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "16",
+      "recordNumber": "16",
+      "name": "野菜つけ物製造",
+      "aliases": [
+        "梅干漬工",
+        "千枚漬工",
+        "沢庵漬工",
+        "漬物職人（野菜）",
+        "福神漬製造工",
+        "野菜塩漬工",
+        "らっきょう漬工"
+      ],
+      "classificationCode": "12_072-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "17",
+      "recordNumber": "17",
+      "name": "陶磁器製造",
+      "aliases": [
+        "タイル製造工（陶磁器製品製造）",
+        "陶磁器研磨工",
+        "陶磁器焼成工",
+        "陶磁器成形工",
+        "かわら製造設備オペレーター",
+        "陶磁器製造設備オペレーター",
+        "窯業原料加工設備オペレーター",
+        "るつぼ製造設備オペレーター"
+      ],
+      "classificationCode": "12_073-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "18",
+      "recordNumber": "18",
+      "name": "ガラス食器製造",
+      "aliases": [
+        "鏡銀引き工",
+        "ガラスカッティング工",
+        "ガラス彫刻工",
+        "ガラス熱加工工",
+        "ガラス熱処理工",
+        "ガラス研磨設備オペレーター",
+        "ガラス成形設備オペレーター",
+        "ガラス繊維製造設備オペレーター",
+        "ガラス熱加工設備オペレーター",
+        "ガラス熱処理設備オペレーター"
+      ],
+      "classificationCode": "12_073-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "19",
+      "recordNumber": "19",
+      "name": "プラスチック成形",
+      "aliases": [
+        "プラスチック圧縮成形工",
+        "プラスチック射出成形工",
+        "プラスチック押出成形工",
+        "プラスチック積層成形工",
+        "プラスチック手造り成形工",
+        "プラスチック熱成形工",
+        "プラスチック発泡成形工",
+        "プラスチックブロー成形工",
+        "プラスチックロール圧延工",
+        "原料プラスチック加工設備オペレーター",
+        "プラスチック研磨設備オペレーター",
+        "プラスチック裁断設備オペレーター",
+        "プラスチック成形設備オペレーター",
+        "プラスチック製品製造設備オペレーター",
+        "プラスチック接合設備オペレーター",
+        "プラスチック切削設備オペレーター"
+      ],
+      "classificationCode": "12_073-08",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "20",
+      "recordNumber": "20",
+      "name": "建築設計技術者",
+      "aliases": [
+        "管工事設計技術者",
+        "給排水衛生工事設計技術者",
+        "建築構造設計技術者",
+        "建築設計士",
+        "建築設備設計技術者"
+      ],
+      "classificationCode": "02_008-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "21",
+      "recordNumber": "21",
+      "name": "建築施工管理技術者",
+      "aliases": [
+        "管工事施工管理技士",
+        "給排水設備工事施工管理者",
+        "空調衛生設備施工管理技術者",
+        "建築工事現場監督",
+        "プラント建設工事施工管理技術者",
+        "内装工事施工管理技術者"
+      ],
+      "classificationCode": "02_008-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "22",
+      "recordNumber": "22",
+      "name": "土木設計技術者",
+      "aliases": [
+        "河川改修設計技術者",
+        "橋梁設計技術者",
+        "港湾設計技術者",
+        "水道工事設計技術者",
+        "造園設計技術者",
+        "鉄道線路設計技術者",
+        "道路建設設計技術者",
+        "土木施設設計技術者"
+      ],
+      "classificationCode": "02_008-04",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "23",
+      "recordNumber": "23",
+      "name": "土木施工管理技術者",
+      "aliases": [
+        "浄化槽設備士",
+        "造園施工管理技術者",
+        "土木工事現場監督"
+      ],
+      "classificationCode": "02_008-05",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "24",
+      "recordNumber": "24",
+      "name": "測量士",
+      "aliases": [],
+      "classificationCode": "02_008-07",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "25",
+      "recordNumber": "25",
+      "name": "CADオペレーター",
+      "aliases": [
+        "CADオペレーター（建築製図）",
+        "CADオペレーター（機械製図）",
+        "CADオペレーター（電気・電子製図）",
+        "機械部品製図工",
+        "造船製図工"
+      ],
+      "classificationCode": "12_080-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "26",
+      "recordNumber": "26",
+      "name": "大工",
+      "aliases": [
+        "大道具係",
+        "建築大工",
+        "墨出し工（大工）",
+        "造作大工",
+        "舞台製作大工",
+        "プレハブ住宅組立工（大工）",
+        "町大工",
+        "宮大工"
+      ],
+      "classificationCode": "14_091-01",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "27",
+      "recordNumber": "27",
+      "name": "型枠大工",
+      "aliases": [
+        "型枠解体工",
+        "型枠工",
+        "コンクリート型枠組工"
+      ],
+      "classificationCode": "14_090-01",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "28",
+      "recordNumber": "28",
+      "name": "鉄筋工",
+      "aliases": [
+        "建築鉄筋工",
+        "土木鉄筋工"
+      ],
+      "classificationCode": "14_090-04",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "29",
+      "recordNumber": "29",
+      "name": "鉄骨工",
+      "aliases": [
+        "鉄骨製造設備オペレーター",
+        "機械鉄工",
+        "橋りょう鉄工",
+        "建築鉄工",
+        "造船鉄工"
+      ],
+      "classificationCode": "12_071-08",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "30",
+      "recordNumber": "30",
+      "name": "とび",
+      "aliases": [
+        "足場組立工",
+        "橋梁とび工",
+        "建築とび工",
+        "重量物とび職",
+        "鉄骨とび工",
+        "とび職"
+      ],
+      "classificationCode": "14_090-02",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "31",
+      "recordNumber": "31",
+      "name": "建設機械オペレーター",
+      "aliases": [
+        "くい打機（杭打機）運転工",
+        "掘削機械運転工",
+        "建設用機械車両運転工",
+        "ショベルカー運転工",
+        "重機オペレーター（建設機械）",
+        "整地機械運転工",
+        "トラッククレーン運転工",
+        "ブルドーザ運転工",
+        "ブレーカ運転工",
+        "ホイルローダー運転工",
+        "ロードローラ運転工",
+        "ダンプ運転手",
+        "ダンプトラック運転手",
+        "ガントリークレーンオペレーター",
+        "デリック運転工",
+        "揚貨装置運転工"
+      ],
+      "classificationCode": "13_089-05",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "32",
+      "recordNumber": "32",
+      "name": "建設・土木作業員",
+      "aliases": [
+        "建設作業員",
+        "コンクリート作業員",
+        "護岸工事作業員",
+        "造園土木作業員",
+        "土木作業員"
+      ],
+      "classificationCode": "14_092-01",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "33",
+      "recordNumber": "33",
+      "name": "潜水士",
+      "aliases": [
+        "サルベージ作業員",
+        "水中調査・潜水士（建設工事）",
+        "潜水作業員",
+        "潜水漁師",
+        "潜水士（海難救助）"
+      ],
+      "classificationCode": "14_091-99",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "34",
+      "recordNumber": "35",
+      "name": "さく井工/ボーリング工",
+      "aliases": [
+        "さく井機械運転工",
+        "試すい工",
+        "ボーリング機械運転工"
+      ],
+      "classificationCode": "13_089-05",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "35",
+      "recordNumber": "36",
+      "name": "舗装工",
+      "aliases": [
+        "アスファルト舗装作業員",
+        "インターロッキング舗装工",
+        "コンクリートブロック舗装工",
+        "コンクリート舗装作業員",
+        "道路補修作業員",
+        "道路舗装作業員",
+        "舗装切断工"
+      ],
+      "classificationCode": "14_092-02",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "36",
+      "recordNumber": "37",
+      "name": "ブロック積み",
+      "aliases": [
+        "建築ブロック工",
+        "ブロック積工"
+      ],
+      "classificationCode": "14_091-02",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "37",
+      "recordNumber": "38",
+      "name": "タイル工",
+      "aliases": [
+        "タイル壁張工",
+        "タイル張工（見習）",
+        "タイル床張工"
+      ],
+      "classificationCode": "14_091-02",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "38",
+      "recordNumber": "39",
+      "name": "左官",
+      "aliases": [
+        "左官職",
+        "左官手元",
+        "左官吹付工",
+        "モルタル塗工",
+        "ラス張工"
+      ],
+      "classificationCode": "14_091-04",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "39",
+      "recordNumber": "40",
+      "name": "建築板金",
+      "aliases": [
+        "金属サイディング工",
+        "金属屋根ふき工",
+        "建築板金工",
+        "ダクト工"
+      ],
+      "classificationCode": "12_071-10",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "40",
+      "recordNumber": "41",
+      "name": "サッシ取付",
+      "aliases": [
+        "金属サッシ取付工",
+        "金属製ドア取付工",
+        "シャッター取付工"
+      ],
+      "classificationCode": "14_091-07",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "41",
+      "recordNumber": "42",
+      "name": "内装工",
+      "aliases": [
+        "クロス張り職",
+        "ゴム床張工",
+        "室内装飾工",
+        "じゅうたん張工",
+        "プラスチック床張工",
+        "壁装工",
+        "リノリウム床張工"
+      ],
+      "classificationCode": "14_091-07",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "42",
+      "recordNumber": "43",
+      "name": "建築塗装工",
+      "aliases": [
+        "家屋塗装工",
+        "住宅塗装工",
+        "建物塗装工"
+      ],
+      "classificationCode": "12_080-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "43",
+      "recordNumber": "44",
+      "name": "防水工",
+      "aliases": [
+        "建築工事防水工",
+        "シーリング工（防水工事）",
+        "土木工事防水工"
+      ],
+      "classificationCode": "14_091-08",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "44",
+      "recordNumber": "45",
+      "name": "保温工事",
+      "aliases": [
+        "建物断熱工",
+        "ダクト断熱工",
+        "熱絶縁工",
+        "保温工（熱絶縁工事）"
+      ],
+      "classificationCode": "14_091-99",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "45",
+      "recordNumber": "46",
+      "name": "電気工事士",
+      "aliases": [
+        "エアコン取付作業員（家庭用）",
+        "屋内電気配線工事作業員",
+        "オール電化工事作業員",
+        "航空機配線作業員",
+        "産業用電気装置据付作業員",
+        "照明器取付作業員",
+        "船舶配線作業員",
+        "太陽光発電装置据付作業員（電気工事）",
+        "鉄道車両配線作業員",
+        "電気工事検査員",
+        "電気配線作業員",
+        "電工（電気配線工事）"
+      ],
+      "classificationCode": "14_094-05",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "46",
+      "recordNumber": "47",
+      "name": "配管工",
+      "aliases": [
+        "ガス配管工",
+        "空調配管工",
+        "航空機配管工",
+        "水道配管工",
+        "スチーム配管工",
+        "船舶配管工",
+        "鉄道車両配管工",
+        "配管修理工"
+      ],
+      "classificationCode": "14_091-06",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "47",
+      "recordNumber": "48",
+      "name": "エレベーター据付",
+      "aliases": [
+        "エレベーター据付工"
+      ],
+      "classificationCode": "12_074-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "48",
+      "recordNumber": "49",
+      "name": "鉄道線路管理",
+      "aliases": [
+        "軌条作業員",
+        "軌道作業員",
+        "軌道舗石作業員",
+        "鉄道保線員",
+        "保線作業員"
+      ],
+      "classificationCode": "14_092-03",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "49",
+      "recordNumber": "50",
+      "name": "送電線工事",
+      "aliases": [
+        "送電線架線作業員",
+        "送電線工事作業員",
+        "送電線保守作業員",
+        "地中送電線敷設作業員"
+      ],
+      "classificationCode": "14_094-01",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "50",
+      "recordNumber": "51",
+      "name": "解体工",
+      "aliases": [
+        "解体工（建造物）",
+        "家屋解体工",
+        "建築解体工",
+        "コンクリートはつり工（解体工事）",
+        "取りこわし作業員"
+      ],
+      "classificationCode": "14_090-03",
+      "categoryKey": "construction"
+    },
+    {
+      "catalogId": "51",
+      "recordNumber": "52",
+      "name": "ホテル・旅館支配人",
+      "aliases": [
+        "番頭（旅館）",
+        "ホテルマネージャー"
+      ],
+      "classificationCode": "09_056-02",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "52",
+      "recordNumber": "53",
+      "name": "銀行支店長",
+      "aliases": [
+        "工場・支店・営業所等の長"
+      ],
+      "classificationCode": "01_002-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "53",
+      "recordNumber": "54",
+      "name": "デパート店員",
+      "aliases": [
+        "百貨店販売員",
+        "百貨店店員（販売員）"
+      ],
+      "classificationCode": "07_045-02",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "54",
+      "recordNumber": "55",
+      "name": "スーパー店長",
+      "aliases": [
+        "小売店長（主に販売の仕事に従事するもの）",
+        "スーパーマーケット店長（主に販売の仕事に従事するもの）"
+      ],
+      "classificationCode": "07_044-01",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "55",
+      "recordNumber": "56",
+      "name": "スーパーレジ係",
+      "aliases": [
+        "キャッシャー（小売店）",
+        "レジスター係",
+        "レジチェッカー"
+      ],
+      "classificationCode": "07_045-01",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "56",
+      "recordNumber": "57",
+      "name": "スーパー店員",
+      "aliases": [
+        "食品スーパーマーケット店員",
+        "食品スーパーマーケット販売員"
+      ],
+      "classificationCode": "07_045-05",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "57",
+      "recordNumber": "58",
+      "name": "商社営業",
+      "aliases": [],
+      "classificationCode": "07_048-99",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "58",
+      "recordNumber": "59",
+      "name": "住宅・不動産営業",
+      "aliases": [
+        "住宅・不動産会社営業部員",
+        "宅地建物営業員",
+        "建売住宅営業員",
+        "マンション販売営業員",
+        "用地仕入営業員"
+      ],
+      "classificationCode": "07_048-08",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "59",
+      "recordNumber": "60",
+      "name": "自動車営業",
+      "aliases": [
+        "自動車販売営業員",
+        "中古自動車販売員"
+      ],
+      "classificationCode": "07_048-05",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "60",
+      "recordNumber": "61",
+      "name": "広告営業",
+      "aliases": [
+        "看板広告営業員",
+        "広告会社営業部員",
+        "広告代理店営業員",
+        "広告枠仕入営業員",
+        "放送局広告営業部員"
+      ],
+      "classificationCode": "07_048-09",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "61",
+      "recordNumber": "62",
+      "name": "印刷営業",
+      "aliases": [
+        "印刷営業員"
+      ],
+      "classificationCode": "07_048-11",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "62",
+      "recordNumber": "63",
+      "name": "医薬情報担当者（MR）",
+      "aliases": [],
+      "classificationCode": "07_048-03",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "63",
+      "recordNumber": "64",
+      "name": "コールセンターオペレーター",
+      "aliases": [
+        "通信販売受付事務員（電話によるもの）",
+        "テレコミュニケーター（受信業務）",
+        "電話オペレーター（お客様相談室）",
+        "電話調査オペレーター",
+        "ユーザーサポート受付係（電話によるもの）",
+        "電話営業スタッフ",
+        "電話オペレーター（勧誘に従事するもの）"
+      ],
+      "classificationCode": "06_036-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "64",
+      "recordNumber": "65",
+      "name": "せり人",
+      "aliases": [
+        "卸売市場せり人"
+      ],
+      "classificationCode": "07_047-99",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "65",
+      "recordNumber": "66",
+      "name": "フラワーショップ店員",
+      "aliases": [],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "66",
+      "recordNumber": "67",
+      "name": "電器店店員",
+      "aliases": [
+        "家電量販店販売員",
+        "中古電気製品販売店員"
+      ],
+      "classificationCode": "07_045-10",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "67",
+      "recordNumber": "68",
+      "name": "書店員",
+      "aliases": [
+        "古書店員",
+        "書店店員"
+      ],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "68",
+      "recordNumber": "69",
+      "name": "メガネ販売",
+      "aliases": [
+        "眼鏡販売店員"
+      ],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "69",
+      "recordNumber": "70",
+      "name": "スポーツ用品販売",
+      "aliases": [
+        "スポーツ用品販売店員"
+      ],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "70",
+      "recordNumber": "71",
+      "name": "ホームセンター店員",
+      "aliases": [],
+      "classificationCode": "07_045-04",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "71",
+      "recordNumber": "72",
+      "name": "ペットショップ店員",
+      "aliases": [],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "72",
+      "recordNumber": "73",
+      "name": "衣料品販売",
+      "aliases": [
+        "子供服販売店員",
+        "紳士服販売店員",
+        "婦人服販売店員",
+        "リサイクルショップ販売員（古着）"
+      ],
+      "classificationCode": "07_045-07",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "73",
+      "recordNumber": "74",
+      "name": "検針員",
+      "aliases": [
+        "温泉メーター検針員",
+        "ガスメーター検針員",
+        "水道メーター検針員",
+        "電気メーター検針員"
+      ],
+      "classificationCode": "06_041-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "74",
+      "recordNumber": "75",
+      "name": "フランチャイズチェーン・スーパーバイザー",
+      "aliases": [],
+      "classificationCode": "06_040-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "75",
+      "recordNumber": "76",
+      "name": "シューフィッター",
+      "aliases": [
+        "くつ販売店員"
+      ],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "76",
+      "recordNumber": "77",
+      "name": "駅構内売店店員",
+      "aliases": [],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "77",
+      "recordNumber": "78",
+      "name": "コンビニエンスストア店員",
+      "aliases": [
+        "コンビニエンスストア店員(主に販売の仕事に従事するもの)",
+        "クルー（コンビニエンスストア）"
+      ],
+      "classificationCode": "07_045-03",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "78",
+      "recordNumber": "79",
+      "name": "ベーカリーショップ店員",
+      "aliases": [
+        "菓子・パン販売店員",
+        "食料品販売店員",
+        "ハンバーガーショップ店員（レジ担当）"
+      ],
+      "classificationCode": "07_045-06",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "79",
+      "recordNumber": "80",
+      "name": "中小企業診断士",
+      "aliases": [
+        "経営指導員（商工会議所、商工会）"
+      ],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "80",
+      "recordNumber": "81",
+      "name": "経営コンサルタント",
+      "aliases": [
+        "経営指導員（商工会議所、商工会）",
+        "中小企業診断士"
+      ],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "81",
+      "recordNumber": "82",
+      "name": "ファイナンシャル・プランナー",
+      "aliases": [],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "82",
+      "recordNumber": "83",
+      "name": "社会保険労務士",
+      "aliases": [],
+      "classificationCode": "03_013-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "83",
+      "recordNumber": "84",
+      "name": "司法書士",
+      "aliases": [],
+      "classificationCode": "03_012-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "84",
+      "recordNumber": "85",
+      "name": "行政書士",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "85",
+      "recordNumber": "86",
+      "name": "土地家屋調査士",
+      "aliases": [],
+      "classificationCode": "03_012-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "86",
+      "recordNumber": "87",
+      "name": "翻訳者",
+      "aliases": [],
+      "classificationCode": "03_015-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "87",
+      "recordNumber": "88",
+      "name": "通訳者",
+      "aliases": [
+        "英語通訳"
+      ],
+      "classificationCode": "03_020-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "88",
+      "recordNumber": "89",
+      "name": "弁護士",
+      "aliases": [],
+      "classificationCode": "03_012-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "89",
+      "recordNumber": "90",
+      "name": "公認会計士",
+      "aliases": [],
+      "classificationCode": "03_013-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "90",
+      "recordNumber": "91",
+      "name": "弁理士",
+      "aliases": [],
+      "classificationCode": "03_012-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "91",
+      "recordNumber": "92",
+      "name": "税理士",
+      "aliases": [],
+      "classificationCode": "03_013-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "92",
+      "recordNumber": "93",
+      "name": "不動産鑑定士",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "93",
+      "recordNumber": "94",
+      "name": "気象予報士",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "94",
+      "recordNumber": "95",
+      "name": "ビル施設管理",
+      "aliases": [
+        "ビル施設管理者",
+        "ビル中央管理室監視員"
+      ],
+      "classificationCode": "13_089-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "95",
+      "recordNumber": "96",
+      "name": "駐車場管理",
+      "aliases": [
+        "コインパーキング管理人",
+        "駐車場管理人",
+        "駐車場係",
+        "駐車場誘導員"
+      ],
+      "classificationCode": "09_057-04",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "96",
+      "recordNumber": "97",
+      "name": "ビル清掃",
+      "aliases": [
+        "ガラス清掃員",
+        "トイレ清掃員（ビル・建物）",
+        "ビル清掃員",
+        "ポリッシャー（自動床洗浄機）作業員",
+        "床磨作業員"
+      ],
+      "classificationCode": "15_096-01",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "97",
+      "recordNumber": "98",
+      "name": "鉄道車両清掃",
+      "aliases": [
+        "座席ヘッドカバー取付人（航空機・列車）",
+        "鉄道車両洗浄員",
+        "列車清掃員",
+        "乗物内清掃員"
+      ],
+      "classificationCode": "15_096-07",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "98",
+      "recordNumber": "99",
+      "name": "西洋料理調理人（コック）",
+      "aliases": [
+        "イタリア料理調理人",
+        "シェフ",
+        "フランス料理調理人",
+        "洋食調理人"
+      ],
+      "classificationCode": "09_055-02",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "99",
+      "recordNumber": "100",
+      "name": "日本料理調理人（板前）",
+      "aliases": [
+        "天ぷら揚げ職人（飲食店）",
+        "ふぐ調理師",
+        "和食調理人"
+      ],
+      "classificationCode": "09_055-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "100",
+      "recordNumber": "101",
+      "name": "すし職人",
+      "aliases": [],
+      "classificationCode": "09_055-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "101",
+      "recordNumber": "102",
+      "name": "そば・うどん調理人",
+      "aliases": [
+        "うどん料理人",
+        "そば打工（飲食店）",
+        "そば料理人",
+        "和食調理人"
+      ],
+      "classificationCode": "09_055-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "102",
+      "recordNumber": "103",
+      "name": "中華料理調理人",
+      "aliases": [
+        "広東料理調理人",
+        "四川料理調理人",
+        "上海料理調理人",
+        "北京料理調理人"
+      ],
+      "classificationCode": "09_055-03",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "103",
+      "recordNumber": "104",
+      "name": "ハンバーガーショップ店長",
+      "aliases": [],
+      "classificationCode": "09_056-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "104",
+      "recordNumber": "105",
+      "name": "カフェ店員",
+      "aliases": [
+        "コーヒー販売店員"
+      ],
+      "classificationCode": "07_045-06",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "105",
+      "recordNumber": "106",
+      "name": "ソムリエ",
+      "aliases": [
+        "ソムリエール"
+      ],
+      "classificationCode": "09_056-03",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "106",
+      "recordNumber": "107",
+      "name": "バーテンダー",
+      "aliases": [],
+      "classificationCode": "09_055-09",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "107",
+      "recordNumber": "108",
+      "name": "ラーメン調理人",
+      "aliases": [],
+      "classificationCode": "09_055-03",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "108",
+      "recordNumber": "109",
+      "name": "旅行会社カウンター係",
+      "aliases": [],
+      "classificationCode": "06_040-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "109",
+      "recordNumber": "110",
+      "name": "ツアーコンダクター",
+      "aliases": [
+        "ツアーガイド",
+        "旅行添乗員",
+        "見学ツアーガイド（観光）",
+        "山岳ガイド",
+        "自然ガイド",
+        "トラベルガイド",
+        "名所・旧跡案内人",
+        "旅行・観光案内人"
+      ],
+      "classificationCode": "09_058-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "110",
+      "recordNumber": "111",
+      "name": "観光バスガイド",
+      "aliases": [
+        "観光バス車掌",
+        "バスガイド"
+      ],
+      "classificationCode": "13_088-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "111",
+      "recordNumber": "112",
+      "name": "遊園地スタッフ",
+      "aliases": [
+        "アトラクション係（遊戯施設）",
+        "アミューズメント施設接客員",
+        "カウンター係（娯楽場）",
+        "貸遊具係",
+        "娯楽場等接客係",
+        "娯楽場等遊戯施設係",
+        "乗物運転操作員（遊園地）",
+        "遊園地施設係",
+        "遊戯装置係",
+        "遊具オペレーター"
+      ],
+      "classificationCode": "09_056-08",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "112",
+      "recordNumber": "113",
+      "name": "キャディ",
+      "aliases": [
+        "キャディ（ハウスキャディ）"
+      ],
+      "classificationCode": "09_056-08",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "113",
+      "recordNumber": "114",
+      "name": "通訳ガイド",
+      "aliases": [
+        "観光通訳案内人",
+        "通訳案内士",
+        "通訳案内人"
+      ],
+      "classificationCode": "09_058-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "114",
+      "recordNumber": "115",
+      "name": "理容師",
+      "aliases": [
+        "ヘアスタイリスト（理容師）",
+        "ヘアデザイナー（理容師）",
+        "理髪師"
+      ],
+      "classificationCode": "09_053-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "115",
+      "recordNumber": "116",
+      "name": "美容師",
+      "aliases": [
+        "スタイリスト（美容師）",
+        "ヘアデザイナー（美容師）",
+        "メイクアップアーティスト（美容師）"
+      ],
+      "classificationCode": "09_053-02",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "116",
+      "recordNumber": "117",
+      "name": "エステティシャン",
+      "aliases": [
+        "美顔術師"
+      ],
+      "classificationCode": "09_053-04",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "117",
+      "recordNumber": "118",
+      "name": "メイクアップアーティスト",
+      "aliases": [],
+      "classificationCode": "09_053-02",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "118",
+      "recordNumber": "119",
+      "name": "クリーニング師",
+      "aliases": [
+        "アイロン仕上工（クリーニング）",
+        "クリーニング工",
+        "クリーニング仕上工",
+        "クリーニングプレス工",
+        "しみ抜き工",
+        "ドライクリーニング工",
+        "リネンサプライ業従事者（洗濯・洗濯仕上げに従事するもの）"
+      ],
+      "classificationCode": "09_054-02",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "119",
+      "recordNumber": "120",
+      "name": "スポーツインストラクター",
+      "aliases": [
+        "アウトドアインストラクター",
+        "運動指導者",
+        "エアロビクスダンスインストラクター",
+        "健康運動指導士",
+        "スポーツクラブ指導員",
+        "スポーツ個人教師",
+        "フィットネスクラブトレーナー",
+        "ヨガ指導員"
+      ],
+      "classificationCode": "05_032-02",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "120",
+      "recordNumber": "121",
+      "name": "自動車教習指導員",
+      "aliases": [],
+      "classificationCode": "05_031-99",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "121",
+      "recordNumber": "122",
+      "name": "音楽教室講師",
+      "aliases": [],
+      "classificationCode": "05_032-03",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "122",
+      "recordNumber": "123",
+      "name": "ビデオレンタル店店員",
+      "aliases": [
+        "レンタルショップ店員"
+      ],
+      "classificationCode": "09_058-03",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "123",
+      "recordNumber": "124",
+      "name": "レンタカー店舗スタッフ",
+      "aliases": [
+        "レンタカー営業所員"
+      ],
+      "classificationCode": "09_058-03",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "124",
+      "recordNumber": "125",
+      "name": "ブライダルコーディネーター",
+      "aliases": [
+        "ウエディングプランナー",
+        "ブライダルアドバイザー（結婚式場）",
+        "ブライダルプランナー"
+      ],
+      "classificationCode": "09_058-08",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "125",
+      "recordNumber": "126",
+      "name": "家政婦（夫）",
+      "aliases": [
+        "お手伝い",
+        "介護家政婦",
+        "家事代行員（各種の仕事に従事するもの）"
+      ],
+      "classificationCode": "09_052-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "126",
+      "recordNumber": "127",
+      "name": "ピアノ調律師",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "127",
+      "recordNumber": "128",
+      "name": "ネイリスト",
+      "aliases": [
+        "ペディキュア師",
+        "マニキュア師",
+        "ネイル・アーティスト"
+      ],
+      "classificationCode": "09_053-05",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "128",
+      "recordNumber": "129",
+      "name": "児童相談所相談員",
+      "aliases": [
+        "家庭相談員",
+        "心理判定員（児童相談所）",
+        "児童心理司",
+        "児童福祉司"
+      ],
+      "classificationCode": "08_049-02",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "129",
+      "recordNumber": "130",
+      "name": "福祉事務所ケースワーカー",
+      "aliases": [
+        "社会福祉士（福祉事務所：相談・助言・援助業務）",
+        "相談支援専門員（福祉事務所）",
+        "福祉事務所地区担当員",
+        "福祉事務所面接員"
+      ],
+      "classificationCode": "08_049-02",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "130",
+      "recordNumber": "131",
+      "name": "保育士",
+      "aliases": [
+        "保育教諭"
+      ],
+      "classificationCode": "05_029-01",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "131",
+      "recordNumber": "132",
+      "name": "介護支援専門員/ケアマネジャー",
+      "aliases": [],
+      "classificationCode": "08_049-07",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "132",
+      "recordNumber": "133",
+      "name": "訪問介護員/ホームヘルパー",
+      "aliases": [
+        "介護福祉士（訪問介護業務）",
+        "在宅介護員",
+        "在宅ケアワーカー",
+        "訪問介護サービス員"
+      ],
+      "classificationCode": "08_051-01",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "133",
+      "recordNumber": "134",
+      "name": "施設介護員",
+      "aliases": [],
+      "classificationCode": "08_050-00",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "134",
+      "recordNumber": "135",
+      "name": "手話通訳者",
+      "aliases": [],
+      "classificationCode": "03_020-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "135",
+      "recordNumber": "136",
+      "name": "キャリアカウンセラー/キャリアコンサルタント",
+      "aliases": [
+        "学生カウンセラー",
+        "職業相談員（職業相談・職業紹介）",
+        "産業カウンセラー（事業所内相談室）"
+      ],
+      "classificationCode": "03_019-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "136",
+      "recordNumber": "137",
+      "name": "福祉用具専門相談員",
+      "aliases": [],
+      "classificationCode": "08_049-10",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "137",
+      "recordNumber": "138",
+      "name": "国家公務員（行政事務）",
+      "aliases": [],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "138",
+      "recordNumber": "139",
+      "name": "地方公務員（行政事務）",
+      "aliases": [],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "139",
+      "recordNumber": "140",
+      "name": "警察官（都道府県警察）",
+      "aliases": [],
+      "classificationCode": "10_061-01",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "140",
+      "recordNumber": "141",
+      "name": "海上保安官",
+      "aliases": [],
+      "classificationCode": "10_061-01",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "141",
+      "recordNumber": "142",
+      "name": "麻薬取締官",
+      "aliases": [],
+      "classificationCode": "10_061-99",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "142",
+      "recordNumber": "143",
+      "name": "入国警備官",
+      "aliases": [],
+      "classificationCode": "10_063-99",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "143",
+      "recordNumber": "144",
+      "name": "裁判官",
+      "aliases": [],
+      "classificationCode": "03_012-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "144",
+      "recordNumber": "145",
+      "name": "検察官",
+      "aliases": [],
+      "classificationCode": "03_012-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "145",
+      "recordNumber": "146",
+      "name": "家庭裁判所調査官",
+      "aliases": [],
+      "classificationCode": "03_012-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "146",
+      "recordNumber": "147",
+      "name": "法務教官",
+      "aliases": [],
+      "classificationCode": "05_031-99",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "147",
+      "recordNumber": "148",
+      "name": "刑務官",
+      "aliases": [],
+      "classificationCode": "10_062-01",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "148",
+      "recordNumber": "149",
+      "name": "税務事務官",
+      "aliases": [],
+      "classificationCode": "06_038-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "149",
+      "recordNumber": "150",
+      "name": "外務公務員（外交官）",
+      "aliases": [],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "150",
+      "recordNumber": "151",
+      "name": "国際公務員",
+      "aliases": [],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "151",
+      "recordNumber": "152",
+      "name": "陸上自衛官",
+      "aliases": [],
+      "classificationCode": "10_060-01",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "152",
+      "recordNumber": "153",
+      "name": "海上自衛官",
+      "aliases": [],
+      "classificationCode": "10_060-01",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "153",
+      "recordNumber": "154",
+      "name": "航空自衛官",
+      "aliases": [],
+      "classificationCode": "10_060-01",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "154",
+      "recordNumber": "155",
+      "name": "消防官",
+      "aliases": [
+        "救急救命士（消防員）",
+        "救急隊員",
+        "消防士",
+        "消防吏員",
+        "消防隊員",
+        "レスキュー隊員"
+      ],
+      "classificationCode": "10_062-02",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "155",
+      "recordNumber": "156",
+      "name": "看護師",
+      "aliases": [],
+      "classificationCode": "04_023-00",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "156",
+      "recordNumber": "157",
+      "name": "助産師",
+      "aliases": [],
+      "classificationCode": "04_022-02",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "157",
+      "recordNumber": "158",
+      "name": "薬剤師",
+      "aliases": [],
+      "classificationCode": "04_021-04",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "158",
+      "recordNumber": "159",
+      "name": "歯科医師",
+      "aliases": [],
+      "classificationCode": "04_021-02",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "159",
+      "recordNumber": "160",
+      "name": "保健師",
+      "aliases": [],
+      "classificationCode": "04_022-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "160",
+      "recordNumber": "161",
+      "name": "臨床検査技師",
+      "aliases": [
+        "衛生検査技師",
+        "心電図検査員",
+        "超音波検査員（臨床検査）"
+      ],
+      "classificationCode": "04_024-03",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "161",
+      "recordNumber": "162",
+      "name": "細胞検査士",
+      "aliases": [],
+      "classificationCode": "04_027-99",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "162",
+      "recordNumber": "163",
+      "name": "診療放射線技師",
+      "aliases": [
+        "診療エックス線技師",
+        "レントゲン技師（医療）",
+        "放射線技師（医療）"
+      ],
+      "classificationCode": "04_024-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "163",
+      "recordNumber": "164",
+      "name": "臨床工学技士",
+      "aliases": [],
+      "classificationCode": "04_024-02",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "164",
+      "recordNumber": "165",
+      "name": "歯科技工士",
+      "aliases": [],
+      "classificationCode": "04_024-09",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "165",
+      "recordNumber": "166",
+      "name": "歯科衛生士",
+      "aliases": [],
+      "classificationCode": "04_024-08",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "166",
+      "recordNumber": "167",
+      "name": "理学療法士（PT）",
+      "aliases": [],
+      "classificationCode": "04_024-04",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "167",
+      "recordNumber": "168",
+      "name": "作業療法士（OT）",
+      "aliases": [],
+      "classificationCode": "04_024-05",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "168",
+      "recordNumber": "169",
+      "name": "言語聴覚士",
+      "aliases": [
+        "ST（言語聴覚士）"
+      ],
+      "classificationCode": "04_024-07",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "169",
+      "recordNumber": "170",
+      "name": "視能訓練士",
+      "aliases": [
+        "CO（視能訓練士）"
+      ],
+      "classificationCode": "04_024-06",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "170",
+      "recordNumber": "171",
+      "name": "栄養士",
+      "aliases": [
+        "学校栄養士",
+        "福祉施設栄養士",
+        "病院栄養士",
+        "管理栄養士"
+      ],
+      "classificationCode": "04_025-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "171",
+      "recordNumber": "172",
+      "name": "あんまマッサージ指圧師",
+      "aliases": [
+        "あん摩師",
+        "あん摩マッサージ師",
+        "指圧師",
+        "マッサージ師"
+      ],
+      "classificationCode": "04_026-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "172",
+      "recordNumber": "173",
+      "name": "柔道整復師",
+      "aliases": [
+        "整骨師",
+        "接骨師"
+      ],
+      "classificationCode": "04_026-02",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "173",
+      "recordNumber": "174",
+      "name": "診療情報管理士",
+      "aliases": [
+        "診療情報管理係事務員",
+        "診療録係員",
+        "病歴係"
+      ],
+      "classificationCode": "06_037-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "174",
+      "recordNumber": "175",
+      "name": "はり師・きゅう師",
+      "aliases": [
+        "灸師",
+        "鍼灸師",
+        "鍼師"
+      ],
+      "classificationCode": "04_026-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "175",
+      "recordNumber": "176",
+      "name": "義肢装具士",
+      "aliases": [],
+      "classificationCode": "04_027-99",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "176",
+      "recordNumber": "178",
+      "name": "幼稚園教員",
+      "aliases": [
+        "幼稚園教諭",
+        "幼稚園養護教諭",
+        "保育教諭"
+      ],
+      "classificationCode": "05_029-02",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "177",
+      "recordNumber": "179",
+      "name": "小学校教員",
+      "aliases": [
+        "小学校教諭",
+        "小学校栄養教諭",
+        "小学校養護教諭"
+      ],
+      "classificationCode": "05_031-01",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "178",
+      "recordNumber": "180",
+      "name": "中学校教員",
+      "aliases": [
+        "中学校教諭",
+        "中学校栄養教諭",
+        "中学校養護教諭"
+      ],
+      "classificationCode": "05_031-02",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "179",
+      "recordNumber": "181",
+      "name": "専門学校教員",
+      "aliases": [
+        "アニメーション専門学校教員",
+        "医療技術専門学校教員",
+        "英会話学院教師（各種学校）",
+        "看護専門学校教員",
+        "経理・簿記専門学校教員",
+        "自動車整備専門学校教員",
+        "調理専門学校教員",
+        "デザイン専門学校教員",
+        "日本語教師（各種学校）",
+        "社会福祉専門学校",
+        "服飾専門学校教員",
+        "保育専門学校教員",
+        "理美容専門学校教員"
+      ],
+      "classificationCode": "05_031-99",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "180",
+      "recordNumber": "182",
+      "name": "図書館司書",
+      "aliases": [
+        "司書"
+      ],
+      "classificationCode": "03_019-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "181",
+      "recordNumber": "183",
+      "name": "高等学校教員",
+      "aliases": [
+        "高等学校教諭",
+        "高等学校栄養教諭",
+        "高等学校養護教諭"
+      ],
+      "classificationCode": "05_031-04",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "182",
+      "recordNumber": "184",
+      "name": "大学・短期大学教員",
+      "aliases": [
+        "大学教授",
+        "大学准教授",
+        "大学講師",
+        "大学助教",
+        "短期大学教授",
+        "短期大学准教授",
+        "短期大学講師"
+      ],
+      "classificationCode": "05_031-07",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "183",
+      "recordNumber": "185",
+      "name": "学芸員",
+      "aliases": [],
+      "classificationCode": "03_019-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "184",
+      "recordNumber": "186",
+      "name": "路線バス運転士",
+      "aliases": [
+        "コミュニティバス運転手",
+        "乗合バス運転手"
+      ],
+      "classificationCode": "13_084-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "185",
+      "recordNumber": "187",
+      "name": "観光バス運転士",
+      "aliases": [
+        "観光路線バス運転手",
+        "貸切観光バス運転手"
+      ],
+      "classificationCode": "13_084-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "186",
+      "recordNumber": "188",
+      "name": "タクシー運転手",
+      "aliases": [
+        "タクシー乗務員",
+        "タクシードライバー",
+        "乗合タクシー運転手",
+        "ハイヤー運転手"
+      ],
+      "classificationCode": "13_085-03",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "187",
+      "recordNumber": "189",
+      "name": "パイロット",
+      "aliases": [
+        "機長",
+        "航空機副操縦士",
+        "ヘリコプター操縦士"
+      ],
+      "classificationCode": "13_087-04",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "188",
+      "recordNumber": "190",
+      "name": "航海士",
+      "aliases": [
+        "貨物船航海士",
+        "水先案内人",
+        "旅客船運航士"
+      ],
+      "classificationCode": "13_087-02",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "189",
+      "recordNumber": "191",
+      "name": "船舶機関士",
+      "aliases": [],
+      "classificationCode": "13_087-03",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "190",
+      "recordNumber": "192",
+      "name": "電車運転士",
+      "aliases": [
+        "地下鉄運転士",
+        "モノレール運転士",
+        "路面電車運転士"
+      ],
+      "classificationCode": "13_087-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "191",
+      "recordNumber": "193",
+      "name": "鉄道車掌",
+      "aliases": [
+        "車掌（鉄道）",
+        "電車車掌"
+      ],
+      "classificationCode": "13_088-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "192",
+      "recordNumber": "194",
+      "name": "空港グランドスタッフ",
+      "aliases": [
+        "グランドスタッフ(航空会社)",
+        "航空旅客係"
+      ],
+      "classificationCode": "06_042-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "193",
+      "recordNumber": "195",
+      "name": "駅務員",
+      "aliases": [
+        "駅出改札係",
+        "鉄道旅客係"
+      ],
+      "classificationCode": "06_042-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "194",
+      "recordNumber": "196",
+      "name": "鉄道運転計画・運行管理",
+      "aliases": [
+        "車両管理係事務員",
+        "信号通信指令員",
+        "指令員（運転指令所）",
+        "鉄道運行管理事務員",
+        "鉄道運転計画事務員",
+        "鉄道運転司令",
+        "鉄道輸送指令員"
+      ],
+      "classificationCode": "06_042-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "195",
+      "recordNumber": "197",
+      "name": "自動車整備士",
+      "aliases": [
+        "自動車エンジン整備工",
+        "自動車修理工",
+        "自動車整備工",
+        "自動車電装品整備工",
+        "メカニック（自動車修理）"
+      ],
+      "classificationCode": "12_075-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "196",
+      "recordNumber": "198",
+      "name": "ガソリンスタンド・スタッフ",
+      "aliases": [
+        "ガススタンド充填員",
+        "ガソリンスタンドサービスマン",
+        "セルフスタンド店員"
+      ],
+      "classificationCode": "07_045-13",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "197",
+      "recordNumber": "199",
+      "name": "道路パトロール隊員",
+      "aliases": [
+        "道路監理員"
+      ],
+      "classificationCode": "10_063-99",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "198",
+      "recordNumber": "200",
+      "name": "タクシー配車オペレーター",
+      "aliases": [
+        "タクシー運行管理事務員",
+        "ハイヤー管理事務員"
+      ],
+      "classificationCode": "06_042-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "199",
+      "recordNumber": "201",
+      "name": "引越作業員",
+      "aliases": [],
+      "classificationCode": "15_095-02",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "200",
+      "recordNumber": "202",
+      "name": "通関士",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "201",
+      "recordNumber": "203",
+      "name": "航空管制官",
+      "aliases": [],
+      "classificationCode": "02_011-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "202",
+      "recordNumber": "204",
+      "name": "ディスパッチャー（航空機運航管理者）",
+      "aliases": [
+        "航空運航管理者",
+        "航空ディスパッチャー"
+      ],
+      "classificationCode": "06_042-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "203",
+      "recordNumber": "205",
+      "name": "客室乗務員",
+      "aliases": [
+        "キャビンアテンダント（CA）",
+        "航空客室乗務員",
+        "フライトアテンダント"
+      ],
+      "classificationCode": "09_056-06",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "204",
+      "recordNumber": "206",
+      "name": "航空整備士",
+      "aliases": [
+        "航空運航整備士",
+        "航空機エンジン修理工",
+        "航空機修理工",
+        "航空機整備工"
+      ],
+      "classificationCode": "12_075-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "205",
+      "recordNumber": "207",
+      "name": "船員",
+      "aliases": [
+        "甲板手",
+        "甲板部員",
+        "機関部員",
+        "操機員",
+        "操機手",
+        "海上無線通信士"
+      ],
+      "classificationCode": "13_088-03",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "206",
+      "recordNumber": "208",
+      "name": "新聞記者",
+      "aliases": [
+        "新聞編集員",
+        "新聞論説員",
+        "通信記者"
+      ],
+      "classificationCode": "03_015-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "207",
+      "recordNumber": "209",
+      "name": "雑誌記者",
+      "aliases": [],
+      "classificationCode": "03_015-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "208",
+      "recordNumber": "210",
+      "name": "図書編集者",
+      "aliases": [],
+      "classificationCode": "03_015-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "209",
+      "recordNumber": "211",
+      "name": "雑誌編集者",
+      "aliases": [],
+      "classificationCode": "03_015-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "210",
+      "recordNumber": "212",
+      "name": "テレビ・ラジオ放送技術者",
+      "aliases": [
+        "スイッチャー（映像切換操作員）",
+        "テクニカルディレクター（テレビ・ラジオ）",
+        "テレビ放送技術員",
+        "放送中継係員",
+        "ミキサー（テレビ・ラジオ）",
+        "ラジオ放送技術員"
+      ],
+      "classificationCode": "02_011-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "211",
+      "recordNumber": "213",
+      "name": "録音エンジニア",
+      "aliases": [
+        "PAミキサー",
+        "ミキサー（録音スタジオ）"
+      ],
+      "classificationCode": "12_081-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "212",
+      "recordNumber": "214",
+      "name": "映像編集者",
+      "aliases": [
+        "動画編集者"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "213",
+      "recordNumber": "215",
+      "name": "放送記者",
+      "aliases": [],
+      "classificationCode": "03_015-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "214",
+      "recordNumber": "216",
+      "name": "アナウンサー",
+      "aliases": [
+        "テレビアナウンサー"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "215",
+      "recordNumber": "217",
+      "name": "放送ディレクター",
+      "aliases": [
+        "ディレクター（映画、放送）",
+        "番組制作者（放送）"
+      ],
+      "classificationCode": "03_018-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "216",
+      "recordNumber": "218",
+      "name": "厩舎スタッフ",
+      "aliases": [
+        "きゅう務員",
+        "競走馬飼育作業員",
+        "種馬飼育作業員"
+      ],
+      "classificationCode": "11_064-04",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "217",
+      "recordNumber": "219",
+      "name": "アウトドアインストラクター",
+      "aliases": [],
+      "classificationCode": "05_032-02",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "218",
+      "recordNumber": "220",
+      "name": "動物園飼育員",
+      "aliases": [
+        "トレーナー（動物園）"
+      ],
+      "classificationCode": "11_064-04",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "219",
+      "recordNumber": "221",
+      "name": "農業技術者",
+      "aliases": [
+        "農業技術指導員",
+        "普及指導員（農業）"
+      ],
+      "classificationCode": "02_005-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "220",
+      "recordNumber": "222",
+      "name": "造園工",
+      "aliases": [
+        "グリーンキーパー",
+        "ゴルフ場芝植付作業員",
+        "芝植付作業員（造園業）",
+        "造園技能士",
+        "築庭作業員",
+        "庭師"
+      ],
+      "classificationCode": "11_064-05",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "221",
+      "recordNumber": "223",
+      "name": "獣医師",
+      "aliases": [
+        "家畜診療所獣医師",
+        "小動物臨床獣医師",
+        "動物病院獣医師"
+      ],
+      "classificationCode": "04_021-03",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "222",
+      "recordNumber": "224",
+      "name": "水族館飼育員",
+      "aliases": [
+        "水族館飼育係（魚介類）"
+      ],
+      "classificationCode": "11_066-04",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "223",
+      "recordNumber": "225",
+      "name": "調教師",
+      "aliases": [
+        "馬調教師"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "224",
+      "recordNumber": "226",
+      "name": "犬訓練士",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "225",
+      "recordNumber": "227",
+      "name": "トリマー",
+      "aliases": [
+        "グルーマー",
+        "ペットトリマー"
+      ],
+      "classificationCode": "09_058-07",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "226",
+      "recordNumber": "228",
+      "name": "水産技術者",
+      "aliases": [
+        "水産資源保護指導員",
+        "普及指導員（水産業）",
+        "養殖技術者"
+      ],
+      "classificationCode": "02_005-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "227",
+      "recordNumber": "229",
+      "name": "林業技術者",
+      "aliases": [
+        "山林用種苗技術者",
+        "森林病害虫防除技術者",
+        "普及指導員（林業）"
+      ],
+      "classificationCode": "02_005-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "228",
+      "recordNumber": "230",
+      "name": "林業作業",
+      "aliases": [
+        "山林苗木植付作業員",
+        "山林枝打作業員",
+        "山林下刈作業員",
+        "植林作業員",
+        "除伐作業員",
+        "地ごしらえ作業員（林業）",
+        "運材作業員",
+        "間伐作業員",
+        "集運材機械運転工",
+        "集材作業員",
+        "造材作業員",
+        "伐木作業員",
+        "伐木造材機械運転工"
+      ],
+      "classificationCode": "11_065-01",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "229",
+      "recordNumber": "231",
+      "name": "産業用ロボット開発技術者",
+      "aliases": [
+        "工作機械設計技術者",
+        "産業用ロボット設計技術者",
+        "自動化機械開発技術者",
+        "半導体製造装置設計技術者"
+      ],
+      "classificationCode": "02_006-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "230",
+      "recordNumber": "232",
+      "name": "産業用ロボットの設置・設定",
+      "aliases": [
+        "産業用ロボット組立・据付工",
+        "産業用ロボット設置・設定工"
+      ],
+      "classificationCode": "12_074-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "231",
+      "recordNumber": "233",
+      "name": "産業用ロボットの保守・メンテナンス",
+      "aliases": [
+        "機械保全工",
+        "工場設備保全員",
+        "産業用ロボット修理工",
+        "産業用ロボット保守・メンテナンス工",
+        "産業用機械修理工"
+      ],
+      "classificationCode": "12_075-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "232",
+      "recordNumber": "234",
+      "name": "太陽光発電の企画・調査",
+      "aliases": [
+        "太陽光発電企画・調査事務員"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "233",
+      "recordNumber": "235",
+      "name": "太陽光発電の設計・施工",
+      "aliases": [],
+      "classificationCode": "02_008-04",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "234",
+      "recordNumber": "236",
+      "name": "太陽光発電のメンテナンス",
+      "aliases": [
+        "太陽光発電装置修理作業員（電気工事）"
+      ],
+      "classificationCode": "12_075-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "235",
+      "recordNumber": "237",
+      "name": "フォークリフト運転作業員",
+      "aliases": [
+        "フォークリフト運転手"
+      ],
+      "classificationCode": "13_088-04",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "236",
+      "recordNumber": "238",
+      "name": "ネット通販の企画開発",
+      "aliases": [
+        "ネット通販企画開発事務員"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "237",
+      "recordNumber": "239",
+      "name": "ネット通販の運営",
+      "aliases": [
+        "インターネット通信販売受付事務員",
+        "ネットショップ事務員",
+        "ネット通販運営事務員"
+      ],
+      "classificationCode": "06_036-04",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "238",
+      "recordNumber": "240",
+      "name": "Webマーケティング（ネット広告・販売促進）",
+      "aliases": [
+        "Webマーケティング事務員",
+        "ネット広告・販売促進事務員",
+        "マーケティング企画事務員",
+        "マーケター",
+        "マーケティングリサーチャー"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "239",
+      "recordNumber": "241",
+      "name": "施設警備員",
+      "aliases": [
+        "駅警備員",
+        "空港警備員",
+        "刑事施設警備員",
+        "守衛",
+        "倉庫警備員",
+        "ビル警備員",
+        "夜警員"
+      ],
+      "classificationCode": "10_059-01",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "240",
+      "recordNumber": "242",
+      "name": "学童保育指導員",
+      "aliases": [
+        "放課後児童クラブ支援員",
+        "放課後児童支援員"
+      ],
+      "classificationCode": "05_030-01",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "241",
+      "recordNumber": "243",
+      "name": "児童指導員",
+      "aliases": [
+        "指導員（放課後等デイサービス事業所）",
+        "社会福祉士（児童福祉施設：相談・助言・支援業務）",
+        "少年指導員",
+        "児童自立支援専門員",
+        "児童生活支援員",
+        "母子支援員"
+      ],
+      "classificationCode": "08_049-05",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "242",
+      "recordNumber": "244",
+      "name": "障害者福祉施設指導専門員（生活支援員、就労支援員等）",
+      "aliases": [
+        "作業指導員（障害者施設）",
+        "社会福祉士（障害者福祉施設：相談・助言・支援業務）",
+        "職業指導員（障害者施設）",
+        "就労支援員（障害者施設）",
+        "生活支援員（障害者支援施設：生活介護を除く）"
+      ],
+      "classificationCode": "08_049-04",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "243",
+      "recordNumber": "245",
+      "name": "老人福祉施設生活相談員",
+      "aliases": [
+        "支援相談員（介護老人保健施設）",
+        "社会福祉士（高齢者福祉施設：相談・助言・援助業務）",
+        "生活指導員（老人福祉施設）",
+        "生活相談員（老人福祉施設）",
+        "生活相談員（有料老人ホーム）"
+      ],
+      "classificationCode": "08_049-03",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "244",
+      "recordNumber": "246",
+      "name": "看護助手",
+      "aliases": [
+        "看護アシスタント",
+        "看護補助者",
+        "看護ヘルパー"
+      ],
+      "classificationCode": "04_028-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "245",
+      "recordNumber": "247",
+      "name": "植物工場の研究開発",
+      "aliases": [
+        "植物工場研究開発者"
+      ],
+      "classificationCode": "02_005-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "246",
+      "recordNumber": "248",
+      "name": "植物工場の設計、施工",
+      "aliases": [
+        "植物工場施工管理技術者"
+      ],
+      "classificationCode": "02_008-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "247",
+      "recordNumber": "249",
+      "name": "植物工場の栽培管理",
+      "aliases": [
+        "野菜栽培作業員（植物工場）"
+      ],
+      "classificationCode": "11_064-02",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "248",
+      "recordNumber": "250",
+      "name": "起業、創業",
+      "aliases": [
+        "CEO（会社最高経営責任者）",
+        "会社社長",
+        "会社取締役"
+      ],
+      "classificationCode": "01_001-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "249",
+      "recordNumber": "251",
+      "name": "鋳造工/鋳造設備オペレーター",
+      "aliases": [
+        "金属管鋳造工",
+        "鋳物製造設備オペレーター",
+        "鋳造設備オペレーター",
+        "金属管鋳造設備オペレーター",
+        "造型機オペレーター"
+      ],
+      "classificationCode": "12_071-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "250",
+      "recordNumber": "252",
+      "name": "鍛造工/鍛造設備オペレーター",
+      "aliases": [
+        "型鍛造工",
+        "自由鍛造工",
+        "鍛造加熱設備オペレーター",
+        "鍛造設備オペレーター",
+        "鍛造プレス設備オペレーター"
+      ],
+      "classificationCode": "12_071-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "251",
+      "recordNumber": "253",
+      "name": "金型工",
+      "aliases": [
+        "金型修理工",
+        "金型製造工"
+      ],
+      "classificationCode": "12_071-12",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "252",
+      "recordNumber": "254",
+      "name": "金属プレス工",
+      "aliases": [
+        "打抜プレス工",
+        "金属プレス成形工",
+        "絞プレス工",
+        "ブレーキプレス工",
+        "プレス刻印工",
+        "プレス成形工（打抜プレス、曲プレスを除く）",
+        "曲プレス工",
+        "金属プレス設備オペレーター"
+      ],
+      "classificationCode": "12_071-07",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "253",
+      "recordNumber": "255",
+      "name": "溶接工",
+      "aliases": [
+        "金属溶接設備オペレーター",
+        "金属溶断設備オペレーター",
+        "溶接ロボットオペレーター"
+      ],
+      "classificationCode": "12_071-13",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "254",
+      "recordNumber": "256",
+      "name": "NC工作機械オペレーター",
+      "aliases": [],
+      "classificationCode": "12_071-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "255",
+      "recordNumber": "257",
+      "name": "めっき工",
+      "aliases": [
+        "めっき設備オペレーター",
+        "アルマイト工",
+        "化学めっき工",
+        "気相めっき工",
+        "化成処理工",
+        "真空めっき工",
+        "電気めっき工",
+        "防錆処理工",
+        "溶射めっき工",
+        "溶融めっき工"
+      ],
+      "classificationCode": "12_067-07",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "256",
+      "recordNumber": "258",
+      "name": "非鉄金属製錬技術者",
+      "aliases": [
+        "圧延開発技術者",
+        "金属製錬開発技術者",
+        "合金開発技術者",
+        "鍛造開発技術者",
+        "鋳造開発技術者",
+        "鋳物開発技術者",
+        "電気精錬開発技術者",
+        "転炉オペレーター（製鋼）"
+      ],
+      "classificationCode": "02_007-07",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "257",
+      "recordNumber": "259",
+      "name": "鉄鋼製造オペレーター",
+      "aliases": [
+        "鋳銑機オペレーター",
+        "鋳物用鉄溶融設備オペレーター",
+        "高炉オペレーター",
+        "製鋼設備オペレーター",
+        "製銑設備オペレーター",
+        "造塊設備オペレーター",
+        "鉄鋼製造設備オペレーター",
+        "電気炉オペレーター（製鋼）",
+        "取べ精錬炉オペレーター",
+        "連続鋳造機オペレーター（製鋼）",
+        "圧延加熱設備オペレーター",
+        "圧延設備オペレーター",
+        "条鋼圧延設備オペレーター",
+        "熱間圧延設備オペレーター",
+        "溶接鋼管製造設備オペレーター",
+        "冷間圧延設備オペレーター"
+      ],
+      "classificationCode": "12_067-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "258",
+      "recordNumber": "260",
+      "name": "非破壊検査技術者",
+      "aliases": [
+        "非破壊検査工（土木構造物）",
+        "非破壊検査工（建築物）",
+        "非破壊検査工（コンクリート製品）",
+        "非破壊検査工（はん用・生産用・業務用機械器具）"
+      ],
+      "classificationCode": "12_076-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "259",
+      "recordNumber": "261",
+      "name": "電子機器組立",
+      "aliases": [
+        "電気通信機械器具組立設備オペレーター",
+        "電子応用機械器具組立設備オペレーター",
+        "電子機器部品組立設備オペレーター",
+        "半導体製品製造設備オペレーター",
+        "カーナビゲーション組立工",
+        "携帯電話組立工",
+        "電話機組立工",
+        "ファクシミリ組立工",
+        "無線通信機器組立工",
+        "有線通信機器組立工",
+        "テレビ組立工",
+        "ラジオ組立工",
+        "パーソナルコンピュータ組立工",
+        "汎用電子計算機組立工"
+      ],
+      "classificationCode": "12_070-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "260",
+      "recordNumber": "262",
+      "name": "機械設計技術者",
+      "aliases": [
+        "液晶ディスプレイ（LCD）設計技術者",
+        "回路設計技術者",
+        "テレビ設計技術者",
+        "電子機器設計技術者",
+        "電動機設計技術者",
+        "エンジン設計技術者",
+        "金型設計士",
+        "建設機械設計技術者",
+        "航空計器設計技術者",
+        "工作機械設計技術者",
+        "産業用ロボット設計技術者",
+        "精密測定工具設計技術者",
+        "土木機械設計技術者",
+        "農業用機械設計技術者",
+        "半導体製造装置設計技術者",
+        "ボイラー設計技術者",
+        "バスボディー設計技術者",
+        "航空機設計技術者",
+        "船舶設計技術者",
+        "造船技術者（開発）",
+        "鉄道車両設計技術者"
+      ],
+      "classificationCode": "02_006-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "261",
+      "recordNumber": "263",
+      "name": "光学機器組立",
+      "aliases": [
+        "顕微鏡組立工",
+        "光学機械器具組立工",
+        "デジタルカメラ組立工",
+        "双眼鏡組立工",
+        "ビデオカメラ組立工",
+        "望遠鏡組立工"
+      ],
+      "classificationCode": "12_074-13",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "262",
+      "recordNumber": "264",
+      "name": "自動車組立",
+      "aliases": [
+        "自動車車体組立工",
+        "自動車ぎ装（艤装）組立工",
+        "自動車部品組立工",
+        "トラック組立工",
+        "バス組立工"
+      ],
+      "classificationCode": "12_074-11",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "263",
+      "recordNumber": "265",
+      "name": "生産用機械組立",
+      "aliases": [],
+      "classificationCode": "12_074-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "264",
+      "recordNumber": "266",
+      "name": "計器組立",
+      "aliases": [
+        "温度計組立工",
+        "体温計組立工",
+        "体積計組立工",
+        "長さ計組立工",
+        "度量衡器組立工",
+        "はかり組立工",
+        "流量計組立工"
+      ],
+      "classificationCode": "12_074-13",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "265",
+      "recordNumber": "267",
+      "name": "半導体技術者",
+      "aliases": [
+        "半導体製造技術者"
+      ],
+      "classificationCode": "02_007-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "266",
+      "recordNumber": "268",
+      "name": "半導体製造",
+      "aliases": [
+        "半導体製品製造設備オペレーター",
+        "半導体組立設備オペレーター",
+        "半導体組立工",
+        "半導体集積回路（IC）製造工",
+        "半導体チップ製造工"
+      ],
+      "classificationCode": "12_074-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "267",
+      "recordNumber": "269",
+      "name": "物流設備管理・保全",
+      "aliases": [
+        "機械保全工",
+        "工場設備保全員",
+        "プラント保全工",
+        "エレベーター修理工",
+        "業務用空調機器修理工",
+        "昇降機修理工",
+        "包装機械修理工",
+        "冷凍装置修理工"
+      ],
+      "classificationCode": "12_075-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "268",
+      "recordNumber": "270",
+      "name": "自動車技術者",
+      "aliases": [
+        "バスボディー設計技術者",
+        "自動車生産技術者",
+        "自動車設計技術者",
+        "自動車部品設計技術者"
+      ],
+      "classificationCode": "02_006-04",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "269",
+      "recordNumber": "271",
+      "name": "精密機器技術者",
+      "aliases": [],
+      "classificationCode": "02_006-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "270",
+      "recordNumber": "272",
+      "name": "電気技術者",
+      "aliases": [
+        "電気設備設計技術者",
+        "電気機器生産技術者",
+        "電気機械製造技術者"
+      ],
+      "classificationCode": "02_006-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "271",
+      "recordNumber": "273",
+      "name": "電子機器技術者",
+      "aliases": [
+        "電子機器生産技術者",
+        "電子機器設計技術者"
+      ],
+      "classificationCode": "02_006-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "272",
+      "recordNumber": "274",
+      "name": "電気通信技術者",
+      "aliases": [
+        "電気通信施設技術者",
+        "ネットワーク技術者"
+      ],
+      "classificationCode": "02_010-06",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "273",
+      "recordNumber": "275",
+      "name": "家電修理",
+      "aliases": [
+        "電気洗濯機修理工",
+        "電気掃除機修理工",
+        "電気冷蔵庫修理工",
+        "家庭用エアコン修理工",
+        "家庭用電気製品修理工",
+        "テレビ修理工"
+      ],
+      "classificationCode": "12_075-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "274",
+      "recordNumber": "276",
+      "name": "プラント設計技術者",
+      "aliases": [
+        "化学プラント設計技術者"
+      ],
+      "classificationCode": "02_006-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "275",
+      "recordNumber": "277",
+      "name": "医療用画像機器組立",
+      "aliases": [
+        "医療用電子機器組立工",
+        "X 線応用装置組立工",
+        "超音波画像診断装置組立工",
+        "レーザー応用加工機器組立工",
+        "医療用画像機器組立工"
+      ],
+      "classificationCode": "12_074-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "276",
+      "recordNumber": "278",
+      "name": "織布工/織機オペレーター",
+      "aliases": [
+        "織布設備オペレーター",
+        "はた（機）ごしらえ工",
+        "へ（経）通工",
+        "織機操作工",
+        "製織工"
+      ],
+      "classificationCode": "12_069-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "277",
+      "recordNumber": "279",
+      "name": "染色工/染色設備オペレーター",
+      "aliases": [
+        "織物染工",
+        "糸染工",
+        "浸染工",
+        "スクリーンなっ染工",
+        "染物職",
+        "なっ染工",
+        "友禅染工"
+      ],
+      "classificationCode": "12_069-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "278",
+      "recordNumber": "280",
+      "name": "ミシン縫製",
+      "aliases": [
+        "シャツ縫製工",
+        "紳士服縫製工",
+        "縫製作業員（衣服）",
+        "ニット縫製工",
+        "婦人服・子供服縫製工",
+        "衣服以外のミシン縫製工",
+        "カーテン縫製工",
+        "キルティング縫製工",
+        "織布ミシン縫工",
+        "機械刺しゅう工"
+      ],
+      "classificationCode": "12_073-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "279",
+      "recordNumber": "281",
+      "name": "木材製造",
+      "aliases": [
+        "原木切断設備オペレーター",
+        "合板製造設備オペレーター",
+        "製材設備オペレーター",
+        "木質ボード製造設備オペレーター",
+        "原木切断工",
+        "鋸機械工"
+      ],
+      "classificationCode": "12_073-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "280",
+      "recordNumber": "282",
+      "name": "合板製造",
+      "aliases": [
+        "合板製造設備オペレーター",
+        "製材設備オペレーター",
+        "木質ボード製造設備オペレーター",
+        "化粧合板製造工",
+        "合板製作工",
+        "合板プレス工",
+        "集成材製造工",
+        "単板製作工",
+        "木質ボード製造工"
+      ],
+      "classificationCode": "12_073-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "281",
+      "recordNumber": "283",
+      "name": "家具製造",
+      "aliases": [
+        "家具木工",
+        "木製家具組立工",
+        "木製家具修理工",
+        "木製家具製造工"
+      ],
+      "classificationCode": "12_073-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "282",
+      "recordNumber": "284",
+      "name": "紡織設備管理・保全",
+      "aliases": [
+        "繊維機械修理工",
+        "紡織設備管理・保全工",
+        "紡績機械保全工"
+      ],
+      "classificationCode": "12_075-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "283",
+      "recordNumber": "285",
+      "name": "紙器製造",
+      "aliases": [
+        "加工紙製造設備オペレーター",
+        "紙製品製造設備オペレーター",
+        "紙器製造設備オペレーター",
+        "段ボールシート製造設備オペレーター",
+        "大型紙袋製造工",
+        "紙製食器製造工",
+        "紙箱製造工",
+        "機械製箱工",
+        "紙管筒製造工",
+        "段ボール箱製造工"
+      ],
+      "classificationCode": "12_073-05",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "284",
+      "recordNumber": "286",
+      "name": "紡績機械オペレーター",
+      "aliases": [
+        "織布設備オペレーター",
+        "織機オペレーター",
+        "紡績設備オペレーター",
+        "紡織製品生産設備オペレーター"
+      ],
+      "classificationCode": "12_073-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "285",
+      "recordNumber": "287",
+      "name": "建具製造",
+      "aliases": [
+        "障子取付工",
+        "建具木工"
+      ],
+      "classificationCode": "12_073-04",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "286",
+      "recordNumber": "288",
+      "name": "食品技術者",
+      "aliases": [
+        "水産食品開発技術者",
+        "清涼飲料開発技術者",
+        "乳製品開発技術者",
+        "缶詰製造技術者",
+        "食品冷凍技術者（開発技術者を除く）",
+        "水産食品製造技術者",
+        "製糖技術者（開発技術者を除く）",
+        "製粉技術者（開発技術者を除く）",
+        "清涼飲料製造技術者",
+        "乳製品製造技術者"
+      ],
+      "classificationCode": "02_006-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "287",
+      "recordNumber": "289",
+      "name": "靴製造",
+      "aliases": [
+        "革靴製造工",
+        "革裁断工",
+        "革サンダル製造工"
+      ],
+      "classificationCode": "12_073-99",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "288",
+      "recordNumber": "290",
+      "name": "かばん・袋物製造",
+      "aliases": [
+        "かばん製造工",
+        "かばん縫製工",
+        "袋物製造工",
+        "袋物縫製工"
+      ],
+      "classificationCode": "12_073-99",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "289",
+      "recordNumber": "291",
+      "name": "漆器製造",
+      "aliases": [
+        "漆工",
+        "漆器加飾工",
+        "漆器工"
+      ],
+      "classificationCode": "12_073-99",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "290",
+      "recordNumber": "292",
+      "name": "貴金属装身具製作",
+      "aliases": [
+        "貝細工工",
+        "貴金属細工工",
+        "甲細工工",
+        "真珠加工工",
+        "水晶研磨工",
+        "宝石細工工",
+        "貴金属装身具製造工",
+        "貴金属彫刻工"
+      ],
+      "classificationCode": "12_073-99",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "291",
+      "recordNumber": "295",
+      "name": "医薬品製造",
+      "aliases": [
+        "医薬品製造設備オペレーター",
+        "アンプル充填工",
+        "医薬品仕上工",
+        "漢方薬製造工",
+        "原薬製造工",
+        "抗生物質種母培養工",
+        "製剤工",
+        "注射液製造工"
+      ],
+      "classificationCode": "12_069-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "292",
+      "recordNumber": "296",
+      "name": "生産・品質管理技術者",
+      "aliases": [],
+      "classificationCode": "02_007-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "293",
+      "recordNumber": "297",
+      "name": "タイヤ製造",
+      "aliases": [
+        "タイヤ製造設備オペレーター",
+        "自動車タイヤ成形工",
+        "タイヤゴム張工",
+        "トレッド工（タイヤ製造）",
+        "タイヤ修理工",
+        "タイヤ成形工"
+      ],
+      "classificationCode": "12_069-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "294",
+      "recordNumber": "298",
+      "name": "化粧品製造",
+      "aliases": [
+        "化粧品製造設備オペレーター",
+        "口紅製造工",
+        "クリーム製造工（化粧品製造）",
+        "香水製造工",
+        "シャンプー製造工",
+        "乳液製造工"
+      ],
+      "classificationCode": "12_073-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "295",
+      "recordNumber": "299",
+      "name": "石油精製オペレーター",
+      "aliases": [
+        "石油精製設備オペレーター",
+        "燃料製造設備オペレーター"
+      ],
+      "classificationCode": "12_069-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "296",
+      "recordNumber": "300",
+      "name": "化学製品製造オペレーター",
+      "aliases": [
+        "化学繊維原料製造設備オペレーター",
+        "化学肥料製造設備オペレーター",
+        "化学薬品製造設備オペレーター",
+        "石油化学製品製造設備オペレーター",
+        "汎用樹脂製造設備オペレーター",
+        "無機材料製造設備オペレーター",
+        "有機薬品製造設備オペレーター",
+        "化学肥料製造工",
+        "汎用樹脂製造工",
+        "無機材料製造工",
+        "有機薬品製造工"
+      ],
+      "classificationCode": "12_069-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "297",
+      "recordNumber": "301",
+      "name": "原子力技術者",
+      "aliases": [],
+      "classificationCode": "02_007-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "298",
+      "recordNumber": "302",
+      "name": "発電所運転管理",
+      "aliases": [
+        "火力発電保守員",
+        "水力発電保守員",
+        "動力室電気工",
+        "配電室保守員",
+        "発電所運転管理員"
+      ],
+      "classificationCode": "13_089-02",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "299",
+      "recordNumber": "303",
+      "name": "分析化学技術者",
+      "aliases": [
+        "無機薬品分析検査技術員",
+        "有機薬品分析技術員"
+      ],
+      "classificationCode": "02_007-08",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "300",
+      "recordNumber": "304",
+      "name": "陶磁器技術者",
+      "aliases": [
+        "陶磁器製造技術者",
+        "陶磁器開発技術者"
+      ],
+      "classificationCode": "02_007-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "301",
+      "recordNumber": "305",
+      "name": "ファインセラミックス製造技術者",
+      "aliases": [
+        "ファインセラミックス製品開発技術者",
+        "ファインセラミックス製品製造技術者"
+      ],
+      "classificationCode": "02_007-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "302",
+      "recordNumber": "306",
+      "name": "石工",
+      "aliases": [
+        "石切出作業者",
+        "石切工",
+        "石研磨工",
+        "石細工工",
+        "石彫工",
+        "石割工",
+        "墓石工",
+        "はつり工（石材加工業）"
+      ],
+      "classificationCode": "12_073-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "303",
+      "recordNumber": "307",
+      "name": "花火師",
+      "aliases": [],
+      "classificationCode": "12_073-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "304",
+      "recordNumber": "308",
+      "name": "高分子化学技術者",
+      "aliases": [
+        "高分子化学製品生産技術者"
+      ],
+      "classificationCode": "02_006-07",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "305",
+      "recordNumber": "309",
+      "name": "バイオテクノロジー技術者",
+      "aliases": [
+        "バイオケミカル開発技術者",
+        "バイオテクノロジー開発技術者"
+      ],
+      "classificationCode": "02_006-07",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "306",
+      "recordNumber": "310",
+      "name": "宇宙開発技術者",
+      "aliases": [],
+      "classificationCode": "02_011-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "307",
+      "recordNumber": "311",
+      "name": "航空機開発エンジニア（ジェットエンジン）",
+      "aliases": [
+        "航空機エンジン開発技術者"
+      ],
+      "classificationCode": "02_006-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "308",
+      "recordNumber": "312",
+      "name": "システムエンジニア（受託開発）",
+      "aliases": [
+        "オープン系ソフトウェア開発技術者"
+      ],
+      "classificationCode": "02_009-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "309",
+      "recordNumber": "313",
+      "name": "プログラマー",
+      "aliases": [
+        "コーダー（プログラミング）",
+        "コンピュータゲームプログラマー",
+        "ソフトウェアプログラマー",
+        "Webアプリケーションプログラマー",
+        "Webプログラマー"
+      ],
+      "classificationCode": "02_009-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "310",
+      "recordNumber": "314",
+      "name": "システムエンジニア（Webサービス開発）",
+      "aliases": [
+        "WEB系ソフトウェア開発技術者"
+      ],
+      "classificationCode": "02_009-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "311",
+      "recordNumber": "315",
+      "name": "システムエンジニア（組込み、IoT）",
+      "aliases": [
+        "組込系ソフトウェア開発技術者",
+        "制御系ソフトウェア開発技術者",
+        "ファームウェア開発技術者",
+        "組込みエンジニア"
+      ],
+      "classificationCode": "02_009-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "312",
+      "recordNumber": "316",
+      "name": "ソフトウェア開発（パッケージソフト）",
+      "aliases": [
+        "ソフトウェア開発技術者（パッケージソフト）"
+      ],
+      "classificationCode": "02_009-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "313",
+      "recordNumber": "317",
+      "name": "ソフトウェア開発（スマホアプリ）",
+      "aliases": [
+        "ソフトウェア開発技術者（スマートフォンアプリ）",
+        "モバイルアプリケーション開発技術者（スマートフォン・タブレットコンピューター・その他の携帯端末）"
+      ],
+      "classificationCode": "02_009-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "314",
+      "recordNumber": "318",
+      "name": "システムエンジニア（基盤システム）",
+      "aliases": [
+        "社内システムエンジニア（主にシステムの設計に従事するもの）",
+        "システムアーキテクト",
+        "システム設計技術者",
+        "ソフトウェアアーキテクト",
+        "ITアーキテクト",
+        "インフラエンジニア",
+        "基盤システムエンジニア"
+      ],
+      "classificationCode": "02_010-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "315",
+      "recordNumber": "319",
+      "name": "運用・管理（IT）",
+      "aliases": [
+        "サーバー管理者",
+        "システム管理者",
+        "運用監視オペレーター",
+        "システム運用オペレーター",
+        "システム運用管理者",
+        "システム保守員",
+        "ネットワーク管理者"
+      ],
+      "classificationCode": "02_010-04",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "316",
+      "recordNumber": "320",
+      "name": "ヘルプデスク（IT）",
+      "aliases": [
+        "社内サポートデスク",
+        "社内ヘルプデスク"
+      ],
+      "classificationCode": "02_010-05",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "317",
+      "recordNumber": "321",
+      "name": "セキュリティエキスパート（オペレーション）",
+      "aliases": [
+        "情報セキュリティ技術者",
+        "セキュリティアナリスト",
+        "セキュリティエンジニア（オペレーション）"
+      ],
+      "classificationCode": "02_010-04",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "318",
+      "recordNumber": "322",
+      "name": "プロジェクトマネージャ（IT）",
+      "aliases": [
+        "プロジェクトマネージャ（システム開発）",
+        "プロジェクトマネージャ（アプリケーションソフトウェア開発）",
+        "プロジェクトマネージャ（情報処理）"
+      ],
+      "classificationCode": "02_010-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "319",
+      "recordNumber": "323",
+      "name": "データサイエンティスト",
+      "aliases": [],
+      "classificationCode": "02_011-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "320",
+      "recordNumber": "324",
+      "name": "DXプロデューサー",
+      "aliases": [
+        "デジタルビジネスイノベーター",
+        "ビジネスアーキテクト"
+      ],
+      "classificationCode": "02_010-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "321",
+      "recordNumber": "325",
+      "name": "AIエンジニア",
+      "aliases": [],
+      "classificationCode": "02_010-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "322",
+      "recordNumber": "326",
+      "name": "Webデザイナー（Web制作会社）",
+      "aliases": [
+        "ホームページデザイナー",
+        "Webクリエイター"
+      ],
+      "classificationCode": "03_017-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "323",
+      "recordNumber": "327",
+      "name": "Webディレクター（Web制作会社）",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "324",
+      "recordNumber": "328",
+      "name": "動画制作",
+      "aliases": [
+        "動画制作者",
+        "動画編集者"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "325",
+      "recordNumber": "329",
+      "name": "CG制作",
+      "aliases": [
+        "CGデザイナー",
+        "CG制作者"
+      ],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "326",
+      "recordNumber": "330",
+      "name": "ゲームクリエーター",
+      "aliases": [
+        "ゲームプランナー"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "327",
+      "recordNumber": "331",
+      "name": "アートディレクター",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "328",
+      "recordNumber": "332",
+      "name": "広告デザイナー",
+      "aliases": [],
+      "classificationCode": "03_017-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "329",
+      "recordNumber": "333",
+      "name": "広告ディレクター",
+      "aliases": [
+        "クリエイティブディレクター（広告業）"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "330",
+      "recordNumber": "334",
+      "name": "グラフィックデザイナー",
+      "aliases": [
+        "広告デザイナー",
+        "サインデザイナー",
+        "パッケージデザイナー"
+      ],
+      "classificationCode": "03_017-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "331",
+      "recordNumber": "335",
+      "name": "コピーライター",
+      "aliases": [
+        "クリエイター（広告コピーを創作するもの）"
+      ],
+      "classificationCode": "03_015-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "332",
+      "recordNumber": "336",
+      "name": "ディスプレイデザイナー",
+      "aliases": [
+        "商品装飾展示係",
+        "ショーウィンドウ飾付職"
+      ],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "333",
+      "recordNumber": "337",
+      "name": "インテリアデザイナー",
+      "aliases": [],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "334",
+      "recordNumber": "338",
+      "name": "インテリアコーディネーター",
+      "aliases": [],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "335",
+      "recordNumber": "339",
+      "name": "カラーコーディネーター",
+      "aliases": [],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "336",
+      "recordNumber": "340",
+      "name": "ファッションデザイナー",
+      "aliases": [
+        "テキスタイルデザイナー",
+        "服飾デザイナー"
+      ],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "337",
+      "recordNumber": "341",
+      "name": "パタンナー",
+      "aliases": [
+        "アパレルCADオペレーター",
+        "衣服型紙製図工",
+        "パターンメーカー"
+      ],
+      "classificationCode": "12_080-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "338",
+      "recordNumber": "342",
+      "name": "イラストレーター",
+      "aliases": [],
+      "classificationCode": "03_016-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "339",
+      "recordNumber": "343",
+      "name": "アニメーター",
+      "aliases": [
+        "デジタルペインター",
+        "動画作画家"
+      ],
+      "classificationCode": "12_080-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "340",
+      "recordNumber": "344",
+      "name": "看板制作",
+      "aliases": [
+        "看板工",
+        "看板図案画工"
+      ],
+      "classificationCode": "12_080-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "341",
+      "recordNumber": "345",
+      "name": "テクニカルイラストレーター",
+      "aliases": [],
+      "classificationCode": "03_016-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "342",
+      "recordNumber": "346",
+      "name": "スタイリスト",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "343",
+      "recordNumber": "347",
+      "name": "ブックデザイナー",
+      "aliases": [
+        "装丁家"
+      ],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "344",
+      "recordNumber": "348",
+      "name": "テキスタイルデザイナー",
+      "aliases": [],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "345",
+      "recordNumber": "349",
+      "name": "フラワーデザイナー",
+      "aliases": [],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "346",
+      "recordNumber": "350",
+      "name": "ジュエリーデザイナー",
+      "aliases": [
+        "アクセサリーデザイナー"
+      ],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "347",
+      "recordNumber": "351",
+      "name": "フードコーディネーター",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "348",
+      "recordNumber": "352",
+      "name": "舞台美術スタッフ",
+      "aliases": [
+        "美術監督"
+      ],
+      "classificationCode": "03_018-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "349",
+      "recordNumber": "353",
+      "name": "舞台照明スタッフ",
+      "aliases": [
+        "照明監督"
+      ],
+      "classificationCode": "03_018-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "350",
+      "recordNumber": "354",
+      "name": "インダストリアルデザイナー",
+      "aliases": [],
+      "classificationCode": "03_017-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "351",
+      "recordNumber": "355",
+      "name": "商業カメラマン",
+      "aliases": [
+        "営業写真家",
+        "フォトグラファー"
+      ],
+      "classificationCode": "03_016-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "352",
+      "recordNumber": "356",
+      "name": "テレビカメラマン",
+      "aliases": [
+        "動画カメラマン"
+      ],
+      "classificationCode": "03_016-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "353",
+      "recordNumber": "357",
+      "name": "報道カメラマン",
+      "aliases": [],
+      "classificationCode": "03_016-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "354",
+      "recordNumber": "358",
+      "name": "テクニカルライター",
+      "aliases": [
+        "マニュアルライター"
+      ],
+      "classificationCode": "03_015-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "355",
+      "recordNumber": "359",
+      "name": "製版オペレーター、DTPオペレーター",
+      "aliases": [
+        "オフセット製版作業員",
+        "グラビア製版作業員",
+        "スクリーン製版作業員",
+        "製版カメラ作業員",
+        "電子製版作業員",
+        "版下製作作業員"
+      ],
+      "classificationCode": "12_073-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "356",
+      "recordNumber": "360",
+      "name": "印刷オペレーター",
+      "aliases": [
+        "印刷設備オペレーター",
+        "印刷物光沢加工設備オペレーター",
+        "樹脂凸版印刷作業員",
+        "フレキソ印刷作業員",
+        "平板印刷作業員",
+        "写真印刷作業員",
+        "美術印刷作業員"
+      ],
+      "classificationCode": "12_069-05",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "357",
+      "recordNumber": "361",
+      "name": "製本オペレーター",
+      "aliases": [
+        "製本設備オペレーター",
+        "はく押し設備オペレーター",
+        "折り作業員",
+        "製本仕上作業員",
+        "製本とじ作業員",
+        "丁合作業員",
+        "表紙製造作業員"
+      ],
+      "classificationCode": "12_073-06",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "358",
+      "recordNumber": "362",
+      "name": "ITコンサルタント",
+      "aliases": [
+        "ERPパッケージコンサルタント",
+        "システムアナリスト",
+        "システムコンサルタント",
+        "情報セキュリティコンサルタント"
+      ],
+      "classificationCode": "02_010-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "359",
+      "recordNumber": "363",
+      "name": "広報コンサルタント",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "360",
+      "recordNumber": "364",
+      "name": "人事コンサルタント",
+      "aliases": [
+        "経営指導員（商工会議所、商工会）",
+        "中小企業診断士"
+      ],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "361",
+      "recordNumber": "365",
+      "name": "知的財産コーディネーター",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "362",
+      "recordNumber": "366",
+      "name": "知的財産サーチャー",
+      "aliases": [
+        "サーチャー（特許調査）"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "363",
+      "recordNumber": "388",
+      "name": "土木・建築工学研究者",
+      "aliases": [
+        "建築工学研究者",
+        "土木工学研究者"
+      ],
+      "classificationCode": "02_004-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "364",
+      "recordNumber": "389",
+      "name": "情報工学研究者",
+      "aliases": [],
+      "classificationCode": "02_004-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "365",
+      "recordNumber": "390",
+      "name": "医学研究者",
+      "aliases": [
+        "病理学研究者"
+      ],
+      "classificationCode": "02_004-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "366",
+      "recordNumber": "391",
+      "name": "科学捜査研究所鑑定技術職員",
+      "aliases": [],
+      "classificationCode": "02_004-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "367",
+      "recordNumber": "392",
+      "name": "薬学研究者",
+      "aliases": [
+        "医薬品研究者"
+      ],
+      "classificationCode": "02_004-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "368",
+      "recordNumber": "393",
+      "name": "バイオテクノロジー研究者",
+      "aliases": [
+        "生命工学研究者"
+      ],
+      "classificationCode": "02_004-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "369",
+      "recordNumber": "394",
+      "name": "エコノミスト",
+      "aliases": [
+        "経営学研究者",
+        "経済学研究者"
+      ],
+      "classificationCode": "02_004-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "370",
+      "recordNumber": "395",
+      "name": "特別支援学校教員、特別支援学級教員",
+      "aliases": [
+        "特別支援学校教諭"
+      ],
+      "classificationCode": "05_031-06",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "371",
+      "recordNumber": "396",
+      "name": "学習塾教師",
+      "aliases": [],
+      "classificationCode": "05_032-01",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "372",
+      "recordNumber": "397",
+      "name": "日本語教師",
+      "aliases": [],
+      "classificationCode": "05_031-99",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "373",
+      "recordNumber": "398",
+      "name": "英会話教師",
+      "aliases": [
+        "英会話教室講師(各種学校でないもの）",
+        "英会話学院教師（各種学校）"
+      ],
+      "classificationCode": "05_032-01",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "374",
+      "recordNumber": "399",
+      "name": "職業訓練指導員",
+      "aliases": [
+        "職業訓練指導員（障害者職業能力開発校）",
+        "職業訓練指導員（職業能力開発促進センター）",
+        "職業訓練指導員（認定職業訓練施設）",
+        "職業能力開発校指導員"
+      ],
+      "classificationCode": "05_031-99",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "375",
+      "recordNumber": "400",
+      "name": "社会教育主事",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "376",
+      "recordNumber": "401",
+      "name": "救急救命士",
+      "aliases": [
+        "救急隊員"
+      ],
+      "classificationCode": "10_062-02",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "377",
+      "recordNumber": "402",
+      "name": "外科医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "378",
+      "recordNumber": "403",
+      "name": "小児科医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "379",
+      "recordNumber": "404",
+      "name": "内科医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "380",
+      "recordNumber": "405",
+      "name": "精神科医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "381",
+      "recordNumber": "406",
+      "name": "産婦人科医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "382",
+      "recordNumber": "407",
+      "name": "治験コーディネーター",
+      "aliases": [
+        "治験コーディネーター（CRC）"
+      ],
+      "classificationCode": "04_027-99",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "383",
+      "recordNumber": "408",
+      "name": "医療ソーシャルワーカー",
+      "aliases": [
+        "医療ソーシャルワーカー(MSW)",
+        "精神医療ソーシャルワーカー(PSW)",
+        "精神保健福祉士",
+        "病院ケースワーカー"
+      ],
+      "classificationCode": "08_049-99",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "384",
+      "recordNumber": "409",
+      "name": "福祉ソーシャルワーカー",
+      "aliases": [
+        "家庭相談員",
+        "ケースワーカー（障害者更生相談所）",
+        "児童福祉司",
+        "障害者福祉司",
+        "母子自立支援員",
+        "児童心理司",
+        "福祉事務所地区担当員",
+        "相談員（社会福祉協議会）",
+        "相談員（地域包括支援センター）",
+        "社会福祉士（福祉事務所：相談・助言・援助業務）",
+        "児童相談所相談員",
+        "相談支援専門員（福祉事務所）",
+        "福祉事務所ケースワーカー",
+        "福祉事務所面接員",
+        "婦人相談所相談員"
+      ],
+      "classificationCode": "08_049-02",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "385",
+      "recordNumber": "410",
+      "name": "施設管理者（介護施設）",
+      "aliases": [
+        "特別養護老人ホーム施設長",
+        "養護老人ホーム施設長",
+        "短期入所生活介護事業所管理者",
+        "認知症高齢者グループホーム管理者",
+        "老人デイサービスセンター管理者"
+      ],
+      "classificationCode": "08_049-01",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "386",
+      "recordNumber": "411",
+      "name": "カウンセラー（医療福祉分野）",
+      "aliases": [
+        "公認心理師（医療福祉分野）",
+        "心理カウンセラー（医療福祉分野）",
+        "臨床心理士（医療福祉分野）"
+      ],
+      "classificationCode": "04_027-99",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "387",
+      "recordNumber": "412",
+      "name": "スクールカウンセラー",
+      "aliases": [
+        "学生カウンセラー",
+        "スクールアドバイザー"
+      ],
+      "classificationCode": "03_019-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "388",
+      "recordNumber": "413",
+      "name": "ベビーシッター",
+      "aliases": [
+        "チャイルドシッター",
+        "乳幼児シッター"
+      ],
+      "classificationCode": "09_052-99",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "389",
+      "recordNumber": "414",
+      "name": "フロント（ホテル・旅館）",
+      "aliases": [
+        "ホテルフロント係",
+        "旅館フロント係"
+      ],
+      "classificationCode": "09_056-04",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "390",
+      "recordNumber": "415",
+      "name": "客室清掃・整備担当（ホテル・旅館）",
+      "aliases": [
+        "ハウスキーパー（客室係）",
+        "ベッドメーク係",
+        "客室係（ホテル・旅館：清掃の仕事に従事するもの）",
+        "客室清掃員（ホテル・旅館）",
+        "ルーム係（ホテル：清掃の仕事に従事するもの）"
+      ],
+      "classificationCode": "15_096-03",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "391",
+      "recordNumber": "416",
+      "name": "接客担当（ホテル・旅館）",
+      "aliases": [
+        "接客係（ホテル）",
+        "接客係（旅館）",
+        "ドアマン",
+        "ベルパーソン",
+        "コンシェルジュ（ホテル）"
+      ],
+      "classificationCode": "09_056-05",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "392",
+      "recordNumber": "417",
+      "name": "ホールスタッフ（レストラン）",
+      "aliases": [
+        "フロア係（飲食店）",
+        "フロアスタッフ（飲食店）",
+        "ホール係（飲食店）",
+        "ウエイター",
+        "ウエイトレス"
+      ],
+      "classificationCode": "09_056-03",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "393",
+      "recordNumber": "418",
+      "name": "飲食チェーン店店員",
+      "aliases": [],
+      "classificationCode": "09_056-03",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "394",
+      "recordNumber": "419",
+      "name": "調香師",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "395",
+      "recordNumber": "420",
+      "name": "アロマセラピスト",
+      "aliases": [],
+      "classificationCode": "09_058-99",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "396",
+      "recordNumber": "421",
+      "name": "リフレクソロジスト",
+      "aliases": [],
+      "classificationCode": "09_058-99",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "397",
+      "recordNumber": "422",
+      "name": "葬祭ディレクター",
+      "aliases": [
+        "葬儀セレモニー準備人",
+        "葬祭飾付人"
+      ],
+      "classificationCode": "09_058-06",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "398",
+      "recordNumber": "423",
+      "name": "きもの着付指導員",
+      "aliases": [
+        "衣装着付師",
+        "着付師"
+      ],
+      "classificationCode": "09_053-99",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "399",
+      "recordNumber": "424",
+      "name": "速記者、音声反訳者",
+      "aliases": [
+        "字幕速記者（ステノキャプショナー）",
+        "反訳者（速記）"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "400",
+      "recordNumber": "425",
+      "name": "パラリーガル（弁護士補助職）",
+      "aliases": [],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "401",
+      "recordNumber": "426",
+      "name": "秘書",
+      "aliases": [
+        "セクレタリー"
+      ],
+      "classificationCode": "06_034-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "402",
+      "recordNumber": "427",
+      "name": "受付事務",
+      "aliases": [
+        "案内係(会社）",
+        "会社受付係"
+      ],
+      "classificationCode": "06_034-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "403",
+      "recordNumber": "428",
+      "name": "一般事務",
+      "aliases": [
+        "一般事務員",
+        "庶務係事務員（一般事務の仕事に従事するもの）"
+      ],
+      "classificationCode": "06_034-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "404",
+      "recordNumber": "429",
+      "name": "データ入力",
+      "aliases": [
+        "キーパンチャー",
+        "データエントリー係員",
+        "データ入力オペレーター",
+        "データ入力作業員"
+      ],
+      "classificationCode": "06_043-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "405",
+      "recordNumber": "430",
+      "name": "経理事務",
+      "aliases": [
+        "会計経理事務員",
+        "会計事務員"
+      ],
+      "classificationCode": "06_038-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "406",
+      "recordNumber": "431",
+      "name": "営業事務",
+      "aliases": [
+        "営業アシスタント",
+        "受発注管理事務員"
+      ],
+      "classificationCode": "06_040-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "407",
+      "recordNumber": "432",
+      "name": "人事事務",
+      "aliases": [
+        "求人係事務員",
+        "給与係事務員",
+        "人事管理事務員",
+        "福利厚生事務員",
+        "労務管理係"
+      ],
+      "classificationCode": "06_033-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "408",
+      "recordNumber": "433",
+      "name": "総務事務",
+      "aliases": [
+        "総務係事務員",
+        "文書係事務員",
+        "庶務係事務員（総務事務の仕事に従事するもの）"
+      ],
+      "classificationCode": "06_033-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "409",
+      "recordNumber": "434",
+      "name": "企画・調査担当",
+      "aliases": [
+        "企画係事務員",
+        "調査事務員"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "410",
+      "recordNumber": "435",
+      "name": "調剤薬局事務",
+      "aliases": [
+        "健康保険請求事務員",
+        "調剤薬局事務員"
+      ],
+      "classificationCode": "06_037-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "411",
+      "recordNumber": "436",
+      "name": "介護事務",
+      "aliases": [
+        "介護保険事務員",
+        "介護保険請求事務員"
+      ],
+      "classificationCode": "06_037-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "412",
+      "recordNumber": "437",
+      "name": "生産・工程管理事務",
+      "aliases": [
+        "工程管理事務員",
+        "生産管理事務員",
+        "製品原価管理事務員"
+      ],
+      "classificationCode": "06_039-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "413",
+      "recordNumber": "438",
+      "name": "銀行等窓口事務",
+      "aliases": [
+        "銀行窓口係",
+        "信用金庫窓口係",
+        "為替窓口事務員",
+        "銀行等窓口事務員",
+        "銀行テラー",
+        "郵便局貯金窓口係"
+      ],
+      "classificationCode": "06_038-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "414",
+      "recordNumber": "439",
+      "name": "貿易事務",
+      "aliases": [
+        "通関業務係",
+        "輸出入事務員"
+      ],
+      "classificationCode": "06_040-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "415",
+      "recordNumber": "440",
+      "name": "損害保険事務",
+      "aliases": [
+        "保険金支払係事務員",
+        "損害保険事務員"
+      ],
+      "classificationCode": "06_040-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "416",
+      "recordNumber": "441",
+      "name": "通信販売受付事務",
+      "aliases": [
+        "テレコミュニケーター",
+        "通信販売受付事務員（電話によるもの）",
+        "インターネット通信販売受付事務員",
+        "ネットショップオペレーター"
+      ],
+      "classificationCode": "06_036-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "417",
+      "recordNumber": "442",
+      "name": "学校事務",
+      "aliases": [],
+      "classificationCode": "06_035-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "418",
+      "recordNumber": "443",
+      "name": "医療事務",
+      "aliases": [
+        "健康保険請求事務員",
+        "歯科医療請求事務員",
+        "病院受付係",
+        "病棟クラーク",
+        "診療情報管理係事務員",
+        "診療報酬請求事務員"
+      ],
+      "classificationCode": "06_037-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "419",
+      "recordNumber": "444",
+      "name": "広報・PR担当",
+      "aliases": [
+        "広報係事務員"
+      ],
+      "classificationCode": "06_033-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "420",
+      "recordNumber": "445",
+      "name": "IR広報担当",
+      "aliases": [],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "421",
+      "recordNumber": "446",
+      "name": "企業法務担当",
+      "aliases": [
+        "企業法務事務員"
+      ],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "422",
+      "recordNumber": "447",
+      "name": "コンプライアンス推進担当",
+      "aliases": [
+        "コンプライアンスオフィサー（法令遵守責任者）",
+        "コンプライアンス担当事務員"
+      ],
+      "classificationCode": "06_035-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "423",
+      "recordNumber": "448",
+      "name": "医薬品販売/登録販売者",
+      "aliases": [
+        "医薬品登録販売者",
+        "ドラッグストア店員（医薬品登録販売者）"
+      ],
+      "classificationCode": "07_045-08",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "424",
+      "recordNumber": "449",
+      "name": "リサイクルショップ店員",
+      "aliases": [],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "425",
+      "recordNumber": "450",
+      "name": "携帯電話販売",
+      "aliases": [
+        "携帯電話販売店員",
+        "携帯電話ショップ店員",
+        "携帯電話ショップ販売員",
+        "携帯電話販売員"
+      ],
+      "classificationCode": "07_045-11",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "426",
+      "recordNumber": "451",
+      "name": "CDショップ店員",
+      "aliases": [],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "427",
+      "recordNumber": "452",
+      "name": "コンサルティング営業（IT）",
+      "aliases": [
+        "システム営業部員",
+        "システム開発営業員",
+        "IT営業員"
+      ],
+      "classificationCode": "07_048-06",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "428",
+      "recordNumber": "453",
+      "name": "保険営業（生命保険、損害保険）",
+      "aliases": [
+        "生命保険営業員",
+        "損害保険営業員"
+      ],
+      "classificationCode": "07_048-07",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "429",
+      "recordNumber": "454",
+      "name": "銀行・信用金庫渉外担当",
+      "aliases": [
+        "銀行渉外係",
+        "信用金庫渉外係",
+        "信用組合渉外係"
+      ],
+      "classificationCode": "07_048-07",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "430",
+      "recordNumber": "455",
+      "name": "ディーラー",
+      "aliases": [
+        "為替ディーラー"
+      ],
+      "classificationCode": "07_047-99",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "431",
+      "recordNumber": "456",
+      "name": "マーケティング・リサーチャー",
+      "aliases": [
+        "マーケッター",
+        "マーケター"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "432",
+      "recordNumber": "457",
+      "name": "証券アナリスト",
+      "aliases": [],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "433",
+      "recordNumber": "461",
+      "name": "商品企画開発（チェーンストア）",
+      "aliases": [
+        "商品企画開発事務員（チェーンストア）"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "434",
+      "recordNumber": "462",
+      "name": "OA機器営業",
+      "aliases": [
+        "技術営業員（電気機器）",
+        "セールスエンジニア（電気機器）",
+        "OA機器営業員"
+      ],
+      "classificationCode": "07_048-04",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "435",
+      "recordNumber": "463",
+      "name": "証券外務員",
+      "aliases": [
+        "証券営業員"
+      ],
+      "classificationCode": "07_047-99",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "436",
+      "recordNumber": "464",
+      "name": "化粧品販売/美容部員",
+      "aliases": [
+        "化粧品販売員",
+        "美容部員（化粧品販売）"
+      ],
+      "classificationCode": "07_045-09",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "437",
+      "recordNumber": "465",
+      "name": "化粧品訪問販売",
+      "aliases": [
+        "化粧品訪問販売員"
+      ],
+      "classificationCode": "07_045-16",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "438",
+      "recordNumber": "466",
+      "name": "清涼飲料ルートセールス",
+      "aliases": [
+        "清涼飲料ルートセールス員"
+      ],
+      "classificationCode": "13_082-02",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "439",
+      "recordNumber": "467",
+      "name": "自転車販売",
+      "aliases": [
+        "自転車販売店員"
+      ],
+      "classificationCode": "07_045-14",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "440",
+      "recordNumber": "468",
+      "name": "アクチュアリー",
+      "aliases": [
+        "保険数理人",
+        "年金数理人"
+      ],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "441",
+      "recordNumber": "469",
+      "name": "内部監査人",
+      "aliases": [],
+      "classificationCode": "06_033-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "442",
+      "recordNumber": "470",
+      "name": "ファンドマネージャー",
+      "aliases": [],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "443",
+      "recordNumber": "471",
+      "name": "M&Aマネージャー、M&Aコンサルタント/M&Aアドバイザー",
+      "aliases": [],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "444",
+      "recordNumber": "472",
+      "name": "代理店営業（保険会社）",
+      "aliases": [
+        "ソリシター"
+      ],
+      "classificationCode": "07_048-07",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "445",
+      "recordNumber": "473",
+      "name": "マンション管理員",
+      "aliases": [
+        "マンション管理人",
+        "アパート管理人",
+        "下宿管理人",
+        "住込管理人（マンション）"
+      ],
+      "classificationCode": "09_057-01",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "446",
+      "recordNumber": "474",
+      "name": "マンション管理フロント",
+      "aliases": [
+        "フロント"
+      ],
+      "classificationCode": "06_035-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "447",
+      "recordNumber": "475",
+      "name": "雑踏・交通誘導警備員",
+      "aliases": [
+        "建設現場交通誘導員",
+        "交通誘導員",
+        "イベント警備員",
+        "催事警備員",
+        "会場警備員",
+        "会場整理員"
+      ],
+      "classificationCode": "10_059-02",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "448",
+      "recordNumber": "476",
+      "name": "ボイラーオペレーター",
+      "aliases": [
+        "ボイラー技士"
+      ],
+      "classificationCode": "13_089-03",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "449",
+      "recordNumber": "477",
+      "name": "トラックドライバー",
+      "aliases": [
+        "大型トラック運転手",
+        "小型トラック運転手",
+        "中型トラック運転手",
+        "トラック運転手（冷蔵・冷凍車）"
+      ],
+      "classificationCode": "13_083-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "450",
+      "recordNumber": "478",
+      "name": "トレーラートラックドライバー",
+      "aliases": [
+        "貨物トレーラー運転手",
+        "キャリアカー（トレーラー）運転手",
+        "車載専用車（トレーラー）運転手",
+        "タンクローリー（トレーラー）運転手",
+        "バルク車（トレーラー）運転手",
+        "バルクトレーラー運転手"
+      ],
+      "classificationCode": "13_083-03",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "451",
+      "recordNumber": "479",
+      "name": "ダンプカー運転手",
+      "aliases": [
+        "ダンプ運転手",
+        "ダンプトラック運転手"
+      ],
+      "classificationCode": "13_083-04",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "452",
+      "recordNumber": "480",
+      "name": "送迎バス等運転手",
+      "aliases": [
+        "自家用バス運転手",
+        "シャトルバス運転手",
+        "スクールバス運転手",
+        "マイクロバス運転手",
+        "特別支援学校送迎バス運転手",
+        "催事会場送迎バス運転手",
+        "施設利用者送迎バス運転手",
+        "従業員送迎バス運転手",
+        "幼稚園送迎バス運転手"
+      ],
+      "classificationCode": "13_084-02",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "453",
+      "recordNumber": "481",
+      "name": "介護タクシー運転手",
+      "aliases": [
+        "福祉タクシー運転手"
+      ],
+      "classificationCode": "13_085-04",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "454",
+      "recordNumber": "482",
+      "name": "ルート配送ドライバー",
+      "aliases": [
+        "受託配送員（ルート配送）",
+        "商品配達員（ルート配送）",
+        "セールスドライバー（ルート配送）",
+        "ルートセールス員（配達を主とするもの）",
+        "ルート集配員"
+      ],
+      "classificationCode": "13_082-02",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "455",
+      "recordNumber": "483",
+      "name": "宅配便配達員",
+      "aliases": [
+        "商品配達員（ルート配送を除く）",
+        "受託配送員（ルート配送を除く）",
+        "バイク便配達人",
+        "メール便配達員（郵便集配員を除く）"
+      ],
+      "classificationCode": "13_082-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "456",
+      "recordNumber": "484",
+      "name": "新聞配達員",
+      "aliases": [],
+      "classificationCode": "13_082-04",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "457",
+      "recordNumber": "485",
+      "name": "倉庫作業員",
+      "aliases": [
+        "仕分作業員（倉庫）"
+      ],
+      "classificationCode": "15_095-03",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "458",
+      "recordNumber": "486",
+      "name": "ピッキング作業員",
+      "aliases": [
+        "商品仕分け作業員",
+        "商品取集め作業員",
+        "商品ピッキング作業員",
+        "ピッキング作業員（倉庫）",
+        "ピッキング作業員（倉庫卸・小売店）"
+      ],
+      "classificationCode": "15_098-02",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "459",
+      "recordNumber": "487",
+      "name": "ハウスクリーニング",
+      "aliases": [
+        "個人宅清掃員",
+        "賃貸住宅清掃員"
+      ],
+      "classificationCode": "15_096-02",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "460",
+      "recordNumber": "488",
+      "name": "ペストコントロール従事者（害虫等防除・駆除従事者）",
+      "aliases": [
+        "害虫駆除作業員",
+        "消毒作業員",
+        "白あり駆除作業員",
+        "防疫作業員",
+        "捕鼠作業員",
+        "ペストコントロールオペレーター(PCO）"
+      ],
+      "classificationCode": "15_096-99",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "461",
+      "recordNumber": "489",
+      "name": "製品包装作業員",
+      "aliases": [
+        "贈答品包装作業員",
+        "箱詰作業員（包装）",
+        "パッケージ機械操作員",
+        "フィルム包装作業員",
+        "袋詰作業員（包装）",
+        "包装機械操作員"
+      ],
+      "classificationCode": "15_097-01",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "462",
+      "recordNumber": "490",
+      "name": "工場労務作業員",
+      "aliases": [
+        "工場労務員",
+        "構内作業員（工場）"
+      ],
+      "classificationCode": "15_099-01",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "463",
+      "recordNumber": "491",
+      "name": "バックヤード作業員（スーパー食品部門）",
+      "aliases": [
+        "パッケージ機械操作員",
+        "フィルム包装作業員",
+        "商品品出作業員（小売店）",
+        "商品陳列作業員（小売店）",
+        "商品補充作業員（小売店）",
+        "店頭商品補充係"
+      ],
+      "classificationCode": "15_099-02",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "464",
+      "recordNumber": "492",
+      "name": "調理補助",
+      "aliases": [
+        "調理助手",
+        "調理手伝人"
+      ],
+      "classificationCode": "09_055-08",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "465",
+      "recordNumber": "493",
+      "name": "給食調理員",
+      "aliases": [
+        "学生食堂調理員",
+        "学校給食センター調理員",
+        "調理員（学校）",
+        "調理員（医療施設）",
+        "調理員（社員食堂）"
+      ],
+      "classificationCode": "09_055-06",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "466",
+      "recordNumber": "494",
+      "name": "ごみ収集作業員",
+      "aliases": [],
+      "classificationCode": "15_096-05",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "467",
+      "recordNumber": "495",
+      "name": "産業廃棄物処理技術者",
+      "aliases": [
+        "廃棄物処理施設技術管理者"
+      ],
+      "classificationCode": "02_011-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "468",
+      "recordNumber": "496",
+      "name": "産業廃棄物収集運搬作業員",
+      "aliases": [
+        "がれき収集作業員",
+        "工場汚泥回収作業員",
+        "工場廃液回収作業員",
+        "廃プラスチック回収作業員",
+        "医療廃棄物回収作業員",
+        "医療廃棄物収集作業員"
+      ],
+      "classificationCode": "15_096-06",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "469",
+      "recordNumber": "497",
+      "name": "積卸作業員",
+      "aliases": [
+        "運搬作業員",
+        "貨物積卸作業員",
+        "工場内運搬作業員",
+        "構内運搬員",
+        "コンテナ係",
+        "トラック荷役作業員",
+        "引越作業員"
+      ],
+      "classificationCode": "15_095-02",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "470",
+      "recordNumber": "498",
+      "name": "こん包作業員",
+      "aliases": [
+        "出荷作業員（荷造を主とするもの）",
+        "荷造機械操作員",
+        "荷造検査工",
+        "荷造工",
+        "箱詰荷造工"
+      ],
+      "classificationCode": "15_095-04",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "471",
+      "recordNumber": "499",
+      "name": "港湾荷役作業員",
+      "aliases": [
+        "船内荷役作業員",
+        "沿岸荷役作業員"
+      ],
+      "classificationCode": "15_095-01",
+      "categoryKey": "logistics-cleaning"
+    },
+    {
+      "catalogId": "472",
+      "recordNumber": "500",
+      "name": "ブリーダー",
+      "aliases": [
+        "動物繁殖作業員"
+      ],
+      "classificationCode": "11_064-04",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "473",
+      "recordNumber": "501",
+      "name": "自然保護官（レンジャー）",
+      "aliases": [],
+      "classificationCode": "10_063-99",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "474",
+      "recordNumber": "502",
+      "name": "酪農従事者",
+      "aliases": [
+        "搾乳作業員",
+        "肉牛飼育作業員",
+        "乳牛飼育作業員",
+        "酪農作業員"
+      ],
+      "classificationCode": "11_064-03",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "475",
+      "recordNumber": "503",
+      "name": "水産養殖従事者",
+      "aliases": [
+        "うなぎ養殖作業員",
+        "金魚養殖作業員",
+        "鯉養殖作業員",
+        "たい養殖作業員",
+        "はまち養殖作業員",
+        "ふぐ養殖作業員",
+        "かき養殖作業員",
+        "しじみ養殖作業員",
+        "帆立貝養殖作業員",
+        "昆布養殖作業員",
+        "のり養殖作業員",
+        "わかめ養殖作業員",
+        "貝類養殖作業員",
+        "魚類養殖作業員"
+      ],
+      "classificationCode": "11_066-04",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "476",
+      "recordNumber": "504",
+      "name": "稲作農業者",
+      "aliases": [
+        "水稲栽培作業員"
+      ],
+      "classificationCode": "11_064-01",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "477",
+      "recordNumber": "505",
+      "name": "ハウス野菜栽培者",
+      "aliases": [
+        "温室野菜栽培作業員",
+        "ハウス野菜栽培作業員",
+        "野菜栽培作業員（ハウス栽培）"
+      ],
+      "classificationCode": "11_064-02",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "478",
+      "recordNumber": "506",
+      "name": "果樹栽培者",
+      "aliases": [
+        "果樹栽培作業員"
+      ],
+      "classificationCode": "11_064-02",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "479",
+      "recordNumber": "507",
+      "name": "花き栽培者",
+      "aliases": [
+        "植木栽培作業員",
+        "花き栽培作業員"
+      ],
+      "classificationCode": "11_064-02",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "480",
+      "recordNumber": "508",
+      "name": "畜産技術者",
+      "aliases": [
+        "家畜人工授精師（獣医師でないもの）",
+        "畜産技術指導員",
+        "ひな鑑別員",
+        "普及指導員（畜産）"
+      ],
+      "classificationCode": "02_005-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "481",
+      "recordNumber": "509",
+      "name": "沿岸漁業従事者",
+      "aliases": [
+        "沿岸漁業者",
+        "地びき網ひき作業員",
+        "潜水漁師",
+        "定置網漁師"
+      ],
+      "classificationCode": "11_066-01",
+      "categoryKey": "agriculture"
+    },
+    {
+      "catalogId": "482",
+      "recordNumber": "510",
+      "name": "動物看護",
+      "aliases": [
+        "アニマルヘルステクニシャン",
+        "動物病院アシスタント",
+        "動物看護師",
+        "動物病院助手"
+      ],
+      "classificationCode": "04_028-99",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "483",
+      "recordNumber": "511",
+      "name": "ドローンパイロット",
+      "aliases": [],
+      "classificationCode": "13_088-99",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "484",
+      "recordNumber": "512",
+      "name": "国会議員",
+      "aliases": [
+        "衆議院議員",
+        "参議院議員"
+      ],
+      "classificationCode": "01_003-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "485",
+      "recordNumber": "513",
+      "name": "国際協力専門家",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "486",
+      "recordNumber": "514",
+      "name": "会社経営者",
+      "aliases": [
+        "会社会長",
+        "CEO（会社最高経営責任者）",
+        "会社社長"
+      ],
+      "classificationCode": "01_001-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "487",
+      "recordNumber": "515",
+      "name": "玩具（おもちゃ）製作",
+      "aliases": [
+        "がん具製造設備オペレーター",
+        "がん具組立工",
+        "人形製造工",
+        "がん具製造工"
+      ],
+      "classificationCode": "12_069-99",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "488",
+      "recordNumber": "516",
+      "name": "法務技官（心理）（矯正心理専門職）",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "489",
+      "recordNumber": "517",
+      "name": "入国審査官",
+      "aliases": [],
+      "classificationCode": "06_035-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "490",
+      "recordNumber": "518",
+      "name": "検察事務官",
+      "aliases": [],
+      "classificationCode": "03_012-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "491",
+      "recordNumber": "519",
+      "name": "労働基準監督官",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "492",
+      "recordNumber": "520",
+      "name": "セキュリティエキスパート（脆弱性診断）",
+      "aliases": [],
+      "classificationCode": "02_010-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "493",
+      "recordNumber": "521",
+      "name": "特許審査官",
+      "aliases": [],
+      "classificationCode": "03_012-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "494",
+      "recordNumber": "522",
+      "name": "NPO法人職員（企画・運営）",
+      "aliases": [],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "495",
+      "recordNumber": "523",
+      "name": "データエンジニア",
+      "aliases": [
+        "ビッグデータエンジニア"
+      ],
+      "classificationCode": "02_010-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "496",
+      "recordNumber": "524",
+      "name": "独立系ファイナンシャル・アドバイザー（IFA）",
+      "aliases": [],
+      "classificationCode": "03_013-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "497",
+      "recordNumber": "525",
+      "name": "タンクローリー乗務員",
+      "aliases": [],
+      "classificationCode": "13_083-99",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "498",
+      "recordNumber": "526",
+      "name": "検査工（工業製品）",
+      "aliases": [
+        "金属製品検査工",
+        "金属プレス検査工",
+        "製缶検査工",
+        "鉄骨製作検査工",
+        "板金検査工",
+        "めっき検査工",
+        "金属溶接検査工",
+        "医薬品検査工",
+        "加工油脂製品検査工",
+        "化粧品検査工",
+        "ゴム製品検査工",
+        "タイヤ検査工",
+        "プラスチック製品検査工",
+        "液晶パネル製造装置検査工",
+        "機械部品検査工",
+        "業務用空調機器検査工",
+        "建設機械検査工",
+        "原動機検査工",
+        "半導体製造装置検査工",
+        "電気機械検査工",
+        "電気機械部品検査工",
+        "電気通信機械器具検査工",
+        "電子機器部品検査工",
+        "半導体製品検査工"
+      ],
+      "classificationCode": "12_076-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "499",
+      "recordNumber": "527",
+      "name": "食品営業（食品メーカー）",
+      "aliases": [
+        "飲食料品営業部員",
+        "飲食料品ルート営業員",
+        "飲食料品販売営業員",
+        "営業員（飲食料品卸売業）"
+      ],
+      "classificationCode": "07_048-01",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "500",
+      "recordNumber": "528",
+      "name": "自動運転開発エンジニア（自動車）",
+      "aliases": [],
+      "classificationCode": "02_006-04",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "501",
+      "recordNumber": "529",
+      "name": "医療機器開発技術者",
+      "aliases": [
+        "液晶ディスプレイ（LCD）設計技術者",
+        "回路設計技術者",
+        "電子機器設計技術者",
+        "電動機設計技術者",
+        "産業用ロボット設計技術者",
+        "精密測定工具設計技術者",
+        "半導体製造装置設計技術者"
+      ],
+      "classificationCode": "02_006-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "502",
+      "recordNumber": "530",
+      "name": "臨床開発モニター",
+      "aliases": [
+        "臨床開発モニター（CRA）"
+      ],
+      "classificationCode": "06_037-01",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "503",
+      "recordNumber": "531",
+      "name": "キッティング作業員（PCセットアップ作業員）",
+      "aliases": [
+        "PCキッティング係員"
+      ],
+      "classificationCode": "06_043-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "504",
+      "recordNumber": "532",
+      "name": "フードデリバリー（料理配達員）",
+      "aliases": [
+        "宅配ピザ配達員",
+        "宅配弁当配達員"
+      ],
+      "classificationCode": "13_082-01",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "505",
+      "recordNumber": "533",
+      "name": "セキュリティエキスパート（デジタルフォレンジック）",
+      "aliases": [],
+      "classificationCode": "02_010-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "506",
+      "recordNumber": "534",
+      "name": "セキュリティエキスパート（情報セキュリティ監査）",
+      "aliases": [],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "507",
+      "recordNumber": "535",
+      "name": "風力発電のメンテナンス",
+      "aliases": [],
+      "classificationCode": "12_075-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "508",
+      "recordNumber": "536",
+      "name": "総務課長",
+      "aliases": [],
+      "classificationCode": "01_002-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "509",
+      "recordNumber": "537",
+      "name": "人事課長",
+      "aliases": [],
+      "classificationCode": "01_002-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "510",
+      "recordNumber": "538",
+      "name": "経理課長",
+      "aliases": [],
+      "classificationCode": "01_002-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "511",
+      "recordNumber": "539",
+      "name": "営業課長",
+      "aliases": [],
+      "classificationCode": "01_002-01",
+      "categoryKey": "management"
+    },
+    {
+      "catalogId": "512",
+      "recordNumber": "540",
+      "name": "デバッグ作業",
+      "aliases": [
+        "デバック技術員",
+        "デバック作業員",
+        "QA（Quality Assurance）テスター",
+        "QAエンジニア",
+        "ゲームテスター"
+      ],
+      "classificationCode": "02_009-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "513",
+      "recordNumber": "541",
+      "name": "ナレーター",
+      "aliases": [],
+      "classificationCode": "03_018-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "514",
+      "recordNumber": "542",
+      "name": "出荷・受荷事務",
+      "aliases": [
+        "運送事務員",
+        "検収・検品係員",
+        "出荷・発送係員",
+        "倉庫事務員",
+        "保管・管理係員"
+      ],
+      "classificationCode": "06_039-02",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "515",
+      "recordNumber": "543",
+      "name": "郵便局郵便窓口業務",
+      "aliases": [],
+      "classificationCode": "06_042-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "516",
+      "recordNumber": "544",
+      "name": "マーチャンダイザー、バイヤー",
+      "aliases": [
+        "MD",
+        "食料品マーチャンダイザー",
+        "アパレルバイヤー",
+        "マーチャンダイザー（百貨店）"
+      ],
+      "classificationCode": "07_046-01",
+      "categoryKey": "sales"
+    },
+    {
+      "catalogId": "517",
+      "recordNumber": "545",
+      "name": "歯科助手",
+      "aliases": [
+        "歯科アシスタント",
+        "歯科受付係",
+        "歯科診療補助員"
+      ],
+      "classificationCode": "04_028-02",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "518",
+      "recordNumber": "546",
+      "name": "保育補助者",
+      "aliases": [
+        "保育助手",
+        "保育ヘルパー",
+        "保育アシスタント"
+      ],
+      "classificationCode": "05_030-03",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "519",
+      "recordNumber": "547",
+      "name": "造船技能者（造船工、船舶艤装工等）",
+      "aliases": [
+        "造船工",
+        "造船鉄工",
+        "船体ブロック組立工",
+        "船大工",
+        "船舶内張工",
+        "船舶艤装工",
+        "船舶機関部艤装工",
+        "船舶居住部艤装工",
+        "船舶甲板部艤装工",
+        "船舶検査工",
+        "船舶塗装工",
+        "船舶配管工",
+        "船舶配線作業員"
+      ],
+      "classificationCode": "12_071-08",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "520",
+      "recordNumber": "548",
+      "name": "検査工（食料品等）",
+      "aliases": [
+        "食料品検査工"
+      ],
+      "classificationCode": "12_077-01",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "521",
+      "recordNumber": "549",
+      "name": "クレーン運転士",
+      "aliases": [
+        "クレーンオペレーター",
+        "クレーン運転工"
+      ],
+      "classificationCode": "13_089-04",
+      "categoryKey": "transport"
+    },
+    {
+      "catalogId": "522",
+      "recordNumber": "550",
+      "name": "造船技術者（船舶の開発・設計）",
+      "aliases": [],
+      "classificationCode": "02_006-05",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "523",
+      "recordNumber": "551",
+      "name": "バイオマス発電プラントの設計",
+      "aliases": [
+        "建築設計技術者",
+        "建築構造設計技術者",
+        "建築設備設計技術者"
+      ],
+      "classificationCode": "02_008-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "524",
+      "recordNumber": "552",
+      "name": "UX/UIデザイナー",
+      "aliases": [
+        "UI/UXデザイナー"
+      ],
+      "classificationCode": "02_009-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "525",
+      "recordNumber": "553",
+      "name": "アニメ制作進行管理",
+      "aliases": [],
+      "classificationCode": "06_035-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "526",
+      "recordNumber": "554",
+      "name": "プロスポーツ運営団体職員（企画・運営）",
+      "aliases": [
+        "スポーツプロモーター"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "527",
+      "recordNumber": "555",
+      "name": "訪問介護のサービス提供責任者",
+      "aliases": [
+        "サ責",
+        "サービス提供責任者"
+      ],
+      "classificationCode": "08_049-08",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "528",
+      "recordNumber": "556",
+      "name": "障害者グループホーム世話人",
+      "aliases": [],
+      "classificationCode": "09_058-99",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "529",
+      "recordNumber": "557",
+      "name": "汎用金属工作機械工（旋盤工、ボール盤工等）",
+      "aliases": [
+        "旋盤工",
+        "ボール盤工",
+        "フライス盤工",
+        "研削盤工",
+        "仕上機械工"
+      ],
+      "classificationCode": "12_071-05",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "530",
+      "recordNumber": "558",
+      "name": "自動車板金塗装",
+      "aliases": [
+        "自動車車体整備士",
+        "自動車板金塗装工",
+        "板金工（自動車修理業）",
+        "板金塗装工（自動車修理業）"
+      ],
+      "classificationCode": "12_071-09",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "531",
+      "recordNumber": "559",
+      "name": "配電盤・制御盤等組立",
+      "aliases": [
+        "配電盤組立工",
+        "制御盤組立工",
+        "配電装置組立工",
+        "電気制御盤組立工",
+        "開閉制御機器組立工",
+        "制御機器製造工",
+        "制御装置組立工"
+      ],
+      "classificationCode": "12_074-02",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "532",
+      "recordNumber": "560",
+      "name": "社会学研究者",
+      "aliases": [],
+      "classificationCode": "02_004-02",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "533",
+      "recordNumber": "561",
+      "name": "鉄道車両の設計・開発",
+      "aliases": [],
+      "classificationCode": "02_006-05",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "534",
+      "recordNumber": "562",
+      "name": "探偵",
+      "aliases": [
+        "興信所調査員"
+      ],
+      "classificationCode": "03_020-99",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "535",
+      "recordNumber": "563",
+      "name": "麻酔科医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "536",
+      "recordNumber": "564",
+      "name": "検疫官（看護師）",
+      "aliases": [],
+      "classificationCode": "04_023-99",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "537",
+      "recordNumber": "565",
+      "name": "養護教諭",
+      "aliases": [
+        "保健室の先生"
+      ],
+      "classificationCode": "05_031-01",
+      "categoryKey": "education-childcare"
+    },
+    {
+      "catalogId": "538",
+      "recordNumber": "566",
+      "name": "イベントの企画・運営",
+      "aliases": [
+        "イベントプランナー",
+        "企画係事務員"
+      ],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "539",
+      "recordNumber": "567",
+      "name": "学校事務（私立大学）",
+      "aliases": [
+        "大学職員(私立大学)"
+      ],
+      "classificationCode": "06_035-99",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "540",
+      "recordNumber": "568",
+      "name": "児童発達支援管理責任者",
+      "aliases": [
+        "児発管"
+      ],
+      "classificationCode": "08_049-09",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "541",
+      "recordNumber": "569",
+      "name": "納棺師",
+      "aliases": [],
+      "classificationCode": "09_058-06",
+      "categoryKey": "service"
+    },
+    {
+      "catalogId": "542",
+      "recordNumber": "570",
+      "name": "耐震診断",
+      "aliases": [],
+      "classificationCode": "02_008-03",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "543",
+      "recordNumber": "571",
+      "name": "作業環境測定士",
+      "aliases": [],
+      "classificationCode": "02_011-99",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "544",
+      "recordNumber": "572",
+      "name": "下水道管路施設の点検・調査",
+      "aliases": [],
+      "classificationCode": "02_008-06",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "545",
+      "recordNumber": "573",
+      "name": "オーケストラ奏者（団員）",
+      "aliases": [
+        "オーケストラの楽員"
+      ],
+      "classificationCode": "03_018-01",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "546",
+      "recordNumber": "574",
+      "name": "ハローワーク職員",
+      "aliases": [],
+      "classificationCode": "03_019-03",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "547",
+      "recordNumber": "575",
+      "name": "整形外科医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "548",
+      "recordNumber": "576",
+      "name": "衛生管理者",
+      "aliases": [],
+      "classificationCode": "04_027-99",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "549",
+      "recordNumber": "577",
+      "name": "風力発電の企画・調査",
+      "aliases": [],
+      "classificationCode": "06_033-03",
+      "categoryKey": "office"
+    },
+    {
+      "catalogId": "550",
+      "recordNumber": "578",
+      "name": "税関職員",
+      "aliases": [],
+      "classificationCode": "10_063-99",
+      "categoryKey": "security"
+    },
+    {
+      "catalogId": "551",
+      "recordNumber": "579",
+      "name": "自動車検査員",
+      "aliases": [],
+      "classificationCode": "12_079-03",
+      "categoryKey": "manufacturing"
+    },
+    {
+      "catalogId": "552",
+      "recordNumber": "580",
+      "name": "障害福祉サービス管理責任者",
+      "aliases": [],
+      "classificationCode": "08_049-09",
+      "categoryKey": "welfare-care"
+    },
+    {
+      "catalogId": "553",
+      "recordNumber": "581",
+      "name": "ブロックチェーン・エンジニア",
+      "aliases": [],
+      "classificationCode": "02_009-01",
+      "categoryKey": "research-engineering"
+    },
+    {
+      "catalogId": "554",
+      "recordNumber": "582",
+      "name": "声優",
+      "aliases": [],
+      "classificationCode": "03_018-02",
+      "categoryKey": "professional-creative"
+    },
+    {
+      "catalogId": "555",
+      "recordNumber": "583",
+      "name": "産業医",
+      "aliases": [
+        "医師"
+      ],
+      "classificationCode": "04_021-01",
+      "categoryKey": "medical-health"
+    },
+    {
+      "catalogId": "556",
+      "recordNumber": "584",
+      "name": "3Dプリンター技術者",
+      "aliases": [],
+      "classificationCode": "12_080-05",
+      "categoryKey": "manufacturing"
+    }
+  ]
+}

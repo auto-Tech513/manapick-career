@@ -19,6 +19,7 @@ import {
   Newspaper,
   ScrollText,
   Search,
+  Trophy,
   X,
 } from "lucide-react";
 import { Brand } from "./Brand";
@@ -34,6 +35,7 @@ const primary: NavItem[] = [
 ];
 
 const support: NavItem[] = [
+  { href: "/ranking/", label: "人気アクセス", description: "公式の関心順位", icon: Trophy },
   { href: "/skills/", label: "スキル", description: "入口スキルから探す", icon: ScrollText },
   { href: "/glossary/", label: "用語集", description: "職業用語を確認", icon: BookOpenText },
   { href: "/about-method/", label: "編集方針", description: "出典と公開基準", icon: FileCheck2 },
@@ -41,8 +43,8 @@ const support: NavItem[] = [
 ];
 
 const drawerGroups: Array<{ label: string; items: NavItem[] }> = [
-  { label: "仕事を調べる", items: primary.slice(0, 3).concat(support[0]) },
-  { label: "読む・確認する", items: primary.slice(3).concat(support.slice(1)) },
+  { label: "仕事を調べる", items: primary.slice(0, 3).concat(support.slice(0, 2)) },
+  { label: "読む・確認する", items: primary.slice(3).concat(support.slice(2)) },
 ];
 
 const network = [

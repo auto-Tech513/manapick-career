@@ -5,6 +5,9 @@
     "license":{"baseUrl":"https://license.manapick.app"}
   },
   "items": {
+    "learning:home":{"siteId":"learning","path":"/"},
+    "ai:home":{"siteId":"ai","path":"/"},
+    "license:home":{"siteId":"license","path":"/"},
     "learning:ai":{"siteId":"learning","path":"/?genre=ai#search"},
     "learning:prog":{"siteId":"learning","path":"/guide/python/"},
     "learning:data":{"siteId":"learning","path":"/guide/excel-data/"},

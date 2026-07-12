@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpenText, BriefcaseBusiness, Newspaper, Search } from "lucide-react";
+import { BookOpenText, BriefcaseBusiness, Newspaper, Search, Trophy } from "lucide-react";
 
 const items = [
   { href: "/", label: "ホーム", icon: BriefcaseBusiness },
   { href: "/all/", label: "職業", icon: Search },
+  { href: "/ranking/", label: "人気", icon: Trophy },
   { href: "/news/", label: "ニュース", icon: Newspaper },
   { href: "/guide/", label: "ガイド", icon: BookOpenText },
 ];

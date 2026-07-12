@@ -49,22 +49,22 @@ const claim = (id: string, text: string, sourceIds: string[], critical = false):
 
 export const jobs: CareerJob[] = [
   {
-    slug: "ai-dx-lead", name: "AI・DX推進担当", category: "it-ai", status: "published",
-    conclusion: ["現場の課題を見つけ、デジタル技術で仕事の流れを変える役割です。", "ツール導入だけでなく、目的設定、関係者との合意、効果検証までをつなぐ力が入口になります。"],
-    work: ["業務のどこで時間や手戻りが生じているかを聞き取り、改善対象を決めます。", "小さな実証を設計し、利用ルールや教育を整え、結果を見て次の改善につなげます。"],
-    possibilities: ["人の話から課題を整理する作業に関心がある", "新しい道具を試し、使い方を人に説明したい", "部署をまたぐ調整を粘り強く進められる可能性がある"],
-    cautions: ["AIを導入すること自体が目的になると、現場の負担が増えることがあります。", "機密情報・個人情報・著作権を含むデータの扱いを、組織のルールと照合する必要があります。"],
-    tasks: ["業務ヒアリング", "課題と指標の整理", "小規模な実証", "運用ルール作成", "利用者への説明", "効果とリスクの振り返り"],
-    skills: ["業務整理", "ファシリテーション", "データの基礎", "情報セキュリティ", "プロジェクト管理"],
-    learningSteps: ["自分の業務を手順に分ける", "生成AIと表計算で小さな改善を試す", "効果・誤り・安全面を記録する", "関係者向けの運用案を作る"],
+    slug: "it-consultant", name: "ITコンサルタント", category: "it-ai", status: "published",
+    conclusion: ["企業の経営・業務上の課題を整理し、情報技術を使った解決方針と実行計画を提案する仕事です。", "製品を勧める前に、現状、目的、制約、効果の測り方を関係者と合意する力が入口になります。"],
+    work: ["経営層や現場へ聞き取りを行い、業務・システム・組織の課題と優先順位を整理します。", "解決策の比較、要件や導入計画の作成、ベンダーや開発チームとの調整、導入後の評価を支援します。"],
+    possibilities: ["曖昧な相談を質問で具体化したい", "業務と技術の両方を調べて説明したい", "立場の違う人の条件を整理して合意点を探したい"],
+    cautions: ["ITコンサルタントという名称でも、戦略、業務、ERP、セキュリティなど担当領域は異なります。", "提案の影響範囲、費用、情報セキュリティ、移行リスクを確認し、効果を保証する表現は避けます。"],
+    tasks: ["経営・業務課題の聞き取り", "現状分析", "解決策の比較", "要件と導入計画の作成", "関係者調整", "導入後の評価"],
+    skills: ["業務分析", "論点整理", "ITの基礎", "情報セキュリティ", "文書・プレゼンテーション", "プロジェクト管理"],
+    learningSteps: ["身近な業務を入力・処理・出力に分ける", "課題・原因・制約を一枚に整理する", "複数の解決案と評価基準を作る", "提案と検証結果を第三者へ説明する"],
     qualifications: [{label:"ITパスポート",networkId:"license:it-passport"},{label:"G検定",networkId:"license:g-kentei"}],
     ai: [{label:"ChatGPT",networkId:"ai:chatgpt",use:"たたき台作成と論点整理"},{label:"Microsoft Copilot",networkId:"ai:copilot",use:"文書・表計算作業の補助"}],
-    videos: [{label:"生成AIロードマップ",networkId:"learning:ai"}],
-    learningTime: "期間を固定せず、まず1つの業務を安全に改善し、説明できる記録を作るところから考えます。",
-    entrySkills: ["業務フローの可視化", "課題を1文で書く", "検証結果の共有"], learningLoad: "継続的に積む",
-    sourceIds: ["mhlw-jobtag-dx","ipa-dss"], checkedAt, author:"manapick career編集部", editor:"manapick編集責任者", editorNote:"公的資料と一次情報を整理した編集記事。実体験談ではありません。", editorReviewed:true,
+    videos: [{label:"IT・生成AIロードマップ",networkId:"learning:ai"}],
+    learningTime: "IT知識だけでなく、一つの業務課題を分析し、複数案と導入条件を説明できる成果物までを最初の区切りにします。",
+    entrySkills: ["業務フローの可視化", "課題と制約の整理", "比較提案の作成"], learningLoad: "継続的に積む",
+    sourceIds: ["mhlw-jobtag-it-consultant","ipa-dss"], checkedAt, author:"manapick career編集部", editor:"manapick編集責任者", editorNote:"job tagのITコンサルタントとIPA資料を基にした独自要約。実体験談ではありません。", editorReviewed:true,
     routeTags:["仕組みを改善","人と調整","週3時間以上"],
-    claims:[claim("ai-dx-role","DX推進はデジタル技術で社会やビジネスの変革を目指す役割です。",["mhlw-jobtag-dx","ipa-dss"])]
+    claims:[claim("it-consultant-role","ITコンサルタントは経営・業務上の課題を分析し、IT戦略やシステム化方針を提案します。",["mhlw-jobtag-it-consultant","ipa-dss"])]
   },
   {
     slug:"software-engineer",name:"ソフトウェアエンジニア",category:"it-ai",status:"published",
