@@ -1,4 +1,17 @@
 {
-  "enabled": false,
-  "items": []
+  "enabled": true,
+  "items": [
+    {
+      "offerId": "a8-win-school",
+      "label": "Winスクールの講座情報を確認",
+      "provider": "Winスクール",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+ALMVJM+529E+5YJRM",
+      "officialDomain": "winschool.jp",
+      "description": "IT・デザイン・DX分野の学習支援を比較するための外部ページです。対象講座、費用、給付・支援条件は公式ページで確認してください。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-07-12",
+      "placements": ["/news/reskilling-support-2026/", "/guide/build-a-learning-route-from-tasks/"]
+    }
+  ]
 }

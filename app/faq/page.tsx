@@ -1,4 +1,4 @@
-import type { Metadata } from "next";import { InfoPage } from "@/components/InfoPage";import { JsonLd } from "@/components/JsonLd";
+import type { Metadata } from "next";import { InfoPage } from "@/components/InfoPage";
 export const metadata:Metadata={title:"よくある質問",alternates:{canonical:"/faq/"}};
 const faqs=[{q:"このサイトで向いている仕事が分かりますか？",a:"分かるとは断定しません。入口案内は、興味や作業の好みと重なる職業を3つ提示し、次に調べるきっかけを作るものです。"},{q:"年収や将来性のランキングはありますか？",a:"ありません。職業そのものを点数化せず、仕事内容、スキル、入口、注意点、学習方法を比較します。"},{q:"求人へ応募できますか？",a:"できません。v1では求人票、応募、履歴書登録、企業との連絡仲介を行いません。"},{q:"掲載内容は誰が確認していますか？",a:"manapick career編集部が公的資料と一次情報を整理し、編集責任者が公開前に全主張とリンクを確認します。"},{q:"掲載日や更新日は自動で変わりますか？",a:"変わりません。人が実際に情報を確認した日だけを最終確認日として記録します。"}];
-export default function Page(){const json={"@context":"https://schema.org","@type":"FAQPage",mainEntity:faqs.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))};return <><JsonLd data={json}/><InfoPage eyebrow="FAQ" title="よくある質問" lead="サイトの使い方と、できること・しないことを整理します。"><div className="faq-list">{faqs.map(x=><details key={x.q}><summary>{x.q}</summary><p>{x.a}</p></details>)}</div></InfoPage></>}
+export default function Page(){return <InfoPage eyebrow="FAQ" title="よくある質問" lead="サイトの使い方と、できること・しないことを整理します。"><div className="faq-list">{faqs.map(x=><details key={x.q}><summary>{x.q}</summary><p>{x.a}</p></details>)}</div></InfoPage>}

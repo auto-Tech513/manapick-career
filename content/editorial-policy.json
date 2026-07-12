@@ -4,5 +4,10 @@
   "publicationRequirements":["originalBody","officialSources","checkedAt","relatedVideos","relatedQualifications","relatedAi","editorReviewed"],
   "rankingPolicy":"職業を点数化・順位付けしない。報酬額、承認状況、EPCを掲載順に使わない。",
   "aiPolicy":"AI補助を利用した場合も、公開前に人が全主張とリンクを確認する。",
-  "correctionPolicy":"訂正依頼の対象ページはreviewedへ戻すか一時非公開にし、確認後に再公開する。"
+  "correctionPolicy":"訂正依頼の対象ページはreviewedへ戻すか一時非公開にし、確認後に再公開する。",
+  "engagementPolicy":{
+    "goal":"読者の自律、理解、上達実感を支え、保留・中止・離脱を妨げない。",
+    "prohibited":["ランダム報酬","ニアミス","連続記録の喪失","偽の希少性・カウントダウン","サンクコストを利用した継続圧力","不安を煽る適職・採用・将来性の断定"],
+    "allowed":["決定論的な進捗","本人が確認できる上達記録","出典付きの正直な期限","無料情報を先に提供する互恵性","いつでも保留・中止できる比較手順"]
+  }
 }

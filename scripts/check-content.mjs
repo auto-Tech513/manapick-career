@@ -23,6 +23,6 @@ for(const job of jobs){
   for(const item of [...job.videos,...job.ai,...job.qualifications])if(!networkIds.has(item.networkId))errors.push(`${job.slug}: unknown network item ${item.networkId}`);
   const text=JSON.stringify(job);for(const phrase of ["必ず転職","最短で稼げる","適職診断","採用を保証","就職率100%"]){if(text.includes(phrase))errors.push(`${job.slug}: prohibited phrase ${phrase}`)}
 }
-if(pr.enabled!==false)warnings.push("PR feature flag is enabled");
+if(pr.enabled!==true&&pr.enabled!==false)errors.push("PR feature flag must be boolean");
 if(JSON.stringify(jobs).includes("EPC")||JSON.stringify(jobs).includes("報酬額"))errors.push("editorial jobs contain monetization ranking data");
 console.log(`content: ${jobs.length} jobs / ${jobs.filter(x=>x.status==="published").length} published / ${sources.length} sources`);warnings.forEach(x=>console.warn(`WARN ${x}`));if(errors.length){errors.forEach(x=>console.error(`ERROR ${x}`));process.exit(1)}

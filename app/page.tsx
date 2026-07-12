@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, BadgeCheck, Bot, CheckCircle2, GraduationCap, Search } from "lucide-react";
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
+import { CareerBriefing } from "@/components/CareerBriefing";
 import { EditorialPreview } from "@/components/EditorialPreview";
 import { HeroCareerSlider } from "@/components/HeroCareerSlider";
 
@@ -13,6 +14,7 @@ export default function Home(){return <>
     </div>
     <HeroCareerSlider jobs={publishedJobs.slice(0, 6)} />
   </div></section>
+  <CareerBriefing />
   <div id="jobs" className="scroll-anchor" />
   <CareerExplorer jobs={publishedJobs} categories={categories.map(x=>({...x}))}/>
   <EditorialPreview />

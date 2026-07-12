@@ -7,16 +7,18 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "prebuild": "npm run content:check && npm run source:check && npm run similarity:check",
+    "prebuild": "npm run content:check && npm run editorial:check && npm run monetization:check && npm run source:check && npm run similarity:check",
     "build": "next build",
     "start": "next dev --webpack",
     "lint": "eslint . --ignore-pattern out --ignore-pattern .next",
     "content:check": "node scripts/check-content.mjs",
+    "editorial:check": "node scripts/check-editorial.mjs",
+    "monetization:check": "node scripts/check-monetization.mjs",
     "source:check": "node scripts/audit-sources.mjs",
     "similarity:check": "node scripts/check-similarity.mjs",
     "links:check": "node scripts/audit-links.mjs --internal",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run lint && npm run content:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
+    "qa": "npm run lint && npm run content:check && npm run editorial:check && npm run monetization:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",

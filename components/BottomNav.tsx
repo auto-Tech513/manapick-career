@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BriefcaseBusiness, Compass, GitCompareArrows, Menu } from "lucide-react";
+import { BookOpenText, BriefcaseBusiness, Newspaper, Search } from "lucide-react";
 
 const items = [
   { href: "/", label: "ホーム", icon: BriefcaseBusiness },
-  { href: "/all/", label: "職業一覧", icon: Menu },
-  { href: "/route/", label: "入口案内", icon: Compass },
-  { href: "/compare/", label: "比較", icon: GitCompareArrows },
+  { href: "/all/", label: "職業", icon: Search },
+  { href: "/news/", label: "ニュース", icon: Newspaper },
+  { href: "/guide/", label: "ガイド", icon: BookOpenText },
 ];
 
 export function BottomNav(){

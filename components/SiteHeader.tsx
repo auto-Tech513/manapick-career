@@ -30,7 +30,7 @@ const primary: NavItem[] = [
   { href: "/route/", label: "入口案内", description: "3つの質問から候補へ", icon: Compass },
   { href: "/compare/", label: "比較", description: "仕事内容と学び方を比較", icon: GitCompareArrows },
   { href: "/guide/", label: "ガイド", description: "職業情報の読み方", icon: BookOpenText },
-  { href: "/news/", label: "ニュース", description: "掲載内容の更新情報", icon: Newspaper },
+  { href: "/news/", label: "ニュース", description: "雇用・採用・学び直し", icon: Newspaper },
 ];
 
 const support: NavItem[] = [
