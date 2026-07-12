@@ -13,7 +13,8 @@
 - [x] GitHub `auto-Tech513/manapick-career` の `main` へpushする
 - [x] Cloudflare Pages `manapick-career` へデプロイする
 - [x] `career.manapick.app` のCNAME、TLS、Pages domain status=activeを確認する
-- [ ] Cloudflare PagesのGit自動デプロイを有効化する（現在はDirect Upload。GitHub Appへのリポジトリ権限は追加済み）
+- [x] Cloudflare PagesをGitHub `auto-Tech513/manapick-career` の `main` と連携し、push起点の自動デプロイを確認する（2026-07-12）
+- [x] Cloudflare Configuration Ruleで `career.manapick.app` の未承認RUM自動挿入だけを無効化する（2026-07-12）
 
 ## 公開後
 

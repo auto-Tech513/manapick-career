@@ -4,7 +4,7 @@
 
 ## 静的生成・コンテンツ
 
-- Next.js 16.2.6 `output: "export"`: 成功（38 routes、manifestを含む）
+- Next.js 16.2.10 `output: "export"`: 成功（38 routes、manifestを含む）
 - 職業: 12件 published / 0件 draft・reviewed
 - カテゴリ: 6件
 - 出典レジストリ: 15件
@@ -24,7 +24,7 @@
 - `npm run build`: 成功
 - `npm run links:check`: 成功
 - `npm run links:network`: 成功
-- `npm audit --omit=dev`: 0 vulnerabilities
+- `npm audit`: 開発依存を含め0 vulnerabilities
 
 ## 実ブラウザ
 
@@ -32,13 +32,13 @@
 
 | 幅 | document幅 | 横あふれ |
 | ---: | ---: | --- |
-| 375 | 360 | なし |
-| 390 | 375 | なし |
-| 768 | 753 | なし |
-| 1024 | 1009 | なし |
-| 1280 | 1265 | なし |
-| 1440 | 1425 | なし |
-| 1920 | 1905 | なし |
+| 375 | 375 | なし |
+| 390 | 390 | なし |
+| 768 | 768 | なし |
+| 1024 | 1024 | なし |
+| 1280 | 1280 | なし |
+| 1440 | 1440 | なし |
+| 1920 | 1920 | なし |
 
 - 職業検索: 「経理」で1件表示
 - キーボード: Tab移動でカテゴリボタンへフォーカス到達、focus-visible実装済み
@@ -53,7 +53,9 @@
 ## 本番配信
 
 - GitHub: `https://github.com/auto-Tech513/manapick-career`（public / default branch `main`）
-- Cloudflare Pages: project `manapick-career` / production branch metadata `main`
+- Cloudflare Pages: project `manapick-career` / GitHub source `auto-Tech513/manapick-career` / production branch `main`
+- 自動デプロイ: GitHub push `da0d3a1fc1cf66ec5e60d0d216438706d4509153` を検知し、clone / `npm run qa` / deployの全stageが成功
+- Cloudflareビルド: `npm run qa` / output `out` / Node.js `22.13.0` / `NEXT_PUBLIC_SITE_URL=https://career.manapick.app`
 - 本番: `https://career.manapick.app`（HTTP 200）
 - カスタムドメイン: Pages APIのdomain status / verification / validationがすべて `active`
 - DNS: `career.manapick.app` → `manapick-career.pages.dev`、Cloudflare proxy有効
@@ -64,7 +66,9 @@
 - 本番375 / 390 / 768 / 1024 / 1280 / 1440 / 1920px: 横あふれ0件、console warn/error 0件
 - 本番入口案内: 3問完了、理由付き候補3件、順位・適性判定ではない旨を表示
 - GA4・AdSense環境変数なし: 本番の該当外部スクリプト0件
-- 公開方式: Wrangler Direct Upload。GitHub Appのcareerリポジトリ権限は追加済みだが、PagesプロジェクトのGit自動デプロイは未設定
+- 親ゾーンのCloudflare RUM自動挿入は、Configuration Rule `(http.host eq "career.manapick.app")` でcareerだけ無効化。姉妹サイト設定は変更なし
+- 上記ルール反映後の新規ブラウザ: 外部RUMビーコン0件、console warn/error 0件
+- 公開方式: Cloudflare Pages Git integration。`main` へのpushが本番デプロイを起動
 
 ## Lighthouse（ローカル静的配信・モバイル条件）
 

@@ -39,6 +39,6 @@ npm audit --omit=dev
 
 ## デプロイ
 
-GitHubの正本は `auto-Tech513/manapick-career` の `main` です。Cloudflare Pagesプロジェクトは `manapick-career`、公開先は `https://career.manapick.app` です。現在はQA済みの `out` をWrangler Direct Uploadで公開します。Node.js 22.13.0以上を使います。GitHub／Cloudflare／DNS／Search Console／GA4／AdSenseの実施状況は `docs/release-checklist.md` と `docs/qa-report.md` に記録します。
+GitHubの正本は `auto-Tech513/manapick-career` の `main` です。Cloudflare Pagesプロジェクト `manapick-career` はこのブランチとGit連携し、pushごとに `npm run qa` を実行して、合格した `out` だけを `https://career.manapick.app` へ自動デプロイします。Cloudflareのビルド環境はNode.js 22.13.0に固定しています。GitHub／Cloudflare／DNS／Search Console／GA4／AdSenseの実施状況は `docs/release-checklist.md` と `docs/qa-report.md` に記録します。
 
 既存3サイトからcareerへの復路リンクは、career本番公開とHTTP確認の完了後に、関連ページだけへ文脈リンクとして追加します。一律相互リンクや職業本文の複製は行いません。
