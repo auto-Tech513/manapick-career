@@ -45,3 +45,4 @@ next-env.d.ts
 # Finder/iCloud numbered conflict copies of these canonical assets
 /app/globals [0-9]*.css
 /public/og [0-9]*.png
+/components/* [0-9]*.tsx

@@ -1,9 +1,21 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { BriefcaseBusiness, Compass, GitCompareArrows, Menu } from "lucide-react";
 
-export function BottomNav(){return <nav className="bottom-nav" aria-label="スマホ主要ナビゲーション">
-  <Link href="/"><BriefcaseBusiness aria-hidden="true"/><span>ホーム</span></Link>
-  <Link href="/route/"><Compass aria-hidden="true"/><span>入口案内</span></Link>
-  <Link href="/compare/"><GitCompareArrows aria-hidden="true"/><span>比較</span></Link>
-  <Link href="/all/"><Menu aria-hidden="true"/><span>一覧</span></Link>
-</nav>}
+const items = [
+  { href: "/", label: "ホーム", icon: BriefcaseBusiness },
+  { href: "/all/", label: "職業一覧", icon: Menu },
+  { href: "/route/", label: "入口案内", icon: Compass },
+  { href: "/compare/", label: "比較", icon: GitCompareArrows },
+];
+
+export function BottomNav(){
+  const pathname = usePathname();
+  return <nav className="bottom-nav" aria-label="スマホ主要ナビゲーション">{items.map(item => {
+    const Icon = item.icon;
+    const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
+    return <Link key={item.href} href={item.href} aria-current={active ? "page" : undefined}><Icon aria-hidden="true"/><span>{item.label}</span></Link>;
+  })}</nav>;
+}
