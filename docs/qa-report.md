@@ -70,16 +70,20 @@
 
 - GitHub: `https://github.com/auto-Tech513/manapick-career`（public / default branch `main`）
 - Cloudflare Pages: project `manapick-career` / GitHub source `auto-Tech513/manapick-career` / production branch `main`
-- 自動デプロイ: GitHub push `da0d3a1fc1cf66ec5e60d0d216438706d4509153` を検知し、clone / `npm run qa` / deployの全stageが成功
+- 自動デプロイ: GitHub push `612bdf2c783dfe1fea67639d848a7ddfce49572f` が本番へ反映
 - Cloudflareビルド: `npm run qa` / output `out` / Node.js `22.13.0` / `NEXT_PUBLIC_SITE_URL=https://career.manapick.app`
 - 本番: `https://career.manapick.app`（HTTP 200）
 - カスタムドメイン: Pages APIのdomain status / verification / validationがすべて `active`
 - DNS: `career.manapick.app` → `manapick-career.pages.dev`、Cloudflare proxy有効
 - TLS: HTTP/2 200、HSTS / CSP / nosniff / Referrer-Policy / frame制限を応答ヘッダーで確認
-- robots / sitemap / llms.txt / manifest / 職業詳細 / カテゴリ: すべてHTTP 200
-- この節の本番値は前回デプロイ時点。2026-07-13の556職業名録・共有・商店変更は、Git push後に再確認して更新する
-- 本番HTML・sitemap・llms.txt: draft / reviewed / JobPosting / rating / reviewCountの混入0件
+- robots / sitemap / llms.txt / manifest / 職業詳細 / 職業名録詳細 / 商店 / カテゴリ: すべてHTTP 200
+- sitemap: 600 URL / `/occupation/` 556 URL / 商店1 URL。llms.txtは556職業詳細のURL規則を明記
+- 本番HTML・sitemap・llms.txt: draftステータス / JobPosting / rating / reviewCountの混入0件
+- 本番職業名録詳細: 自己canonical、Occupation JSON-LD、出典・版・取込日、写真・動画不使用表示を確認
+- 本番商店: 自己canonical、上部PR表示、Amazonリンク付近PR表示、`sponsored nofollow`、独自用途イラスト表示を確認
+- 本番ニュース・ガイド: 共有UIとX intent URLを確認
 - 本番375 / 390 / 768 / 1024 / 1280 / 1440 / 1920px: 横あふれ0件、console warn/error 0件
+- 今回追加した商店・職業名録詳細・ニュース共有・ガイド共有・職業一覧を本番375px / 1440pxでも再確認。横あふれ0、hydration error 0、console warn/error 0
 - 本番入口案内: 3問完了、理由付き候補3件、順位・適性判定ではない旨を表示
 - GA4: career専用 `G-WW5XWW0YFE` を設定済み
 - 親ゾーンのCloudflare RUM自動挿入は、Configuration Rule `(http.host eq "career.manapick.app")` でcareerだけ無効化。姉妹サイト設定は変更なし
