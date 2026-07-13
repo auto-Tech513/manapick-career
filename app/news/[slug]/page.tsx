@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, CalendarDays, Clock3 } from "lucide-react";
 import { EditorialArticle } from "@/components/EditorialArticle";
 import { JsonLd } from "@/components/JsonLd";
+import { ShareKit } from "@/components/ShareKit";
 import { newsBySlug, newsItems } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl } from "@/lib/site";
@@ -27,6 +28,7 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
     <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/news/">ニュース</Link><span>/</span><span aria-current="page">{item.kind}</span></nav>
     <Link className="back-link" href="/news/"><ArrowLeft aria-hidden="true" />ニュース一覧へ</Link>
     <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1>{item.title}</h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {item.publishedAt}</span><span>確認 {item.checkedAt}</span></div></header>
+    <ShareKit title={item.title} summary={item.summary} url={url} kind="news" />
     <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources}/>
   </div></>;
 }

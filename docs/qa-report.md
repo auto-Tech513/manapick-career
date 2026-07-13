@@ -1,21 +1,25 @@
 # manapick career QAレポート
 
-確認日: 2026-07-12（JST）
+確認日: 2026-07-13（JST）
 
 ## 静的生成・コンテンツ
 
-- Next.js 16.2.10 `output: "export"`: 成功（46静的ページ、manifestを含む）
+- Next.js 16.2.10 `output: "export"`: 成功（607静的ページ）
 - 職業: 12件 published / 0件 draft・reviewed
-- カテゴリ: 6件
-- 出典レジストリ: 15件
+- 人手確認済み独自職業記事: 12件
+- job tag解説系データから構造化した職業名録詳細: 556件 / 15カテゴリ
+- 出典レジストリ: 33件
 - 職業詳細SSG: 12件
-- ガイド: 一覧1件 / 詳細3件
-- 更新情報: 一覧1件 / 詳細3件
+- 職業名録詳細SSG: 556件
+- ガイド: 一覧1件 / 詳細4件
+- 更新情報: 一覧1件 / 詳細5件
+- career manapi商店: 6商品 / メーカー公式出典6件
+- 商店リンク: メーカー公式6件 / Amazonリンク6件をGETでHTTP 200確認。全Amazon URLに`tag=saunastampral-22`
 - sitemap / llms.txt / JSON-LDのdraft混入: 0件
 - JobPosting、架空rating、reviewCount、salary、employmentType: 0件
 - 本文類似度警告: 0件
-- 内部リンク404: 0件（42 HTML）
-- 姉妹サイト個別リンク: 23件 ok / 0件 404 / 0件 bot制限 / 0件未確認
+- 内部リンク404: 0件（603 HTML）
+- 姉妹・外部確認対象リンク: 26件 ok / 0件 404 / 0件 bot制限 / 0件未確認
 
 ## コマンド
 
@@ -23,6 +27,8 @@
 - `npm run content:check`: 成功
 - `npm run source:check`: 成功
 - `npm run similarity:check`: 成功
+- `npm run catalog:check`: 成功（556件の必須詳細・出典・帰属を確認）
+- `npm run shop:check`: 成功（6商品・公式出典・PR表示・独自用途イラスト）
 - `npm run build`: 成功
 - `npm run links:check`: 成功
 - `npm run links:network`: 成功
@@ -49,12 +55,16 @@
 - 職業詳細: Article / BreadcrumbList / Occupationを表示本文と対応
 - JobPosting: なし
 - 外部リンク: `target="_blank" rel="noopener noreferrer"`
-- ホーム、入口案内、比較、職業詳細のconsole warn/error: 0件
+- ホーム、職業名録、職業名録詳細、ニュース詳細、ガイド詳細、商店の広告OFF時console warn/error: 0件
 - ホームの見出し: 導入行weight 550 / 強調行weight 900。1440pxで45.36px
 - ヒーロー後の一覧上余白: 375pxで36px / 1440pxで43.2px
 - ハンバーガーメニュー: 2列タイル、375pxで横あふれ0、縦スクロール可能
 - ガイド詳細: 執筆者、編集者、確認方法、最終確認日、公式出典2件を表示
+- ニュース・ガイド詳細: X / Threads / Bluesky / LINE / はてな / LinkedIn / メール / URLコピー / Web Share API導線を表示
+- 職業名録詳細: 仕事内容、就くには、条件、資格、団体、出典、前後職業、姉妹サイト導線を表示
+- 商店: PRをページ上部とAmazonリンク付近に表示。Amazonの商品画像・価格・在庫・レビューは保存・転載せず、独自の用途イラストを表示
 - 既定ビルド: AdSenseスクリプトなし、全指定幅で横あふれ・hydration errorなし
+- 主要6ページ × 7幅 = 42条件: 横あふれ0、hydration error 0、アプリ由来console warn/error 0
 
 ## 本番配信
 
@@ -67,7 +77,7 @@
 - DNS: `career.manapick.app` → `manapick-career.pages.dev`、Cloudflare proxy有効
 - TLS: HTTP/2 200、HSTS / CSP / nosniff / Referrer-Policy / frame制限を応答ヘッダーで確認
 - robots / sitemap / llms.txt / manifest / 職業詳細 / カテゴリ: すべてHTTP 200
-- sitemap: 39 URL、llms.txtの職業URL: 12件（ガイド・更新情報も追加）
+- この節の本番値は前回デプロイ時点。2026-07-13の556職業名録・共有・商店変更は、Git push後に再確認して更新する
 - 本番HTML・sitemap・llms.txt: draft / reviewed / JobPosting / rating / reviewCountの混入0件
 - 本番375 / 390 / 768 / 1024 / 1280 / 1440 / 1920px: 横あふれ0件、console warn/error 0件
 - 本番入口案内: 3問完了、理由付き候補3件、順位・適性判定ではない旨を表示
@@ -92,7 +102,8 @@
 - 手動広告feature flag: 既定OFF
 - AdSense自動広告: 実装・有効化していない
 - 広告スクリプトなし: 全指定幅で横あふれなし、hydration/console errorなし
-- 広告スクリプトあり: 承認済みクライアントIDで375 / 768 / 1280pxを確認。横あふれ0、hydration error 0
+- 広告スクリプトあり: 承認済みクライアントIDでホーム・商店・ニュース詳細を375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxで確認（21条件）。横あふれ0、hydration error 0
+- GoogleスクリプトへNext.js固有の`data-nscript`属性が付かないこと、同属性に関する警告0件を確認
 - localhostではGoogle広告リクエストが403となるため、広告クリエイティブの充填表示は**未確認**。403とアプリの404・レイアウト不良を区別して記録
 - 管理画面での自動広告OFF確認: **未確認**
 
@@ -100,6 +111,7 @@
 
 - 指定役務・類似称呼を含む専門的な商標確認
 - AdSense管理画面でのcareer向け手動枠の実広告充填表示
+- Amazon販売ページの現在価格・在庫・型番一致（動的情報のため購入時に利用者が確認）
 - 承認済み問い合わせフォーム
 - 本番配信でのLighthouse再測定
 

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, CalendarDays, Clock3 } from "lucide-react";
 import { EditorialArticle } from "@/components/EditorialArticle";
 import { JsonLd } from "@/components/JsonLd";
+import { ShareKit } from "@/components/ShareKit";
 import { guideBySlug, guides } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl } from "@/lib/site";
@@ -26,6 +27,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/guide/">ガイド</Link><span>/</span><span aria-current="page">{guide.category}</span></nav>
     <Link className="back-link" href="/guide/"><ArrowLeft aria-hidden="true" />ガイド一覧へ</Link>
     <header className="page-heading article-heading"><span className="eyebrow">{guide.category}</span><h1>{guide.title}</h1><p>{guide.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
+    <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />
     <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources}/>
   </div></>;
 }

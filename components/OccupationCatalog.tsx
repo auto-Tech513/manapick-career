@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowUpRight, BadgeCheck, BookOpenCheck, Bot, ChevronLeft, ChevronRight, GraduationCap, Search } from "lucide-react";
+import { ArrowRight, BadgeCheck, BookOpenCheck, Bot, ChevronLeft, ChevronRight, GraduationCap, Search } from "lucide-react";
 import type { CatalogCategory, CatalogOccupation } from "@/content/catalog";
 
 const perPage = 24;
@@ -31,8 +31,8 @@ export function OccupationCatalog({ occupations, categories, detailedLinks }: {
 
   return <section className="catalog" aria-labelledby="catalog-title">
     <div className="catalog-intro">
-      <div><span className="eyebrow">job tag ver.7.01 準拠</span><h2 id="catalog-title">556職業の公式名録</h2><p>職業名・別名・職業分類だけを一次データから取り込みました。本文を自動生成せず、人が確認した詳細解説とは明確に分けています。</p></div>
-      <div className="catalog-quality"><BookOpenCheck aria-hidden="true" /><span><strong>薄い詳細ページを作りません</strong><small>詳細解説は出典・学び・AI・資格・編集確認が揃った職業だけ公開</small></span></div>
+      <div><span className="eyebrow">job tag 解説系データ ver.7.01</span><h2 id="catalog-title">556職業の出典付き名録</h2><p>職業名・別名・分類に加え、仕事内容、就くには、働く条件、関連資格・団体を公式データから項目別に構造化しました。人が執筆・確認した独自解説とは明確に分けています。</p></div>
+      <div className="catalog-quality"><BookOpenCheck aria-hidden="true" /><span><strong>全556職業に出典付き詳細</strong><small>公式データの詳細と、人が確認した独自解説をラベルで明確に分けています</small></span></div>
     </div>
     <div className="catalog-controls">
       <label className="search-box"><Search aria-hidden="true" /><span className="sr-only">職業名録を検索</span><input value={query} onChange={(event) => changeQuery(event.target.value)} placeholder="職業名・別名で検索" /></label>
@@ -46,7 +46,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks }: {
         <small>{categoryInfo?.label} <span>職業分類 {occupation.classificationCode}</span></small>
         <h3>{occupation.name}</h3>
         {occupation.aliases.length ? <p><span>別名</span>{occupation.aliases.slice(0, 3).join("、")}</p> : <p className="catalog-no-alias">job tag掲載名で確認できます</p>}
-        <div className="catalog-card-actions">{detail ? <Link className="catalog-detail" href={`/career/${detail}/`}><BadgeCheck aria-hidden="true" />確認済み詳細</Link> : <a href="https://shigoto.mhlw.go.jp/User/Search/Top" target="_blank" rel="noopener noreferrer">job tagで確認 <ArrowUpRight aria-hidden="true" /></a>}</div>
+        <div className="catalog-card-actions"><Link href={`/occupation/${occupation.catalogId}/`}>仕事内容・入口を見る <ArrowRight aria-hidden="true" /></Link>{detail ? <Link className="catalog-detail" href={`/career/${detail}/`}><BadgeCheck aria-hidden="true" />人が確認した独自解説</Link> : null}</div>
         <details><summary>学びにつなぐ</summary><div><a href="https://manapick.app/" target="_blank" rel="noopener noreferrer"><GraduationCap aria-hidden="true" />動画</a><a href="https://ai.manapick.app/" target="_blank" rel="noopener noreferrer"><Bot aria-hidden="true" />AI</a><a href="https://license.manapick.app/" target="_blank" rel="noopener noreferrer"><BadgeCheck aria-hidden="true" />資格</a></div></details>
       </article>;
     })}</div>

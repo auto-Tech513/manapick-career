@@ -51,6 +51,7 @@ function parseCsv(text) {
 
 const bytes = fs.readFileSync(input);
 const rows = parseCsv(new TextDecoder("shift_jis").decode(bytes));
+const clean = (value = "") => value.replace(/\r/g, "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
 const occupations = rows.flatMap((row) => {
   const catalogId = row[1]?.trim();
   const recordNumber = row[2]?.trim();
@@ -60,8 +61,33 @@ const occupations = rows.flatMap((row) => {
   const majorCode = classificationCode.slice(0, 2);
   const category = categories[majorCode];
   if (!category) throw new Error(`Unknown classification ${classificationCode} for ${name}`);
-  const aliases = [...new Set(row.slice(17, 42).map((value) => value?.trim()).filter((value) => value && value !== name))];
-  return [{ catalogId, recordNumber, name, aliases, classificationCode, categoryKey: category.key }];
+  const aliases = [...new Set(row.slice(17, 42).map((value) => clean(value)).filter((value) => value && value !== name))];
+  const organizations = [];
+  for (let index = 46; index <= 64; index += 2) {
+    const organizationName = clean(row[index]);
+    const url = clean(row[index + 1]);
+    if (organizationName) organizations.push({ name: organizationName, url: /^https?:\/\//.test(url) ? url.replace(/^http:\/\//, "https://") : "" });
+  }
+  const qualifications = [...new Set(row.slice(66, 101).map((value) => clean(value)).filter(Boolean))];
+  return [{
+    catalogId,
+    recordNumber,
+    name,
+    aliases,
+    classificationCode,
+    categoryKey: category.key,
+    summary: clean(row[42]),
+    work: clean(row[43]),
+    entry: clean(row[44]),
+    conditions: clean(row[45]),
+    organizations,
+    qualifications,
+    updatedYears: {
+      record: clean(row[101]),
+      classification: clean(row[102]),
+      description: clean(row[103]),
+    },
+  }];
 });
 
 const uniqueIds = new Set(occupations.map((item) => item.catalogId));
@@ -77,7 +103,8 @@ const payload = {
     provider: "独立行政法人労働政策研究・研修機構（JILPT）",
     downloadPage: "https://shigoto.mhlw.go.jp/User/download",
     importedAt: "2026-07-13",
-    usage: "職業名・別名・職業分類・公式詳細IDだけを抽出し、本文は転載していません。",
+    datasetUpdatedAt: "2026-04-27",
+    usage: "職業名・別名・職業分類・職業解説・関連団体・関連資格を構造化。利用規約第9条に基づく二次利用として、出典・版・取込日を全詳細ページに表示します。写真・動画は使用していません。",
   },
   categories: Object.entries(categories).map(([code, category]) => ({ code, ...category })),
   occupations,
