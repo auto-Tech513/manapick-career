@@ -8,6 +8,9 @@ export const careerShopPolicy = {
 export const careerShopProducts = [
   {
     id: "anker-powerconf-s500",
+    image: "/shop/anker-powerconf-s500.webp",
+    imageAlt: "Anker PowerConf S500 スピーカーフォンの製品画像",
+    imageCredit: "画像出典：Anker Japan（利用許諾は公開前確認）",
     category: "面接・会議",
     maker: "Anker",
     name: "Anker PowerConf S500",
@@ -20,6 +23,9 @@ export const careerShopProducts = [
   },
   {
     id: "dell-u3225qe",
+    image: "/shop/dell-u3225qe.webp",
+    imageAlt: "Dell U3225QE 31.5インチモニターの製品画像",
+    imageCredit: "画像出典：Dell Technologies（利用許諾は公開前確認）",
     category: "調査・ポートフォリオ",
     maker: "Dell",
     name: "Dell U3225QE",
@@ -32,6 +38,9 @@ export const careerShopProducts = [
   },
   {
     id: "stream-deck-neo",
+    image: "/shop/stream-deck-neo.webp",
+    imageAlt: "Elgato Stream Deck Neoの製品画像",
+    imageCredit: "画像出典：Elgato（利用許諾は公開前確認）",
     category: "学び直し・反復",
     maker: "Elgato",
     name: "Stream Deck Neo",
@@ -44,6 +53,9 @@ export const careerShopProducts = [
   },
   {
     id: "sandisk-extreme-portable-ssd",
+    image: "/shop/sandisk-extreme.webp",
+    imageAlt: "SanDisk Extreme Portable SSDの製品画像",
+    imageCredit: "画像出典：SanDisk（利用許諾は公開前確認）",
     category: "作品・バックアップ",
     maker: "SanDisk",
     name: "SanDisk Extreme Portable SSD",
@@ -56,6 +68,9 @@ export const careerShopProducts = [
   },
   {
     id: "mx-master-3s",
+    image: "/shop/mx-master-3s.webp",
+    imageAlt: "Logicool MX Master 3Sマウスの製品画像",
+    imageCredit: "画像出典：Logicool（利用許諾は公開前確認）",
     category: "入力・資料整理",
     maker: "Logicool",
     name: "Logicool MX Master 3S",
@@ -68,6 +83,9 @@ export const careerShopProducts = [
   },
   {
     id: "flexispot-e7",
+    image: "/shop/flexispot-e7.webp",
+    imageAlt: "FLEXISPOT E7電動昇降デスクの製品画像",
+    imageCredit: "画像出典：FLEXISPOT（利用許諾は公開前確認）",
     category: "学習環境・姿勢",
     maker: "FLEXISPOT",
     name: "FLEXISPOT E7",

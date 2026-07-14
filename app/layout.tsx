@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/Analytics";
-import { AdSenseScript } from "@/components/AdSenseScript";
 import { BottomNav } from "@/components/BottomNav";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -41,5 +40,5 @@ const graph={"@context":"https://schema.org","@graph":[
 ]};
 
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><body>
-  <JsonLd data={graph}/><Analytics/><AdSenseScript/><a className="skip-link" href="#main">本文へ移動</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/>
+  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/>
 </body></html>}

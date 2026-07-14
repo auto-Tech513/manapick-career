@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import {
   ArrowUpRight,
   BadgeCheck,
+  BarChart3,
   Bot,
   BookOpenText,
   BriefcaseBusiness,
@@ -33,6 +34,7 @@ const primary: NavItem[] = [
   { href: "/compare/", label: "比較", description: "仕事内容と学び方を比較", icon: GitCompareArrows },
   { href: "/guide/", label: "ガイド", description: "職業情報の読み方", icon: BookOpenText },
   { href: "/news/", label: "ニュース", description: "雇用・採用・学び直し", icon: Newspaper },
+  { href: "/research/", label: "データ室", description: "統計の意味と限界", icon: BarChart3 },
   { href: "/shop/", label: "商店", description: "学び・面接・仕事準備の道具", icon: ShoppingBag },
 ];
 

@@ -1,122 +1,89 @@
 # manapick career QAレポート
 
-確認日: 2026-07-13（JST）
+確認日: 2026-07-14（JST）
+
+## 判定
+
+ローカル実装と静的出力の品質検査は合格した。ただし、次の公開条件が残るため、今回の差分はGitHubへpushせず、本番へ自動デプロイしていない。
+
+1. `public/shop/` の6商品画像について、メーカーからの転載・公衆送信許諾を示す証跡が未確認。詳細は `docs/product-image-clearance.md` に記録した。
+2. `career.manapick.app` の自動広告除外は保存済みだが、管理画面が案内する最長1時間の反映後に、本番通信でページレベル自動広告が0件になることは未確認。
+
+現行本番はこの差分を含まない。以下は、権利・広告設定の解消後に公開できる候補版の検査結果である。
 
 ## 静的生成・コンテンツ
 
-- Next.js 16.2.10 `output: "export"`: 成功（607静的ページ）
-- 職業: 12件 published / 0件 draft・reviewed
-- 人手確認済み独自職業記事: 12件
-- job tag解説系データから構造化した職業名録詳細: 556件 / 15カテゴリ
-- 出典レジストリ: 33件
-- 職業詳細SSG: 12件
-- 職業名録詳細SSG: 556件
-- ガイド: 一覧1件 / 詳細4件
-- 更新情報: 一覧1件 / 詳細5件
-- career manapi商店: 6商品 / メーカー公式出典6件
-- 商店リンク: メーカー公式6件 / Amazonリンク6件をGETでHTTP 200確認。全Amazon URLに`tag=saunastampral-22`
-- sitemap / llms.txt / JSON-LDのdraft混入: 0件
-- JobPosting、架空rating、reviewCount、salary、employmentType: 0件
-- 本文類似度警告: 0件
-- 内部リンク404: 0件（603 HTML）
-- 姉妹・外部確認対象リンク: 26件 ok / 0件 404 / 0件 bot制限 / 0件未確認
+- Next.js 16.2.10 / Node.js 22.13.0 / `output: "export"`: クリーンな一時ディレクトリで成功
+- 生成ルート: 633ページ
+- 内部リンク検査: 629 HTML、リンク先欠落0件
+- 人手確認済み詳細職業: 12件
+- 職業名録: 556件 / 15カテゴリ
+- ニュース: 30件。各記事1,000字以上、結論、目次、一次出典、確認日、執筆・編集情報を検査
+- ガイド: 4件。各記事1,000字以上、目次、出典、確認日、執筆・編集情報を検査
+- OGP: ニュース30画像 / ガイド4画像。1200×630 PNGをビルド前に生成
+- 出典レジストリ: 49件
+- 競合・参照サイト台帳: 100件。主要画面まで確認した `deep` 25件、公開画面から用途を確認した `surface` 75件
+- manapi商店: 6商品。商品画像6件、メーカー公式仕様リンク6件、Amazon PRリンク6件
+- sitemap / llms.txt / JSON-LD / 公開HTMLのdraft混入: 0件
+- JobPosting、存在しないrating・reviewCount・salary・employmentType: 0件
+- ニュース・ガイドのcanonical、OG URL、Article JSON-LD image: 表示URLと一致
 
-## コマンド
+## 自動検査
 
 - `npm run lint`: 成功
 - `npm run content:check`: 成功
+- `npm run catalog:check`: 成功
+- `npm run editorial:check`: 成功
+- `npm run backlog:check`: 成功
+- `npm run monetization:check`: 成功
+- `npm run shop:check`: 成功
+- `npm run competitive:check`: 成功（100件、deep 25 / surface 75）
+- `npm run competitive:network`: 正常92件 / 404・410は0件 / bot制限6件 / 通信未確認2件
+- `npm run links:network`: 正常26件 / 欠落0件 / bot制限0件 / 未確認0件
 - `npm run source:check`: 成功
+- `npm run source:network`: 正常46件 / 404・410は0件 / bot制限2件 / 通信未確認1件
 - `npm run similarity:check`: 成功
-- `npm run catalog:check`: 成功（556件の必須詳細・出典・帰属を確認）
-- `npm run shop:check`: 成功（6商品・公式出典・PR表示・独自用途イラスト）
-- `npm run build`: 成功
+- `npm run build`: 成功（クリーンな一時ディレクトリ）
 - `npm run links:check`: 成功
-- `npm run links:network`: 成功
-- `npm audit`: 開発依存を含め0 vulnerabilities
+- `npm audit`: 0 vulnerabilities
+
+元のiCloud配下リポジトリでは、コンパイル・型検査・633ページ生成後の最終コピーがファイルI/O待ちで停止した。同一ソースを `/tmp` のクリーン環境へ複製したビルドは完了しており、コード不良とストレージI/Oを区別した。
 
 ## 実ブラウザ
 
-静的出力をローカル配信し、実ブラウザで確認した。
+ローカル静的出力を実ブラウザで確認した。対象はホーム、manapi商店、ニュース一覧、ニュース詳細、ガイド詳細、キャリアデータ室、職業名録の7ルートで、375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxの49条件。
 
-| 幅 | document幅 | 横あふれ |
-| ---: | ---: | --- |
-| 375 | 375 | なし |
-| 390 | 390 | なし |
-| 768 | 768 | なし |
-| 1024 | 1024 | なし |
-| 1280 | 1280 | なし |
-| 1440 | 1440 | なし |
-| 1920 | 1920 | なし |
+| 項目 | 結果 |
+| --- | --- |
+| `document.scrollWidth <= viewport` | 49/49 |
+| 壊れた画像 | 0件 |
+| manapi商店の商品画像 | 6/6をeager読込、各900px幅を確認 |
+| hydration / page error | 0件 |
+| アプリ由来console error | 0件 |
+| モバイルメニュー横あふれ | 0件 |
+| モバイルメニュー中のbody scroll | ロック済み |
+| ホームのAdSenseスクリプト | なし |
+| 長文記事の手動広告スロット | あり |
+| ニュース詳細OG / canonical | 一致 |
 
-- 職業検索: 「経理」で1件表示
-- キーボード: Tab移動でカテゴリボタンへフォーカス到達、focus-visible実装済み
-- 入口案内: 3問完了、理由付き候補3件、横あふれなし
-- 比較: 最大3件。4件目を選んでも3件を維持
-- 職業詳細: Article / BreadcrumbList / Occupationを表示本文と対応
-- JobPosting: なし
-- 外部リンク: `target="_blank" rel="noopener noreferrer"`
-- ホーム、職業名録、職業名録詳細、ニュース詳細、ガイド詳細、商店の広告OFF時console warn/error: 0件
-- ホームの見出し: 導入行weight 550 / 強調行weight 900。1440pxで45.36px
-- ヒーロー後の一覧上余白: 375pxで36px / 1440pxで43.2px
-- ハンバーガーメニュー: 2列タイル、375pxで横あふれ0、縦スクロール可能
-- ガイド詳細: 執筆者、編集者、確認方法、最終確認日、公式出典2件を表示
-- ニュース・ガイド詳細: X / Threads / Bluesky / LINE / はてな / LinkedIn / メール / URLコピー / Web Share API導線を表示
-- 職業名録詳細: 仕事内容、就くには、条件、資格、団体、出典、前後職業、姉妹サイト導線を表示
-- 商店: PRをページ上部とAmazonリンク付近に表示。Amazonの商品画像・価格・在庫・レビューは保存・転載せず、独自の用途イラストを表示
-- 既定ビルド: AdSenseスクリプトなし、全指定幅で横あふれ・hydration errorなし
-- 主要6ページ × 7幅 = 42条件: 横あふれ0、hydration error 0、アプリ由来console warn/error 0
+localhostではGoogle広告リクエストがHTTP 403となった。除外保存前の検査では、手動スロット `8041327454` へのリクエストと、親ドメインの自動広告によるページレベルリクエストの両方を確認した。その後、管理画面で `career.manapick.app` を自動広告から除外し、「今すぐ適用」の保存成功とページ除外1件を確認した。実広告の充填と反映後の本番通信は未確認であり、403をアプリの404やレイアウト不良とは区別して記録する。未充填枠をCSSで隠していない。詳細は `docs/adsense-configuration.md` に記録した。
 
-## 本番配信
+## SEO・AEO・AI検索対応
 
-- GitHub: `https://github.com/auto-Tech513/manapick-career`（public / default branch `main`）
-- Cloudflare Pages: project `manapick-career` / GitHub source `auto-Tech513/manapick-career` / production branch `main`
-- 自動デプロイ: GitHub push `612bdf2c783dfe1fea67639d848a7ddfce49572f` が本番へ反映
-- Cloudflareビルド: `npm run qa` / output `out` / Node.js `22.13.0` / `NEXT_PUBLIC_SITE_URL=https://career.manapick.app`
-- 本番: `https://career.manapick.app`（HTTP 200）
-- カスタムドメイン: Pages APIのdomain status / verification / validationがすべて `active`
-- DNS: `career.manapick.app` → `manapick-career.pages.dev`、Cloudflare proxy有効
-- TLS: HTTP/2 200、HSTS / CSP / nosniff / Referrer-Policy / frame制限を応答ヘッダーで確認
-- robots / sitemap / llms.txt / manifest / 職業詳細 / 職業名録詳細 / 商店 / カテゴリ: すべてHTTP 200
-- sitemap: 600 URL / `/occupation/` 556 URL / 商店1 URL。llms.txtは556職業詳細のURL規則を明記
-- 本番HTML・sitemap・llms.txt: draftステータス / JobPosting / rating / reviewCountの混入0件
-- 本番職業名録詳細: 自己canonical、Occupation JSON-LD、出典・版・取込日、写真・動画不使用表示を確認
-- 本番商店: 自己canonical、上部PR表示、Amazonリンク付近PR表示、`sponsored nofollow`、独自用途イラスト表示を確認
-- 本番ニュース・ガイド: 共有UIとX intent URLを確認
-- 本番375 / 390 / 768 / 1024 / 1280 / 1440 / 1920px: 横あふれ0件、console warn/error 0件
-- 今回追加した商店・職業名録詳細・ニュース共有・ガイド共有・職業一覧を本番375px / 1440pxでも再確認。横あふれ0、hydration error 0、console warn/error 0
-- 本番入口案内: 3問完了、理由付き候補3件、順位・適性判定ではない旨を表示
-- GA4: career専用 `G-WW5XWW0YFE` を設定済み
-- 親ゾーンのCloudflare RUM自動挿入は、Configuration Rule `(http.host eq "career.manapick.app")` でcareerだけ無効化。姉妹サイト設定は変更なし
-- 上記ルール反映後の新規ブラウザ: 外部RUMビーコン0件、console warn/error 0件
-- 公開方式: Cloudflare Pages Git integration。`main` へのpushが本番デプロイを起動
+- 各独自ページは自己canonical。姉妹サイトとのcanonical共有なし
+- robots、sitemap、llms.txt、Article / CollectionPage / BreadcrumbList等の表示一致JSON-LDを生成
+- `/research/` に数値の「示すこと・示さないこと・次に確認すること」を整理
+- AI検索専用の特別なschemaや掲載保証は存在すると断定せず、Google公式の通常SEO要件、クロール可能性、一次出典、明確な著者・確認日を基準化
+- 実装根拠は `docs/seo-aeo-aio.md`、競合比較の範囲と限界は `docs/competitive-analysis-100.md` に記録
 
-## Lighthouse（ローカル静的配信・モバイル条件）
+## 公開前に必須の確認
 
-| Category | Score |
-| --- | ---: |
-| Performance | 91 |
-| Accessibility | 100 |
-| Best Practices | 100 |
-| SEO | 100 |
+- 商品画像6件の利用許諾証跡、または権利処理済み画像への差し替え
+- 保存済みのAdSense自動広告除外が反映した後、手動広告だけになることをcareer本番通信で確認
+- 本番で手動広告枠の実充填、横あふれ、CSP、hydration errorを全指定幅で再確認
+- 競合台帳のうち `surface` 75件は主要画面の精読未実施。100件すべてを深掘りしたとは表記しない
+- 競合台帳の通信未確認2件（日本経済新聞の人的資本ページ、Jobs and Skills Australia）を人が再確認
+- 出典レジストリの通信未確認1件（Logicool MX Master 3S公式ページ）を人が再確認
+- 名称・商標の専門家判断、承認済み問い合わせフォーム、本番Search Console・sitemap・GA4受信
 
-今回のUI変更後に再計測。FCP 0.9秒、LCP 3.5秒、TBT 10ms、CLS 0。日本語Webフォントの配信をやめて端末標準フォントへ切り替え、表示64px以下のアイコンを907KB版から31KB版へ変更した。Cloudflare本番のキャッシュ・HTTP/2/3条件とは異なるため、本番値を保証しない。詳細は `docs/lighthouse.json`。
-
-## 広告
-
-- 手動広告feature flag: 既定OFF
-- AdSense自動広告: 実装・有効化していない
-- 広告スクリプトなし: 全指定幅で横あふれなし、hydration/console errorなし
-- 広告スクリプトあり: 承認済みクライアントIDでホーム・商店・ニュース詳細を375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxで確認（21条件）。横あふれ0、hydration error 0
-- GoogleスクリプトへNext.js固有の`data-nscript`属性が付かないこと、同属性に関する警告0件を確認
-- localhostではGoogle広告リクエストが403となるため、広告クリエイティブの充填表示は**未確認**。403とアプリの404・レイアウト不良を区別して記録
-- 管理画面での自動広告OFF確認: **未確認**
-
-## 公開前に残る未確認
-
-- 指定役務・類似称呼を含む専門的な商標確認
-- AdSense管理画面でのcareer向け手動枠の実広告充填表示
-- Amazon販売ページの現在価格・在庫・型番一致（動的情報のため購入時に利用者が確認）
-- 承認済み問い合わせフォーム
-- 本番配信でのLighthouse再測定
-
-GitHub push、Cloudflare Pages、DNSは2026-07-12に実施した。career公開前の導線を維持する要件に従い、既存3サイトの復路リンク変更はまだ実施していない。
+画像権利と広告反映後の本番検証が解消するまで、公開成功とは報告しない。
