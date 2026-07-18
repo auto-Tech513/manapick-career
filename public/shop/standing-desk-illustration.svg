@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">昇降デスクの編集部作成イメージ</title>
+  <desc id="desc">高さ調整できる机を抽象化した図で、実際の商品写真ではありません。</desc>
+  <rect width="900" height="560" rx="40" fill="#101e3f"/>
+  <rect x="142" y="180" width="616" height="64" rx="18" fill="#ffd700"/>
+  <path d="M232 244v210m436-210v210M186 454h92m344 0h92" stroke="#fffdf2" stroke-width="26" stroke-linecap="round"/>
+  <path d="M450 112v116m0-116-34 34m34-34 34 34M450 356v-90m0 90-34-34m34 34 34-34" fill="none" stroke="#ffd700" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="548" y="278" width="74" height="40" rx="12" fill="#fffdf2"/>
+  <circle cx="568" cy="298" r="7" fill="#101e3f"/><circle cx="598" cy="298" r="7" fill="#101e3f"/>
+  <text x="52" y="74" fill="#ffd700" font-family="system-ui,sans-serif" font-size="26" font-weight="700">EDITORIAL ILLUSTRATION</text>
+  <text x="52" y="520" fill="#fff" font-family="system-ui,sans-serif" font-size="31" font-weight="700">学習環境・姿勢の道具</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">モニターの編集部作成イメージ</title>
+  <desc id="desc">作業用モニターを抽象化した図で、実際の商品写真ではありません。</desc>
+  <rect width="900" height="560" rx="40" fill="#101e3f"/>
+  <rect x="176" y="104" width="548" height="326" rx="24" fill="#fffdf2" stroke="#ffd700" stroke-width="12"/>
+  <rect x="208" y="138" width="484" height="252" rx="10" fill="#18294f"/>
+  <path d="M260 320l102-92 72 66 92-116 114 142" fill="none" stroke="#ffd700" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="526" cy="178" r="15" fill="#fff"/>
+  <path d="M450 430v48m-116 0h232" stroke="#fffdf2" stroke-width="18" stroke-linecap="round"/>
+  <text x="52" y="74" fill="#ffd700" font-family="system-ui,sans-serif" font-size="26" font-weight="700">EDITORIAL ILLUSTRATION</text>
+  <text x="52" y="520" fill="#fff" font-family="system-ui,sans-serif" font-size="31" font-weight="700">調査・ポートフォリオの道具</text>
+</svg>

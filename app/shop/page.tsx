@@ -54,6 +54,6 @@ export default function ShopPage() {
       </article>)}
     </section>
 
-    <section className="career-shop-method"><h2>選定方法と限界</h2><p>{careerShopPolicy.independence}</p><p>商品写真は姉妹サイトと同じローカル画像資産を使用し、各カードに画像の提供元を表示しています。Amazonの商品画像を保存・転載しているものではありません。画像の出典表示は利用許諾の代替にならないため、公開前に権利確認が必要です。外観、販売条件、画像・仕様の更新はAmazonとメーカー公式ページで再確認してください。</p><p>職業ページやガイドの結論は、この商店やPRリンクを外しても変わりません。必要な道具は仕事、職場、体格、すでに持っている機器で変わります。</p><div><a href="https://affiliate.amazon.co.jp/help/node/topic/GKT6X2R3NGW5V23K" target="_blank" rel="noopener noreferrer">Amazon画像利用の公式注意事項 <ArrowUpRight aria-hidden="true" /></a><Link href="/affiliate/">本サイトの広告方針</Link><Link href="/contact/">訂正窓口</Link></div><small>掲載内容確認日：{careerShopPolicy.checkedAt}</small></section>
+    <section className="career-shop-method"><h2>選定方法と限界</h2><p>{careerShopPolicy.independence}</p><p>カードの画像はmanapick編集部が作成した用途別の抽象イラストで、実際の商品写真ではありません。メーカーのロゴ・商品画像、Amazonの商品画像・価格・在庫・レビューは保存・転載していません。外観、販売条件、画像・仕様の更新はAmazonとメーカー公式ページで再確認してください。</p><p>職業ページやガイドの結論は、この商店やPRリンクを外しても変わりません。必要な道具は仕事、職場、体格、すでに持っている機器で変わります。</p><div><a href="https://affiliate.amazon.co.jp/help/node/topic/GKT6X2R3NGW5V23K" target="_blank" rel="noopener noreferrer">Amazon画像利用の公式注意事項 <ArrowUpRight aria-hidden="true" /></a><Link href="/affiliate/">本サイトの広告方針</Link><Link href="/contact/">訂正窓口</Link></div><small>掲載内容確認日：{careerShopPolicy.checkedAt}</small></section>
   </div></>;
 }

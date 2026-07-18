@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">マウスの編集部作成イメージ</title>
+  <desc id="desc">多機能マウスを抽象化した図で、実際の商品写真ではありません。</desc>
+  <rect width="900" height="560" rx="40" fill="#101e3f"/>
+  <path d="M450 92c-128 0-214 88-214 230 0 101 76 154 214 154s214-53 214-154c0-142-86-230-214-230Z" fill="#fffdf2" stroke="#ffd700" stroke-width="12"/>
+  <path d="M450 98v162" stroke="#101e3f" stroke-width="12"/>
+  <rect x="425" y="130" width="50" height="90" rx="25" fill="#18294f"/>
+  <path d="M302 316c20 66 68 98 148 98" fill="none" stroke="#18294f" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="596" cy="300" r="20" fill="#ffd700"/>
+  <text x="52" y="74" fill="#ffd700" font-family="system-ui,sans-serif" font-size="26" font-weight="700">EDITORIAL ILLUSTRATION</text>
+  <text x="52" y="520" fill="#fff" font-family="system-ui,sans-serif" font-size="31" font-weight="700">入力・資料整理の道具</text>
+</svg>
