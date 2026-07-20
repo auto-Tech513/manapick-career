@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <dir prefix="cwd">node_modules/@expo-google-fonts/noto-sans-jp/500Medium</dir>
+  <dir prefix="cwd">node_modules/@expo-google-fonts/noto-sans-jp/700Bold</dir>
+  <config>
+    <rescan><int>0</int></rescan>
+  </config>
+</fontconfig>

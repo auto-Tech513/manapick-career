@@ -28,6 +28,7 @@
     "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
   },
   "dependencies": {
+    "@expo-google-fonts/noto-sans-jp": "^0.4.3",
     "lucide-react": "^1.21.0",
     "next": "16.2.10",
     "react": "19.2.7",
