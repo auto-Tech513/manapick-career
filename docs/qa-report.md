@@ -4,7 +4,7 @@
 
 ## 判定
 
-機能リリースはGitHub Pull Request [#3](https://github.com/auto-Tech513/manapick-career/pull/3)で `main` へマージし、merge commit `78f36cdb11bc5268e9b2f26e85eef29a9abdb346` をCloudflare Pagesの本番deployment `29eaf1a9` として公開した。その後、運用記録と生成物除外を整えたPull Request [#4](https://github.com/auto-Tech513/manapick-career/pull/4)をマージし、現在の `main` commit `5b9f5358e61db4f2cdbcb1908aba6ec508fd7871` を本番deployment `f498f00b` として公開した。Cloudflare管理画面のProduction source、公開URL、公開HTMLを2026-07-20に照合した。
+機能リリースはGitHub Pull Request [#3](https://github.com/auto-Tech513/manapick-career/pull/3)で `main` へマージし、merge commit `78f36cdb11bc5268e9b2f26e85eef29a9abdb346` をCloudflare Pagesの本番deployment `29eaf1a9` として公開した。その後、運用記録と生成物除外を整えたPull Request [#4](https://github.com/auto-Tech513/manapick-career/pull/4)のmerge commit `5b9f5358e61db4f2cdbcb1908aba6ec508fd7871` を本番deployment `f498f00b` として公開した。本レポートの照合修正はPull Request [#5](https://github.com/auto-Tech513/manapick-career/pull/5)で `main` へマージし、merge commit `bb14f777c7621346425fca0c2eaa5708657224b8` を本番deployment `884b701e` として公開した。Cloudflare管理画面のProduction source、公開URL、公開HTMLを2026-07-20に照合した。以後の最新commitとdeploymentはGitHub・Cloudflareの履歴を正本とし、本段落の値は各時点の公開履歴として扱う。
 
 新規ガイド30本は機械検査対象だが、人手レビューと承認記録は未確認である。このため全件を `draft` とし、公開済み4本だけを一覧、個別ページ、sitemap、llms.txt、JSON-LD、公開OG画像へ出す。30本を公開済みとは報告しない。
 
