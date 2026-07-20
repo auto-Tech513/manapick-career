@@ -7,11 +7,11 @@ import { JsonLd } from "@/components/JsonLd";
 import { ShareKit } from "@/components/ShareKit";
 import { guideBySlug, guides } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const guide = guideBySlug(slug); if (!guide) return {}; const image = absoluteUrl(`/og/guide/${slug}.png`); return { title: guide.title, description: guide.summary, alternates: { canonical: `/guide/${slug}/` }, openGraph: { title: guide.title, description: guide.summary, type: "article", url: absoluteUrl(`/guide/${slug}/`), publishedTime: guide.publishedAt, modifiedTime: guide.checkedAt, images: [{ url: image, width: 1200, height: 630, alt: guide.title }] }, twitter: { card: "summary_large_image", title: guide.title, description: guide.summary, images: [image] } }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const guide = guideBySlug(slug); if (!guide) return {}; const image = articleOgUrl("guide", slug); return { title: guide.title, description: guide.summary, alternates: { canonical: `/guide/${slug}/` }, openGraph: { title: guide.title, description: guide.summary, type: "article", url: absoluteUrl(`/guide/${slug}/`), publishedTime: guide.publishedAt, modifiedTime: guide.checkedAt, images: [{ url: image, width: 1200, height: 630, alt: guide.title }] }, twitter: { card: "summary_large_image", title: guide.title, description: guide.summary, images: [image] } }; }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -20,7 +20,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const sources = sourceRegistry.filter((source) => guide.sourceIds.includes(source.sourceId));
   const url = absoluteUrl(`/guide/${slug}/`);
   const graph = { "@context": "https://schema.org", "@graph": [
-    { "@type": "Article", headline: guide.title, description: guide.summary, mainEntityOfPage: url, url, image: absoluteUrl(`/og/guide/${slug}.png`), datePublished: guide.publishedAt, dateModified: guide.checkedAt, inLanguage: "ja-JP", author: { "@type": "Organization", name: guide.author, url: absoluteUrl("/operator/") }, editor: { "@type": "Organization", name: guide.editor, url: absoluteUrl("/operator/") }, publisher: { "@id": absoluteUrl("/#organization") }, citation: sources.map((source) => source.url) },
+    { "@type": "Article", headline: guide.title, description: guide.summary, mainEntityOfPage: url, url, image: articleOgUrl("guide", slug), datePublished: guide.publishedAt, dateModified: guide.checkedAt, inLanguage: "ja-JP", author: { "@type": "Organization", name: guide.author, url: absoluteUrl("/operator/") }, editor: { "@type": "Organization", name: guide.editor, url: absoluteUrl("/operator/") }, publisher: { "@id": absoluteUrl("/#organization") }, citation: sources.map((source) => source.url) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "ホーム", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ガイド", item: absoluteUrl("/guide/") }, { "@type": "ListItem", position: 3, name: guide.title, item: url }] },
   ] };
   return <><JsonLd data={graph}/><div className="page-shell editorial-detail">

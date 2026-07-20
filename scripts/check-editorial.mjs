@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { createRequire } from "node:module";
 import path from "node:path";
 import sharp from "sharp";
 
@@ -11,6 +12,22 @@ const failures = [];
 const slugs = new Set();
 const expectedOgImages = [];
 const expandedArticleCores = [];
+const require = createRequire(import.meta.url);
+
+const ogGenerator = fs.readFileSync(path.join(root, "scripts/generate-og.mjs"), "utf8");
+const fontPackagePath = require.resolve("@expo-google-fonts/noto-sans-jp/package.json");
+const fontPackage = JSON.parse(fs.readFileSync(fontPackagePath, "utf8"));
+const fontPackageRoot = path.dirname(fontPackagePath);
+const requiredJapaneseFonts = [
+  path.join(fontPackageRoot, "500Medium/NotoSansJP_500Medium.ttf"),
+  path.join(fontPackageRoot, "700Bold/NotoSansJP_700Bold.ttf"),
+];
+
+if (!String(fontPackage.license).includes("OFL-1.1")) failures.push("OG用Noto Sans JPのOFL-1.1ライセンスを確認できない");
+for (const fontFile of requiredJapaneseFonts) if (!fs.existsSync(fontFile)) failures.push(`OG用日本語フォントなし: ${fontFile}`);
+if (!ogGenerator.includes("fontfile: fontFace.file") || !ogGenerator.includes("fontfile: fontFiles.bold.file")) {
+  failures.push("OG生成処理が日本語フォントファイルを明示していない");
+}
 
 function trigramSet(value) {
   const normalized = String(value).replace(/\s+/g, "");
@@ -32,7 +49,7 @@ for (const [collection, source] of arrays) {
     const slug = item.match(/slug:\s*"([^"]+)"/)?.[1] ?? "unknown";
     if (slugs.has(slug)) failures.push(`${collection}/${slug}: slug重複`);
     slugs.add(slug);
-    expectedOgImages.push(path.join(root, "public", "og", collection === "guides" ? "guide" : "news", `${slug}.png`));
+    expectedOgImages.push(path.join(root, "public", "og", "jp-v2", collection === "guides" ? "guide" : "news", `${slug}.png`));
     const body = item.match(/sections:\s*\[([\s\S]*)/)?.[1] ?? "";
     const prose = [...body.matchAll(/"([^"\n]{20,})"/g)].map((match) => match[1]).join("");
     if (prose.length < 1000) failures.push(`${collection}/${slug}: 本文が${prose.length}字で1000字未満`);
@@ -56,7 +73,7 @@ for (const item of expandedNews) {
   const slug = item.slug ?? "unknown";
   if (slugs.has(slug)) failures.push(`newsItems/${slug}: slug重複`);
   slugs.add(slug);
-  expectedOgImages.push(path.join(root, "public", "og", "news", `${slug}.png`));
+  expectedOgImages.push(path.join(root, "public", "og", "jp-v2", "news", `${slug}.png`));
   const articleCore = ["whatHappened", "howToRead", "whatNotToConclude", "nextActions"].flatMap((key) => item[key] ?? []).join("");
   const prose = articleCore + generatedProse;
   if (prose.length < 1000) failures.push(`newsItems/${slug}: 生成本文が${prose.length}字で1000字未満`);
@@ -97,4 +114,4 @@ if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
 }
-console.log(`editorial check: guides/news are long-form, sourced, TOC-ready; news=${baseNewsCount + expandedNews.length}`);
+console.log(`editorial check: guides/news are long-form, sourced, TOC-ready; OG font=Noto Sans JP explicit TTF; news=${baseNewsCount + expandedNews.length}`);
