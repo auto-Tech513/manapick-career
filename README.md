@@ -2,7 +2,7 @@
 
 「学ぶ・AIを選ぶ・資格で証明する」を仕事につなぐ、manapick公式の職業・キャリアパス情報サイトです。
 
-- 公開予定URL: `https://career.manapick.app`
+- 公開URL: `https://career.manapick.app`
 - ブランドコピー: 「なりたい仕事まで、迷わせない。」
 - Next.js App Router / TypeScript / React / Tailwind CSS
 - `output: "export"` の完全静的サイト
@@ -26,6 +26,9 @@ npm audit --omit=dev
 ```
 
 - `content:check`: 公開条件、必須項目、禁止表現、sourceId、network itemを検査
+- `editorial:check`: ニュース・ガイドの本文、出典、公開状態、OG画像を検査
+- `monetization:check`: AdSenseのpublisher、手動slot、ads.txt、CSP、記事内配置を検査
+- `shop:check`: PR表示、公式出典、権利処理済みの独自イラストを検査
 - `source:check`: 出典レジストリと主張の鮮度を検査
 - `similarity:check`: 職業本文間の高い類似度を警告
 - `links:check`: 静的出力の内部リンク404を検査
@@ -33,9 +36,11 @@ npm audit --omit=dev
 
 ## コンテンツ公開
 
-職業は `draft` → `reviewed` → `published` の順に人が承認します。独自本文、公式出典、確認日、関連動画、関連資格、関連AI、編集者確認が揃わないデータは `published` にしません。
+職業とガイドは `draft` → `reviewed` → `published` の順に人が承認します。独自本文、公式出典、確認日、関連導線、編集者確認が揃わないデータは `published` にしません。
 
-`published` 以外は職業ページ、sitemap、llms.txt、JSON-LDに出力されません。更新日にはビルド日ではなく、実際に人が確認した日を記録します。
+`published` 以外の職業・ガイドは、一覧、個別ページ、sitemap、llms.txt、JSON-LD、公開OG画像に出力されません。更新日にはビルド日ではなく、実際に人が確認した日を記録します。
+
+ニュースは現行データに同じstatusフィールドがないため、専用ブランチとreview-onlyのDraft PRを公開ゲートにします。朝夕の自動監査は `main` へmergeせず、編集者の確認後だけ人がmergeします。登録内容と未確認事項は `docs/news-automation.md` に記録します。
 
 ## デプロイ
 

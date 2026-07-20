@@ -26,8 +26,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   return <><JsonLd data={graph}/><div className="page-shell editorial-detail">
     <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/guide/">ガイド</Link><span>/</span><span aria-current="page">{guide.category}</span></nav>
     <Link className="back-link" href="/guide/"><ArrowLeft aria-hidden="true" />ガイド一覧へ</Link>
-    <header className="page-heading article-heading"><span className="eyebrow">{guide.category}</span><h1>{guide.title}</h1><p>{guide.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
+    <header className="page-heading article-heading"><span className="eyebrow">{guide.category}</span><h1>{guide.title}</h1><p>{guide.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
     <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />
-    <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources}/>
+    <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.networkLinks} estimateLabel="読む・試す目安"/>
   </div></>;
 }
