@@ -4,12 +4,19 @@ import fs from "node:fs";
 import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { layoutOgTitle } from "./lib/og-title-layout.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
+fs.mkdirSync("/tmp/manapick-og-fontconfig-cache", { recursive: true });
+const outputRoot = process.env.OG_OUTPUT_DIR
+  ? path.resolve(process.env.OG_OUTPUT_DIR)
+  : path.join(root, "public/og/jp-v2");
+const includeDraftPreviews = process.env.OG_INCLUDE_DRAFTS === "1";
 process.env.FONTCONFIG_FILE = path.join(root, "scripts/fontconfig-og.xml");
 const { default: sharp } = await import("sharp");
 const editorial = fs.readFileSync(path.join(root, "content/editorial.ts"), "utf8");
 const expanded = JSON.parse(fs.readFileSync(path.join(root, "content/news-expanded.json"), "utf8"));
+const expandedGuides = JSON.parse(fs.readFileSync(path.join(root, "content/guides-expanded.json"), "utf8"));
 const require = createRequire(import.meta.url);
 const fontRoot = path.dirname(require.resolve("@expo-google-fonts/noto-sans-jp/package.json"));
 const fontFiles = {
@@ -22,27 +29,6 @@ for (const fontFace of Object.values(fontFiles)) {
 }
 
 const esc = (value) => String(value).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/\"/g, "&quot;").replace(/'/g, "&#39;");
-const width = (char) => (char.codePointAt(0) > 0x2e80 ? 1 : 0.55);
-function wrap(text, limit = 16, maxLines = 3) {
-  const lines = [];
-  let line = "";
-  let current = 0;
-  for (const char of String(text)) {
-    const next = width(char);
-    if (current + next > limit) {
-      lines.push(line);
-      line = "";
-      current = 0;
-      if (lines.length === maxLines) break;
-    }
-    line += char;
-    current += next;
-  }
-  if (line && lines.length < maxLines) lines.push(line);
-  if (lines.join("").length < [...String(text)].length) lines[maxLines - 1] = `${lines[maxLines - 1].replace(/.$/, "")}…`;
-  return lines;
-}
-
 function pickObjects(blockName) {
   const start = editorial.indexOf(blockName);
   const end = editorial.indexOf("\n];", start);
@@ -80,15 +66,16 @@ function textInput(text, { fontFace, size, color = "#ffffff" }) {
 }
 
 function overlays({ title, label, date, type }) {
-  const lines = wrap(title);
-  const startY = lines.length === 1 ? 314 : lines.length === 2 ? 265 : 220;
+  const layout = layoutOgTitle(title);
+  const titleHeight = layout.fontSize + (layout.lines.length - 1) * layout.lineHeight;
+  const firstLineTop = Math.round(280 - titleHeight / 2);
   return [
     { input: textInput(type, { fontFace: fontFiles.bold, size: 28, color: "#101d3d" }), left: 94, top: 67 },
     { input: textInput(label, { fontFace: fontFiles.medium, size: 28, color: "#d8dfef" }), left: type === "NEWS" ? 222 : 240, top: 67 },
-    ...lines.map((line, index) => ({
-      input: textInput(line, { fontFace: fontFiles.bold, size: 58 }),
+    ...layout.lines.map((line, index) => ({
+      input: textInput(line, { fontFace: fontFiles.bold, size: layout.fontSize }),
       left: 72,
-      top: startY - 58 + index * 82,
+      top: firstLineTop + index * layout.lineHeight,
     })),
     {
       input: {
@@ -108,7 +95,7 @@ function overlays({ title, label, date, type }) {
 }
 
 async function render(item, type, directory) {
-  const output = path.join(root, "public/og/jp-v2", directory, `${item.slug}.png`);
+  const output = path.join(outputRoot, directory, `${item.slug}.png`);
   fs.mkdirSync(path.dirname(output), { recursive: true });
   await sharp(Buffer.from(backgroundSvg(type)))
     .composite(overlays({ title: item.title, label: item.label, date: item.date, type }))
@@ -116,7 +103,18 @@ async function render(item, type, directory) {
     .toFile(output);
 }
 
-const guides = pickObjects("export const guides");
+const guides = [
+  ...pickObjects("const baseGuides"),
+  ...expandedGuides
+    .filter((item) => includeDraftPreviews || (
+      item.status === "published"
+      && item.publishedAt
+      && item.reviewedAt
+      && item.reviewedBy
+      && item.reviewedByHumanAt
+    ))
+    .map((item) => ({ slug: item.slug, title: item.title, label: item.category, date: item.publishedAt ?? item.createdAt })),
+];
 const baseNews = pickObjects("const newsItemsData");
 const expandedNews = expanded.map((item) => ({ slug: item.slug, title: item.title, label: item.kind, date: "2026-07-14" }));
 for (const guide of guides) await render(guide, "GUIDE", "guide");

@@ -1,89 +1,84 @@
 # manapick career QAレポート
 
-確認日: 2026-07-14（JST）
+確認日: 2026-07-20（JST）
 
 ## 判定
 
-ローカル実装と静的出力の品質検査は合格した。ただし、次の公開条件が残るため、今回の差分はGitHubへpushせず、本番へ自動デプロイしていない。
+現リリース候補はローカル作業ツリーにあり、commit、GitHubへのpush、Cloudflare Pagesへのデプロイは未実施である。既存本番の確認事実と現候補のローカル検査を混同しない。
 
-1. `public/shop/` の6商品画像について、メーカーからの転載・公衆送信許諾を示す証跡が未確認。詳細は `docs/product-image-clearance.md` に記録した。
-2. `career.manapick.app` の自動広告除外は保存済みだが、管理画面が案内する最長1時間の反映後に、本番通信でページレベル自動広告が0件になることは未確認。
+新規ガイド30本は機械検査対象だが、人手レビューと承認記録は未確認である。このため全件を `draft` とし、公開済み4本だけを一覧、個別ページ、sitemap、llms.txt、JSON-LD、公開OG画像へ出す。30本を公開済みとは報告しない。
 
-現行本番はこの差分を含まない。以下は、権利・広告設定の解消後に公開できる候補版の検査結果である。
+商品画像の権利未確認による以前の公開停止条件は解消済みである。許諾証跡を確認できなかった商品写真6点を2026-07-18に削除し、メーカーのロゴ・商品写真・固有外観を複製しない編集部作成の抽象SVG6点へ差し替えた。
 
-## 静的生成・コンテンツ
+## 現候補のコンテンツ構成
 
-- Next.js 16.2.10 / Node.js 22.13.0 / `output: "export"`: クリーンな一時ディレクトリで成功
-- 生成ルート: 633ページ
-- 内部リンク検査: 629 HTML、リンク先欠落0件
-- 人手確認済み詳細職業: 12件
 - 職業名録: 556件 / 15カテゴリ
-- ニュース: 30件。各記事1,000字以上、結論、目次、一次出典、確認日、執筆・編集情報を検査
-- ガイド: 4件。各記事1,000字以上、目次、出典、確認日、執筆・編集情報を検査
-- OGP: ニュース30画像 / ガイド4画像。1200×630 PNGをビルド前に生成
+- 人手確認済み詳細職業: 12件
+- ニュース: 30件
+- ガイド: 全34件のうち公開済み4件、未承認draft 30件
+- 新規ガイド30件: 各1,000字以上、4セクション以上、記事単位の出典に加えて重要主張ごとのsourceId・確認日・鮮度期限を保持
+- 姉妹サイト導線: `content/network-map.json` のitemIdを正本にし、build時に絶対URLへ解決。新規ガイドは記事文脈に合う学習・AI・資格の個別ページを参照
 - 出典レジストリ: 49件
-- 競合・参照サイト台帳: 100件。主要画面まで確認した `deep` 25件、公開画面から用途を確認した `surface` 75件
-- manapi商店: 6商品。商品画像6件、メーカー公式仕様リンク6件、Amazon PRリンク6件
-- sitemap / llms.txt / JSON-LD / 公開HTMLのdraft混入: 0件
-- JobPosting、存在しないrating・reviewCount・salary・employmentType: 0件
-- ニュース・ガイドのcanonical、OG URL、Article JSON-LD image: 表示URLと一致
+- 競合・参照サイト台帳: 100件（`deep` 25件 / `surface` 75件）
+- manapi商店: 6商品、編集部作成SVG6件、メーカー公式仕様リンク6件、Amazon PRリンク6件
+- 不存在のJobPosting、rating、reviewCount、salary、employmentTypeは生成しない
 
 ## 自動検査
 
-- `npm run lint`: 成功
-- `npm run content:check`: 成功
-- `npm run catalog:check`: 成功
-- `npm run editorial:check`: 成功
-- `npm run backlog:check`: 成功
-- `npm run monetization:check`: 成功
-- `npm run shop:check`: 成功
-- `npm run competitive:check`: 成功（100件、deep 25 / surface 75）
-- `npm run competitive:network`: 正常92件 / 404・410は0件 / bot制限6件 / 通信未確認2件
-- `npm run links:network`: 正常26件 / 欠落0件 / bot制限0件 / 未確認0件
-- `npm run source:check`: 成功
-- `npm run source:network`: 正常46件 / 404・410は0件 / bot制限2件 / 通信未確認1件
-- `npm run similarity:check`: 成功
-- `npm run build`: 成功（クリーンな一時ディレクトリ）
-- `npm run links:check`: 成功
-- `npm audit`: 0 vulnerabilities
+2026-07-20、Node.js v24.16.0のクリーン作業用cloneで、最終コード状態の `npm run qa` を完走した。
 
-元のiCloud配下リポジトリでは、コンパイル・型検査・633ページ生成後の最終コピーがファイルI/O待ちで停止した。同一ソースを `/tmp` のクリーン環境へ複製したビルドは完了しており、コード不良とストレージI/Oを区別した。
+- OG生成、lint、content、catalog、editorial、backlog、monetization、shop、competitive、source、similarity、build、内部リンク検査: すべて成功
+- 静的生成: 633 / 633ページ
+- 内部リンク検査: HTML 629件、欠落0件
+- `npm run editorial:check`: ガイド全34件 / 公開4件 / draft 30件、ニュース30件、重要主張35件、最大ガイド本文類似度11.13%、network-map SSOT・OG禁則検査合格
+- draft混入検査: `out/guide` は公開4件のみ。代表draft slugは静的ルート、sitemap、llms.txt、HTML / XML / TXTから不検出
+- `npm run monetization:check`: 成功（`ca-pub-4108900975353940` / `8041327454`、記事内手動枠限定）
+- `npm run source:check`: 成功（49件、鮮度期限内）
+- `npm run similarity:check`: 成功（詳細職業12件、警告0件）
 
-## 実ブラウザ
+ネットワーク検査と `npm audit` は `npm run qa` に含まれないため、別の実行日を記録する。
 
-ローカル静的出力を実ブラウザで確認した。対象はホーム、manapi商店、ニュース一覧、ニュース詳細、ガイド詳細、キャリアデータ室、職業名録の7ルートで、375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxの49条件。
+## 保存済みの外部リンク検査
 
-| 項目 | 結果 |
-| --- | --- |
-| `document.scrollWidth <= viewport` | 49/49 |
-| 壊れた画像 | 0件 |
-| manapi商店の商品画像 | 6/6をeager読込、各900px幅を確認 |
-| hydration / page error | 0件 |
-| アプリ由来console error | 0件 |
-| モバイルメニュー横あふれ | 0件 |
-| モバイルメニュー中のbody scroll | ロック済み |
-| ホームのAdSenseスクリプト | なし |
-| 長文記事の手動広告スロット | あり |
-| ニュース詳細OG / canonical | 一致 |
+- `npm run links:network`: 姉妹サイトnetwork-map 26件すべて正常（2026-07-20）
+- `npm run competitive:network`: 正常92件 / bot制限6件 / 通信未確認2件 / 404・410は0件（2026-07-14の記録。現候補では未再実行）
+- `npm run source:network`: 正常47件 / bot制限2件 / 通信未確認0件 / 404・410は0件（2026-07-20、現候補で再実行）
+- `npm audit --omit=dev`: 0 vulnerabilities（2026-07-20、現候補で再実行）
 
-localhostではGoogle広告リクエストがHTTP 403となった。除外保存前の検査では、手動スロット `8041327454` へのリクエストと、親ドメインの自動広告によるページレベルリクエストの両方を確認した。その後、管理画面で `career.manapick.app` を自動広告から除外し、「今すぐ適用」の保存成功とページ除外1件を確認した。実広告の充填と反映後の本番通信は未確認であり、403をアプリの404やレイアウト不良とは区別して記録する。未充填枠をCSSで隠していない。詳細は `docs/adsense-configuration.md` に記録した。
+bot制限や通信未確認を404と同一扱いにしない。新規ガイド30本の公開前には、使用する一次資料と深い姉妹サイトリンクを人がブラウザで再確認する。
+
+## ブラウザ・AdSense
+
+- ローカル静的出力をChromiumで検査し、トップ、ガイド一覧、ニュース一覧、ガイド詳細、ニュース詳細、入口案内、manapi商店の7経路 × 375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxの49ケースで横あふれ0、console error 0を確認した
+- ガイド一覧は画面幅に応じて1 / 2 / 3列へ変化することを確認した
+- 実機SafariとAndroid Chromeは未確認
+- AdSense publisher `pub-4108900975353940`、手動slot `8041327454`、`ads.txt` の一致を確認
+- AdSenseの `manapick.app` は準備完了、ads.txt承認済み、ポリシーセンターは問題なし
+- `career.manapick.app` の自動広告除外は管理画面で有効
+- 本番の手動枠は未充填を確認した後、同日に758×90枠の充填済みクリエイティブを1回確認した
+
+充填はGoogle側の判断と広告需要に依存し、サイト側から保証できない。代表URLの本番通信で意図しないページレベル自動広告が0件であることと、充填済み実広告を伴う全指定幅の横あふれ・CSP・hydration・console確認は未確認である。
 
 ## SEO・AEO・AI検索対応
 
 - 各独自ページは自己canonical。姉妹サイトとのcanonical共有なし
-- robots、sitemap、llms.txt、Article / CollectionPage / BreadcrumbList等の表示一致JSON-LDを生成
-- `/research/` に数値の「示すこと・示さないこと・次に確認すること」を整理
-- AI検索専用の特別なschemaや掲載保証は存在すると断定せず、Google公式の通常SEO要件、クロール可能性、一次出典、明確な著者・確認日を基準化
-- 実装根拠は `docs/seo-aeo-aio.md`、競合比較の範囲と限界は `docs/competitive-analysis-100.md` に記録
+- 職業・ガイドは `published` だけを公開面へ出し、draft/reviewedを除外
+- robots、sitemap、llms.txt、Article / NewsArticle / BreadcrumbListを表示内容と一致させる
+- 更新日をビルド日で上書きせず、人が確認した日を使用
+- AI検索専用の特別なschemaや掲載保証は存在すると断定しない
 
-## 公開前に必須の確認
+既存本番の代表ニュースHTTP 200、自己canonical、記事固有OG画像、NewsArticle、BreadcrumbListと、robots.txtのsitemap通知は2026-07-20に確認した。現候補のデプロイ後URL、Rich Results Test、Search ConsoleのURL検査・モバイル描画・インデックス、GA4受信は未確認である。
 
-- 商品画像6件の利用許諾証跡、または権利処理済み画像への差し替え
-- 保存済みのAdSense自動広告除外が反映した後、手動広告だけになることをcareer本番通信で確認
-- 本番で手動広告枠の実充填、横あふれ、CSP、hydration errorを全指定幅で再確認
-- 競合台帳のうち `surface` 75件は主要画面の精読未実施。100件すべてを深掘りしたとは表記しない
-- 競合台帳の通信未確認2件（日本経済新聞の人的資本ページ、Jobs and Skills Australia）を人が再確認
-- 出典レジストリの通信未確認1件（Logicool MX Master 3S公式ページ）を人が再確認
-- 名称・商標の専門家判断、承認済み問い合わせフォーム、本番Search Console・sitemap・GA4受信
+## ニュース自動監査
 
-画像権利と広告反映後の本番検証が解消するまで、公開成功とは報告しない。
+自動化 `manapick-career` は毎日08:00 / 18:00（Asia/Tokyo）、ACTIVE、review-onlyのDraft PR作成までとして2026-07-20に確認した。初回の定刻実行、実際のDraft PR、外部サイト応答は未確認である。
+
+## 公開前に残る確認
+
+- 新規ガイド30本を人が確認し、承認記録を付けるまでdraftを維持する
+- 現候補をcommit・push・デプロイした後、本番スモークテストを行う
+- 充填済み実広告ありの全指定幅と、意図しない自動広告が0件であることを確認する
+- 初回ニュース自動監査の実行結果とDraft PRを確認する
+- 商標の専門確認、承認済み問い合わせフォーム、現候補のSearch Console・GA4確認を行う
+
+未確認事項が解消するまで、30本の新規ガイド公開、広告の継続充填、検索掲載、自動監査の初回成功を報告しない。

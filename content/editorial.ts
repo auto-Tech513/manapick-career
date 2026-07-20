@@ -1,4 +1,7 @@
 import expandedNewsData from "./news-expanded.json";
+import expandedGuideData from "./guides-expanded.json";
+import guideClaimData from "./guide-claim-registry.json";
+import { networkUrl } from "@/lib/network";
 
 export type EditorialSection = {
   id: string;
@@ -6,6 +9,26 @@ export type EditorialSection = {
   paragraphs: string[];
   points?: string[];
 };
+
+export type EditorialStatus = "draft" | "reviewed" | "published";
+
+export type EditorialClaim = {
+  claimId: string;
+  text: string;
+  sourceIds: string[];
+  lastCheckedAt: string;
+  freshnessDays: number;
+  critical: boolean;
+};
+
+export type EditorialNetworkLinkReference = {
+  siteId: "learning" | "ai" | "license";
+  itemId: string;
+  label: string;
+  description: string;
+};
+
+export type EditorialNetworkLink = EditorialNetworkLinkReference & { href: string };
 
 export type Guide = {
   slug: string;
@@ -22,6 +45,12 @@ export type Guide = {
   relatedCareerSlugs: string[];
   keyPoints: string[];
   sections: EditorialSection[];
+  status: "published";
+  reviewedAt: string;
+  reviewedBy: string;
+  reviewedByHumanAt: string;
+  claims: EditorialClaim[];
+  networkLinks?: EditorialNetworkLink[];
 };
 
 export type NewsItem = {
@@ -50,6 +79,27 @@ type ExpandedNewsSeed = Omit<NewsItem, "author" | "editor" | "sections"> & {
   whatNotToConclude: string[];
   nextActions: string[];
 };
+
+type ExpandedGuideSeed = Omit<Guide, "author" | "editor" | "claims" | "networkLinks" | "status" | "publishedAt" | "reviewedAt" | "reviewedBy" | "reviewedByHumanAt"> & {
+  createdAt: string;
+  status: EditorialStatus;
+  publishedAt?: string;
+  reviewedAt: string | null;
+  reviewedBy: string | null;
+  reviewedByHumanAt: string | null;
+  networkLinks: EditorialNetworkLinkReference[];
+};
+
+type GuideClaimRecord = { guideSlug: string; claims: EditorialClaim[] };
+
+const guideClaims = new Map((guideClaimData as GuideClaimRecord[]).map((record) => [record.guideSlug, record.claims]));
+function claimsForGuide(slug: string) {
+  return guideClaims.get(slug) ?? [];
+}
+
+function resolveNetworkLinks(links: EditorialNetworkLinkReference[]): EditorialNetworkLink[] {
+  return links.map((link) => ({ ...link, href: networkUrl(link.itemId) }));
+}
 
 function buildExpandedNews(seed: ExpandedNewsSeed): NewsItem {
   // news-expanded.json の publishedAt は一次資料の公表日を保持した旧フィールド。
@@ -84,7 +134,7 @@ function buildExpandedNews(seed: ExpandedNewsSeed): NewsItem {
   };
 }
 
-export const guides: Guide[] = [
+const baseGuides: Guide[] = [
   {
     slug: "how-to-read-career-pages",
     title: "職業情報を読む順番：名前より先に仕事の中身を見る",
@@ -94,11 +144,21 @@ export const guides: Guide[] = [
     readMinutes: 9,
     publishedAt: "2026-07-12",
     checkedAt: "2026-07-12",
+    status: "published",
+    reviewedAt: "2026-07-12",
+    reviewedBy: editor,
+    reviewedByHumanAt: "2026-07-12",
     author,
     editor,
+    claims: claimsForGuide("how-to-read-career-pages"),
     sourceIds: ["mhlw-jobtag-it-consultant", "ipa-dss-v2-press", "ipa-dss-v2-files"],
     relatedCareerSlugs: ["it-consultant", "data-analyst", "office-administration"],
     keyPoints: ["職業名より、繰り返す作業と成果物を先に見る", "良い面と注意点を同じ重さで読む", "申込みや転職判断の直前に一次情報を再確認する"],
+    networkLinks: resolveNetworkLinks([
+      { siteId: "learning", itemId: "learning:office", label: "manapickで仕事の基礎作業を動画で確かめる", description: "職業名から離れ、文書・表計算・確認などの入口作業を短い動画で試します。" },
+      { siteId: "ai", itemId: "ai:notebooklm", label: "manapick AIで出典に戻れる整理方法を見る", description: "資料を要約する前に、引用元へ戻って確認できるAIの使い方と注意点を確認します。" },
+      { siteId: "license", itemId: "license:it-passport", label: "manapick licenseでIT基礎の学習範囲を確認", description: "資格を採用保証にせず、仕事を読むためのIT基礎用語を公式要件から確認します。" },
+    ]),
     sections: [
       {
         id: "start-with-tasks",
@@ -153,11 +213,21 @@ export const guides: Guide[] = [
     readMinutes: 10,
     publishedAt: "2026-07-12",
     checkedAt: "2026-07-12",
+    status: "published",
+    reviewedAt: "2026-07-12",
+    reviewedBy: editor,
+    reviewedByHumanAt: "2026-07-12",
     author,
     editor,
+    claims: claimsForGuide("build-a-learning-route-from-tasks"),
     sourceIds: ["ipa-dss-v2-press", "ipa-dss-v2-files", "mhlw-human-development-2026"],
     relatedCareerSlugs: ["software-engineer", "web-designer", "data-analyst"],
     keyPoints: ["職業ではなく完了を確認できる作業を選ぶ", "開始前に完成条件と中止条件を決める", "教材の量ではなく自力で説明できる変化を記録する"],
+    networkLinks: resolveNetworkLinks([
+      { siteId: "learning", itemId: "learning:prog", label: "manapickで小さな制作課題を一本だけ選ぶ", description: "動画を見続けず、入力から出力まで一周できる小さな課題を選びます。" },
+      { siteId: "ai", itemId: "ai:github-copilot", label: "manapick AIでコード補助の確認責任を知る", description: "生成結果をそのまま使わず、テストと説明を自分で行うための利用条件を確認します。" },
+      { siteId: "license", itemId: "license:fe", label: "manapick licenseで基礎知識の範囲を照合", description: "基本情報技術者の公式範囲を、学習項目の抜けを調べる地図として利用します。" },
+    ]),
     sections: [
       {
         id: "choose-one-task",
@@ -211,11 +281,21 @@ export const guides: Guide[] = [
     readMinutes: 11,
     publishedAt: "2026-07-12",
     checkedAt: "2026-07-12",
+    status: "published",
+    reviewedAt: "2026-07-12",
+    reviewedBy: editor,
+    reviewedByHumanAt: "2026-07-12",
     author,
     editor,
+    claims: claimsForGuide("how-to-think-about-ai-and-work"),
     sourceIds: ["ipa-dss-v2-press", "ipa-dss-v2-files"],
     relatedCareerSlugs: ["it-consultant", "software-engineer", "web-marketer"],
     keyPoints: ["AIの影響を職業全体の割合で断定しない", "目的設定・例外判断・説明責任を分けて見る", "機密性、検証方法、失敗時の影響を先に決める"],
+    networkLinks: resolveNetworkLinks([
+      { siteId: "learning", itemId: "learning:ai", label: "manapickでAIを使う前の基礎作業を学ぶ", description: "自動化する前の手順を理解し、変化した作業と残る確認を比較できる動画へ進みます。" },
+      { siteId: "ai", itemId: "ai:chatgpt", label: "manapick AIでChatGPTの利用条件を確認", description: "機能だけでなく入力情報、保存、出力検証、公式ドキュメントへの導線を確認します。" },
+      { siteId: "license", itemId: "license:g-kentei", label: "manapick licenseでAI基礎の確認範囲を見る", description: "資格を仕事の適性判定に使わず、AIの基礎と注意点を整理する学習目標として確認します。" },
+    ]),
     sections: [
       {
         id: "split-into-tasks",
@@ -269,11 +349,21 @@ export const guides: Guide[] = [
     readMinutes: 10,
     publishedAt: "2026-07-13",
     checkedAt: "2026-07-13",
+    status: "published",
+    reviewedAt: "2026-07-13",
+    reviewedBy: editor,
+    reviewedByHumanAt: "2026-07-13",
     author,
     editor,
+    claims: claimsForGuide("how-to-use-556-occupation-directory"),
     sourceIds: ["jilpt-jobtag-description-7-01", "mhlw-jobtag-download-terms"],
     relatedCareerSlugs: ["it-consultant", "web-designer", "office-administration"],
     keyPoints: ["556件は人手執筆記事数ではなくjob tag出典の職業名録収録数", "職業名と別名から仕事内容の一次情報へ進む", "候補を増やした後は小さく試せる作業へ絞る"],
+    networkLinks: resolveNetworkLinks([
+      { siteId: "learning", itemId: "learning:qualification", label: "manapickで候補職業につながる学びを探す", description: "名録で見つけた候補から、最初に試せる作業と資格学習の入口を動画で確認します。" },
+      { siteId: "ai", itemId: "ai:notebooklm", label: "manapick AIで候補ごとの出典メモを整理", description: "複数の職業情報を混同せず、元資料へ戻れる比較メモを作る方法を確認します。" },
+      { siteId: "license", itemId: "license:mos", label: "manapick licenseで事務系資格の要件を見る", description: "職業名録の候補と資格要件を混同せず、学習目標として使う範囲を公式情報から確認します。" },
+    ]),
     sections: [
       { id: "not-a-diagnosis", heading: "1. 名録は診断ではなく、見落としを減らす地図", paragraphs: ["556職業名録は、JILPTが作成したjob tagの解説系ダウンロードデータver.7.01から、職業名、別名、職業分類、収録番号だけを抽出しています。職業解説本文、画像、動画、数値データは複製していません。掲載数が多いからといって、すべての職業を同じ深さで説明できているという意味でもありません。", "一覧の役割は、自分が知っている肩書きだけで検索して候補を狭め過ぎることを防ぐことです。適性、採用可能性、年収、将来性を判定しません。気になる名前を見つけたら、job tagの公式情報や本サイトの確認済み詳細へ進み、毎日の作業と条件を確かめます。" ] },
       { id: "choose-two", heading: "2. 15分類から二つだけ選ぶ", paragraphs: ["最初から556件を順に読む必要はありません。研究・技術、医療・看護、事務、販売・営業、福祉・介護、製造、建設など15分類から、現在知っている領域を一つ、これまで調べていなかった領域を一つ選びます。一つだけだと既知の選択肢へ戻りやすく、三つ以上だと比較の軸が増え過ぎるため、最初は二つで十分です。", "分類は仕事内容を完全に表すものではありません。情報を整理する、相手へ説明する、安全を確認する作業は複数分類に現れます。分類は入口として使い、候補を見つけた後は、入力、作業、成果物、関わる相手の四点へ分解してください。各分類から三職業ずつ選ぶと、六候補を同じ形式で比較できます。" ], points: ["既知の領域を一つ", "未探索の領域を一つ", "候補は各領域から三つまで"] },
@@ -283,6 +373,48 @@ export const guides: Guide[] = [
     ],
   },
 ];
+
+const expandedGuideSeeds = expandedGuideData as unknown as ExpandedGuideSeed[];
+
+export const guideReviewQueue = expandedGuideSeeds.map((seed) => ({
+  ...seed,
+  claims: claimsForGuide(seed.slug),
+}));
+
+function isPublishableGuideSeed(seed: (typeof guideReviewQueue)[number]): seed is (typeof guideReviewQueue)[number] & {
+  status: "published";
+  publishedAt: string;
+  reviewedAt: string;
+  reviewedBy: string;
+  reviewedByHumanAt: string;
+} {
+  return seed.status === "published"
+    && Boolean(seed.publishedAt)
+    && Boolean(seed.reviewedAt)
+    && Boolean(seed.reviewedBy)
+    && Boolean(seed.reviewedByHumanAt)
+    && seed.sourceIds.length > 0
+    && seed.claims.length > 0
+    && seed.claims.every((claim) => claim.sourceIds.length > 0 && Boolean(claim.lastCheckedAt) && claim.freshnessDays > 0)
+    && seed.networkLinks.length === 3;
+}
+
+const expandedPublishedGuides = guideReviewQueue.filter(isPublishableGuideSeed).map((seed): Guide => ({
+  ...seed,
+  status: "published",
+  publishedAt: seed.publishedAt,
+  reviewedAt: seed.reviewedAt,
+  reviewedBy: seed.reviewedBy,
+  reviewedByHumanAt: seed.reviewedByHumanAt,
+  author,
+  editor,
+  networkLinks: resolveNetworkLinks(seed.networkLinks),
+}));
+
+// 既存4本は各checkedAt時点で編集責任者が公開前確認済みとして移行した公開記事。
+// 新規30本は人のレビュー証跡が揃うまでguideReviewQueueに留まり、公開面へ出さない。
+export const publishedGuides = [...baseGuides, ...expandedPublishedGuides];
+export const guides = publishedGuides;
 
 const newsItemsData: NewsItem[] = [
   {

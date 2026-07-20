@@ -78,7 +78,7 @@ export const careerShopProducts = [
     reason: "高速スクロール、横スクロール、アプリ別のボタン設定を使える右手用マウスです。機能数より、手に合うか、普段の操作を本当に減らせるかを先に確認します。左右対称や小型を好む人には別製品が向きます。",
     checks: ["右手用形状と手の大きさ", "Bluetooth / Logi Bolt", "設定ソフトを使うか"],
     sourceId: "logicool-mx-master-3s-official",
-    officialUrl: "https://www.logicool.co.jp/ja-jp/shop/p/mx-master-3s",
+    officialUrl: "https://press.logicool.co.jp/ja-jp/mx_master_3S/",
     amazonUrl: "https://www.amazon.co.jp/s?k=Logicool+MX+Master+3S&tag=saunastampral-22",
   },
   {
