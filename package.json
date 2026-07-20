@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "prebuild": "npm run content:check && npm run catalog:check && npm run editorial:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run source:check && npm run similarity:check",
+    "prebuild": "npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
     "build": "next build",
     "start": "next dev --webpack",
     "lint": "eslint . --ignore-pattern out --ignore-pattern .next",
@@ -17,17 +17,22 @@
     "backlog:check": "node scripts/check-editorial-backlog.mjs",
     "monetization:check": "node scripts/check-monetization.mjs",
     "shop:check": "node scripts/check-shop.mjs",
+    "competitive:check": "node scripts/check-competitive-registry.mjs",
+    "competitive:network": "node scripts/check-competitive-registry.mjs --network",
+    "og:generate": "node scripts/generate-og.mjs",
     "source:check": "node scripts/audit-sources.mjs",
+    "source:network": "node scripts/audit-sources.mjs --network",
     "similarity:check": "node scripts/check-similarity.mjs",
     "links:check": "node scripts/audit-links.mjs --internal",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
+    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
   },
   "dependencies": {
     "lucide-react": "^1.21.0",
     "next": "16.2.10",
     "react": "19.2.7",
-    "react-dom": "19.2.7"
+    "react-dom": "19.2.7",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.2.1",

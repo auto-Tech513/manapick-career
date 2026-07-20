@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">マクロパッドの編集部作成イメージ</title>
+  <desc id="desc">反復操作用のボタンデバイスを抽象化した図で、実際の商品写真ではありません。</desc>
+  <rect width="900" height="560" rx="40" fill="#101e3f"/>
+  <rect x="236" y="94" width="428" height="384" rx="44" fill="#fffdf2" stroke="#ffd700" stroke-width="12"/>
+  <g fill="#18294f">
+    <rect x="286" y="144" width="82" height="72" rx="14"/><rect x="409" y="144" width="82" height="72" rx="14"/><rect x="532" y="144" width="82" height="72" rx="14"/>
+    <rect x="286" y="250" width="82" height="72" rx="14"/><rect x="409" y="250" width="82" height="72" rx="14"/><rect x="532" y="250" width="82" height="72" rx="14"/>
+    <rect x="286" y="356" width="82" height="72" rx="14"/><rect x="409" y="356" width="82" height="72" rx="14"/><rect x="532" y="356" width="82" height="72" rx="14"/>
+  </g>
+  <g fill="#ffd700"><circle cx="327" cy="180" r="10"/><circle cx="450" cy="286" r="10"/><circle cx="573" cy="392" r="10"/></g>
+  <text x="52" y="74" fill="#ffd700" font-family="system-ui,sans-serif" font-size="26" font-weight="700">EDITORIAL ILLUSTRATION</text>
+  <text x="52" y="520" fill="#fff" font-family="system-ui,sans-serif" font-size="31" font-weight="700">学び直し・反復の道具</text>
+</svg>

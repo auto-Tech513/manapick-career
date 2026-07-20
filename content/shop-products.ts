@@ -8,6 +8,9 @@ export const careerShopPolicy = {
 export const careerShopProducts = [
   {
     id: "anker-powerconf-s500",
+    image: "/shop/meeting-speakerphone-illustration.svg",
+    imageAlt: "会議用スピーカーフォンの編集部作成イメージ（実際の商品写真ではありません）",
+    imageCredit: "画像：manapick編集部作成イメージ（実物と異なります）",
     category: "面接・会議",
     maker: "Anker",
     name: "Anker PowerConf S500",
@@ -20,6 +23,9 @@ export const careerShopProducts = [
   },
   {
     id: "dell-u3225qe",
+    image: "/shop/monitor-illustration.svg",
+    imageAlt: "作業用モニターの編集部作成イメージ（実際の商品写真ではありません）",
+    imageCredit: "画像：manapick編集部作成イメージ（実物と異なります）",
     category: "調査・ポートフォリオ",
     maker: "Dell",
     name: "Dell U3225QE",
@@ -32,6 +38,9 @@ export const careerShopProducts = [
   },
   {
     id: "stream-deck-neo",
+    image: "/shop/macro-pad-illustration.svg",
+    imageAlt: "反復操作用ボタンデバイスの編集部作成イメージ（実際の商品写真ではありません）",
+    imageCredit: "画像：manapick編集部作成イメージ（実物と異なります）",
     category: "学び直し・反復",
     maker: "Elgato",
     name: "Stream Deck Neo",
@@ -44,6 +53,9 @@ export const careerShopProducts = [
   },
   {
     id: "sandisk-extreme-portable-ssd",
+    image: "/shop/portable-drive-illustration.svg",
+    imageAlt: "携帯型ストレージの編集部作成イメージ（実際の商品写真ではありません）",
+    imageCredit: "画像：manapick編集部作成イメージ（実物と異なります）",
     category: "作品・バックアップ",
     maker: "SanDisk",
     name: "SanDisk Extreme Portable SSD",
@@ -56,6 +68,9 @@ export const careerShopProducts = [
   },
   {
     id: "mx-master-3s",
+    image: "/shop/mouse-illustration.svg",
+    imageAlt: "多機能マウスの編集部作成イメージ（実際の商品写真ではありません）",
+    imageCredit: "画像：manapick編集部作成イメージ（実物と異なります）",
     category: "入力・資料整理",
     maker: "Logicool",
     name: "Logicool MX Master 3S",
@@ -68,6 +83,9 @@ export const careerShopProducts = [
   },
   {
     id: "flexispot-e7",
+    image: "/shop/standing-desk-illustration.svg",
+    imageAlt: "昇降デスクの編集部作成イメージ（実際の商品写真ではありません）",
+    imageCredit: "画像：manapick編集部作成イメージ（実物と異なります）",
     category: "学習環境・姿勢",
     maker: "FLEXISPOT",
     name: "FLEXISPOT E7",
