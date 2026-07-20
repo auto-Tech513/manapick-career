@@ -5,7 +5,7 @@
 - 自動化ID: `manapick-career`
 - 表示名: `manapick career 公式ニュース朝夕監査`
 - 実行時刻: 毎日 08:00 / 18:00（Asia/Tokyo）
-- 対象: `manapick-career` リポジトリのニュース、出典レジストリ、日本語OG画像
+- 対象: Codex管理下の専用クリーンクローンにある `manapick-career` リポジトリのニュース、出典レジストリ、日本語OG画像
 - 状態: ACTIVE
 - 出力: review-onlyのDraft PR。自動merge・自動公開はしない
 
@@ -19,7 +19,7 @@
 6. 公表日と、人が一次資料を確認した `checkedAt` を混同しない。
 7. 文脈がある場合だけ、manapick、manapick AI、manapick license の独自ページへ通常リンクする。
 8. 日本語OG画像は同梱の Noto Sans JP TTF を明示して生成する。
-9. `lint`、`content:check`、`editorial:check`、`source:check`、`similarity:check`、`build`、`links:check` の全検査に合格させる。
+9. `npm ci` でロックファイルどおりに依存関係を再構築してから、`lint`、`content:check`、`editorial:check`、`source:check`、`similarity:check`、`build`、`links:check` の全検査に合格させる。
 
 品質条件を満たす一次情報がない実行では、件数を埋めるための記事を作らず0本で終了する。
 
@@ -29,4 +29,4 @@
 
 ## 確認状態
 
-自動化ID、08:00 / 18:00（JST）の登録値、ACTIVE状態、review-onlyのDraft PR方針は2026-07-20に確認した。初回の定刻実行、実際のDraft PR作成、外部サイト側の応答は未確認である。初回実行後に、採用0/1本、一次資料URL、本文文字数、検査結果、PR URLをこの運用記録またはQAレポートへ追記する。
+自動化ID、08:00 / 18:00（JST）の登録値、ACTIVE状態、専用クリーンクローン、`npm ci`、review-onlyのDraft PR方針は2026-07-20に確認した。専用クローンでは同日の `npm ci` と `npm run qa` が成功した。初回の定刻実行、実際のDraft PR作成、外部サイト側の応答は未確認である。初回実行後に、採用0/1本、一次資料URL、本文文字数、検査結果、PR URLをこの運用記録またはQAレポートへ追記する。

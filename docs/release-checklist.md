@@ -12,6 +12,7 @@
 - [ ] 新規ガイド30本の一次資料、重要主張、深い姉妹サイトリンク、OG画像を人が確認し、承認記録を付ける
 - [x] 権利証跡を確認できなかった商品写真6点を削除し、編集部作成の抽象SVG6点へ差し替える（2026-07-18）
 - [x] Pull Request [#3](https://github.com/auto-Tech513/manapick-career/pull/3)を `main` へマージし、merge commit `78f36cdb11bc5268e9b2f26e85eef29a9abdb346` をCloudflare Pagesの本番deployment `29eaf1a9` として公開する（2026-07-20）
+- [x] 運用記録と生成物除外を整えたPull Request [#4](https://github.com/auto-Tech513/manapick-career/pull/4)をマージし、現在の `main` commit `5b9f5358e61db4f2cdbcb1908aba6ec508fd7871` を本番deployment `f498f00b` として公開する（2026-07-20）
 - [x] 公開後にトップ、ガイド一覧、代表ニュース、sitemap.xml、llms.txtのHTTP 200、代表draft URLの404、sitemap / llms.txtの代表draft参照0件、公開ガイド個別リンク4件を確認する（2026-07-20）
 
 ## AdSense
