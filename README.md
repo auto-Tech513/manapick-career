@@ -26,7 +26,7 @@ npm audit --omit=dev
 ```
 
 - `content:check`: 公開条件、必須項目、禁止表現、sourceId、network itemを検査
-- `editorial:check`: ニュース・ガイドの本文、出典、公開状態、OG画像を検査
+- `editorial:check`: ニュース・ガイドの本文、出典、公開状態、記事固有本文、OG画像を検査
 - `monetization:check`: AdSenseのpublisher、手動slot、ads.txt、CSP、記事内配置を検査
 - `shop:check`: PR表示、公式出典、権利処理済みの独自イラストを検査
 - `source:check`: 出典レジストリと主張の鮮度を検査
@@ -36,11 +36,11 @@ npm audit --omit=dev
 
 ## コンテンツ公開
 
-職業とガイドは `draft` → `reviewed` → `published` の順に人が承認します。独自本文、公式出典、確認日、関連導線、編集者確認が揃わないデータは `published` にしません。
+職業、ガイド、ニュースは `draft` → `reviewed` → `published` の順に人が承認します。ニュースの公開状態は本文データから分離した `content/news-publication.json` を正本とし、レコードがない、または公開日・人によるレビュー・追跡可能な承認証跡が揃わない記事はfail-closedで公開しません。
 
-`published` 以外の職業・ガイドは、一覧、個別ページ、sitemap、llms.txt、JSON-LD、公開OG画像に出力されません。更新日にはビルド日ではなく、実際に人が確認した日を記録します。
+`published` 以外の職業詳細・ガイド・ニュースは、公開一覧、個別ページ、sitemap、RSSフィード、llms.txt、JSON-LD、公開OG画像に出力されません。追加ニュースは共通定型文を除く記事固有本文を1,000字以上にし、更新日にはビルド日ではなく、実際に人が確認した日を記録します。
 
-ニュースは現行データに同じstatusフィールドがないため、専用ブランチとreview-onlyのDraft PRを公開ゲートにします。朝夕の自動監査は `main` へmergeせず、編集者の確認後だけ人がmergeします。登録内容と未確認事項は `docs/news-automation.md` に記録します。
+毎日08:00 / 18:00（JST）のニュース自動監査は、最新の一次資料から候補を作っても `status: "draft"` のまま専用ブランチへcommitし、Draft PRの作成を試みるだけです。自動処理はstatusを `published` に変更せず、`main` へmergeせず、本番公開もしません。編集者が一次資料、全主張、リンク、本文、OG画像を確認し、レジストリへ人のレビュー証跡を記録した後だけ公開候補にできます。登録内容、実行履歴、未確認事項は `docs/news-automation.md` に記録します。
 
 ## デプロイ
 

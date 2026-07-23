@@ -1,83 +1,97 @@
 # manapick career QAレポート
 
-確認日: 2026-07-20（JST）
+確認日: 2026-07-23（JST）
 
-## 判定
+## 現リリース候補の結論
 
-機能リリースはGitHub Pull Request [#3](https://github.com/auto-Tech513/manapick-career/pull/3)で `main` へマージし、merge commit `78f36cdb11bc5268e9b2f26e85eef29a9abdb346` をCloudflare Pagesの本番deployment `29eaf1a9` として公開した。その後、運用記録と生成物除外を整えたPull Request [#4](https://github.com/auto-Tech513/manapick-career/pull/4)のmerge commit `5b9f5358e61db4f2cdbcb1908aba6ec508fd7871` を本番deployment `f498f00b` として公開した。本レポートの照合修正はPull Request [#5](https://github.com/auto-Tech513/manapick-career/pull/5)で `main` へマージし、merge commit `bb14f777c7621346425fca0c2eaa5708657224b8` を本番deployment `884b701e` として公開した。Cloudflare管理画面のProduction source、公開URL、公開HTMLを2026-07-20に照合した。以後の最新commitとdeploymentはGitHub・Cloudflareの履歴を正本とし、本段落の値は各時点の公開履歴として扱う。
+現リリース候補は、未確認データを公開しないfail-closed構成へ変更し、ローカルの全品質ゲートと実ブラウザ検査に合格した。GitHubへのpushとCloudflare Pages本番反映は、この記録の作成時点では未実施である。
 
-新規ガイド30本は機械検査対象だが、人手レビューと承認記録は未確認である。このため全件を `draft` とし、公開済み4本だけを一覧、個別ページ、sitemap、llms.txt、JSON-LD、公開OG画像へ出す。30本を公開済みとは報告しない。
+- 556職業は名称・別名・分類を検索できる `/all/` の名録として維持する。独自本文と人の承認証跡がない個別 `/occupation/` は公開0件で、静的ルート、sitemap、llms.txt、JSON-LDにも出さない。
+- 独自の詳細職業は既存の確認済み12件だけを `/career/` で公開する。
+- ニュース原稿は33件あるが、現在表示する本文全体を人が確認した追跡可能な証跡がないため33件すべてdraft、公開0件とする。記事数や文字数だけで公開条件を満たしたとは扱わない。
+- ガイドは34件中4件を公開し、未承認30件をdraftとして全公開面から除外する。
+- 公開ニュース0件でもトップ・ニュース一覧・データ室・RSS・llms.txt・JSON-LDが壊れず、公開準備中の事実と代替導線を表示する。
 
-商品画像の権利未確認による以前の公開停止条件は解消済みである。許諾証跡を確認できなかった商品写真6点を2026-07-18に削除し、メーカーのロゴ・商品写真・固有外観を複製しない編集部作成の抽象SVG6点へ差し替えた。
+## 2026-07-22日次SEOレポートの反映
 
-## 公開リリースのコンテンツ構成
+添付HTMLのSHA-256、期間、表示値、解釈上の限界は `docs/seo-report-2026-07-22-review.md` に分離して記録した。HTMLから確認できるcareerの値は次のとおりである。
 
-- 職業名録: 556件 / 15カテゴリ
-- 人手確認済み詳細職業: 12件
-- ニュース: 30件
-- ガイド: 全34件のうち公開済み4件、未承認draft 30件
-- 新規ガイド30件: 各1,000字以上、4セクション以上、記事単位の出典に加えて重要主張ごとのsourceId・確認日・鮮度期限を保持
-- 姉妹サイト導線: `content/network-map.json` のitemIdを正本にし、build時に絶対URLへ解決。新規ガイドは記事文脈に合う学習・AI・資格の個別ページを参照
-- 出典レジストリ: 49件
-- 競合・参照サイト台帳: 100件（`deep` 25件 / `surface` 75件）
-- manapi商店: 6商品、編集部作成SVG6件、メーカー公式仕様リンク6件、Amazon PRリンク6件
-- 不存在のJobPosting、rating、reviewCount、salary、employmentTypeは生成しない
+- Search Console: 2026-07-11〜07-19のグラフでクリック0、表示0。2026-07-22取得時のトップURL検査は「検出 - インデックス未登録」、前回クロールは「該当なし」。
+- GA4: 2026-06-24〜07-21、Japan完全一致で58セッション、エンゲージのあったセッション33、エンゲージ率56.9%、HTML表記の平均滞在1分38秒、557イベント。
+- GA4の参照元/メディア表示行は単純合計61で、全体58と一致しないため、行の単純合算から流入比率を作らない。
+
+インデックス登録が近いこと、内部リンクが検出の原因だったこと、SNS投稿や広告が指標変化の原因だったことは、添付HTMLだけでは証明できない。そこでサイト側では、公開日・一次資料公表日・人の確認日を分離し、公開URLだけをsitemapへ載せ、関連ページへの通常リンクを維持した。Search Consoleの現在値とインデックス状態は管理画面で再確認するまで未確認とする。
+
+## コンテンツ・公開境界
+
+- `content/news-publication.json`: ニュース公開状態の正本。未登録または承認項目不足は公開しない。
+- `content/occupation-publication.json`: 個別職業詳細の公開状態の正本。未登録はdraft扱い。
+- ニュースの `published` 条件は、一次資料、公表日、サイト公開日、記名レビュー、レビュー日、Git承認証跡、確認対象を固定する `contentSha256` を含む。
+- 自動化は `contentSha256` と人のレビュー項目を設定・更新・削除できない。
+- 33ニュースの最短本文は1,084字、追加ニュースの最短記事固有本文は1,197字。34ガイドの最短本文は1,036字、最大本文類似度は11.13%。
+- 最新候補は厚生労働省2026-07-15、IPA 2026-07-16、厚生労働省2026-07-21の一次資料に基づく3件で、すべてdraft。2026-07-23（JST）の厚生労働省報道発表一覧・雇用トピックス、IPAプレスリリース、総務省統計局の対象を絞った再確認では、7月22日・23日公表でcareerの編集基準を満たす新たな一次資料を確認できなかった。これは対象公式ソースの確認結果であり、ウェブ全体の網羅を意味しない。2026-07-23までの公開記事があるとは報告しない。
+
+## 日本語OG画像
+
+- フォント: OFL-1.1のBIZ UDPGothic Regular / Bold、package `0.4.2`。
+- Regular SHA-256: `22f41ce68f1ce62477ca4ec1e2c0c400cc545ddff31d713e8edf87808614aeb2`
+- Bold SHA-256: `1a995936e0f9de8a7c142c97cdb679e7087e89c13e663f946cd047f4283cedf8`
+- ResvgへTTFを直接渡し、`loadSystemFonts: false` としてOSのCJKフォールバックを禁止する。
+- ビルド時にフォントversion、SHA-256、全67候補画像で使う文字のcmap収録を検査する。
+- 日本語禁則と数字・単位の分割禁止を検査し、1200×630pxで生成する。
+- 公開対象はガイド4件・ニュース0件。draft確認用に33ニュース・34ガイドの67枚を非公開の `output/` へ生成し、代表ニュースと代表ガイドを原寸で目視確認した。
+- 旧 `public/og/guide`、`public/og/news`、`public/og/jp-v2` は削除し、再出現した場合は品質ゲートを失敗させる。
+
+BIZ UDPゴシックは日本語UI・文書向けの自然なゴシック体であり、今回の画像はメイリオそのものではない。メイリオを同梱しているとは表示せず、実際に固定したフォント名とハッシュで説明する。
 
 ## 自動検査
 
-2026-07-20、Node.js v24.16.0のクリーン作業用cloneで、公開コード状態の `npm run qa` を完走した。
+Node.js v24.16.0、npm 11.13.0で次を確認した。
 
-- OG生成、lint、content、catalog、editorial、backlog、monetization、shop、competitive、source、similarity、build、内部リンク検査: すべて成功
-- 静的生成: 633 / 633ページ
-- 内部リンク検査: HTML 629件、欠落0件
-- `npm run editorial:check`: ガイド全34件 / 公開4件 / draft 30件、ニュース30件、重要主張35件、最大ガイド本文類似度11.13%、network-map SSOT・OG禁則検査合格
-- draft混入検査: `out/guide` は公開4件のみ。代表draft slugは静的ルート、sitemap、llms.txt、HTML / XML / TXTから不検出
-- `npm run monetization:check`: 成功（`ca-pub-4108900975353940` / `8041327454`、記事内手動枠限定）
-- `npm run source:check`: 成功（49件、鮮度期限内）
-- `npm run similarity:check`: 成功（詳細職業12件、警告0件）
+- `npm run qa`: 成功。
+- Next.js 16.2.11静的生成: 48 / 48、postbuild後のHTML 43件、sitemap 40 URL。48件目は公開ニュース0件でもNext.jsの静的exportを成立させるビルド専用予約slugで、postbuild検査後に成果物を削除する。
+- 公開ニュース1件を模擬する統合fixtureでも記事HTMLが静的生成され、ビルド専用予約slugが残らないことを確認した。
+- 内部リンク: 43 HTML、欠落0件、未承認個別職業0件、未承認ニュース0件。
+- `out/news` のニュース詳細HTML: 0件。`out/occupation`: なし。公開ガイド詳細HTML: 4件。
+- 出典: 52件、鮮度期限内。詳細職業12件の類似度警告0件。
+- 名録: 556件 / 15カテゴリ、個別職業公開0件、実効draft 556件。
+- `npm audit` と `npm audit --omit=dev`: いずれも0 vulnerabilities。
+- 姉妹サイトリンク: 26件正常、404・未確認0件。
+- 出典リンク: 50件正常、bot制限2件、404・未確認0件。bot制限を404と同一扱いにしない。
+- 競合・参照サイト: 100件、深掘り25件・表層75件。HTTP再監査は94件正常、bot制限5件、404・410は0件、通信エラー1件。通信エラーだったJobs and Skills Australiaは公開画面を別経路で確認し、HTTP監査の生結果と分けて記録した。
 
-ネットワーク検査と `npm audit` は `npm run qa` に含まれないため、別の実行日を記録する。
+## 実ブラウザ検査
 
-## 保存済みの外部リンク検査
+Playwright CLIのChromiumで `/`、`/news/`、`/guide/`、`/all/`、`/research/`、`/route/`、`/shop/` を375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxで確認した。
 
-- `npm run links:network`: 姉妹サイトnetwork-map 26件すべて正常（2026-07-20）
-- `npm run competitive:network`: 正常92件 / bot制限6件 / 通信未確認2件 / 404・410は0件（2026-07-14の保存記録。公開日に未再実行）
-- `npm run source:network`: 正常47件 / bot制限2件 / 通信未確認0件 / 404・410は0件（2026-07-20、公開コードで再実行）
-- `npm audit --omit=dev`: 0 vulnerabilities（2026-07-20、公開コードで再実行）
+- 49 / 49ケース: HTTP 200。
+- 49 / 49ケース: `document.scrollWidth <= window.innerWidth`。
+- H1、main、headerの欠落0件。
+- アプリ由来のconsole warning/error、hydration error、runtime error 0件。
+- ニュース一覧は全幅で「公開中0記事」「公開前確認中」「確認を終えた記事から掲載」を表示。
+- draft代表4URLは4 / 4でHTTP 404、記事本文の露出なし。404応答自体に伴うresource errorだけを、アプリの実行時エラーと混同しない。
 
-bot制限や通信未確認を404と同一扱いにしない。新規ガイド30本の公開前には、使用する一次資料と深い姉妹サイトリンクを人がブラウザで再確認する。
+実機Safari、Android Chrome、支援技術による読み上げは未確認である。
 
-## ブラウザ・AdSense
+## AdSense
 
-- ローカル静的出力をChromiumで検査し、トップ、ガイド一覧、ニュース一覧、ガイド詳細、ニュース詳細、入口案内、manapi商店の7経路 × 375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxの49ケースで横あふれ0、console error 0を確認した
-- ガイド一覧は画面幅に応じて1 / 2 / 3列へ変化することを確認した
-- 実機SafariとAndroid Chromeは未確認
-- AdSense publisher `pub-4108900975353940`、手動slot `8041327454`、`ads.txt` の一致を確認
-- AdSenseの `manapick.app` は準備完了、ads.txt承認済み、ポリシーセンターは問題なし
-- `career.manapick.app` の自動広告除外は管理画面で有効
-- 公開後の代表ニュースで `adsbygoogle.js?client=ca-pub-4108900975353940` の読込、手動slot `8041327454`、`data-ad-status=filled` を確認した。確認時の広告要素は758px幅で、文書幅1904pxがviewport 1919px以下だった
-
-充填はGoogle側の判断と広告需要に依存し、サイト側から保証できない。代表URLの本番通信で意図しないページレベル自動広告が0件であることと、充填済み実広告を伴う全指定幅の横あふれ・CSP・hydration・console確認は未確認である。
-
-## SEO・AEO・AI検索対応
-
-- 各独自ページは自己canonical。姉妹サイトとのcanonical共有なし
-- 職業・ガイドは `published` だけを公開面へ出し、draft/reviewedを除外
-- robots、sitemap、llms.txt、Article / NewsArticle / BreadcrumbListを表示内容と一致させる
-- 更新日をビルド日で上書きせず、人が確認した日を使用
-- AI検索専用の特別なschemaや掲載保証は存在すると断定しない
-
-公開後にトップ、ガイド一覧、代表ニュース、sitemap.xml、llms.txtのHTTP 200を確認し、代表draft URLは404、sitemapとllms.txt内の代表draft参照は0件だった。ガイド一覧の公開個別リンクは4件だけである。Rich Results Test、Search ConsoleのURL検査・モバイル描画・インデックス、GA4受信は未確認である。
+- コード上はpublisher `ca-pub-4108900975353940`、手動slot `8041327454`、`ads.txt` が一致し、記事本文の2番目のセクション後だけにレスポンシブ手動枠を置く。
+- 現リリース候補では公開ニュースが0件のため、ニュース記事内広告は表示対象ページ自体がない。公開ガイドでは手動枠のコードを維持する。
+- 広告の充填はGoogle側の審査・需要・配信判断に依存する。継続充填、全幅の実広告描画、管理画面の現在状態は本番反映後に再確認するまで未確認であり、サイト側から保証しない。
 
 ## ニュース自動監査
 
-自動化 `manapick-career` は毎日08:00 / 18:00（Asia/Tokyo）、ACTIVE、review-onlyのDraft PR作成までとして2026-07-20に確認した。初回の定刻実行、実際のDraft PR、外部サイト応答は未確認である。
+自動化 `manapick-career` は毎日08:00 / 18:00（Asia/Tokyo）、ACTIVEである。fresh clone、一次資料優先、最大1候補、常時draft、全検査、専用ブランチへのcommit、review-onlyのDraft PR作成試行までに制限し、自動merge・自動公開を行わない。
 
-## 公開後に残る確認
+2026-07-23の08:00枠は専用ブランチとcommit作成まで成功したが、Draft PR作成はHTTP 403で失敗した。このためPR URLはない。その後、認証済みGitHub CLIの絶対パスを使う403時限定のDraft PRフォールバックを設定したが、更新後設定での実際のDraft PR成功は次回実行まで未確認である。
 
-- 新規ガイド30本を人が確認し、承認記録を付けるまでdraftを維持する
-- 充填済み実広告ありの全指定幅と、意図しない自動広告が0件であることを確認する
-- 初回ニュース自動監査の実行結果とDraft PRを確認する
-- 商標の専門確認、承認済み問い合わせフォーム、公開URLのSearch Console・GA4確認を行う
+## 未確認のまま成功扱いにしない項目
 
-未確認事項が解消するまで、30本の新規ガイド公開、広告の継続充填、検索掲載、自動監査の初回成功を報告しない。
+- このリリース候補のGitHub push、Cloudflare Pages本番deployment、公開URLの再検査。
+- Search Consoleの2026-07-23現在値、代表URLのURL検査、Google選択canonical、モバイル描画、インデックス登録。
+- GA4の現リリース受信、AdSense管理画面の現在状態と実広告の継続充填。
+- Rich Results Test、実機Safari / Android Chrome、支援技術による読み上げ。
+- 33ニュース、30追加ガイド、556個別職業の人手レビューと公開承認。
+- 自動化の更新後フォールバックによる実際のDraft PR作成。
+
+これらが未確認の間は、検索掲載、広告表示、ニュース公開、個別職業公開、自動監査の完全成功を報告しない。

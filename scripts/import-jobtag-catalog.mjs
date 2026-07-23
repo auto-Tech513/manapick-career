@@ -104,7 +104,7 @@ const payload = {
     downloadPage: "https://shigoto.mhlw.go.jp/User/download",
     importedAt: "2026-07-13",
     datasetUpdatedAt: "2026-04-27",
-    usage: "職業名・別名・職業分類・職業解説・関連団体・関連資格を構造化。利用規約第9条に基づく二次利用として、出典・版・取込日を全詳細ページに表示します。写真・動画は使用していません。",
+    usage: "職業名・別名・職業分類・職業解説・関連団体・関連資格を内部データとして構造化。公開名録は職業名・別名・分類と公式job tagリンクに限定し、個別ページは人手確認済みpublishedレコードだけを生成します。写真・動画は使用していません。",
   },
   categories: Object.entries(categories).map(([code, category]) => ({ code, ...category })),
   occupations,

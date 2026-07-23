@@ -1,6 +1,8 @@
 import expandedNewsData from "./news-expanded.json";
 import expandedGuideData from "./guides-expanded.json";
 import guideClaimData from "./guide-claim-registry.json";
+import newsPublicationData from "./news-publication.json";
+import { resolveContentCheckDate } from "@/lib/content-check-date.mjs";
 import { networkUrl } from "@/lib/network";
 
 export type EditorialSection = {
@@ -67,17 +69,60 @@ export type NewsItem = {
   relatedCareerSlugs: string[];
   keyPoints: string[];
   sections: EditorialSection[];
+  status: "published";
+  createdAt: string;
+  sourcePublishedAt: string;
+  primarySourceId: string;
+  reviewedAt: string;
+  reviewedBy: string;
+  reviewedByHumanAt: string;
+  reviewEvidence: string;
+  claims: EditorialClaim[];
+  networkLinks: EditorialNetworkLink[];
 };
 
 const author = "manapick career編集部";
 const editor = "manapick編集責任者";
-const expandedNewsFirstPublishedAt = "2026-07-14";
+const publicationCheckDate = resolveContentCheckDate(process.env.CONTENT_CHECK_DATE);
 
-type ExpandedNewsSeed = Omit<NewsItem, "author" | "editor" | "sections"> & {
+type NewsPublicationRecord = {
+  slug: string;
+  createdAt: string;
+  status: EditorialStatus;
+  primarySourceId: string;
+  sourcePublishedAt: string;
+  publishedAt: string | null;
+  reviewedAt: string | null;
+  reviewedBy: string | null;
+  reviewedByHumanAt: string | null;
+  reviewEvidence: string | null;
+  contentSha256?: string | null;
+};
+
+type NewsContent = Omit<NewsItem,
+  "status" | "createdAt" | "sourcePublishedAt" | "primarySourceId" | "reviewedAt" | "reviewedBy" |
+  "reviewedByHumanAt" | "reviewEvidence" | "claims" | "networkLinks" | "publishedAt"
+> & { publishedAt?: string };
+
+export type NewsReviewItem = Omit<NewsItem,
+  "status" | "publishedAt" | "reviewedAt" | "reviewedBy" | "reviewedByHumanAt" | "reviewEvidence"
+> & {
+  status: EditorialStatus;
+  publishedAt: string | null;
+  reviewedAt: string | null;
+  reviewedBy: string | null;
+  reviewedByHumanAt: string | null;
+  reviewEvidence: string | null;
+  contentSha256?: string | null;
+};
+
+type ExpandedNewsSeed = Omit<NewsContent, "author" | "editor" | "sections"> & {
+  publishedAt: string;
   whatHappened: string[];
   howToRead: string[];
   whatNotToConclude: string[];
   nextActions: string[];
+  decisionSupport?: string[];
 };
 
 type ExpandedGuideSeed = Omit<Guide, "author" | "editor" | "claims" | "networkLinks" | "status" | "publishedAt" | "reviewedAt" | "reviewedBy" | "reviewedByHumanAt"> & {
@@ -101,35 +146,107 @@ function resolveNetworkLinks(links: EditorialNetworkLinkReference[]): EditorialN
   return links.map((link) => ({ ...link, href: networkUrl(link.itemId) }));
 }
 
-function buildExpandedNews(seed: ExpandedNewsSeed): NewsItem {
-  // news-expanded.json の publishedAt は一次資料の公表日を保持した旧フィールド。
-  // 公開ページの公開日は、ページを初めて公開する日と混同しないようここで固定する。
+function newsNetworkLinks(item: Pick<NewsContent, "slug" | "kind">): EditorialNetworkLink[] {
+  // 介護資格への深い導線は、介護職が関連記事の一つに含まれるだけでは出さない。
+  // 試験公告そのものを扱う記事に限定し、ニュース本文の検索意図とリンク先を一致させる。
+  if (item.slug === "care-worker-exam-39") return resolveNetworkLinks([
+    { siteId: "learning", itemId: "learning:qualification", label: "manapickで資格学習の入口を探す", description: "制度要件を公式ページで確かめたうえで、基礎学習に使える動画を選びます。" },
+    { siteId: "ai", itemId: "ai:notebooklm", label: "manapick AIで公式資料を整理する", description: "出典へ戻れる形を保ち、日程・要件・例外を混ぜずに確認します。" },
+    { siteId: "license", itemId: "license:kaigo-fukushi", label: "manapick licenseで介護福祉士を確認", description: "受験資格、試験日、手数料は試験実施団体の最新表示と照合します。" },
+  ]);
+  if (item.kind === "AI・DX" || item.kind === "デジタル人材") return resolveNetworkLinks([
+    { siteId: "learning", itemId: "learning:data", label: "manapickでデータ作業を小さく試す", description: "職業名ではなく、表の整理・可視化・説明という作業を動画で確かめます。" },
+    { siteId: "ai", itemId: "ai:home", label: "manapick AIで用途と注意点を比較", description: "導入率を人気順位にせず、目的・データ・確認責任に合うAIを調べます。" },
+    { siteId: "license", itemId: "license:it-passport", label: "manapick licenseでIT基礎を照合", description: "資格を採用保証にせず、業務と技術を結ぶ基礎用語の範囲を確認します。" },
+  ]);
+  if (item.kind === "人材育成" || item.kind === "キャリア形成") return resolveNetworkLinks([
+    { siteId: "learning", itemId: "learning:qualification", label: "manapickで学び直しの入口を選ぶ", description: "教材の量ではなく、次に試す一つの作業から学習候補を絞ります。" },
+    { siteId: "ai", itemId: "ai:notebooklm", label: "manapick AIで一次資料を読み比べる", description: "制度や調査の対象と例外を、出典へ戻れる形で整理します。" },
+    { siteId: "license", itemId: "license:home", label: "manapick licenseで公式要件を確認", description: "受験資格・費用・日程を、申込み直前に実施団体の表示と照合します。" },
+  ]);
+  return resolveNetworkLinks([
+    { siteId: "learning", itemId: "learning:office", label: "manapickで仕事の基礎作業を試す", description: "統計の見出しから離れ、文書・表計算・確認の作業を短く試します。" },
+    { siteId: "ai", itemId: "ai:notebooklm", label: "manapick AIで調査資料を整理", description: "平均と個人条件を混ぜず、引用箇所と注記へ戻れる形で比較します。" },
+    { siteId: "license", itemId: "license:mos", label: "manapick licenseで業務基礎を照合", description: "資格の有無を採用可能性へ置き換えず、表計算・文書作成の学習範囲を確認します。" },
+  ]);
+}
+
+function newsClaims(item: Pick<NewsContent, "slug" | "kind" | "keyPoints" | "checkedAt">, primarySourceId: string): EditorialClaim[] {
+  const critical = item.kind === "賃金・労働時間" || item.kind === "雇用統計";
+  const freshnessDays = critical ? 45 : 120;
+  return item.keyPoints.map((text, index) => ({
+    claimId: `${item.slug}-claim-${index + 1}`,
+    text,
+    sourceIds: [primarySourceId],
+    lastCheckedAt: item.checkedAt,
+    freshnessDays,
+    critical,
+  }));
+}
+
+function claimIsFresh(claim: EditorialClaim) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(claim.lastCheckedAt) || !Number.isInteger(claim.freshnessDays) || claim.freshnessDays <= 0) return false;
+  const checkedAt = new Date(`${claim.lastCheckedAt}T00:00:00Z`);
+  if (Number.isNaN(checkedAt.valueOf()) || checkedAt > publicationCheckDate) return false;
+  const expiresAt = new Date(checkedAt);
+  expiresAt.setUTCDate(expiresAt.getUTCDate() + claim.freshnessDays);
+  return expiresAt >= publicationCheckDate;
+}
+
+function networkLinksArePublishable(links: EditorialNetworkLink[]) {
+  if (links.length !== 3 || new Set(links.map((link) => link.itemId)).size !== links.length) return false;
+  const siteIds = new Set<string>(links.map((link) => link.siteId));
+  if (!["learning", "ai", "license"].every((siteId) => siteIds.has(siteId))) return false;
+  try {
+    return links.every((link) => link.href === networkUrl(link.itemId));
+  } catch {
+    return false;
+  }
+}
+
+function buildExpandedNews(seed: ExpandedNewsSeed): NewsContent {
+  // 旧publishedAtは記事ごとに意味が揃っていないため公開判断には使わない。
+  // サイト公開日と一次資料公表日はnews-publication.jsonで明示し、ここでは本文だけを構築する。
+  const {
+    publishedAt: legacyDate,
+    whatHappened,
+    howToRead,
+    whatNotToConclude,
+    nextActions,
+    decisionSupport = [],
+    ...content
+  } = seed;
+  void legacyDate;
   return {
-    ...seed,
-    publishedAt: expandedNewsFirstPublishedAt,
+    ...content,
     author,
     editor,
     sections: [
       {
         id: "what-happened",
         heading: "公表内容と対象範囲",
-        paragraphs: [...seed.whatHappened, "公表日の新しさだけで『最新』と判断せず、調査対象、基準時点、速報か確報か、集計単位を確認します。本記事は元資料を独自に要約し、数字や文言を別媒体から転載していません。確認日は編集部が一次資料とリンクを実際に見直した日であり、ビルド日には置き換えません。"],
+        paragraphs: [...whatHappened, "公表日の新しさだけで『最新』と判断せず、調査対象、基準時点、速報か確報か、集計単位を確認します。本記事は元資料を独自に要約し、数字や文言を別媒体から転載していません。確認日は編集部が一次資料とリンクを実際に見直した日であり、ビルド日には置き換えません。"],
       },
       {
         id: "how-to-read",
         heading: "数字・事例を判断材料へ変える読み方",
-        paragraphs: [...seed.howToRead, "一つの指標は、労働市場や職場の一面だけを示します。前月比と前年同月比、全国と地域、平均と分布、求人側と働く側を分け、必要なら別の一次資料を組み合わせます。職業名だけで結論を作らず、実際の仕事内容、雇用形態、経験条件、勤務場所まで戻って確認するのがmanapick careerの読み方です。"],
+        paragraphs: [...howToRead, "一つの指標は、労働市場や職場の一面だけを示します。前月比と前年同月比、全国と地域、平均と分布、求人側と働く側を分け、必要なら別の一次資料を組み合わせます。職業名だけで結論を作らず、実際の仕事内容、雇用形態、経験条件、勤務場所まで戻って確認するのがmanapick careerの読み方です。"],
       },
       {
         id: "limits",
         heading: "この情報だけでは決められないこと",
-        paragraphs: [...seed.whatNotToConclude, "調査結果は、個人の適性、採用可能性、転職成功率、将来の賃金を保証しません。割合が高い項目を人気職業やおすすめ順位へ変換せず、少数派の回答を失敗とも扱いません。制度、求人条件、製品仕様は変わるため、応募、契約、受講、購入の直前には必ず公式情報を再確認してください。"],
+        paragraphs: [...whatNotToConclude, "調査結果は、個人の適性、採用可能性、転職成功率、将来の賃金を保証しません。割合が高い項目を人気職業やおすすめ順位へ変換せず、少数派の回答を失敗とも扱いません。制度、求人条件、製品仕様は変わるため、応募、契約、受講、購入の直前には必ず公式情報を再確認してください。"],
       },
       {
         id: "next-actions",
         heading: "次に確認する三つの行動",
-        paragraphs: [...seed.nextActions, "最初に元資料の調査概要と注記を読み、次に自分が検討する職種・地域・働き方の条件へ絞り、最後に一つの小さな確認行動を決めます。不安を煽る期限、根拠のない希少性、連続閲覧を促す報酬は使いません。記事を閉じても、確認した出典と次の行動が手元に残ることを優先します。"],
+        paragraphs: [...nextActions, "最初に元資料の調査概要と注記を読み、次に自分が検討する職種・地域・働き方の条件へ絞り、最後に一つの小さな確認行動を決めます。不安を煽る期限、根拠のない希少性、連続閲覧を促す報酬は使いません。記事を閉じても、確認した出典と次の行動が手元に残ることを優先します。"],
       },
+      ...(decisionSupport.length > 0 ? [{
+        id: "decision-support",
+        heading: "自分の条件へ置き換える判断メモ",
+        paragraphs: decisionSupport,
+      }] : []),
     ],
   };
 }
@@ -411,12 +528,12 @@ const expandedPublishedGuides = guideReviewQueue.filter(isPublishableGuideSeed).
   networkLinks: resolveNetworkLinks(seed.networkLinks),
 }));
 
-// 既存4本は各checkedAt時点で編集責任者が公開前確認済みとして移行した公開記事。
+// 既存4本は各checkedAt時点で編集責任者が公開前確認済みとして移行した公開ガイド。
 // 新規30本は人のレビュー証跡が揃うまでguideReviewQueueに留まり、公開面へ出さない。
 export const publishedGuides = [...baseGuides, ...expandedPublishedGuides];
 export const guides = publishedGuides;
 
-const newsItemsData: NewsItem[] = [
+const newsItemsData: NewsContent[] = [
   {
     slug: "job-openings-may-2026",
     title: "有効求人倍率1.17倍：2026年5月の数字を転職判断へどう使うか",
@@ -522,6 +639,53 @@ const newsItemsData: NewsItem[] = [
 ];
 
 const expandedNewsItems = (expandedNewsData as unknown as ExpandedNewsSeed[]).map(buildExpandedNews);
-export const newsItems = [...newsItemsData, ...expandedNewsItems].sort((a, b) => b.publishedAt.localeCompare(a.publishedAt));
+const newsPublicationRecords = (newsPublicationData as unknown as { records: NewsPublicationRecord[] }).records;
+const newsPublicationBySlug = new Map(newsPublicationRecords.map((record) => [record.slug, record]));
+
+export const newsReviewQueue: NewsReviewItem[] = [...newsItemsData, ...expandedNewsItems].map((item) => {
+  const { publishedAt: legacyDate, ...content } = item;
+  void legacyDate;
+  const publication = newsPublicationBySlug.get(item.slug) ?? {
+    slug: item.slug,
+    createdAt: item.checkedAt,
+    status: "draft" as const,
+    primarySourceId: "",
+    sourcePublishedAt: "",
+    publishedAt: null,
+    reviewedAt: null,
+    reviewedBy: null,
+    reviewedByHumanAt: null,
+    reviewEvidence: null,
+    contentSha256: null,
+  };
+  return {
+    ...content,
+    ...publication,
+    claims: newsClaims(item, publication.primarySourceId),
+    networkLinks: newsNetworkLinks(item),
+  };
+});
+
+function isPublishableNews(item: NewsReviewItem): item is NewsItem {
+  const bodyLength = item.sections.flatMap((section) => section.paragraphs).join("").length;
+  return item.status === "published"
+    && Boolean(item.publishedAt)
+    && Boolean(item.reviewedAt)
+    && Boolean(item.reviewedBy)
+    && Boolean(item.reviewedByHumanAt)
+    && /^git:[0-9a-f]{7,40}$/i.test(item.reviewEvidence ?? "")
+    && /^[0-9a-f]{64}$/i.test(item.contentSha256 ?? "")
+    && Boolean(item.sourcePublishedAt)
+    && item.sourceIds.includes(item.primarySourceId)
+    && bodyLength >= 1000
+    && item.claims.length >= 3
+    && item.claims.every((claim) => claim.sourceIds.includes(item.primarySourceId) && claimIsFresh(claim))
+    && networkLinksArePublishable(item.networkLinks);
+}
+
+export const publishedNews = newsReviewQueue
+  .filter(isPublishableNews)
+  .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.sourcePublishedAt.localeCompare(a.sourcePublishedAt));
+export const newsItems = publishedNews;
 export const guideBySlug = (slug: string) => guides.find((item) => item.slug === slug);
-export const newsBySlug = (slug: string) => newsItems.find((item) => item.slug === slug);
+export const newsBySlug = (slug: string) => publishedNews.find((item) => item.slug === slug);

@@ -78,7 +78,7 @@
   {"id":"jma-research","name":"日本能率協会総合研究所","url":"https://www.jmar.co.jp/","category":"組織調査","reviewDepth":"surface","checkedAt":"2026-07-14"},
   {"id":"recruit-works-report","name":"Works Report","url":"https://www.works-i.com/research/","category":"労働調査","reviewDepth":"surface","checkedAt":"2026-07-14"},
   {"id":"nippon-foundation-work","name":"日本財団ジャーナル 働く","url":"https://www.nippon-foundation.or.jp/journal","category":"社会課題メディア","reviewDepth":"surface","checkedAt":"2026-07-14"},
-  {"id":"nikkei-human","name":"日経ヒューマンキャピタル","url":"https://human-capital.nikkei.co.jp/","category":"人事メディア","reviewDepth":"surface","checkedAt":"2026-07-14"},
+  {"id":"nikkei-human","name":"日経リサーチ 人的資本経営","url":"https://service.nikkei-r.co.jp/report/tag/%E4%BA%BA%E7%9A%84%E8%B3%87%E6%9C%AC%E7%B5%8C%E5%96%B6","category":"人事メディア","reviewDepth":"surface","checkedAt":"2026-07-23"},
   {"id":"diamond-career","name":"ダイヤモンド・オンライン キャリア・働き方","url":"https://diamond.jp/list/theme/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%83%BB%E5%83%8D%E3%81%8D%E6%96%B9","category":"キャリアメディア","reviewDepth":"surface","checkedAt":"2026-07-14"},
   {"id":"toyokeizai-career","name":"東洋経済オンライン キャリア・教育","url":"https://toyokeizai.net/category/career","category":"キャリアメディア","reviewDepth":"surface","checkedAt":"2026-07-14"},
   {"id":"note-career","name":"note キャリア","url":"https://note.com/hashtag/%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2","category":"投稿プラットフォーム","reviewDepth":"surface","checkedAt":"2026-07-14"},

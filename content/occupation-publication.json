@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "defaultStatus": "draft",
+  "policy": {
+    "unlistedCatalogStatus": "draft",
+    "publicRoute": "/occupation/{catalogId}/",
+    "publicConditions": [
+      "職業固有の独自本文が1,000字以上ある",
+      "公式出典と実際の確認日がある",
+      "関連動画・関連資格・関連AIの接続を確認している",
+      "編集者が全主張とリンクを人手確認している",
+      "追跡可能な承認証跡と公開日がある"
+    ],
+    "directoryBehavior": "レコードのない職業はdraftとして扱い、/all/の名称・別名・分類とjob tag公式リンクだけを公開する"
+  },
+  "records": []
+}

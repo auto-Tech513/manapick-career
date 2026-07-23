@@ -4,6 +4,13 @@ import path from "node:path";
 const root = process.cwd();
 const sites = JSON.parse(fs.readFileSync(path.join(root, "content/competitive-landscape.json"), "utf8"));
 const failures = [];
+const today = new Date(new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Tokyo",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(new Date()) + "T00:00:00+09:00");
+const maxAgeDays = 90;
 if (sites.length !== 100) failures.push(`競合・参照サイト登録数が${sites.length}件（100件必須）`);
 const ids = new Set();
 const urls = new Set();
@@ -15,7 +22,15 @@ for (const site of sites) {
   if (urls.has(site.url)) failures.push(`${site.id}: URL重複`);
   urls.add(site.url);
   if (!site.category || !["deep", "surface"].includes(site.reviewDepth)) failures.push(`${site.id}: 分類または調査深度が不足`);
-  if (site.checkedAt !== "2026-07-14") failures.push(`${site.id}: 確認日不一致`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(site.checkedAt ?? "")) {
+    failures.push(`${site.id}: 確認日形式不正`);
+  } else {
+    const checkedAt = new Date(`${site.checkedAt}T00:00:00+09:00`);
+    const ageDays = Math.floor((today.getTime() - checkedAt.getTime()) / 86_400_000);
+    if (Number.isNaN(checkedAt.getTime())) failures.push(`${site.id}: 確認日が日付ではない`);
+    else if (ageDays < 0) failures.push(`${site.id}: 確認日が未来 (${site.checkedAt})`);
+    else if (ageDays > maxAgeDays) failures.push(`${site.id}: 確認から${ageDays}日経過（上限${maxAgeDays}日）`);
+  }
 }
 const deep = sites.filter((site) => site.reviewDepth === "deep").length;
 if (deep < 20) failures.push(`深掘り確認が${deep}件（20件以上必須）`);

@@ -7,13 +7,16 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "prebuild": "npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
+    "prebuild": "npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-static:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
     "build": "next build",
+    "postbuild": "node scripts/cleanup-empty-news-route.mjs",
     "start": "next dev --webpack",
     "lint": "eslint . --ignore-pattern out --ignore-pattern .next",
     "content:check": "node scripts/check-content.mjs",
     "catalog:check": "node scripts/check-catalog.mjs",
     "editorial:check": "node scripts/check-editorial.mjs",
+    "news-static:check": "node scripts/check-news-static-params.mjs",
+    "news-static:integration": "node scripts/check-news-static-export-integration.mjs",
     "backlog:check": "node scripts/check-editorial-backlog.mjs",
     "monetization:check": "node scripts/check-monetization.mjs",
     "shop:check": "node scripts/check-shop.mjs",
@@ -25,15 +28,16 @@
     "similarity:check": "node scripts/check-similarity.mjs",
     "links:check": "node scripts/audit-links.mjs --internal",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
+    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
   },
   "dependencies": {
-    "@expo-google-fonts/noto-sans-jp": "^0.4.3",
+    "@expo-google-fonts/biz-udpgothic": "0.4.2",
+    "@resvg/resvg-js": "2.6.2",
     "lucide-react": "^1.21.0",
-    "next": "16.2.10",
+    "next": "16.2.11",
     "react": "19.2.7",
     "react-dom": "19.2.7",
-    "sharp": "^0.34.5"
+    "sharp": "0.35.3"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "4.2.1",
@@ -41,12 +45,15 @@
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.2.10",
+    "eslint-config-next": "16.2.11",
     "tailwindcss": "4.2.1",
     "typescript": "5.9.3"
   },
   "type": "module",
   "overrides": {
+    "next": {
+      "sharp": "$sharp"
+    },
     "postcss": "^8.5.10"
   }
 }
