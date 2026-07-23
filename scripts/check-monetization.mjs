@@ -44,7 +44,7 @@ if (/\.ad-slot\[data-ad-status=[^\]]+\][^{]*\{[^}]*display\s*:\s*none/is.test(gl
 if (!editorialArticle.includes("index === 1 && <AdSlot")) failures.push("広告枠が本文2番目のセクション後に限定されていない");
 if (!editorialArticle.includes("<AdSenseScript />")) failures.push("長文記事にAdSense scriptがない");
 if (!layout.includes('"google-adsense-account"')) failures.push("AdSense accountメタタグがない");
-for (const origin of ["https://pagead2.googlesyndication.com", "https://googleads.g.doubleclick.net", "https://tpc.googlesyndication.com"]) {
+for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googlesyndication.com", "https://googleads.g.doubleclick.net", "https://tpc.googlesyndication.com"]) {
   if (!headers.includes(origin)) failures.push(`CSPに${origin}がない`);
 }
 
