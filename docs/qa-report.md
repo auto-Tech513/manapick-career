@@ -4,7 +4,7 @@
 
 ## 現リリース候補の結論
 
-現リリース候補は、未確認データを公開しないfail-closed構成へ変更し、ローカルの全品質ゲートと実ブラウザ検査に合格した。GitHubへのpushとCloudflare Pages本番反映は、この記録の作成時点では未実施である。
+現リリースは、未確認データを公開しないfail-closed構成へ変更し、ローカルの全品質ゲートと本番実ブラウザ検査に合格した。アプリケーション変更commit `3a12f14bb5b1364dcb326912ce4fa74bd466956a` はGitHub `main` と一致し、Cloudflare Pages Production deployment `c18b761f-53f6-44fb-8c47-5296bad94212`（source `3a12f14`）がActiveであることを確認した。
 
 - 556職業は名称・別名・分類を検索できる `/all/` の名録として維持する。独自本文と人の承認証跡がない個別 `/occupation/` は公開0件で、静的ルート、sitemap、llms.txt、JSON-LDにも出さない。
 - 独自の詳細職業は既存の確認済み12件だけを `/career/` で公開する。
@@ -60,16 +60,26 @@ Node.js v24.16.0、npm 11.13.0で次を確認した。
 - 出典リンク: 50件正常、bot制限2件、404・未確認0件。bot制限を404と同一扱いにしない。
 - 競合・参照サイト: 100件、深掘り25件・表層75件。HTTP再監査は94件正常、bot制限5件、404・410は0件、通信エラー1件。通信エラーだったJobs and Skills Australiaは公開画面を別経路で確認し、HTTP監査の生結果と分けて記録した。
 
+## 本番公開面の検証
+
+- `https://career.manapick.app/`、ニュース、ガイド、名録、データ室、入口案内、商店はHTTP 200。
+- `sitemap.xml`、`llms.txt`、`feed.xml`、`robots.txt` はHTTP 200。sitemap 40 URLを巡回し、40 / 40でHTTP 200、canonical不一致0件、draft slug・`JobPosting`混入0件。
+- 公開ガイドOG 4枚は1200×630pxで、公開レスポンスとリポジトリ成果物のbyte一致を確認した。draftニュースOGと旧OGパスは公開されない。
+- 代表draftニュース・未承認職業・ビルド専用予約slugはHTTP 404で、sitemap、llms.txt、RSSにも混入しない。
+- HSTS、`nosniff`、Referrer-Policy、frame制限、Permissions-Policy、CSPの本番応答を確認した。
+
 ## 実ブラウザ検査
 
 Playwright CLIのChromiumで `/`、`/news/`、`/guide/`、`/all/`、`/research/`、`/route/`、`/shop/` を375 / 390 / 768 / 1024 / 1280 / 1440 / 1920pxで確認した。
 
 - 49 / 49ケース: HTTP 200。
-- 49 / 49ケース: `document.scrollWidth <= window.innerWidth`。
-- H1、main、headerの欠落0件。
-- アプリ由来のconsole warning/error、hydration error、runtime error 0件。
+- 49 / 49ケース: `document.scrollWidth <= window.innerWidth`。最大値でもviewportより15px小さく、横あふれ0件。
+- 49 / 49ケース: H1とheaderが可視。navigation error、pageerror、hydration errorは0件。
+- 初回の本番検査では、GA4が使う `https://www.googletagmanager.com/a` または `/td` の画像ビーコンをCSPの `img-src` が許可しておらず、成功ページで合計11件のCSP console errorを検出した。許可先を当該exact originだけ追加し、品質ゲートにも必須条件を追加した。
+- 修正deployment後の再検査では、成功ページのconsole error、CSP error、hydration error、runtime errorは49 / 49ケースですべて0件。
+- 375pxではdrawerの開閉、16リンク、下部ナビ5リンクを確認し、drawer表示中もinner / document / body幅は375 / 375 / 375px。
 - ニュース一覧は全幅で「公開中0記事」「公開前確認中」「確認を終えた記事から掲載」を表示。
-- draft代表4URLは4 / 4でHTTP 404、記事本文の露出なし。404応答自体に伴うresource errorだけを、アプリの実行時エラーと混同しない。
+- draft代表3URLは3 / 3でHTTP 404、H1は404、記事本文の露出と横あふれはない。404応答自体に伴う期待どおりの404 consoleだけを、成功ページの実行時エラーと混同しない。
 
 実機Safari、Android Chrome、支援技術による読み上げは未確認である。
 
@@ -87,7 +97,6 @@ Playwright CLIのChromiumで `/`、`/news/`、`/guide/`、`/all/`、`/research/`
 
 ## 未確認のまま成功扱いにしない項目
 
-- このリリース候補のGitHub push、Cloudflare Pages本番deployment、公開URLの再検査。
 - Search Consoleの2026-07-23現在値、代表URLのURL検査、Google選択canonical、モバイル描画、インデックス登録。
 - GA4の現リリース受信、AdSense管理画面の現在状態と実広告の継続充填。
 - Rich Results Test、実機Safari / Android Chrome、支援技術による読み上げ。

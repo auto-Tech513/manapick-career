@@ -13,12 +13,14 @@
 - [x] `npm run qa` を完走する（Node.js v24.16.0、静的生成48 / 48、postbuild後HTML 43件、sitemap 40 URL、内部リンク欠落0件）。
 - [x] 公開ニュース0件時のビルド専用予約slugをpostbuildで削除し、公開ニュース1件fixtureでも記事HTML生成と予約slug不在を確認する。
 - [x] `npm audit` と `npm audit --omit=dev` で0 vulnerabilitiesを確認する。
-- [x] 7ページ × 7幅の49ケースでHTTP 200、横あふれ0、アプリ由来console/hydration/runtime error 0を確認する。
-- [x] draft代表ニュース4URLがHTTP 404で、記事本文を返さないことを確認する。
+- [x] 7ページ × 7幅の49ケースでHTTP 200、横あふれ0、H1・header可視、navigation/pageerror/hydration/runtime error 0を確認する。
+- [x] 初回本番検査でGA4画像ビーコンのCSP error 11件を検出し、`img-src` に `https://www.googletagmanager.com` をexact originで追加して品質ゲート化する。修正deployment後の49ケースで成功ページのconsole/CSP error 0を再確認する。
+- [x] 375pxでdrawerの開閉、16リンク、下部ナビ5リンク、表示中の横あふれ0を確認する。
+- [x] draft代表3URLがHTTP 404で、記事本文を返さないことを確認する。
 - [x] BIZ UDPGothic Regular / BoldのversionとSHA-256を固定し、Resvgのシステムフォントを無効化し、全OG候補の使用文字がTTFに収録されていることを検査する。
 - [x] 旧OG公開ディレクトリを削除し、draft画像を `public/og` へ置かない。
-- [ ] GitHub `main` へpushし、Cloudflare Pagesの本番deployment成功と公開commitを照合する。
-- [ ] 本番URLでトップ、ニュース、ガイド、名録、sitemap、llms.txt、robots、OG画像、代表draft 404を再確認する。
+- [x] GitHub `main` の `3a12f14bb5b1364dcb326912ce4fa74bd466956a` とCloudflare Pages Production deployment `c18b761f-53f6-44fb-8c47-5296bad94212`（source `3a12f14`、Active）を照合する。
+- [x] 本番URLでトップ、ニュース、ガイド、名録、sitemap、llms.txt、robots、公開ガイドOG 4枚、代表draft 404を再確認する。
 
 ## 添付SEOレポート
 
