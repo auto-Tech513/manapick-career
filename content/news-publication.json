@@ -34,6 +34,7 @@
     {"slug":"labor-data-before-career-decision-2026","createdAt":"2026-07-14","status":"draft","primarySourceId":"stat-labor-force-2026-05","sourcePublishedAt":"2026-06-30","publishedAt":null,"reviewedAt":null,"reviewedBy":null,"reviewedByHumanAt":null,"reviewEvidence":null},
     {"slug":"overwork-compensation-2025","createdAt":"2026-07-23","status":"draft","primarySourceId":"mhlw-overwork-compensation-2025","sourcePublishedAt":"2026-07-15","publishedAt":null,"reviewedAt":null,"reviewedBy":null,"reviewedByHumanAt":null,"reviewEvidence":null},
     {"slug":"ipa-dx-trends-2026","createdAt":"2026-07-23","status":"draft","primarySourceId":"ipa-dx-trends-2026","sourcePublishedAt":"2026-07-16","publishedAt":null,"reviewedAt":null,"reviewedBy":null,"reviewedByHumanAt":null,"reviewEvidence":null},
-    {"slug":"care-worker-exam-39","createdAt":"2026-07-23","status":"draft","primarySourceId":"mhlw-care-worker-exam-39","sourcePublishedAt":"2026-07-21","publishedAt":null,"reviewedAt":null,"reviewedBy":null,"reviewedByHumanAt":null,"reviewEvidence":null}
+    {"slug":"care-worker-exam-39","createdAt":"2026-07-23","status":"draft","primarySourceId":"mhlw-care-worker-exam-39","sourcePublishedAt":"2026-07-21","publishedAt":null,"reviewedAt":null,"reviewedBy":null,"reviewedByHumanAt":null,"reviewEvidence":null},
+    {"slug":"childcare-teacher-treatment-staffing-2026","createdAt":"2026-07-24","status":"draft","primarySourceId":"jilpt-childcare-treatment-staffing-305","sourcePublishedAt":"2026-07-24","publishedAt":null,"reviewedAt":null,"reviewedBy":null,"reviewedByHumanAt":null,"reviewEvidence":null}
   ]
 }
