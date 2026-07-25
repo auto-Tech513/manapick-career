@@ -1,0 +1,62 @@
+{
+  "batchId": "news-2026-07-25-30",
+  "preparedAt": "2026-07-25",
+  "targetCount": 30,
+  "status": "approved-for-publication",
+  "approvedAt": "2026-07-25",
+  "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
+  "authorizationNote": "Codexタスク上で「許可しますので公開してください」と明示的な公開許可を受領。対象はbatchId news-2026-07-25-30のslugs 30件",
+  "selectionPolicy": [
+    "一次資料の公表日を確認できる",
+    "本文がサイト基準の1,000字以上である",
+    "重要主張を一次資料のsourceIdへ結び付けている",
+    "調査対象・限界・読者が次に確認する行動を記載している",
+    "職業適性・採用可能性・年収・将来性を断定しない"
+  ],
+  "excluded": [
+    {
+      "slug": "reskilling-support-2026",
+      "reason": "一次資料の公表日が未確認"
+    },
+    {
+      "slug": "jpsed-2026-survey-design",
+      "reason": "一次資料の公表日が未確認"
+    },
+    {
+      "slug": "career-break-white-paper-2025",
+      "reason": "公的機関の一次資料を優先する今回の30件選定から除外"
+    }
+  ],
+  "slugs": [
+    "job-openings-may-2026",
+    "digital-skills-standard-v2-2026",
+    "manufacturing-midcareer-hiring-2026",
+    "labor-force-may-2026",
+    "labor-market-three-indicators-2026",
+    "monthly-earnings-may-2026",
+    "nominal-real-wages-2026",
+    "working-hours-may-2026",
+    "wage-structure-2025",
+    "wages-by-employment-type-2025",
+    "dx-self-assessment-1164-2026",
+    "dx-indicator-2026-revision",
+    "ai-explanation-survey-2000-2026",
+    "ai-explanation-at-work-2026",
+    "dx-award-2026-lessons",
+    "digital-talent-ai-era-2026",
+    "human-investment-panel-2026",
+    "telework-2016-2024",
+    "workplace-learning-ojt-offjt-2025",
+    "job-change-hope-reality-gap-2025",
+    "long-working-hours-2025",
+    "employment-whitepaper-2026",
+    "graduate-recruiting-process-2026",
+    "future-of-work-whitepaper-2026",
+    "japan-labor-chartbook-june-2026",
+    "digital-skills-across-occupations-2026",
+    "labor-data-before-career-decision-2026",
+    "overwork-compensation-2025",
+    "ipa-dx-trends-2026",
+    "care-worker-exam-39"
+  ]
+}

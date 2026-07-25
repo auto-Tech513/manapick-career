@@ -200,12 +200,17 @@ const newsNetworkResolutionSnapshot = [...newsNetworkReferenceByItemId.values()]
 
 function newsContentDigest(item, networkResolution = newsNetworkResolutionSnapshot) {
   const referencedSources = (item.sourceIds ?? []).map((sourceId) => sourceRegistry.find((source) => source.sourceId === sourceId) ?? null);
+  const publicationRecord = (newsPublication.records ?? []).find((record) => record.slug === item.slug) ?? null;
   return createHash("sha256").update(JSON.stringify({
-    schemaVersion: 2,
+    schemaVersion: 3,
     contentSource: item.digestSource,
     sharedImplementation: newsSharedImplementation,
     expandedBuilderImplementation: item.digestKind === "expanded" ? expandedNewsBuilderImplementation : null,
     referencedSources,
+    publicationSource: publicationRecord ? {
+      primarySourceId: publicationRecord.primarySourceId,
+      sourcePublishedAt: publicationRecord.sourcePublishedAt,
+    } : null,
     networkResolverImplementation: networkResolverSource,
     networkResolution,
   })).digest("hex");
@@ -519,6 +524,11 @@ for (const owners of expandedParagraphOwners.values()) {
   if (owners.length > 1) failures.push(`ニュース本文の長文段落を使い回し: ${owners.join(", ")}`);
 }
 const allNews = [...baseNews, ...expandedNewsModels];
+if (process.argv.includes("--print-news-digests")) {
+  for (const item of allNews) {
+    console.log(`${item.slug}\t${newsContentDigest(item)}`);
+  }
+}
 if (allNews.length > 0 && newsNetworkResolutionSnapshot.length > 0) {
   const changedNetworkResolution = newsNetworkResolutionSnapshot.map((entry, index) => index === 0
     ? { ...entry, resolvedUrl: `${entry.resolvedUrl ?? "https://invalid.example/"}?review-regression=changed` }

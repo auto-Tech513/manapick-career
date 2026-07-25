@@ -27,6 +27,8 @@ npm audit --omit=dev
 
 - `content:check`: 公開条件、必須項目、禁止表現、sourceId、network itemを検査
 - `editorial:check`: ニュース・ガイドの本文、出典、公開状態、記事固有本文、OG画像を検査
+- `news-review:check`: 公開前レビュー対象30件の件数、一次資料、公表日、確認日、状態を検査
+- `news-review:list`: 公開前レビュー対象30件のタイトルと公式URLを一覧表示
 - `monetization:check`: AdSenseのpublisher、手動slot、ads.txt、CSP、記事内配置を検査
 - `shop:check`: PR表示、公式出典、権利処理済みの独自イラストを検査
 - `source:check`: 出典レジストリと主張の鮮度を検査
