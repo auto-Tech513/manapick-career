@@ -36,6 +36,36 @@ if (tokyoDateString(new Date("2026-07-22T23:00:00Z")) !== "2026-07-23") failures
 if (tokyoDateString(new Date("2026-07-23T14:59:59Z")) !== "2026-07-23") failures.push("鮮度検査: JST日付変更直前の暦日が不正");
 if (tokyoDateString(new Date("2026-07-23T15:00:00Z")) !== "2026-07-24") failures.push("鮮度検査: JST日付変更後の暦日が不正");
 
+let gitHistoryHydrationAttempted = false;
+
+function hydrateShallowGitHistory() {
+  if (gitHistoryHydrationAttempted) return;
+  gitHistoryHydrationAttempted = true;
+
+  const isShallow = execFileSync("git", ["rev-parse", "--is-shallow-repository"], {
+    cwd: root,
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "pipe"],
+  }).trim() === "true";
+  if (!isShallow) return;
+
+  execFileSync("git", ["fetch", "--no-tags", "--unshallow", "origin"], {
+    cwd: root,
+    env: { ...process.env, GIT_TERMINAL_PROMPT: "0" },
+    stdio: ["ignore", "pipe", "pipe"],
+    timeout: 120_000,
+  });
+  warnings.push("浅いGit履歴を展開し、reviewEvidenceの祖先関係を検証しました");
+}
+
+function resolveGitCommit(revision) {
+  return execFileSync("git", ["rev-parse", "--verify", `${revision}^{commit}`], {
+    cwd: root,
+    encoding: "utf8",
+    stdio: ["ignore", "pipe", "pipe"],
+  }).trim();
+}
+
 function validateGitReviewEvidence(value, label, reviewedAt) {
   if (!/^git:[0-9a-f]{7,40}$/i.test(String(value))) {
     failures.push(`${label}: reviewEvidenceが追跡不能`);
@@ -44,11 +74,17 @@ function validateGitReviewEvidence(value, label, reviewedAt) {
   const revision = String(value).slice(4);
   let fullRevision;
   try {
-    fullRevision = execFileSync("git", ["rev-parse", "--verify", `${revision}^{commit}`], {
-      cwd: root,
-      encoding: "utf8",
-      stdio: ["ignore", "pipe", "pipe"],
-    }).trim();
+    fullRevision = resolveGitCommit(revision);
+  } catch {
+    try {
+      hydrateShallowGitHistory();
+      fullRevision = resolveGitCommit(revision);
+    } catch {
+      failures.push(`${label}: reviewEvidenceのcommitが現在のGit履歴に存在しない (${value})`);
+      return;
+    }
+  }
+  try {
     execFileSync("git", ["merge-base", "--is-ancestor", fullRevision, "HEAD"], {
       cwd: root,
       stdio: "ignore",
