@@ -31,7 +31,7 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   return <><JsonLd data={graph}/><div className="page-shell editorial-detail news-detail-page">
     <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/news/">ニュース</Link><span>/</span><span aria-current="page">{item.kind}</span></nav>
     <Link className="back-link" href="/news/"><ArrowLeft aria-hidden="true" />ニュース一覧へ</Link>
-    <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1>{item.title}</h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>サイト公開 {item.publishedAt}</span><span>内容確認 {item.checkedAt}</span></div></header>
+    <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1>{item.title}</h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>一次資料確認 {item.checkedAt}</span><span>公開前編集確認 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
     <ShareKit title={item.title} summary={item.summary} url={url} kind="news" />
     <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources}/>
   </div></>;

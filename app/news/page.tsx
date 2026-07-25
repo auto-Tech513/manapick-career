@@ -3,9 +3,33 @@ import Link from "next/link";
 import { ArrowRight, CalendarCheck2, CalendarDays, Newspaper, ShieldCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { newsModifiedAt, publishedNews } from "@/content/editorial";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
-export const metadata: Metadata = { title: "キャリアニュース", description: "雇用統計、採用動向、学び直し、デジタル人材の一次資料を確認し、人が全主張を確認した記事だけを公開します。", alternates: { canonical: "/news/" } };
+const newsTitle = "働く人のための、キャリアニュース";
+const newsDescription = "雇用統計、採用動向、学び直し、デジタル人材の一次資料を確認し、人が全主張を確認した記事だけを公開します。";
+const latestNewsModifiedAt = publishedNews.reduce((latest, item) => newsModifiedAt(item) > latest ? newsModifiedAt(item) : latest, "");
+const newsIndexImage = articleOgUrl("news", "index", `${newsTitle}|${publishedNews.length}|${latestNewsModifiedAt}`);
+
+export const metadata: Metadata = {
+  title: "キャリアニュース",
+  description: newsDescription,
+  alternates: { canonical: "/news/" },
+  openGraph: {
+    title: newsTitle,
+    description: newsDescription,
+    type: "website",
+    url: absoluteUrl("/news/"),
+    siteName: "manapick career",
+    locale: "ja_JP",
+    images: [{ url: newsIndexImage, width: 1200, height: 630, alt: newsTitle }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: newsTitle,
+    description: newsDescription,
+    images: [newsIndexImage],
+  },
+};
 
 export default function NewsIndex() {
   const [lead, ...rest] = publishedNews;
@@ -13,7 +37,7 @@ export default function NewsIndex() {
   const latestSourceDate = publishedNews.reduce((latest, item) => item.sourcePublishedAt > latest ? item.sourcePublishedAt : latest, "");
   const latestReviewedAt = publishedNews.reduce((latest, item) => newsModifiedAt(item) > latest ? newsModifiedAt(item) : latest, "");
   const graph = { "@context": "https://schema.org", "@graph": [
-    { "@type": "CollectionPage", name: "キャリアニュース", description: metadata.description, url: absoluteUrl("/news/"), inLanguage: "ja-JP", ...(publishedNews.length ? { mainEntity: { "@type": "ItemList", numberOfItems: publishedNews.length, itemListElement: publishedNews.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: absoluteUrl(`/news/${item.slug}/`) })) } } : {}) },
+    { "@type": "CollectionPage", name: "キャリアニュース", description: newsDescription, url: absoluteUrl("/news/"), inLanguage: "ja-JP", ...(publishedNews.length ? { mainEntity: { "@type": "ItemList", numberOfItems: publishedNews.length, itemListElement: publishedNews.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: absoluteUrl(`/news/${item.slug}/`) })) } } : {}) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "ホーム", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ニュース", item: absoluteUrl("/news/") }] },
   ] };
   if (!lead) return <><JsonLd data={graph}/><div className="page-shell editorial-index news-index-page"><header className="page-heading"><span className="eyebrow">career newsroom</span><h1>キャリアニュース</h1><p>公開条件を満たす記事を確認中です。自動取得した記事は、人が一次資料と全主張を確認するまで公開しません。</p></header><section className="news-freshness-panel" aria-label="ニュースの公開・確認状況"><div><Newspaper aria-hidden="true"/><span><small>公開中</small><strong>0記事</strong></span></div><div><CalendarDays aria-hidden="true"/><span><small>自動公開</small><strong>行いません</strong></span></div><div><CalendarCheck2 aria-hidden="true"/><span><small>公開条件</small><strong>人による全主張の確認</strong></span></div><p><ShieldCheck aria-hidden="true"/>一次資料、公表日、数字の対象範囲、関連リンクを確認し、条件を満たした記事だけを公開します。</p></section><section className="news-featured" aria-labelledby="news-empty-title"><span className="news-featured-badge"><Newspaper aria-hidden="true"/>公開前確認中</span><h2 id="news-empty-title">確認を終えた記事から、ここに掲載します。</h2><p>準備中は、ガイドで職業情報の読み方を、データ室で市場の数字が示すこと・示さないことを確認できます。</p><div className="hero-actions"><Link className="button primary" href="/guide/">読み方ガイドへ <ArrowRight aria-hidden="true"/></Link><Link className="button secondary" href="/research/">キャリアデータ室へ</Link></div></section></div></>;

@@ -136,9 +136,15 @@ const newsWithPublication = [...baseNews, ...expanded]
       date: publication.publishedAt ?? publication.createdAt,
     };
   });
+const newsIndexOg = {
+  slug: "index",
+  title: "働く人のための、キャリアニュース",
+  label: "一次資料を独自解説",
+  date: newsWithPublication.reduce((latest, item) => item.date > latest ? item.date : latest, "") || "公開前確認中",
+};
 const publicNewsDirectory = path.join(outputRoot, "news");
 if (!includeDraftPreviews && fs.existsSync(publicNewsDirectory)) {
-  const expected = new Set(newsWithPublication.map((item) => `${item.slug}.png`));
+  const expected = new Set([...newsWithPublication.map((item) => `${item.slug}.png`), `${newsIndexOg.slug}.png`]);
   for (const entry of fs.readdirSync(publicNewsDirectory)) {
     if (entry.endsWith(".png") && !expected.has(entry)) fs.rmSync(path.join(publicNewsDirectory, entry));
   }
@@ -154,4 +160,5 @@ if (usesPublicOutput && !includeDraftPreviews) {
 }
 for (const guide of guides) await render(guide, "GUIDE", "guide");
 for (const item of newsWithPublication) await render(item, "NEWS", "news");
-console.log(`OG generated with BIZ UDPGothic font files: news=${newsWithPublication.length} guides=${guides.length}`);
+await render(newsIndexOg, "NEWS", "news");
+console.log(`OG generated with BIZ UDPGothic font files: newsArticles=${newsWithPublication.length} newsIndex=1 guides=${guides.length}`);
