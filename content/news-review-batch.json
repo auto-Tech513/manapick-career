@@ -6,6 +6,14 @@
   "approvedAt": "2026-07-25",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
   "authorizationNote": "Codexタスク上で「許可しますので公開してください」と明示的な公開許可を受領。対象はbatchId news-2026-07-25-30のslugs 30件",
+  "reviewDecision": "slugs 30件を公開承認",
+  "reviewedScope": [
+    "各記事の一次資料、資料名、提供者、公表日、対象期間、対象者、集計単位",
+    "各記事のanswer、keyPoints、本文にある重要主張と数字の対象範囲",
+    "断定できないこと、読者が次に確認する条件、関連する姉妹サイト導線",
+    "1200×630pxのOG画像における日本語字形、改行、タイトル欠け",
+    "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止"
+  ],
   "selectionPolicy": [
     "一次資料の公表日を確認できる",
     "本文がサイト基準の1,000字以上である",
@@ -24,7 +32,7 @@
     },
     {
       "slug": "career-break-white-paper-2025",
-      "reason": "公的機関の一次資料を優先する今回の30件選定から除外"
+      "reason": "30件の公開上限に合わせ、雇用統計・制度・職業横断の意思決定資料を優先し、経験者限定の個別テーマ調査は次回レビューへ保留"
     }
   ],
   "slugs": [

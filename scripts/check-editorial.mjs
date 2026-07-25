@@ -453,6 +453,9 @@ if (![guidePage, sitemap, llms, preview, guideIndex].every((source) => source.in
 if (newsPage.includes("export const revalidate = 0")) failures.push("revalidate=0が承認済みニュース詳細の静的出力を無効化する");
 if (!newsPage.includes("generateStaticParams()") || !newsPage.includes("buildNewsStaticParams(newsItems)")) failures.push("ニュース詳細の静的パスが公開配列限定ではない");
 if (!newsPage.includes("slug === EMPTY_NEWS_ROUTE_SLUG") || !newsPage.includes("notFound()")) failures.push("公開0件用の予約slugを404へ送っていない");
+if (!newsPage.includes("modifiedTime: modifiedAt") || !newsPage.includes("dateModified: modifiedAt")) failures.push("ニュースのmodified日が公開・確認日の最新値ではない");
+if (!newsPage.includes("${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}")) failures.push("ニュースOGキャッシュキーが公開・確認日の変更を保護していない");
+if (!sitemap.includes("new Date(newsModifiedAt(x))")) failures.push("ニュースsitemapのlastModifiedが公開・確認日の最新値ではない");
 if (!editorialSource.includes("claimIsFresh(claim)")) failures.push("ニュース公開判定が主張の鮮度期限をfail-closedで検査していない");
 if (!editorialSource.includes("networkLinksArePublishable(item.networkLinks)")) failures.push("ニュース公開判定がnetwork-map解決結果をfail-closedで検査していない");
 

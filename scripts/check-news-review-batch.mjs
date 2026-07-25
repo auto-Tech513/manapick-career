@@ -32,6 +32,10 @@ if (hasHumanApproval) {
   if (!validDate(batch.approvedAt)) failures.push("news review batch: approvedAtが不正");
   if (typeof batch.approvedBy !== "string" || !batch.approvedBy.trim()) failures.push("news review batch: approvedByが不足");
   if (typeof batch.authorizationNote !== "string" || !batch.authorizationNote.trim()) failures.push("news review batch: 公開許可の証跡が不足");
+  if (typeof batch.reviewDecision !== "string" || !batch.reviewDecision.trim()) failures.push("news review batch: 公開判断が不足");
+  if (!Array.isArray(batch.reviewedScope) || batch.reviewedScope.length < 5 || batch.reviewedScope.some((item) => typeof item !== "string" || !item.trim())) {
+    failures.push("news review batch: 人による確認範囲が不足");
+  }
 }
 if (!Number.isInteger(batch.targetCount) || batch.targetCount <= 0) failures.push("news review batch: targetCountが不正");
 if (slugs.length !== batch.targetCount) failures.push(`news review batch: ${slugs.length}件でtargetCount ${batch.targetCount}件と不一致`);

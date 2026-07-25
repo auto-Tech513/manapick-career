@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CalendarCheck2, CalendarDays, Newspaper, ShieldCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
-import { publishedNews } from "@/content/editorial";
+import { newsModifiedAt, publishedNews } from "@/content/editorial";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = { title: "キャリアニュース", description: "雇用統計、採用動向、学び直し、デジタル人材の一次資料を確認し、人が全主張を確認した記事だけを公開します。", alternates: { canonical: "/news/" } };
@@ -11,7 +11,7 @@ export default function NewsIndex() {
   const [lead, ...rest] = publishedNews;
   const kinds = [...new Set(publishedNews.map((item) => item.kind))];
   const latestSourceDate = publishedNews.reduce((latest, item) => item.sourcePublishedAt > latest ? item.sourcePublishedAt : latest, "");
-  const latestCheckedAt = publishedNews.reduce((latest, item) => item.checkedAt > latest ? item.checkedAt : latest, "");
+  const latestReviewedAt = publishedNews.reduce((latest, item) => newsModifiedAt(item) > latest ? newsModifiedAt(item) : latest, "");
   const graph = { "@context": "https://schema.org", "@graph": [
     { "@type": "CollectionPage", name: "キャリアニュース", description: metadata.description, url: absoluteUrl("/news/"), inLanguage: "ja-JP", ...(publishedNews.length ? { mainEntity: { "@type": "ItemList", numberOfItems: publishedNews.length, itemListElement: publishedNews.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: absoluteUrl(`/news/${item.slug}/`) })) } } : {}) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "ホーム", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ニュース", item: absoluteUrl("/news/") }] },
@@ -22,7 +22,7 @@ export default function NewsIndex() {
     <section className="news-freshness-panel" aria-label="ニュースの公開・確認状況">
       <div><Newspaper aria-hidden="true"/><span><small>公開中</small><strong>{publishedNews.length}記事</strong></span></div>
       <div><CalendarDays aria-hidden="true"/><span><small>一次資料の最新公表日</small><strong>{latestSourceDate}</strong></span></div>
-      <div><CalendarCheck2 aria-hidden="true"/><span><small>編集部の最終確認日</small><strong>{latestCheckedAt}</strong></span></div>
+      <div><CalendarCheck2 aria-hidden="true"/><span><small>編集部の最終確認日</small><strong>{latestReviewedAt}</strong></span></div>
       <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、内容確認日を分けて表示します。自動監査の候補は、人の確認前には公開しません。</p>
     </section>
     <nav className="news-kind-nav" aria-label="ニュースのテーマ">{kinds.map((kind) => <span key={kind}>{kind}</span>)}</nav>
