@@ -687,5 +687,7 @@ export const publishedNews = newsReviewQueue
   .filter(isPublishableNews)
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.sourcePublishedAt.localeCompare(a.sourcePublishedAt));
 export const newsItems = publishedNews;
+export const newsModifiedAt = (item: Pick<NewsItem, "publishedAt" | "reviewedAt" | "checkedAt">) =>
+  [item.publishedAt, item.reviewedAt, item.checkedAt].sort().at(-1) ?? item.publishedAt;
 export const guideBySlug = (slug: string) => guides.find((item) => item.slug === slug);
 export const newsBySlug = (slug: string) => publishedNews.find((item) => item.slug === slug);

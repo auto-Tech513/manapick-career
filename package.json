@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "prebuild": "npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-static:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
+    "prebuild": "npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
     "build": "next build",
     "postbuild": "node scripts/cleanup-empty-news-route.mjs",
     "start": "next dev --webpack",
@@ -17,6 +17,8 @@
     "editorial:check": "node scripts/check-editorial.mjs",
     "news-static:check": "node scripts/check-news-static-params.mjs",
     "news-static:integration": "node scripts/check-news-static-export-integration.mjs",
+    "news-review:check": "node scripts/check-news-review-batch.mjs",
+    "news-review:list": "node scripts/check-news-review-batch.mjs --list",
     "backlog:check": "node scripts/check-editorial-backlog.mjs",
     "monetization:check": "node scripts/check-monetization.mjs",
     "shop:check": "node scripts/check-shop.mjs",
@@ -28,7 +30,7 @@
     "similarity:check": "node scripts/check-similarity.mjs",
     "links:check": "node scripts/audit-links.mjs --internal",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
+    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
   },
   "dependencies": {
     "@expo-google-fonts/biz-udpgothic": "0.4.2",
