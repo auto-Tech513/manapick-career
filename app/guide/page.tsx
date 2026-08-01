@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BookOpenText, Clock3 } from "lucide-react";
+import { JsonLd } from "@/components/JsonLd";
 import { guides } from "@/content/editorial";
+import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
-export const metadata: Metadata = { title: "職業ガイド", description: "職業情報の読み方、学ぶ順番、AIと仕事の考え方を整理したガイドです。", alternates: { canonical: "/guide/" } };
+const title = "迷いを、確認できる手順に変える職業ガイド";
+const description = "職業情報の読み方、学ぶ順番、AIと仕事の考え方を、公式出典と人の確認日付きで整理したガイドです。";
+const latestGuideCheck = guides.map((guide) => guide.checkedAt).sort().at(-1) ?? "";
+const image = articleOgUrl("guide", "index", `${title}|${guides.length}|${latestGuideCheck}`);
+export const metadata: Metadata = { title: "職業ガイド", description, alternates: { canonical: "/guide/" }, openGraph: { title, description, url: absoluteUrl("/guide/"), type: "website", siteName: "manapick career", locale: "ja_JP", images: [{ url: image, width: 1200, height: 630, alt: title }] }, twitter: { card: "summary_large_image", title, description, images: [image] } };
 
 const guideTopics = [
   { id: "check", label: "はじめの確認", description: "名前や印象より先に、仕事内容・条件・出典を確認する" },
@@ -27,7 +33,14 @@ export default function GuideIndex() {
     guides: guides.filter((guide) => topicForCategory(guide.category) === topic.id),
   })).filter((topic) => topic.guides.length > 0);
 
-  return <div className="page-shell editorial-index guide-index-page">
+  const url = absoluteUrl("/guide/");
+  const graph = { "@context": "https://schema.org", "@graph": [
+    { "@type": "CollectionPage", name: title, description, url, inLanguage: "ja-JP", mainEntity: { "@type": "ItemList", numberOfItems: guides.length, itemListElement: guides.map((guide, index) => ({ "@type": "ListItem", position: index + 1, name: guide.title, url: absoluteUrl(`/guide/${guide.slug}/`) })) } },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "ホーム", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ガイド", item: url }] },
+  ] };
+
+  return <><JsonLd data={graph}/><div className="page-shell editorial-index guide-index-page">
+    <nav className="breadcrumbs" aria-label="パンくず"><Link href="/">ホーム</Link><span>/</span><span aria-current="page">ガイド</span></nav>
     <header className="page-heading">
       <span className="eyebrow">career guide</span>
       <h1>迷いを、確認できる手順に変える。</h1>
@@ -56,5 +69,5 @@ export default function GuideIndex() {
         <em>読む <ArrowRight aria-hidden="true" /></em>
       </Link>)}</div>
     </section>)}
-  </div>;
+  </div></>;
 }

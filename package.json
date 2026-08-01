@@ -29,8 +29,9 @@
     "source:network": "node scripts/audit-sources.mjs --network",
     "similarity:check": "node scripts/check-similarity.mjs",
     "links:check": "node scripts/audit-links.mjs --internal",
+    "indexability:check": "node scripts/check-indexability.mjs",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check"
+    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check && npm run indexability:check"
   },
   "dependencies": {
     "@expo-google-fonts/biz-udpgothic": "0.4.2",
