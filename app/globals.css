@@ -858,6 +858,17 @@ main {
   color: var(--muted);
   padding: 0.25rem 0;
 }
+.detail-aside nav a:hover,
+.detail-aside nav a:focus-visible {
+  color: var(--navy);
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.22rem;
+}
+.detail-mobile-toc {
+  display: none;
+}
 .route-card {
   background: #fff;
   border: 1px solid var(--line);
@@ -1177,6 +1188,40 @@ main {
     position: static;
     display: none;
   }
+  .detail-mobile-toc {
+    display: block;
+    margin: -1.5rem 0 2.5rem;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+  }
+  .detail-mobile-toc summary {
+    min-height: 50px;
+    padding: 0.85rem 1rem;
+    color: var(--navy);
+    cursor: pointer;
+    font-weight: 800;
+  }
+  .detail-mobile-toc nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+    padding: 0 1rem 1rem;
+  }
+  .detail-mobile-toc nav strong {
+    grid-column: 1 / -1;
+    color: var(--muted);
+    font-size: 0.72rem;
+  }
+  .detail-mobile-toc nav a {
+    min-height: 44px;
+    padding: 0.65rem 0.7rem;
+    border-radius: 9px;
+    background: var(--gold-soft);
+    color: var(--navy);
+    font-size: 0.78rem;
+    font-weight: 750;
+  }
 }
 @media (max-width: 760px) {
   body {
@@ -1331,6 +1376,9 @@ main {
   }
   .category-tabs button {
     white-space: nowrap;
+  }
+  .detail-mobile-toc nav {
+    grid-template-columns: 1fr;
   }
 }
 @media (prefers-reduced-motion: reduce) {

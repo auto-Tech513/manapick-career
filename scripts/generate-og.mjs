@@ -28,6 +28,7 @@ if (usesPublicOutput && !includeDraftPreviews) {
   });
 }
 const editorial = fs.readFileSync(path.join(root, "content/editorial.ts"), "utf8");
+const careersSource = fs.readFileSync(path.join(root, "content/jobs.ts"), "utf8");
 const expanded = JSON.parse(fs.readFileSync(path.join(root, "content/news-expanded.json"), "utf8"));
 const expandedGuides = JSON.parse(fs.readFileSync(path.join(root, "content/guides-expanded.json"), "utf8"));
 const newsPublication = JSON.parse(fs.readFileSync(path.join(root, "content/news-publication.json"), "utf8"));
@@ -59,6 +60,7 @@ function textElement(text, { x, y, size, weight = 400, color = "#ffffff" }) {
 
 function renderSvg({ title, label, date, type }) {
   const layout = layoutOgTitle(title);
+  const badgeWidth = type === "NEWS" ? 124 : type === "GUIDE" ? 142 : 168;
   const titleHeight = layout.fontSize + (layout.lines.length - 1) * layout.lineHeight;
   const firstLineTop = Math.round(280 - titleHeight / 2);
   const titleLines = layout.lines.map((line, index) => textElement(line, {
@@ -75,11 +77,11 @@ function renderSvg({ title, label, date, type }) {
   <rect width="1200" height="630" fill="url(#background)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
   <rect x="0" y="0" width="14" height="630" fill="#ffd700"/>
-  <rect x="72" y="58" rx="22" width="${type === "NEWS" ? 124 : 142}" height="54" fill="#ffd700"/>
+  <rect x="72" y="58" rx="22" width="${badgeWidth}" height="54" fill="#ffd700"/>
   <path d="M1040 452 L1110 382 L1110 424 L1160 374" fill="none" stroke="#ffd700" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M1115 374 H1160 V419" fill="none" stroke="#ffd700" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
   ${textElement(type, { x: 94, y: 67, size: 28, weight: fontFiles.bold.weight, color: "#101d3d" })}
-  ${textElement(label, { x: type === "NEWS" ? 222 : 240, y: 67, size: 28, color: "#d8dfef" })}
+  ${textElement(label, { x: 72 + badgeWidth + 26, y: 67, size: 28, color: "#d8dfef" })}
   ${titleLines}
   <text x="72" y="520" dominant-baseline="hanging" font-family="${fontFamily}" font-size="34" font-weight="700"><tspan fill="#ffffff">manapick</tspan><tspan fill="#ffd700"> career</tspan></text>
   ${textElement(`career.manapick.app　・　${date}`, { x: 72, y: 566, size: 23, color: "#bac5dc" })}
@@ -111,6 +113,29 @@ const guides = [
     ))
     .map((item) => ({ slug: item.slug, title: item.title, label: item.category, date: item.publishedAt ?? item.createdAt })),
 ];
+const checkedAtMatch = careersSource.match(/const checkedAt\s*=\s*"([^"]+)"/);
+if (!checkedAtMatch) throw new Error("職業OG用の確認日を取得できません");
+const categoryLabels = {
+  "it-ai": "IT・AI",
+  data: "データ",
+  marketing: "マーケティング",
+  creative: "クリエイティブ",
+  "office-accounting": "事務・会計",
+  "people-license": "対人・資格",
+};
+const careers = [...careersSource.matchAll(/slug:\s*"([^"]+)"\s*,\s*name:\s*"([^"]+)"\s*,\s*category:\s*"([^"]+)"\s*,\s*status:\s*"published"/g)]
+  .map((match) => ({
+    slug: match[1],
+    title: `${match[2]}の仕事内容と、学びの入口`,
+    label: categoryLabels[match[3]] ?? match[3],
+    date: checkedAtMatch[1],
+  }));
+const guideIndexOg = {
+  slug: "index",
+  title: "迷いを、確認できる手順に変える",
+  label: "職業選びと学び方",
+  date: guides.reduce((latest, item) => item.date > latest ? item.date : latest, "") || "公開前確認中",
+};
 const baseNews = pickObjects("const newsItemsData");
 const newsPublicationBySlug = new Map(newsPublication.records.map((item) => [item.slug, item]));
 const publishableNews = (item) => {
@@ -149,6 +174,20 @@ if (!includeDraftPreviews && fs.existsSync(publicNewsDirectory)) {
     if (entry.endsWith(".png") && !expected.has(entry)) fs.rmSync(path.join(publicNewsDirectory, entry));
   }
 }
+const publicGuideDirectory = path.join(outputRoot, "guide");
+if (!includeDraftPreviews && fs.existsSync(publicGuideDirectory)) {
+  const expected = new Set([...guides.map((item) => `${item.slug}.png`), `${guideIndexOg.slug}.png`]);
+  for (const entry of fs.readdirSync(publicGuideDirectory)) {
+    if (entry.endsWith(".png") && !expected.has(entry)) fs.rmSync(path.join(publicGuideDirectory, entry));
+  }
+}
+const publicCareerDirectory = path.join(outputRoot, "career");
+if (!includeDraftPreviews && fs.existsSync(publicCareerDirectory)) {
+  const expected = new Set(careers.map((item) => `${item.slug}.png`));
+  for (const entry of fs.readdirSync(publicCareerDirectory)) {
+    if (entry.endsWith(".png") && !expected.has(entry)) fs.rmSync(path.join(publicCareerDirectory, entry));
+  }
+}
 // The previous generators wrote article images to versionless and Noto-based
 // public paths. They are not referenced anymore, and retaining them would keep
 // draft news images and the old Japanese glyph rendering publicly accessible.
@@ -159,6 +198,8 @@ if (usesPublicOutput && !includeDraftPreviews) {
   }
 }
 for (const guide of guides) await render(guide, "GUIDE", "guide");
+await render(guideIndexOg, "GUIDE", "guide");
 for (const item of newsWithPublication) await render(item, "NEWS", "news");
 await render(newsIndexOg, "NEWS", "news");
-console.log(`OG generated with BIZ UDPGothic font files: newsArticles=${newsWithPublication.length} newsIndex=1 guides=${guides.length}`);
+for (const career of careers) await render(career, "CAREER", "career");
+console.log(`OG generated with BIZ UDPGothic font files: newsArticles=${newsWithPublication.length} newsIndex=1 guides=${guides.length} guideIndex=1 careers=${careers.length}`);

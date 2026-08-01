@@ -14,7 +14,7 @@ function stableRevision(value: string) {
   return (hash >>> 0).toString(36);
 }
 
-export const articleOgUrl = (kind: "news" | "guide", slug: string, revision = "") => {
+export const articleOgUrl = (kind: "news" | "guide" | "career", slug: string, revision = "") => {
   const url = new URL(`${ARTICLE_OG_BASE}/${kind}/${slug}.png`, `${SITE_URL}/`);
   url.searchParams.set("v", stableRevision(`${ARTICLE_OG_REVISION}|${revision}`));
   return url.toString();
