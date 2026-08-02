@@ -60,7 +60,7 @@ for (const entry of careerEntries) {
   const html = await fs.readFile(path.join(careerDir, slug, "index.html"), "utf8");
   const ogImage = html.match(/<meta property="og:image" content="([^"]+)"/i)?.[1] ?? "";
   if (!ogImage.startsWith(`${origin}/og/biz-udp-v1/career/${slug}.png`)) failures.push(`career/${slug}: unique large OG image missing`);
-  for (const anchor of ["summary", "work", "considerations", "cautions", "learning", "next-steps", "sources"]) {
+  for (const anchor of ["summary", "industry", "work", "differences", "transition", "application", "learning", "next-steps", "news", "sources"]) {
     if (!html.includes(`id="${anchor}"`)) failures.push(`career/${slug}: section id ${anchor} missing`);
     if (!html.includes(`href="#${anchor}"`)) failures.push(`career/${slug}: TOC link ${anchor} missing`);
   }

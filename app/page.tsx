@@ -3,8 +3,10 @@ import { ArrowRight, BadgeCheck, Bot, CheckCircle2, GraduationCap, Search } from
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
 import { CareerBriefing } from "@/components/CareerBriefing";
+import { DailyCareerLoop } from "@/components/DailyCareerLoop";
 import { EditorialPreview } from "@/components/EditorialPreview";
 import { HeroCareerSlider } from "@/components/HeroCareerSlider";
+import { publishedNews } from "@/content/editorial";
 
 export default function Home(){return <>
   <section className="home-hero"><div className="home-hero-inner">
@@ -16,6 +18,7 @@ export default function Home(){return <>
     <HeroCareerSlider jobs={publishedJobs.slice(0, 6)} />
   </div></section>
   <CareerBriefing />
+  <DailyCareerLoop latestNews={publishedNews[0]} />
   <div id="jobs" className="scroll-anchor" />
   <CareerExplorer jobs={publishedJobs} categories={categories.map(x=>({...x}))}/>
   <EditorialPreview />

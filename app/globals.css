@@ -2027,7 +2027,15 @@ dd {
   .section-heading.row { gap: .4rem; }
 
   .job-hero { gap: 1.5rem; padding-bottom: 2rem; }
-  .job-hero h1 { font-size: clamp(2.25rem, 11vw, 3.2rem); }
+  .job-hero-main { min-width: 0; }
+  .job-hero h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 10.2vw, 2.75rem);
+    line-height: 1.18;
+    letter-spacing: -.045em;
+    line-break: strict;
+    overflow-wrap: anywhere;
+  }
   .conclusion { padding-left: .85rem; }
   .detail-content > section { padding-bottom: 3.2rem; }
   .detail-content h2 { font-size: 1.65rem; }
@@ -3457,4 +3465,121 @@ dd {
   .research-next { align-items: stretch; flex-direction: column; }
   .research-next > div:last-child { display: grid; grid-template-columns: 1fr; }
   .research-next .button { width: 100%; justify-content: center; }
+}
+
+/* Career decision depth and daily-use loop */
+.insight-lead,
+.current-signal,
+.usefulness-box {
+  margin-top: 1rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+.insight-lead { border-left: 4px solid var(--navy); }
+.current-signal { border-left: 4px solid var(--gold); background: #fffdf2; }
+.usefulness-box { border-left: 4px solid var(--green); background: #f4fbf7; }
+.insight-lead strong,
+.current-signal strong,
+.usefulness-box strong { color: var(--navy); font-size: .82rem; }
+.insight-lead p,
+.current-signal p,
+.usefulness-box p { margin: .35rem 0 0; }
+
+.adjacent-grid,
+.decision-grid,
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+  margin-top: 1.25rem;
+}
+.adjacent-grid > a,
+.decision-grid > div,
+.application-grid > div {
+  min-width: 0;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: #fff;
+}
+.adjacent-grid > a { display: flex; min-height: 230px; flex-direction: column; transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease; }
+.adjacent-grid > a:hover { border-color: #d8bc2c; box-shadow: 0 12px 30px rgba(16,29,61,.07); transform: translateY(-2px); }
+.adjacent-grid span,
+.application-grid span { color: var(--gold-deep); font-size: .7rem; font-weight: 850; letter-spacing: .04em; }
+.adjacent-grid strong { margin-top: .35rem; color: var(--navy); font-size: 1.05rem; }
+.adjacent-grid p { margin: .55rem 0 0; font-size: .8rem; line-height: 1.8; }
+.adjacent-grid em { display: flex; align-items: center; gap: .3rem; margin-top: auto; padding-top: .8rem; color: var(--gold-deep); font-size: .72rem; font-style: normal; font-weight: 850; }
+.adjacent-grid svg { width: 15px; height: 15px; }
+.decision-grid strong { color: var(--navy); font-size: .85rem; }
+.decision-grid ul,
+.application-grid ul { margin: .7rem 0 0; padding-left: 1.15rem; }
+.decision-grid li,
+.application-grid li { margin-top: .45rem; color: #424b5f; font-size: .8rem; line-height: 1.7; }
+.application-grid > div:first-child { border-top: 4px solid var(--gold); }
+.application-grid > div:last-child { border-top: 4px solid var(--green); }
+
+.qualification-uses { margin-top: 1.4rem; }
+.qualification-uses > div { margin-top: .75rem; padding: 1rem 1.1rem; border: 1px solid #cfe4d8; border-radius: 14px; background: #f5fbf7; }
+.qualification-uses > div > a { display: inline-flex; align-items: center; gap: .35rem; color: #17683f; font-size: .9rem; font-weight: 850; }
+.qualification-uses > div > a svg { width: 15px; height: 15px; }
+.qualification-uses dl { margin: .75rem 0 0; }
+.qualification-uses dl > div { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: .7rem; padding: .55rem 0; border-top: 1px solid #dceae1; }
+.qualification-uses dt { color: #17683f; font-size: .72rem; font-weight: 850; }
+.qualification-uses dd { margin: 0; color: #424b5f; font-size: .78rem; line-height: 1.7; }
+
+.career-news-grid { display: grid; gap: .7rem; margin-top: 1.25rem; }
+.career-news-grid > a { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem 1rem; padding: 1rem 1.1rem; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.career-news-grid > a > span { display: flex; align-items: center; gap: .35rem; color: var(--gold-deep); font-size: .68rem; font-weight: 850; }
+.career-news-grid > a > span svg { width: 15px; height: 15px; }
+.career-news-grid strong { grid-column: 1 / -1; color: var(--navy); font-size: .95rem; line-height: 1.55; }
+.career-news-grid p { grid-column: 1 / -1; margin: 0; font-size: .77rem; line-height: 1.75; }
+.career-news-grid small { color: var(--muted); font-size: .66rem; }
+.news-empty { margin-top: 1rem; padding: 1rem; border: 1px dashed #d6d1c6; border-radius: 14px; }
+.news-empty p { margin-top: 0; }
+
+.daily-action-card { margin-top: 1rem; padding: 1rem; border: 1px solid #eadb82; border-radius: 14px; background: #fffdf0; }
+.daily-action-card > span { color: var(--gold-deep); font-size: .64rem; font-weight: 900; letter-spacing: .1em; }
+.daily-action-card > strong { display: block; margin-top: .3rem; color: var(--navy); font-size: .9rem; }
+.daily-action-card ol { margin: .75rem 0; padding-left: 1.25rem; }
+.daily-action-card li { margin-top: .4rem; color: #4a5367; font-size: .72rem; line-height: 1.55; }
+.daily-action-card a { display: flex; align-items: center; justify-content: space-between; gap: .4rem; padding-top: .7rem; border-top: 1px solid #e8dd9e; color: var(--gold-deep); font-size: .72rem; font-weight: 850; }
+.daily-action-card svg { width: 15px; height: 15px; }
+
+.daily-career-loop { max-width: 1380px; margin: 0 auto; padding: clamp(2.6rem, 6vw, 5rem) clamp(1rem, 3vw, 2.5rem); }
+.daily-loop-head { display: flex; align-items: end; justify-content: space-between; gap: 1.5rem; margin-bottom: 1.25rem; }
+.daily-loop-head h2 { max-width: 760px; margin: .3rem 0 .45rem; color: var(--navy); font-size: clamp(1.65rem, 3.2vw, 2.65rem); font-weight: 680; line-height: 1.35; letter-spacing: -.035em; }
+.daily-loop-head p { max-width: 780px; margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.8; }
+.daily-loop-head > a { display: flex; flex: 0 0 auto; align-items: center; gap: .35rem; color: var(--gold-deep); font-size: .78rem; font-weight: 850; }
+.daily-loop-head svg { width: 16px; height: 16px; }
+.daily-loop-grid { display: grid; grid-template-columns: 1.35fr repeat(3, minmax(0, 1fr)); gap: .75rem; }
+.daily-loop-grid > a { display: flex; min-width: 0; min-height: 245px; flex-direction: column; padding: 1.1rem; border: 1px solid var(--line); border-radius: 16px; background: #fff; transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease; }
+.daily-loop-grid > a:hover { border-color: #d7bc2e; box-shadow: 0 12px 30px rgba(16,29,61,.07); transform: translateY(-2px); }
+.daily-loop-grid > a > svg { width: 42px; height: 42px; padding: 10px; border-radius: 12px; background: var(--gold-soft); color: var(--gold-deep); }
+.daily-loop-grid span { margin-top: .8rem; color: var(--gold-deep); font-size: .64rem; font-weight: 900; letter-spacing: .1em; }
+.daily-loop-grid strong { margin-top: .35rem; color: var(--navy); font-size: .98rem; line-height: 1.5; }
+.daily-loop-grid small { margin-top: .45rem; color: var(--muted); font-size: .7rem; line-height: 1.65; }
+.daily-loop-grid em { display: flex; align-items: center; gap: .3rem; margin-top: auto; padding-top: .9rem; color: var(--gold-deep); font-size: .7rem; font-style: normal; font-weight: 850; }
+.daily-loop-grid em svg { width: 14px; height: 14px; }
+.daily-loop-news { border-color: #e2d37b !important; background: linear-gradient(145deg, #fffdf0, #fff) !important; }
+
+@media (max-width: 1050px) {
+  .daily-loop-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 760px) {
+  .adjacent-grid,
+  .decision-grid,
+  .application-grid { grid-template-columns: 1fr; }
+  .adjacent-grid > a { min-height: 200px; }
+  .qualification-uses dl > div { grid-template-columns: 1fr; gap: .25rem; }
+  .daily-career-loop { padding: 2.3rem .9rem; overflow: hidden; }
+  .daily-loop-head { align-items: stretch; flex-direction: column; gap: .65rem; }
+  .daily-loop-head h2 { font-size: 1.6rem; }
+  .daily-loop-head > a { align-self: flex-start; }
+  .daily-loop-grid { display: flex; margin-inline: -.9rem; overflow-x: auto; padding: 0 .9rem .45rem; scroll-snap-type: x mandatory; scrollbar-width: none; }
+  .daily-loop-grid::-webkit-scrollbar { display: none; }
+  .daily-loop-grid > a { flex: 0 0 84%; min-height: 245px; scroll-snap-align: start; }
+  .career-news-grid > a { grid-template-columns: 1fr; }
 }
