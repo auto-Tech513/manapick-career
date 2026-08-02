@@ -77,4 +77,13 @@
 - 390pxのハンバーガーメニューは開閉でき、開いている間だけ本文スクロールを止める。職業、入口案内、比較、人気、スキル、ガイド、ニュース、データ室、商店、用語集、編集方針、FAQと3姉妹サイトへ通常リンクで移動できる。
 - ブラウザのconsole/runtimeログは0件。主要UIのDOMスナップショットでもhydration error文言、欠落した見出し、空リンクを検出しなかった。
 
+## 本番反映後の再検証
+
+![本番ニュース記事・390px](screenshots/seo-audit-2026-08-02/08-news-article-mobile-production.png)
+
+- Cloudflare Pagesのmainデプロイ成功後、`https://career.manapick.app/news/care-worker-exam-39/`を実ブラウザで再確認した。
+- 自己canonical、記事見出し、手動広告要素2件、表示本文と対応するJSON-LD 2件を確認した。
+- 実測viewportでは`clientWidth=375`、`scrollWidth=375`で横あふれ0、console/runtimeのwarning・error 0だった。
+- 下書き`labor-force-june-2026`への公開リンクは存在しない。公開承認前の候補を本番導線へ混入させていない。
+
 検索流入は外部結果であり、監査を「100点」や流入増加の保証には使わない。公開後のSearch ConsoleとGA4の実測で評価する。
