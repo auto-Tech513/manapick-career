@@ -2906,7 +2906,8 @@ dd {
   .explorer { padding-top: 1.6rem; }
   .explorer-head h2 { font-size: 1.65rem; line-height: 1.4; }
   .editorial-index { padding-top: 2rem; }
-  .page-heading h1, .article-heading h1 { font-size: clamp(1.85rem, 8.4vw, 2.35rem); line-height: 1.35; letter-spacing: -.03em; }
+  .page-heading h1 { font-size: clamp(1.85rem, 8.4vw, 2.35rem); line-height: 1.35; letter-spacing: -.03em; }
+  .article-heading h1 { font-size: clamp(1.62rem, 7.2vw, 2.05rem); line-height: 1.42; letter-spacing: -.02em; }
   .page-heading p, .article-heading > p { font-size: .9rem; line-height: 1.85; }
   .guide-topic-nav {
     display: flex;
@@ -2929,6 +2930,8 @@ dd {
   .editorial-index-card p { font-size: .8rem; }
   .editorial-detail { padding-top: 1.3rem; }
   .article-heading { margin-bottom: 1.5rem; }
+  .article-meta { gap: .35rem; }
+  .article-meta span { min-height: 28px; padding: .25rem .48rem; border: 1px solid var(--line); border-radius: 999px; background: #fff; }
   .editorial-article p { font-size: .92rem; line-height: 1.95; }
   .editorial-article .article-section h2 { font-size: 1.42rem; line-height: 1.5; }
   .ad-shell { min-height: 96px; margin-bottom: 2.5rem; border-radius: 12px; }
