@@ -610,7 +610,7 @@
     "kind": "賃金・労働時間",
     "publishedAt": "2026-07-28",
     "checkedAt": "2026-08-05",
-    "sourceIds": ["mhlw-minimum-wage-guideline-2026", "mhlw-minimum-wage-calculation"],
+    "sourceIds": ["mhlw-minimum-wage-guideline-2026", "mhlw-minimum-wage-calculation", "mhlw-minimum-wage-covered-wages"],
     "relatedCareerSlugs": ["registered-salesperson", "office-administration", "certified-care-worker"],
     "keyPoints": ["引上げ額の目安はAランク54円、B・Cランク56円", "目安どおりの場合の全国加重平均は1,176円、上昇額55円、引上げ率4.9%", "都道府県別の金額と発効日は地方審議を経て決まるため、目安を確定額として使わない"],
     "whatHappened": [
