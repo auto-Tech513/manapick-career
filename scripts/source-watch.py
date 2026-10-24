@@ -7,6 +7,9 @@ class Text(HTMLParser):
  def __init__(self):super().__init__();self.parts=[];self.skip=0
  def handle_starttag(self,t,a):
   if t in ['script','style','noscript','nav','header','footer']:self.skip+=1
+  if not self.skip:
+   for key,value in a:
+    if key in ['href','datetime'] and value:self.parts.append(key+'='+value)
  def handle_endtag(self,t):
   if t in ['script','style','noscript','nav','header','footer'] and self.skip:self.skip-=1
  def handle_data(self,s):
@@ -16,7 +19,7 @@ def normalise(data,content_type):
  p=Text();p.feed(data.decode('utf-8',errors='replace'))
  return re.sub(r'\s+',' ',' '.join(p.parts)).strip().encode()
 def check(source,cache):
- now=datetime.datetime.now(datetime.timezone.utc).isoformat();result={'id':source['id'],'url':source['url'],'retrievedAt':now,'method':'automated-fetch-sha256','humanReview':False}
+ now=datetime.datetime.now(datetime.timezone.utc).isoformat();result={'id':source['id'],'url':source['url'],'retrievedAt':now,'method':'automated-fetch-sha256','humanReview':False,'normalizationVersion':2}
  oldpath=cache/(source['id']+'.json');old=json.loads(oldpath.read_text()) if oldpath.exists() else None
  try:
   req=urllib.request.Request(source['url'],headers={'User-Agent':'ManapickOfficialSourceWatch/1.0'})
@@ -28,8 +31,8 @@ def check(source,cache):
    ctype=response.headers.get('Content-Type','');text=normalise(data,ctype)
    if b'_Incapsula_Resource' in data or b'Request unsuccessful' in data:raise ValueError('official site blocked automated retrieval; baseline preserved')
    if len(text)<100:raise ValueError('empty or unexpectedly short response')
-   result.update(status='baseline' if old is None else 'unchanged',httpStatus=response.status,finalUrl=final,sha256=hashlib.sha256(text).hexdigest(),bytes=len(data),previousSha256=old.get('sha256') if old else None,etag=response.headers.get('ETag'),lastModified=response.headers.get('Last-Modified'))
-   if old and old['sha256']!=result['sha256']:result['status']='changed'
+   result.update(status='baseline' if old is None or old.get('normalizationVersion')!=2 else 'unchanged',httpStatus=response.status,finalUrl=final,sha256=hashlib.sha256(text).hexdigest(),bytes=len(data),previousSha256=old.get('sha256') if old else None,etag=response.headers.get('ETag'),lastModified=response.headers.get('Last-Modified'))
+   if old and old.get('normalizationVersion')==2 and old['sha256']!=result['sha256']:result['status']='changed'
    # Retrieval time is distinct from publication/review dates. No editorial dates are modified.
    oldpath.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
  except Exception as error:result.update(status='error',error=str(error),previousSha256=old.get('sha256') if old else None)

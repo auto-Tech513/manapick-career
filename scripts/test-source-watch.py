@@ -10,6 +10,10 @@ class Response:
 class WatchTest(unittest.TestCase):
  def test_ignores_navigation_and_scripts(self):
   a=watch.normalise(b'<nav>one</nav><main>content</main><script>x</script>','text/html');b=watch.normalise(b'<nav>two</nav><main>content</main><script>y</script>','text/html');self.assertEqual(a,b)
+ def test_detects_replaced_pdf_url_with_same_label(self):
+  a=watch.normalise(b'<main><a href="old.pdf">Latest statistics</a></main>','text/html');b=watch.normalise(b'<main><a href="new.pdf">Latest statistics</a></main>','text/html');self.assertNotEqual(a,b)
+ def test_ignores_links_in_navigation(self):
+  a=watch.normalise(b'<nav><a href="one">Menu</a></nav><main>content</main>','text/html');b=watch.normalise(b'<nav><a href="two">Menu</a></nav><main>content</main>','text/html');self.assertEqual(a,b)
  def test_error_keeps_baseline(self):
   with tempfile.TemporaryDirectory() as tmp:
    c=Path(tmp);p=c/'x.json';p.write_text('{"sha256":"original"}')
