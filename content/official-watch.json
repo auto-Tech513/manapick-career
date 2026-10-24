@@ -1,0 +1,119 @@
+[
+  {
+    "id": "jobtag",
+    "url": "https://shigoto.mhlw.go.jp/User/",
+    "allowedHosts": [
+      "shigoto.mhlw.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "labour-force",
+    "url": "https://www.stat.go.jp/data/roudou/sokuhou/tsuki/",
+    "allowedHosts": [
+      "www.stat.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "job-openings",
+    "url": "https://www.mhlw.go.jp/toukei/list/114-1.html",
+    "allowedHosts": [
+      "www.mhlw.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "monthly-labour",
+    "url": "https://www.mhlw.go.jp/toukei/list/30-1.html",
+    "allowedHosts": [
+      "www.mhlw.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "ipa-dss",
+    "url": "https://www.ipa.go.jp/jinzai/skill-standard/dss/",
+    "allowedHosts": [
+      "www.ipa.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "jilpt",
+    "url": "https://www.jil.go.jp/press/",
+    "allowedHosts": [
+      "www.jil.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "care-exam",
+    "url": "https://www.sssc.or.jp/kaigo/",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "takken-exam",
+    "url": "https://www.retio.or.jp/exam/",
+    "allowedHosts": [
+      "www.retio.or.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "toeic-exam",
+    "url": "https://www.iibc-global.org/toeic/test/lr/guide01.html",
+    "allowedHosts": [
+      "www.iibc-global.org"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  }
+]

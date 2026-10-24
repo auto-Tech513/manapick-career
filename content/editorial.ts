@@ -1,3 +1,5 @@
+import { retainObservedNewsUrl } from "@/lib/publication-retention";
+import retainedPublicNews from "./retained-public-news.json";
 import expandedNewsData from "./news-expanded.json";
 import expandedGuideData from "./guides-expanded.json";
 import guideClaimData from "./guide-claim-registry.json";
@@ -666,7 +668,7 @@ export const newsReviewQueue: NewsReviewItem[] = [...newsItemsData, ...expandedN
   };
 });
 
-function isPublishableNews(item: NewsReviewItem): item is NewsItem {
+function isPublishableNews(item: NewsReviewItem, retainPublishedUrl = false): item is NewsItem {
   const bodyLength = item.sections.flatMap((section) => section.paragraphs).join("").length;
   return item.status === "published"
     && Boolean(item.publishedAt)
@@ -679,12 +681,15 @@ function isPublishableNews(item: NewsReviewItem): item is NewsItem {
     && item.sourceIds.includes(item.primarySourceId)
     && bodyLength >= 1000
     && item.claims.length >= 3
-    && item.claims.every((claim) => claim.sourceIds.includes(item.primarySourceId) && claimIsFresh(claim))
+    && item.claims.every((claim) => claim.sourceIds.includes(item.primarySourceId) && (claimIsFresh(claim) || retainPublishedUrl))
     && networkLinksArePublishable(item.networkLinks);
 }
 
+export function newsNeedsRefresh(item: Pick<NewsItem, "claims">) { return !item.claims.every(claimIsFresh); }
+
+// An age threshold can show an archive warning; it cannot withdraw an observed URL without approval.
 export const publishedNews = newsReviewQueue
-  .filter(isPublishableNews)
+  .filter((item) => isPublishableNews(item, retainObservedNewsUrl(item, retainedPublicNews.slugs)))
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.sourcePublishedAt.localeCompare(a.sourcePublishedAt));
 export const newsItems = publishedNews;
 export const newsModifiedAt = (item: Pick<NewsItem, "publishedAt" | "reviewedAt" | "checkedAt">) =>

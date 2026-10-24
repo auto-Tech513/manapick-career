@@ -1,3 +1,6 @@
+import Breadcrumbs from "@/components/Breadcrumbs";
+import networkMap from "@/content/network-map-shared.json";
+import { NetworkRelations } from "@/components/NetworkRelations";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -48,6 +51,8 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
   const insight = careerInsightBySlug.get(slug);
   if (!job || !insight) notFound();
 
+  const relation = networkMap.relations.find(group => group.id === `career-${job.slug}`);
+  const exactVideos = relation?.nodes.filter(node => node.kind === "video") ?? [];
   const category = categories.find((item) => item.key === job.category);
   const sources = sourceRegistry.filter((source) => job.sourceIds.includes(source.sourceId));
   const relatedNews = publishedNews.filter((item) => item.relatedCareerSlugs.includes(job.slug)).slice(0, 3);
@@ -97,7 +102,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
     <JsonLd data={graph} />
     <PageEvent name="career_open" params={{ career_slug: job.slug }} />
     <div className="detail-shell">
-      <nav className="breadcrumbs" aria-label="パンくず"><Link href="/">ホーム</Link><span>/</span><Link href={`/category/${job.category}/`}>{category?.label}</Link><span>/</span><span>{job.name}</span></nav>
+      <Breadcrumbs trail={[{name:"ホーム",path:"/"},{name:category?.label ?? job.category,path:`/category/${job.category}/`},{name:job.name,path:`/career/${job.slug}/`}]} />
       <Link className="back-link" href="/all/"><ArrowLeft aria-hidden="true" /> 職業一覧へ</Link>
 
       <header className="job-hero" id="summary">
@@ -153,11 +158,11 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
             <div className="time-note"><strong>学習期間の考え方</strong><p>{job.learningTime}</p></div>
           </section>
 
-          <section id="next-steps">
+          <NetworkRelations site="career" path={`/career/${job.slug}/`} /><section id="next-steps">
             <span className="section-num">07 / NETWORK</span><h2>動画・AI・資格を、仕事へつなぐ</h2>
             <p className="section-lead">動画で作業を学び、AIは確認責任を持って補助に使い、資格は知識の範囲を示す材料として使います。採用や実務能力を保証するものではありません。</p>
             <div className="resource-groups">
-              <Resource title="無料動画で学ぶ" tone="blue" items={job.videos.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "必要な基礎を順番に学ぶ" }))} />
+              <Resource title="無料動画で学ぶ" tone="blue" items={exactVideos.length ? exactVideos.map(node => ({ label: node.label, href: node.url, description: "対応表で結んだ個別の学習動画" })) : job.videos.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "個別動画の一致がないため学習分野へ" }))} />
               <Resource title="仕事で使うAI" tone="red" items={job.ai.map((item) => ({ label: item.label, href: networkUrl(item.networkId), description: item.use }))} />
               <Resource title="関連資格を確認" tone="green" items={job.qualifications.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "公式要件と試験範囲を確認" }))} empty="必須と断定できる関連資格は設定していません。成果物と仕事の確認手順を優先します。" />
             </div>
@@ -165,16 +170,16 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
           </section>
 
           <section id="news">
-            <span className="section-num">08 / VERIFIED NEWS</span><h2>この職業に関連する確認済みニュース</h2>
+            <span className="section-num">08 / RELATED NEWS</span><h2>この職業に関連する公開済みニュース</h2>
             <p className="section-lead">市場全体の数字を個人の採用可能性へ置き換えず、一次資料の範囲と確認日を読んで、次に確かめる条件を決めます。</p>
-            {relatedNews.length ? <div className="career-news-grid">{relatedNews.map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span><Newspaper aria-hidden="true" />{item.kind}</span><strong>{item.title}</strong><p>{item.summary}</p><small>公開 {item.publishedAt}／確認 {item.checkedAt}</small></Link>)}</div> : <div className="news-empty"><p>この職業へ直接結び付けた公開済みニュースは現在ありません。確認前の記事は表示しません。</p><Link className="button secondary" href="/news/">確認済みニュースを見る</Link></div>}
+            {relatedNews.length ? <div className="career-news-grid">{relatedNews.map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span><Newspaper aria-hidden="true" />{item.kind}</span><strong>{item.title}</strong><p>{item.summary}</p><small>公開 {item.publishedAt}／確認 {item.checkedAt}</small></Link>)}</div> : <div className="news-empty"><p>この職業へ直接結び付けた公開済みニュースは現在ありません。下書きの記事は表示しません。</p><Link className="button secondary" href="/news/">公開済みニュースを見る</Link></div>}
           </section>
 
           <section className="editorial-block" id="sources">
             <span className="section-num">09 / SOURCES</span><h2>この記事の確認方法</h2>
             <dl><div><dt>執筆</dt><dd>{job.author}</dd></div><div><dt>編集確認</dt><dd>{job.editor}</dd></div><div><dt>最終確認日</dt><dd>{job.checkedAt}</dd></div><div><dt>作成方法</dt><dd>{job.editorNote}</dd></div></dl>
             <h3>出典</h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul>
-            <p>AI補助を利用した場合も、公開前に編集者が全主張とリンクを確認します。誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>をご利用ください。</p>
+            <p>出典URLと記録された確認日を表示しています。自動取得による変化検知は、人による内容確認や視聴確認を意味しません。誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>をご利用ください。</p>
           </section>
         </article>
 

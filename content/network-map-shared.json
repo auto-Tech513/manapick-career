@@ -1,0 +1,6746 @@
+{
+  "version": 1,
+  "updatedAt": "2026-10-24",
+  "policy": "Metadata and existing editorial associations; no viewing or human-review claim. Null means no verified individual match.",
+  "sites": {
+    "manapick": "https://manapick.app",
+    "ai": "https://ai.manapick.app",
+    "license": "https://license.manapick.app",
+    "career": "https://career.manapick.app"
+  },
+  "relations": [
+    {
+      "id": "video-7DkEl0kiD9g",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "7DkEl0kiD9g",
+          "label": "【2026年最新版】超初心者OK！ChatGPTの使い方・基礎をわかりやすく徹底解説(資料・プロンプト集付き)",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/7DkEl0kiD9g/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "video-umTYQ1LKvVI",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "umTYQ1LKvVI",
+          "label": "【初心者向け】Claudeで何ができる？概要がわかる完全入門／Claude Code／Claude Cowork【使い方・ChatGPTとの違いを解説】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/umTYQ1LKvVI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "video-fZMQwtRNI70",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "fZMQwtRNI70",
+          "label": "【完全マスター】AI初心者にオススメ「Gemini」の使い方・基礎を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/fZMQwtRNI70/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "video-5yU8KEoowBU",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "5yU8KEoowBU",
+          "label": "【完全無料】イーロン・マスクのAI「Grok」を徹底解説！Web版とアプリ版の違いも紹介",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/5yU8KEoowBU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "grok",
+          "label": "Grok",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/grok/"
+        }
+      ]
+    },
+    {
+      "id": "video-snn2JbAgVc4",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "snn2JbAgVc4",
+          "label": "【DeepSeek速報解説】40歳の超新星／超低コストで開発できた３つの工夫／OpenAIとGoogleの脅威ではない／NVIDIAのピンチか？／オープンソースで公開した狙い／米中対立への影響",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/snn2JbAgVc4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "deepseek",
+          "label": "DeepSeek",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/deepseek/"
+        }
+      ]
+    },
+    {
+      "id": "video-38pRtUOybr8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "38pRtUOybr8",
+          "label": "【新・完全版】画像生成AI「Midjourney」の始め方・使い方を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/38pRtUOybr8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "midjourney",
+          "label": "Midjourney",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/midjourney/"
+        }
+      ]
+    },
+    {
+      "id": "video-XCsQNvri5tU",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "XCsQNvri5tU",
+          "label": "【完全解説】Adobe Fireflyが超有能！安全性No.1画像生成AI【この動画1本で全て理解】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/XCsQNvri5tU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "adobe-firefly",
+          "label": "Adobe Firefly",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/adobe-firefly/"
+        }
+      ]
+    },
+    {
+      "id": "video-He5ofY2JNvE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "He5ofY2JNvE",
+          "label": "【総集編】これ1本でStable Diffusionがわかる！ PCの選び方～インストール～拡張機能の使い方まで初心向けに2023年を総まとめして徹底解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/He5ofY2JNvE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "stable-diffusion",
+          "label": "Stable Diffusion",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/stable-diffusion/"
+        }
+      ]
+    },
+    {
+      "id": "video-SFLLwpTxD_Q",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "SFLLwpTxD_Q",
+          "label": "【過去一の衝撃】KlingAI3.0が動画制作の常識を破壊しました。使い方と新機能10選を徹底解説します。（動画3.0/Omni3.0/画像3.0）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/SFLLwpTxD_Q/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "kling",
+          "label": "Kling AI",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/kling/"
+        }
+      ]
+    },
+    {
+      "id": "video-1q0LOyUHwYA",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "1q0LOyUHwYA",
+          "label": "【2025年版】初心者向けRunway完全ガイド｜イラスト生成・動画生成・うまく作るコツまで！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/1q0LOyUHwYA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "runway",
+          "label": "Runway",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/runway/"
+        }
+      ]
+    },
+    {
+      "id": "video-LHikWuwD-t8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "LHikWuwD-t8",
+          "label": "【2026年最新版】Google映像制作AI「Flow」の最新活用法15選を初心者にもわかりやすく完全解説【NanoBananaPro×Veo3.1】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/LHikWuwD-t8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "veo",
+          "label": "Google Veo",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/veo/"
+        }
+      ]
+    },
+    {
+      "id": "video-8RJhUyKWP-A",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "8RJhUyKWP-A",
+          "label": "【無料で商用利用可】動画編集ソフトVREWの使い方を初心者向けに完全解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/8RJhUyKWP-A/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "vrew",
+          "label": "Vrew",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/vrew/"
+        }
+      ]
+    },
+    {
+      "id": "video-_PmudWdVqKQ",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_PmudWdVqKQ",
+          "label": "【最新版 HeyGen使い方完全解説】[初心者向け]アバターAI動画作成・編集、プロンプトから動画生成ができる「HeyGen」 #heygen #動画生成AI #AIアバター",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_PmudWdVqKQ/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "heygen",
+          "label": "HeyGen",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/heygen/"
+        }
+      ]
+    },
+    {
+      "id": "video-RnkdHXTD8Ds",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "RnkdHXTD8Ds",
+          "label": "【2026年完全版】SunoAIの使い方と初心者でも思い通りの音楽が作れる活用事例15選を完全解説します",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/RnkdHXTD8Ds/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "suno",
+          "label": "Suno",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/suno/"
+        }
+      ]
+    },
+    {
+      "id": "video-Q8KF_UtYap8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Q8KF_UtYap8",
+          "label": "【時短術】効率爆上がり！会話の記録&文字起こしはAIで簡単！初心者も使えるNotta Memoの使い方🔰AI ボイスレコーダー",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Q8KF_UtYap8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "notta",
+          "label": "Notta",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/notta/"
+        }
+      ]
+    },
+    {
+      "id": "video-YyRv_uu8hh0",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "YyRv_uu8hh0",
+          "label": "【音声生成AIはこれ一択】初心者でも使いこなせる「ElevenLabs」全て解説します。",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/YyRv_uu8hh0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "elevenlabs",
+          "label": "ElevenLabs",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/elevenlabs/"
+        }
+      ]
+    },
+    {
+      "id": "video-jPWmr58ltWI",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "jPWmr58ltWI",
+          "label": "【2023年最新版】無料音声合成ソフト「VOICEVOX」を完全解説【基礎知識～使い方】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/jPWmr58ltWI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "voicevox",
+          "label": "VOICEVOX",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/voicevox/"
+        }
+      ]
+    },
+    {
+      "id": "video-Q8mdaTGNa_A",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Q8mdaTGNa_A",
+          "label": "2024年から始めるPerplexityの使い方超入門",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Q8mdaTGNa_A/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "perplexity",
+          "label": "Perplexity",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/perplexity/"
+        }
+      ]
+    },
+    {
+      "id": "video-6j4m5D-hJ7k",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "6j4m5D-hJ7k",
+          "label": "【2026年最新】AIエージェント『Manus』の使い方を徹底解説！ブラウザの自動操作からアプリ開発まで",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/6j4m5D-hJ7k/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "manus",
+          "label": "Manus",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/manus/"
+        }
+      ]
+    },
+    {
+      "id": "video-1_gmmFLP-w4",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "1_gmmFLP-w4",
+          "label": "【ゆる解説】話題のAIエージェント「OpenClaw」とは？／AIが自律的に行動／開発者がOpenAIに参加／情報流出の危険性も",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/1_gmmFLP-w4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "openclaw",
+          "label": "OpenClaw",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/openclaw/"
+        }
+      ]
+    },
+    {
+      "id": "video-aJtrwyfJSTo",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "aJtrwyfJSTo",
+          "label": "タスク自動化ツールZapierの使い方～初心者でも「タスク自動化」を簡単に実現！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/aJtrwyfJSTo/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "zapier",
+          "label": "Zapier (AI)",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/zapier/"
+        }
+      ]
+    },
+    {
+      "id": "video-mIUDzP0h-jg",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "mIUDzP0h-jg",
+          "label": "【2026年最新】Notion AI初心者向け解説｜料金、基礎的な使い方、AIエージェントについて解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/mIUDzP0h-jg/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "notion-ai",
+          "label": "Notion AI",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/notion-ai/"
+        }
+      ]
+    },
+    {
+      "id": "video-DFxievESxPc",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DFxievESxPc",
+          "label": "【Gamma使い方完全解説】[初心者向け]プレゼン資料をAI生成できるGammaの特徴を解説 #Gamma #資料生成AI",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DFxievESxPc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gamma",
+          "label": "Gamma",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gamma/"
+        }
+      ]
+    },
+    {
+      "id": "video-wzaDTDKZTt8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "wzaDTDKZTt8",
+          "label": "【神ツール】GitHub Copilot 使い方入門！VSCodeで始めるAIコーディング革命",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/wzaDTDKZTt8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "github-copilot",
+          "label": "GitHub Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/github-copilot/"
+        }
+      ]
+    },
+    {
+      "id": "video-ESGl8Juwytc",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ESGl8Juwytc",
+          "label": "OpenAI「Codex」完全ガイド【この動画1本ですべて理解できる】スキル作成・便利機能・AI自動化などの使い方を解説【初心者OK】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ESGl8Juwytc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "codex",
+          "label": "OpenAI Codex",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/codex/"
+        }
+      ]
+    },
+    {
+      "id": "video-AZkVzqPPFaE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "AZkVzqPPFaE",
+          "label": "【AI完全自動化】Replit Agentを使ったプログラミング方法を徹底解説【初心者OK】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/AZkVzqPPFaE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "replit",
+          "label": "Replit Agent",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/replit/"
+        }
+      ]
+    },
+    {
+      "id": "video-FwDnhTSNuQA",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FwDnhTSNuQA",
+          "label": "【完全版】初心者OK！Bolt.newで1からフルスタックWebアプリケーション開発するためのBolt.new完全ガイド入門",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FwDnhTSNuQA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "bolt",
+          "label": "Bolt.new",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/bolt/"
+        }
+      ]
+    },
+    {
+      "id": "video-753GrQJfd6I",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "753GrQJfd6I",
+          "label": "【使わないと損】DeepLの翻訳が便利ですごい！　無料でも大満足できるはず",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/753GrQJfd6I/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "deepl",
+          "label": "DeepL",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/deepl/"
+        }
+      ]
+    },
+    {
+      "id": "video-ujQrgXxVrmE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ujQrgXxVrmE",
+          "label": "【話題】無料でオフラインAIが使える!!ローカルLLMを動かすollamaインストール方法【簡単解説】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ujQrgXxVrmE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "ollama",
+          "label": "Ollama",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/ollama/"
+        }
+      ]
+    },
+    {
+      "id": "video-Ll43s_xTJH8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Ll43s_xTJH8",
+          "label": "【Gemma 4完全ガイド】スマホ・パソコンにワンクリックで導入して無料で使える！ Googleの超高性能なオープンAIモデルを徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Ll43s_xTJH8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemma",
+          "label": "Gemma (Google)",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemma/"
+        }
+      ]
+    },
+    {
+      "id": "video-9SZhb4_cMCA",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "9SZhb4_cMCA",
+          "label": "【初心者向け】Google翻訳の使い方を基礎から解説！外国語を簡単に翻訳できます！【海外旅行でも便利】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/9SZhb4_cMCA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "google-translate",
+          "label": "Google翻訳",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/google-translate/"
+        }
+      ]
+    },
+    {
+      "id": "video-ukPGVIo3yGE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ukPGVIo3yGE",
+          "label": "【ついに解禁!】日本語版Apple Intelligenceの「超•便利」な使い方完全ガイド!【iOS18 4】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ukPGVIo3yGE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "siri",
+          "label": "Siri AI",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/siri/"
+        }
+      ]
+    },
+    {
+      "id": "video-F2gAu3LUdZs",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "F2gAu3LUdZs",
+          "label": "【AIアニメ動画の作り方】を徹底解説。話題の『Hailuo』の使い方や、他AIツールとの比較など。",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/F2gAu3LUdZs/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "hailuo",
+          "label": "Hailuo AI（MiniMax）",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/hailuo/"
+        }
+      ]
+    },
+    {
+      "id": "video-akd5pyd4TnU",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "akd5pyd4TnU",
+          "label": "【2025最新】初心者向け! Figmaの基本とAIなど便利な使い方を完全解説 / UIデザイン・Webデザインに最適なデザインツール",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/akd5pyd4TnU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "figma",
+          "label": "Figma(Figma AI)",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/figma/"
+        }
+      ]
+    },
+    {
+      "id": "video-Po8fdb8Z5xI",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Po8fdb8Z5xI",
+          "label": "無料でも使える多機能・高品質動画生成AIツール「PixVerse(V4)」の概要と使い方を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Po8fdb8Z5xI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "pixverse",
+          "label": "PixVerse",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/pixverse/"
+        }
+      ]
+    },
+    {
+      "id": "video-AywVuYjkz6Q",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "AywVuYjkz6Q",
+          "label": "初心者向けClineの使い方と無料で使う方法を解説！VSCode拡張で生成AIコーディング入門",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/AywVuYjkz6Q/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "cline",
+          "label": "Cline",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/cline/"
+        }
+      ]
+    },
+    {
+      "id": "video-xX6iEgeUie8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "xX6iEgeUie8",
+          "label": "【超便利】GoogleのAIモードがついに日本上陸！Chat GPTやPerplexityなど他AIと比較してどう？使い方・機能・性能など徹底解説します",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/xX6iEgeUie8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "google-ai-mode",
+          "label": "Google AI Mode",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/google-ai-mode/"
+        }
+      ]
+    },
+    {
+      "id": "video-9H9oS26DWLY",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "9H9oS26DWLY",
+          "label": "【2025年最新・完全保存版】超まとめ　ITパスポート最強勉強法 #ITパスポート, #ITパスポート試験,　#iパス",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/9H9oS26DWLY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-passport",
+          "label": "ITパスポート試験（iパス）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-passport/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-strategist",
+          "label": "ITストラテジスト試験（ST）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-strategist/"
+        }
+      ]
+    },
+    {
+      "id": "video-ER56G8-s7XM",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ER56G8-s7XM",
+          "label": "【資格完全版】数多くの資格試験を攻略した河野玄斗が実践する勉強法！この勉強法はきっとあなたの助けになります！【河野玄斗/資格/勉強】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ER56G8-s7XM/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fe",
+          "label": "基本情報技術者試験（FE）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fe/"
+        }
+      ]
+    },
+    {
+      "id": "video-qq0yVKl8gLY",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "qq0yVKl8gLY",
+          "label": "【完全解説】G検定とは？難易度・勉強法・合格率？#01 #G検定 #G検定2026 #AI資格昇進",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/qq0yVKl8gLY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "g-kentei",
+          "label": "G検定（JDLA ジェネラリスト検定）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/g-kentei/"
+        }
+      ]
+    },
+    {
+      "id": "video-reHqDGh4r2Y",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "reHqDGh4r2Y",
+          "label": "【超入門】簿記の基本を25分で完全理解！初心者でも全体の流れと基礎がスッキリ理解できる【日商簿記3級対策】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/reHqDGh4r2Y/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boki-3",
+          "label": "日商簿記検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boki-3/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boki-2",
+          "label": "日商簿記検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boki-2/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boki-1",
+          "label": "日商簿記検定 1級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boki-1/"
+        }
+      ]
+    },
+    {
+      "id": "video-2s4LHNuVhaU",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "2s4LHNuVhaU",
+          "label": "【FP3級解説】 FP3級のライフ分野をたった1時間で完全攻略！【FP3級勝組道場 (ライフプランニングと資金計画編)】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/2s4LHNuVhaU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fp-3",
+          "label": "FP技能検定 3級（ファイナンシャル・プランニング技能士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fp-3/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fp-2",
+          "label": "FP技能検定 2級（ファイナンシャル・プランニング技能士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fp-2/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fp-1",
+          "label": "FP技能検定 1級（ファイナンシャル・プランニング技能士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fp-1/"
+        }
+      ]
+    },
+    {
+      "id": "video-_rIozAfVG3A",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_rIozAfVG3A",
+          "label": "【宅建受験生必見】一発合格ロードマップ完全版！試験本番までのスケジュールと戦略をこざりえが徹底解説 ！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_rIozAfVG3A/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "takken",
+          "label": "宅地建物取引士（宅建士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/takken/"
+        }
+      ]
+    },
+    {
+      "id": "video-hKccSxvAv7I",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "hKccSxvAv7I",
+          "label": "【完全保存版・行政書士試験】行政法総論全66問を解説付きで一気にマスター！【プロ講師が読む一問一答・聞き流し・過去問】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/hKccSxvAv7I/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "gyoseishoshi",
+          "label": "行政書士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/gyoseishoshi/"
+        }
+      ]
+    },
+    {
+      "id": "video-11l-10gvfsg",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "11l-10gvfsg",
+          "label": "【完全保存版・社労士試験】労働安全衛生法全30問を解説付きで一気にマスター！【プロ講師が読む一問一答・聞き流し・過去問】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/11l-10gvfsg/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "sharoshi",
+          "label": "社会保険労務士（社労士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/sharoshi/"
+        }
+      ]
+    },
+    {
+      "id": "video-DjC1h5FHc_I",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DjC1h5FHc_I",
+          "label": "史上最高レベルかも？！【2025年　東海・北陸 ①】問題解説 プルメリア流　登録販売者　試験対策講座",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DjC1h5FHc_I/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "touroku-hanbai",
+          "label": "登録販売者",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/touroku-hanbai/"
+        }
+      ]
+    },
+    {
+      "id": "video--O6abEpLImE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "-O6abEpLImE",
+          "label": "【2023年度】診療報酬の基本まとめ（初心者にもわかりやすく解説）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/-O6abEpLImE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "medical-clerk",
+          "label": "医療事務技能審査試験（メディカルクラーク）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/medical-clerk/"
+        }
+      ]
+    },
+    {
+      "id": "video-aRKYpz19vPE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "aRKYpz19vPE",
+          "label": "TOEIC完全初心者が2ヶ月で600点を取るための勉強ロードマップ【2024最新版】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/aRKYpz19vPE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "toeic-lr",
+          "label": "TOEIC Listening & Reading Test",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/toeic-lr/"
+        }
+      ]
+    },
+    {
+      "id": "video-HTF_rIyvxdc",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "HTF_rIyvxdc",
+          "label": "Lesson 01　フォント・段落　　【MOS対策講座】　Word 365",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/HTF_rIyvxdc/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "mos",
+          "label": "MOS（マイクロソフト オフィス スペシャリスト）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/mos/"
+        }
+      ]
+    },
+    {
+      "id": "video-DRG2S2gOtVc",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DRG2S2gOtVc",
+          "label": "【超具体的！】14日間で「秘書検定2級」に独学で合格する勉強法 [勉強スケジュール有り学生・社会人の初心者にもオススメ！]",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DRG2S2gOtVc/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "hisho-2",
+          "label": "秘書検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/hisho-2/"
+        }
+      ]
+    },
+    {
+      "id": "video-_ZhgjtMFaBE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_ZhgjtMFaBE",
+          "label": "【資格100個マンが解説】衛生管理者の勉強法&合格体験記",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_ZhgjtMFaBE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "eisei-kanri-1",
+          "label": "衛生管理者（第一種）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/eisei-kanri-1/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "eisei-kanri-2",
+          "label": "第二種衛生管理者",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/eisei-kanri-2/"
+        }
+      ]
+    },
+    {
+      "id": "video-DZH_j334SSU",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DZH_j334SSU",
+          "label": "色彩検定®２級 独学 解説講座 1",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DZH_j334SSU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shikisai-3",
+          "label": "色彩検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shikisai-3/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shikisai-2",
+          "label": "色彩検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shikisai-2/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shikisai-uc",
+          "label": "色彩検定 UC級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shikisai-uc/"
+        }
+      ]
+    },
+    {
+      "id": "video-7ymY_3uLZzM",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "7ymY_3uLZzM",
+          "label": "【初心者OK】無料Affinityだけでサムネイルを作る方法後編｜YouTube用デザイン講座",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/7ymY_3uLZzM/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "webdesign-3",
+          "label": "ウェブデザイン技能検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/webdesign-3/"
+        }
+      ]
+    },
+    {
+      "id": "video-oHD6WdVKJsY",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "oHD6WdVKJsY",
+          "label": "＜桜子先生のぷりてぃ講座＞保育士試験の正しい学習方法",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/oHD6WdVKJsY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "hoikushi",
+          "label": "保育士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/hoikushi/"
+        }
+      ]
+    },
+    {
+      "id": "video-YRnaxaX46pY",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "YRnaxaX46pY",
+          "label": "【2025年改訂版】危険物乙4「危険物の性質」を20分で完全解説｜特殊引火物〜動植物油類まで網羅｜聞き流しOK・試験直前対策にも！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/YRnaxaX46pY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kikenbutsu-otsu4",
+          "label": "危険物取扱者 乙種第4類（乙4）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kikenbutsu-otsu4/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kikenbutsu-ko",
+          "label": "危険物取扱者 甲種",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kikenbutsu-ko/"
+        }
+      ]
+    },
+    {
+      "id": "video-FGyA5jDuZ0E",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FGyA5jDuZ0E",
+          "label": "【合格！第二種電気工事士】主婦の独学勉強法・費用・試験当日の全記録",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FGyA5jDuZ0E/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "denki-2",
+          "label": "第二種電気工事士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/denki-2/"
+        }
+      ]
+    },
+    {
+      "id": "video-Z-R9Nhn1kf0",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Z-R9Nhn1kf0",
+          "label": "【エンジニア直伝！】情報セキュリティマネジメントの勉強法をまとめてみた #資格 #it資格 #勉強",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Z-R9Nhn1kf0/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "sg",
+          "label": "情報セキュリティマネジメント試験（SG）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/sg/"
+        }
+      ]
+    },
+    {
+      "id": "video-xoL2Q3zjn3k",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "xoL2Q3zjn3k",
+          "label": "【仕事を自動化したい人へ】できること50例とPython学習ロードマップを丁寧に解説｜初心者向け入門動画",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/xoL2Q3zjn3k/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "python3-basic",
+          "label": "Python3エンジニア認定基礎試験",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/python3-basic/"
+        }
+      ]
+    },
+    {
+      "id": "video-Ahpuf2qc5g8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Ahpuf2qc5g8",
+          "label": "【AWS認定クラウドプラクティショナー】初心者歓迎！サービス要点まとめ（前編）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Ahpuf2qc5g8/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "aws-clf",
+          "label": "AWS認定 クラウドプラクティショナー（CLF）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/aws-clf/"
+        }
+      ]
+    },
+    {
+      "id": "video-u3TP7aQRTG8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "u3TP7aQRTG8",
+          "label": "【完全保存版！マンション管理士・管理業務主任者試験2024】建築・設備の数字にまつわる重要項目全38問＋解説を爆速で一気にマスター！【工藤美香講師が読む一問一答・聞き流し・過去問】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/u3TP7aQRTG8/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kanri-gyomu",
+          "label": "管理業務主任者",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kanri-gyomu/"
+        }
+      ]
+    },
+    {
+      "id": "video-hd5hIJ2vt8A",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "hd5hIJ2vt8A",
+          "label": "【賃貸不動産経営管理士試験】「もう過去問を勉強しても意味がない！」って本当？今後の難化に向けて、ベストな活用法を解説【工藤美香講師】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/hd5hIJ2vt8A/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "chintai",
+          "label": "賃貸不動産経営管理士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/chintai/"
+        }
+      ]
+    },
+    {
+      "id": "video-FlUXxQlwTVg",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FlUXxQlwTVg",
+          "label": "【保存版】介護福祉士試験の全13科目攻略法を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FlUXxQlwTVg/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kaigo-fukushi",
+          "label": "介護福祉士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kaigo-fukushi/"
+        }
+      ]
+    },
+    {
+      "id": "video-w2rfGtA9X6M",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "w2rfGtA9X6M",
+          "label": "【2022年版】35日間で「ビジネス実務法務2級」に独学で合格する勉強法 [勉強スケジュール有りで学生・社会人の初心者にもオススメ！]",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/w2rfGtA9X6M/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "biz-law-3",
+          "label": "ビジネス実務法務検定試験 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/biz-law-3/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "biz-law-2",
+          "label": "ビジネス実務法務検定試験 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/biz-law-2/"
+        }
+      ]
+    },
+    {
+      "id": "video-FPGrGERcN6w",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FPGrGERcN6w",
+          "label": "基礎からわかる電験三種「理論」｜完全合格講義 理論 第1回（前半）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FPGrGERcN6w/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "denken-3",
+          "label": "第三種電気主任技術者（電験三種）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/denken-3/"
+        }
+      ]
+    },
+    {
+      "id": "video-cEYf1yumgoA",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "cEYf1yumgoA",
+          "label": "【測量士補試験】問１測量法をマスターしよう・前編【～出題率過去１０年１００％～　過去問完全攻略！】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/cEYf1yumgoA/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "sokuryo-ho",
+          "label": "測量士補",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/sokuryo-ho/"
+        }
+      ]
+    },
+    {
+      "id": "video-xg3mAYn83ao",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "xg3mAYn83ao",
+          "label": "「仮説検定」を世界一わかりやすく解説【高校数学】データの分析・統計的な推測・帰無仮説・対立仮説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/xg3mAYn83ao/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "statistics-2",
+          "label": "統計検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/statistics-2/"
+        }
+      ]
+    },
+    {
+      "id": "video-RAKEGBKP7KA",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "RAKEGBKP7KA",
+          "label": "[韓国語勉強]在韓日本人が教える完全独学で韓国語をマスターした勉強法大公開❕ 효율적인 한국어 공부법 알려드립니다!",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/RAKEGBKP7KA/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "hangul-3",
+          "label": "「ハングル」能力検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/hangul-3/"
+        }
+      ]
+    },
+    {
+      "id": "video-nCV-QVhcPqQ",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "nCV-QVhcPqQ",
+          "label": "2023年【漢検準2級】10日で合格を目指すための具体的な勉強法を伝授！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/nCV-QVhcPqQ/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kanken-2",
+          "label": "日本漢字能力検定（漢検）2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kanken-2/"
+        }
+      ]
+    },
+    {
+      "id": "video-ktAO46RIePk",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ktAO46RIePk",
+          "label": "食生活アドバイザー3級解説「ウェルネス上手になろう」第1問",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ktAO46RIePk/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shokuseikatsu-3",
+          "label": "食生活アドバイザー 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shokuseikatsu-3/"
+        }
+      ]
+    },
+    {
+      "id": "video-oVNov_xQzL4",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "oVNov_xQzL4",
+          "label": "【２級ボイラー技師】復習用まとめ動画1〜ボイラーの基本的事項〜【独学合格講座】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/oVNov_xQzL4/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boiler-2",
+          "label": "二級ボイラー技士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boiler-2/"
+        }
+      ]
+    },
+    {
+      "id": "video-WqI3CPrUeVE",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "WqI3CPrUeVE",
+          "label": "【税理士試験】簿記論合格までにやったこと全部公開！格安通信講座と独学で挑む社会人受験生",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/WqI3CPrUeVE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "zeirishi",
+          "label": "税理士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/zeirishi/"
+        }
+      ]
+    },
+    {
+      "id": "video-bRIIf5EcDkY",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "bRIIf5EcDkY",
+          "label": "AWSはこの順番で学びなさい！最新版の学習ロードマップを作りました！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/bRIIf5EcDkY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "aws-saa",
+          "label": "AWS認定 ソリューションアーキテクト – アソシエイト（SAA）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/aws-saa/"
+        }
+      ]
+    },
+    {
+      "id": "video-ii8EdGjKIl8",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ii8EdGjKIl8",
+          "label": "【完全版】教養試験の勉強法・参考書を徹底解説【公務員試験】数的処理・文章理解・社会科学・時事・人文科学・自然科学",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ii8EdGjKIl8/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kokka-komuin",
+          "label": "国家公務員採用一般職試験（大卒程度）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kokka-komuin/"
+        }
+      ]
+    },
+    {
+      "id": "video-gSeA4wRyNUk",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "gSeA4wRyNUk",
+          "label": "【最初の1ヶ月で差がつく！】独学者の必勝ロードマップ_第386回 #中小企業診断士",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/gSeA4wRyNUk/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shindanshi",
+          "label": "中小企業診断士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shindanshi/"
+        }
+      ]
+    },
+    {
+      "id": "video-Zk-INRORkFo",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Zk-INRORkFo",
+          "label": "0から学ぶGit/GitHub！初心者でもこの動画でAI時代に必須なGit/GitHubを理解できます！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Zk-INRORkFo/"
+        },
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "software-engineer",
+          "label": "ソフトウェアエンジニア",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/software-engineer/"
+        }
+      ]
+    },
+    {
+      "id": "video-zjIsJ8LvCq0",
+      "evidence": [
+        "manapick/content/sister-item-links.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "zjIsJ8LvCq0",
+          "label": "【Copilot×PowerPoint】社内資料を一瞬で量産する資料作成術",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/zjIsJ8LvCq0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        },
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "office-administration",
+          "label": "一般事務・営業事務",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/office-administration/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-chatgpt-7DkEl0kiD9g",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "7DkEl0kiD9g",
+          "label": "【2026年最新版】超初心者OK！ChatGPTの使い方・基礎をわかりやすく徹底解説(資料・プロンプト集付き)",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/7DkEl0kiD9g/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-claude-umTYQ1LKvVI",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "umTYQ1LKvVI",
+          "label": "【初心者向け】Claudeで何ができる？概要がわかる完全入門／Claude Code／Claude Cowork【使い方・ChatGPTとの違いを解説】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/umTYQ1LKvVI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-gemini-fZMQwtRNI70",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "fZMQwtRNI70",
+          "label": "【完全マスター】AI初心者にオススメ「Gemini」の使い方・基礎を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/fZMQwtRNI70/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-grok-5yU8KEoowBU",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "5yU8KEoowBU",
+          "label": "【完全無料】イーロン・マスクのAI「Grok」を徹底解説！Web版とアプリ版の違いも紹介",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/5yU8KEoowBU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "grok",
+          "label": "Grok",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/grok/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-deepseek-snn2JbAgVc4",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "snn2JbAgVc4",
+          "label": "【DeepSeek速報解説】40歳の超新星／超低コストで開発できた３つの工夫／OpenAIとGoogleの脅威ではない／NVIDIAのピンチか？／オープンソースで公開した狙い／米中対立への影響",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/snn2JbAgVc4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "deepseek",
+          "label": "DeepSeek",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/deepseek/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-midjourney-38pRtUOybr8",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "38pRtUOybr8",
+          "label": "【新・完全版】画像生成AI「Midjourney」の始め方・使い方を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/38pRtUOybr8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "midjourney",
+          "label": "Midjourney",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/midjourney/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-adobe-firefly-XCsQNvri5tU",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "XCsQNvri5tU",
+          "label": "【完全解説】Adobe Fireflyが超有能！安全性No.1画像生成AI【この動画1本で全て理解】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/XCsQNvri5tU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "adobe-firefly",
+          "label": "Adobe Firefly",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/adobe-firefly/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-stable-diffusion-He5ofY2JNvE",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "He5ofY2JNvE",
+          "label": "【総集編】これ1本でStable Diffusionがわかる！ PCの選び方～インストール～拡張機能の使い方まで初心向けに2023年を総まとめして徹底解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/He5ofY2JNvE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "stable-diffusion",
+          "label": "Stable Diffusion",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/stable-diffusion/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-kling-SFLLwpTxD_Q",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "SFLLwpTxD_Q",
+          "label": "【過去一の衝撃】KlingAI3.0が動画制作の常識を破壊しました。使い方と新機能10選を徹底解説します。（動画3.0/Omni3.0/画像3.0）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/SFLLwpTxD_Q/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "kling",
+          "label": "Kling AI",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/kling/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-runway-1q0LOyUHwYA",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "1q0LOyUHwYA",
+          "label": "【2025年版】初心者向けRunway完全ガイド｜イラスト生成・動画生成・うまく作るコツまで！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/1q0LOyUHwYA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "runway",
+          "label": "Runway",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/runway/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-veo-LHikWuwD-t8",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "LHikWuwD-t8",
+          "label": "【2026年最新版】Google映像制作AI「Flow」の最新活用法15選を初心者にもわかりやすく完全解説【NanoBananaPro×Veo3.1】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/LHikWuwD-t8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "veo",
+          "label": "Google Veo",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/veo/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-vrew-8RJhUyKWP-A",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "8RJhUyKWP-A",
+          "label": "【無料で商用利用可】動画編集ソフトVREWの使い方を初心者向けに完全解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/8RJhUyKWP-A/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "vrew",
+          "label": "Vrew",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/vrew/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-heygen-_PmudWdVqKQ",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_PmudWdVqKQ",
+          "label": "【最新版 HeyGen使い方完全解説】[初心者向け]アバターAI動画作成・編集、プロンプトから動画生成ができる「HeyGen」 #heygen #動画生成AI #AIアバター",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_PmudWdVqKQ/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "heygen",
+          "label": "HeyGen",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/heygen/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-suno-RnkdHXTD8Ds",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "RnkdHXTD8Ds",
+          "label": "【2026年完全版】SunoAIの使い方と初心者でも思い通りの音楽が作れる活用事例15選を完全解説します",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/RnkdHXTD8Ds/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "suno",
+          "label": "Suno",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/suno/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-notta-Q8KF_UtYap8",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Q8KF_UtYap8",
+          "label": "【時短術】効率爆上がり！会話の記録&文字起こしはAIで簡単！初心者も使えるNotta Memoの使い方🔰AI ボイスレコーダー",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Q8KF_UtYap8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "notta",
+          "label": "Notta",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/notta/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-elevenlabs-YyRv_uu8hh0",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "YyRv_uu8hh0",
+          "label": "【音声生成AIはこれ一択】初心者でも使いこなせる「ElevenLabs」全て解説します。",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/YyRv_uu8hh0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "elevenlabs",
+          "label": "ElevenLabs",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/elevenlabs/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-voicevox-jPWmr58ltWI",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "jPWmr58ltWI",
+          "label": "【2023年最新版】無料音声合成ソフト「VOICEVOX」を完全解説【基礎知識～使い方】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/jPWmr58ltWI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "voicevox",
+          "label": "VOICEVOX",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/voicevox/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-perplexity-Q8mdaTGNa_A",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Q8mdaTGNa_A",
+          "label": "2024年から始めるPerplexityの使い方超入門",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Q8mdaTGNa_A/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "perplexity",
+          "label": "Perplexity",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/perplexity/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-manus-6j4m5D-hJ7k",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "6j4m5D-hJ7k",
+          "label": "【2026年最新】AIエージェント『Manus』の使い方を徹底解説！ブラウザの自動操作からアプリ開発まで",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/6j4m5D-hJ7k/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "manus",
+          "label": "Manus",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/manus/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-openclaw-1_gmmFLP-w4",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "1_gmmFLP-w4",
+          "label": "【ゆる解説】話題のAIエージェント「OpenClaw」とは？／AIが自律的に行動／開発者がOpenAIに参加／情報流出の危険性も",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/1_gmmFLP-w4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "openclaw",
+          "label": "OpenClaw",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/openclaw/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-zapier-aJtrwyfJSTo",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "aJtrwyfJSTo",
+          "label": "タスク自動化ツールZapierの使い方～初心者でも「タスク自動化」を簡単に実現！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/aJtrwyfJSTo/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "zapier",
+          "label": "Zapier (AI)",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/zapier/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-notion-ai-mIUDzP0h-jg",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "mIUDzP0h-jg",
+          "label": "【2026年最新】Notion AI初心者向け解説｜料金、基礎的な使い方、AIエージェントについて解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/mIUDzP0h-jg/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "notion-ai",
+          "label": "Notion AI",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/notion-ai/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-gamma-DFxievESxPc",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DFxievESxPc",
+          "label": "【Gamma使い方完全解説】[初心者向け]プレゼン資料をAI生成できるGammaの特徴を解説 #Gamma #資料生成AI",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DFxievESxPc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gamma",
+          "label": "Gamma",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gamma/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-github-copilot-wzaDTDKZTt8",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "wzaDTDKZTt8",
+          "label": "【神ツール】GitHub Copilot 使い方入門！VSCodeで始めるAIコーディング革命",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/wzaDTDKZTt8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "github-copilot",
+          "label": "GitHub Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/github-copilot/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-codex-ESGl8Juwytc",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ESGl8Juwytc",
+          "label": "OpenAI「Codex」完全ガイド【この動画1本ですべて理解できる】スキル作成・便利機能・AI自動化などの使い方を解説【初心者OK】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ESGl8Juwytc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "codex",
+          "label": "OpenAI Codex",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/codex/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-replit-AZkVzqPPFaE",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "AZkVzqPPFaE",
+          "label": "【AI完全自動化】Replit Agentを使ったプログラミング方法を徹底解説【初心者OK】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/AZkVzqPPFaE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "replit",
+          "label": "Replit Agent",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/replit/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-bolt-FwDnhTSNuQA",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FwDnhTSNuQA",
+          "label": "【完全版】初心者OK！Bolt.newで1からフルスタックWebアプリケーション開発するためのBolt.new完全ガイド入門",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FwDnhTSNuQA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "bolt",
+          "label": "Bolt.new",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/bolt/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-deepl-753GrQJfd6I",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "753GrQJfd6I",
+          "label": "【使わないと損】DeepLの翻訳が便利ですごい！　無料でも大満足できるはず",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/753GrQJfd6I/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "deepl",
+          "label": "DeepL",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/deepl/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-ollama-ujQrgXxVrmE",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ujQrgXxVrmE",
+          "label": "【話題】無料でオフラインAIが使える!!ローカルLLMを動かすollamaインストール方法【簡単解説】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ujQrgXxVrmE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "ollama",
+          "label": "Ollama",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/ollama/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-gemma-Ll43s_xTJH8",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Ll43s_xTJH8",
+          "label": "【Gemma 4完全ガイド】スマホ・パソコンにワンクリックで導入して無料で使える！ Googleの超高性能なオープンAIモデルを徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Ll43s_xTJH8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemma",
+          "label": "Gemma（Google・公開モデル）",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemma/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-google-translate-9SZhb4_cMCA",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "9SZhb4_cMCA",
+          "label": "【初心者向け】Google翻訳の使い方を基礎から解説！外国語を簡単に翻訳できます！【海外旅行でも便利】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/9SZhb4_cMCA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "google-translate",
+          "label": "Google翻訳",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/google-translate/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-siri-ukPGVIo3yGE",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ukPGVIo3yGE",
+          "label": "【ついに解禁!】日本語版Apple Intelligenceの「超•便利」な使い方完全ガイド!【iOS18 4】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ukPGVIo3yGE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "siri",
+          "label": "Siri AI",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/siri/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-hailuo-F2gAu3LUdZs",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "F2gAu3LUdZs",
+          "label": "【AIアニメ動画の作り方】を徹底解説。話題の『Hailuo』の使い方や、他AIツールとの比較など。",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/F2gAu3LUdZs/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "hailuo",
+          "label": "Hailuo AI（MiniMax）",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/hailuo/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-figma-akd5pyd4TnU",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "akd5pyd4TnU",
+          "label": "【2025最新】初心者向け! Figmaの基本とAIなど便利な使い方を完全解説 / UIデザイン・Webデザインに最適なデザインツール",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/akd5pyd4TnU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "figma",
+          "label": "Figma(Figma AI)",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/figma/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-pixverse-Po8fdb8Z5xI",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Po8fdb8Z5xI",
+          "label": "無料でも使える多機能・高品質動画生成AIツール「PixVerse(V4)」の概要と使い方を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Po8fdb8Z5xI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "pixverse",
+          "label": "PixVerse",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/pixverse/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-cline-AywVuYjkz6Q",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "AywVuYjkz6Q",
+          "label": "初心者向けClineの使い方と無料で使う方法を解説！VSCode拡張で生成AIコーディング入門",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/AywVuYjkz6Q/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "cline",
+          "label": "Cline",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/cline/"
+        }
+      ]
+    },
+    {
+      "id": "ai-video-google-ai-mode-xX6iEgeUie8",
+      "evidence": [
+        "ai/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "xX6iEgeUie8",
+          "label": "【超便利】GoogleのAIモードがついに日本上陸！Chat GPTやPerplexityなど他AIと比較してどう？使い方・機能・性能など徹底解説します",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/xX6iEgeUie8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "google-ai-mode",
+          "label": "Google AI Mode",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/google-ai-mode/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-it-passport-9H9oS26DWLY",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "9H9oS26DWLY",
+          "label": "【2025年最新・完全保存版】超まとめ　ITパスポート最強勉強法 #ITパスポート, #ITパスポート試験,　#iパス",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/9H9oS26DWLY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-passport",
+          "label": "ITパスポート試験（iパス）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-passport/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-fe-ER56G8-s7XM",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ER56G8-s7XM",
+          "label": "【資格完全版】数多くの資格試験を攻略した河野玄斗が実践する勉強法！この勉強法はきっとあなたの助けになります！【河野玄斗/資格/勉強】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ER56G8-s7XM/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fe",
+          "label": "基本情報技術者試験（FE）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fe/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-g-kentei-qq0yVKl8gLY",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "qq0yVKl8gLY",
+          "label": "【完全解説】G検定とは？難易度・勉強法・合格率？#01 #G検定 #G検定2026 #AI資格昇進",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/qq0yVKl8gLY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "g-kentei",
+          "label": "G検定（JDLA ジェネラリスト検定）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/g-kentei/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-boki-3-reHqDGh4r2Y",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "reHqDGh4r2Y",
+          "label": "【超入門】簿記の基本を25分で完全理解！初心者でも全体の流れと基礎がスッキリ理解できる【日商簿記3級対策】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/reHqDGh4r2Y/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boki-3",
+          "label": "日商簿記検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boki-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-boki-2-reHqDGh4r2Y",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "reHqDGh4r2Y",
+          "label": "【超入門】簿記の基本を25分で完全理解！初心者でも全体の流れと基礎がスッキリ理解できる【日商簿記3級対策】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/reHqDGh4r2Y/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boki-2",
+          "label": "日商簿記検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boki-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-fp-3-2s4LHNuVhaU",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "2s4LHNuVhaU",
+          "label": "【FP3級解説】 FP3級のライフ分野をたった1時間で完全攻略！【FP3級勝組道場 (ライフプランニングと資金計画編)】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/2s4LHNuVhaU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fp-3",
+          "label": "FP技能検定 3級（ファイナンシャル・プランニング技能士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fp-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-fp-2-2s4LHNuVhaU",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "2s4LHNuVhaU",
+          "label": "【FP3級解説】 FP3級のライフ分野をたった1時間で完全攻略！【FP3級勝組道場 (ライフプランニングと資金計画編)】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/2s4LHNuVhaU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fp-2",
+          "label": "FP技能検定 2級（ファイナンシャル・プランニング技能士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fp-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-takken-_rIozAfVG3A",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_rIozAfVG3A",
+          "label": "【宅建受験生必見】一発合格ロードマップ完全版！試験本番までのスケジュールと戦略をこざりえが徹底解説 ！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_rIozAfVG3A/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "takken",
+          "label": "宅地建物取引士（宅建士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/takken/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-gyoseishoshi-hKccSxvAv7I",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "hKccSxvAv7I",
+          "label": "【完全保存版・行政書士試験】行政法総論全66問を解説付きで一気にマスター！【プロ講師が読む一問一答・聞き流し・過去問】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/hKccSxvAv7I/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "gyoseishoshi",
+          "label": "行政書士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/gyoseishoshi/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-sharoshi-11l-10gvfsg",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "11l-10gvfsg",
+          "label": "【完全保存版・社労士試験】労働安全衛生法全30問を解説付きで一気にマスター！【プロ講師が読む一問一答・聞き流し・過去問】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/11l-10gvfsg/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "sharoshi",
+          "label": "社会保険労務士（社労士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/sharoshi/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-touroku-hanbai-DjC1h5FHc_I",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DjC1h5FHc_I",
+          "label": "史上最高レベルかも？！【2025年　東海・北陸 ①】問題解説 プルメリア流　登録販売者　試験対策講座",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DjC1h5FHc_I/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "touroku-hanbai",
+          "label": "登録販売者",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/touroku-hanbai/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-medical-clerk--O6abEpLImE",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "-O6abEpLImE",
+          "label": "【2023年度】診療報酬の基本まとめ（初心者にもわかりやすく解説）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/-O6abEpLImE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "medical-clerk",
+          "label": "医療事務技能審査試験（メディカルクラーク）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/medical-clerk/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-toeic-lr-aRKYpz19vPE",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "aRKYpz19vPE",
+          "label": "TOEIC完全初心者が2ヶ月で600点を取るための勉強ロードマップ【2024最新版】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/aRKYpz19vPE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "toeic-lr",
+          "label": "TOEIC Listening & Reading Test",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/toeic-lr/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-mos-HTF_rIyvxdc",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "HTF_rIyvxdc",
+          "label": "Lesson 01　フォント・段落　　【MOS対策講座】　Word 365",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/HTF_rIyvxdc/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "mos",
+          "label": "MOS（マイクロソフト オフィス スペシャリスト）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/mos/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-hisho-2-DRG2S2gOtVc",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DRG2S2gOtVc",
+          "label": "【超具体的！】14日間で「秘書検定2級」に独学で合格する勉強法 [勉強スケジュール有り学生・社会人の初心者にもオススメ！]",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DRG2S2gOtVc/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "hisho-2",
+          "label": "秘書検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/hisho-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-eisei-kanri-1-_ZhgjtMFaBE",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_ZhgjtMFaBE",
+          "label": "【資格100個マンが解説】衛生管理者の勉強法&合格体験記",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_ZhgjtMFaBE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "eisei-kanri-1",
+          "label": "衛生管理者（第一種）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/eisei-kanri-1/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-shikisai-3-DZH_j334SSU",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DZH_j334SSU",
+          "label": "色彩検定®２級 独学 解説講座 1",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DZH_j334SSU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shikisai-3",
+          "label": "色彩検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shikisai-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-webdesign-3-7ymY_3uLZzM",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "7ymY_3uLZzM",
+          "label": "【初心者OK】無料Affinityだけでサムネイルを作る方法後編｜YouTube用デザイン講座",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/7ymY_3uLZzM/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "webdesign-3",
+          "label": "ウェブデザイン技能検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/webdesign-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-hoikushi-oHD6WdVKJsY",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "oHD6WdVKJsY",
+          "label": "＜桜子先生のぷりてぃ講座＞保育士試験の正しい学習方法",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/oHD6WdVKJsY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "hoikushi",
+          "label": "保育士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/hoikushi/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-kikenbutsu-otsu4-YRnaxaX46pY",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "YRnaxaX46pY",
+          "label": "【2025年改訂版】危険物乙4「危険物の性質」を20分で完全解説｜特殊引火物〜動植物油類まで網羅｜聞き流しOK・試験直前対策にも！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/YRnaxaX46pY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kikenbutsu-otsu4",
+          "label": "危険物取扱者 乙種第4類（乙4）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kikenbutsu-otsu4/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-denki-2-FGyA5jDuZ0E",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FGyA5jDuZ0E",
+          "label": "【合格！第二種電気工事士】主婦の独学勉強法・費用・試験当日の全記録",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FGyA5jDuZ0E/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "denki-2",
+          "label": "第二種電気工事士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/denki-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-sg-Z-R9Nhn1kf0",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Z-R9Nhn1kf0",
+          "label": "【エンジニア直伝！】情報セキュリティマネジメントの勉強法をまとめてみた #資格 #it資格 #勉強",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Z-R9Nhn1kf0/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "sg",
+          "label": "情報セキュリティマネジメント試験（SG）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/sg/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-python3-basic-xoL2Q3zjn3k",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "xoL2Q3zjn3k",
+          "label": "【仕事を自動化したい人へ】できること50例とPython学習ロードマップを丁寧に解説｜初心者向け入門動画",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/xoL2Q3zjn3k/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "python3-basic",
+          "label": "Python3エンジニア認定基礎試験",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/python3-basic/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-aws-clf-Ahpuf2qc5g8",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Ahpuf2qc5g8",
+          "label": "【AWS認定クラウドプラクティショナー】初心者歓迎！サービス要点まとめ（前編）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Ahpuf2qc5g8/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "aws-clf",
+          "label": "AWS認定 クラウドプラクティショナー（CLF）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/aws-clf/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-boki-1-reHqDGh4r2Y",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "reHqDGh4r2Y",
+          "label": "【超入門】簿記の基本を25分で完全理解！初心者でも全体の流れと基礎がスッキリ理解できる【日商簿記3級対策】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/reHqDGh4r2Y/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boki-1",
+          "label": "日商簿記検定 1級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boki-1/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-kanri-gyomu-u3TP7aQRTG8",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "u3TP7aQRTG8",
+          "label": "【完全保存版！マンション管理士・管理業務主任者試験2024】建築・設備の数字にまつわる重要項目全38問＋解説を爆速で一気にマスター！【工藤美香講師が読む一問一答・聞き流し・過去問】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/u3TP7aQRTG8/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kanri-gyomu",
+          "label": "管理業務主任者",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kanri-gyomu/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-chintai-hd5hIJ2vt8A",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "hd5hIJ2vt8A",
+          "label": "【賃貸不動産経営管理士試験】「もう過去問を勉強しても意味がない！」って本当？今後の難化に向けて、ベストな活用法を解説【工藤美香講師】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/hd5hIJ2vt8A/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "chintai",
+          "label": "賃貸不動産経営管理士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/chintai/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-kaigo-fukushi-FlUXxQlwTVg",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FlUXxQlwTVg",
+          "label": "【保存版】介護福祉士試験の全13科目攻略法を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FlUXxQlwTVg/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kaigo-fukushi",
+          "label": "介護福祉士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kaigo-fukushi/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-biz-law-3-w2rfGtA9X6M",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "w2rfGtA9X6M",
+          "label": "【2022年版】35日間で「ビジネス実務法務2級」に独学で合格する勉強法 [勉強スケジュール有りで学生・社会人の初心者にもオススメ！]",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/w2rfGtA9X6M/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "biz-law-3",
+          "label": "ビジネス実務法務検定試験 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/biz-law-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-shikisai-2-DZH_j334SSU",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DZH_j334SSU",
+          "label": "色彩検定®２級 独学 解説講座 1",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DZH_j334SSU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shikisai-2",
+          "label": "色彩検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shikisai-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-denken-3-FPGrGERcN6w",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "FPGrGERcN6w",
+          "label": "基礎からわかる電験三種「理論」｜完全合格講義 理論 第1回（前半）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/FPGrGERcN6w/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "denken-3",
+          "label": "第三種電気主任技術者（電験三種）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/denken-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-sokuryo-ho-cEYf1yumgoA",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "cEYf1yumgoA",
+          "label": "【測量士補試験】問１測量法をマスターしよう・前編【～出題率過去１０年１００％～　過去問完全攻略！】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/cEYf1yumgoA/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "sokuryo-ho",
+          "label": "測量士補",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/sokuryo-ho/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-statistics-2-xg3mAYn83ao",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "xg3mAYn83ao",
+          "label": "「仮説検定」を世界一わかりやすく解説【高校数学】データの分析・統計的な推測・帰無仮説・対立仮説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/xg3mAYn83ao/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "statistics-2",
+          "label": "統計検定 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/statistics-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-fp-1-2s4LHNuVhaU",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "2s4LHNuVhaU",
+          "label": "【FP3級解説】 FP3級のライフ分野をたった1時間で完全攻略！【FP3級勝組道場 (ライフプランニングと資金計画編)】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/2s4LHNuVhaU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fp-1",
+          "label": "FP技能検定 1級（ファイナンシャル・プランニング技能士）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fp-1/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-biz-law-2-w2rfGtA9X6M",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "w2rfGtA9X6M",
+          "label": "【2022年版】35日間で「ビジネス実務法務2級」に独学で合格する勉強法 [勉強スケジュール有りで学生・社会人の初心者にもオススメ！]",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/w2rfGtA9X6M/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "biz-law-2",
+          "label": "ビジネス実務法務検定試験 2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/biz-law-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-hangul-3-RAKEGBKP7KA",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "RAKEGBKP7KA",
+          "label": "[韓国語勉強]在韓日本人が教える完全独学で韓国語をマスターした勉強法大公開❕ 효율적인 한국어 공부법 알려드립니다!",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/RAKEGBKP7KA/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "hangul-3",
+          "label": "「ハングル」能力検定 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/hangul-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-shikisai-uc-DZH_j334SSU",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DZH_j334SSU",
+          "label": "色彩検定®２級 独学 解説講座 1",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DZH_j334SSU/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shikisai-uc",
+          "label": "色彩検定 UC級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shikisai-uc/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-kikenbutsu-ko-YRnaxaX46pY",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "YRnaxaX46pY",
+          "label": "【2025年改訂版】危険物乙4「危険物の性質」を20分で完全解説｜特殊引火物〜動植物油類まで網羅｜聞き流しOK・試験直前対策にも！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/YRnaxaX46pY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kikenbutsu-ko",
+          "label": "危険物取扱者 甲種",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kikenbutsu-ko/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-kanken-2-nCV-QVhcPqQ",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "nCV-QVhcPqQ",
+          "label": "2023年【漢検準2級】10日で合格を目指すための具体的な勉強法を伝授！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/nCV-QVhcPqQ/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kanken-2",
+          "label": "日本漢字能力検定（漢検）2級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kanken-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-shokuseikatsu-3-ktAO46RIePk",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ktAO46RIePk",
+          "label": "食生活アドバイザー3級解説「ウェルネス上手になろう」第1問",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ktAO46RIePk/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shokuseikatsu-3",
+          "label": "食生活アドバイザー 3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shokuseikatsu-3/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-boiler-2-oVNov_xQzL4",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "oVNov_xQzL4",
+          "label": "【２級ボイラー技師】復習用まとめ動画1〜ボイラーの基本的事項〜【独学合格講座】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/oVNov_xQzL4/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boiler-2",
+          "label": "二級ボイラー技士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boiler-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-eisei-kanri-2-_ZhgjtMFaBE",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_ZhgjtMFaBE",
+          "label": "【資格100個マンが解説】衛生管理者の勉強法&合格体験記",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_ZhgjtMFaBE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "eisei-kanri-2",
+          "label": "第二種衛生管理者",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/eisei-kanri-2/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-zeirishi-WqI3CPrUeVE",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "WqI3CPrUeVE",
+          "label": "【税理士試験】簿記論合格までにやったこと全部公開！格安通信講座と独学で挑む社会人受験生",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/WqI3CPrUeVE/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "zeirishi",
+          "label": "税理士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/zeirishi/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-it-strategist-9H9oS26DWLY",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "9H9oS26DWLY",
+          "label": "【2025年最新・完全保存版】超まとめ　ITパスポート最強勉強法 #ITパスポート, #ITパスポート試験,　#iパス",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/9H9oS26DWLY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-strategist",
+          "label": "ITストラテジスト試験（ST）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-strategist/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-aws-saa-bRIIf5EcDkY",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "bRIIf5EcDkY",
+          "label": "AWSはこの順番で学びなさい！最新版の学習ロードマップを作りました！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/bRIIf5EcDkY/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "aws-saa",
+          "label": "AWS認定 ソリューションアーキテクト – アソシエイト（SAA）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/aws-saa/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-kokka-komuin-ii8EdGjKIl8",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ii8EdGjKIl8",
+          "label": "【完全版】教養試験の勉強法・参考書を徹底解説【公務員試験】数的処理・文章理解・社会科学・時事・人文科学・自然科学",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ii8EdGjKIl8/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kokka-komuin",
+          "label": "国家公務員採用一般職試験（大卒程度）",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kokka-komuin/"
+        }
+      ]
+    },
+    {
+      "id": "license-video-shindanshi-gSeA4wRyNUk",
+      "evidence": [
+        "license/content/manapick-video-map.json"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "gSeA4wRyNUk",
+          "label": "【最初の1ヶ月で差がつく！】独学者の必勝ロードマップ_第386回 #中小企業診断士",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/gSeA4wRyNUk/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "shindanshi",
+          "label": "中小企業診断士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/shindanshi/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-J9QdxiZb8P4",
+      "evidence": [
+        "manapick/content/videos.json#J9QdxiZb8P4.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "J9QdxiZb8P4",
+          "label": "【2025年最新版】超初心者OK！ChatGPTの使い方・基礎をわかりやすく解説！(資料付き)",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/J9QdxiZb8P4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-UIyokWUJHck",
+      "evidence": [
+        "manapick/content/videos.json#UIyokWUJHck.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "UIyokWUJHck",
+          "label": "【保存版】ChatGPT 2025年最新入門〜6つのステップで基礎〜応用機能までマスター（無料版対応）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/UIyokWUJHck/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-UdEIgP4B0Bs",
+      "evidence": [
+        "manapick/content/videos.json#UdEIgP4B0Bs.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "UdEIgP4B0Bs",
+          "label": "【完全版】Claudeの使い方入門・全機能をまるっと解説（Projects / Skills / Cowork / Claude Code）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/UdEIgP4B0Bs/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-OhO0WcRP6Ow",
+      "evidence": [
+        "manapick/content/videos.json#OhO0WcRP6Ow.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "OhO0WcRP6Ow",
+          "label": "【最新版】Claude（クロード）完全解説！20以上の便利機能をこの動画1本で全て解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/OhO0WcRP6Ow/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-EpUWXT0Fcic",
+      "evidence": [
+        "manapick/content/videos.json#EpUWXT0Fcic.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "EpUWXT0Fcic",
+          "label": "【Claude Code超入門】超基本的なことをたった30分で学べます｜使い方からおすすめ設定、仕事の自動化まで全手順を解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/EpUWXT0Fcic/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-Fb60hQ7S2j4",
+      "evidence": [
+        "manapick/content/videos.json#Fb60hQ7S2j4.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Fb60hQ7S2j4",
+          "label": "【2026年最新版】CapCutの使い方&編集方法を0から完全解説！動画編集初心者でも大丈夫！#CapCut使い方 #キャップカット使い方#capcut操作方法#cupcut無料#",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Fb60hQ7S2j4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-v1kG3Hj2178",
+      "evidence": [
+        "manapick/content/videos.json#v1kG3Hj2178.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "v1kG3Hj2178",
+          "label": "【完全攻略 2026最新】PC版CapCutの使い方｜これ1本でOK・初心者向け・動画編集",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/v1kG3Hj2178/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-LRSSjGwsuv0",
+      "evidence": [
+        "manapick/content/videos.json#LRSSjGwsuv0.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "LRSSjGwsuv0",
+          "label": "【Claude Code完全入門】誰でも使えるツール／実行革命／ChatGPTとの違い／５体のAIエージェントで実演／願望の質＝アウトプットの質／Skills活用法／経営者こそ使うべき／言語化が全て",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/LRSSjGwsuv0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-IEco7QIxZwc",
+      "evidence": [
+        "manapick/content/videos.json#IEco7QIxZwc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "IEco7QIxZwc",
+          "label": "【AI超初心者向け】安野貴博流“始めの一歩”「無料で使える」ChatGPT以外のおススメも…使い方のススメとは？｜アベヒル",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/IEco7QIxZwc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-vkkZvCImHsU",
+      "evidence": [
+        "manapick/content/videos.json#vkkZvCImHsU.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "vkkZvCImHsU",
+          "label": "【🔰はじめてのChatGPT】ChatGPTの始め方・使い方をわかりやすく解説！超初心者でも簡単！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/vkkZvCImHsU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-3whmRVpLpfw",
+      "evidence": [
+        "manapick/content/videos.json#3whmRVpLpfw.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "3whmRVpLpfw",
+          "label": "【1本で全てわかる】図解がヤバい！Claudeの使い方・初心者入門講座。ChatGPT/Geminiとの違いも徹底比較（活用方法/事例/無料有料版/Projects/MCP）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/3whmRVpLpfw/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-iJSRJBUz0Mo",
+      "evidence": [
+        "manapick/content/videos.json#iJSRJBUz0Mo.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "iJSRJBUz0Mo",
+          "label": "【保存版】初心者のためのCapCut基本操作方法 | おすすめの編集手順で解説します！これだけ見れば完全攻略 | スマホ動画編集",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/iJSRJBUz0Mo/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-pDVgzHN0K5A",
+      "evidence": [
+        "manapick/content/videos.json#pDVgzHN0K5A.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "pDVgzHN0K5A",
+          "label": "【2024年保存版】初心者のためのCapCut基本操作方法 | おすすめの編集手順で解説します！これだけ見れば完全攻略 | 動画編集アプリCapCut",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/pDVgzHN0K5A/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-uXc7H0feIK0",
+      "evidence": [
+        "manapick/content/videos.json#uXc7H0feIK0.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "uXc7H0feIK0",
+          "label": "【簡単】便利過ぎる！ChatGPTの使い方をわかりやすく解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/uXc7H0feIK0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-F6GHmnOuQZc",
+      "evidence": [
+        "manapick/content/videos.json#F6GHmnOuQZc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "F6GHmnOuQZc",
+          "label": "【超入門】初心者でもスグに使えるClaude Codeの基礎と神活用を徹底解説するで！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/F6GHmnOuQZc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-co6H7Hn0lz0",
+      "evidence": [
+        "manapick/content/videos.json#co6H7Hn0lz0.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "co6H7Hn0lz0",
+          "label": "【AI初心者】ChatGPT基本の使い方 - ログイン〜やってみよう編 -",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/co6H7Hn0lz0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-8NW2U6iSUTM",
+      "evidence": [
+        "manapick/content/videos.json#8NW2U6iSUTM.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "8NW2U6iSUTM",
+          "label": "【これ1本でわかる】ChatGPTの便利機能まとめ！30種の使い方を網羅し脱初心者へ",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/8NW2U6iSUTM/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-f0g7CDRklXM",
+      "evidence": [
+        "manapick/content/videos.json#f0g7CDRklXM.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "f0g7CDRklXM",
+          "label": "【初心者向け】ChatGPT使い方解説！iPhoneやiPadでChatGPTアプリを使う方法！【初心者向け / チャットGPTアプリ / チャットGPTスマホ】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/f0g7CDRklXM/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata--j4LXC_Tdrc",
+      "evidence": [
+        "manapick/content/videos.json#-j4LXC_Tdrc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "-j4LXC_Tdrc",
+          "label": "【完全解説】Claudeの使い方を全て教えます！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/-j4LXC_Tdrc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-1k6SJWF0AyM",
+      "evidence": [
+        "manapick/content/videos.json#1k6SJWF0AyM.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "1k6SJWF0AyM",
+          "label": "【保存版】Claude Codeを使うならデスクトップアプリ一択！初心者でも今日から使える完全入門｜ターミナル不要で業務自動化まで最短セットアップ講座を丁寧に解説【これ一本でOK】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/1k6SJWF0AyM/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-zJxDgQt1taE",
+      "evidence": [
+        "manapick/content/videos.json#zJxDgQt1taE.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "zJxDgQt1taE",
+          "label": "【無料】Capcutの使い方＆動画編集方法を完全解説！初心者→プロ級ショート動画をの作り方を教えます｜パソコン版",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/zJxDgQt1taE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-a49tuT-O6ag",
+      "evidence": [
+        "manapick/content/videos.json#a49tuT-O6ag.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "a49tuT-O6ag",
+          "label": "【超実践】Claude初心者必見！Claudeの最新基本活用と神活用4選を紹介するで！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/a49tuT-O6ag/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-UTLuSmlRMlk",
+      "evidence": [
+        "manapick/content/videos.json#UTLuSmlRMlk.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "UTLuSmlRMlk",
+          "label": "【完全攻略】パソコン版CapCutの操作方法 これ見ればすぐ編集できる！初心者向け | 無料動画編集ソフト",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/UTLuSmlRMlk/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-_wWQYzVbgpU",
+      "evidence": [
+        "manapick/content/videos.json#_wWQYzVbgpU.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_wWQYzVbgpU",
+          "label": "ChatGPT❶...初心者向けに解説（使い始め・使い方など）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_wWQYzVbgpU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-0hFpqYLMPXY",
+      "evidence": [
+        "manapick/content/videos.json#0hFpqYLMPXY.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "0hFpqYLMPXY",
+          "label": "【無料でも充分】ChatGPTでできること5選＋1！初心者向けにやさしく解説【初心者向け🔰】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/0hFpqYLMPXY/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-wtFv5rJmPh0",
+      "evidence": [
+        "manapick/content/videos.json#wtFv5rJmPh0.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "wtFv5rJmPh0",
+          "label": "【完全保存版】パソコン版CapCut基本操作解説！初心者向け基本操作から応用のAI機能まで！これだけ見ればすぐ編集できる！無料で使える最強の動画編集ソフト！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/wtFv5rJmPh0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-TGnJwnYUi1o",
+      "evidence": [
+        "manapick/content/videos.json#TGnJwnYUi1o.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "TGnJwnYUi1o",
+          "label": "【初心者必見】ChatGPTから乗り換える人続出！今話題のAI「Claude」の超基本解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/TGnJwnYUi1o/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-u9eA5yDs1i0",
+      "evidence": [
+        "manapick/content/videos.json#u9eA5yDs1i0.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "u9eA5yDs1i0",
+          "label": "【有料動画編集ソフト卒業】無料で使えるパソコン版CapCutの使い方・手順を完全解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/u9eA5yDs1i0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-qMulhtOD4nc",
+      "evidence": [
+        "manapick/content/videos.json#qMulhtOD4nc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "qMulhtOD4nc",
+          "label": "【完全版】スマホ編集アプリCapCutの使い方とリールの作成方法を教えます！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/qMulhtOD4nc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-u4z2xqe037Y",
+      "evidence": [
+        "manapick/content/videos.json#u4z2xqe037Y.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "u4z2xqe037Y",
+          "label": "ChatGPTしか知らない人へ。Claude AIの使い方を初心者向けに全部見せます",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/u4z2xqe037Y/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-4b_hl-AXejs",
+      "evidence": [
+        "manapick/content/videos.json#4b_hl-AXejs.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "4b_hl-AXejs",
+          "label": "【CapCut PC版】テキスト編集 全機能まとめ｜初心者向け完全ガイド",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/4b_hl-AXejs/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-UzXIZfEWuMw",
+      "evidence": [
+        "manapick/content/videos.json#UzXIZfEWuMw.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "UzXIZfEWuMw",
+          "label": "【保存版】今から始めるClaudeの最強活用術。真似するだけで生産性爆上がりします。",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/UzXIZfEWuMw/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-lHRoD9Z1vfM",
+      "evidence": [
+        "manapick/content/videos.json#lHRoD9Z1vfM.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "lHRoD9Z1vfM",
+          "label": "【初心者も使える】AI専門家がClaudeに熱狂している神機能3選（Claude Code・Skills・Claude in Chrome）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/lHRoD9Z1vfM/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-zeUG3CzGo7A",
+      "evidence": [
+        "manapick/content/videos.json#zeUG3CzGo7A.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "zeUG3CzGo7A",
+          "label": "Claude Code実践入門！普段よく使う機能や大事だと思うポイントについて解説してみた",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/zeUG3CzGo7A/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-GjB8LYtmsPg",
+      "evidence": [
+        "manapick/content/videos.json#GjB8LYtmsPg.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "GjB8LYtmsPg",
+          "label": "【最新版】Claudeの神機能7選！初心者でもできるClaudeのおすすめの活用法を解説させていただきます！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/GjB8LYtmsPg/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-MRTAlHTLSAw",
+      "evidence": [
+        "manapick/content/videos.json#MRTAlHTLSAw.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "MRTAlHTLSAw",
+          "label": "【2024年最新版】超初心者OK!「CapCut AI」の使い方をわかりやすく解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/MRTAlHTLSAw/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-vDwUaeJY8y4",
+      "evidence": [
+        "manapick/content/videos.json#vDwUaeJY8y4.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "vDwUaeJY8y4",
+          "label": "【スマホ1つでOK】初心者でも簡単！CapCutの編集方法を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/vDwUaeJY8y4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-TJ_hET3AUwE",
+      "evidence": [
+        "manapick/content/videos.json#TJ_hET3AUwE.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "TJ_hET3AUwE",
+          "label": "Claude Cowork入門！AIエージェントに仕事を「丸投げ」する新時代の働き方（非エンジニア向け）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/TJ_hET3AUwE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-C1GqClKoCqY",
+      "evidence": [
+        "manapick/content/videos.json#C1GqClKoCqY.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "C1GqClKoCqY",
+          "label": "【あなたは大丈夫？】ChatGPTやGeminiで絶対にやってはいけないこと3選！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/C1GqClKoCqY/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-YnCTKg7F72E",
+      "evidence": [
+        "manapick/content/videos.json#YnCTKg7F72E.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "YnCTKg7F72E",
+          "label": "【シニア向け】これは使わなきゃ損！ChatGPTの便利技7選【2025年最新版】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/YnCTKg7F72E/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-o1g6ltfV8vY",
+      "evidence": [
+        "manapick/content/videos.json#o1g6ltfV8vY.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "o1g6ltfV8vY",
+          "label": "【初心者向け】無料かつ短期間で英語がペラペラになるChat GPTの活用法",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/o1g6ltfV8vY/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-EpvqUuHq4Rc",
+      "evidence": [
+        "manapick/content/videos.json#EpvqUuHq4Rc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "EpvqUuHq4Rc",
+          "label": "ChatGPTの始め方【入門ガイド1】初心者向けにアカウント登録からわかりやすく解説【2025年最新】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/EpvqUuHq4Rc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-LnbTfZCI4aE",
+      "evidence": [
+        "manapick/content/videos.json#LnbTfZCI4aE.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "LnbTfZCI4aE",
+          "label": "生成AI・ChatGPTって何なの？【超入門講座、初心者向け】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/LnbTfZCI4aE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-NTFIFwmrjiw",
+      "evidence": [
+        "manapick/content/videos.json#NTFIFwmrjiw.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "NTFIFwmrjiw",
+          "label": "【初心者OK🔰】アンソロピック「Claude Cowork」使い方基礎講座！活用法まで分かりやすく解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/NTFIFwmrjiw/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-SfCNwzANbUY",
+      "evidence": [
+        "manapick/content/videos.json#SfCNwzANbUY.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "SfCNwzANbUY",
+          "label": "【完全版】Googleの最強AIツールGeminiの使い方徹底解説【初心者必見】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/SfCNwzANbUY/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-yd-bpNe3Axg",
+      "evidence": [
+        "manapick/content/videos.json#yd-bpNe3Axg.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "yd-bpNe3Axg",
+          "label": "【生成AI】超初心者OK!「Gemini」をもっと使いこなすための使い方・基礎をわかりやすく解説！【完全マスター】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/yd-bpNe3Axg/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-O2Q0-JLpYtc",
+      "evidence": [
+        "manapick/content/videos.json#O2Q0-JLpYtc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "O2Q0-JLpYtc",
+          "label": "【初心者必見】Googleの最強AI「「Gemini」の使い方・基礎を徹底解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/O2Q0-JLpYtc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-9dUkUyHo8Hw",
+      "evidence": [
+        "manapick/content/videos.json#9dUkUyHo8Hw.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "9dUkUyHo8Hw",
+          "label": "【40分でマスター】完全初心者でも”明日から実務で使える”Microsoft 365 Copilot完全攻略",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/9dUkUyHo8Hw/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-PLngsyLaEhw",
+      "evidence": [
+        "manapick/content/videos.json#PLngsyLaEhw.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "PLngsyLaEhw",
+          "label": "【超簡単】今日からあなたをサポート！シニアにも好評！初心者OK!「Gemini」の使い方・チャットCPTとの比較・基礎をわかりやすく解説！今日から生活が変わる！【Google Gemini】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/PLngsyLaEhw/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-Dwj4IvLSZ-8",
+      "evidence": [
+        "manapick/content/videos.json#Dwj4IvLSZ-8.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Dwj4IvLSZ-8",
+          "label": "【完全マスター】AI初心者が学ぶべき「Gemini」の始め方・使い方をわかりやすく解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Dwj4IvLSZ-8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-cZZ7HNg1QW0",
+      "evidence": [
+        "manapick/content/videos.json#cZZ7HNg1QW0.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "cZZ7HNg1QW0",
+          "label": "【初心者向け】Claude in Excelの完全ガイド｜インストールから実務活用まで全部解説します！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/cZZ7HNg1QW0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-MWmi1nmcrBA",
+      "evidence": [
+        "manapick/content/videos.json#MWmi1nmcrBA.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "MWmi1nmcrBA",
+          "label": "【生成AI】「Gemini」をもっと使いこなすための基礎知識を伝授！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/MWmi1nmcrBA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-9XK9X_g2hYA",
+      "evidence": [
+        "manapick/content/videos.json#9XK9X_g2hYA.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "9XK9X_g2hYA",
+          "label": "【2025年最新版】Microsoft Copilotの最新動向！基本の使い方と注目機能5選をCopilotベストセラー講師が解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/9XK9X_g2hYA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-Z8EJrh5g7eU",
+      "evidence": [
+        "manapick/content/videos.json#Z8EJrh5g7eU.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Z8EJrh5g7eU",
+          "label": "【初心者必見】Googleの最新AI「Gemini 3」の進化がすごい！今より使いこなすための神機能を日本一わかりやすく解説します！【無料AI】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Z8EJrh5g7eU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-jERgptRtkdE",
+      "evidence": [
+        "manapick/content/videos.json#jERgptRtkdE.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "jERgptRtkdE",
+          "label": "【超完全入門】Copilotの特徴・機能・活用法を完全解説",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/jERgptRtkdE/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-ZOWhaUQCJBo",
+      "evidence": [
+        "manapick/content/videos.json#ZOWhaUQCJBo.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ZOWhaUQCJBo",
+          "label": "シニア＆超初心者のための「AI入門」Gemini（ジェミニ）を使ってみよう！ - シニア＆超初心者のためのスマホ寺子屋 by スマホアドバイザーはーにゃ",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ZOWhaUQCJBo/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-31JiybBMlck",
+      "evidence": [
+        "manapick/content/videos.json#31JiybBMlck.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "31JiybBMlck",
+          "label": "【無料で使える】GoogleのAIアプリ「Gemini ジェミニ」使い方｜初心者必見",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/31JiybBMlck/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-o5kXK5JvIt8",
+      "evidence": [
+        "manapick/content/videos.json#o5kXK5JvIt8.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "o5kXK5JvIt8",
+          "label": "【2026最新！】Google最強AI「Gemini」使い方/全機能/活用法を徹底解説！超初心者さんOK！(資料・プロンプト付き)",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/o5kXK5JvIt8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-n6T4a_AKldc",
+      "evidence": [
+        "manapick/content/videos.json#n6T4a_AKldc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "n6T4a_AKldc",
+          "label": "【脱初心者】非エンジニアでもわかる2026年最強生成AI「Claude」を完全解説します",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/n6T4a_AKldc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-cezk7NeCDm0",
+      "evidence": [
+        "manapick/content/videos.json#cezk7NeCDm0.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "cezk7NeCDm0",
+          "label": "Claude Code 超初心者 完全入門〜インストールから初タスクまで。Claude Coworkの使い方も説明",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/cezk7NeCDm0/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-lYOzkLEe3lI",
+      "evidence": [
+        "manapick/content/videos.json#lYOzkLEe3lI.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "lYOzkLEe3lI",
+          "label": "【2026年最新版】超初心者も簡単！ChatGPTの始め方・使い方をわかりやすく解説！無料版を使い倒したい人に【保存版】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/lYOzkLEe3lI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-CynusOl-YuQ",
+      "evidence": [
+        "manapick/content/videos.json#CynusOl-YuQ.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "CynusOl-YuQ",
+          "label": "まだChatGPT使ってるの？Google Geminiを使って30日で英語が話せる7ステップ勉強法",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/CynusOl-YuQ/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-tZLBaiN1EZg",
+      "evidence": [
+        "manapick/content/videos.json#tZLBaiN1EZg.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "tZLBaiN1EZg",
+          "label": "【厳選】知らないともったいない！ChatGPTの便利な使い方 TOP10",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/tZLBaiN1EZg/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-4RkObjgOpYI",
+      "evidence": [
+        "manapick/content/videos.json#4RkObjgOpYI.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "4RkObjgOpYI",
+          "label": "ChatGPTやClaude Codeと何が違う？非エンジニアでも使える「Cowork」の実践的な使い方を解説してみた",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/4RkObjgOpYI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-6dtfq6v049g",
+      "evidence": [
+        "manapick/content/videos.json#6dtfq6v049g.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "6dtfq6v049g",
+          "label": "【初心者向け】Geminiアプリ使い方解説！【iPhone / iPad / ジェミニ / Gemini Live】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/6dtfq6v049g/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-X5r-bif6ilY",
+      "evidence": [
+        "manapick/content/videos.json#X5r-bif6ilY.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "X5r-bif6ilY",
+          "label": "【MicrosoftのAI革命】企業で最も使われているCopilotのすごい使い方10選【プロンプト例文も解説！】【ChatGPT】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/X5r-bif6ilY/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-e_uClIWChtw",
+      "evidence": [
+        "manapick/content/videos.json#e_uClIWChtw.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "e_uClIWChtw",
+          "label": "【Claude Codeインストール設定】Claudeとは？始め方・使い方を初心者向けに徹底解説 #webst8",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/e_uClIWChtw/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-T5ry8nlFAkg",
+      "evidence": [
+        "manapick/content/videos.json#T5ry8nlFAkg.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "T5ry8nlFAkg",
+          "label": "【ChatGPT超えの成長】Google Gemini完全ガイド、2025年12月最新版！ この動画1本で使い方＆全機能を網羅！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/T5ry8nlFAkg/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-p5vDDRT2wBY",
+      "evidence": [
+        "manapick/content/videos.json#p5vDDRT2wBY.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "p5vDDRT2wBY",
+          "label": "シニア＆超初心者のための「AI入門」Gemini（ジェミニ）で文章を作ってみよう - シニア＆超初心者のためのスマホ寺子屋 by スマホアドバイザーはーにゃ",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/p5vDDRT2wBY/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-PY4ipuISyAc",
+      "evidence": [
+        "manapick/content/videos.json#PY4ipuISyAc.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "PY4ipuISyAc",
+          "label": "【超初心者向け】Geminiの始め方・使い方 〜Googleが作ったAI（人工知能）を体験〜▶︎スマホのトリセツ Android 第35回",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/PY4ipuISyAc/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-t8qGGN6wYH8",
+      "evidence": [
+        "manapick/content/videos.json#t8qGGN6wYH8.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "t8qGGN6wYH8",
+          "label": "【25分で完全解説】Claude Coworkで AI を「自分専用」にする方法。",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/t8qGGN6wYH8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-l_CwyLbEo_c",
+      "evidence": [
+        "manapick/content/videos.json#l_CwyLbEo_c.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "l_CwyLbEo_c",
+          "label": "【2025年最新】Geminiの使い方をゼロから初心者向けに解説！",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/l_CwyLbEo_c/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-_pI8iGXvyRI",
+      "evidence": [
+        "manapick/content/videos.json#_pI8iGXvyRI.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "_pI8iGXvyRI",
+          "label": "【最新20分で安心&最強に使い始められる】一番カンタンなClaude始め方・使い方 ・初期設定 ー 非エンジニア向け完全セットアップガイド🔰",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/_pI8iGXvyRI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "claude",
+          "label": "Claude",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/claude/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-Obpxflp5SFM",
+      "evidence": [
+        "manapick/content/videos.json#Obpxflp5SFM.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Obpxflp5SFM",
+          "label": "【ChatGPTはもう古い】知らないと乗り遅れる。Googleの最新AIが異次元クラス！ChatGPTを超えた「Gemini 3.0 Pro」と「Nano Banana Pro 」が凄すぎる",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Obpxflp5SFM/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-heAUeY2fy-s",
+      "evidence": [
+        "manapick/content/videos.json#heAUeY2fy-s.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "heAUeY2fy-s",
+          "label": "【Copilot活用術 Vol.2】徹底解説Copilot in Word/Excel/PowerPointのビジネス活用法／ポイントはツールの使い分け＆組み合わせ／すぐに使えるプロンプトの実用例",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/heAUeY2fy-s/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-hV4Yu6RiDmQ",
+      "evidence": [
+        "manapick/content/videos.json#hV4Yu6RiDmQ.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "hV4Yu6RiDmQ",
+          "label": "【実演あり】CopilotだけできるAI仕事術５選！AI活用して生産性が爆上がりする具体的なプロンプトや神活用も解説します!【業務効率化・中小企業】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/hV4Yu6RiDmQ/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-IK4cfGVowKI",
+      "evidence": [
+        "manapick/content/videos.json#IK4cfGVowKI.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "IK4cfGVowKI",
+          "label": "【Copilot TV】Copilot Chat - 実務テク 3 選　ユースフル x マイクロソフト コラボ企画",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/IK4cfGVowKI/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-CUWI_-1NumU",
+      "evidence": [
+        "manapick/content/videos.json#CUWI_-1NumU.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "CUWI_-1NumU",
+          "label": "PixelスマホのGeminiを使って声だけでできるスマホ操作の使い方まとめ！Geminiがスマホのお手伝いさんになる",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/CUWI_-1NumU/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-HuyOO_oxoic",
+      "evidence": [
+        "manapick/content/videos.json#HuyOO_oxoic.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "HuyOO_oxoic",
+          "label": "【Google Gemini Live】「音声通訳機能」たったワンタップの簡単操作ガイド",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/HuyOO_oxoic/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-JyvAvSm8CMQ",
+      "evidence": [
+        "manapick/content/videos.json#JyvAvSm8CMQ.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "JyvAvSm8CMQ",
+          "label": "【驚異的に便利！】Office＋Copilotの便利さを知ってください。これは業務効率化の神機能ですね。AIがいよいよやってきました。",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/JyvAvSm8CMQ/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-rSNN6dkzkB4",
+      "evidence": [
+        "manapick/content/videos.json#rSNN6dkzkB4.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "rSNN6dkzkB4",
+          "label": "【2024年最新版】CapCutでバズる動画作成全手順！Instagramリール作成・完全攻略ガイド（TikTok/YouTubeショートにもOK!）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/rSNN6dkzkB4/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "capcut",
+          "label": "CapCut",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/capcut/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-8ZtKgSNDYw8",
+      "evidence": [
+        "manapick/content/videos.json#8ZtKgSNDYw8.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "8ZtKgSNDYw8",
+          "label": "【完全版】Microsoft Copilotの活用方法完全ガイド",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/8ZtKgSNDYw8/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-xGJ8NuoAejA",
+      "evidence": [
+        "manapick/content/videos.json#xGJ8NuoAejA.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "xGJ8NuoAejA",
+          "label": "ジェミニの始め方｜Googleの無料AIをスマホアプリで使ってみよう【初心者向け】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/xGJ8NuoAejA/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "gemini",
+          "label": "Gemini",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/gemini/"
+        }
+      ]
+    },
+    {
+      "id": "metadata-Omk-B1_DumY",
+      "evidence": [
+        "manapick/content/videos.json#Omk-B1_DumY.sub"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "Omk-B1_DumY",
+          "label": "Windowsに搭載されている話題のAI「Copilot」って何？｜業務効率UP！パソコン時短スキル講座",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/Omk-B1_DumY/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        }
+      ]
+    },
+    {
+      "id": "takken-AETcTrEOu9A",
+      "evidence": [
+        "user-confirmed-2026-10-24",
+        "manapick/content/videos.json#AETcTrEOu9A"
+      ],
+      "nodes": [
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "AETcTrEOu9A",
+          "label": "【2026年宅建】今年の宅建に受かりたい人は絶対見て！１月から勉強を始めた人向けに合格までのロードマップを徹底解説します",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/AETcTrEOu9A/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "takken",
+          "label": "宅地建物取引士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/takken/"
+        }
+      ]
+    },
+    {
+      "id": "career-it-consultant",
+      "evidence": [
+        "career/content/jobs.ts#it-consultant",
+        "manapick/content/guides/generative-ai.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "chatgpt",
+          "scene": "たたき台作成と論点整理"
+        },
+        {
+          "tool": "copilot",
+          "scene": "文書・表計算作業の補助"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "it-consultant",
+          "label": "ITコンサルタント",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/it-consultant/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-passport",
+          "label": "ITパスポート",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-passport/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "g-kentei",
+          "label": "G検定",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/g-kentei/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "research-cited",
+          "label": "最新情報を出典つきで調べたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/research-cited/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "J9QdxiZb8P4",
+          "label": "【2025年最新版】超初心者OK！ChatGPTの使い方・基礎をわかりやすく解説！(資料付き)",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/J9QdxiZb8P4/"
+        }
+      ]
+    },
+    {
+      "id": "career-software-engineer",
+      "evidence": [
+        "career/content/jobs.ts#software-engineer",
+        "manapick/content/guides/python.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "github-copilot",
+          "scene": "コード候補と説明の補助"
+        },
+        {
+          "tool": "chatgpt",
+          "scene": "エラーの論点整理"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "software-engineer",
+          "label": "ソフトウェアエンジニア",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/software-engineer/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "github-copilot",
+          "label": "GitHub Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/github-copilot/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "fe",
+          "label": "基本情報技術者試験",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/fe/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-passport",
+          "label": "ITパスポート",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-passport/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "learn-coding",
+          "label": "プログラミングを学びながら作りたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/learn-coding/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "HCZNs3AyFM8",
+          "label": "【最新版】Python超入門講座（合併版）｜Pythonの超基本をたった1時間で",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/HCZNs3AyFM8/"
+        }
+      ]
+    },
+    {
+      "id": "career-data-analyst",
+      "evidence": [
+        "career/content/jobs.ts#data-analyst",
+        "manapick/content/guides/excel-data.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "notebooklm",
+          "scene": "資料を根拠付きで整理"
+        },
+        {
+          "tool": "chatgpt",
+          "scene": "分析観点の洗い出し"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "data-analyst",
+          "label": "データアナリスト",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/data-analyst/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "notebooklm",
+          "label": "NotebookLM",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/notebooklm/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-passport",
+          "label": "ITパスポート",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-passport/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "analyze-data",
+          "label": "表・データをAIで分析したい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/analyze-data/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "ok8-ekot_dc",
+          "label": "【40分で学習】Excel基本操作でこんなに分析できるって知ってた？｜Excelでデータ分析",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/ok8-ekot_dc/"
+        }
+      ]
+    },
+    {
+      "id": "career-web-marketer",
+      "evidence": [
+        "career/content/jobs.ts#web-marketer",
+        "manapick/content/guides/web-marketing.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "chatgpt",
+          "scene": "企画案の比較と下書き"
+        },
+        {
+          "tool": "canva",
+          "scene": "制作案のたたき台"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "web-marketer",
+          "label": "Webマーケター",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/web-marketer/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "canva",
+          "label": "Canva",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/canva/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-passport",
+          "label": "ITパスポート",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-passport/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "sns-copy",
+          "label": "SNS・広告のキャッチコピーを作りたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/sns-copy/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "kt5GIVHtCPM",
+          "label": "Webマーケティングとは？初心者がまず学ぶべき全体像をプロが紹介【9分で理解】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/kt5GIVHtCPM/"
+        }
+      ]
+    },
+    {
+      "id": "career-social-media-manager",
+      "evidence": [
+        "career/content/jobs.ts#social-media-manager",
+        "manapick/content/guides/web-marketing.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "canva",
+          "scene": "画像・短尺素材の制作補助"
+        },
+        {
+          "tool": "chatgpt",
+          "scene": "投稿案の比較"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "social-media-manager",
+          "label": "SNS運用担当",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/social-media-manager/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "canva",
+          "label": "Canva",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/canva/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "sns-copy",
+          "label": "SNS・広告のキャッチコピーを作りたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/sns-copy/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "kt5GIVHtCPM",
+          "label": "Webマーケティングとは？初心者がまず学ぶべき全体像をプロが紹介【9分で理解】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/kt5GIVHtCPM/"
+        }
+      ]
+    },
+    {
+      "id": "career-video-editor",
+      "evidence": [
+        "career/content/jobs.ts#video-editor",
+        "manapick/content/guides/video-editing.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "canva",
+          "scene": "短尺素材と字幕案の補助"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "video-editor",
+          "label": "動画編集者",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/video-editor/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "canva",
+          "label": "Canva",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/canva/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "edit-video-fast",
+          "label": "動画編集を字幕つきで早く終わらせたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/edit-video-fast/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "jSNPN5NnB_E",
+          "label": "【2025年最新】1本で丸わかり！初心者にも優しいYouTube動画編集のやり方【Premiere Pro】",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/jSNPN5NnB_E/"
+        }
+      ]
+    },
+    {
+      "id": "career-web-designer",
+      "evidence": [
+        "career/content/jobs.ts#web-designer",
+        "manapick/content/videos.json#sub=デザイン"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "canva",
+          "scene": "素材案の作成補助"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "web-designer",
+          "label": "Webデザイナー",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/web-designer/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "canva",
+          "label": "Canva",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/canva/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "webdesign-3",
+          "label": "ウェブデザイン技能検定3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/webdesign-3/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "blog-image",
+          "label": "ブログ・SNS用の画像がほしい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/blog-image/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "nVbhz29JMn8",
+          "label": "【初心者OK】無料Affinityだけでサムネイルを作る方法｜YouTube用デザイン講座",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/nVbhz29JMn8/"
+        }
+      ]
+    },
+    {
+      "id": "career-office-administration",
+      "evidence": [
+        "career/content/jobs.ts#office-administration",
+        "manapick/content/guides/office-skills.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "copilot",
+          "scene": "文書・表計算の補助"
+        },
+        {
+          "tool": "chatgpt",
+          "scene": "メール案の整理"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "office-administration",
+          "label": "一般事務・営業事務",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/office-administration/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "mos",
+          "label": "MOS",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/mos/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "it-passport",
+          "label": "ITパスポート",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/it-passport/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "reply-email",
+          "label": "メール・チャットの返信を時短したい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/reply-email/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "HAcJ4ldjdn4",
+          "label": "【初心者・自己流さん必見！】Word文書の基本（最適な作り方）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/HAcJ4ldjdn4/"
+        }
+      ]
+    },
+    {
+      "id": "career-accounting",
+      "evidence": [
+        "career/content/jobs.ts#accounting",
+        "manapick/content/guides/bookkeeping.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "copilot",
+          "scene": "集計式や説明文の補助"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "accounting",
+          "label": "経理",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/accounting/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "copilot",
+          "label": "Microsoft Copilot",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/copilot/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "boki-3",
+          "label": "日商簿記3級",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/boki-3/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "analyze-data",
+          "label": "表・データをAIで分析したい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/analyze-data/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "n3STyxX_Ixg",
+          "label": "FP3級爆速講義 #5 難しい公的年金のしくみを初学者でも基礎からスッキリ理解（ライフ）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/n3STyxX_Ixg/"
+        }
+      ]
+    },
+    {
+      "id": "career-english-sales-support",
+      "evidence": [
+        "career/content/jobs.ts#english-sales-support",
+        "manapick/content/guides/english.ts"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "deepl",
+          "scene": "翻訳案の比較"
+        },
+        {
+          "tool": "chatgpt",
+          "scene": "会話練習とメール案"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "english-sales-support",
+          "label": "英語を使う営業・カスタマーサポート",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/english-sales-support/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "deepl",
+          "label": "DeepL",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/deepl/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "toeic-lr",
+          "label": "TOEIC L&R",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/toeic-lr/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "translate-doc",
+          "label": "海外の資料やメールを正確に翻訳したい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/translate-doc/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DBUpkM6X-JM",
+          "label": "【何年かかる？】英語力ゼロからペラペラ英会話を独学で作る勉強法のロードマップ完全解説（40代/50代/初心者/留学なし純ジャパ/かっこいい）",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DBUpkM6X-JM/"
+        }
+      ]
+    },
+    {
+      "id": "career-registered-salesperson",
+      "evidence": [
+        "career/content/jobs.ts#registered-salesperson",
+        "manapick/content/videos.json#sub=登録販売者"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "chatgpt",
+          "scene": "学習用の問い作り（医療判断には使わない）"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "registered-salesperson",
+          "label": "登録販売者",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/registered-salesperson/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "touroku-hanbai",
+          "label": "登録販売者",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/touroku-hanbai/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "study-exam",
+          "label": "資格・テスト勉強を効率よくしたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/study-exam/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "DjC1h5FHc_I",
+          "label": "史上最高レベルかも？！【2025年　東海・北陸 ①】問題解説 プルメリア流　登録販売者　試験対策講座",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/DjC1h5FHc_I/"
+        }
+      ]
+    },
+    {
+      "id": "career-certified-care-worker",
+      "evidence": [
+        "career/content/jobs.ts#certified-care-worker",
+        "manapick/content/videos.json#sub=介護福祉士"
+      ],
+      "aiUseScenes": [
+        {
+          "tool": "chatgpt",
+          "scene": "学習内容の整理（個人・医療情報は入力しない）"
+        }
+      ],
+      "videoFallback": null,
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "certified-care-worker",
+          "label": "介護福祉士",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/certified-care-worker/"
+        },
+        {
+          "site": "ai",
+          "kind": "tool",
+          "key": "chatgpt",
+          "label": "ChatGPT",
+          "kindLabel": "AIを選ぶ",
+          "url": "https://ai.manapick.app/tool/chatgpt/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "kaigo-fukushi",
+          "label": "介護福祉士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/kaigo-fukushi/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "study-exam",
+          "label": "資格・テスト勉強を効率よくしたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/study-exam/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "kNXEZgZbTrs",
+          "label": "【介護福祉士試験】社会の理解ー超入門　一発合格したければ、まずこれを見よ",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/kNXEZgZbTrs/"
+        }
+      ]
+    }
+  ]
+}

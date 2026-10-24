@@ -1,3 +1,4 @@
+import { amazonUrl } from "@/lib/network-shared";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,8 +50,8 @@ export default function ShopPage() {
 
     <section className="career-shop-grid" aria-label="掲載商品">
       {careerShopProducts.map((product) => <article className="career-shop-card" id={product.id} key={product.id}>
-        <a className="career-shop-image" href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`${product.name}をAmazonで確認（PR）`}><Image src={product.image} alt={product.imageAlt} width={900} height={560} sizes="(max-width: 760px) 100vw, (max-width: 1200px) 45vw, 430px" loading="eager"/><span>PR・Amazon</span><small>{product.imageCredit}</small></a>
-        <div className="career-shop-card-body"><div className="career-shop-meta"><span>{product.category}</span><small>{product.maker}</small></div><h2>{product.name}</h2><div className="career-shop-fit"><strong>こんな人・場面に</strong><p>{product.fit}</p></div><p>{product.reason}</p><div className="career-shop-checks"><strong>購入前に確認</strong><ul>{product.checks.map((check) => <li key={check}><BadgeCheck aria-hidden="true" />{check}</li>)}</ul></div><div className="career-shop-actions"><a className="career-shop-buy" href={product.amazonUrl} target="_blank" rel="sponsored nofollow noopener noreferrer">Amazonで型番・条件を確認 <ExternalLink aria-hidden="true" /></a><a className="career-shop-official" href={product.officialUrl} target="_blank" rel="noopener noreferrer">メーカー公式仕様 <ArrowUpRight aria-hidden="true" /></a></div></div>
+        <a className="career-shop-image" href={amazonUrl(product.amazonUrl)} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`${product.name}をAmazonで確認（PR）`}><Image src={product.image} alt={product.imageAlt} width={900} height={560} sizes="(max-width: 760px) 100vw, (max-width: 1200px) 45vw, 430px" loading="lazy"/><span>PR・Amazon</span><small>{product.imageCredit}</small></a>
+        <div className="career-shop-card-body"><div className="career-shop-meta"><span>{product.category}</span><small>{product.maker}</small></div><h2>{product.name}</h2><div className="career-shop-fit"><strong>こんな人・場面に</strong><p>{product.fit}</p></div><p>{product.reason}</p><div className="career-shop-checks"><strong>購入前に確認</strong><ul>{product.checks.map((check) => <li key={check}><BadgeCheck aria-hidden="true" />{check}</li>)}</ul></div><div className="career-shop-actions"><a className="career-shop-buy" href={amazonUrl(product.amazonUrl)} target="_blank" rel="sponsored nofollow noopener noreferrer">Amazonで型番・条件を確認 <ExternalLink aria-hidden="true" /></a><a className="career-shop-official" href={product.officialUrl} target="_blank" rel="noopener noreferrer">メーカー公式仕様 <ArrowUpRight aria-hidden="true" /></a></div></div>
       </article>)}
     </section>
 

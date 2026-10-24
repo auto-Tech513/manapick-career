@@ -1,0 +1,96 @@
+{
+  "id": "career",
+  "name": "manapick career",
+  "short": "career",
+  "role": "仕事につなぐ",
+  "description": "仕事内容から、次の学びを決める",
+  "url": "https://career.manapick.app/",
+  "sites": [
+    {
+      "id": "manapick",
+      "name": "manapick",
+      "short": "manapick",
+      "role": "学ぶ",
+      "description": "動画で作業の基礎を学ぶ",
+      "url": "https://manapick.app/"
+    },
+    {
+      "id": "ai",
+      "name": "manapick AI",
+      "short": "AI",
+      "role": "道具を選ぶ",
+      "description": "AIツールと目的別の使い方を選ぶ",
+      "url": "https://ai.manapick.app/"
+    },
+    {
+      "id": "license",
+      "name": "manapick license",
+      "short": "license",
+      "role": "証明する",
+      "description": "資格の要件と学習範囲を確認する",
+      "url": "https://license.manapick.app/"
+    },
+    {
+      "id": "career",
+      "name": "manapick career",
+      "short": "career",
+      "role": "仕事につなぐ",
+      "description": "仕事内容から、次の学びを決める",
+      "url": "https://career.manapick.app/"
+    }
+  ],
+  "nav": [
+    {
+      "href": "/all/",
+      "label": "職業を探す"
+    },
+    {
+      "href": "/route/",
+      "label": "入口案内"
+    },
+    {
+      "href": "/compare/",
+      "label": "比較"
+    },
+    {
+      "href": "/guide/",
+      "label": "ガイド"
+    },
+    {
+      "href": "/news/",
+      "label": "ニュース"
+    },
+    {
+      "href": "/research/",
+      "label": "データ室"
+    },
+    {
+      "href": "/skills/",
+      "label": "スキル"
+    },
+    {
+      "href": "/ranking/",
+      "label": "人気アクセス"
+    },
+    {
+      "href": "/shop/",
+      "label": "manapi商店"
+    },
+    {
+      "href": "/about-method/",
+      "label": "編集方針"
+    },
+    {
+      "href": "/faq/",
+      "label": "FAQ"
+    },
+    {
+      "href": "/glossary/",
+      "label": "用語集"
+    },
+    {
+      "href": "/contact/",
+      "label": "お問い合わせ"
+    }
+  ]
+}

@@ -1,6 +1,7 @@
+import settings from "./affiliate-settings.json";
 export const careerShopPolicy = {
   checkedAt: "2026-07-13",
-  associateTag: "saunastampral-22",
+  associateTag: settings.amazonTag,
   disclosure: "PR：Amazonのアソシエイトとして、manapickは適格販売により収入を得ています。",
   independence: "報酬額、承認状況、EPC、在庫、レビュー数を掲載順に使いません。価格・在庫・配送・仕様は購入前に販売ページとメーカー公式ページで確認してください。",
 };
@@ -19,7 +20,7 @@ export const careerShopProducts = [
     checks: ["会議用か1人録音用か", "USB-C / Bluetooth接続", "部屋の反響と設置位置"],
     sourceId: "anker-powerconf-s500-official",
     officialUrl: "https://www.ankerjapan.com/products/a3305",
-    amazonUrl: "https://www.amazon.co.jp/s?k=Anker+PowerConf+S500&tag=saunastampral-22",
+    amazonUrl: "https://www.amazon.co.jp/s?k=Anker+PowerConf+S500",
   },
   {
     id: "dell-u3225qe",
@@ -34,7 +35,7 @@ export const careerShopProducts = [
     checks: ["机の幅と視聴距離", "PCの映像出力", "必要なUSB・LAN端子"],
     sourceId: "dell-u3225qe-official",
     officialUrl: "https://www.dell.com/ja-jp/shop/u3225qe-monitor/apd/210-BQMM/monitors-monitor-accessories",
-    amazonUrl: "https://www.amazon.co.jp/s?k=Dell+U3225QE&tag=saunastampral-22",
+    amazonUrl: "https://www.amazon.co.jp/s?k=Dell+U3225QE",
   },
   {
     id: "stream-deck-neo",
@@ -49,7 +50,7 @@ export const careerShopProducts = [
     checks: ["自動化したい操作を3つ決める", "対応OS", "USB-C接続"],
     sourceId: "elgato-stream-deck-neo-official",
     officialUrl: "https://www.elgato.com/jp/ja/p/stream-deck-neo",
-    amazonUrl: "https://www.amazon.co.jp/dp/B0CWL3V6R8?tag=saunastampral-22",
+    amazonUrl: "https://www.amazon.co.jp/dp/B0CWL3V6R8",
   },
   {
     id: "sandisk-extreme-portable-ssd",
@@ -64,7 +65,7 @@ export const careerShopProducts = [
     checks: ["必要容量", "PC側のUSB仕様", "別のバックアップ先"],
     sourceId: "sandisk-extreme-official",
     officialUrl: "https://www.sandisk.com/ja-jp/products/ssd/external-ssd/portable-ssd-sandisk-extreme-usb-3-2?sku=61-200-25",
-    amazonUrl: "https://www.amazon.co.jp/s?k=SanDisk+Extreme+Portable+SSD&tag=saunastampral-22",
+    amazonUrl: "https://www.amazon.co.jp/s?k=SanDisk+Extreme+Portable+SSD",
   },
   {
     id: "mx-master-3s",
@@ -79,7 +80,7 @@ export const careerShopProducts = [
     checks: ["右手用形状と手の大きさ", "Bluetooth / Logi Bolt", "設定ソフトを使うか"],
     sourceId: "logicool-mx-master-3s-official",
     officialUrl: "https://press.logicool.co.jp/ja-jp/mx_master_3S/",
-    amazonUrl: "https://www.amazon.co.jp/s?k=Logicool+MX+Master+3S&tag=saunastampral-22",
+    amazonUrl: "https://www.amazon.co.jp/s?k=Logicool+MX+Master+3S",
   },
   {
     id: "flexispot-e7",
@@ -94,6 +95,6 @@ export const careerShopProducts = [
     checks: ["天板と部屋の奥行き", "体格に合う昇降範囲", "搬入と組み立て場所"],
     sourceId: "flexispot-e7-official",
     officialUrl: "https://www.flexispot.jp/standing-desk-E7-family",
-    amazonUrl: "https://www.amazon.co.jp/s?k=FLEXISPOT+E7+%E9%9B%BB%E5%8B%95%E6%98%87%E9%99%8D%E3%83%87%E3%82%B9%E3%82%AF&tag=saunastampral-22",
+    amazonUrl: "https://www.amazon.co.jp/s?k=FLEXISPOT+E7+%E9%9B%BB%E5%8B%95%E6%98%87%E9%99%8D%E3%83%87%E3%82%B9%E3%82%AF",
   },
 ] as const;
