@@ -429,6 +429,17 @@
       "method": "AI-readable-primary-source-comparison",
       "humanReview": false,
       "support": "556職業の職業概要・仕事内容・就業経路・労働条件・関連資格。2026-10-27再取得、既存の収録フィールドと全件一致。"
+    },
+    {
+      "id": "medicine-rules-2026",
+      "provider": "厚生労働省",
+      "title": "登録販売者制度の取扱い等：2026年10月1日適用の改正後全文",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00td0406&dataType=1&pageNo=1",
+      "kind": "institution",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false,
+      "support": "販売従事登録と店舗管理者の条件を区別。第1項(5)、第3項(1)、第4項(2)を参照。1年以上の従事期間と所定研修等による経路もあり、資格登録に一律24か月が必要とはしない。"
     }
   ]
 }

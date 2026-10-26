@@ -1,4 +1,6 @@
 import catalog from "./job-catalog.json";
+import corrections from "./occupation-corrections.json";
+import evidence from "./career-evidence.json";
 import publication from "./occupation-publication.json";
 import { createHash } from "node:crypto";
 
@@ -37,7 +39,7 @@ export const occupationDirectory: OccupationDirectoryEntry[] = catalog.occupatio
 }));
 export const occupationCatalogCategories = catalog.categories;
 export const occupationCatalogSource = catalog.source;
-export const occupationBriefVersion = createHash("sha256").update(JSON.stringify(catalog.occupations)).digest("hex").slice(0,12);
+export const occupationBriefVersion = createHash("sha256").update(JSON.stringify({occupations: catalog.occupations, corrections, evidence})).digest("hex").slice(0,12);
 export const occupationPublicationPolicy = publication.policy;
 export const occupationPublicationRecords = publication.records as OccupationPublicationRecord[];
 
