@@ -68,3 +68,8 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 /* Slider state stays visible with career gold, including on white surfaces. */
 .hero-slider-dots button::before{background:var(--muted)}
 .hero-slider-dots button.is-active::before{background:var(--primary-aa)}
+
+/* Keep secondary text legible on the career navy footer. */
+.site-footer .footer-note{color:var(--line)}
+/* Grid children must shrink to the 320px viewport, including long source text. */
+.detail-content{min-width:0;overflow-wrap:anywhere}
