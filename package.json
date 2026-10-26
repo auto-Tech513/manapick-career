@@ -31,14 +31,15 @@
     "links:check": "node scripts/audit-links.mjs --internal",
     "indexability:check": "node scripts/check-indexability.mjs",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check && npm run indexability:check",
+    "qa": "npm run theme:check && npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check && npm run indexability:check",
     "network:check": "node scripts/check-network.mjs",
     "network:audit": "python3 scripts/audit-network.py",
     "source:watch": "python3 scripts/source-watch.py",
     "source:watch:test": "python3 scripts/test-source-watch.py",
     "test:retention": "node --experimental-strip-types --test scripts/publication-retention.test.mjs",
     "test:analytics": "node --experimental-strip-types --test scripts/analytics-bootstrap.test.mjs",
-    "freshness:check": "node scripts/check-editorial.mjs"
+    "freshness:check": "node scripts/check-editorial.mjs",
+    "theme:check": "node scripts/check-theme.mjs"
   },
   "dependencies": {
     "@expo-google-fonts/biz-udpgothic": "0.4.2",

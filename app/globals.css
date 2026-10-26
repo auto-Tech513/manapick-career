@@ -784,13 +784,13 @@ main {
   margin-top: 1rem;
   padding: 0.9rem 1rem;
   border: 1px solid var(--line);
-  border-left: 4px solid var(--red);
-  border-radius: 4px 12px 12px 4px;
+  border-left: 1px solid var(--line);
+  border-radius: var(--radius-2);
   background: #fff;
 }
 .ai-deep-links > strong {
   display: block;
-  color: var(--navy);
+  color: var(--ink);
   font-size: 0.85rem;
 }
 .ai-deep-links > div {
@@ -804,7 +804,7 @@ main {
   align-items: center;
   gap: 0.25rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--ink);
 }
 .ai-deep-links a svg {
   width: 15px;

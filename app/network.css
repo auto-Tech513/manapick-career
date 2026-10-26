@@ -64,3 +64,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .archive-badge{display:inline-flex;width:fit-content;padding:4px 8px;border:1px solid var(--primary-aa);border-radius:8px;background:var(--primary-soft);color:var(--primary-aa);font-size:12px;font-weight:700}
 
 .claim-comparison-notice{margin:16px 0;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}.claim-comparison-notice h2{font-size:16px}.claim-comparison-notice p,.claim-comparison-notice li{font-size:13px;color:var(--muted)}.claim-comparison-notice a{color:var(--primary-aa);text-decoration:underline}
+
+/* Slider state stays visible with career gold, including on white surfaces. */
+.hero-slider-dots button::before{background:var(--muted)}
+.hero-slider-dots button.is-active::before{background:var(--primary-aa)}
