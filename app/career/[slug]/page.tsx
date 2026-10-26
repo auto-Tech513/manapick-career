@@ -13,6 +13,7 @@ import { categories, publishedJobs } from "@/content/jobs";
 import sourceRegistry from "@/content/source-registry.json";
 import { careerInsightBySlug } from "@/lib/career-insights";
 import { networkUrl } from "@/lib/network";
+import { AiDeepLinks } from "@/components/AiDeepLinks";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -168,6 +169,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
               <Resource title="仕事で使うAI" tone="red" items={job.ai.map((item) => ({ label: item.label, href: networkUrl(item.networkId), description: item.use }))} />
               <Resource title="関連資格を確認" tone="green" items={job.qualifications.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "公式要件と試験範囲を確認" }))} empty="必須と断定できる関連資格は設定していません。成果物と仕事の確認手順を優先します。" />
             </div>
+            <AiDeepLinks path={`/career/${job.slug}/`} />
             {insight.qualificationUses.length ? <div className="qualification-uses"><h3>licenseをどう活かす？</h3>{insight.qualificationUses.map((item) => { const qualification = job.qualifications.find((candidate) => candidate.networkId === item.networkId); return qualification ? <div key={item.networkId}><Link href={networkUrl(item.networkId)} target="_blank" rel="noopener noreferrer">{qualification.label}<ArrowUpRight aria-hidden="true" /></Link><dl><div><dt>転職で</dt><dd>{item.jobChangeUse}</dd></div><div><dt>社内で</dt><dd>{item.internalUse}</dd></div></dl></div> : null; })}</div> : null}
           </section>
 

@@ -39,17 +39,17 @@ export type CareerJob = {
 };
 
 const checkedAt = "2026-07-12";
-// AI comparison of the named claims only; never a human or viewing review date.
+// AI comparisons cover the named claims only; explicit per-claim dates from main remain authoritative.
 const primarySourceComparisons: Record<string, {date: string; id: string}> = {
   "registered-scope": {date: "2026-10-26", id: "registered-scope-20261026"},
   "care-route": {date: "2026-10-26", id: "care-route-20261026"},
 };
-const claim = (id: string, text: string, sourceIds: string[], critical = false): Claim => ({
+const claim = (id: string, text: string, sourceIds: string[], critical = false, lastCheckedAt = primarySourceComparisons[id]?.date ?? checkedAt): Claim => ({
   id,
   text,
   sourceIds,
-  lastCheckedAt: primarySourceComparisons[id]?.date ?? checkedAt,
-  ...(primarySourceComparisons[id] ? {verificationId: primarySourceComparisons[id].id} : {}),
+  lastCheckedAt,
+  ...(primarySourceComparisons[id]?.date === lastCheckedAt ? {verificationId: primarySourceComparisons[id].id} : {}),
   freshnessDays: critical ? 60 : 180,
   critical,
 });
@@ -135,11 +135,11 @@ export const jobs: CareerJob[] = [
   },
   {
     slug:"registered-salesperson",name:"登録販売者",category:"people-license",status:"published",
-    conclusion:["ドラッグストア等で、第2類・第3類の一般用医薬品の販売と情報提供を担う資格職です。","試験合格だけで終わらず、医薬品の安全な案内、店舗業務、継続的な制度確認が仕事の土台です。"],work:["購入者の状況を聞き、扱える範囲の一般用医薬品について説明します。","品出し、在庫・期限管理、発注、売場づくり、記録など店舗運営にも関わります。"],possibilities:["健康情報を正確に学び続けたい","相手の話を聞き、必要なら受診や薬剤師相談へつなげたい","接客と在庫管理の両方に取り組める"],cautions:["第1類医薬品は登録販売者だけでは販売できません。","試験・研修・店舗管理者要件などは都道府県と勤務先の最新案内を確認します。"],tasks:["購入者への確認","医薬品の情報提供","品出し","在庫・期限管理","発注","記録"],skills:["一般用医薬品の知識","説明と傾聴","法令順守","在庫管理","必要時の引き継ぎ"],learningSteps:["公式の試験範囲と自治体日程を確認する","人体と医薬品の基礎を学ぶ","過去問で弱点を確認する","販売時の確認・引き継ぎ場面を練習する"],qualifications:[{label:"登録販売者",networkId:"license:touroku-hanbai"}],ai:[{label:"ChatGPT",networkId:"ai:chatgpt",use:"学習用の問い作り（医療判断には使わない）"}],videos:[{label:"資格・検定ロードマップ",networkId:"learning:qualification"}],learningTime:"受験日から逆算しつつ、合格後の販売ルールと現場研修までを分けて計画します。",entrySkills:["公式試験案内の確認","医薬品分類","相談先への引き継ぎ"],learningLoad:"基礎から積む",sourceIds:["mhlw-jobtag-registered-sales","mhlw-medicine-sales"],checkedAt,author:"manapick career編集部",editor:"manapick編集責任者",editorNote:"制度変更の影響が大きいため、公開前と定期監査で厚労省・自治体情報を再確認。",editorReviewed:true,routeTags:["人と話す","資格で証明","週3時間以上"],claims:[claim("registered-scope","登録販売者は第2類・第3類一般用医薬品を販売できますが、第1類は薬剤師が扱います。",["mhlw-jobtag-registered-sales","mhlw-medicine-sales"],true)]
+    conclusion:["ドラッグストア等で、第2類・第3類の一般用医薬品の販売と情報提供を担う資格職です。","試験合格だけで終わらず、医薬品の安全な案内、店舗業務、継続的な制度確認が仕事の土台です。"],work:["購入者の状況を聞き、扱える範囲の一般用医薬品について説明します。","品出し、在庫・期限管理、発注、売場づくり、記録など店舗運営にも関わります。"],possibilities:["健康情報を正確に学び続けたい","相手の話を聞き、必要なら受診や薬剤師相談へつなげたい","接客と在庫管理の両方に取り組める"],cautions:["第1類医薬品は登録販売者だけでは販売できません。","試験・研修・店舗管理者要件などは都道府県と勤務先の最新案内を確認します。"],tasks:["購入者への確認","医薬品の情報提供","品出し","在庫・期限管理","発注","記録"],skills:["一般用医薬品の知識","説明と傾聴","法令順守","在庫管理","必要時の引き継ぎ"],learningSteps:["公式の試験範囲と自治体日程を確認する","人体と医薬品の基礎を学ぶ","過去問で弱点を確認する","販売時の確認・引き継ぎ場面を練習する"],qualifications:[{label:"登録販売者",networkId:"license:touroku-hanbai"}],ai:[{label:"ChatGPT",networkId:"ai:chatgpt",use:"学習用の問い作り（医療判断には使わない）"}],videos:[{label:"資格・検定ロードマップ",networkId:"learning:qualification"}],learningTime:"受験日から逆算しつつ、合格後の販売ルールと現場研修までを分けて計画します。",entrySkills:["公式試験案内の確認","医薬品分類","相談先への引き継ぎ"],learningLoad:"基礎から積む",sourceIds:["mhlw-jobtag-registered-sales","mhlw-medicine-sales"],checkedAt,author:"manapick career編集部",editor:"manapick編集責任者",editorNote:"制度変更の影響が大きいため、公開前と定期監査で厚労省・自治体情報を再確認。",editorReviewed:true,routeTags:["人と話す","資格で証明","週3時間以上"],claims:[claim("registered-scope","登録販売者は第2類・第3類一般用医薬品を販売できますが、第1類は薬剤師が扱います。",["mhlw-jobtag-registered-sales","mhlw-medicine-sales","egov-pmd-act-36-9"],true,"2026-10-26")]
   },
   {
     slug:"certified-care-worker",name:"介護福祉士",category:"people-license",status:"published",
-    conclusion:["生活に支援が必要な人の尊厳と安全を守り、日常生活を支える国家資格職です。","身体介護の技術だけでなく、観察、記録、多職種連携、本人の意思を尊重する姿勢が欠かせません。"],work:["食事、入浴、排泄、移動などを、本人の状態と希望に合わせて支援します。","変化を観察・記録し、家族や看護師、相談員などと情報を共有します。"],possibilities:["相手のペースを尊重して関われる","小さな変化を観察して共有できる","チームで支援方法を調整したい"],cautions:["身体的・心理的な負担や勤務形態を、職場見学や公式情報で具体的に確認します。","国家試験の受験資格には複数ルートがあり、実務経験だけで自動的に受験できるとは限りません。"],tasks:["生活支援","身体介護","状態観察","記録","家族対応","多職種連携"],skills:["介護技術","観察","対人援助","記録","感染・事故予防","チーム連携"],learningSteps:["資格取得ルートを公式図で確認する","介護の基礎と倫理を学ぶ","実習・現場で安全な介助を身につける","記録と連携を練習する"],qualifications:[{label:"介護福祉士",networkId:"license:kaigo-fukushi"}],ai:[{label:"ChatGPT",networkId:"ai:chatgpt",use:"学習内容の整理（個人・医療情報は入力しない）"}],videos:[{label:"資格・検定ロードマップ",networkId:"learning:qualification"}],learningTime:"取得ルートにより必要な学校・実務・研修が異なるため、公式のルート図から個別に計画します。",entrySkills:["介護の倫理","安全な介助の基礎","観察記録"],learningLoad:"継続的に積む",sourceIds:["mhlw-jobtag-care","sssc-care-worker"],checkedAt,author:"manapick career編集部",editor:"manapick編集責任者",editorNote:"資格要件と仕事理解を分け、試験センターの最新ルート確認を必須化。",editorReviewed:true,routeTags:["人を支える","資格で証明","週3時間以上"],claims:[claim("care-work","施設介護では生活支援、身体介護、観察・記録、多職種連携を行います。",["mhlw-jobtag-care"]),claim("care-route","介護福祉士国家試験の受験資格には養成施設、実務経験＋実務者研修、福祉系高校等のルートがあります。",["sssc-care-worker"],true)]
+    conclusion:["生活に支援が必要な人の尊厳と安全を守り、日常生活を支える国家資格職です。","身体介護の技術だけでなく、観察、記録、多職種連携、本人の意思を尊重する姿勢が欠かせません。"],work:["食事、入浴、排泄、移動などを、本人の状態と希望に合わせて支援します。","変化を観察・記録し、家族や看護師、相談員などと情報を共有します。"],possibilities:["相手のペースを尊重して関われる","小さな変化を観察して共有できる","チームで支援方法を調整したい"],cautions:["身体的・心理的な負担や勤務形態を、職場見学や公式情報で具体的に確認します。","国家試験の受験資格には複数ルートがあり、実務経験だけで自動的に受験できるとは限りません。"],tasks:["生活支援","身体介護","状態観察","記録","家族対応","多職種連携"],skills:["介護技術","観察","対人援助","記録","感染・事故予防","チーム連携"],learningSteps:["資格取得ルートを公式図で確認する","介護の基礎と倫理を学ぶ","実習・現場で安全な介助を身につける","記録と連携を練習する"],qualifications:[{label:"介護福祉士",networkId:"license:kaigo-fukushi"}],ai:[{label:"ChatGPT",networkId:"ai:chatgpt",use:"学習内容の整理（個人・医療情報は入力しない）"}],videos:[{label:"資格・検定ロードマップ",networkId:"learning:qualification"}],learningTime:"取得ルートにより必要な学校・実務・研修が異なるため、公式のルート図から個別に計画します。",entrySkills:["介護の倫理","安全な介助の基礎","観察記録"],learningLoad:"継続的に積む",sourceIds:["mhlw-jobtag-care","sssc-care-worker"],checkedAt,author:"manapick career編集部",editor:"manapick編集責任者",editorNote:"資格要件と仕事理解を分け、試験センターの最新ルート確認を必須化。",editorReviewed:true,routeTags:["人を支える","資格で証明","週3時間以上"],claims:[claim("care-work","施設介護では生活支援、身体介護、観察・記録、多職種連携を行います。",["mhlw-jobtag-care"]),claim("care-route","介護福祉士国家試験の受験資格には養成施設、実務経験＋実務者研修、福祉系高校等のルートがあります。",["sssc-care-worker"],true,"2026-10-26")]
   }
 ];
 

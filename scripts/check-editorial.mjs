@@ -1,4 +1,3 @@
-import { canRetainNewsArchive } from "../lib/news-archive-policy.mjs";
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -16,8 +15,6 @@ const networkResolverSource = read("lib/network.ts");
 const expandedGuides = json("content/guides-expanded.json");
 const expandedNews = json("content/news-expanded.json");
 const newsPublication = json("content/news-publication.json");
-const retainedPublicNews = json("content/retained-public-news.json");
-const strictFreshness = process.argv.includes("--strict-freshness");
 const claimRegistry = json("content/guide-claim-registry.json");
 const sourceRegistry = json("content/source-registry.json");
 const networkMap = json("content/network-map.json");
@@ -636,8 +633,6 @@ for (const record of publicationRecords) {
     if (validDate(record.reviewedAt) && validDate(record.publishedAt) && record.reviewedAt > record.publishedAt) failures.push(`news-publication/${record.slug}: 編集確認日がサイト公開日より後`);
     if (validDate(record.reviewedByHumanAt) && validDate(record.publishedAt) && record.reviewedByHumanAt > record.publishedAt) failures.push(`news-publication/${record.slug}: 人による確認日がサイト公開日より後`);
     if (record.reviewEvidence) validateGitReviewEvidence(record.reviewEvidence, `news-publication/${record.slug}`, record.reviewedByHumanAt);
-    const actualDigest = newsContentDigest(item);
-    const archiveAllowed = canRetainNewsArchive({ record, actualDigest, retention: retainedPublicNews, noticeAvailable: newsPage.includes('newsNeedsRefresh(item) ? <aside') && newsPage.includes('data-news-archive="true"') && newsPage.includes('role="note"') });
     const critical = item.kind === "賃金・労働時間" || item.kind === "雇用統計";
     const freshnessDays = critical ? 45 : 120;
     if (!validDate(item.checkedAt)) {
@@ -646,9 +641,10 @@ for (const record of publicationRecords) {
       failures.push(`news/${item.slug}: checkedAtが検査日より未来 (${item.checkedAt})`);
     } else if (freshnessIsExpired(item.checkedAt, freshnessDays)) {
       const message = `news/${item.slug}: 主張の鮮度期限超過 (${item.checkedAt}+${freshnessDays}日)`;
-      if (critical && (strictFreshness || !archiveAllowed)) failures.push(message);
-      else warnings.push(archiveAllowed ? `${message}（既存の公開済み記事：日付を維持し、期限超過を表示）` : message);
+      if (critical) failures.push(message);
+      else warnings.push(message);
     }
+    const actualDigest = newsContentDigest(item);
     if (!/^[0-9a-f]{64}$/i.test(String(record.contentSha256 ?? ""))) {
       failures.push(`news-publication/${record.slug}: published条件 contentSha256 なし（現在値 ${actualDigest}）`);
     } else if (record.contentSha256 !== actualDigest) {

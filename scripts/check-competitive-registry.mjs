@@ -1,13 +1,15 @@
-import { resolveContentCheckDate } from "../lib/content-check-date.mjs";
 import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
 const sites = JSON.parse(fs.readFileSync(path.join(root, "content/competitive-landscape.json"), "utf8"));
 const failures = [];
-const stale = [];
-const structureOnly = process.argv.includes("--structure-only");
-const today = resolveContentCheckDate(process.env.CONTENT_CHECK_DATE);
+const today = new Date(new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Tokyo",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+}).format(new Date()) + "T00:00:00+09:00");
 const maxAgeDays = 90;
 if (sites.length !== 100) failures.push(`競合・参照サイト登録数が${sites.length}件（100件必須）`);
 const ids = new Set();
@@ -27,12 +29,11 @@ for (const site of sites) {
     const ageDays = Math.floor((today.getTime() - checkedAt.getTime()) / 86_400_000);
     if (Number.isNaN(checkedAt.getTime())) failures.push(`${site.id}: 確認日が日付ではない`);
     else if (ageDays < 0) failures.push(`${site.id}: 確認日が未来 (${site.checkedAt})`);
-    else if (ageDays > maxAgeDays) (structureOnly ? stale : failures).push(`${site.id}: 確認から${ageDays}日経過（上限${maxAgeDays}日）`);
+    else if (ageDays > maxAgeDays) failures.push(`${site.id}: 確認から${ageDays}日経過（上限${maxAgeDays}日）`);
   }
 }
 const deep = sites.filter((site) => site.reviewDepth === "deep").length;
 if (deep < 20) failures.push(`深掘り確認が${deep}件（20件以上必須）`);
-if (stale.length) console.warn(`Historical research registry: ${stale.length} expired records; current site functionality is not reverified. Run competitive:check for strict freshness.\n${stale.join("\n")}`);
 if (failures.length) {
   console.error(failures.join("\n"));
   process.exit(1);
