@@ -1,19 +1,19 @@
 {
-  "batchId": "news-2026-07-25-30",
-  "preparedAt": "2026-07-25",
+  "batchId": "news-2026-10-26-reverify-30",
+  "preparedAt": "2026-10-26",
   "targetCount": 30,
   "status": "published",
   "publishedAt": "2026-07-26",
-  "approvedAt": "2026-07-25",
+  "approvedAt": "2026-10-26",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-  "authorizationNote": "Codexタスク上で「許可しますので公開してください」と明示的な公開許可を受領。対象はbatchId news-2026-07-25-30のslugs 30件",
-  "reviewDecision": "slugs 30件を公開承認",
+  "authorizationNote": "Claudeとのチャットで、公開中30件の一次資料再確認結果と修正内容（対象範囲・出所・用語の訂正、最新状況の追記）を提示し、「承認して公開」と明示的な公開許可を受領（2026-10-26）。対象はslugs 30件",
+  "reviewDecision": "slugs 30件の一次資料再確認と修正内容を公開承認",
   "reviewedScope": [
-    "各記事の一次資料、資料名、提供者、公表日、対象期間、対象者、集計単位",
-    "各記事のanswer、keyPoints、本文にある重要主張と数字の対象範囲",
-    "断定できないこと、読者が次に確認する条件、関連する姉妹サイト導線",
-    "1200×630pxのOG画像における日本語字形、改行、タイトル欠け",
-    "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止"
+    "各記事の一次資料（公表元ページ・PDF）を2026-10-26に再取得し、資料名、提供者、公表日、対象期間、対象者、集計単位を照合",
+    "answer、keyPoints、本文の数字と重要主張を一次資料の数値・定義と照合（不一致・対象範囲の誤りを修正）",
+    "移動・更新された出典URL（最新月ページ、404の論文概要）を固定の公表記録へ差し替え",
+    "公表後に変わった状況（確報公表、詳細報告書公開、申込受付終了、提出方法変更）を一次資料で確認して追記",
+    "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止と、再確認できなかった根拠の確認日据え置き（docs/news-reverification-2026-10-26.md）"
   ],
   "selectionPolicy": [
     "一次資料の公表日を確認できる",
@@ -71,5 +71,20 @@
     "overwork-compensation-2025",
     "ipa-dx-trends-2026",
     "care-worker-exam-39"
-  ]
+  ],
+  "previousBatch": {
+    "batchId": "news-2026-07-25-30",
+    "preparedAt": "2026-07-25",
+    "approvedAt": "2026-07-25",
+    "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
+    "authorizationNote": "Codexタスク上で「許可しますので公開してください」と明示的な公開許可を受領。対象はbatchId news-2026-07-25-30のslugs 30件",
+    "reviewDecision": "slugs 30件を公開承認",
+    "reviewedScope": [
+      "各記事の一次資料、資料名、提供者、公表日、対象期間、対象者、集計単位",
+      "各記事のanswer、keyPoints、本文にある重要主張と数字の対象範囲",
+      "断定できないこと、読者が次に確認する条件、関連する姉妹サイト導線",
+      "1200×630pxのOG画像における日本語字形、改行、タイトル欠け",
+      "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止"
+    ]
+  }
 }

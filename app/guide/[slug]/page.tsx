@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, CalendarDays, Clock3 } from "lucide-react";
 import { EditorialArticle } from "@/components/EditorialArticle";
+import { AiDeepLinks } from "@/components/AiDeepLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { ShareKit } from "@/components/ShareKit";
 import { guideBySlug, guides } from "@/content/editorial";
@@ -29,5 +30,6 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <header className="page-heading article-heading"><span className="eyebrow">{guide.category}</span><h1>{guide.title}</h1><p>{guide.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
     <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />
     <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.networkLinks} estimateLabel="読む・試す目安"/>
+    <AiDeepLinks path={`/guide/${slug}/`} />
   </div></>;
 }

@@ -38,11 +38,12 @@ export type CareerJob = {
 };
 
 const checkedAt = "2026-07-12";
-const claim = (id: string, text: string, sourceIds: string[], critical = false): Claim => ({
+// 個別に一次資料を再確認した主張だけ、第5引数で確認日を上書きする（未再確認の主張は共通の確認日のまま）。
+const claim = (id: string, text: string, sourceIds: string[], critical = false, lastCheckedAt = checkedAt): Claim => ({
   id,
   text,
   sourceIds,
-  lastCheckedAt: checkedAt,
+  lastCheckedAt,
   freshnessDays: critical ? 60 : 180,
   critical,
 });
@@ -132,7 +133,7 @@ export const jobs: CareerJob[] = [
   },
   {
     slug:"certified-care-worker",name:"介護福祉士",category:"people-license",status:"published",
-    conclusion:["生活に支援が必要な人の尊厳と安全を守り、日常生活を支える国家資格職です。","身体介護の技術だけでなく、観察、記録、多職種連携、本人の意思を尊重する姿勢が欠かせません。"],work:["食事、入浴、排泄、移動などを、本人の状態と希望に合わせて支援します。","変化を観察・記録し、家族や看護師、相談員などと情報を共有します。"],possibilities:["相手のペースを尊重して関われる","小さな変化を観察して共有できる","チームで支援方法を調整したい"],cautions:["身体的・心理的な負担や勤務形態を、職場見学や公式情報で具体的に確認します。","国家試験の受験資格には複数ルートがあり、実務経験だけで自動的に受験できるとは限りません。"],tasks:["生活支援","身体介護","状態観察","記録","家族対応","多職種連携"],skills:["介護技術","観察","対人援助","記録","感染・事故予防","チーム連携"],learningSteps:["資格取得ルートを公式図で確認する","介護の基礎と倫理を学ぶ","実習・現場で安全な介助を身につける","記録と連携を練習する"],qualifications:[{label:"介護福祉士",networkId:"license:kaigo-fukushi"}],ai:[{label:"ChatGPT",networkId:"ai:chatgpt",use:"学習内容の整理（個人・医療情報は入力しない）"}],videos:[{label:"資格・検定ロードマップ",networkId:"learning:qualification"}],learningTime:"取得ルートにより必要な学校・実務・研修が異なるため、公式のルート図から個別に計画します。",entrySkills:["介護の倫理","安全な介助の基礎","観察記録"],learningLoad:"継続的に積む",sourceIds:["mhlw-jobtag-care","sssc-care-worker"],checkedAt,author:"manapick career編集部",editor:"manapick編集責任者",editorNote:"資格要件と仕事理解を分け、試験センターの最新ルート確認を必須化。",editorReviewed:true,routeTags:["人を支える","資格で証明","週3時間以上"],claims:[claim("care-work","施設介護では生活支援、身体介護、観察・記録、多職種連携を行います。",["mhlw-jobtag-care"]),claim("care-route","介護福祉士国家試験の受験資格には養成施設、実務経験＋実務者研修、福祉系高校等のルートがあります。",["sssc-care-worker"],true)]
+    conclusion:["生活に支援が必要な人の尊厳と安全を守り、日常生活を支える国家資格職です。","身体介護の技術だけでなく、観察、記録、多職種連携、本人の意思を尊重する姿勢が欠かせません。"],work:["食事、入浴、排泄、移動などを、本人の状態と希望に合わせて支援します。","変化を観察・記録し、家族や看護師、相談員などと情報を共有します。"],possibilities:["相手のペースを尊重して関われる","小さな変化を観察して共有できる","チームで支援方法を調整したい"],cautions:["身体的・心理的な負担や勤務形態を、職場見学や公式情報で具体的に確認します。","国家試験の受験資格には複数ルートがあり、実務経験だけで自動的に受験できるとは限りません。"],tasks:["生活支援","身体介護","状態観察","記録","家族対応","多職種連携"],skills:["介護技術","観察","対人援助","記録","感染・事故予防","チーム連携"],learningSteps:["資格取得ルートを公式図で確認する","介護の基礎と倫理を学ぶ","実習・現場で安全な介助を身につける","記録と連携を練習する"],qualifications:[{label:"介護福祉士",networkId:"license:kaigo-fukushi"}],ai:[{label:"ChatGPT",networkId:"ai:chatgpt",use:"学習内容の整理（個人・医療情報は入力しない）"}],videos:[{label:"資格・検定ロードマップ",networkId:"learning:qualification"}],learningTime:"取得ルートにより必要な学校・実務・研修が異なるため、公式のルート図から個別に計画します。",entrySkills:["介護の倫理","安全な介助の基礎","観察記録"],learningLoad:"継続的に積む",sourceIds:["mhlw-jobtag-care","sssc-care-worker"],checkedAt,author:"manapick career編集部",editor:"manapick編集責任者",editorNote:"資格要件と仕事理解を分け、試験センターの最新ルート確認を必須化。",editorReviewed:true,routeTags:["人を支える","資格で証明","週3時間以上"],claims:[claim("care-work","施設介護では生活支援、身体介護、観察・記録、多職種連携を行います。",["mhlw-jobtag-care"]),claim("care-route","介護福祉士国家試験の受験資格には養成施設、実務経験＋実務者研修、福祉系高校等のルートがあります。",["sssc-care-worker"],true,"2026-10-26")]
   }
 ];
 

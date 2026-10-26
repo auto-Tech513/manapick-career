@@ -1,0 +1,42 @@
+{
+  "/category/it-ai/": [
+    { "href": "https://ai.manapick.app/guide/ai-choose-basics/", "label": "初めてのAI選び" },
+    { "href": "https://ai.manapick.app/ranking/", "label": "AIランキング" }
+  ],
+  "/career/software-engineer/": [
+    { "href": "https://ai.manapick.app/category/code/", "label": "開発・コードのAI" },
+    { "href": "https://ai.manapick.app/guide/ai-coding-basics/", "label": "AIでプログラミング入門" }
+  ],
+  "/career/data-analyst/": [
+    { "href": "https://ai.manapick.app/use/analyze-data/", "label": "表・データをAIで分析したい" },
+    { "href": "https://ai.manapick.app/guide/ai-spreadsheet-analysis/", "label": "AIで表計算を分析する手順" }
+  ],
+  "/career/web-marketer/": [
+    { "href": "https://ai.manapick.app/use/write-blog/", "label": "ブログ記事を書きたい" },
+    { "href": "https://ai.manapick.app/guide/blog-writing-ai/", "label": "AIでブログ記事を書く手順" }
+  ],
+  "/career/social-media-manager/": [
+    { "href": "https://ai.manapick.app/use/sns-copy/", "label": "SNS・広告のキャッチコピーを作りたい" },
+    { "href": "https://ai.manapick.app/category/image/", "label": "画像のAI" }
+  ],
+  "/career/video-editor/": [
+    { "href": "https://ai.manapick.app/category/video/", "label": "動画のAI" },
+    { "href": "https://ai.manapick.app/use/edit-video-fast/", "label": "動画編集を字幕つきで早く終わらせたい" }
+  ],
+  "/career/web-designer/": [
+    { "href": "https://ai.manapick.app/category/image/", "label": "画像のAI" },
+    { "href": "https://ai.manapick.app/use/make-logo/", "label": "ロゴ・アイコンを作りたい" }
+  ],
+  "/career/office-administration/": [
+    { "href": "https://ai.manapick.app/use/make-minutes/", "label": "会議の議事録を作りたい" },
+    { "href": "https://ai.manapick.app/use/reply-email/", "label": "メール・チャットの返信を時短したい" }
+  ],
+  "/career/english-sales-support/": [
+    { "href": "https://ai.manapick.app/category/translate/", "label": "翻訳のAI" },
+    { "href": "https://ai.manapick.app/use/translate-doc/", "label": "海外の資料やメールを正確に翻訳したい" }
+  ],
+  "/guide/how-to-think-about-ai-and-work/": [
+    { "href": "https://ai.manapick.app/guide/ai-company-rule-checklist/", "label": "中小企業のAI利用ルール入門" },
+    { "href": "https://ai.manapick.app/guide/ai-free-vs-paid/", "label": "AIの無料版と有料版の違い" }
+  ]
+}
