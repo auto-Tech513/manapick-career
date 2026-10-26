@@ -1,3 +1,4 @@
+import claimComparisons from "@/content/claim-verification.json";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import networkMap from "@/content/network-map-shared.json";
 import { NetworkRelations } from "@/components/NetworkRelations";
@@ -104,6 +105,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
     <div className="detail-shell">
       <Breadcrumbs trail={[{name:"ホーム",path:"/"},{name:category?.label ?? job.category,path:`/category/${job.category}/`},{name:job.name,path:`/career/${job.slug}/`}]} />
       <Link className="back-link" href="/all/"><ArrowLeft aria-hidden="true" /> 職業一覧へ</Link>
+      {claimComparisons.filter(record=>record.careerSlug===job.slug).map(record=><aside className="claim-comparison-notice" key={record.id}><h2>制度説明の一部を一次資料と照合</h2><p>AIによる照合記録：{record.verifiedAt}。{record.scope} 人による確認や視聴確認の記録ではありません。</p><ul>{record.sources.map(source=><li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.supportingSummary}</a></li>)}</ul></aside>)}
 
       <header className="job-hero" id="summary">
         <div className="job-hero-main">

@@ -1,3 +1,4 @@
+import { canRetainNewsArchive } from "../lib/news-archive-policy.mjs";
 import fs from "node:fs";
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
@@ -15,6 +16,8 @@ const networkResolverSource = read("lib/network.ts");
 const expandedGuides = json("content/guides-expanded.json");
 const expandedNews = json("content/news-expanded.json");
 const newsPublication = json("content/news-publication.json");
+const retainedPublicNews = json("content/retained-public-news.json");
+const strictFreshness = process.argv.includes("--strict-freshness");
 const claimRegistry = json("content/guide-claim-registry.json");
 const sourceRegistry = json("content/source-registry.json");
 const networkMap = json("content/network-map.json");
@@ -494,7 +497,7 @@ if (!newsPage.includes("modifiedTime: modifiedAt") || !newsPage.includes("dateMo
 if (!newsPage.includes("${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}")) failures.push("ニュースOGキャッシュキーが公開・確認日の変更を保護していない");
 if (!newsIndexPage.includes('articleOgUrl("news", "index"') || !newsIndexPage.includes('url: absoluteUrl("/news/")')) failures.push("ニュース一覧のOGが自己URL・固有画像を使っていない");
 if (!newsIndexPage.includes("openGraph:") || !newsIndexPage.includes("twitter:")) failures.push("ニュース一覧にOG・Xカードのメタデータがない");
-if (!newsPage.includes("一次資料確認 {item.checkedAt}") || !newsPage.includes("公開前編集確認 {item.reviewedAt}")) failures.push("ニュース詳細で一次資料確認日と編集確認日を区別していない");
+if (!newsPage.includes("出典台帳の記録 {item.checkedAt}") || !newsPage.includes("公開台帳の記録 {item.reviewedAt}")) failures.push("ニュース詳細で一次資料確認日と編集確認日を区別していない");
 if (!sitemap.includes("new Date(newsModifiedAt(x))")) failures.push("ニュースsitemapのlastModifiedが公開・確認日の最新値ではない");
 if (!editorialSource.includes("claimIsFresh(claim)")) failures.push("ニュース公開判定が主張の鮮度期限をfail-closedで検査していない");
 if (!editorialSource.includes("networkLinksArePublishable(item.networkLinks)")) failures.push("ニュース公開判定がnetwork-map解決結果をfail-closedで検査していない");
@@ -633,6 +636,8 @@ for (const record of publicationRecords) {
     if (validDate(record.reviewedAt) && validDate(record.publishedAt) && record.reviewedAt > record.publishedAt) failures.push(`news-publication/${record.slug}: 編集確認日がサイト公開日より後`);
     if (validDate(record.reviewedByHumanAt) && validDate(record.publishedAt) && record.reviewedByHumanAt > record.publishedAt) failures.push(`news-publication/${record.slug}: 人による確認日がサイト公開日より後`);
     if (record.reviewEvidence) validateGitReviewEvidence(record.reviewEvidence, `news-publication/${record.slug}`, record.reviewedByHumanAt);
+    const actualDigest = newsContentDigest(item);
+    const archiveAllowed = canRetainNewsArchive({ record, actualDigest, retention: retainedPublicNews, noticeAvailable: newsPage.includes('newsNeedsRefresh(item) ? <aside') && newsPage.includes('data-news-archive="true"') && newsPage.includes('role="note"') });
     const critical = item.kind === "賃金・労働時間" || item.kind === "雇用統計";
     const freshnessDays = critical ? 45 : 120;
     if (!validDate(item.checkedAt)) {
@@ -641,10 +646,9 @@ for (const record of publicationRecords) {
       failures.push(`news/${item.slug}: checkedAtが検査日より未来 (${item.checkedAt})`);
     } else if (freshnessIsExpired(item.checkedAt, freshnessDays)) {
       const message = `news/${item.slug}: 主張の鮮度期限超過 (${item.checkedAt}+${freshnessDays}日)`;
-      if (critical) failures.push(message);
-      else warnings.push(message);
+      if (critical && (strictFreshness || !archiveAllowed)) failures.push(message);
+      else warnings.push(archiveAllowed ? `${message}（既存の公開済み記事：日付を維持し、期限超過を表示）` : message);
     }
-    const actualDigest = newsContentDigest(item);
     if (!/^[0-9a-f]{64}$/i.test(String(record.contentSha256 ?? ""))) {
       failures.push(`news-publication/${record.slug}: published条件 contentSha256 なし（現在値 ${actualDigest}）`);
     } else if (record.contentSha256 !== actualDigest) {

@@ -21,7 +21,7 @@ export function CareerBriefing() {
     <div className="briefing-grid">
       {lead
         ? <Link className="briefing-lead" href={`/news/${lead.slug}/`}><span><Newspaper aria-hidden="true" />注目の公式発表</span><small>{lead.kind}・{lead.publishedAt}</small><h3>{lead.title}</h3><p>{lead.answer}</p><em>解説を読む <ArrowRight aria-hidden="true" /></em></Link>
-        : <Link className="briefing-lead" href="/news/"><span><Newspaper aria-hidden="true" />公開前確認中</span><small>自動公開はしません</small><h3>一次資料と全主張を、人が確認しています。</h3><p>確認を終えた記事だけを公開します。準備中は、データ室で数字の読み方と限界を確認できます。</p><em>公開基準を見る <ArrowRight aria-hidden="true" /></em></Link>}
+        : <Link className="briefing-lead" href="/news/"><span><Newspaper aria-hidden="true" />公開前確認中</span><small>自動公開はしません</small><h3>公開条件を満たす記事を案内します。</h3><p>出典と掲載条件が記録された記事を案内します。準備中は、データ室で数字の読み方と限界を確認できます。</p><em>公開基準を見る <ArrowRight aria-hidden="true" /></em></Link>}
       <nav className="briefing-hubs" aria-label="キャリア情報のテーマ">{availableHubs.map((hub) => { const Icon = hub.icon; return <Link href={hub.href} key={hub.href}><Icon aria-hidden="true" /><span><strong>{hub.label}</strong><small>{hub.description}</small></span><ArrowRight aria-hidden="true" /></Link>; })}</nav>
     </div>
   </section>;

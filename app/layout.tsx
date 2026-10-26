@@ -30,7 +30,7 @@ export const metadata: Metadata={
   verification:process.env.NEXT_PUBLIC_GSC_VERIFICATION?{google:process.env.NEXT_PUBLIC_GSC_VERIFICATION}:undefined,
   other:{"google-adsense-account":"ca-pub-4108900975353940"},
 };
-export const viewport:Viewport={themeColor:"#ff4438",width:"device-width",initialScale:1,viewportFit:"cover"};
+export const viewport:Viewport={themeColor:"#ffd700",width:"device-width",initialScale:1,viewportFit:"cover"};
 
 const graph={"@context":"https://schema.org","@graph":[
   {"@type":"Organization","@id":absoluteUrl("/#organization"),name:"manapick",url:"https://manapick.app/",sameAs:["https://x.com/manapick_app"]},

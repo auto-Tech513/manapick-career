@@ -1,6 +1,6 @@
 /* Source: manapick AI app/globals.css, SiteHeader, Footer, ToolCard, Breadcrumbs (2026-10-24).
-   Career implementation of the common specification. Brand colours are confined to SVG marks and badges. */
-:root{--font-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui;--ink:#0e1117;--muted:#5b6675;--line:#e6e9ef;--bg:#f6f8fb;--surface:#fff;--primary:#ff4438;--primary-aa:#b92118;--primary-strong:#cc2418;--primary-dark:#cc2418;--primary-ink:#0e1117;--primary-soft:#fff1ef;--surface-soft:#f6f8fb;--bg-soft:#fff1ef;--accent:#ff4438;--radius-1:8px;--radius-2:12px;--radius-3:16px;--radius-4:24px;--radius:12px;--shadow-1:0 1px 2px #0e11170d;--shadow-2:0 6px 18px #0e111714,0 2px 4px #0e11170d;--shadow-card:none;--shadow-card-hover:none;--shadow-button:none;--shadow:none;--shadow-soft:var(--shadow-1);--shadow-line:none;--font-jp:var(--font-sans);--font-latin:var(--font-sans);--color-ai-red:#ff4438}
+   Career implementation of the common specification. Career colours follow the original career palette; layout primitives follow AI. */
+:root{--font-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui;--ink:#172033;--muted:#667085;--line:#e5e1d8;--bg:#fbfaf7;--surface:#fff;--primary:#ffd700;--primary-aa:#665500;--primary-strong:#665500;--primary-dark:#665500;--primary-ink:#14213d;--primary-soft:#fff8c7;--surface-soft:#fbfaf7;--bg-soft:#fff8c7;--accent:#ffd700;--radius-1:8px;--radius-2:12px;--radius-3:16px;--radius-4:24px;--radius:12px;--shadow-1:0 1px 2px #0e11170d;--shadow-2:0 6px 18px #0e111714,0 2px 4px #0e11170d;--shadow-card:none;--shadow-card-hover:none;--shadow-button:none;--shadow:none;--shadow-soft:var(--shadow-1);--shadow-line:none;--font-jp:var(--font-sans);--font-latin:var(--font-sans)}
 html body{font-family:var(--font-sans);color:var(--ink);background:var(--bg)}
 .mp-header{position:sticky;top:0;z-index:200;height:65px;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:none;color:var(--ink)}
 .mp-header-inner{display:flex;align-items:center;gap:12px;max-width:1320px;height:64px;margin:0 auto;padding:8px 20px;flex-wrap:nowrap}
@@ -55,3 +55,12 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 
 .site-footer .mp-brand{color:#fff!important}
 .crumbs span{display:inline-flex;align-items:center;gap:6px}.crumbs i{font-style:normal}.crumbs b{font-weight:700;color:var(--ink)}
+
+/* Career identity: gold actions with navy text; deep gold for text on light surfaces. */
+.btn.primary,.button.primary,.button:not(.secondary),.btn--primary,.button--primary{background:var(--primary);border-color:var(--primary-aa);color:var(--primary-ink)}
+.btn.primary:hover,.button.primary:hover,.button:not(.secondary):hover{background:var(--primary-soft);border-color:var(--primary-aa);color:var(--primary-ink)}
+.site-footer{background:var(--primary-ink)}
+
+.archive-badge{display:inline-flex;width:fit-content;padding:4px 8px;border:1px solid var(--primary-aa);border-radius:8px;background:var(--primary-soft);color:var(--primary-aa);font-size:12px;font-weight:700}
+
+.claim-comparison-notice{margin:16px 0;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}.claim-comparison-notice h2{font-size:16px}.claim-comparison-notice p,.claim-comparison-notice li{font-size:13px;color:var(--muted)}.claim-comparison-notice a{color:var(--primary-aa);text-decoration:underline}

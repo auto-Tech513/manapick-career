@@ -1,0 +1,42 @@
+[
+  {
+    "id": "registered-scope-20261026",
+    "careerSlug": "registered-salesperson",
+    "claimId": "registered-scope",
+    "verifiedAt": "2026-10-26",
+    "method": "AI-primary-source-comparison",
+    "humanReview": false,
+    "sources": [
+      {
+        "url": "https://shigoto.mhlw.go.jp/User/Occupation/Detail/448",
+        "supportingSummary": "職業の説明で、登録販売者の販売範囲を第2類・第3類、第1類を薬剤師のみと区別している。"
+      }
+    ],
+    "scope": "販売区分の説明だけを一次資料と照合。医薬品の使用判断や制度の全要件の確認ではない。",
+    "claimSha256": "df7f1908b0efb251ec89910f1c33f0433162c85c4a8913bfb8d80c6250dcb8a9",
+    "sourceBytesSha256": null,
+    "retrievalMethod": "web-tool-readable-primary-page"
+  },
+  {
+    "id": "care-route-20261026",
+    "careerSlug": "certified-care-worker",
+    "claimId": "care-route",
+    "verifiedAt": "2026-10-26",
+    "method": "AI-primary-source-comparison",
+    "humanReview": false,
+    "sources": [
+      {
+        "url": "https://www.sssc.or.jp/kaigo/shikaku/route.html",
+        "supportingSummary": "試験実施団体の受験資格ページに養成施設、実務経験と実務者研修、福祉系高校等の経路が示されている。"
+      },
+      {
+        "url": "https://www.sssc.or.jp/kaigo/shikaku/k_08_4.html",
+        "supportingSummary": "実務経験3年以上と実務者研修修了を合わせた受験資格の条件を示している。"
+      }
+    ],
+    "scope": "経路が複数存在するという説明を照合。個人の受験資格の判定や全経過措置の確認ではない。",
+    "claimSha256": "db17186a68d4c0000b9f348351846186810bd664177738fb21637d1833044aa3",
+    "sourceBytesSha256": null,
+    "retrievalMethod": "web-tool-readable-primary-page"
+  }
+]

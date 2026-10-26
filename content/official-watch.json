@@ -115,5 +115,37 @@
       "license",
       "career"
     ]
+  },
+  {
+    "id": "medicine-sales",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000082514.html",
+    "allowedHosts": [
+      "www.mhlw.go.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
+  },
+  {
+    "id": "care-worker-route",
+    "url": "https://www.sssc.or.jp/kaigo/shikaku/route.html",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
+  },
+  {
+    "id": "care-worker-training",
+    "url": "https://www.sssc.or.jp/kaigo/shikaku/k_08_4.html",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
+  },
+  {
+    "id": "care-worker-route-chart",
+    "url": "https://www.sssc.or.jp/kaigo/image/img_route_k.gif",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
   }
 ]

@@ -32,8 +32,8 @@ export function OccupationCatalog({ occupations, categories, detailedLinks }: {
 
   return <section className="catalog" aria-labelledby="catalog-title">
     <div className="catalog-intro">
-      <div><span className="eyebrow">job tag 解説系データ ver.7.01</span><h2 id="catalog-title">556職業の出典付き名録</h2><p>職業名・別名・分類を検索し、仕事内容は厚生労働省job tagの公式ページで確認できます。本サイトの個別解説は、人が公開条件を確認した職業だけに限定します。</p></div>
-      <div className="catalog-quality"><BookOpenCheck aria-hidden="true" /><span><strong>名称の広さと、解説の深さを分離</strong><small>未確認の定型詳細ページを量産せず、名録から公式情報または人が確認した独自解説へ案内します</small></span></div>
+      <div><span className="eyebrow">job tag 解説系データ ver.7.01</span><h2 id="catalog-title">556職業の出典付き名録</h2><p>職業名・別名・分類を検索し、仕事内容は厚生労働省job tagの公式ページで確認できます。本サイトの個別解説は、出典と固有の本文がある公開済みの職業に限定します。</p></div>
+      <div className="catalog-quality"><BookOpenCheck aria-hidden="true" /><span><strong>名称の広さと、解説の深さを分離</strong><small>未確認の定型詳細ページを量産せず、名録から公式情報または出典付きの独自解説へ案内します</small></span></div>
     </div>
     <div className="catalog-controls">
       <label className="search-box"><Search aria-hidden="true" /><span className="sr-only">職業名録を検索</span><input value={query} onChange={(event) => changeQuery(event.target.value)} placeholder="職業名・別名で検索" /></label>
@@ -47,7 +47,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks }: {
         <small>{categoryInfo?.label} <span>職業分類 {occupation.classificationCode}</span></small>
         <h3>{occupation.name}</h3>
         {occupation.aliases.length ? <p><span>別名</span>{occupation.aliases.slice(0, 3).join("、")}</p> : <p className="catalog-no-alias">job tag掲載名で確認できます</p>}
-        <div className="catalog-card-actions">{detail ? <Link className="catalog-detail" href={`/career/${detail}/`}><BadgeCheck aria-hidden="true" />人が確認した独自解説 <ArrowRight aria-hidden="true" /></Link> : <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer"><BookOpenCheck aria-hidden="true" />公式job tagで仕事内容を確認 <ArrowUpRight aria-hidden="true" /></a>}</div>
+        <div className="catalog-card-actions">{detail ? <Link className="catalog-detail" href={`/career/${detail}/`}><BadgeCheck aria-hidden="true" />出典付きの独自解説 <ArrowRight aria-hidden="true" /></Link> : <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer"><BookOpenCheck aria-hidden="true" />公式job tagで仕事内容を確認 <ArrowUpRight aria-hidden="true" /></a>}</div>
         <details><summary>学びにつなぐ</summary><div><a href="https://manapick.app/" target="_blank" rel="noopener noreferrer"><GraduationCap aria-hidden="true" />動画</a><a href="https://ai.manapick.app/" target="_blank" rel="noopener noreferrer"><Bot aria-hidden="true" />AI</a><a href="https://license.manapick.app/" target="_blank" rel="noopener noreferrer"><BadgeCheck aria-hidden="true" />資格</a></div></details>
       </article>;
     })}</div>

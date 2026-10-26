@@ -7,6 +7,7 @@ export type Claim = {
   lastCheckedAt: string;
   freshnessDays: number;
   critical?: boolean;
+  verificationId?: string;
 };
 
 export type CareerJob = {
@@ -38,11 +39,17 @@ export type CareerJob = {
 };
 
 const checkedAt = "2026-07-12";
+// AI comparison of the named claims only; never a human or viewing review date.
+const primarySourceComparisons: Record<string, {date: string; id: string}> = {
+  "registered-scope": {date: "2026-10-26", id: "registered-scope-20261026"},
+  "care-route": {date: "2026-10-26", id: "care-route-20261026"},
+};
 const claim = (id: string, text: string, sourceIds: string[], critical = false): Claim => ({
   id,
   text,
   sourceIds,
-  lastCheckedAt: checkedAt,
+  lastCheckedAt: primarySourceComparisons[id]?.date ?? checkedAt,
+  ...(primarySourceComparisons[id] ? {verificationId: primarySourceComparisons[id].id} : {}),
   freshnessDays: critical ? 60 : 180,
   critical,
 });
