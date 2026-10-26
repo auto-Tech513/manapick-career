@@ -1,19 +1,19 @@
 {
-  "batchId": "news-2026-10-26-reverify-30",
+  "batchId": "news-2026-10-26-latest-stats-3",
   "preparedAt": "2026-10-26",
-  "targetCount": 30,
+  "targetCount": 33,
   "status": "published",
   "publishedAt": "2026-07-26",
   "approvedAt": "2026-10-26",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-  "authorizationNote": "Claudeとのチャットで、公開中30件の一次資料再確認結果と修正内容（対象範囲・出所・用語の訂正、最新状況の追記）を提示し、「承認して公開」と明示的な公開許可を受領（2026-10-26）。対象はslugs 30件",
-  "reviewDecision": "slugs 30件の一次資料再確認と修正内容を公開承認",
+  "authorizationNote": "Claudeとのチャットで、最新統計（労働力調査・一般職業紹介状況の2026年8月分、毎月勤労統計の2026年8月分速報）の記事追加方針と、就職みらい研究所がメンテナンス中で確認できない状況を報告したうえで、運営者から「career.manapick.appの分も公開してください」と明示的な公開指示を受領（2026-10-26）。追加対象はslugs末尾の3件で、既存30件の承認内容は変更しない",
+  "reviewDecision": "既存30件に、2026-10-26に一次資料を確認した最新統計3件を加えて公開",
   "reviewedScope": [
-    "各記事の一次資料（公表元ページ・PDF）を2026-10-26に再取得し、資料名、提供者、公表日、対象期間、対象者、集計単位を照合",
-    "answer、keyPoints、本文の数字と重要主張を一次資料の数値・定義と照合（不一致・対象範囲の誤りを修正）",
-    "移動・更新された出典URL（最新月ページ、404の論文概要）を固定の公表記録へ差し替え",
-    "公表後に変わった状況（確報公表、詳細報告書公開、申込受付終了、提出方法変更）を一次資料で確認して追記",
-    "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止と、再確認できなかった根拠の確認日据え置き（docs/news-reverification-2026-10-26.md）"
+    "3件の一次資料（総務省統計局 統計メールニュースNo.1906と労働力調査8月分結果の概要PDF、厚生労働省 一般職業紹介状況令和8年8月分の本文と報道資料PDF、毎月勤労統計調査8月分結果速報PDF）を2026-10-26に取得し、公表日、対象月、集計単位を照合",
+    "answer、keyPoints、本文に記載したすべての数値（人数、倍率、金額、前年同月比、前月差、産業別・都道府県別の値）を一次資料の表と照合",
+    "比較の基準（原数値の前年同月差と季節調整値の前月差、名目と実質、規模5人以上と30人以上、共通事業所）を本文で取り違えていないことを確認",
+    "職業適性・採用可能性・年収・将来性を断定する表現がないこと、姉妹サイト（manapick、manapick AI、manapick license）への誘導が採用を保証しない書き方であることを確認",
+    "editorial:check（本文1,000字以上、長文段落の使い回しなし、記事間の独自本文類似度20%未満、OG改行）と全prebuildチェック、ビルドが通ることを確認"
   ],
   "selectionPolicy": [
     "一次資料の公表日を確認できる",
@@ -38,18 +38,6 @@
     {
       "slug": "labor-force-june-2026",
       "reason": "2026-08-02に追加した最新一次資料の候補。既存30件の公開承認バッチ後に作成され、人による全主張・リンク・OG確認とGit承認証跡が未記録のため次回レビューへ保留"
-    },
-    {
-      "slug": "labor-force-august-2026",
-      "reason": "2026-10-26に追加した最新一次資料の記事。人による全主張・リンク確認と公開承認の記録前のため下書き"
-    },
-    {
-      "slug": "job-openings-august-2026",
-      "reason": "2026-10-26に追加した最新一次資料の記事。人による全主張・リンク確認と公開承認の記録前のため下書き"
-    },
-    {
-      "slug": "monthly-earnings-august-2026",
-      "reason": "2026-10-26に追加した最新一次資料の記事。人による全主張・リンク確認と公開承認の記録前のため下書き"
     }
   ],
   "slugs": [
@@ -82,21 +70,111 @@
     "labor-data-before-career-decision-2026",
     "overwork-compensation-2025",
     "ipa-dx-trends-2026",
-    "care-worker-exam-39"
+    "care-worker-exam-39",
+    "labor-force-august-2026",
+    "job-openings-august-2026",
+    "monthly-earnings-august-2026"
   ],
   "previousBatch": {
-    "batchId": "news-2026-07-25-30",
-    "preparedAt": "2026-07-25",
-    "approvedAt": "2026-07-25",
+    "batchId": "news-2026-10-26-reverify-30",
+    "preparedAt": "2026-10-26",
+    "targetCount": 30,
+    "status": "published",
+    "publishedAt": "2026-07-26",
+    "approvedAt": "2026-10-26",
     "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-    "authorizationNote": "Codexタスク上で「許可しますので公開してください」と明示的な公開許可を受領。対象はbatchId news-2026-07-25-30のslugs 30件",
-    "reviewDecision": "slugs 30件を公開承認",
+    "authorizationNote": "Claudeとのチャットで、公開中30件の一次資料再確認結果と修正内容（対象範囲・出所・用語の訂正、最新状況の追記）を提示し、「承認して公開」と明示的な公開許可を受領（2026-10-26）。対象はslugs 30件",
+    "reviewDecision": "slugs 30件の一次資料再確認と修正内容を公開承認",
     "reviewedScope": [
-      "各記事の一次資料、資料名、提供者、公表日、対象期間、対象者、集計単位",
-      "各記事のanswer、keyPoints、本文にある重要主張と数字の対象範囲",
-      "断定できないこと、読者が次に確認する条件、関連する姉妹サイト導線",
-      "1200×630pxのOG画像における日本語字形、改行、タイトル欠け",
-      "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止"
-    ]
+      "各記事の一次資料（公表元ページ・PDF）を2026-10-26に再取得し、資料名、提供者、公表日、対象期間、対象者、集計単位を照合",
+      "answer、keyPoints、本文の数字と重要主張を一次資料の数値・定義と照合（不一致・対象範囲の誤りを修正）",
+      "移動・更新された出典URL（最新月ページ、404の論文概要）を固定の公表記録へ差し替え",
+      "公表後に変わった状況（確報公表、詳細報告書公開、申込受付終了、提出方法変更）を一次資料で確認して追記",
+      "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止と、再確認できなかった根拠の確認日据え置き（docs/news-reverification-2026-10-26.md）"
+    ],
+    "selectionPolicy": [
+      "一次資料の公表日を確認できる",
+      "本文がサイト基準の1,000字以上である",
+      "重要主張を一次資料のsourceIdへ結び付けている",
+      "調査対象・限界・読者が次に確認する行動を記載している",
+      "職業適性・採用可能性・年収・将来性を断定しない"
+    ],
+    "excluded": [
+      {
+        "slug": "reskilling-support-2026",
+        "reason": "一次資料の公表日が未確認"
+      },
+      {
+        "slug": "jpsed-2026-survey-design",
+        "reason": "一次資料の公表日が未確認"
+      },
+      {
+        "slug": "career-break-white-paper-2025",
+        "reason": "30件の公開上限に合わせ、雇用統計・制度・職業横断の意思決定資料を優先し、経験者限定の個別テーマ調査は次回レビューへ保留"
+      },
+      {
+        "slug": "labor-force-june-2026",
+        "reason": "2026-08-02に追加した最新一次資料の候補。既存30件の公開承認バッチ後に作成され、人による全主張・リンク・OG確認とGit承認証跡が未記録のため次回レビューへ保留"
+      },
+      {
+        "slug": "labor-force-august-2026",
+        "reason": "2026-10-26に追加した最新一次資料の記事。人による全主張・リンク確認と公開承認の記録前のため下書き"
+      },
+      {
+        "slug": "job-openings-august-2026",
+        "reason": "2026-10-26に追加した最新一次資料の記事。人による全主張・リンク確認と公開承認の記録前のため下書き"
+      },
+      {
+        "slug": "monthly-earnings-august-2026",
+        "reason": "2026-10-26に追加した最新一次資料の記事。人による全主張・リンク確認と公開承認の記録前のため下書き"
+      }
+    ],
+    "slugs": [
+      "job-openings-may-2026",
+      "digital-skills-standard-v2-2026",
+      "manufacturing-midcareer-hiring-2026",
+      "labor-force-may-2026",
+      "labor-market-three-indicators-2026",
+      "monthly-earnings-may-2026",
+      "nominal-real-wages-2026",
+      "working-hours-may-2026",
+      "wage-structure-2025",
+      "wages-by-employment-type-2025",
+      "dx-self-assessment-1164-2026",
+      "dx-indicator-2026-revision",
+      "ai-explanation-survey-2000-2026",
+      "ai-explanation-at-work-2026",
+      "dx-award-2026-lessons",
+      "digital-talent-ai-era-2026",
+      "human-investment-panel-2026",
+      "telework-2016-2024",
+      "workplace-learning-ojt-offjt-2025",
+      "job-change-hope-reality-gap-2025",
+      "long-working-hours-2025",
+      "employment-whitepaper-2026",
+      "graduate-recruiting-process-2026",
+      "future-of-work-whitepaper-2026",
+      "japan-labor-chartbook-june-2026",
+      "digital-skills-across-occupations-2026",
+      "labor-data-before-career-decision-2026",
+      "overwork-compensation-2025",
+      "ipa-dx-trends-2026",
+      "care-worker-exam-39"
+    ],
+    "previousBatch": {
+      "batchId": "news-2026-07-25-30",
+      "preparedAt": "2026-07-25",
+      "approvedAt": "2026-07-25",
+      "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "authorizationNote": "Codexタスク上で「許可しますので公開してください」と明示的な公開許可を受領。対象はbatchId news-2026-07-25-30のslugs 30件",
+      "reviewDecision": "slugs 30件を公開承認",
+      "reviewedScope": [
+        "各記事の一次資料、資料名、提供者、公表日、対象期間、対象者、集計単位",
+        "各記事のanswer、keyPoints、本文にある重要主張と数字の対象範囲",
+        "断定できないこと、読者が次に確認する条件、関連する姉妹サイト導線",
+        "1200×630pxのOG画像における日本語字形、改行、タイトル欠け",
+        "公開面、sitemap、feed、llms.txt、JSON-LDへのdraft混入防止"
+      ]
+    }
   }
 }
