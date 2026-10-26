@@ -65,7 +65,7 @@
   {"id":"jinjibu","name":"日本の人事部","url":"https://jinjibu.jp/","category":"人事メディア","reviewDepth":"deep","checkedAt":"2026-10-26"},
   {"id":"hrpro","name":"HRプロ","url":"https://www.hrpro.co.jp/","category":"人事メディア","reviewDepth":"deep","checkedAt":"2026-10-26"},
   {"id":"works-i","name":"リクルートワークス研究所","url":"https://www.works-i.com/","category":"労働調査","reviewDepth":"deep","checkedAt":"2026-10-26"},
-  {"id":"shushoku-mirai","name":"就職みらい研究所","url":"https://shushokumirai.recruit.co.jp/","category":"採用調査","reviewDepth":"deep","checkedAt":"2026-07-14"},
+  {"id":"mynavi-career-research","name":"マイナビキャリアリサーチLab","url":"https://career-research.mynavi.jp/","category":"採用調査","reviewDepth":"surface","checkedAt":"2026-10-26"},
   {"id":"co-consortium","name":"キャリアオーナーシップとはたらく未来コンソーシアム","url":"https://co-consortium.persol-career.co.jp/","category":"働き方調査","reviewDepth":"deep","checkedAt":"2026-10-26"},
   {"id":"indeed-hiringlab","name":"Indeed Hiring Lab Japan","url":"https://www.hiringlab.org/jp/","category":"労働市場分析","reviewDepth":"deep","checkedAt":"2026-10-26"},
   {"id":"careerbreak-lab","name":"キャリアブレイク研究所","url":"https://careerbreak-lab.com/","category":"キャリア調査","reviewDepth":"deep","checkedAt":"2026-10-26"},
