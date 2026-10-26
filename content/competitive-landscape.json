@@ -1,5 +1,5 @@
 [
-  {"id":"jp-jobtag","name":"職業情報提供サイト job tag","url":"https://shigoto.mhlw.go.jp/","category":"公的職業情報","reviewDepth":"deep","checkedAt":"2026-07-14"},
+  {"id":"jp-jobtag","name":"職業情報提供サイト job tag","url":"https://shigoto.mhlw.go.jp/","category":"公的職業情報","reviewDepth":"deep","checkedAt":"2026-10-26"},
   {"id":"jp-jilpt","name":"労働政策研究・研修機構","url":"https://www.jil.go.jp/","category":"公的調査","reviewDepth":"deep","checkedAt":"2026-10-26"},
   {"id":"jp-mhlw-stats","name":"厚生労働統計一覧","url":"https://www.mhlw.go.jp/toukei/itiran/","category":"公的統計","reviewDepth":"deep","checkedAt":"2026-10-26"},
   {"id":"jp-mhlw-training","name":"厚生労働省 人材開発","url":"https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/index.html","category":"公的学習支援","reviewDepth":"deep","checkedAt":"2026-10-26"},
@@ -15,7 +15,7 @@
   {"id":"jp-jinji","name":"人事院","url":"https://www.jinji.go.jp/","category":"公務職業情報","reviewDepth":"surface","checkedAt":"2026-10-26"},
   {"id":"jp-jasso","name":"日本学生支援機構","url":"https://www.jasso.go.jp/","category":"公的学習支援","reviewDepth":"surface","checkedAt":"2026-10-26"},
   {"id":"jp-jeed","name":"高齢・障害・求職者雇用支援機構","url":"https://www.jeed.go.jp/","category":"公的就業支援","reviewDepth":"surface","checkedAt":"2026-10-26"},
-  {"id":"jp-polytech","name":"職業能力開発総合大学校 基盤整備センター","url":"https://www.tetras.uitec.jeed.go.jp/","category":"公的職業訓練","reviewDepth":"surface","checkedAt":"2026-07-14"},
+  {"id":"jp-polytech","name":"職業能力開発総合大学校 基盤整備センター","url":"https://www.uitec.jeed.go.jp/kiban/index.html","category":"公的職業訓練","reviewDepth":"surface","checkedAt":"2026-10-26"},
   {"id":"jp-shigoto-mirai","name":"しょくばらぼ","url":"https://shokuba.mhlw.go.jp/","category":"公的職場情報","reviewDepth":"surface","checkedAt":"2026-10-26"},
   {"id":"jp-wakamono","name":"若者雇用促進総合サイト","url":"https://wakamono-koyou-sokushin.mhlw.go.jp/search/service/top.action","category":"公的就業支援","reviewDepth":"surface","checkedAt":"2026-10-26"},
   {"id":"jp-manabi","name":"マナパス","url":"https://manapass.jp/","category":"公的社会人学習","reviewDepth":"surface","checkedAt":"2026-10-26"},
