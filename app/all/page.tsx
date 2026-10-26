@@ -7,8 +7,8 @@ import { humanReviewedSlugByOccupation, occupationDirectory, occupationCatalogCa
 import { publishedJobs } from "@/content/jobs";
 import { absoluteUrl } from "@/lib/site";
 
-const title = "job tag出典の556職業名録・確認済み職業解説";
-const description = "job tag解説系データから職業名・別名・分類を検索し、公式job tagまたは人が出典・学び・AI・資格を確認した独自解説へ進める職業名録です。";
+const title = "job tag出典の556職業名録・出典付き職業解説";
+const description = "job tag解説系データから職業名・別名・分類を検索し、公式job tagまたは出典・学び・AI・資格を示す独自解説へ進める職業名録です。";
 const image = absoluteUrl("/og.png");
 export const metadata: Metadata = { title, description, alternates: { canonical: "/all/" }, openGraph: { title, description, url: absoluteUrl("/all/"), type: "website", siteName: "manapick career", locale: "ja_JP", images: [{ url: image, width: 1200, height: 630, alt: "manapick career 職業名録" }] }, twitter: { card: "summary_large_image", title, description, images: [image] } };
 
@@ -20,8 +20,8 @@ export default function AllPage() {
   ] };
   return <><JsonLd data={graph}/><div className="page-shell wide occupation-directory">
     <nav className="breadcrumbs" aria-label="パンくず"><Link href="/">ホーム</Link><span>/</span><span aria-current="page">職業一覧</span></nav>
-    <header className="page-heading"><span className="eyebrow">556職業名録 / {publishedJobs.length}詳細解説</span><h1>職業を、名前と中身から探す</h1><p>名録は実在する職業名を探す入口です。詳細解説は、独自本文、公式出典、確認日、動画・AI・資格との接続、編集者確認が揃った職業だけを公開しています。</p></header>
+    <header className="page-heading"><span className="eyebrow">556職業名録 / {publishedJobs.length}詳細解説</span><h1>職業を、名前と中身から探す</h1><p>名録は実在する職業名を探す入口です。詳細解説は、独自本文、公式出典、出典の記録日、動画・AI・資格との接続がある公開済みの職業だけを公開しています。</p></header>
     <OccupationCatalog occupations={occupationDirectory} categories={occupationCatalogCategories} detailedLinks={humanReviewedSlugByOccupation} />
-    <section className="reviewed-jobs" aria-labelledby="reviewed-title"><div className="section-heading"><span className="eyebrow">human reviewed</span><h2 id="reviewed-title">人が確認した職業解説</h2><p>年収順・将来性順では並べません。仕事内容、必要スキル、入口、注意点を比較できます。</p></div><div className="job-grid">{publishedJobs.map((job) => <JobCard key={job.slug} job={job} />)}</div></section>
+    <section className="reviewed-jobs" aria-labelledby="reviewed-title"><div className="section-heading"><span className="eyebrow">source-linked</span><h2 id="reviewed-title">公開中の職業解説</h2><p>年収順・将来性順では並べません。仕事内容、必要スキル、入口、注意点を比較できます。</p></div><div className="job-grid">{publishedJobs.map((job) => <JobCard key={job.slug} job={job} />)}</div></section>
   </div></>;
 }

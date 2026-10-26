@@ -31,7 +31,7 @@
     "links:check": "node scripts/audit-links.mjs --internal",
     "indexability:check": "node scripts/check-indexability.mjs",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check && npm run indexability:check",
+    "qa": "npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:structure && npm run source:check && npm run similarity:check && npm run build && npm run links:check && npm run indexability:check",
     "network:check": "node scripts/check-network.mjs",
     "network:audit": "python3 scripts/audit-network.py",
     "source:watch": "python3 scripts/source-watch.py",
@@ -40,7 +40,8 @@
     "test:analytics": "node --experimental-strip-types --test scripts/analytics-bootstrap.test.mjs",
     "freshness:check": "node scripts/check-editorial.mjs --strict-freshness",
     "test:archive": "node --test scripts/news-archive-policy.test.mjs",
-    "competitive:structure": "node scripts/check-competitive-registry.mjs --structure-only"
+    "competitive:structure": "node scripts/check-competitive-registry.mjs --structure-only",
+    "qa:freshness": "npm run freshness:check && npm run competitive:check"
   },
   "dependencies": {
     "@expo-google-fonts/biz-udpgothic": "0.4.2",
