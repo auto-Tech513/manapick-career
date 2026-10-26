@@ -1,0 +1,20 @@
+import Link from 'next/link';
+import { ArrowUpRight } from 'lucide-react';
+import { careerEvidenceById, type CareerDossier } from '@/lib/career-dossiers';
+import { networkUrl } from '@/lib/network-shared';
+
+export function EvidenceLinks({ ids }: { ids: string[] }) {
+  return <p className="depth-evidence">根拠：{ids.map(id => { const item = careerEvidenceById.get(id); return item ? <a key={id} href={item.url} target="_blank" rel="noopener noreferrer">{item.provider}「{item.title}」<ArrowUpRight aria-hidden="true" /></a> : null; })}</p>;
+}
+export function WorkDepth({ dossier }: { dossier: CareerDossier }) {
+  return <div className="work-depth"><p className="depth-summary">{dossier.summary}</p><p className="section-lead">{dossier.scope}</p><div className="depth-context"><h3>担当範囲と、仕事を理解するポイント</h3>{dossier.context.map(text => <p key={text}>{text}</p>)}</div><h3>何をして、何を形にする仕事か</h3><ol className="work-stages">{dossier.workflow.map((step, index) => <li key={step.title}><span className="depth-step">{String(index + 1).padStart(2, '0')}</span><div><h4>{step.title}</h4><p>{step.activity}</p><dl><div><dt>作るもの・仕事の結果</dt><dd>{step.deliverable}</dd></div></dl></div></li>)}</ol><EvidenceLinks ids={dossier.sourceIds.filter(id => careerEvidenceById.get(id)?.kind === 'employer' || id === 'dataset')} /></div>;
+}
+export function FitDepth({ dossier }: { dossier: CareerDossier }) {
+  return <section id="fit" className="career-depth-section"><span className="section-num">FIT / INTEREST & WORK</span><h2>どんな人が向いている？ 作業から考える相性</h2><p className="section-lead">性格や属性から適性を判定するものではありません。公式の業務説明から、関心を持ちやすい作業と、その理由を整理しました。今できないことだけで、向いていないとは決まりません。</p><div className="fit-points">{dossier.fit.map(point => <div key={point.interest}><h3>{point.interest}</h3><p>{point.reason}</p></div>)}</div><h3>大変な部分・働く前に確かめたい条件</h3><ul className="depth-list">{dossier.frictions.map(text => <li key={text}>{text}</li>)}</ul><aside className="depth-exercise"><h3>相性を考えるために、小さく試す</h3><p>{dossier.exercise.task}</p><ul>{dossier.exercise.checkpoints.map(text => <li key={text}>{text}</li>)}</ul><small>仕事内容の理解のための練習案です。就業体験談や実施済みの成果ではありません。</small></aside></section>;
+}
+export function QualificationDepth({ dossier }: { dossier: CareerDossier }) {
+  return <section id="qualifications" className="career-depth-section"><span className="section-num">QUALIFICATIONS / PURPOSE & SCOPE</span><h2>どんな資格がある？ 必要な条件と学べる範囲</h2><p className="section-lead">職務に必要な資格・登録と、学習や技能の証明に使う資格を区別します。受験料や合格率から順位は付けず、担当したい仕事とのつながりを見ます。</p><div className="depth-qualifications">{dossier.qualifications.map(item => <article key={item.name}><span className="depth-label">{item.position}</span><h3>{item.name}</h3><dl><div><dt>仕事とどうつながるか</dt><dd>{item.learn}</dd></div><div><dt>資格だけでは示せないこと・注意点</dt><dd>{item.limits}</dd></div></dl><div className="depth-actions"><EvidenceLinks ids={[item.sourceId]} />{item.licensePath ? <Link href={networkUrl(`https://license.manapick.app${item.licensePath}`, 'career', `/career/${dossier.slug}/`)} target="_blank" rel="noopener noreferrer">manapick licenseで学習範囲を見る <ArrowUpRight aria-hidden="true" /></Link> : null}</div></article>)}</div>{dossier.slug === 'certified-care-worker' ? <EvidenceLinks ids={['care-route', 'care-registration']} /> : null}</section>;
+}
+export function EmployerDepth({ dossier }: { dossier: CareerDossier }) {
+  return <section id="employers" className="career-depth-section"><span className="section-num">COMPANIES / OFFICIAL JOB INFORMATION</span><h2>この仕事のある日本企業・企業グループの例</h2><p className="section-lead">企業自身が公開する職種・業務説明から選んだ例です。おすすめ順や採用可能性の順位ではありません。募集終了や配属条件の変更があるため、職種の存在と現在の募集は分けて確認してください。</p><div className="depth-employers">{dossier.employers.map(item => <article key={item.sourceId}><span className="depth-label">{item.role}</span><h3>{item.name}</h3><p>{item.description}</p><p className="employer-scope">{item.scope}</p><EvidenceLinks ids={[item.sourceId]} /></article>)}</div><p className="depth-record">掲載箇所のAIによる出典照合：{dossier.researchedAt}。企業への問い合わせや人による取材を行った記録ではありません。</p></section>;
+}

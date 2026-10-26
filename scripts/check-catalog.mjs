@@ -113,6 +113,7 @@ if (occupationPageText && (!occupationPageText.includes("publishedOccupationCata
 if (occupationPageText && (!occupationPageText.includes("publishedCatalogOccupation(id)") || !occupationPageText.includes("publishedOccupationRecord(id)"))) failures.push("occupation detail lookup must require a complete published record");
 if (!sitemapText.includes("publishedOccupationCatalog.map") || sitemapText.includes("...occupationCatalog.map")) failures.push("sitemap must exclude unreviewed occupation catalog entries");
 if (catalogComponentText.includes("href={`/occupation/${occupation.catalogId}/`}")) failures.push("directory cards must not link unreviewed entries to /occupation routes");
+if (!catalogComponentText.includes("OccupationBrief") || !catalogComponentText.includes("occupation.summary")) failures.push("directory must offer attributed on-site job explanations");
 if (!catalogComponentText.includes("occupationJobTagUrl(occupation.recordNumber)") || !catalogComponentText.includes("公式job tagで仕事内容を確認")) failures.push("directory cards need a clear official job tag fallback");
 if (llmsText.includes("個別詳細は /occupation/{id}/") || llmsText.includes("職業名・別名・分類・仕事内容・就くには・労働条件")) failures.push("llms.txt overstates unreviewed occupation detail coverage");
 if (jobsText.includes('name: "AI・DX推進担当"')) failures.push("obsolete AI・DX推進担当 remains published");

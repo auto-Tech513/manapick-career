@@ -6,7 +6,10 @@
     "downloadPage": "https://shigoto.mhlw.go.jp/User/download",
     "importedAt": "2026-07-13",
     "datasetUpdatedAt": "2026-04-27",
-    "usage": "職業名・別名・職業分類・職業解説・関連団体・関連資格を構造化。利用規約第9条に基づく二次利用として、出典・版・取込日を全詳細ページに表示します。写真・動画は使用していません。"
+    "usage": "解説系ダウンロードデータver.7.01を項目別に整形して名録内に表示。出典・版・取込記録日・再取得日・解説更新年を表示。独自の編集記事、現行制度の全件確認、視聴確認とは区別。写真・動画は利用しない。",
+    "retrievedAt": "2026-10-27",
+    "datasetUrl": "https://sgteprdstaplog01.blob.core.windows.net/web-app-contents/downloads/ver14/IPD_DL_description_7_01.csv",
+    "datasetSha256": "4742f29909fc611243ce6c7a21be1e71e4045d90cbd14b89e81e6034cb0a4574"
   },
   "categories": [
     {

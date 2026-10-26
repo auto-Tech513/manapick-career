@@ -14,12 +14,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python3 scripts/audit-network.py
+      - name: Check career job and qualification references
+        run: python3 scripts/audit-career-evidence.py
+      - name: Check four-site links
+        if: always()
+        run: python3 scripts/audit-network.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: four-site-link-evidence
           path: |
+            work/career-evidence-audit.json
             work/network-audit/*.json
             work/network-audit/*.csv
           retention-days: 30

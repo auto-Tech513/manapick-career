@@ -49,3 +49,6 @@ next-env.d.ts
 /app/globals [0-9]*.css
 /public/og [0-9]*.png
 /components/* [0-9]*.tsx
+
+# Attributed reading panels are deterministically generated before build.
+/public/data/occupation-briefs/

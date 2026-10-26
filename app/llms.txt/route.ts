@@ -13,7 +13,7 @@ export function GET() {
     "> 職業の仕事内容・必要スキル・学ぶ順番を公式情報から整理します。適性・採用可能性・年収・将来性は断定しません。",
     "",
     "## Occupation directory",
-    `- [job tag出典の${occupationCatalog.length}職業名録](${absoluteUrl("/all/")}): job tag解説系データver.7.01の職業名・別名・分類を検索し、job tag公式ページまたは出典付きの職業解説へ進むための単一ディレクトリ。適性や採用可能性は判定しません。`,
+    `- [job tag出典の${occupationCatalog.length}職業名録](${absoluteUrl("/all/")}): job tag解説系データver.7.01の職業名・別名・分類・概要を検索し、仕事内容・入職条件・労働条件・関連資格をページ内で開ける単一ディレクトリ。配布データと独自解説を区別。適性や採用可能性は判定しません。`,
     "",
     "## Published careers (source-linked)",
     ...publishedJobs.map((job) => `- [${job.name}](${absoluteUrl(`/career/${job.slug}/`)}): ${job.conclusion[0]}`),

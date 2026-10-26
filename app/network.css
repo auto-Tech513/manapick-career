@@ -73,3 +73,45 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .site-footer .footer-note{color:var(--line)}
 /* Grid children must shrink to the 320px viewport, including long source text. */
 .detail-content{min-width:0;overflow-wrap:anywhere}
+
+/* Career explanations are read here; references remain secondary actions. */
+.job-hero h1 small{font-size:14px;line-height:1.7;font-weight:600;color:var(--muted)}
+.depth-summary{font-size:17px;line-height:1.95;color:var(--ink)}
+.work-stages{list-style:none;padding:0;margin:24px 0;display:grid;gap:18px}
+.work-stages>li{display:flex;gap:16px;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
+.work-stages>li>div{min-width:0;flex:1}
+.depth-step{color:var(--primary-aa);font-size:14px;font-weight:800;flex:none;line-height:1.8}
+.work-stages h4{font-size:18px;margin:0 0 10px;font-weight:800;color:var(--ink)}
+.work-stages p,.career-depth-section p{line-height:1.9}
+.work-stages dl{margin:16px 0 0;padding:12px 0 0;border-top:1px solid var(--line)}
+.work-stages dt,.depth-qualifications dt{font-size:12px;font-weight:800;color:var(--primary-aa);margin-bottom:4px}
+.work-stages dd,.depth-qualifications dd{margin:0;line-height:1.9}
+.depth-evidence{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;font-size:12px!important;line-height:1.8!important;color:var(--muted)}
+.depth-evidence a{display:inline;overflow-wrap:anywhere;color:var(--primary-aa);text-decoration:underline}
+.depth-evidence svg,.depth-actions svg{display:inline;width:13px;height:13px;margin-left:3px;vertical-align:middle}
+.fit-points{display:grid;gap:18px;margin:24px 0}
+.fit-points>div{padding:0 0 18px;border-bottom:1px solid var(--line)}
+.fit-points h3{font-size:18px;line-height:1.65;margin:0 0 8px}
+.depth-list,.depth-exercise ul{padding-left:1.4em;line-height:1.95}
+.depth-list li,.depth-exercise li{margin:10px 0}
+.depth-exercise{margin:24px 0;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--primary-soft)}
+.depth-exercise h3{margin-top:0}.depth-exercise small{display:block;font-size:12px;line-height:1.8;color:var(--primary-ink)}
+.depth-qualifications,.depth-employers{display:grid;gap:18px;margin:24px 0}
+.depth-qualifications>article,.depth-employers>article{padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--surface);min-width:0;box-shadow:none}
+.depth-qualifications h3,.depth-employers h3{font-size:20px;margin:12px 0;line-height:1.6}
+.depth-label{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:4px 8px;font-size:12px;font-weight:700;line-height:1.6;color:var(--primary-aa);background:var(--primary-soft)}
+.depth-qualifications dl{display:grid;gap:16px;margin:16px 0}.depth-actions>a{font-size:13px;color:var(--primary-aa);text-decoration:underline}
+.employer-scope,.depth-record{font-size:12px!important;color:var(--muted);line-height:1.8!important}
+.catalog-card .catalog-work-summary{font-size:14px;line-height:1.8;min-height:0;color:var(--ink)}
+.catalog-card-actions{flex-wrap:wrap}
+.catalog-read{width:100%;min-height:44px;padding:10px 14px;border:1px solid var(--primary-aa);border-radius:8px;background:var(--primary);color:var(--primary-ink);font-size:13px;font-weight:800;cursor:pointer;text-align:left}
+.catalog-read:focus-visible{outline:3px solid var(--primary-aa);outline-offset:3px}
+.catalog-card.is-expanded{grid-column:1/-1}
+.occupation-brief{border-top:1px solid var(--line);margin-top:20px;padding-top:20px;max-width:880px;min-width:0;overflow-wrap:anywhere}
+.catalog-card .occupation-brief p{min-height:0;font-size:14px;line-height:1.95;color:var(--ink);max-width:76ch}
+.catalog-card .occupation-brief .brief-attribution,.catalog-card .occupation-brief .brief-vintage,.catalog-card .occupation-brief .brief-note{font-size:12px;line-height:1.85;color:var(--muted)}
+.brief-vintage{padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.brief-body section{padding:16px 0;border-bottom:1px solid var(--line)}
+.brief-body h4{font-size:18px;color:var(--ink);margin:0 0 12px;font-weight:800}
+.brief-body ul{padding-left:1.5em;font-size:14px;line-height:1.9}.occupation-brief>a{display:inline-flex;min-height:44px;align-items:center;font-size:13px;color:var(--primary-aa);text-decoration:underline}
+@media(max-width:600px){.work-stages>li{padding:16px;gap:10px}.work-stages h4{font-size:17px}.depth-qualifications>article,.depth-employers>article{padding:16px}.depth-summary{font-size:16px}.depth-qualifications h3,.depth-employers h3{font-size:18px}}
