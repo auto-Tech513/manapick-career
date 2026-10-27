@@ -3,7 +3,7 @@
 import { OccupationBrief } from "@/components/OccupationBrief";
 import { IncomeFigure } from "@/components/IncomeFigure";
 import type { IncomeStatistic } from "@/lib/occupation-income";
-import { useMemo, useState } from "react";
+import { startTransition, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BadgeCheck, BookOpenCheck, Bot, ChevronLeft, ChevronRight, GraduationCap, Search } from "lucide-react";
 import type { CatalogCategory, OccupationDirectoryEntry } from "@/content/catalog";
@@ -22,6 +22,10 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
   const [order, setOrder] = useState("familiar");
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
+  useEffect(() => {
+    const incoming = new URLSearchParams(window.location.search).get("q")?.trim();
+    if (incoming) startTransition(() => setQuery(incoming));
+  }, []);
   const [category, setCategory] = useState("all");
   const [page, setPage] = useState(1);
   const filtered = useMemo(() => {

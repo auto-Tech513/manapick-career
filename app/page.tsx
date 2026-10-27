@@ -1,6 +1,6 @@
 import { careerCard } from "@/lib/career-card";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Bot, CheckCircle2, GraduationCap, Search } from "lucide-react";
+import { ArrowRight, BadgeCheck, Bot, GraduationCap, Search } from "lucide-react";
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
 import { CareerBriefing } from "@/components/CareerBriefing";
@@ -10,18 +10,15 @@ import { HeroCareerSlider } from "@/components/HeroCareerSlider";
 import { publishedNews } from "@/content/editorial";
 
 import { ProfessionalEntries } from '@/components/ProfessionalEntries';
-import profiles from '@/content/professional-careers.json';
 export default function Home(){return <>
-  <section className="home-hero"><div className="home-hero-inner">
-    <div className="home-hero-copy"><span className="hero-eyebrow">manapick公式・職業情報</span><h1><span>仕事を知る。</span><mark>学ぶ道が決まる。</mark></h1><p>仕事内容・必要スキル・注意点を比べて、動画・AI・資格の学びへ。職業の順位付けや適性の断定はしません。</p>
-      <div className="hero-actions"><Link className="button primary" href="#jobs"><Search aria-hidden="true" />職業を探す</Link><Link className="button secondary" href="/route/">3問で入口案内 <ArrowRight aria-hidden="true" /></Link></div>
-      <div className="hero-trust"><span><CheckCircle2 aria-hidden="true" />556職業名録</span><span><CheckCircle2 aria-hidden="true" />公開中{publishedJobs.length + profiles.items.length}詳細</span><span><CheckCircle2 aria-hidden="true" />公式出典を表示</span><span><CheckCircle2 aria-hidden="true" />出典と作成方法を表示</span></div>
-      <nav className="hero-shortcuts" aria-label="職業情報の探し方"><Link href="/all/"><strong>556職業名録</strong><small>実在する職業名から探す</small><ArrowRight aria-hidden="true" /></Link><Link href="/ranking/"><strong>人気アクセス</strong><small>公式の関心順位を見る</small><ArrowRight aria-hidden="true" /></Link><Link href="/skills/"><strong>スキルから</strong><small>使う場面で整理する</small><ArrowRight aria-hidden="true" /></Link><Link href="/compare/"><strong>違いを比較</strong><small>2〜3職業を横並び</small><ArrowRight aria-hidden="true" /></Link></nav>
-    </div>
-    <HeroCareerSlider jobs={publishedJobs.slice(0, 6).map(careerCard)} />
-  </div></section>
-  <div className="page-shell wide"><ProfessionalEntries/></div>
+  <section className="home-hero"><div className="home-hero-inner"><div className="home-hero-copy">
+    <div className="career-search-intro"><div><span className="eyebrow">manapick career / 仕事を知る</span><h1>どんな仕事を<br className="home-heading-break"/>知りたいですか？</h1><p>仕事内容、資格、年収の統計を、出典とともに調べる。</p></div><Link href="/route/" className="home-route-link">迷ったら入口案内 <ArrowRight aria-hidden="true" /></Link></div>
+    <form className="home-search" action="/all/#catalog-title" method="get" role="search"><label className="sr-only" htmlFor="home-job-search">職業名・別名で検索</label><Search aria-hidden="true"/><input id="home-job-search" name="q" placeholder="例：看護師、税理士、デザイン"/><button type="submit">検索 <ArrowRight aria-hidden="true" /></button></form>
+    <nav className="home-discovery" aria-label="職業情報の探し方"><Link href="/all/">556職業から探す <ArrowRight aria-hidden="true"/></Link><Link href="/career/tax-accountant/">税理士</Link><Link href="/career/lawyer/">弁護士</Link><Link href="/career/nurse/">看護師</Link><Link href="/career/childcare-worker/">保育士</Link><Link href="/compare/">仕事を比べる</Link></nav>
+  </div></div></section>
+  <div className="home-profession-wrap"><ProfessionalEntries/></div>
   <CareerBriefing />
+  <section className="home-career-feature" aria-labelledby="career-feature-title"><div className="home-career-feature-intro"><span className="eyebrow">career / 職業を知る</span><h2 id="career-feature-title">仕事の中身から、<br/>次の一歩を考える。</h2><p>仕事の進め方や必要な学びを、一つずつ確認できます。</p><Link href="/all/">すべての職業を見る <ArrowRight aria-hidden="true" /></Link></div><HeroCareerSlider jobs={publishedJobs.slice(0, 6).map(careerCard)} /></section>
   <DailyCareerLoop latestNews={publishedNews[0]} />
   <div id="jobs" className="scroll-anchor" />
   <CareerExplorer jobs={publishedJobs.map(careerCard)} categories={categories.map(x=>({...x}))}/>
