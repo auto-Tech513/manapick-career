@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-27",
   "policy": "Metadata and existing editorial associations; no viewing or human-review claim. Null means no verified individual match.",
   "sites": {
     "manapick": "https://manapick.app",
@@ -6739,6 +6739,142 @@
           "label": "【介護福祉士試験】社会の理解ー超入門　一発合格したければ、まずこれを見よ",
           "kindLabel": "動画で学ぶ",
           "url": "https://manapick.app/video/kNXEZgZbTrs/"
+        }
+      ]
+    },
+    {
+      "id": "career-tax-accountant",
+      "evidence": [
+        "content/professional-careers.json",
+        "content/career-dossiers.json",
+        "existing exact license/video nodes; metadata association only"
+      ],
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "tax-accountant",
+          "label": "税理士",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/tax-accountant/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "zeirishi",
+          "label": "税理士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/zeirishi/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "WqI3CPrUeVE",
+          "label": "【税理士試験】簿記論合格までにやったこと全部公開！格安通信講座と独学で挑む社会人受験生",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/WqI3CPrUeVE/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "study-exam",
+          "label": "資格・テスト勉強を効率よくしたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/study-exam/"
+        }
+      ]
+    },
+    {
+      "id": "career-lawyer",
+      "evidence": [
+        "content/professional-careers.json",
+        "content/career-dossiers.json",
+        "existing exact license/video nodes; metadata association only"
+      ],
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "lawyer",
+          "label": "弁護士",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/lawyer/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "study-exam",
+          "label": "資格・テスト勉強を効率よくしたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/study-exam/"
+        }
+      ]
+    },
+    {
+      "id": "career-nurse",
+      "evidence": [
+        "content/professional-careers.json",
+        "content/career-dossiers.json",
+        "existing exact license/video nodes; metadata association only"
+      ],
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "nurse",
+          "label": "看護師",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/nurse/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "study-exam",
+          "label": "資格・テスト勉強を効率よくしたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/study-exam/"
+        }
+      ]
+    },
+    {
+      "id": "career-childcare-worker",
+      "evidence": [
+        "content/professional-careers.json",
+        "content/career-dossiers.json",
+        "existing exact license/video nodes; metadata association only"
+      ],
+      "nodes": [
+        {
+          "site": "career",
+          "kind": "career",
+          "key": "childcare-worker",
+          "label": "保育士",
+          "kindLabel": "仕事につなぐ",
+          "url": "https://career.manapick.app/career/childcare-worker/"
+        },
+        {
+          "site": "license",
+          "kind": "license",
+          "key": "hoikushi",
+          "label": "保育士",
+          "kindLabel": "資格で証明",
+          "url": "https://license.manapick.app/license/hoikushi/"
+        },
+        {
+          "site": "manapick",
+          "kind": "video",
+          "key": "oHD6WdVKJsY",
+          "label": "＜桜子先生のぷりてぃ講座＞保育士試験の正しい学習方法",
+          "kindLabel": "動画で学ぶ",
+          "url": "https://manapick.app/video/oHD6WdVKJsY/"
+        },
+        {
+          "site": "ai",
+          "kind": "use",
+          "key": "study-exam",
+          "label": "資格・テスト勉強を効率よくしたい",
+          "kindLabel": "目的別の使い方",
+          "url": "https://ai.manapick.app/use/study-exam/"
         }
       ]
     }

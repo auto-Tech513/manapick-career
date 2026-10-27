@@ -440,6 +440,149 @@
       "method": "AI-readable-primary-source-comparison",
       "humanReview": false,
       "support": "販売従事登録と店舗管理者の条件を区別。第1項(5)、第3項(1)、第4項(2)を参照。1年以上の従事期間と所定研修等による経路もあり、資格登録に一律24か月が必要とはしない。"
+    },
+    {
+      "id": "tax-registration",
+      "provider": "日本税理士会連合会",
+      "title": "登録に必要な提出書類等",
+      "url": "https://www.nichizeiren.or.jp/prospects/entry/doc/",
+      "kind": "institution",
+      "support": "税理士登録と試験合格・免除者の実務経験を証明する書類。資格職と補助職の区別。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "law-qualification",
+      "provider": "法務省",
+      "title": "弁護士資格認定制度",
+      "url": "https://www.moj.go.jp/housei/gaiben/housei07_00004.html",
+      "kind": "institution",
+      "support": "原則となる司法試験・司法修習と、資格認定の特例を案内。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "law-registration",
+      "provider": "法務省",
+      "title": "弁護士資格認定申請の手引",
+      "url": "https://www.moj.go.jp/content/001393386.pdf",
+      "kind": "institution",
+      "support": "弁護士資格がある場合でも日弁連の名簿への登録が必要である旨の説明。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "nurse-qualification",
+      "provider": "厚生労働省",
+      "title": "看護職を目指す方",
+      "url": "https://www.mhlw.go.jp/kango_kyouiku/become/index.html",
+      "kind": "institution",
+      "support": "看護師の役割と免許、養成経路、他の看護職との制度上の区別。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "childcare-qualification",
+      "provider": "こども家庭庁",
+      "title": "保育士になるには",
+      "url": "https://www.cfa.go.jp/policies/hoiku/hello_mirai/naruniha",
+      "kind": "institution",
+      "support": "指定養成施設・試験による資格取得と、保育士登録。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "nishimura-law",
+      "provider": "西村あさひ",
+      "title": "弁護士 中途採用",
+      "url": "https://careers.nishimura.com/ja/lawyer/recruit/career/",
+      "kind": "employer",
+      "support": "M&A、一般企業法務、知財・IT等を扱う弁護士の職場例。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "vbest-law",
+      "provider": "ベリーベスト法律事務所",
+      "title": "78期弁護士・経験弁護士",
+      "url": "https://www.vbest.jp/recruit/lawyer/lawyer_career/",
+      "kind": "employer",
+      "support": "法律事務所の弁護士の取扱い分野と募集条件。報酬実績を全国平均へ転用しない。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "ht-tax-work",
+      "provider": "辻・本郷 税理士法人",
+      "title": "業務紹介",
+      "url": "https://www.ht-tax.or.jp/recruit/occupation/",
+      "kind": "employer",
+      "support": "法人税務顧問、相続、事業承継等の業務領域。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "venture-tax",
+      "provider": "ベンチャーサポート税理士法人",
+      "title": "採用情報",
+      "url": "https://venture-support.biz/zei/recruit/",
+      "kind": "employer",
+      "support": "起業家支援と士業を含むコンサルティングの職場・育成紹介。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "tokushukai-nurse",
+      "provider": "徳洲会グループ 看護部",
+      "title": "採用情報・奨学金",
+      "url": "https://www.tokushukai.or.jp/kangobu/recruit/",
+      "kind": "employer",
+      "support": "看護部の募集案内と病院・施設での看護職。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "secom-nurse",
+      "provider": "セコム医療システム株式会社",
+      "title": "医療職一覧",
+      "url": "https://medical.secom.co.jp/careers/iryo/",
+      "kind": "employer",
+      "support": "自宅を訪問して看護を提供する看護職の案内。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "nihonhoiku-work",
+      "provider": "株式会社日本保育サービス",
+      "title": "新卒採用",
+      "url": "https://www.nihonhoiku-recruit.jp/new-graduate-recruit.html",
+      "kind": "employer",
+      "support": "保育士・総合職保育士の募集職種と保育方針。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
+    },
+    {
+      "id": "poppins-work",
+      "provider": "株式会社ポピンズエデュケア",
+      "title": "保育士・栄養士の新卒採用情報",
+      "url": "https://recruit.poppins.co.jp/educare/new-graduate/nursery/",
+      "kind": "employer",
+      "support": "保育士等の募集と教育・保育の方針。",
+      "accessedAt": "2026-10-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false
     }
   ]
 }

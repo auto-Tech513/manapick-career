@@ -18,15 +18,21 @@ import { networkUrl } from "@/lib/network";
 import { AiDeepLinks } from "@/components/AiDeepLinks";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
+import profiles from '@/content/professional-careers.json';
+import { ProfessionalCareerPage } from '@/components/ProfessionalCareerPage';
+import { CareerIncome } from '@/components/CareerIncome';
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return publishedJobs.map((job) => ({ slug: job.slug }));
+  return [...publishedJobs, ...profiles.items].map((job) => ({ slug: job.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const job = publishedJobs.find((item) => item.slug === slug);
+  const professional=profiles.items.find(item=>item.slug===slug);
+  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description:professional.summary,alternates:{canonical:`/career/${slug}/`},openGraph:{title,description:professional.summary,url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',images:[{url:image,width:1200,height:630,alt:title}]},twitter:{card:'summary_large_image',title,description:professional.summary,images:[image]}};}
   if (!job) return {};
   const title = `${job.name}の仕事内容・向いている人・資格・日本企業の例`;
   const description = `${job.name}は何をする仕事か。具体的な業務と成果物、作業から考える相性、資格の位置づけ、日本企業の公式職種例を、出典とともにcareer内で読めます。`;
@@ -52,6 +58,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function CareerPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const job = publishedJobs.find((item) => item.slug === slug);
+  if(profiles.items.some(item=>item.slug===slug)) return <ProfessionalCareerPage slug={slug}/>;
   const insight = careerInsightBySlug.get(slug);
   const dossier = careerDossierBySlug.get(slug);
   if (!job || !insight || !dossier) notFound();
@@ -127,6 +134,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
             <span className="section-num">01 / WORK & DELIVERABLES</span><h2>どういう仕事？ 実際の業務と成果物</h2>
             <WorkDepth dossier={dossier} />
           </section>
+          <CareerIncome slug={slug} />
           <FitDepth dossier={dossier} />
           <QualificationDepth dossier={dossier} />
           <EmployerDepth dossier={dossier} />
@@ -194,7 +202,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
 }
 
 function CareerToc() {
-  return <nav aria-label="このページの目次"><strong>このページで分かること</strong><a href="#summary">先に結論</a><a href="#work">仕事内容と成果物</a><a href="#fit">向いている人・相性</a><a href="#qualifications">資格と必要な条件</a><a href="#employers">日本企業の例</a><a href="#industry">業界と変化</a><a href="#differences">似た職業との違い</a><a href="#transition">転職準備の条件</a><a href="#application">転職・社内活用</a><a href="#learning">スキルと学ぶ順番</a><a href="#next-steps">動画・AI・資格</a><a href="#news">関連ニュース</a><a href="#sources">出典と確認方法</a></nav>;
+  return <nav aria-label="このページの目次"><strong>このページで分かること</strong><a href="#summary">先に結論</a><a href="#work">仕事内容と成果物</a><a href="#income">平均年収と統計の範囲</a><a href="#fit">向いている人・相性</a><a href="#qualifications">資格と必要な条件</a><a href="#employers">日本企業の例</a><a href="#industry">業界と変化</a><a href="#differences">似た職業との違い</a><a href="#transition">転職準備の条件</a><a href="#application">転職・社内活用</a><a href="#learning">スキルと学ぶ順番</a><a href="#next-steps">動画・AI・資格</a><a href="#news">関連ニュース</a><a href="#sources">出典と確認方法</a></nav>;
 }
 
 function Resource({ title, tone, items, empty }: { title: string; tone: string; items: { label: string; href: string; description: string }[]; empty?: string }) {

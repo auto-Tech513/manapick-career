@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "prebuild": "npm run catalog:briefs && npm run career-depth:check && npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
+    "prebuild": "npm run income:check && npm run catalog:briefs && npm run career-depth:check && npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
     "build": "next build --webpack",
     "postbuild": "node scripts/cleanup-empty-news-route.mjs",
     "start": "next dev --webpack",
@@ -31,7 +31,7 @@
     "links:check": "node scripts/audit-links.mjs --internal",
     "indexability:check": "node scripts/check-indexability.mjs",
     "links:network": "node scripts/audit-links.mjs --network",
-    "qa": "npm run catalog:briefs && npm run career-depth:check && npm run theme:check && npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check && npm run indexability:check",
+    "qa": "npm run income:check && npm run catalog:briefs && npm run career-depth:check && npm run theme:check && npm run og:generate && npm run lint && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run news-static:integration && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check && npm run build && npm run links:check && npm run indexability:check",
     "network:check": "node scripts/check-network.mjs",
     "network:audit": "python3 scripts/audit-network.py",
     "source:watch": "python3 scripts/source-watch.py",
@@ -42,7 +42,8 @@
     "theme:check": "node scripts/check-theme.mjs",
     "catalog:briefs": "node scripts/generate-occupation-briefs.mjs",
     "career-depth:check": "node scripts/check-career-depth.mjs",
-    "career-depth:network": "python3 scripts/audit-career-evidence.py"
+    "career-depth:network": "python3 scripts/audit-career-evidence.py",
+    "income:check": "python3 scripts/import-occupation-income.py --check && node scripts/check-income.mjs"
   },
   "dependencies": {
     "@expo-google-fonts/biz-udpgothic": "0.4.2",

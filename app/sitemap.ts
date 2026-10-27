@@ -3,12 +3,13 @@ import { categories, publishedJobs } from "@/content/jobs";
 import { guides, newsItems, newsModifiedAt } from "@/content/editorial";
 import { occupationCatalogSource, publishedOccupationCatalog, publishedOccupationRecord } from "@/content/catalog";
 import { absoluteUrl } from "@/lib/site";
+import profiles from '@/content/professional-careers.json';
 export const dynamic="force-static";
 
 const latest = (...dates: string[]) => dates.filter(Boolean).sort().at(-1);
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const latestJobCheck = latest(...publishedJobs.map((job) => job.checkedAt));
+  const latestJobCheck = latest(...publishedJobs.map((job) => job.checkedAt), ...profiles.items.map(job=>job.researchedAt));
   const latestGuideCheck = latest(...guides.map((guide) => guide.checkedAt));
   const latestNewsCheck = latest(...newsItems.map(newsModifiedAt));
   const latestEditorialCheck = latest(latestGuideCheck ?? "", latestNewsCheck ?? "");
@@ -42,7 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: absoluteUrl(`/occupation/${occupation.catalogId}/`),
       lastModified: new Date(publishedOccupationRecord(occupation.catalogId)?.reviewedByHumanAt ?? occupationCatalogSource.datasetUpdatedAt),
     })),
-    ...publishedJobs.map((job) => ({ url: absoluteUrl(`/career/${job.slug}/`), lastModified: new Date(job.checkedAt) })),
+    ...profiles.items.map(job=>({url:absoluteUrl(`/career/${job.slug}/`),lastModified:new Date(job.researchedAt)})),
+    ...publishedJobs.map((job) => ({ url: absoluteUrl(`/career/${job.slug}/`), lastModified: new Date(latest(job.checkedAt, ...profiles.items.map(item=>item.researchedAt))!) })),
     ...guides.map((guide) => ({ url: absoluteUrl(`/guide/${guide.slug}/`), lastModified: new Date(guide.checkedAt) })),
     ...newsItems.map((x) => ({ url: absoluteUrl(`/news/${x.slug}/`), lastModified: new Date(newsModifiedAt(x)) })),
   ];

@@ -9,15 +9,18 @@ import { EditorialPreview } from "@/components/EditorialPreview";
 import { HeroCareerSlider } from "@/components/HeroCareerSlider";
 import { publishedNews } from "@/content/editorial";
 
+import { ProfessionalEntries } from '@/components/ProfessionalEntries';
+import profiles from '@/content/professional-careers.json';
 export default function Home(){return <>
   <section className="home-hero"><div className="home-hero-inner">
     <div className="home-hero-copy"><span className="hero-eyebrow">manapick公式・職業情報</span><h1><span>仕事を知る。</span><mark>学ぶ道が決まる。</mark></h1><p>仕事内容・必要スキル・注意点を比べて、動画・AI・資格の学びへ。職業の順位付けや適性の断定はしません。</p>
       <div className="hero-actions"><Link className="button primary" href="#jobs"><Search aria-hidden="true" />職業を探す</Link><Link className="button secondary" href="/route/">3問で入口案内 <ArrowRight aria-hidden="true" /></Link></div>
-      <div className="hero-trust"><span><CheckCircle2 aria-hidden="true" />556職業名録</span><span><CheckCircle2 aria-hidden="true" />公開中{publishedJobs.length}詳細</span><span><CheckCircle2 aria-hidden="true" />公式出典を表示</span><span><CheckCircle2 aria-hidden="true" />出典と作成方法を表示</span></div>
+      <div className="hero-trust"><span><CheckCircle2 aria-hidden="true" />556職業名録</span><span><CheckCircle2 aria-hidden="true" />公開中{publishedJobs.length + profiles.items.length}詳細</span><span><CheckCircle2 aria-hidden="true" />公式出典を表示</span><span><CheckCircle2 aria-hidden="true" />出典と作成方法を表示</span></div>
       <nav className="hero-shortcuts" aria-label="職業情報の探し方"><Link href="/all/"><strong>556職業名録</strong><small>実在する職業名から探す</small><ArrowRight aria-hidden="true" /></Link><Link href="/ranking/"><strong>人気アクセス</strong><small>公式の関心順位を見る</small><ArrowRight aria-hidden="true" /></Link><Link href="/skills/"><strong>スキルから</strong><small>使う場面で整理する</small><ArrowRight aria-hidden="true" /></Link><Link href="/compare/"><strong>違いを比較</strong><small>2〜3職業を横並び</small><ArrowRight aria-hidden="true" /></Link></nav>
     </div>
     <HeroCareerSlider jobs={publishedJobs.slice(0, 6).map(careerCard)} />
   </div></section>
+  <div className="page-shell wide"><ProfessionalEntries/></div>
   <CareerBriefing />
   <DailyCareerLoop latestNews={publishedNews[0]} />
   <div id="jobs" className="scroll-anchor" />

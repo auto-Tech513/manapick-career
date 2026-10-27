@@ -55,12 +55,13 @@ for (const record of newsPublication.records.filter((item) => item.status !== "p
 
 const careerDir = path.join(out, "career");
 const careerEntries = (await fs.readdir(careerDir, { withFileTypes: true })).filter((entry) => entry.isDirectory());
+const professional = new Set(JSON.parse(await read('content/professional-careers.json')).items.map(item=>item.slug));
 for (const entry of careerEntries) {
   const slug = entry.name;
   const html = await fs.readFile(path.join(careerDir, slug, "index.html"), "utf8");
   const ogImage = html.match(/<meta property="og:image" content="([^"]+)"/i)?.[1] ?? "";
   if (!ogImage.startsWith(`${origin}/og/biz-udp-v1/career/${slug}.png`)) failures.push(`career/${slug}: unique large OG image missing`);
-  for (const anchor of ["summary", "industry", "work", "fit", "qualifications", "employers", "differences", "transition", "application", "learning", "next-steps", "news", "sources"]) {
+  for (const anchor of (professional.has(slug) ? ["summary","work","income","fit","qualifications","employers","next-steps","sources"] : ["income", "summary", "industry", "work", "fit", "qualifications", "employers", "differences", "transition", "application", "learning", "next-steps", "news", "sources"])) {
     if (!html.includes(`id="${anchor}"`)) failures.push(`career/${slug}: section id ${anchor} missing`);
     if (!html.includes(`href="#${anchor}"`)) failures.push(`career/${slug}: TOC link ${anchor} missing`);
   }

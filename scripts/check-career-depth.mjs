@@ -7,7 +7,9 @@ const [{publishedJobs},dossiers,evidence,catalog,network]=await Promise.all([loa
 const corrections=await read('occupation-corrections.json');
 const byId=new Map(evidence.sources.map(item=>[item.id,item]));
 assert.equal(byId.size,evidence.sources.length,'duplicate evidence ID');
-assert.deepEqual([...dossiers.items.map(x=>x.slug)].sort(),publishedJobs.map(x=>x.slug).sort(),'every published job needs a dossier');
+const professional=await read('professional-careers.json');
+for(const profile of professional.items){assert.equal(profile.humanReview,false);assert(catalog.occupations.some(row=>row.recordNumber===profile.recordNumber&&row.name===profile.name));}
+assert.deepEqual([...dossiers.items.map(x=>x.slug)].sort(),[...publishedJobs,...professional.items].map(x=>x.slug).sort(),'every published job needs a dossier');
 for(const source of evidence.sources){
  assert.equal(new URL(source.url).protocol,'https:');
  assert.equal(source.humanReview,false,'do not fabricate human review');

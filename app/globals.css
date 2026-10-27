@@ -3620,3 +3620,36 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .briefing-lead{border:1px solid var(--line);border-radius: var(--radius-2)}
 
 .route-banner .eyebrow,.related-careers .article-section-number,.learning-offer .article-section-number,.research-difference .eyebrow{color:var(--primary)}
+
+/* Official income: classification stays next to the figure at every viewport. */
+.professional-entries { margin: 36px 0; }
+.professional-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 16px; }
+.professional-grid > a { display:block; padding:20px; border:1px solid var(--line); border-radius:var(--radius-2); background:var(--surface); color:var(--ink); text-decoration:none; }
+.professional-grid h3 { margin:12px 0; font-size:22px; }
+.professional-grid p { font-size:14px; line-height:1.8; }
+.professional-grid strong { display:block; margin-top:16px; color:var(--primary-aa); font-size:13px; }
+.professional-grid > a:hover { border-color:var(--primary-aa); }
+.income-figure { margin:20px 0; padding:20px; border:1px solid var(--line); border-radius:var(--radius-2); background:var(--bg); font-style:normal; }
+.income-label { display:block; font-size:13px; font-weight:700; }
+.income-amount { display:block; font-size:30px; line-height:1.4; margin:6px 0; }
+.income-amount > span { font-size:14px; margin-left:6px; }
+.income-figure p { margin:8px 0; font-size:13px; line-height:1.7; }
+.income-classification { font-weight:700; }
+.income-note,.income-population { color:var(--muted); }
+.income-source { display:inline-block; font-size:12px; text-decoration:underline; }
+.income-basis { margin:18px 0; font-size:14px; }
+.income-basis > div { display:flex; justify-content:space-between; gap:16px; padding:9px 0; border-bottom:1px solid var(--line); }
+.income-basis dd { margin:0; flex-shrink:0; font-weight:700; }
+.income-figure.is-compact { padding:14px; margin:14px 0; }
+.is-compact .income-amount { font-size:26px; }
+.income-unavailable { display:block; margin:10px 0; font-size:18px; }
+.catalog-income-note,.income-method-panel { padding:20px; border:1px solid var(--line); border-radius:var(--radius-2); margin:24px 0; background:var(--surface); }
+.income-method-panel p,.income-method p { line-height:1.9; }
+.income-method summary { cursor:pointer; font-weight:700; padding:12px 0; }
+@media(max-width:900px) { .professional-grid {grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media(max-width:540px) { .professional-grid {grid-template-columns:1fr;} .income-basis > div {display:block;} .income-basis dd {margin-top:5px;} .income-figure {padding:16px;} }
+.catalog-quick-search {display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0;}
+.catalog-quick-search > span {width:100%;font-size:13px;font-weight:700;}
+.catalog-quick-search button {padding:8px 12px;border:1px solid var(--line);border-radius:var(--radius-1);background:var(--surface);color:var(--ink);font-size:13px;cursor:pointer;}
+.catalog-quick-search button:hover {border-color:var(--primary-aa);}
+.catalog-order select {display:block;margin-top:8px;max-width:100%;padding:10px;border:1px solid var(--line);border-radius:var(--radius-1);background:var(--surface);color:var(--ink);}

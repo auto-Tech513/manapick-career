@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import profiles from '@/content/professional-careers.json';
+export function ProfessionalEntries(){return <section className="professional-entries" id="professional"><div className="section-heading"><span className="eyebrow">士業・医療・保育</span><h2>身近な仕事を、具体的に知る</h2><p>業務、向いている作業、資格、日本企業・法人の例と、統計の範囲を明記した平均年収を読めます。</p></div><div className="professional-grid">{profiles.items.map(item=><Link key={item.slug} href={`/career/${item.slug}/`}><span className="category-label">{item.categoryLabel}</span><h3>{item.name}</h3><p>{item.summary.slice(0,item.summary.indexOf('。')+1)}</p><strong>仕事内容・資格・年収を見る →</strong></Link>)}</div></section>}
