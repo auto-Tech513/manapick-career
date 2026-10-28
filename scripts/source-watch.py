@@ -39,7 +39,16 @@ def check(source,cache):
  return result
 def main():
  parser=argparse.ArgumentParser();parser.add_argument('--config',default='content/official-watch.json');parser.add_argument('--cache',default='work/source-watch');parser.add_argument('--output',default='work/source-watch-report.json');args=parser.parse_args()
- sources=json.loads(Path(args.config).read_text());cache=Path(args.cache);cache.mkdir(parents=True,exist_ok=True)
+ sources=json.loads(Path(args.config).read_text())
+ if args.config=='content/official-watch.json':
+  # Include newly researched employer sources without requiring a second manual list.
+  registry=json.loads(Path('content/occupation-employers.json').read_text())
+  for occupation in registry['items']:
+   for i,employer in enumerate(occupation['employers'],1):
+    url=employer['source']['url'];host=urllib.parse.urlsplit(url).hostname
+    if urllib.parse.urlsplit(url).scheme!='https' or not host:raise ValueError('invalid employer source URL')
+    sources.append({'id':f"employer-{occupation['catalogId']}-{i}",'url':url,'allowedHosts':[host]})
+ cache=Path(args.cache);cache.mkdir(parents=True,exist_ok=True)
  with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:results=list(pool.map(lambda s:check(s,cache),sources))
  report={'generatedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'meaning':'Source bytes/text changed; meaning and article accuracy are not inferred. No human/viewing verification.','sources':results}
  out=Path(args.output);out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')

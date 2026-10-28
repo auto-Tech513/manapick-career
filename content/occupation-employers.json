@@ -1,0 +1,721 @@
+{
+  "schemaVersion": 1,
+  "method": "企業・法人自身が公開する職種・業務の記述に基づく例。求人の有無や採用可能性を示さない。",
+  "existingDossiers": [
+    {
+      "catalogId": "358",
+      "slug": "it-consultant"
+    },
+    {
+      "catalogId": "310",
+      "slug": "software-engineer"
+    },
+    {
+      "catalogId": "238",
+      "slug": "web-marketer"
+    },
+    {
+      "catalogId": "212",
+      "slug": "video-editor"
+    },
+    {
+      "catalogId": "322",
+      "slug": "web-designer"
+    },
+    {
+      "catalogId": "403",
+      "slug": "office-administration"
+    },
+    {
+      "catalogId": "405",
+      "slug": "accounting"
+    },
+    {
+      "catalogId": "423",
+      "slug": "registered-salesperson"
+    },
+    {
+      "catalogId": "91",
+      "slug": "tax-accountant"
+    },
+    {
+      "catalogId": "88",
+      "slug": "lawyer"
+    },
+    {
+      "catalogId": "155",
+      "slug": "nurse"
+    },
+    {
+      "catalogId": "130",
+      "slug": "childcare-worker"
+    }
+  ],
+  "items": [
+    {
+      "catalogId": "89",
+      "employers": [
+        {
+          "name": "有限責任 あずさ監査法人",
+          "role": "会計士",
+          "description": "監査法人で監査業務と付随業務を担う職種の例。",
+          "source": {
+            "title": "会計士定期採用の募集要項",
+            "url": "https://www.recruit.azsa.or.jp/information/recruiting/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "明治安田生命保険相互会社",
+          "role": "企業内公認会計士",
+          "description": "保険会社内で決算、監査法人・監督官庁への対応などに関わる職種の例。",
+          "source": {
+            "title": "公認会計士の職種紹介",
+            "url": "https://www.meijiyasuda-saiyo.com/career/job/accountant/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "83",
+      "employers": [
+        {
+          "name": "JFD司法書士法人",
+          "role": "司法書士業務",
+          "description": "不動産・法人登記などを扱う司法書士法人の業務例。",
+          "source": {
+            "title": "仕事を知る",
+            "url": "https://ss.jfd.jp/recruit/job/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "司法書士法人ふなざき総合事務所",
+          "role": "司法書士有資格者",
+          "description": "司法書士有資格者の職種を掲載する司法書士法人の例。",
+          "source": {
+            "title": "採用情報",
+            "url": "https://www.funazaki-office.com/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "84",
+      "employers": [
+        {
+          "name": "さむらい行政書士法人",
+          "role": "行政書士",
+          "description": "外国人の就労に関わる在留資格手続きなどを扱う行政書士法人の職種例。",
+          "source": {
+            "title": "中途行政書士の職種紹介",
+            "url": "https://samurai-law.com/recruiting/recruit/career/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "82",
+      "employers": [
+        {
+          "name": "社会保険労務士法人プロジェスト",
+          "role": "社会保険労務士",
+          "description": "人事労務相談や社会保険・労働保険の手続き等を担う法人の例。",
+          "source": {
+            "title": "採用情報",
+            "url": "https://www.proggest-sharou.or.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "社会保険労務士法人LIA",
+          "role": "社会保険労務士業務",
+          "description": "社会保険手続きや就業規則作成、給与計算などに関わる法人の例。",
+          "source": {
+            "title": "採用情報",
+            "url": "https://www.lia-office.com/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "157",
+      "employers": [
+        {
+          "name": "日本調剤株式会社",
+          "role": "薬剤師",
+          "description": "調剤薬局を展開し、薬剤師を採用している企業の例。",
+          "source": {
+            "title": "人材マネジメント",
+            "url": "https://www.nicho.co.jp/corporate/sustainability/esg/human/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "アイングループ",
+          "role": "薬剤師",
+          "description": "グループの調剤薬局で処方箋に対応する薬剤師の職種例。",
+          "source": {
+            "title": "アイン薬局 薬剤師求人について",
+            "url": "https://hrmos.co/pages/ain/jobs/0000007_2",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "26",
+      "employers": [
+        {
+          "name": "住友林業株式会社",
+          "role": "大工職",
+          "description": "企業内訓練校「住友林業建築技術専門校」の大工職養成訓練を修了した技能者が、木造住宅「住友林業の家」の建築・施工に携わる。",
+          "source": {
+            "title": "マネジメントシステムの導入と強化｜住友林業",
+            "url": "https://sfc.jp/information/sustainability/social/safety-health/management-system.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "45",
+      "employers": [
+        {
+          "name": "株式会社きんでん",
+          "role": "一般内線工事",
+          "description": "ビルや工場、ホテル、病院などの建物の電気設備をつくる仕事で、配管・配線工事、照明器具や通信機器の取付工事、監視・制御設備工事を行う。同社では電気工事士の資格取得を経て入社した社員が照明・コンセントの配線や点灯チェックを行う例も紹介されている。",
+          "source": {
+            "title": "一般内線工事 | 職種紹介 | 施工系採用 | 採用情報 [きんでん]",
+            "url": "https://www.kinden.co.jp/recruit/highschool/occupations/extension/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "58",
+      "employers": [
+        {
+          "name": "三井不動産リアルティ株式会社",
+          "role": "不動産仲介営業（総合職／リテール営業部・三井のリハウス）",
+          "description": "個人向け不動産売買仲介（「三井のリハウス」）の営業担当として、物件の査定書や重要事項説明書の作成、買主への物件案内、売主訪問、電話・メールでの物件紹介まで、担当顧客を最初から最後まで担う。",
+          "source": {
+            "title": "H.Y | 三井不動産リアルティ新卒採用サイト",
+            "url": "https://www.mf-realty.jp/recruit/shinsotsu/interview/hamada.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "115",
+      "employers": [
+        {
+          "name": "株式会社アッシュ（美容室アッシュ Ash）",
+          "role": "スタイリスト",
+          "description": "美容室チェーン「Ash」の店舗に勤務するスタイリストの例。同社の事業内容は美容業・美容フランチャイズチェーンの運営で、スタイリストの応募資格は美容師免許取得者とされている。",
+          "source": {
+            "title": "中途募集要項（スタイリスト・アシスタント） – 美容室アッシュ採用情報サイト｜Hair Make Ash",
+            "url": "https://www.ash-hair.com/recruit/entry/require02/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "131",
+      "employers": [
+        {
+          "name": "ＳＯＭＰＯケア株式会社",
+          "role": "ケアマネジャー",
+          "description": "ケアプランの作成と管理を主な業務とする職種として同社採用サイトが紹介している。施設で暮らす利用者を支える施設ケアマネジャーと、在宅生活を支える居宅ケアマネジャーの区分がある。",
+          "source": {
+            "title": "ケアマネジャーの業務内容 | 介護職・看護師の求人・転職なら「ＳＯＭＰＯケア」のキャリア（中途）採用サイト",
+            "url": "https://recruit.sompocare.com/staff/caremanager",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "ベネッセスタイルケア",
+          "role": "ケアマネジャー（介護支援専門員）",
+          "description": "利用者の身体や状況に応じて、適切なケアプラン（介護サービス計画書）を作成する役割を担う職種として同社介護採用サイトが説明している。",
+          "source": {
+            "title": "未経験・ブランクOKのケアマネジャー（介護支援専門員） 求人・転職情報|ベネッセスタイルケア介護採用サイト",
+            "url": "https://saiyo.benesse-style-care.co.jp/kaigo/job/search/condition_inexperienced/license_cm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "132",
+      "employers": [
+        {
+          "name": "ベネッセスタイルケア",
+          "role": "ホームヘルパー",
+          "description": "自宅で暮らす高齢者に対して、食事や排泄の介助、入浴、着替えなどの身体介護と、買い物代行や食事の用意、掃除などの生活援助を、訪問介護計画書に従って行う仕事。",
+          "source": {
+            "title": "ホームヘルパーの新着求人 求人・転職情報|ベネッセスタイルケア介護採用サイト",
+            "url": "https://saiyo.benesse-style-care.co.jp/kaigo/job/search/occupation_home_helper/condition_new",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "ＳＯＭＰＯケア株式会社",
+          "role": "訪問介護・登録ヘルパー",
+          "description": "サービス付き高齢者向け住宅にお住まいの利用者宅や、近隣にお住まいの利用者宅を訪問する訪問介護の仕事として紹介されている。",
+          "source": {
+            "title": "訪問介護・登録ヘルパーのお仕事 | 介護職・看護師の求人・転職なら「ＳＯＭＰＯケア」のキャリア（中途）採用サイト",
+            "url": "https://recruit.sompocare.com/staff/caregiver/temp",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "133",
+      "employers": [
+        {
+          "name": "ＳＯＭＰＯケア株式会社",
+          "role": "施設介護（介護職）",
+          "description": "施設の入居者一人ひとりに合わせた援助を行い、趣味活動やレクリエーションを通じて、その人らしく充実した生活を送れるようサポートする仕事として同社採用サイトが紹介している。",
+          "source": {
+            "title": "施設介護のお仕事 | 介護職・看護師の求人・転職なら「ＳＯＭＰＯケア」のキャリア（中途）採用サイト",
+            "url": "https://recruit.sompocare.com/staff/caregiver/institutional",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "ベネッセスタイルケア",
+          "role": "介護スタッフ",
+          "description": "老人ホームなどの高齢者福祉施設で高齢者のケアを行う職種。ケアプランに基づいた排泄・入浴・食事・着替えなどの介助に加え、レクリエーションの企画や実施、メンタルケア、身の回りの手伝いなど幅広い業務があると同社採用サイトが説明している。",
+          "source": {
+            "title": "介護スタッフの未経験・ブランクOK 求人・転職情報|ベネッセスタイルケア介護採用サイト",
+            "url": "https://saiyo.benesse-style-care.co.jp/kaigo/job/search/occupation_nursing_staff/condition_inexperienced",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "139",
+      "employers": [
+        {
+          "name": "警視庁",
+          "role": "警察官",
+          "description": "地域警察（交番勤務・パトカー乗務、防犯活動、事件・事故発生時の初動対応）、交通警察、警備警察、刑事警察、生活安全警察、公安警察などの部門に分かれて活動する仕事の例。",
+          "source": {
+            "title": "警視庁の仕事(職種紹介) | 令和8年度警視庁採用サイト",
+            "url": "https://www.keishicho.metro.tokyo.lg.jp/saiyo/type/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "151",
+      "employers": [
+        {
+          "name": "防衛省・自衛隊（陸上自衛隊）",
+          "role": "陸上自衛隊の職種",
+          "description": "陸上自衛隊の各職種（普通科・機甲科・野戦特科・高射特科など）に分かれて任務にあたる仕事の例。例えば普通科は地上戦闘の骨幹部隊として作戦戦闘に重要な役割を果たすとされている。",
+          "source": {
+            "title": "職種職域の紹介（陸自）｜自衛官募集サイト",
+            "url": "https://www.mod.go.jp/gsdf/jieikanbosyu/details/job/rikujo",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "154",
+      "employers": [
+        {
+          "name": "東京消防庁",
+          "role": "消防官",
+          "description": "災害対応や予防業務、救急、火災調査、広報など様々な業務を通じて、東京の「安全・安心」を守る仕事の例。",
+          "source": {
+            "title": "活躍する女性消防官｜スペシャルコンテンツ｜東京消防庁採用情報サイト",
+            "url": "https://tfd-saiyo.jp/special/active-female-firefighter/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "160",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "臨床検査技師",
+          "description": "採血・検体検査、生理機能検査、輸血検査、病理検査を担う。血液・尿などの検体の検査のほか、心電図・超音波などの生理機能検査、輸血前検査と血液製剤の供給を行う。",
+          "source": {
+            "title": "臨床検査技師 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/technologist/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "162",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "診療放射線技師",
+          "description": "放射線部で一般撮影・透視、CT・MR・血管造影の撮影業務を行い、放射線治療やPET-CT・SPECT-CTによる核医学検査にも対応する。",
+          "source": {
+            "title": "診療放射線技師 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/xray/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "163",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "臨床工学技士",
+          "description": "生命維持管理装置の操作と保守点検を担い、院内医療機器の中央管理・点検・修理の統括のほか、血液浄化、体外循環（人工心肺・ECMO等）、呼吸療法の臨床業務を行う。",
+          "source": {
+            "title": "臨床工学技士 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/me/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "165",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "歯科衛生士",
+          "description": "歯科・口腔外科・矯正歯科外来で歯科診療の補助、歯科疾患の予防処置、歯科保健指導を行う。周術期等口腔機能管理外来では全身麻酔を受ける患者の口腔内チェックと入院中の口腔機能管理を担う。",
+          "source": {
+            "title": "歯科技工士・歯科衛生士 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/dental/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "166",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "理学療法士",
+          "description": "リハビリテーション部で個々の患者に理学療法を提供する。理学療法診療のほか、三次元動作分析測定、心肺運動負荷試験補助、臨床研究における運動機能評価・運動指導を行う。",
+          "source": {
+            "title": "リハビリテーション部 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/pt/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "167",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "作業療法士",
+          "description": "作業活動を用いて心身機能やADL・IADLに働きかけ、生活行為やQOLの向上を目指す。脳血管疾患やがんなどの患者への臨床業務、自助具・装具の作成、退院支援を行う。",
+          "source": {
+            "title": "リハビリテーション部 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/pt/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "横浜市立大学附属市民総合医療センター",
+          "role": "作業療法士",
+          "description": "疾病から生じる身体・精神・心理障害を持つクライアントに作業療法を提供する。乳がん患者の術前・術後リハビリテーション、関節リウマチ変形手の術後リハビリテーション（スプリント作成、手の機能訓練、ADL指導）などを実施する。",
+          "source": {
+            "title": "作業療法士 | 横浜市立大学附属 市民総合医療センター",
+            "url": "https://www.yokohama-cu.ac.jp/urahp/recruit/ot/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "168",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "言語聴覚士",
+          "description": "個々の患者に言語聴覚療法を提供する。言語聴覚療法診療、摂食機能療法診療、耳鼻科系検査を行い、摂食嚥下支援チームにも参加する。",
+          "source": {
+            "title": "リハビリテーション部 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/pt/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "176",
+      "employers": [
+        {
+          "name": "大和すみれ幼稚園",
+          "role": "幼稚園教諭",
+          "description": "子どもの「やってみたい！」という気持ちを引き出すプロジェクト保育を行い、先輩教員と一緒にクラスを担当するチーム保育で園児の成長を見守る仕事の例。",
+          "source": {
+            "title": "大和すみれ幼稚園 採用サイト",
+            "url": "https://recruit.yamato-sumire.info/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "177",
+      "employers": [
+        {
+          "name": "東京都教育委員会",
+          "role": "教諭（小学校）",
+          "description": "東京都の公立小学校で、児童が自分で考えられるような授業づくりと指導を行い、担任として児童の成長を支える仕事の例。",
+          "source": {
+            "title": "STORY 01　小学校｜教員のリアルを知る｜東京都公立学校教員採用ポータルサイト",
+            "url": "https://www.kyoinsaiyopr.metro.tokyo.lg.jp/realvoices/01.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "178",
+      "employers": [
+        {
+          "name": "東京都教育委員会",
+          "role": "教諭（中学校）",
+          "description": "東京都の公立中学校で、担当教科の授業を行い、担任として生徒の受験などの相談に乗るといった生徒指導にあたる仕事の例。",
+          "source": {
+            "title": "STORY 02　中学校｜教員のリアルを知る｜東京都公立学校教員採用ポータルサイト",
+            "url": "https://www.kyoinsaiyopr.metro.tokyo.lg.jp/realvoices/02.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "181",
+      "employers": [
+        {
+          "name": "東京都教育委員会",
+          "role": "教諭（高等学校）",
+          "description": "東京都立高等学校で、勉強を教えることや生活指導を行い、生徒一人ひとりの成長を支援する仕事の例。",
+          "source": {
+            "title": "STORY 03　高等学校｜教員のリアルを知る｜東京都公立学校教員採用ポータルサイト",
+            "url": "https://www.kyoinsaiyopr.metro.tokyo.lg.jp/realvoices/03.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "184",
+      "employers": [
+        {
+          "name": "東急バス株式会社",
+          "role": "バス運転士（乗務員）",
+          "description": "路線バスを中心として乗務を担うバス運転士の例。バスを動かす運転業務に加え、お客さまに安心して利用してもらうための職務があると案内されている。",
+          "source": {
+            "title": "3つの職種 | 職種と仕事を知る | 東急バス キャリア採用情報",
+            "url": "https://www.tokyubus.co.jp/saiyo/career/job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "186",
+      "employers": [
+        {
+          "name": "日本交通株式会社",
+          "role": "タクシードライバー（タクシー乗務員）",
+          "description": "車両点検・点呼を経て出庫し、専用乗り場や無線配車、法人チケットによる輸送などを担うタクシードライバーの例。乗務後は営業所で点検・洗車を行い、乗務日誌をつける。",
+          "source": {
+            "title": "一日の流れ │日本交通タクシー乗務員求人採用案内",
+            "url": "https://www.nihon-kotsu-recruit.jp/taxi/flow/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "187",
+      "employers": [
+        {
+          "name": "全日本空輸株式会社（ANA）",
+          "role": "運航乗務職",
+          "description": "お客様を安全かつ快適に目的地に届ける使命を担うパイロットの例。乗務前には航路・気象・機材の情報を確認してフライトの方針を決め、運航の責任者として安全を最優先に運航を支える。",
+          "source": {
+            "title": "運航乗務職｜職種紹介｜ANA 採用情報",
+            "url": "https://www.ana.co.jp/group/recruit/ana-recruit/newgrads/pilot/career/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "190",
+      "employers": [
+        {
+          "name": "東日本旅客鉄道株式会社（JR東日本）",
+          "role": "運転士",
+          "description": "信号や標識を確認しながら列車の操縦を行い、お客さまを安全・快適に目的地へ送る運転士の例。",
+          "source": {
+            "title": "地域ソリューション・駅・乗務員 | 仕事を知る",
+            "url": "https://recruit.jreast.co.jp/positions/train_staff/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "東京地下鉄株式会社（東京メトロ）",
+          "role": "運転士（運輸職種）",
+          "description": "東京メトロの運転士として列車の運転を担い、異常時には対応・処置を行う職種の例。",
+          "source": {
+            "title": "運輸系職種｜鉄道業のプロを突き詰める人たち｜東京地下鉄株式会社 新卒情報 エキスパート職サイト",
+            "url": "https://tokyometro-recruit.jp/tokyometro-expert/projecttalk/1/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "195",
+      "employers": [
+        {
+          "name": "ネッツトヨタ神戸株式会社",
+          "role": "サービスエンジニア（自動車整備士）",
+          "description": "店舗で自動車の修理・点検・車検等の作業を行うほか、お客様と対話してニーズを把握し、車の状態を分かりやすく説明して健康状態を維持する。",
+          "source": {
+            "title": "採用情報 | ネッツ神戸",
+            "url": "https://www.netzkobe.co.jp/corporate/recruit",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "203",
+      "employers": [
+        {
+          "name": "全日本空輸株式会社（ANA）",
+          "role": "客室乗務職",
+          "description": "国内線・国際線に乗務し、機内の安全を守るとともに、お客様の言葉にならない要望も察知して高品質なサービスを提供する客室乗務職の例。",
+          "source": {
+            "title": "客室乗務職｜職種紹介｜ANA 採用情報",
+            "url": "https://www.ana.co.jp/group/recruit/ana-recruit/career/ca/career/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "206",
+      "employers": [
+        {
+          "name": "株式会社朝日新聞社",
+          "role": "取材記者（記者部門）",
+          "description": "国内全都道府県と海外各地にある取材拠点を基盤に取材を行い、部署の垣根を超えたチームでの調査報道やデータジャーナリズムにも取り組む。",
+          "source": {
+            "title": "記者部門｜仕事を知る｜朝日新聞 Recruit Site",
+            "url": "https://www.asahishimbun-saiyou.com/works/journalist",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "214",
+      "employers": [
+        {
+          "name": "株式会社フジテレビジョン",
+          "role": "アナウンサー",
+          "description": "スポーツ中継の実況を担当し、試合前の選手取材や解説者・プロデューサーとの打ち合わせを経て放送に臨む仕事の例（同社採用サイトのアナウンサー密着ページによる）。",
+          "source": {
+            "title": "立本 信吾 ｜ アナウンサー密着 - 仕事紹介 ｜ FUJI TELEVISION RECRUIT - フジテレビ",
+            "url": "https://www.fujitv.co.jp/recruit/works/announce/03.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "413",
+      "employers": [
+        {
+          "name": "株式会社ゆうちょ銀行",
+          "role": "エリア基幹職（窓口サービス部）",
+          "description": "ゆうちょ銀行の直営店窓口で、払込・振込などの手続きを正確かつ迅速に行うことが基本業務で、資産運用に関心のある来店客を渉外部へつなぐ役割も担う。",
+          "source": {
+            "title": "F.A.｜地域基幹職・エリア基幹職・一般職の先輩のキャリア｜JAPAN POST GROUP RECRUIT",
+            "url": "https://recruit.japanpost.jp/career/career2/fa_2017_y.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "428",
+      "employers": [
+        {
+          "name": "日本生命保険相互会社",
+          "role": "ニッセイトータルパートナー",
+          "description": "地域社会に密着し、お客様の考え方やニーズ、公的保険等を踏まえた生命保険商品・サービスの案内を通じて「安心・安全」を届ける営業の仕事。",
+          "source": {
+            "title": "「お客様」に寄り添う | 日本生命保険相互会社",
+            "url": "https://www.nissay.co.jp/kaisha/saiyo/chuto/totalpart/customer/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "東京海上日動火災保険株式会社",
+          "role": "総合職（オープンコース）",
+          "description": "営業部門等に配属され、損害保険の引受やリスクマネジメント・ソリューションの提供といった国内・海外の営業関連業務を担う。",
+          "source": {
+            "title": "オープン｜2027年度新卒採用 応募方法｜東京海上日動",
+            "url": "https://saiyou.tokiomarine-nichido.co.jp/recruiting/oubo/open.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "449",
+      "employers": [
+        {
+          "name": "佐川急便株式会社",
+          "role": "セールスドライバー®職",
+          "description": "担当エリアにおいてセールス活動、集配業務、物流提案、料金回収などを行うドライバーの例。一日の業務として配達・集荷、荷降ろし、事務業務も示されている。",
+          "source": {
+            "title": "【佐川急便】セールスドライバー®職｜職種紹介｜中途採用｜採用情報",
+            "url": "https://www.sagawa-exp.co.jp/recruit/career/occupation/01.html",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "ヤマト運輸株式会社",
+          "role": "セールスドライバー（SD）",
+          "description": "担当エリアのお客さまへ荷物の配達・集荷・セールスなどの活動を行い、地域に密着したサービスを提供するドライバーの例。",
+          "source": {
+            "title": "正社員セールスドライバー中途採用情報｜ヤマト運輸",
+            "url": "https://www.kuronekoyamato.co.jp/ytc/corp/recruit/sales-driver/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    }
+  ]
+}
