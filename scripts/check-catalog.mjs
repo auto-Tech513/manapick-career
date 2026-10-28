@@ -5,6 +5,10 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const catalog = JSON.parse(await fs.readFile(path.join(root, "content/job-catalog.json"), "utf8"));
+const discovery = JSON.parse(await fs.readFile(path.join(root, "content/occupation-discovery.json"), "utf8"));
+const employerRegistry = JSON.parse(await fs.readFile(path.join(root, "content/occupation-employers.json"), "utf8"));
+const dossiers = JSON.parse(await fs.readFile(path.join(root, "content/career-dossiers.json"), "utf8"));
+const employerEvidence = JSON.parse(await fs.readFile(path.join(root, "content/career-evidence.json"), "utf8"));
 const publication = JSON.parse(await fs.readFile(path.join(root, "content/occupation-publication.json"), "utf8"));
 const sourceRegistry = JSON.parse(await fs.readFile(path.join(root, "content/source-registry.json"), "utf8"));
 const jobsText = await fs.readFile(path.join(root, "content/jobs.ts"), "utf8");
@@ -58,6 +62,28 @@ if (catalog.categories.length !== 15) failures.push(`catalog has ${catalog.categ
 if (new Set(catalog.occupations.map((item) => item.catalogId)).size !== catalog.occupations.length) failures.push("duplicate catalogId");
 if (new Set(catalog.occupations.map((item) => item.name)).size !== catalog.occupations.length) failures.push("duplicate occupation name");
 const categoryKeys = new Set(catalog.categories.map((item) => item.key));
+const directoryIds = new Set(catalog.occupations.map(item => item.catalogId));
+const occupationById = new Map(catalog.occupations.map(item => [item.catalogId, item]));
+const employerIds = new Set();
+for (const item of [...employerRegistry.existingDossiers, ...employerRegistry.items]) {
+  if (!directoryIds.has(item.catalogId) || employerIds.has(item.catalogId)) failures.push(`unknown or duplicate employer catalog ID ${item.catalogId}`);
+  employerIds.add(item.catalogId);
+  if ('slug' in item) {
+    const dossier = dossiers.items.find(row => row.slug === item.slug);
+    if (!dossier || !dossier.catalogRecordNumbers.includes(occupationById.get(item.catalogId)?.recordNumber) || !dossier.employers.length) failures.push(`${item.catalogId}: employer dossier does not match occupation`);
+    for (const employer of dossier?.employers ?? []) if (!employerEvidence.sources.some(source => source.id === employer.sourceId && source.kind === 'employer' && source.url.startsWith('https://') && isDate(source.accessedAt))) failures.push(`${item.catalogId}: invalid employer source ${employer.sourceId}`);
+  } else {
+    if (!Array.isArray(item.employers) || !item.employers.length) failures.push(`${item.catalogId}: empty employer examples`);
+    for (const employer of item.employers ?? []) if (!employer.name || !employer.role || !employer.description || !employer.source?.title || !employer.source?.url?.startsWith('https://') || !isDate(employer.source?.checkedAt)) failures.push(`${item.catalogId}: incomplete employer example`);
+  }
+}
+const discoveryKeys = new Set();
+for (const group of discovery.groups) {
+  if (!group.key || !group.label || discoveryKeys.has(group.key)) failures.push(`invalid or duplicate discovery group ${group.key}`);
+  discoveryKeys.add(group.key);
+  if (!Array.isArray(group.catalogIds) || group.catalogIds.length === 0 || new Set(group.catalogIds).size !== group.catalogIds.length) failures.push(`${group.key}: empty or duplicate discovery entries`);
+  for (const id of group.catalogIds) if (!directoryIds.has(id)) failures.push(`${group.key}: unknown catalogId ${id}`);
+}
 for (const occupation of catalog.occupations) {
   if (!categoryKeys.has(occupation.categoryKey)) failures.push(`${occupation.name}: unknown category ${occupation.categoryKey}`);
   if (!/^\d{2}_/.test(occupation.classificationCode)) failures.push(`${occupation.name}: invalid classification ${occupation.classificationCode}`);
