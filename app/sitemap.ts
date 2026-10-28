@@ -25,7 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/research/": latestNewsCheck,
     "/all/": latest(latestJobCheck ?? "", occupationCatalogSource.datasetUpdatedAt),
   };
-  const fixed = ["/", "/route/", "/compare/", "/ranking/", "/skills/", "/guide/", "/news/", "/research/", "/shop/", "/glossary/", "/faq/", "/about-method/", "/operator/", "/privacy/", "/affiliate/", "/disclaimer/", "/contact/", "/all/"];
+  const fixed = ["/", "/route/", "/compare/", "/ranking/", "/skills/", "/guide/", "/news/", "/research/", "/shop/", "/employers/", "/glossary/", "/faq/", "/about-method/", "/operator/", "/privacy/", "/affiliate/", "/disclaimer/", "/contact/", "/all/"];
 
   return [
     ...fixed.map((path) => ({

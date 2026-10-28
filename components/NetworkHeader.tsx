@@ -4,13 +4,14 @@ import NetworkBrand from "./NetworkBrand";
 
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { ArrowUpRight, BarChart3, BookA, BookOpen, CircleHelp, Compass, FileText, GitCompareArrows, Home, Mail, Menu, Newspaper, Search, ShoppingBag, Sparkles, Trophy, X, type LucideIcon } from "lucide-react";
+import { ArrowUpRight, BarChart3, BookA, BookOpen, BriefcaseBusiness, CircleHelp, Compass, FileText, GitCompareArrows, Home, Mail, Menu, Newspaper, Search, ShoppingBag, Sparkles, Trophy, X, type LucideIcon } from "lucide-react";
 import config from "../content/network-site.json";
 import { networkUrl } from "../lib/network-shared";
 
 /** Short, page-grounded descriptions for the menu. Wording follows each page's own title. */
 const navMeta: Record<string, { icon: LucideIcon; description: string }> = {
   "/all/": { icon: Search, description: "556職業の仕事内容・関連資格と出典付き解説" },
+  "/employers/": { icon: BriefcaseBusiness, description: "企業・法人・公的機関の例を確認できた職業の一覧" },
   "/route/": { icon: Compass, description: "キャリア候補の入口案内" },
   "/compare/": { icon: GitCompareArrows, description: "職業を並べて比べる" },
   "/guide/": { icon: BookOpen, description: "職業ガイド" },
@@ -25,7 +26,7 @@ const navMeta: Record<string, { icon: LucideIcon; description: string }> = {
   "/contact/": { icon: Mail, description: "訂正・お問い合わせ" },
 };
 const featureHrefs = ["/all/", "/route/", "/compare/", "/skills/"];
-const readHrefs = ["/guide/", "/news/", "/research/", "/ranking/"];
+const readHrefs = ["/employers/", "/guide/", "/news/", "/research/", "/ranking/"];
 const otherHrefs = ["/shop/", "/about-method/", "/faq/", "/glossary/", "/contact/"];
 
 /** AI SiteHeader: header-inner, brand-mark, main-nav and menu layout, adapted for career without changing the reference repository. */
