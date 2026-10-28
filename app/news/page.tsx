@@ -48,7 +48,7 @@ export default function NewsIndex() {
       <div><Newspaper aria-hidden="true"/><span><small>公開中</small><strong>{publishedNews.length}記事</strong></span></div>
       <div><CalendarDays aria-hidden="true"/><span><small>一次資料の最新公表日</small><strong>{latestSourceDate}</strong></span></div>
       <div><CalendarCheck2 aria-hidden="true"/><span><small>掲載データの最終記録日</small><strong>{latestReviewedAt}</strong></span></div>
-      <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、出典の記録日を分けて表示します。{archiveCount}件は確認期限を超えた過去資料の記事です。現在の状況は公式出典をご覧ください。</p>
+      <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、出典の記録日を分けて表示します。確認期限を超えた過去資料の記事が{archiveCount}件あります。現在の状況は公式出典をご覧ください。</p>
     </section>
     <nav className="news-kind-nav" aria-label="ニュースのテーマ">{kinds.map((kind) => <span key={kind}>{kind}</span>)}</nav>
     <Link className="news-featured" href={`/news/${lead.slug}/`}><span className="news-featured-badge"><Newspaper aria-hidden="true" />注目解説</span><small>{lead.kind}・資料公表 {lead.sourcePublishedAt}・公開 {lead.publishedAt}</small>{newsNeedsRefresh(lead) ? <span className="archive-badge">過去資料・更新確認期限超過</span> : null}<h2>{lead.title}</h2><p>{lead.answer}</p><ul>{lead.keyPoints.map((point) => <li key={point}>{point}</li>)}</ul><em>全文を読む <ArrowRight aria-hidden="true" /></em></Link>

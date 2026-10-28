@@ -1766,6 +1766,396 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "27",
+      "employers": [
+        {
+          "name": "株式会社松建工務店",
+          "role": "型枠大工",
+          "description": "建築工事の基礎を支える型枠工事の組立・解体を担当する。建築現場における型枠の組立・設置作業、工事終了後の型枠解体作業、資材の運搬・整理・安全確認、図面をもとにした型枠設計への対応などを行う。",
+          "source": {
+            "title": "採用情報 | 株式会社松建工務店",
+            "url": "https://matsukenkoumuten.com/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "30",
+      "employers": [
+        {
+          "name": "小川建設株式会社",
+          "role": "鳶工",
+          "description": "とび・土工工事一式を手がける同社で、鳶工として建設現場の作業に従事する（同社公式サイトに掲載された募集チラシによる）。",
+          "source": {
+            "title": "鳶職 募集チラシ（小川建設株式会社）",
+            "url": "https://www.ogawa-kensetsu.com/wp-content/uploads/2025/06/3bcfdb6920f394f9ed043f3adf06685b.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "53",
+      "employers": [
+        {
+          "name": "株式会社高島屋",
+          "role": "契約社員（販売・サービス職）",
+          "description": "百貨店（高島屋玉川店）で取り扱っているインテリアの接客販売及び販売付随業務（インテリアコーディネート業務、受発注、営業サポート、梱包・配送作業、顧客情報管理、レジほか）を行う。",
+          "source": {
+            "title": "玉川店｜契約社員（販売・サービス職）｜採用情報｜高島屋",
+            "url": "https://www.takashimaya.co.jp/corp/recruit/salescast/job/tamagawa.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "55",
+      "employers": [
+        {
+          "name": "サミット株式会社",
+          "role": "スーパー店内レジスタッフ",
+          "description": "サミットストアのレジ部門で、レジ打ち会計・お買い物補助業務、お客様対応、予約商品・宅配便受付・ギフト包装等のサービスカウンター業務、カゴ・カート整理等を行う。",
+          "source": {
+            "title": "サミットストア ららテラス北綾瀬店 求人情報詳細｜サミットストア パート・アルバイト求人採用サイト",
+            "url": "https://www.summit-recruit.com/summitarbeit/AD0127331677/CDdetail.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "56",
+      "employers": [
+        {
+          "name": "株式会社ヨークベニマル",
+          "role": "総合職",
+          "description": "入社後は店舗の鮮魚・精肉・青果・デイリー・グロサリー・CS・デリカ部門に配属し、個店経営の推進者として店舗業務を担う。将来の店長、本社スタッフへのキャリアアップが想定されている。",
+          "source": {
+            "title": "募集要項／選考フロー | 新卒採用サイト | ヨークベニマル採用情報サイト",
+            "url": "https://www.yb-jinji.com/newgra-recruit/guideline.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "59",
+      "employers": [
+        {
+          "name": "株式会社ニュートヨオート",
+          "role": "カーライフアドバイザー（営業職）",
+          "description": "担当エリアにて法人・個人の顧客へトヨタ車の販売営業を担当する。定期的にフォローし、整備、車検、付属品販売、新車導入等の営業を行い、顧客の要望や課題に合わせて見積書を作成し、企画提案を行う。",
+          "source": {
+            "title": "採用情報｜ニュートヨオート",
+            "url": "https://www.newtoyo.co.jp/company/recruit",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "60",
+      "employers": [
+        {
+          "name": "株式会社サイバーエージェント",
+          "role": "営業職（インターネット広告事業本部）",
+          "description": "大手クライアントのマーケティング課題やニーズを発掘し、広告配信メディアの選定、広告クリエイティブ、予算・スケジュールを社内チームで検討してプランを提案する。受注後はプランの実行、実行後の振り返りと次回に向けた提案までを担当する。",
+          "source": {
+            "title": "サイバーエージェントグループ公式求人（インターネット広告事業本部・営業職）",
+            "url": "https://hrmos.co/pages/cyberagent-group/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "65",
+      "employers": [
+        {
+          "name": "株式会社パーク・コーポレーション",
+          "role": "フラワーショップ（花屋）スタッフ",
+          "description": "青山フラワーマーケットの店舗スタッフとして、接客・レジ、花の下準備（水あげ）・水やり・ディスプレイ、ブーケやアレンジメント制作などを行う。接客では季節や旬のお花の提案、お花選びのお手伝い、お手入れ方法のご案内、オーダーギフトのお伺い、お会計・お包み・ラッピングを担う。",
+          "source": {
+            "title": "青山フラワーマーケット 菊名駅新店 求人情報詳細｜株式会社パーク・コーポレーション リクルートサイト",
+            "url": "https://www.recruit-park-corp.jp/parkcorp/AE1014136085/CDdetail.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "99",
+      "employers": [
+        {
+          "name": "株式会社なだ万",
+          "role": "調理スタッフ",
+          "description": "懐石料理など日本料理を提供するなだ万のレストラン（国内・海外）で調理を担当し、お祝いの席も多いなか、お客様の大切な時間に心温まる料理を調理する。",
+          "source": {
+            "title": "キャリア採用 – 採用サイト｜なだ万",
+            "url": "https://www.nadaman.co.jp/zh/pages/career-require",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "100",
+      "employers": [
+        {
+          "name": "株式会社梅丘寿司の美登利総本店",
+          "role": "寿司職人",
+          "description": "衛生管理のルールを遵守しながら、お寿司を握る。仕込み場、焼き場、ホール業務など各ポジションも習得する（同社採用サイトの「板前までの道のり」に示される寿司職人の業務）。",
+          "source": {
+            "title": "株式会社梅丘寿司の美登利総本店｜採用情報サイト",
+            "url": "https://sushinomidori-recruit.jp/-/top/career/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "101",
+      "employers": [
+        {
+          "name": "株式会社丸亀製麺",
+          "role": "製麺スタッフ",
+          "description": "各店舗で、国産小麦・塩・水のみを使い、その日の状態に合わせて調整しながら手作りで麺を打つ仕事。社内の試験に合格すると「麺職人」に認定される。",
+          "source": {
+            "title": "丸亀製麺黒部店の求人情報｜トリドールグループ公式採用サイト",
+            "url": "https://jobs.toridoll.com/job/d9509394-1006-40db-8be3-dae2da921c1d/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "102",
+      "employers": [
+        {
+          "name": "株式会社すかいらーくレストランツ",
+          "role": "キッチンスタッフ（中華ファミレス「バーミヤン」）",
+          "description": "中華ファミリーレストラン「バーミヤン」のキッチンで、簡単な調理補助や洗い場での食器洗いなどのキッチン業務を担当する。研修とマニュアルが用意されている。",
+          "source": {
+            "title": "バーミヤン キッチンスタッフ求人情報｜すかいらーくグループ採用サイト",
+            "url": "https://arbaito.skylark.co.jp/csaiyo/f1dr/pc_job/show/171541/667851",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "103",
+      "employers": [
+        {
+          "name": "日本マクドナルド株式会社",
+          "role": "店長",
+          "description": "「店舗の経営者」として、クルーやお客様と接しながら店舗運営に直接的に関わり、ビジネスを成長させていくフィールドの仕事。",
+          "source": {
+            "title": "職種とキャリア | 日本マクドナルド株式会社",
+            "url": "https://www.mcdonalds.co.jp/recruit/staff_recruiting/work/work-1/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "105",
+      "employers": [
+        {
+          "name": "株式会社帝国ホテル",
+          "role": "ソムリエ",
+          "description": "帝国ホテル 東京・大阪のレストランやバーに配置される職種の一つ。料理やドリンクの提供を通して特別な飲食体験を提供し、お客様とコミュニケーションしながら接客を行い、満足度の最大化とリピーターの増加を目指す（レストラン部門の職種紹介として記載）。",
+          "source": {
+            "title": "レストラン | 部門・職種紹介 | 帝国ホテル 採用サイト",
+            "url": "https://www.imperialhotel.co.jp/recruit/works-interviews/introduction/works002",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "106",
+      "employers": [
+        {
+          "name": "InterContinental Sapporo",
+          "role": "バーテンダー（ミクソロジスト）",
+          "description": "すべてのゲストを迎え体験を提供する仕事。高い水準でドリンクを調製・提供し、プロモーションやおすすめを案内するほか、在庫・備品・設備などバーの管理や清掃、現金・クレジットカードの取り扱い、レストランチームと連携したフードサービスを担当する。",
+          "source": {
+            "title": "バーテンダー（ミクソロジスト）Mixologist | InterContinental Sapporo | IHG公式採用サイト",
+            "url": "https://careers.ihg.com/en/job-details/?jobref=%e3%83%90%e3%83%bc%e3%83%86%e3%83%b3%e3%83%80%e3%83%bc%ef%bc%88%e3%83%9f%e3%82%af%e3%82%bd%e3%83%ad%e3%82%b8%e3%82%b9%e3%83%88%ef%bc%89Mixologist+-+InterContinental+Sapporo%7CUK%7C143871",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "107",
+      "employers": [
+        {
+          "name": "株式会社一蘭",
+          "role": "ホール・キッチンスタッフ",
+          "description": "とんこつラーメン専門店で、全スタッフがラーメンの麺上げ・盛り付け、洗い物、案内など全業務を担当し、接客・調理・清掃を行う。",
+          "source": {
+            "title": "一蘭 仙台駅前店 ホール・キッチンスタッフの求人詳細",
+            "url": "https://ichiran-arbeit.net/jobfind-pc/job/All/3489",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "110",
+      "employers": [
+        {
+          "name": "昭和自動車株式会社",
+          "role": "バスガイド",
+          "description": "貸切バスに乗務し、観光案内やお客様の安全をサポートする仕事。車窓からの風景や町の歴史、名物、観光地のみどころを伝える車内案内、観光地のポイントを紹介しながら一緒に歩いて観光する下車案内、帰社後のバス清掃などを行う。修学旅行・企画ツアー・社員旅行などに乗務する。",
+          "source": {
+            "title": "昭和バスリクルートサイト｜バスガイド",
+            "url": "https://showa-bus.jp/recruit/busguide.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "141",
+      "employers": [
+        {
+          "name": "厚生労働省",
+          "role": "麻薬取締官",
+          "description": "地方厚生（支）局に設置された麻薬取締部に所属し、特別司法警察職員として薬物犯罪の捜査を行う。あわせて、医療用麻薬などの指導・監督、薬物乱用者の再乱用防止支援、啓発活動・相談業務といった幅広い分野の活動を展開している。",
+          "source": {
+            "title": "フォトレポート（地方厚生局麻薬取締部による人事院総裁賞受賞報告）｜厚生労働省",
+            "url": "https://www.mhlw.go.jp/stf/photo_report/2026/ph0213-01.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "142",
+      "employers": [
+        {
+          "name": "出入国在留管理庁",
+          "role": "入国警備官",
+          "description": "出入国管理及び難民認定法に違反している疑いのある外国人に対する違反調査や情報収集、裁判所の許可を得た捜索や収容令書による身柄の拘束（摘発）、収容施設の警備と収容された外国人の処遇、退去強制令書が発付された外国人の空港までの護送と送還を行う。",
+          "source": {
+            "title": "入国警備官採用試験 | 出入国在留管理庁",
+            "url": "https://www.moj.go.jp/isa/about/recruitment/nyukan_nyukan06.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "147",
+      "employers": [
+        {
+          "name": "法務省",
+          "role": "刑務官",
+          "description": "刑務所や少年刑務所で生活する受刑者への指導を通じて、その改善更生と社会復帰を促す。また、拘置所に勾留されている被疑者・被告人については、逃走や証拠隠滅を防止しつつ、公平な裁判が受けられるよう配慮する。",
+          "source": {
+            "title": "法務省中部矯正管区（名古屋刑務所）官庁訪問案内",
+            "url": "https://www.moj.go.jp/content/001440610.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "185",
+      "employers": [
+        {
+          "name": "帝産観光バス株式会社",
+          "role": "運転士",
+          "description": "観光バスのドライバーとして、学生団体を中心としたお客様の旅行を支える。安全運転を第一に、大型バスの運転のほか、出発前の車両点検、お客様への接客や快適な車内環境の提供、観光ルートや道路状況の把握などを行う。貸切バスだけでなく、高速路線や企業送迎など業務内容は多岐にわたる。",
+          "source": {
+            "title": "募集職種 | 運転士 | 採用サイト | 帝産観光バス株式会社",
+            "url": "https://www.teisan-bus.co.jp/saiyo/job/driver.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "188",
+      "employers": [
+        {
+          "name": "旭東海運株式会社",
+          "role": "海上職正社員（航海士および機関士）",
+          "description": "外航ケミカルタンカーに配乗する海上職として、荷役に関する作業、安全航行、機器やエンジンの維持管理など幅広い業務に携わる。三航士／三機士としてスタートし、二航士／二機士、一航士／一機士を経て船長／機関長へ段階的に昇進するキャリアパスが示されている。",
+          "source": {
+            "title": "採用情報 | 旭東海運株式会社",
+            "url": "https://kyokutoh-kkt.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "191",
+      "employers": [
+        {
+          "name": "WILLER TRAINS株式会社（京都丹後鉄道）",
+          "role": "車掌",
+          "description": "列車の安全運行に関わる安全確認作業を担う。ドアの開け閉めや停車時・発車時などのホーム上の安全確認、危険を察知した際の非常ブレーキ対応などを行うほか、特急列車などの車内で切符の改札業務やアナウンスも担当する。",
+          "source": {
+            "title": "車掌 - 採用情報 - 京都丹後鉄道（丹鉄/TANTETSU）",
+            "url": "https://trains.willer.co.jp/recruit-info/conductor/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "235",
+      "employers": [
+        {
+          "name": "マグチLOGI株式会社",
+          "role": "フォークリフトオペレーター（リーチリフト）",
+          "description": "物流センター内でリーチフォークリフトを運転し、アイスクリームや冷凍菓子などの冷凍商品の入出荷作業を行う。",
+          "source": {
+            "title": "マグチLOGI株式会社 三木フローズンDC出張所求人情報｜マグチグループ",
+            "url": "https://www.maguchi-job.jp/maguchigr2/AE1021381312/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "239",
+      "employers": [
+        {
+          "name": "綜合警備保障株式会社（ALSOK）",
+          "role": "警備職（常駐警備）",
+          "description": "ホテルやデパート、複合ビルなど、多くの人々が行き交う大型施設に常駐する。施設の隅々を巡回しながら、セキュリティ機器などの稼働確認や施設管理などを行い、出入管理を行う「セキュリティ」の役割に加え、施設の安全利用を促す「コンシェルジュ」としての役割も担う。",
+          "source": {
+            "title": "人と仕事を知る［仕事紹介］｜ALSOK 新卒採用サイト",
+            "url": "https://alsok.co.jp/saiyo/newgraduate/workers/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "473",
+      "employers": [
+        {
+          "name": "環境省",
+          "role": "自然保護官（レンジャー）",
+          "description": "国立公園の管理や自然とふれあうための施設の整備、野生生物の保護管理を行う。具体的には、国立公園の公園計画の作成や各種開発行為の審査・指導、登山道や公園内の巡視や維持管理、ビジターセンター等施設の整備や維持管理などを担う。",
+          "source": {
+            "title": "自然保護官（レンジャー）のお仕事 | 東北環境局 | 環境省",
+            "url": "https://tohoku.env.go.jp/blog/2022/03/post_871.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }

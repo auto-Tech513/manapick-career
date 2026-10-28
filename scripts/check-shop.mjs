@@ -23,11 +23,11 @@ for (const sourceId of referencedSources) if (!sourceIds.has(sourceId)) failures
 if (referencedSources.length !== productIds.length) failures.push("every product must have exactly one registered official source");
 if (!page.includes('rel="sponsored nofollow noopener noreferrer"')) failures.push("Amazon links lack sponsored disclosure");
 if (!page.includes("PR・Amazon") || !page.includes("careerShopPolicy.disclosure") || !shop.includes("Amazonのアソシエイト")) failures.push("visible PR disclosure is missing");
-const images = [...shop.matchAll(/^\s+image: "([^\"]+)",$/gm)].map((match) => match[1]);
+const images = [...shop.matchAll(/amazonImage\("([A-Z0-9]{10})"\)/g)].map((match) => match[1]);
 const imageCredits = [...shop.matchAll(/^\s+imageCredit: "([^\"]+)",$/gm)].map((match) => match[1]);
-if (images.length !== productIds.length || images.some((image) => !image.startsWith("/shop/"))) failures.push("every product must have a local product image path");
-if (images.some((image) => !image.endsWith(".svg"))) failures.push("shop must use rights-cleared editorial illustrations rather than unverified product photos");
-if (imageCredits.length !== productIds.length || imageCredits.some((credit) => !credit.includes("manapick編集部作成イメージ") || !credit.includes("実物と異なります"))) failures.push("every illustration must disclose its editorial origin and that it differs from the actual product");
+if (images.length !== productIds.length) failures.push("every product must use an Amazon official image-delivery URL built from its ASIN");
+if (images.some((asin, index) => !amazonUrls[index]?.includes(`/dp/${asin}`))) failures.push("each product image ASIN must match its Amazon product link ASIN");
+if (imageCredits.length !== productIds.length || imageCredits.some((credit) => !credit.includes("Amazon") || !credit.includes("PR"))) failures.push("every product photo must disclose that the image is served by Amazon (PR)");
 if (!page.includes("product.image") || !page.includes("product.imageCredit")) failures.push("product image or source credit is not rendered");
 if (page.includes("商品写真は姉妹サイトと同じ") || page.includes("公開前に権利確認が必要")) failures.push("shop page still contains stale unverified-image disclosure");
 

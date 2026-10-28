@@ -45,6 +45,10 @@
       "label": "職業を探す"
     },
     {
+      "href": "/employers/",
+      "label": "企業例のある職業"
+    },
+    {
       "href": "/route/",
       "label": "入口案内"
     },

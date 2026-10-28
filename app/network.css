@@ -144,3 +144,9 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .brief-body h4{font-size:18px;color:var(--ink);margin:0 0 12px;font-weight:800}
 .brief-body ul{padding-left:1.5em;font-size:14px;line-height:1.9}.occupation-brief>a{display:inline-flex;min-height:44px;align-items:center;font-size:13px;color:var(--primary-aa);text-decoration:underline}
 @media(max-width:600px){.work-stages>li{padding:16px;gap:10px}.work-stages h4{font-size:17px}.depth-qualifications>article,.depth-employers>article{padding:16px}.depth-summary{font-size:16px}.depth-qualifications h3,.depth-employers h3{font-size:18px}}
+
+/* Network sites section (cross-site linkage on hub pages). */
+.network-sites .network-sites-desc{display:block;color:var(--muted);font-size:12px;line-height:1.6}
+.network-sites .network-sites-current{color:var(--primary-aa);font-weight:700;font-size:12px}
+.network-sites .network-sites-go{display:inline-flex;align-items:center;gap:4px;color:var(--primary-aa);font-weight:700;font-size:12px}
+.network-sites li a{display:flex;flex-direction:column;gap:8px}

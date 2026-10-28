@@ -3050,6 +3050,26 @@ dd {
 .reviewed-jobs { margin-top: clamp(4rem, 7vw, 7rem); padding-top: 2.5rem; border-top: 1px solid var(--line); }
 
 .ranking-page { max-width: 1080px; }
+.employers-group { margin-top: 2.2rem; }
+.employers-group > h2 { display: flex; align-items: baseline; gap: .6rem; font-size: 1.15rem; font-weight: 800; margin: 0 0 .8rem; }
+.employers-group > h2 small { color: var(--muted); font-size: .72rem; font-weight: 700; }
+.employers-list { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.employers-list li { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem 1rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
+.employers-list h3 { margin: 0; font-size: .95rem; font-weight: 700; }
+.employers-list p { margin: .2rem 0 0; color: var(--muted); font-size: .78rem; line-height: 1.6; }
+.employers-list a { display: inline-flex; align-items: center; min-height: 44px; gap: .3rem; flex: none; color: var(--primary-aa); font-size: .72rem; font-weight: 850; }
+.employers-note { margin-top: 2rem; color: var(--muted); font-size: .8rem; line-height: 1.8; }
+.income-rank-section { margin-top: 3rem; }
+.income-rank-subtitle { margin: 1.2rem 0 .8rem; font-size: 1.05rem; font-weight: 800; }
+.income-rank-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
+.income-rank-group { min-width: 0; }
+.income-rank-group > h3 { margin: 0 0 .7rem; font-size: 1rem; font-weight: 800; color: var(--primary-aa); }
+.income-rank-list li { grid-template-columns: 64px minmax(0, 1fr) auto; grid-template-rows: auto auto; row-gap: .2rem; min-height: 0; padding: .8rem .9rem; }
+.income-rank-list .ranking-number { min-height: 52px; font-size: 1.2rem; grid-row: 1 / 3; }
+.income-rank-list .ranking-copy { min-width: 0; }
+.income-rank-value { font-size: 1.05rem; font-weight: 850; color: var(--ink); white-space: nowrap; }
+.income-rank-list li > a { grid-column: 2 / 4; justify-self: end; min-height: 44px; }
+@media (max-width: 760px) { .income-rank-groups { grid-template-columns: 1fr; } }
 .ranking-method { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; margin-bottom: 1.2rem; }
 .ranking-method > div { padding: 1rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
 .ranking-method strong { color: var(--ink); font-size: .8rem; }
