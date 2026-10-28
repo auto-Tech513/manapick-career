@@ -6,7 +6,7 @@
     "answer": "職業名を見た直後に向き不向きを決めず、求人と公式職業情報から繰り返す作業を三つ抜き出します。各作業を入力、判断、成果物、受け取る相手へ分けると、学ぶ内容と確認すべき注意点を具体化できます。",
     "category": "職業研究",
     "readMinutes": 9,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "jilpt-jobtag-description-7-01",
       "mhlw-jobtag-download-terms",
@@ -82,10 +82,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "compare-three-careers-45-minutes",
@@ -94,11 +95,12 @@
     "answer": "候補を三職業に絞り、各15分で仕事内容、最初に試せる作業、避けられない注意点、公式出典を一行ずつ記録します。比較条件をそろえることで、優劣ではなく次に確かめる順番を決められます。",
     "category": "比較方法",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "jilpt-jobtag-description-7-01",
       "mhlw-jobtag-it-consultant",
-      "ipa-dss-v2-files"
+      "ipa-dss-v2-files",
+      "mhlw-jobtag-data"
     ],
     "relatedCareerSlugs": [
       "it-consultant",
@@ -170,10 +172,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "job-ad-to-evidence-map",
@@ -182,7 +185,7 @@
     "answer": "求人票を必須条件、歓迎条件、入社後に学ぶ条件へ色分けし、各項目を実際の作業と成果物へ結び付けます。すべてを満たそうとせず、応募可否は企業へ確認し、自分は説明できる証拠を一つずつ作ります。",
     "category": "求人の読み方",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-job-openings-2026-05",
       "mhlw-jobtag-download-terms",
@@ -253,15 +256,17 @@
         "heading": "4. 応募前に確認する質問を整える",
         "paragraphs": [
           "未確認欄から質問を三つ作ります。『入社後三か月で担当する主な作業』『歓迎経験が使われる場面』『成果を確認する基準』の三点は、業務像を具体化しやすい質問です。未経験可という表示があっても、業界経験、職種経験、道具の経験のどれを指すかを確認します。質問への回答も、求人票の保存日と一緒に記録します。",
-          "条件を満たすかどうかを記事が判定することはできません。応募判断は求人の最新表示と企業の回答を基に行います。要件が多くて不安になったときは、必須条件へ戻り、自分で変えられる準備と企業へ確認する事項を分けてください。費やした学習時間を惜しんで、目的と異なる求人へ無理に応募する必要もありません。"
+          "条件を満たすかどうかを記事が判定することはできません。応募判断は求人の最新表示と企業の回答を基に行います。要件が多くて不安になったときは、必須条件へ戻り、自分で変えられる準備と企業へ確認する事項を分けてください。費やした学習時間を惜しんで、目的と異なる求人へ無理に応募する必要もありません。",
+          "なお、有効求人倍率などの全国集計は、求人と求職の全体量を示す統計であり、個別求人の応募条件や個人の採用可能性を示す指標ではありません。ニュースで倍率の上下を見ても、この求人へ応募できるかどうかは求人票と企業の回答で確認します。"
         ]
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "first-portfolio-without-private-data",
@@ -270,7 +275,7 @@
     "answer": "公開データまたは自作素材で、90分以内に終わる一つの作業を選びます。成果物には目的、入力、判断理由、確認方法、修正履歴を添え、顧客情報や前職の機密を一切持ち出さないことが最優先です。",
     "category": "成果物づくり",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "ipa-dss-v2-files",
       "mhlw-jobtag-data",
@@ -346,10 +351,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "seven-day-skill-gap-plan",
@@ -358,7 +364,7 @@
     "answer": "不足スキルを全部並べず、候補職業の成果へ最も近い一作業だけを選びます。七日間で基礎確認、短い試作、修正、説明まで一周し、次に続けるか範囲を変えるかを証拠で決めます。",
     "category": "学習計画",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-human-development-2026",
       "ipa-dss-v2-files",
@@ -434,10 +440,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "choose-one-learning-video",
@@ -446,7 +453,7 @@
     "answer": "動画を選ぶ前に作りたい成果物を一つ決め、視聴中は操作をすべて写さず判断理由を三点だけ記録します。視聴後30分以内に自分の素材で再現し、できなかった箇所を次の検索語へ変えます。",
     "category": "動画学習",
     "readMinutes": 9,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-human-development-2026",
       "ipa-dss-v2-files",
@@ -522,10 +529,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "ai-tool-check-before-signup",
@@ -534,7 +542,7 @@
     "answer": "AIツールは機能の多さより、使う仕事と失敗時の影響で選びます。登録前に目的、入力禁止情報、保存・学習利用、検証方法、総費用、解約・データ削除を公式情報で確認し、一つでも不明なら業務利用を保留します。",
     "category": "AI活用",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "ipa-ai-explanation-survey-2026",
       "ipa-dx-digital-talent-ai-era",
@@ -610,10 +618,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "qualification-required-or-optional",
@@ -622,7 +631,7 @@
     "answer": "資格名を見たら、法令上の業務要件、求人企業の応募条件、任意の学習目標のどれかを確認します。実施団体の公式情報と実際の求人を照合し、取得すれば採用される、持っていなければ働けないと一律に判断しません。",
     "category": "資格の確認",
     "readMinutes": 9,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "sssc-care-worker",
       "mhlw-medicine-sales",
@@ -698,10 +707,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "video-ai-license-learning-route",
@@ -710,7 +720,7 @@
     "answer": "職業名ではなく一つの成果物を決め、元の作業を知る、動画で再現する、AIで支援範囲を試す、資格の公式要件を確認する順に進みます。関係しない学習は加えず、各段階で続けるかを判断します。",
     "category": "学習ルート",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "ipa-dss-v2-files",
       "mhlw-human-development-2026",
@@ -786,10 +796,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "data-analyst-first-90-minutes",
@@ -798,7 +809,7 @@
     "answer": "公開CSVから一つの問いを決め、列の意味と欠損を確認し、集計表と一図、三行の説明を作ります。高度なモデルより、集計条件と限界を他者へ説明できることを最初の完了条件にします。",
     "category": "職業を試す",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-jobtag-data",
       "ipa-dss-v2-files",
@@ -874,10 +885,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "software-engineer-first-small-app",
@@ -886,7 +898,7 @@
     "answer": "一つの入力を受け取り、一つの結果を返す小さなアプリを選びます。実装前に正常・異常の条件を書き、動いた画面だけでなくテスト結果、変更理由、残課題を残すことで、開発作業の全体像を試せます。",
     "category": "職業を試す",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-jobtag-software",
       "ipa-dss-v2-files",
@@ -962,10 +974,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "it-consultant-first-issue-map",
@@ -974,11 +987,10 @@
     "answer": "架空の業務課題を選び、関係者、現在の流れ、困りごと、根拠、制約、未確認事項を一枚にします。解決策を急いで決めず、事実と仮説を分け、誰に何を聞けば判断できるかまで示すことが最初の成果物です。",
     "category": "職業を試す",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-jobtag-it-consultant",
-      "ipa-dss-v2-files",
-      "ipa-dx-indicator-2026"
+      "ipa-dss-v2-files"
     ],
     "relatedCareerSlugs": [
       "it-consultant",
@@ -1050,10 +1062,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "web-marketer-first-measurement-plan",
@@ -1062,11 +1075,10 @@
     "answer": "架空サイトの一目的を選び、見たい利用者行動、必要な指標、取得方法、判断基準、個人情報を扱わない範囲を記録します。施策案より先に、何を確認できれば改善と判断するかを決めます。",
     "category": "職業を試す",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-jobtag-marketing",
-      "ipa-dss-v2-files",
-      "ipa-ai-explanation-survey-2026"
+      "ipa-dss-v2-files"
     ],
     "relatedCareerSlugs": [
       "web-marketer",
@@ -1138,10 +1150,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "web-designer-first-accessible-screen",
@@ -1150,7 +1163,7 @@
     "answer": "架空サービスの一画面を選び、最初に見出しと読み順を文章で作ります。次に文字サイズ、行長、色のコントラスト、操作状態、375px表示を確認し、装飾より利用者が迷わず次の行動を選べることを優先します。",
     "category": "職業を試す",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-jobtag-webdesign",
       "ipa-dss-v2-files",
@@ -1226,10 +1239,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "office-admin-first-handover-sheet",
@@ -1238,7 +1252,7 @@
     "answer": "架空の申請受付を題材に、入力項目、処理順、例外、ダブルチェック、保存場所、引継ぎ先を一枚にします。速さより、誤りを見つけ、次の人が同じ手順を再現できることを完了条件にします。",
     "category": "職業を試す",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-jobtag-office",
       "ipa-dss-v2-files",
@@ -1314,10 +1328,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "transferable-skills-from-one-week",
@@ -1326,7 +1341,7 @@
     "answer": "直近一週間から三つの作業を選び、対象業界の固有知識と、整理・説明・確認など別の仕事でも使う手順を分けます。成果と判断理由を具体例で残すと、経験を過大にも過小にも表現せず次の職業と比較できます。",
     "category": "経験の棚卸し",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "jilpt-jobtag-description-7-01",
       "ipa-dss-v2-files",
@@ -1402,10 +1417,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "work-story-with-verifiable-evidence",
@@ -1414,7 +1430,7 @@
     "answer": "経験談は状況、担当行動、判断理由、確認できた結果の四行で書きます。自分の担当範囲と他者の貢献を分け、数字には期間と比較条件を付け、示せない機密情報は無理に具体化しません。",
     "category": "経験の伝え方",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-human-development-2026",
       "jilpt-jobtag-description-7-01",
@@ -1490,10 +1506,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "compare-training-total-cost",
@@ -1502,7 +1519,7 @@
     "answer": "講座は表示価格ではなく、受講料、教材・試験等の追加費用、給付の確定条件、利用期限、指導範囲、作れる成果物、解約・返金の七項目で比べます。制度を使えない場合にも払える金額を基準にします。",
     "category": "講座比較",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "meti-reskilling-careerup-2026",
       "mhlw-human-development-2026",
@@ -1578,10 +1595,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "read-entry-level-job-claims",
@@ -1590,10 +1608,9 @@
     "answer": "未経験可は、業界経験、職種経験、特定ツール、資格、入社後の作業のどれを指すか確認します。求人票と企業の回答から、最初の業務、教育担当、独り立ちの基準、選考条件を具体化し、採用保証とは受け取りません。",
     "category": "求人の読み方",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-job-openings-2026-05",
-      "jilpt-manufacturing-workforce-2026",
       "jilpt-jobtag-description-7-01"
     ],
     "relatedCareerSlugs": [
@@ -1666,10 +1683,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "compare-salary-total-conditions",
@@ -1678,11 +1696,10 @@
     "answer": "給与比較は月給欄だけで行わず、基本給、固定・変動手当、賞与、固定残業の時間と超過分、所定時間、休日、契約、勤務地を同じ単位で並べます。名目額を手取りや将来の収入と混同せず、不明点は書面で確認します。",
     "category": "労働条件",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-wage-structure-2025",
-      "mhlw-monthly-labor-2026-05",
-      "stat-labor-force-2026-05"
+      "mhlw-monthly-labor-2026-05"
     ],
     "relatedCareerSlugs": [
       "accounting",
@@ -1754,19 +1771,20 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "work-ai-confidentiality-checklist",
-    "title": "その資料、AIに入れて大丈夫？仕事で使う前の機密情報チェック10項目",
+    "title": "その資料、AIに入れて大丈夫？仕事で使う前の機密情報チェックリスト",
     "summary": "生成AIへ入力する前に、契約、個人情報、社内規程、保存先、出力確認を分けて判断する手順です。",
     "answer": "業務資料をAIへ入力できるかは、便利さではなく情報の権利、契約、社内規程、利用サービスの保存・学習条件を一件ずつ確認して決めます。判断できない情報は匿名化だけで済ませず入力を止め、管理者や情報セキュリティ担当へ確認します。",
     "category": "AI活用",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "ipa-ai-explanation-survey-2026",
       "ipa-dx-digital-talent-ai-era",
@@ -1842,10 +1860,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "ai-output-verification-log",
@@ -1854,7 +1873,7 @@
     "answer": "AI出力を仕事で使うなら、文章全体を一度に採否判定せず、事実、計算、引用、提案へ分解し、一次情報と業務ルールで確認します。採用・修正・不採用の理由と確認日をログに残すことで、後から同じ出力を無条件に再利用する事故を減らせます。",
     "category": "AI検証",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "ipa-ai-explanation-survey-2026",
       "ipa-dx-selfdiagnosis-2025-report",
@@ -1931,10 +1950,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "qualification-study-before-application",
@@ -1943,7 +1963,7 @@
     "answer": "応募前に資格取得が必要かは職業名だけで決めず、希望する求人を同じ条件で集め、必須・歓迎・入社後取得・記載なしに分類します。その上で実施団体の受験要件、日程、費用を確認し、応募を遅らせる効果と負担を比較します。",
     "category": "資格と応募",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-jobtag-registered-sales",
       "sssc-care-worker",
@@ -2019,10 +2039,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "learning-stop-rules",
@@ -2031,7 +2052,7 @@
     "answer": "学び直しは払った金額や続けた日数だけで継続せず、次に作る成果物、確認期限、追加費用、生活への影響、情報の有効性を基準に見直します。止めることを失敗とせず、対象を小さくする、教材を替える、休む、別の仕事を調べる選択へ分けます。",
     "category": "学習設計",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-human-development-2026",
       "jilpt-human-investment-panel-262",
@@ -2086,7 +2107,8 @@
         "heading": "2. 続けない条件を先に五つ置く",
         "paragraphs": [
           "一週間後も成果物を説明できない、公式仕様が教材と違う、追加費用が上限を超える、睡眠や本業へ継続的に影響する、目指す求人の作業と結び付かない、の五つを停止候補にします。一度の失敗ではなく、記録した状況で判断します。健康上の懸念は学習効率の問題へ矮小化せず専門窓口を利用します。",
-          "継続条件も対にします。小さな成果物を第三者が再現できた、分からない点が具体化した、求人の共通作業と一致した、公式情報で次の範囲を確認できた、生活時間内で続けられた、などです。点数を合計して自動決定せず、重要な停止条件が一つあれば保留できる設計にします。"
+          "継続条件も対にします。小さな成果物を第三者が再現できた、分からない点が具体化した、求人の共通作業と一致した、公式情報で次の範囲を確認できた、生活時間内で続けられた、などです。点数を合計して自動決定せず、重要な停止条件が一つあれば保留できる設計にします。",
+          "学び直し支援（給付や補助）を使っている場合は、止める・切り替える前に、利用条件と対象講座が制度ごとに決まっていることを公式情報で再確認します。条件を満たさなくなると支援を受けられない場合があるため、判断表には支援の条件も一行残します。"
         ]
       },
       {
@@ -2107,10 +2129,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "four-week-learning-review",
@@ -2119,7 +2142,7 @@
     "answer": "四週間の学習成果は時間や修了数だけで評価せず、何も見ずに再現できた作業、他者へ説明できた判断、誤りを見つける確認手順、次に改善する一点で棚卸しします。毎週同じ小課題を少し変えて試すと、上達と不足を具体的に比べられます。",
     "category": "上達確認",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-human-development-2026",
       "works-working-trends-2025",
@@ -2190,15 +2213,17 @@
         "heading": "4. 翌月は不足一つだけを深める",
         "paragraphs": [
           "四作品を並べ、繰り返し起きた差戻しを一つ選びます。説明が弱い、確認漏れ、構成に時間がかかる、データ定義を誤るなど、改善できる行動へ書き換えます。職業そのものへの適性や才能の点数にしません。求人で重視される作業と一致するかは、複数の実在求人と公式職業情報で確認します。",
-          "翌月の計画は教材を追加する前に、同じ課題を別素材で二回行う予定から作ります。成果を公開する場合は個人情報、著作権、勤務先の秘密を除き、架空素材であることを示します。四週間で転職や習得を保証せず、確認できた変化と未確認を正直に分けることが、次の学習範囲を小さくします。"
+          "翌月の計画は教材を追加する前に、同じ課題を別素材で二回行う予定から作ります。成果を公開する場合は個人情報、著作権、勤務先の秘密を除き、架空素材であることを示します。四週間で転職や習得を保証せず、確認できた変化と未確認を正直に分けることが、次の学習範囲を小さくします。",
+          "不足を深める入口は、民間の教材だけで決めず、厚生労働省が職業能力開発とキャリア形成支援の公式情報をまとめている人材開発ページでも確認します。公的支援の対象や条件は制度ごとに異なるため、申込み前に公式情報で確かめます。"
         ]
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "career-source-check",
@@ -2207,7 +2232,7 @@
     "answer": "職業情報を信頼できるかはサイト名だけで決めず、主張ごとに提供者、元資料、対象者、調査時点、更新日、利用条件を確認します。給与、資格要件、制度、費用、求人条件は変わりやすいため、記事の要約から一次情報へ戻り、判断日にもう一度確認します。",
     "category": "情報リテラシー",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "jilpt-jobtag-description-7-01",
       "mhlw-jobtag-download-terms",
@@ -2283,10 +2308,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "career-news-to-action",
@@ -2295,11 +2321,10 @@
     "answer": "転職ニュースの数字は自分への予言として読まず、何を誰にいつ調べた値か、前回との差、職種・地域・雇用形態による違いを確認します。その後、希望求人を三件読む、条件を一つ質問するなど、今日検証できる行動を一つだけ決めます。",
     "category": "ニュース活用",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "mhlw-job-openings-2026-05",
-      "stat-labor-force-2026-05",
-      "indeed-japan-labor-chartbook-2026-06"
+      "stat-labor-force-2026-05"
     ],
     "relatedCareerSlugs": [
       "web-marketer",
@@ -2371,10 +2396,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "three-candidate-route",
@@ -2383,7 +2409,7 @@
     "answer": "最初から一職種へ絞る必要はありません。興味のあるテーマ、取り組みたい作業、今週使える学習時間から最低三候補を残し、各候補で九十分以内の入口作業、注意点、必要な確認を同じ形式で比べます。結果は適性や採用可能性の保証ではありません。",
     "category": "候補整理",
     "readMinutes": 11,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "jilpt-jobtag-description-7-01",
       "mhlw-jobtag-data",
@@ -2438,7 +2464,8 @@
         "heading": "2. 三候補を同じ五項目で比べる",
         "paragraphs": [
           "各候補に、日常の仕事内容、九十分の入口作業、必要な確認、注意点、次の学習先を一枚ずつ書きます。年収順、将来性順、転職しやすさ順は根拠なく作りません。未経験可は公的情報または条件をそろえた実在求人で傾向を確認できる場合だけ使い、採用されやすいという意味にしません。",
-          "比較後も点数合計で順位を決めず、『今週試す順番』だけを選びます。作業が似ている候補なら同じ課題で違いを見ます。例えば表の整理でも、データ分析は問いと指標、事務は正確な更新、Web制作は表示と利用者という確認軸が異なります。職業名の華やかさより差戻し場面を読みます。"
+          "比較後も点数合計で順位を決めず、『今週試す順番』だけを選びます。作業が似ている候補なら同じ課題で違いを見ます。例えば表の整理でも、データ分析は問いと指標、事務は正確な更新、Web制作は表示と利用者という確認軸が異なります。職業名の華やかさより差戻し場面を読みます。",
+          "候補の名称は、公的職業データにある職業名と別名の両方で照合します。同じ仕事でも呼び名が違うことがあるため、名称の印象ではなく仕事内容で三候補をそろえます。"
         ]
       },
       {
@@ -2459,10 +2486,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "mobile-ten-minute-career-research",
@@ -2471,7 +2499,7 @@
     "answer": "スマホでの職業研究は一度に多くのタブを開かず、今日は仕事内容、次は資格要件のように確認目的を一つ決めます。公式ページを開き、要点と確認日、次にパソコンで確かめる箇所だけを端末内へ保存すれば、ブックマーク数を進捗と誤解しにくくなります。",
     "category": "スマホ調査",
     "readMinutes": 10,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "jilpt-jobtag-description-7-01",
       "mhlw-jobtag-download-terms",
@@ -2547,10 +2575,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "career-decision-log",
@@ -2559,7 +2588,7 @@
     "answer": "キャリア判断は一度の決意で固定せず、候補、重視する条件、確認した事実、未確認、見送った理由、見直し日を記録します。前提が変わったときに結論だけでなく根拠へ戻れるため、過去の時間や周囲の期待に引かれず更新できます。",
     "category": "意思決定",
     "readMinutes": 12,
-    "checkedAt": "2026-07-20",
+    "checkedAt": "2026-10-29",
     "sourceIds": [
       "works-working-trends-2025",
       "persol-future-of-work-whitepaper-2026",
@@ -2635,9 +2664,10 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   }
 ]
