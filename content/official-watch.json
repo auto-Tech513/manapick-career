@@ -1,0 +1,207 @@
+[
+  {
+    "id": "jobtag",
+    "url": "https://shigoto.mhlw.go.jp/User/",
+    "allowedHosts": [
+      "shigoto.mhlw.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "labour-force",
+    "url": "https://www.stat.go.jp/data/roudou/sokuhou/tsuki/",
+    "allowedHosts": [
+      "www.stat.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "job-openings",
+    "url": "https://www.mhlw.go.jp/toukei/list/114-1.html",
+    "allowedHosts": [
+      "www.mhlw.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "monthly-labour",
+    "url": "https://www.mhlw.go.jp/toukei/list/30-1.html",
+    "allowedHosts": [
+      "www.mhlw.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "ipa-dss",
+    "url": "https://www.ipa.go.jp/jinzai/skill-standard/dss/",
+    "allowedHosts": [
+      "www.ipa.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "jilpt",
+    "url": "https://www.jil.go.jp/press/",
+    "allowedHosts": [
+      "www.jil.go.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "care-exam",
+    "url": "https://www.sssc.or.jp/kaigo/",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "takken-exam",
+    "url": "https://www.retio.or.jp/exam/",
+    "allowedHosts": [
+      "www.retio.or.jp"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "toeic-exam",
+    "url": "https://www.iibc-global.org/toeic/test/lr/guide01.html",
+    "allowedHosts": [
+      "www.iibc-global.org"
+    ],
+    "relatedSites": [
+      "manapick",
+      "ai",
+      "license",
+      "career"
+    ]
+  },
+  {
+    "id": "medicine-sales",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000082514.html",
+    "allowedHosts": [
+      "www.mhlw.go.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
+  },
+  {
+    "id": "care-worker-route",
+    "url": "https://www.sssc.or.jp/kaigo/shikaku/route.html",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
+  },
+  {
+    "id": "care-worker-training",
+    "url": "https://www.sssc.or.jp/kaigo/shikaku/k_08_4.html",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
+  },
+  {
+    "id": "care-worker-route-chart",
+    "url": "https://www.sssc.or.jp/kaigo/image/img_route_k.gif",
+    "allowedHosts": [
+      "www.sssc.or.jp"
+    ],
+    "purpose": "Changes in the official source for career qualification-scope explanations; not human verification"
+  },
+  {
+    "id": "wage-occupation-table-2025",
+    "url": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421116&fileKind=4",
+    "allowedHosts": [
+      "www.e-stat.go.jp"
+    ],
+    "purpose": "Detect revisions of pinned wage workbook; not a human review or automatic certification of new annual values."
+  },
+  {
+    "id": "jobtag-income-crosswalk",
+    "url": "https://sgteprdstaplog01.blob.core.windows.net/web-app-contents/documents/%E8%81%B7%E6%A5%AD%E5%88%86%E9%A1%9E%E5%AF%BE%E5%BF%9C%E8%A1%A8%EF%BC%88R8.3%EF%BC%89.xlsx",
+    "allowedHosts": [
+      "sgteprdstaplog01.blob.core.windows.net"
+    ],
+    "purpose": "Detect changes to official occupation-to-wage mappings; no fuzzy replacement."
+  },
+  {
+    "id": "jobtag-statistical-update",
+    "url": "https://shigoto.mhlw.go.jp/User/Top/TopicsDetail/584",
+    "allowedHosts": [
+      "shigoto.mhlw.go.jp"
+    ],
+    "purpose": "Detect published changes in survey years and statistical caveats."
+  },
+  {
+    "id": "tax-registration",
+    "url": "https://www.nichizeiren.or.jp/prospects/entry/doc/",
+    "allowedHosts": [
+      "www.nichizeiren.or.jp"
+    ],
+    "purpose": "Detect changes in official qualification requirements; automated retrieval is not human verification."
+  },
+  {
+    "id": "law-qualification",
+    "url": "https://www.moj.go.jp/housei/gaiben/housei07_00004.html",
+    "allowedHosts": [
+      "www.moj.go.jp"
+    ],
+    "purpose": "Detect changes in official qualification requirements; automated retrieval is not human verification."
+  },
+  {
+    "id": "nurse-qualification",
+    "url": "https://www.mhlw.go.jp/kango_kyouiku/become/index.html",
+    "allowedHosts": [
+      "www.mhlw.go.jp"
+    ],
+    "purpose": "Detect changes in official qualification requirements; automated retrieval is not human verification."
+  },
+  {
+    "id": "childcare-qualification",
+    "url": "https://www.cfa.go.jp/policies/hoiku/hello_mirai/naruniha",
+    "allowedHosts": [
+      "www.cfa.go.jp"
+    ],
+    "purpose": "Detect changes in official qualification requirements; automated retrieval is not human verification."
+  }
+]

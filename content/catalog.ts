@@ -1,9 +1,13 @@
 import catalog from "./job-catalog.json";
+import { incomeOccupationByCatalogId } from "@/lib/occupation-income";
+import corrections from "./occupation-corrections.json";
+import evidence from "./career-evidence.json";
 import publication from "./occupation-publication.json";
+import { createHash } from "node:crypto";
 
 export type CatalogOccupation = (typeof catalog.occupations)[number];
 export type CatalogCategory = (typeof catalog.categories)[number];
-export type OccupationDirectoryEntry = Pick<CatalogOccupation, "catalogId" | "name" | "aliases" | "categoryKey" | "classificationCode" | "recordNumber">;
+export type OccupationDirectoryEntry = Pick<CatalogOccupation, "catalogId" | "name" | "aliases" | "categoryKey" | "classificationCode" | "recordNumber" | "summary"> & { incomeCode: string | null };
 
 export type OccupationPublicationStatus = "draft" | "reviewed" | "published";
 export type OccupationPublicationRecord = {
@@ -32,9 +36,12 @@ export const occupationDirectory: OccupationDirectoryEntry[] = catalog.occupatio
   categoryKey: occupation.categoryKey,
   classificationCode: occupation.classificationCode,
   recordNumber: occupation.recordNumber,
+  summary: occupation.summary,
+  incomeCode: incomeOccupationByCatalogId.get(occupation.catalogId)?.classificationCode ?? null,
 }));
 export const occupationCatalogCategories = catalog.categories;
 export const occupationCatalogSource = catalog.source;
+export const occupationBriefVersion = createHash("sha256").update(JSON.stringify({occupations: catalog.occupations, corrections, evidence})).digest("hex").slice(0,12);
 export const occupationPublicationPolicy = publication.policy;
 export const occupationPublicationRecords = publication.records as OccupationPublicationRecord[];
 

@@ -1,7 +1,13 @@
+import { WorkDepth, FitDepth, QualificationDepth, EmployerDepth } from '@/components/CareerDepth';
+import { careerDossierBySlug, careerEvidenceById } from '@/lib/career-dossiers';
+import claimComparisons from "@/content/claim-verification.json";
+import Breadcrumbs from "@/components/Breadcrumbs";
+import networkMap from "@/content/network-map-shared.json";
+import { NetworkRelations } from "@/components/NetworkRelations";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, ArrowUpRight, CheckCircle2, CircleAlert, Newspaper } from "lucide-react";
+import { ArrowLeft, ArrowRight, ArrowUpRight, CircleAlert, Newspaper } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { PageEvent, TrackedExternalLink } from "@/components/Tracking";
 import { publishedNews } from "@/content/editorial";
@@ -12,18 +18,24 @@ import { networkUrl } from "@/lib/network";
 import { AiDeepLinks } from "@/components/AiDeepLinks";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
+import profiles from '@/content/professional-careers.json';
+import { ProfessionalCareerPage } from '@/components/ProfessionalCareerPage';
+import { CareerIncome } from '@/components/CareerIncome';
+
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return publishedJobs.map((job) => ({ slug: job.slug }));
+  return [...publishedJobs, ...profiles.items].map((job) => ({ slug: job.slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const job = publishedJobs.find((item) => item.slug === slug);
+  const professional=profiles.items.find(item=>item.slug===slug);
+  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description:professional.summary,alternates:{canonical:`/career/${slug}/`},openGraph:{title,description:professional.summary,url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',images:[{url:image,width:1200,height:630,alt:title}]},twitter:{card:'summary_large_image',title,description:professional.summary,images:[image]}};}
   if (!job) return {};
-  const title = `${job.name}になるには？仕事内容・似た職業との違い・転職準備`;
-  const description = `${job.name}の仕事内容、業界での役割、似た職業との違い、転職準備の難所、応募・社内での活かし方、資格・AI・学習手順を公式情報から整理します。`;
+  const title = `${job.name}の仕事内容・向いている人・資格・日本企業の例`;
+  const description = `${job.name}は何をする仕事か。具体的な業務と成果物、作業から考える相性、資格の位置づけ、日本企業の公式職種例を、出典とともにcareer内で読めます。`;
   const image = articleOgUrl("career", job.slug, `${job.name}|${job.checkedAt}|career-depth-v2`);
   return {
     title,
@@ -36,7 +48,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "article",
       siteName: "manapick career",
       locale: "ja_JP",
-      modifiedTime: job.checkedAt,
+      modifiedTime: careerDossierBySlug.get(slug)?.researchedAt ?? job.checkedAt,
       images: [{ url: image, width: 1200, height: 630, alt: `${job.name}の仕事内容・違い・転職準備` }],
     },
     twitter: { card: "summary_large_image", title, description, images: [image] },
@@ -46,9 +58,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function CareerPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const job = publishedJobs.find((item) => item.slug === slug);
+  if(profiles.items.some(item=>item.slug===slug)) return <ProfessionalCareerPage slug={slug}/>;
   const insight = careerInsightBySlug.get(slug);
-  if (!job || !insight) notFound();
+  const dossier = careerDossierBySlug.get(slug);
+  if (!job || !insight || !dossier) notFound();
 
+  const relation = networkMap.relations.find(group => group.id === `career-${job.slug}`);
+  const exactVideos = relation?.nodes.filter(node => node.kind === "video") ?? [];
   const category = categories.find((item) => item.key === job.category);
   const sources = sourceRegistry.filter((source) => job.sourceIds.includes(source.sourceId));
   const relatedNews = publishedNews.filter((item) => item.relatedCareerSlugs.includes(job.slug)).slice(0, 3);
@@ -67,13 +83,13 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
         description: job.conclusion.join(" "),
         url,
         image: articleOgUrl("career", job.slug, `${job.name}|${job.checkedAt}|career-depth-v2`),
-        dateModified: job.checkedAt,
+        dateModified: dossier.researchedAt,
         inLanguage: "ja-JP",
         author: { "@type": "Organization", name: job.author, url: absoluteUrl("/operator/") },
         editor: { "@type": "Organization", name: job.editor, url: absoluteUrl("/operator/") },
         publisher: { "@id": absoluteUrl("/#organization") },
         mainEntityOfPage: url,
-        citation: sources.map((source) => source.url),
+        citation: [...sources.map(source => source.url), ...dossier.sourceIds.flatMap(id => { const source = careerEvidenceById.get(id); return source ? [source.url] : []; })],
       },
       {
         "@type": "BreadcrumbList",
@@ -98,35 +114,34 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
     <JsonLd data={graph} />
     <PageEvent name="career_open" params={{ career_slug: job.slug }} />
     <div className="detail-shell">
-      <nav className="breadcrumbs" aria-label="パンくず"><Link href="/">ホーム</Link><span>/</span><Link href={`/category/${job.category}/`}>{category?.label}</Link><span>/</span><span>{job.name}</span></nav>
+      <Breadcrumbs trail={[{name:"ホーム",path:"/"},{name:category?.label ?? job.category,path:`/category/${job.category}/`},{name:job.name,path:`/career/${job.slug}/`}]} />
       <Link className="back-link" href="/all/"><ArrowLeft aria-hidden="true" /> 職業一覧へ</Link>
+      {claimComparisons.filter(record=>record.careerSlug===job.slug).map(record=><aside className="claim-comparison-notice" key={record.id}><h2>制度説明の一部を一次資料と照合</h2><p>AIによる照合記録：{record.verifiedAt}。{record.scope} 人による確認や視聴確認の記録ではありません。</p><ul>{record.sources.map(source=><li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.supportingSummary}</a></li>)}</ul></aside>)}
 
       <header className="job-hero" id="summary">
         <div className="job-hero-main">
           <span className="category-label"><i className={`category-dot cat-${job.category}`} />{category?.label}</span>
-          <h1>{job.name}<small>になるには</small></h1>
+          <h1>{job.name}<small>仕事内容・向いている人・資格・企業例</small></h1>
           <div className="conclusion"><strong>先に結論</strong><p>{job.conclusion[0]}</p><p>{job.conclusion[1]}</p></div>
         </div>
-        <aside className="quick-view"><span>入口の見取り図</span><dl><div><dt>学び方</dt><dd>{job.learningLoad}</dd></div><div><dt>入口スキル</dt><dd>{job.entrySkills[0]}</dd></div><div><dt>情報確認日</dt><dd>{job.checkedAt}</dd></div></dl></aside>
+        <aside className="quick-view"><span>入口の見取り図</span><dl><div><dt>学び方</dt><dd>{job.learningLoad}</dd></div><div><dt>入口スキル</dt><dd>{job.entrySkills[0]}</dd></div><div><dt>追加解説の出典照合</dt><dd>{dossier.researchedAt}（AI）</dd></div></dl></aside>
       </header>
 
       <details className="detail-mobile-toc"><summary>このページの目次</summary><CareerToc /></details>
       <div className="detail-layout">
         <article className="detail-content">
+          <section id="work">
+            <span className="section-num">01 / WORK & DELIVERABLES</span><h2>どういう仕事？ 実際の業務と成果物</h2>
+            <WorkDepth dossier={dossier} />
+          </section>
+          <CareerIncome slug={slug} />
+          <FitDepth dossier={dossier} />
+          <QualificationDepth dossier={dossier} />
+          <EmployerDepth dossier={dossier} />
           <section id="industry">
-            <span className="section-num">01 / INDUSTRY</span><h2>業界で担う役割と、いま確認する変化</h2>
-            <p className="section-lead">業界名の印象ではなく、この職業が誰に何を渡すか、その仕事を取り巻く確認事項から見ます。</p>
+            <span className="section-num">INDUSTRY / CONTEXT</span><h2>業界で担う役割と、いま確認する変化</h2>
             <div className="insight-lead"><strong>業界での役割</strong><p>{insight.industryRole}</p></div>
             <div className="current-signal"><strong>変化の中で確認すること</strong><p>{insight.currentSignal}</p></div>
-          </section>
-
-          <section id="work">
-            <span className="section-num">02 / WORK</span><h2>仕事内容と、仕事を知る有益性</h2>
-            {job.work.map((item) => <p key={item}>{item}</p>)}
-            <ul className="task-list">{job.tasks.map((item) => <li key={item}><CheckCircle2 aria-hidden="true" />{item}</li>)}</ul>
-            <div className="usefulness-box"><strong>キャリアにどう役立つ？</strong><p>{insight.usefulness}</p></div>
-            <h3>判断材料</h3><p className="section-lead">適性の断定ではありません。仕事内容を調べる入口として使います。</p>
-            <ul className="check-list">{job.possibilities.map((item) => <li key={item}>{item}</li>)}</ul>
           </section>
 
           <section id="differences">
@@ -154,11 +169,11 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
             <div className="time-note"><strong>学習期間の考え方</strong><p>{job.learningTime}</p></div>
           </section>
 
-          <section id="next-steps">
+          <NetworkRelations site="career" path={`/career/${job.slug}/`} /><section id="next-steps">
             <span className="section-num">07 / NETWORK</span><h2>動画・AI・資格を、仕事へつなぐ</h2>
             <p className="section-lead">動画で作業を学び、AIは確認責任を持って補助に使い、資格は知識の範囲を示す材料として使います。採用や実務能力を保証するものではありません。</p>
             <div className="resource-groups">
-              <Resource title="無料動画で学ぶ" tone="blue" items={job.videos.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "必要な基礎を順番に学ぶ" }))} />
+              <Resource title="無料動画で学ぶ" tone="blue" items={exactVideos.length ? exactVideos.map(node => ({ label: node.label, href: node.url, description: "対応表で結んだ個別の学習動画" })) : job.videos.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "個別動画の一致がないため学習分野へ" }))} />
               <Resource title="仕事で使うAI" tone="red" items={job.ai.map((item) => ({ label: item.label, href: networkUrl(item.networkId), description: item.use }))} />
               <Resource title="関連資格を確認" tone="green" items={job.qualifications.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "公式要件と試験範囲を確認" }))} empty="必須と断定できる関連資格は設定していません。成果物と仕事の確認手順を優先します。" />
             </div>
@@ -167,16 +182,16 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
           </section>
 
           <section id="news">
-            <span className="section-num">08 / VERIFIED NEWS</span><h2>この職業に関連する確認済みニュース</h2>
+            <span className="section-num">08 / RELATED NEWS</span><h2>この職業に関連する公開済みニュース</h2>
             <p className="section-lead">市場全体の数字を個人の採用可能性へ置き換えず、一次資料の範囲と確認日を読んで、次に確かめる条件を決めます。</p>
-            {relatedNews.length ? <div className="career-news-grid">{relatedNews.map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span><Newspaper aria-hidden="true" />{item.kind}</span><strong>{item.title}</strong><p>{item.summary}</p><small>公開 {item.publishedAt}／確認 {item.checkedAt}</small></Link>)}</div> : <div className="news-empty"><p>この職業へ直接結び付けた公開済みニュースは現在ありません。確認前の記事は表示しません。</p><Link className="button secondary" href="/news/">確認済みニュースを見る</Link></div>}
+            {relatedNews.length ? <div className="career-news-grid">{relatedNews.map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span><Newspaper aria-hidden="true" />{item.kind}</span><strong>{item.title}</strong><p>{item.summary}</p><small>公開 {item.publishedAt}／確認 {item.checkedAt}</small></Link>)}</div> : <div className="news-empty"><p>この職業へ直接結び付けた公開済みニュースは現在ありません。下書きの記事は表示しません。</p><Link className="button secondary" href="/news/">公開済みニュースを見る</Link></div>}
           </section>
 
           <section className="editorial-block" id="sources">
-            <span className="section-num">09 / SOURCES</span><h2>この記事の確認方法</h2>
-            <dl><div><dt>執筆</dt><dd>{job.author}</dd></div><div><dt>編集確認</dt><dd>{job.editor}</dd></div><div><dt>最終確認日</dt><dd>{job.checkedAt}</dd></div><div><dt>作成方法</dt><dd>{job.editorNote}</dd></div></dl>
-            <h3>出典</h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul>
-            <p>AI補助を利用した場合も、公開前に編集者が全主張とリンクを確認します。誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>をご利用ください。</p>
+            <span className="section-num">09 / SOURCES</span><h2>出典と作成記録</h2><p>仕事内容の追加解説、作業から考える相性、資格の位置づけ、企業例は、公式資料をAIが照合・整理したものです。下記の既存本文の編集記録と、今回の追加解説の照合日は別の記録です。</p><p>追加解説の照合日：{dossier.researchedAt}。現場取材、就業体験、視聴確認の記録は追加していません。</p>
+            <dl><div><dt>執筆</dt><dd>{job.author}</dd></div><div><dt>既存本文の編集記録</dt><dd>{job.editor}</dd></div><div><dt>既存本文の記録日</dt><dd>{job.checkedAt}</dd></div><div><dt>作成方法</dt><dd>{job.editorNote}</dd></div></dl>
+            <h3>追加解説の根拠</h3><ul className="source-list">{dossier.sourceIds.map(id => {const source=careerEvidenceById.get(id);return source ? <li key={id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}「{source.title}」<ArrowUpRight aria-hidden="true" /></a><small>AI出典照合 {source.accessedAt}／{source.support}</small></li> : null;})}</ul><h3>既存本文の出典</h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul>
+            <p>出典URLと記録された確認日を表示しています。自動取得による変化検知は、人による内容確認や視聴確認を意味しません。誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>をご利用ください。</p>
           </section>
         </article>
 
@@ -187,7 +202,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
 }
 
 function CareerToc() {
-  return <nav aria-label="このページの目次"><strong>このページで分かること</strong><a href="#summary">先に結論</a><a href="#industry">業界と変化</a><a href="#work">仕事内容と有益性</a><a href="#differences">似た職業との違い</a><a href="#transition">転職準備の条件</a><a href="#application">転職・社内活用</a><a href="#learning">スキルと学ぶ順番</a><a href="#next-steps">動画・AI・資格</a><a href="#news">関連ニュース</a><a href="#sources">出典と確認方法</a></nav>;
+  return <nav aria-label="このページの目次"><strong>このページで分かること</strong><a href="#summary">先に結論</a><a href="#work">仕事内容と成果物</a><a href="#income">平均年収と統計の範囲</a><a href="#fit">向いている人・相性</a><a href="#qualifications">資格と必要な条件</a><a href="#employers">日本企業の例</a><a href="#industry">業界と変化</a><a href="#differences">似た職業との違い</a><a href="#transition">転職準備の条件</a><a href="#application">転職・社内活用</a><a href="#learning">スキルと学ぶ順番</a><a href="#next-steps">動画・AI・資格</a><a href="#news">関連ニュース</a><a href="#sources">出典と確認方法</a></nav>;
 }
 
 function Resource({ title, tone, items, empty }: { title: string; tone: string; items: { label: string; href: string; description: string }[]; empty?: string }) {

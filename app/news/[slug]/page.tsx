@@ -5,7 +5,7 @@ import { ArrowLeft, CalendarDays, Clock3 } from "lucide-react";
 import { EditorialArticle } from "@/components/EditorialArticle";
 import { JsonLd } from "@/components/JsonLd";
 import { ShareKit } from "@/components/ShareKit";
-import { newsBySlug, newsItems, newsModifiedAt } from "@/content/editorial";
+import { newsBySlug, newsItems, newsModifiedAt, newsNeedsRefresh } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 import { buildNewsStaticParams, EMPTY_NEWS_ROUTE_SLUG } from "@/lib/news-static-params.mjs";
@@ -31,7 +31,8 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   return <><JsonLd data={graph}/><div className="page-shell editorial-detail news-detail-page">
     <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/news/">ニュース</Link><span>/</span><span aria-current="page">{item.kind}</span></nav>
     <Link className="back-link" href="/news/"><ArrowLeft aria-hidden="true" />ニュース一覧へ</Link>
-    <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1>{item.title}</h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>一次資料確認 {item.checkedAt}</span><span>公開前編集確認 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
+    <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1>{item.title}</h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>出典台帳の記録 {item.checkedAt}</span><span>公開台帳の記録 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
+    {newsNeedsRefresh(item) ? <aside className="source-freshness-notice" data-news-archive="true" role="note"><h2>過去の公表資料に基づく記事です</h2><p>資料確認日の記録は{item.checkedAt}です。更新確認の期限を超えています。現在の状況を示す情報として使わず、下記の公式出典で最新の発表を確認してください。</p></aside> : null}
     <ShareKit title={item.title} summary={item.summary} url={url} kind="news" />
     <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources}/>
   </div></>;

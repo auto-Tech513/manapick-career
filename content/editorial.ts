@@ -1,3 +1,5 @@
+import { retainObservedNewsUrl } from "@/lib/publication-retention";
+import retainedPublicNews from "./retained-public-news.json";
 import expandedNewsData from "./news-expanded.json";
 import expandedGuideData from "./guides-expanded.json";
 import guideClaimData from "./guide-claim-registry.json";
@@ -461,7 +463,7 @@ const baseGuides: Guide[] = [
     slug: "how-to-use-556-occupation-directory",
     title: "556職業名録の使い方：名前を増やしても迷わない5つの確認",
     summary: "500を超える職業名を眺め続けず、分類、別名、仕事内容、注意点、学びの接続へ進む方法です。",
-    answer: "職業名録は選択肢の見落としを減らす一覧であり、適職を自動判定するものではありません。15分類から二領域を選び、別名を含めて六候補に絞り、公式の仕事内容を確認します。最後に人が確認した詳細解説と小さな作業へ進むと、広さと深さを混同せずに調べられます。",
+    answer: "職業名録は選択肢の見落としを減らす一覧であり、適職を自動判定するものではありません。15分類から二領域を選び、別名を含めて六候補に絞り、公式の仕事内容を確認します。最後に業務・資格・企業例を整理した詳細解説と小さな作業へ進むと、広さと深さを混同せずに調べられます。",
     category: "職業の探し方",
     readMinutes: 10,
     publishedAt: "2026-07-13",
@@ -482,11 +484,11 @@ const baseGuides: Guide[] = [
       { siteId: "license", itemId: "license:mos", label: "manapick licenseで事務系資格の要件を見る", description: "職業名録の候補と資格要件を混同せず、学習目標として使う範囲を公式情報から確認します。" },
     ]),
     sections: [
-      { id: "not-a-diagnosis", heading: "1. 名録は診断ではなく、見落としを減らす地図", paragraphs: ["556職業名録は、JILPTが作成したjob tagの解説系ダウンロードデータver.7.01から、職業名、別名、職業分類、収録番号だけを抽出しています。職業解説本文、画像、動画、数値データは複製していません。掲載数が多いからといって、すべての職業を同じ深さで説明できているという意味でもありません。", "一覧の役割は、自分が知っている肩書きだけで検索して候補を狭め過ぎることを防ぐことです。適性、採用可能性、年収、将来性を判定しません。気になる名前を見つけたら、job tagの公式情報や本サイトの確認済み詳細へ進み、毎日の作業と条件を確かめます。" ] },
+      { id: "not-a-diagnosis", heading: "1. 名録は診断ではなく、見落としを減らす地図", paragraphs: ["556職業名録は、JILPTが作成したjob tagの解説系ダウンロードデータver.7.01から、職業名、別名、職業分類、収録番号、概要を検索に使い、仕事内容、就業経路、労働条件、関連資格は名録内で開いて読めるようにしています。配布データの説明であること、出典・版・取得記録・解説更新年を示します。画像、動画、数値プロフィールは使用していません。掲載数が多いからといって、すべての職業を同じ深さで説明できているという意味でもありません。", "一覧の役割は、自分が知っている肩書きだけで検索して候補を狭め過ぎることを防ぐことです。適性、採用可能性、年収、将来性を判定しません。気になる名前を見つけたら、名録内の説明を開き、毎日の作業と条件を確かめます。独自の詳細解説がある仕事では、具体的な業務や成果物、資格の位置づけ、企業の公式な職種例まで読めます。" ] },
       { id: "choose-two", heading: "2. 15分類から二つだけ選ぶ", paragraphs: ["最初から556件を順に読む必要はありません。研究・技術、医療・看護、事務、販売・営業、福祉・介護、製造、建設など15分類から、現在知っている領域を一つ、これまで調べていなかった領域を一つ選びます。一つだけだと既知の選択肢へ戻りやすく、三つ以上だと比較の軸が増え過ぎるため、最初は二つで十分です。", "分類は仕事内容を完全に表すものではありません。情報を整理する、相手へ説明する、安全を確認する作業は複数分類に現れます。分類は入口として使い、候補を見つけた後は、入力、作業、成果物、関わる相手の四点へ分解してください。各分類から三職業ずつ選ぶと、六候補を同じ形式で比較できます。" ], points: ["既知の領域を一つ", "未探索の領域を一つ", "候補は各領域から三つまで"] },
       { id: "names-and-aliases", heading: "3. 別名と肩書きのずれを確認する", paragraphs: ["同じ仕事でも、職場や業界によって呼び方が変わります。名録では公式データに含まれる別名を最大三つ表示し、検索対象にも含めています。反対に、似た名称でも担当する作業が違う場合があります。名称が一致しただけで同じ職業と判断せず、公式説明と実際の求人票の仕事内容を照合します。", "企業独自の肩書きや、新しい技術を含む役割名は、公的な職業名と一対一に対応しないことがあります。以前掲載していた『AI・DX推進担当』も、職業名として曖昧だったため、job tagに実在する『ITコンサルタント』へ修正しました。DXは取り組みを表す場面がありますが、職業名として扱うと担当範囲を誤解しやすいためです。" ] },
-      { id: "quality-gate", heading: "4. 名録と確認済み詳細を混同しない", paragraphs: ["名録カードには公式掲載名と分類だけを表示します。独自本文、公式出典、確認日、関連動画、関連資格、関連AI、編集者確認が揃った場合だけ、確認済み詳細へのリンクを付けます。条件が揃わない職業について、定型文を使って個別ページを量産しません。", "検索エンジン向けのページ数を増やすことより、利用者が名称から正しい一次情報へ進めることを優先します。そのため、556件は単一の検索可能な名録にまとめ、個別URL、サイトマップ、llms.txt、Occupation構造化データは確認済みの職業だけに限定しています。名録件数と公開済み詳細件数を別々に表示するのも、この違いを隠さないためです。" ] },
-      { id: "small-test", heading: "5. 六候補を、試せる三候補へ変える", paragraphs: ["六候補について、繰り返す作業、成果物、注意点、最初に試せる技能を一行ずつ書きます。名称の印象や人気順位ではなく、共通する作業と異なる責任を比べると、さらに調べたい理由が具体的になります。候補を一つに決める必要はなく、入口案内も最低三候補を理由付きで提示します。", "manapickの動画、manapick AI、manapick licenseへの接続は職業を魅力的に見せる加点ではありません。作業を試す教材、変化している作業を確認するAI情報、要件を公式に確かめる資格情報へ進む導線です。まず30〜90分で完了を判断できる成果物を一つ作り、できた点、迷った点、もう一度取り組みたい点を記録してください。", "職業名や分類は更新される可能性があります。本サイトは版と取込日を表示し、元データの版が変わったときに差分を確認できる生成スクリプトを保存しています。ビルド日を確認日に置き換えず、人が実際に確認した日だけを更新します。名称の誤りや分類のずれを見つけた場合は、訂正窓口から連絡できます。" ] },
+      { id: "quality-gate", heading: "4. 公式データと独自解説を区別して読む", paragraphs: ["名録カードには仕事内容の概要があり、ボタンを押すと仕事内容、入職条件、労働条件、関連資格の公式配布データを読めます。これは企業例や個人の適性を新たに確認した独自記事ではありません。career詳細は、職業ごとの独自本文、公式出典、動画・AI・資格、企業例を整理したページとして区別します。定型文で個別URLを量産しません。", "検索エンジン向けのページ数を増やすことより、利用者が名称から正しい一次情報へ進めることを優先します。そのため、556件は単一の検索可能な名録にまとめ、個別URL、サイトマップ、Occupation構造化データは公開中の詳細解説だけに限定しています。名録件数と公開済み詳細件数を別々に表示するのも、この違いを隠さないためです。" ] },
+      { id: "small-test", heading: "5. 六候補を、試せる三候補へ変える", paragraphs: ["六候補について、繰り返す作業、成果物、注意点、最初に試せる技能を一行ずつ書きます。名称の印象や人気順位ではなく、共通する作業と異なる責任を比べると、さらに調べたい理由が具体的になります。候補を一つに決める必要はなく、入口案内も最低三候補を理由付きで提示します。", "manapickの動画、manapick AI、manapick licenseへの接続は職業を魅力的に見せる加点ではありません。作業を試す教材、変化している作業を確認するAI情報、要件を公式に確かめる資格情報へ進む導線です。まず30〜90分で完了を判断できる成果物を一つ作り、できた点、迷った点、もう一度取り組みたい点を記録してください。", "職業名や分類は更新される可能性があります。本サイトは版と取込日を表示し、元データの版が変わったときに差分を確認できる生成スクリプトを保存しています。再ビルド日を出典確認日に置き換えません。ファイルの取得・一致確認と、追加本文のAIによる出典照合、過去の編集記録は別々に表示します。名称の誤りや分類のずれを見つけた場合は、訂正窓口から連絡できます。" ] },
     ],
   },
 ];
@@ -666,7 +668,7 @@ export const newsReviewQueue: NewsReviewItem[] = [...newsItemsData, ...expandedN
   };
 });
 
-function isPublishableNews(item: NewsReviewItem): item is NewsItem {
+function isPublishableNews(item: NewsReviewItem, retainPublishedUrl = false): item is NewsItem {
   const bodyLength = item.sections.flatMap((section) => section.paragraphs).join("").length;
   return item.status === "published"
     && Boolean(item.publishedAt)
@@ -679,12 +681,15 @@ function isPublishableNews(item: NewsReviewItem): item is NewsItem {
     && item.sourceIds.includes(item.primarySourceId)
     && bodyLength >= 1000
     && item.claims.length >= 3
-    && item.claims.every((claim) => claim.sourceIds.includes(item.primarySourceId) && claimIsFresh(claim))
+    && item.claims.every((claim) => claim.sourceIds.includes(item.primarySourceId) && (claimIsFresh(claim) || retainPublishedUrl))
     && networkLinksArePublishable(item.networkLinks);
 }
 
+export function newsNeedsRefresh(item: Pick<NewsItem, "claims">) { return !item.claims.every(claimIsFresh); }
+
+// An age threshold can show an archive warning; it cannot withdraw an observed URL without approval.
 export const publishedNews = newsReviewQueue
-  .filter(isPublishableNews)
+  .filter((item) => isPublishableNews(item, retainObservedNewsUrl(item, retainedPublicNews.slugs)))
   .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || b.sourcePublishedAt.localeCompare(a.sourcePublishedAt));
 export const newsItems = publishedNews;
 export const newsModifiedAt = (item: Pick<NewsItem, "publishedAt" | "reviewedAt" | "checkedAt">) =>

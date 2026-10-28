@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+const css = ['app/globals.css','app/network.css'].map(path=>fs.readFileSync(path,'utf8')).join('\n');
+const definitions = new Map([...css.matchAll(/(--[\w-]+)\s*:\s*([^;{}]+)/g)].map(match=>[match[1],match[2].trim()]));
+const undefinedVariables = [...new Set([...css.matchAll(/var\(\s*(--[\w-]+)/g)].map(match=>match[1]))].filter(name=>!definitions.has(name));
+assert.deepEqual(undefinedVariables, [], 'site styles reference undefined theme properties');
+const luminance = hex => { const raw=hex.replace('#','');const value=raw.length===3?[...raw].map(c=>c+c).join(''):raw;assert(/^[a-f0-9]{6}$/i.test(value),'unsupported contrast colour');const rgb=[0,2,4].map(index=>parseInt(value.slice(index,index+2),16)/255).map(v=>v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4);return rgb.reduce((sum,v,index)=>sum+v*[0.2126,0.7152,0.0722][index],0); };
+const ratio = (a,b) => {const values=[luminance(a),luminance(b)].sort((x,y)=>y-x);return (values[0]+0.05)/(values[1]+0.05);};
+const pairs=[['career primary button',definitions.get('--primary-ink'),definitions.get('--primary')],['career text link',definitions.get('--primary-aa'),definitions.get('--surface')],['career footer note',definitions.get('--line'),definitions.get('--primary-ink')]];
+for(const match of css.matchAll(/\.mp-badge--([\w-]+)\{background:(#[\da-f]+);color:(#[\da-f]+)/gi))pairs.push([`network badge ${match[1]}`,match[3],match[2]]);
+const measured=pairs.map(([name,foreground,background])=>({name,foreground,background,ratio:ratio(foreground,background)}));
+for(const pair of measured)assert(pair.ratio>=4.5,`${pair.name}: ${pair.ratio.toFixed(2)} is below 4.5`);
+console.log(JSON.stringify({undefinedVariables,contrast:measured},null,2));

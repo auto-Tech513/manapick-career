@@ -1,8 +1,30 @@
-import fs from "node:fs/promises";import {loadJobs} from "./load-jobs.mjs";
-const {jobs}=await loadJobs();const sources=JSON.parse(await fs.readFile(new URL("../content/source-registry.json",import.meta.url),"utf8"));const today=new Date();const errors=[];const warnings=[];
-for(const source of sources){for(const key of ["sourceId","provider","url","isPrimary","claims","checkedAt","updateFrequency","republication","notes"]){if(source[key]===undefined||source[key]===null||source[key]==="")errors.push(`${source.sourceId||"unknown"}: missing ${key}`)}if(!/^https:\/\//.test(source.url))errors.push(`${source.sourceId}: non-HTTPS source`)}
-for(const job of jobs)for(const claim of job.claims){const age=Math.floor((today-new Date(`${claim.lastCheckedAt}T00:00:00+09:00`))/86400000);if(age>claim.freshnessDays){const message=`${job.slug}/${claim.id}: ${age}d old (limit ${claim.freshnessDays}d)`;(claim.critical?errors:warnings).push(message)}}
-warnings.forEach(x=>console.warn(`WARN ${x}`));if(errors.length){errors.forEach(x=>console.error(`ERROR ${x}`));process.exit(1)}console.log(`sources: ${sources.length} registered; freshness within limits`);
+import fs from "node:fs/promises";
+import { createHash } from "node:crypto";
+import { loadJobs } from "./load-jobs.mjs";
+import { resolveContentCheckDate } from "../lib/content-check-date.mjs";
+const {jobs}=await loadJobs();
+const sources=JSON.parse(await fs.readFile(new URL("../content/source-registry.json",import.meta.url),"utf8"));
+const comparisons=JSON.parse(await fs.readFile(new URL("../content/claim-verification.json",import.meta.url),"utf8"));
+const today=resolveContentCheckDate(process.env.CONTENT_CHECK_DATE);
+const errors=[]; const warnings=[];
+for(const source of sources){
+  for(const key of ["sourceId","provider","url","isPrimary","claims","checkedAt","updateFrequency","republication","notes"]){if(source[key]===undefined||source[key]===null||source[key]==="")errors.push(`${source.sourceId||"unknown"}: missing ${key}`)}
+  if(!/^https:\/\//.test(source.url))errors.push(`${source.sourceId}: non-HTTPS source`);
+}
+for(const job of jobs)for(const claim of job.claims){
+  const checked=resolveContentCheckDate(claim.lastCheckedAt);
+  const age=Math.floor((today-checked)/86400000);
+  if(Number.isNaN(checked.valueOf())||Number.isNaN(today.valueOf())||age<0)errors.push(`${job.slug}/${claim.id}: invalid or future check date`);
+  if(claim.verificationId){
+    const evidence=comparisons.find(item=>item.id===claim.verificationId);
+    const digest=createHash("sha256").update(claim.text).digest("hex");
+    if(!evidence||evidence.careerSlug!==job.slug||evidence.claimId!==claim.id||evidence.claimSha256!==digest||evidence.verifiedAt!==claim.lastCheckedAt||evidence.humanReview!==false||evidence.method!=="AI-primary-source-comparison"||!evidence.sources.length||evidence.sources.some(source=>!source.url.startsWith("https://")))errors.push(`${job.slug}/${claim.id}: verification evidence mismatch`);
+  }
+  if(age>claim.freshnessDays){const message=`${job.slug}/${claim.id}: ${age}d old (limit ${claim.freshnessDays}d)`;(claim.critical?errors:warnings).push(message)}
+}
+warnings.forEach(x=>console.warn(`WARN ${x}`));
+if(errors.length){errors.forEach(x=>console.error(`ERROR ${x}`));process.exit(1)}
+console.log(`sources: ${sources.length} registered; named claim evidence and freshness checks passed`);
 
 if (process.argv.includes("--network")) {
   const results = { ok: [], broken: [], botRestricted: [], unconfirmed: [] };

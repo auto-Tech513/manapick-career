@@ -1,0 +1,38 @@
+name: Official source changes
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 22 * * *' # 07:40 Asia/Tokyo
+permissions:
+  contents: read
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/test-source-watch.py
+      - uses: actions/cache/restore@v4
+        with:
+          path: work/source-watch
+          key: official-sources-${{ github.run_id }}
+          restore-keys: official-sources-
+      - id: watch
+        continue-on-error: true
+        run: python3 scripts/source-watch.py
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: work/source-watch
+          key: official-sources-${{ github.run_id }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: official-source-diff
+          path: work/source-watch-report.json
+          retention-days: 90
+      - name: Fail when an official source was not retrievable
+        if: steps.watch.outcome == 'failure'
+        run: exit 1

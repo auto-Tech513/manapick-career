@@ -130,6 +130,7 @@ const careers = [...careersSource.matchAll(/slug:\s*"([^"]+)"\s*,\s*name:\s*"([^
     label: categoryLabels[match[3]] ?? match[3],
     date: checkedAtMatch[1],
   }));
+careers.push(...JSON.parse(fs.readFileSync(new URL('../content/professional-careers.json',import.meta.url),'utf8')).items.map(item=>({slug:item.slug,title:`${item.name}の仕事内容・資格・年収`,label:item.categoryLabel,date:item.researchedAt})));
 const guideIndexOg = {
   slug: "index",
   title: "迷いを、確認できる手順に変える",

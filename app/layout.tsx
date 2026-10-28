@@ -1,3 +1,6 @@
+import { analyticsBootstrap, measurementId } from "@/lib/analytics-config";
+import NetworkAnalytics from "../components/NetworkAnalytics";
+import NetworkFooter from "../components/NetworkFooter";
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/Analytics";
 import { BottomNav } from "@/components/BottomNav";
@@ -6,6 +9,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { absoluteUrl, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
 import "./globals.css";
+import "./network.css";
 
 const description="仕事内容、必要スキル、学ぶ順番、資格、AI活用を公式情報から整理。職業を順位付けせず、次に調べる入口を見つけるサイトです。";
 
@@ -39,6 +43,6 @@ const graph={"@context":"https://schema.org","@graph":[
   ]}
 ]};
 
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><body>
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><head><script id="ga4-queue" dangerouslySetInnerHTML={{__html:analyticsBootstrap(measurementId)}} /></head><body>
   <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/>
-</body></html>}
+<NetworkAnalytics /><NetworkFooter /></body></html>}

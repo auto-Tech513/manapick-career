@@ -494,7 +494,7 @@ if (!newsPage.includes("modifiedTime: modifiedAt") || !newsPage.includes("dateMo
 if (!newsPage.includes("${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}")) failures.push("ニュースOGキャッシュキーが公開・確認日の変更を保護していない");
 if (!newsIndexPage.includes('articleOgUrl("news", "index"') || !newsIndexPage.includes('url: absoluteUrl("/news/")')) failures.push("ニュース一覧のOGが自己URL・固有画像を使っていない");
 if (!newsIndexPage.includes("openGraph:") || !newsIndexPage.includes("twitter:")) failures.push("ニュース一覧にOG・Xカードのメタデータがない");
-if (!newsPage.includes("一次資料確認 {item.checkedAt}") || !newsPage.includes("公開前編集確認 {item.reviewedAt}")) failures.push("ニュース詳細で一次資料確認日と編集確認日を区別していない");
+if (!newsPage.includes("出典台帳の記録 {item.checkedAt}") || !newsPage.includes("公開台帳の記録 {item.reviewedAt}")) failures.push("ニュース詳細で一次資料確認日と編集確認日を区別していない");
 if (!sitemap.includes("new Date(newsModifiedAt(x))")) failures.push("ニュースsitemapのlastModifiedが公開・確認日の最新値ではない");
 if (!editorialSource.includes("claimIsFresh(claim)")) failures.push("ニュース公開判定が主張の鮮度期限をfail-closedで検査していない");
 if (!editorialSource.includes("networkLinksArePublishable(item.networkLinks)")) failures.push("ニュース公開判定がnetwork-map解決結果をfail-closedで検査していない");

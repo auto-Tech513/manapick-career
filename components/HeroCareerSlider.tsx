@@ -4,9 +4,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play, Sparkles } from "lucide-react";
-import type { CareerJob } from "@/content/jobs";
+import type { CareerCard } from "@/lib/career-card";
 
-export function HeroCareerSlider({ jobs }: { jobs: CareerJob[] }) {
+export function HeroCareerSlider({ jobs }: { jobs: CareerCard[] }) {
   const rail = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);

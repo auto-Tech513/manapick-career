@@ -7,6 +7,7 @@ export type Claim = {
   lastCheckedAt: string;
   freshnessDays: number;
   critical?: boolean;
+  verificationId?: string;
 };
 
 export type CareerJob = {
@@ -38,12 +39,17 @@ export type CareerJob = {
 };
 
 const checkedAt = "2026-07-12";
-// 個別に一次資料を再確認した主張だけ、第5引数で確認日を上書きする（未再確認の主張は共通の確認日のまま）。
-const claim = (id: string, text: string, sourceIds: string[], critical = false, lastCheckedAt = checkedAt): Claim => ({
+// AI comparisons cover the named claims only; explicit per-claim dates from main remain authoritative.
+const primarySourceComparisons: Record<string, {date: string; id: string}> = {
+  "registered-scope": {date: "2026-10-26", id: "registered-scope-20261026"},
+  "care-route": {date: "2026-10-26", id: "care-route-20261026"},
+};
+const claim = (id: string, text: string, sourceIds: string[], critical = false, lastCheckedAt = primarySourceComparisons[id]?.date ?? checkedAt): Claim => ({
   id,
   text,
   sourceIds,
   lastCheckedAt,
+  ...(primarySourceComparisons[id]?.date === lastCheckedAt ? {verificationId: primarySourceComparisons[id].id} : {}),
   freshnessDays: critical ? 60 : 180,
   critical,
 });
