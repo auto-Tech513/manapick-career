@@ -82,10 +82,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "compare-three-careers-45-minutes",
@@ -171,10 +172,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "job-ad-to-evidence-map",
@@ -260,10 +262,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "first-portfolio-without-private-data",
@@ -348,10 +351,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "seven-day-skill-gap-plan",
@@ -436,10 +440,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "choose-one-learning-video",
@@ -524,10 +529,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "ai-tool-check-before-signup",
@@ -612,10 +618,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "qualification-required-or-optional",
@@ -700,10 +707,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "video-ai-license-learning-route",
@@ -788,10 +796,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "data-analyst-first-90-minutes",
@@ -876,10 +885,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "software-engineer-first-small-app",
@@ -964,10 +974,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "it-consultant-first-issue-map",
@@ -1051,10 +1062,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "web-marketer-first-measurement-plan",
@@ -1138,10 +1150,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "web-designer-first-accessible-screen",
@@ -1226,10 +1239,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "office-admin-first-handover-sheet",
@@ -1314,10 +1328,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "transferable-skills-from-one-week",
@@ -1402,10 +1417,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "work-story-with-verifiable-evidence",
@@ -1490,10 +1506,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "compare-training-total-cost",
@@ -1578,10 +1595,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "read-entry-level-job-claims",
@@ -1665,10 +1683,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "compare-salary-total-conditions",
@@ -1752,10 +1771,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "work-ai-confidentiality-checklist",
@@ -1840,10 +1860,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "ai-output-verification-log",
@@ -1929,10 +1950,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "qualification-study-before-application",
@@ -2017,10 +2039,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "learning-stop-rules",
@@ -2106,10 +2129,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "four-week-learning-review",
@@ -2195,10 +2219,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "career-source-check",
@@ -2283,10 +2308,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "career-news-to-action",
@@ -2370,10 +2396,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "three-candidate-route",
@@ -2459,10 +2486,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "mobile-ten-minute-career-research",
@@ -2547,10 +2575,11 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "career-decision-log",
@@ -2635,9 +2664,10 @@
       }
     ],
     "createdAt": "2026-07-20",
-    "status": "draft",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null
+    "status": "published",
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   }
 ]
