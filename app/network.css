@@ -79,7 +79,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .btn--primary,.button--primary{background:var(--primary-aa);border-color:var(--primary-aa);color:#fff;box-shadow:none}
 .featured-video-card,.weekly-pick-card,.hero-carousel-frame,.hero-carousel__card,.hero-carousel__brand,.hero-dashboard{border:1px solid var(--line);border-radius:12px;box-shadow:none}
 
-.mp-header-inner>a{display:inline-flex;flex:0 0 auto;min-width:0}
+.mp-header-inner>a{display:inline-flex;align-items:center;min-height:44px;flex:0 0 auto;min-width:0}
 .mp-header-search .top-search-wrap{min-width:0;width:100%}
 
 .site-footer .mp-brand{color:#fff!important}
