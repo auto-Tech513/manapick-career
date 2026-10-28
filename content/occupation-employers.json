@@ -716,6 +716,546 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "2",
+      "employers": [
+        {
+          "name": "山崎製パン株式会社",
+          "role": "製造スタッフ",
+          "description": "菓子パン課の製造スタッフとして、製品の検品・仕分けや包装、焼成などに携わる。パン製造はチームで進める仕事と紹介されている。",
+          "source": {
+            "title": "山崎製パン株式会社 中途（正社員）採用サイト",
+            "url": "https://yamazakipan-recruit.net/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "3",
+      "employers": [
+        {
+          "name": "株式会社リージョナルクリエーション長崎",
+          "role": "パティシエ",
+          "description": "長崎スタジアムシティ内のホテルやレストラン、VIPラウンジなどで提供するデザートの企画～製造までを一貫して担当する。主な業務は仕込みや調理業務全般、メニューの企画・開発。",
+          "source": {
+            "title": "パティシエ | キャリア採用 | ジャパネットグループ採用サイト",
+            "url": "https://corporate.japanet.co.jp/recruit/career/j3420/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "14",
+      "employers": [
+        {
+          "name": "キリンビール株式会社",
+          "role": "製造オペレーター（醸造エネルギー部門）",
+          "description": "仙台工場で、ビールの醸造工程と工場全体を支えるユーティリティ（エネルギー）設備の運転管理を担当する。醸造タンクの監視・温度管理・工程記録入力、排水処理設備の運転管理、麦汁づくり・発酵・後熟などの醸造工程管理を含む。",
+          "source": {
+            "title": "キリンビール株式会社 仙台工場の正社員の醸造エネルギー部門の求人情報詳細（キリンビール株式会社 生産部門採用サイト）",
+            "url": "https://recruit.kirin.co.jp/prodhq/AE1013052365/CDdetail.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "57",
+      "employers": [
+        {
+          "name": "伊藤忠商事株式会社",
+          "role": "総合職",
+          "description": "総合職は営業・投資・経営管理などの業務を担い、新規事業の創出や事業拡大に取り組む（情報・金融カンパニー所属の総合職社員の事例）。",
+          "source": {
+            "title": "情報・金融カンパニー 中島 哲嗣 | PEOPLE&WORKS | ITOCHU RECRUITING",
+            "url": "https://career.itochu.co.jp/student/people-works/interview14.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "62",
+      "employers": [
+        {
+          "name": "武田薬品工業株式会社",
+          "role": "医薬情報担当者（MR）",
+          "description": "医療従事者と面談または電子ツール等を用いた情報交流を通じて、自社医薬品の品質・有効性・安全性等の情報を提供・収集・伝達し、医薬品の適正使用と薬物療法の向上に貢献する。",
+          "source": {
+            "title": "ジャパンファーマビジネスユニット（JPBU）第一事業部 営業本部 医薬情報担当者（MR） at Takeda Pharmaceutical",
+            "url": "https://jobs.takeda.com/en/job/tokyo/%e3%82%b7%e3%83%a3%e3%83%8f%e3%83%b3%e3%83%95%e3%82%a1%e3%83%bc%e3%83%9e%e3%83%92%e3%82%b7%e3%83%8d%e3%82%b9%e3%83%a6%e3%83%8b%e3%83%83%e3%83%88-jpbu-%e7%ac%ac%e4%b8%80%e4%ba%8b%e6%a5%ad%e9%83%a8-%e5%96%b6%e6%a5%ad%e6%9c%ac9%83%a8-%e5%8c%bb%e8%96%ac%e6%83%85%e5%a0%b1%e6%8b%85%e5%bd%93%e8%80%85-mr-%e8%aa%b2%e9%95%b7%e4%bb%a3%e7%90%86-%e4%b8%80%e8%88%ac%e7%a4%be%e5%93%a1/1113/102477911056",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "98",
+      "employers": [
+        {
+          "name": "株式会社星野リゾート・トマム",
+          "role": "洋食調理・パティシエ",
+          "description": "イタリア料理コースレストラン「OTTO SETTE TOMAMU」等で、料理の仕込み・調理を担う。",
+          "source": {
+            "title": "採用情報｜株式会社星野リゾート・トマム",
+            "url": "https://hr.snowtomamu.jp/recruitment/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "137",
+      "employers": [
+        {
+          "name": "人事院",
+          "role": "国家公務員採用一般職試験（行政区分）",
+          "description": "一般職試験は「政策の実行やフォローアップなどに関する事務をその職務とする係員」の採用試験で、試験区分に「行政」（地域ブロック・本府省）がある。合格者は各府省等が面接等により採用を決定する。",
+          "source": {
+            "title": "2026年度 国家公務員採用 一般職試験（大卒程度試験）受験案内",
+            "url": "https://www.jinji.go.jp/content/900036111.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "138",
+      "employers": [
+        {
+          "name": "茨城県（茨城県人事委員会）",
+          "role": "事務（知事部局等）",
+          "description": "知事部局、教育委員会等の本庁又は出先機関で、主に一般行政事務に従事する。",
+          "source": {
+            "title": "令和8年度茨城県職員採用大学卒業程度試験案内【早期日程】",
+            "url": "https://www.pref.ibaraki.jp/somu/hodo/hodo/pressrelease/hodohappyoushiryou/2203/documents/260302jinjiiinkai.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "140",
+      "employers": [
+        {
+          "name": "海上保安庁",
+          "role": "海上保安官",
+          "description": "海の安全と治安を守るため、巡視船や航空機に乗り、海難救助、海上警備、犯罪捜査を行うほか、航路管制や海洋観測などを行う。",
+          "source": {
+            "title": "海上保安官になるには｜海上保安庁",
+            "url": "https://www.kaiho.mlit.go.jp/recruitment/enter/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "143",
+      "employers": [
+        {
+          "name": "裁判所（横浜地方裁判所）",
+          "role": "裁判官（判事補）",
+          "description": "民事裁判・刑事裁判で、原告や検察官、被告や被告人の話をよく聞き、法律に従って中立公正な立場から判断し、判決を行う。差押え・競売を命じる、逮捕や捜索差押を許可するなどの職務も含む。",
+          "source": {
+            "title": "リレーエッセイ「ハマの判事補の１日」（第１回）裁判官の仕事ってどんな仕事？",
+            "url": "https://www.courts.go.jp/yokohama/vc-files/yokohama/file/10501001.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "144",
+      "employers": [
+        {
+          "name": "検察庁（長崎地方検察庁）",
+          "role": "検察官",
+          "description": "警察などから送致を受けた事件について、被害者・目撃者からの事情聴取や被疑者の取調べなどの捜査を行い、起訴するかどうかを決める。公判請求した事件の裁判に立ち会い、証拠提出や証人尋問を行って被告人の犯罪を証明する。",
+          "source": {
+            "title": "検察庁の仕事：長崎地方検察庁",
+            "url": "https://www.kensatsu.go.jp/kakuchou/nagasaki/page1000013.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "152",
+      "employers": [
+        {
+          "name": "防衛省・自衛隊（海上自衛隊）",
+          "role": "海上自衛隊の職種",
+          "description": "約4万5千人の隊員が、航海、通信、掃海、航空管制、ガスタービン、艦艇・航空機等、約50種類の幅広い職域で業務に就いている。護衛艦等で砲・ミサイルを操作する射撃、水雷、掃海機雷、航海・船務、通信、機関、飛行などの職種がある。",
+          "source": {
+            "title": "海上自衛隊の職種：自衛隊大阪地方協力本部",
+            "url": "https://www.mod.go.jp/pco/osaka/organization/m_branch.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "153",
+      "employers": [
+        {
+          "name": "防衛省・自衛隊（航空自衛隊）",
+          "role": "航空自衛隊の職種",
+          "description": "操縦（各部隊の航空機を運用し、防空をはじめとする各種航空作戦等の任務を遂行）、兵器管制、高射、航空管制、気象、情報通信、航空機整備、施設、輸送補給、会計調達、警備、隊務管理、音楽、法務、衛生、宇宙領域などの職種がある。",
+          "source": {
+            "title": "職種・職域・階級｜自衛隊静岡地方協力本部",
+            "url": "https://www.mod.go.jp/pco/sizuoka/learn/syokusyu_kaikyu.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "156",
+      "employers": [
+        {
+          "name": "横浜市立大学附属市民総合医療センター",
+          "role": "助産師",
+          "description": "総合周産期母子医療センターの助産師として、24時間体制で産科救急及びハイリスク妊産褥婦に対応する。入職後は周産期センターの病棟・NICU等で基本的知識・技術を習得し、キャリアローテーションで他診療科の経験も積む。",
+          "source": {
+            "title": "共に成長する看護の力で未来を支える - 教育体制｜横浜市立大学附属 センター病院 看護部",
+            "url": "https://www-user.yokohama-cu.ac.jp/~nurse-mc/education/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "158",
+      "employers": [
+        {
+          "name": "医療法人 とみた歯科クリニック",
+          "role": "歯科医師",
+          "description": "初診時に総合的な治療計画を立て、歯科衛生士と協力しながら診療を進める。一般歯科治療からインプラント、口腔外科、歯周治療、入れ歯・補綴など幅広い診療内容を担当する。",
+          "source": {
+            "title": "歯科医師求人（正社員・パート・アルバイト）|名古屋市守山区大森の医療法人 とみた歯科クリニック",
+            "url": "https://www.tomitadental.jp/recruit/dentist.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "159",
+      "employers": [
+        {
+          "name": "岡山県",
+          "role": "保健師",
+          "description": "地域における保健対策の主要な担い手として、地域の健康課題に応じた活動を展開し、個人及び地域全体の健康の保持増進や疾病の予防を図る保健活動を行う。個別的な支援から地域組織等の団体まで関わり、多職種や関係機関、住民等と連携して健康課題の解決に取り組む。",
+          "source": {
+            "title": "県内自治体の保健師について - 岡山県ホームページ（保健医療課）",
+            "url": "https://www.pref.okayama.jp/page/935789.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "164",
+      "employers": [
+        {
+          "name": "横浜市立大学附属病院",
+          "role": "歯科技工士",
+          "description": "患者の口腔顎顔面疾患の治療に用いる補綴物・充塡物・治療用装置・装具などを製作・加工・修理する。手術後の保護やリハビリテーションに関わる製作物の作製、外注製作技工に関する発注・納入・品質管理業務も行う。",
+          "source": {
+            "title": "歯科技工士・歯科衛生士 | 横浜市立大学附属病院",
+            "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/dental/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "169",
+      "employers": [
+        {
+          "name": "学校法人東海大学（東海大学医学部付属病院）",
+          "role": "専任医療技術職員（視能訓練士）",
+          "description": "東海大学医学部付属病院または付属八王子病院で、外来・入院患者の眼科検査と視能訓練業務、健診センターにおける眼科検査業務を行う。",
+          "source": {
+            "title": "視能訓練士 募集要項（2027年度採用 東海大学）",
+            "url": "https://www.fuzoku-hosp.tokai.ac.jp/wordpress/wp-content/uploads/2026/08/20260806-6a742ee8a176e.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "170",
+      "employers": [
+        {
+          "name": "イフスコヘルスケア株式会社",
+          "role": "栄養士／老人ホーム",
+          "description": "給食受託先の老人ホーム厨房で、献立作成を中心とする栄養士業務を行うほか、調理、盛り付け、洗浄、仕込み、配膳・下膳も担当する。",
+          "source": {
+            "title": "老人ホーム厨房での栄養士募集 - 採用情報詳細 | イフスコヘルスケア採用サイト",
+            "url": "https://www.ifscohc-job.jp/ifsco2/AD0206676246/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "204",
+      "employers": [
+        {
+          "name": "全日本空輸株式会社（ANA）",
+          "role": "整備士（ライン整備）",
+          "description": "ライン整備に従事する整備士として、飛行前・飛行間の点検（機体外周、エンジン、タイヤ等の損傷確認、コックピット計器・客室内点検）や、不具合発生時の情報収集・修復対応を行う。",
+          "source": {
+            "title": "ライン整備は、航空機整備の最後の砦である。｜社員インタビュー｜ANA 採用情報",
+            "url": "https://www.ana.co.jp/group/recruit/ana-recruit/interview/talk23.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "218",
+      "employers": [
+        {
+          "name": "公益財団法人 横浜市緑の協会",
+          "role": "正規職員（動物）",
+          "description": "よこはま動物園ズーラシア、野毛山動物園、金沢動物園を勤務場所として、動物の飼育・繁殖・展示、調査研究、教育普及、広報、イベント企画・実施など動物園の管理運営業務を担う。",
+          "source": {
+            "title": "正規職員（動物）募集案内（公益財団法人 横浜市緑の協会）",
+            "url": "https://www.hama-midorinokyokai.or.jp/kyokai/author200ce/2024/10/993c5c74357475c5880ee179da6a3a03a398e8b1.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "221",
+      "employers": [
+        {
+          "name": "イオンペット株式会社",
+          "role": "獣医師",
+          "description": "全国の動物病院（ペテモ動物病院など）で小動物臨床を担う獣医師の例。同社採用サイトでは、獣医師の仕事として診察、処置、検査、手術や院内症例検討会が挙げられている。",
+          "source": {
+            "title": "インターンシップ｜採用情報｜獣医師採用｜イオンペット株式会社 採用情報サイト",
+            "url": "https://recruit.aeonpet.com/event/intern/hospital/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "222",
+      "employers": [
+        {
+          "name": "株式会社海遊館",
+          "role": "飼育展示部（飼育担当）",
+          "description": "飼育展示部のチームで担当水槽の生きものの飼育管理を行い、給餌・調餌・掃除といった基本業務に加え、生態に合わせた環境改善などに取り組む。",
+          "source": {
+            "title": "先輩社員インタビュー｜株式会社海遊館 採用ホームページ",
+            "url": "https://www.kaiyukan.com/company/recruit/kaiyukanrecruit/interview/interview03/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "260",
+      "employers": [
+        {
+          "name": "株式会社国際電機",
+          "role": "機械設計",
+          "description": "河川・道路・鉄道などの社会インフラ製品について、構想設計から基本/詳細設計、解析検証（CAE）、生産設計、試作・評価までを担当する。",
+          "source": {
+            "title": "職種紹介 機械設計(公共・鉄道・DX)",
+            "url": "https://www.kokusaidenki.co.jp/kde/careers/data/Job_mechanical-design-public.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "262",
+      "employers": [
+        {
+          "name": "トヨタ自動車株式会社",
+          "role": "期間従業員",
+          "description": "自動車製造の各工程（プレス、溶接、塗装、組立など）で1台のクルマを作り上げる。組立工程では、車種や仕様に合わせ、3,000点以上に及ぶ部品を60秒前後の速さで車両に組み付ける。",
+          "source": {
+            "title": "仕事内容 | トヨタ自動車 期間従業員募集サイト",
+            "url": "https://www.t-kikan.jp/work.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "265",
+      "employers": [
+        {
+          "name": "ルネサス エレクトロニクス株式会社",
+          "role": "ウエハプロセス技術エンジニア",
+          "description": "半導体の製造コスト削減をミッションとし、品質を維持しながら製造プロセスや材料の改善に取り組む。",
+          "source": {
+            "title": "コスト削減によって 製品の普及と次世代への投資に貢献する | Renesas JP",
+            "url": "https://career.renesas.com/t07",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "266",
+      "employers": [
+        {
+          "name": "キオクシア株式会社",
+          "role": "フラッシュメモリ量産製品の歩留品質維持改善（四日市工場）",
+          "description": "フラッシュメモリ製造の量産現場で、歩留品質の維持改善活動を行う職場の例（同社新卒採用サイトの職場・テーマ紹介による）。キーワードとして半導体製造プロセス、SEMによる欠陥検査、電気・物理不良解析が挙げられている。",
+          "source": {
+            "title": "キオクシア 新卒採用情報 | KIOXIA（インターンシップテーマ紹介）",
+            "url": "https://graduates-jp.kioxia.com/intern/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "268",
+      "employers": [
+        {
+          "name": "トヨタ自動車株式会社",
+          "role": "モビリティ・デジタルソフト開発（技術職）",
+          "description": "未来のクルマを創造するための先端研究や先行開発、製品開発を担当し、バーチャル技術を活用した性能設計をもとに実験車を試作してテストを行う。",
+          "source": {
+            "title": "モビリティ・デジタルソフト開発 | 社員インタビュー | 採用情報 | トヨタ自動車株式会社",
+            "url": "https://www.toyota-recruit.com/interview/008/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "308",
+      "employers": [
+        {
+          "name": "株式会社NTTデータ",
+          "role": "システムエンジニア（SE）",
+          "description": "SE部門に配属され、システム構築のスペシャリストとして顧客のシステム設計・開発等に従事する。",
+          "source": {
+            "title": "コース選択 | 採用情報 | NTT DATA新卒採用サイト",
+            "url": "https://nttdata-recruit.com/recruit/course.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "309",
+      "employers": [
+        {
+          "name": "株式会社スクウェア・エニックス",
+          "role": "サウンドプログラマー",
+          "description": "ゲームのサウンドプログラムを担当し、3Dサウンドやキャラクターのモーションに合わせて効果音を出す自動発音などの技術分野に取り組む。",
+          "source": {
+            "title": "サウンドクリエイター | 中途採用 SQUARE ENIX -RECRUITING-",
+            "url": "https://www.jp.square-enix.com/recruit/career/job/soundcreator/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "311",
+      "employers": [
+        {
+          "name": "株式会社デンソー",
+          "role": "ソフトウェアアーキテクト：統合ECU",
+          "description": "複数ECUの機能を統合した統合ECUの制御ソフトウェア開発に従事し、統合ECUのソフトウェア開発統括を務める。",
+          "source": {
+            "title": "ソフトウェアで「気が利いた」モビリティ社会を目指す | デンソーソフトウェア採用サイト",
+            "url": "https://careers.denso.com/software/interviews/05/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "319",
+      "employers": [
+        {
+          "name": "株式会社NTTデータ",
+          "role": "データサイエンティスト",
+          "description": "データサイエンスに関する高度な専門性を発揮することで、データ活用によるお客様の課題解決を支援する。",
+          "source": {
+            "title": "株式会社NTT DATA 採用ブックレット（新卒採用サイト配布PDF）",
+            "url": "https://nttdata-recruit.com/book/pdf/2026_mihiraki.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "376",
+      "employers": [
+        {
+          "name": "京都市消防局",
+          "role": "救急救命士（救急隊）",
+          "description": "各救急隊に配置され、気道確保や薬剤投与などの処置を行うとともに、症状に適した医療機関へ傷病者を迅速に搬送する。",
+          "source": {
+            "title": "業務紹介（京都市消防局 消防職紹介資料・PDF）",
+            "url": "https://www.city.kyoto.lg.jp/shobo/cmsfiles/contents/0000117/117633/syobo.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "389",
+      "employers": [
+        {
+          "name": "株式会社星野リゾート・トマム",
+          "role": "リゾートホテルサービススタッフ",
+          "description": "ホテルフロント、レストランサービス、調理補助、客室清掃など、お客様の動きに合わせて業務内容を変える「マルチタスク」の働き方でリゾートホテルのサービス業務を担う。",
+          "source": {
+            "title": "採用情報｜株式会社星野リゾート・トマム",
+            "url": "https://hr.snowtomamu.jp/recruitment/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "435",
+      "employers": [
+        {
+          "name": "野村證券株式会社",
+          "role": "ウェルス・マネジメント業務",
+          "description": "全国の支店で個人富裕層や法人などのお客様に包括的な資産管理サービス・コンサルティングを提供する業務で、入社後に一種外務員資格の取得が求められる。",
+          "source": {
+            "title": "【第二新卒採用】 ウェルス・マネジメント業務 | 野村證券株式会社",
+            "url": "https://progres02.jposting.net/pgnomura/u/job.phtml?job_code=1367",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "550",
+      "employers": [
+        {
+          "name": "財務省・税関",
+          "role": "税関職員",
+          "description": "旅具通関部門では旅客の手荷物検査や社会悪物品・知的財産侵害物品の検査、関税・消費税の徴税を行い、監視部取締部門では貿易船・クルーズ船の警戒監視・巡回・船内検査、麻薬探知犬ハンドラー、犯則事件の調査を行う。業務部通関部門では輸出入申告の受理・審査・検査・許可、輸入事後調査、関税分類などを担う。",
+          "source": {
+            "title": "財務省税関の業務紹介（一般職入省案内2026）",
+            "url": "https://www.customs.go.jp/saiyou/pdf/2024/ippan/P3-10.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
