@@ -1256,6 +1256,516 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "1",
+      "employers": [
+        {
+          "name": "株式会社アサヒコ",
+          "role": "豆腐職人",
+          "description": "アサヒコ職人豆腐検定で認定された豆腐のプロフェッショナルが、原料にこだわり、にがりも自家製とする独自の製法で豆腐を生み出す。製品には生産に携わった職人名が打刻される（同社公式の職人・製品紹介による）。",
+          "source": {
+            "title": "職人豆腐（クラフト豆腐）アサヒコの職人技を極めた唯一無二の豆腐",
+            "url": "https://www.asahico.co.jp/crafttofu",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "4",
+      "employers": [
+        {
+          "name": "株式会社鶴屋吉信",
+          "role": "製造（製造系）",
+          "description": "京都府亀岡市の総合工場「鶴屋吉信FACTORY」にて、鶴屋吉信のさまざまな商品を製造する業務。焼菓子、涼菓などのライン生産業務とあわせて、棹物、生菓子など手作業でのお菓子づくりも行われている。",
+          "source": {
+            "title": "職種紹介 | 採用情報 | 京菓匠 鶴屋吉信",
+            "url": "https://www.tsuruyayoshinobu.jp/recruit/job#job2",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "5",
+      "employers": [
+        {
+          "name": "森乳業株式会社",
+          "role": "製造職",
+          "description": "牛乳・乳飲料などの製造ラインで、機械操作、原料投入、検品、衛生管理などを行う。牛乳・乳飲料・その他製品の製造工程（配合・殺菌・充填・包装・出荷）に従事し、機械オペレーション・メンテナンス等を担当する。",
+          "source": {
+            "title": "中途採用募集情報 - 森乳業株式会社",
+            "url": "https://www.morimilk.co.jp/recruit/career",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "9",
+      "employers": [
+        {
+          "name": "株式会社獺祭",
+          "role": "製造職",
+          "description": "契約農家から届いた米を自社で精米し、仕込み、できた酒を瓶詰めして出荷するまでの一貫した自社製造で、純米大吟醸「獺祭」の酒造りに従事する。",
+          "source": {
+            "title": "採用情報 - 獺祭の蔵元｜株式会社 獺祭",
+            "url": "https://dassai.com/corp/recruit.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "10",
+      "employers": [
+        {
+          "name": "ヤマク食品株式会社",
+          "role": "食品製造業",
+          "description": "みそ・もろみ・調理みそ・こうじ・甘酒・煮豆・惣菜・菓子などの食品の製造と管理を行う。",
+          "source": {
+            "title": "採用情報｜ヤマク食品株式会社",
+            "url": "https://yamaku.co.jp/recruit.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "12",
+      "employers": [
+        {
+          "name": "日本ハム株式会社",
+          "role": "総合職",
+          "description": "食肉加工品（ハム・ソーセージ等）および調理食品の製造・販売を事業とし、「シャウエッセン」を基幹商品とする加工食品部門などで調理加工品の開発・製造に携わる（同グループ採用情報の会社紹介による）。",
+          "source": {
+            "title": "会社を探す－ 日本ハム株式会社｜ニッポンハムグループ採用情報",
+            "url": "https://www.nipponham.co.jp/recruit/company/nipponham.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "13",
+      "employers": [
+        {
+          "name": "株式会社サンクゼール",
+          "role": "製造・ワイナリー",
+          "description": "ワイナリーでワインやジュースの製造から品質管理までを行う。自社ぶどう畑の栽培管理やワインイベントへの参加も担う。",
+          "source": {
+            "title": "サンクゼールの働き方 | St.Cousair",
+            "url": "https://www.stcousair.co.jp/site/company/work-style?id=occupation",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "20",
+      "employers": [
+        {
+          "name": "鹿島建設株式会社",
+          "role": "建築設計系",
+          "description": "建築設計業務全般（意匠・構造）を担う職種。同社の担当業務の説明では、設計業務として建築設計（デザイン、構造設計）などが挙げられ、勤務場所は建築設計本部・土木設計本部・支店とされている。",
+          "source": {
+            "title": "総合職 採用情報｜新卒採用情報｜鹿島建設株式会社",
+            "url": "https://www.kajima.co.jp/prof/recruit/new/information/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "21",
+      "employers": [
+        {
+          "name": "鹿島建設株式会社",
+          "role": "建築技術系",
+          "description": "建築工事における計画、見積り、調達、工務、施工管理、BIM・デジタル技術の研究開発などを担う職種。同社の担当業務の説明では、現場（施工管理）は施工計画・各工程の発注、工程管理、資材・機材の調達、予算・品質・安全・環境管理などとされている。",
+          "source": {
+            "title": "総合職 採用情報｜新卒採用情報｜鹿島建設株式会社",
+            "url": "https://www.kajima.co.jp/prof/recruit/new/information/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "22",
+      "employers": [
+        {
+          "name": "パシフィックコンサルタンツ株式会社",
+          "role": "道路（交通基盤分野）",
+          "description": "国内外の道路、鉄道、空港、橋梁、トンネルなど社会交通インフラ全般に関わる調査、計画、設計、施工管理、維持管理などに対応する分野の一つ。道路分野では、道路整備・改良（道路整備計画、道路設計、道路空間・自転車・歩行者計画、渋滞・事故対策、維持管理計画）、道路交通施策（交通量推計、交通流シミュレーション、整備効果分析、事業評価、自動運転など）、道路事業監理を担う。",
+          "source": {
+            "title": "募集分野・募集要項【新卒採用】（RECRUIT 2027）",
+            "url": "https://www.pacific.co.jp/recruit/about/media_library/pdf/boshu.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "23",
+      "employers": [
+        {
+          "name": "鹿島建設株式会社",
+          "role": "土木系",
+          "description": "土木現場における施工管理業務、設計、技術提案、研究、生産性向上技術の開発などを担う職種。担当業務の説明では、現場（施工管理）は施工計画・各工程の発注、工程管理、資材・機材の調達、予算・品質・安全・環境管理などとされている。",
+          "source": {
+            "title": "総合職 採用情報｜新卒採用情報｜鹿島建設株式会社",
+            "url": "https://www.kajima.co.jp/prof/recruit/new/information/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "24",
+      "employers": [
+        {
+          "name": "国際航業株式会社",
+          "role": "空間情報基盤コンサルタント",
+          "description": "リモートセンシング・航空写真測量・航空レーザ測量・モバイルマッピング・GNSS等のセンシング技術を用いた地理空間情報の構築、及び業務分析・仕様策定業務に従事する。募集要項の資格欄では、測量士を持つ方が優遇対象として挙げられている。",
+          "source": {
+            "title": "【基盤技術業務（技術職）】 空間情報基盤コンサルタント 募集要項",
+            "url": "https://www.kkc.co.jp/recruit/career/50.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "63",
+      "employers": [
+        {
+          "name": "株式会社ベルシステム24",
+          "role": "電話対応スタッフ",
+          "description": "病院内の予約センターで、電話による受付業務を担当する。患者さまからの診察予約や人間ドックの予約受付、日程変更、キャンセル受付を行う（同社公式求人サイトの掲載職種は「コールセンター」）。",
+          "source": {
+            "title": "予約受付センターでの電話対応スタッフ｜ベルシステム24のコールセンター求人情報（Bellbiz）",
+            "url": "https://biz.bell24.co.jp/kyujin/24491",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "79",
+      "employers": [
+        {
+          "name": "中小企業診断士・行政書士co-ing経営支援事務所",
+          "role": "中小企業診断士",
+          "description": "中小企業診断士と行政書士のダブルライセンスを活かし、経営と法務の両面から経営者を支援する。経営戦略、創業支援、組織活性化研修、許認可申請などについて、現場に合わせた提案と実行支援を行う。",
+          "source": {
+            "title": "中小企業診断士・行政書士co-ing経営支援事務所",
+            "url": "https://co-ing.biz/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "85",
+      "employers": [
+        {
+          "name": "土地家屋調査士法人ＵＴ",
+          "role": "土地家屋調査士",
+          "description": "登記をするための測量を手がける。建物の新築や土地の売買、境界位置の確定、土地の分筆、農地の宅地利用など、土地の用途や境界を明確にする登記が必要となった場合に、表題登記をはじめとする登記手続きを扱う。",
+          "source": {
+            "title": "主な業務 | 土地家屋調査士法人ＵＴ",
+            "url": "https://ut-chosa.jp/%e4%b8%bb%e3%81%aa%e6%a5%ad%e5%8b%99/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "86",
+      "employers": [
+        {
+          "name": "株式会社サン・フレア",
+          "role": "翻訳者",
+          "description": "登録翻訳者として、Webサイトや企業ブログ、動画、SNS等の広報・マーケティング分野のコンテンツをはじめ、IR資料・統合報告書・プレスリリースなどの投資家向け資料、各種マニュアル、医療分野の文書（医師向け教科書等）など幅広い分野の翻訳を担当する。",
+          "source": {
+            "title": "翻訳会社 株式会社サン・フレア（パートナー募集ページ：インタビュー／お仕事紹介）",
+            "url": "https://www.sunflare.com/recruit/index.php?m=pj",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "87",
+      "employers": [
+        {
+          "name": "株式会社サイマル・インターナショナル",
+          "role": "プロ通訳者",
+          "description": "国際会議や大型イベント、社内会議などにおいて、クラウドベースの遠隔同時通訳ソリューション等を通じて同時通訳を提供し、グローバルコミュニケーションをサポートする。",
+          "source": {
+            "title": "遠隔同時通訳・AI通訳ソリューション「SIMUL×interprefy」",
+            "url": "https://www.simul.co.jp/interprefy/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "90",
+      "employers": [
+        {
+          "name": "弁理士法人HARAKENZO WORLD PATENT & TRADEMARK",
+          "role": "Patent attorney (technical)",
+          "description": "特許出願業務全般を担当し、担当案件について明細書作成から中間処理までを扱う。明細書作成にあたっては顧客と直接面談して発明の内容を聞き取り、権利化や権利行使に向けた提案も行う。",
+          "source": {
+            "title": "Recruitment Information | Patent Attorney Corporation HARAKENZO WORLD PATENT & TRADEMARK",
+            "url": "https://www.harakenzo.com/en/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "92",
+      "employers": [
+        {
+          "name": "国土交通省",
+          "role": "鑑定官",
+          "description": "土地・建設産業局地価調査課地価公示室の鑑定官として、地価公示のための地価の調査（標準地の検討及び選定、鑑定評価結果の審査及び調整等）、都道府県の地価調査の実施及び指導、国土利用計画法に基づく土地取引及び遊休土地の買取りの評価、地価関連情報の収集・分析、不動産鑑定評価基準の検討等を行う。不動産鑑定士として鑑定評価業務等に従事した経験が応募条件とされている。",
+          "source": {
+            "title": "土地・不動産・建設業：任期付職員（不動産鑑定士）の募集について - 国土交通省",
+            "url": "https://www.mlit.go.jp/totikensangyo/totikensangyo_fr4_000028.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "93",
+      "employers": [
+        {
+          "name": "一般財団法人日本気象協会",
+          "role": "気象予報士",
+          "description": "経験豊富な先任気象予報士が気象予測の実務を行い、全国のテレビ局・ラジオ局で気象情報を伝える気象キャスターに対し、実践的な知識の指導や技術力向上のサポートを行う。",
+          "source": {
+            "title": "日本気象協会からのお知らせ：気象キャスター募集のお知らせ",
+            "url": "https://www.jwa.or.jp/wp-content/uploads/2017/11/69d3a08f33677fa853627e4973030ffb.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "145",
+      "employers": [
+        {
+          "name": "裁判所",
+          "role": "家庭裁判所調査官",
+          "description": "家事事件、人事訴訟事件、少年事件等において必要な調査及び調整を行う。裁判所の職員として定員が置かれている（令和8年度定員1,613人）。",
+          "source": {
+            "title": "裁判所の職員（裁判所データブック掲載資料）",
+            "url": "https://www.courts.go.jp/assets/db2026_102.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "173",
+      "employers": [
+        {
+          "name": "国立健康危機管理研究機構 国立国際医療センター",
+          "role": "診療情報管理士",
+          "description": "がん登録業務、診療情報管理業務、DPC関連業務、医療安全管理業務、患者サービスに係る業務、医師事務作業補助業務などを行う。",
+          "source": {
+            "title": "診療情報管理士（常勤） 募集要項",
+            "url": "https://www.jihs.go.jp/content11/recruit/070/pdf/260706_01.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "180",
+      "employers": [
+        {
+          "name": "豊田市",
+          "role": "学校図書館司書",
+          "description": "豊田市立小・中学校図書館において、児童生徒の読書活動推進、授業補助などの業務を行う。司書（司書補）資格をお持ちの方が募集対象とされている。",
+          "source": {
+            "title": "令和9年度学校図書館司書募集｜豊田市",
+            "url": "https://www.city.toyota.aichi.jp/shisei/1073283/1073586/1029075/1080361.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "192",
+      "employers": [
+        {
+          "name": "Peach Aviation株式会社",
+          "role": "空港／スタッフ",
+          "description": "関西空港における旅客ハンドリングの責任者業務として、空港ターミナルでのお客様対応・誘導を行い、お客様の搭乗までの流れがスムーズにいくよう空港全体を俯瞰して管理する。あわせて、オペレーションコントロールセンター（OCC）でのカスタマーコントロール（お客様情報をまとめたブリーフィングシートの作成と関連部署への共有など）も担う。",
+          "source": {
+            "title": "社員詳細（空港／スタッフ） | Peach 採用サイト",
+            "url": "https://recruit.flypeach.com/staff/airport_customercontrol.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "193",
+      "employers": [
+        {
+          "name": "東海旅客鉄道株式会社",
+          "role": "駅係員",
+          "description": "東海道新幹線や在来線の最前線でお客さまの安全を守り、快適・便利な輸送サービスを提供する駅係員。列車運行の安全を守るための知識技能や取扱いを研鑽し、異常時やトラブル発生時にもチームワークで迅速かつ的確に対応する。",
+          "source": {
+            "title": "運輸系統 | 仕事紹介 | 東海旅客鉄道 キャリア採用サイト",
+            "url": "https://saiyo.jr-central.co.jp/career/work/transport/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "194",
+      "employers": [
+        {
+          "name": "東海旅客鉄道株式会社",
+          "role": "輸送計画・運用計画",
+          "description": "多面的な需要想定・調査を行い、お客さまに安全・快適・便利に鉄道を利用してもらうための戦略的なダイヤを策定する（輸送計画）。あわせて、車両の検査周期や走行距離、乗務員の休憩時間など複雑な制約条件のもとで、車両と乗務員の最も効率的な割り当てを考える（運用計画）。",
+          "source": {
+            "title": "運輸系統 | 仕事紹介 | 東海旅客鉄道 キャリア採用サイト",
+            "url": "https://saiyo.jr-central.co.jp/career/work/transport/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "201",
+      "employers": [
+        {
+          "name": "国土交通省",
+          "role": "航空管制官",
+          "description": "空港の近くは目で、遠くはレーダーで航空機の位置を確認し、その航空機のパイロットに対して無線やデータリンクを使用して指示を出すことで、航空機が安全に飛行できるようナビゲートする。管制塔やレーダー室から24時間365日、日本の空の安全を支えている。",
+          "source": {
+            "title": "空の安全を守るツバサノシゴト｜国土交通省航空局交通管制部",
+            "url": "https://www.mlit.go.jp/koku/jans/jobs/control_centernal.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "202",
+      "employers": [
+        {
+          "name": "Peach Aviation株式会社",
+          "role": "運航管理者",
+          "description": "出発前は、天気や時間、空港の混雑状況などをもとに高度・燃料・ルートなどの飛行計画（フライトプラン）を作成し、運航乗務員と連携して最終的な計画を立てる。離陸後は飛行監視を行い、目的地周辺の天候急変や地震・火山噴火などの事態が発生した際に、最善の対処を提案する。",
+          "source": {
+            "title": "社員詳細（運航管理者） | Peach 採用サイト",
+            "url": "https://recruit.flypeach.com/staff/dispatcher.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "210",
+      "employers": [
+        {
+          "name": "日本テレビ放送網株式会社",
+          "role": "放送技術",
+          "description": "様々なコンテンツをテレビ放送という形で生活者に届ける仕事。CMを入れ、放送品質を維持・管理する「マスター」や、ネットワーク局や国内外との信号を扱う「回線センター」、東京スカイツリーなどの電波塔から電波を送信する仕事がある。",
+          "source": {
+            "title": "日テレの仕事 | 日テレ 採用サイト",
+            "url": "https://www.ntv.co.jp/jinji/works/introduction/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "219",
+      "employers": [
+        {
+          "name": "静岡県",
+          "role": "農業（技術職）",
+          "description": "農林事務所に勤務し、茶・作物・野菜・花き・果樹・畜産等の普及指導業務や新規就農者の支援等を担当する。また、農林技術研究所等では、経営、栽培、育種、土壌肥料、病害虫等に関する研究開発を担当する。",
+          "source": {
+            "title": "職種ごとの業務紹介（農業）｜静岡県公式ホームページ",
+            "url": "https://www.pref.shizuoka.jp/kensei/saiyoinfo/employ/job/1048377/1032725.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "226",
+      "employers": [
+        {
+          "name": "国立研究開発法人水産研究・教育機構",
+          "role": "技術職員（水産区分）",
+          "description": "我が国のさけます類の個体群維持のためのふ化放流の実施と技術開発を主な業務とする。採用時の勤務地は北海道内のさけます事業所のいずれかで、その後は本部や各研究所等への異動もある。",
+          "source": {
+            "title": "技術職員採用試験（令和9年4月採用）募集要項",
+            "url": "https://www.fra.go.jp/home/saiyo/shokuin/files/R9.4gijyutushoku-boshuuyoukou.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "227",
+      "employers": [
+        {
+          "name": "国立研究開発法人森林研究・整備機構 森林総合研究所",
+          "role": "研究職員",
+          "description": "航空レーザー計測やUAVレーザー計測等の時系列リモートセンシングとAI解析を用い、経時変化する森林情報を効率的・正確に計測する手法を開発し、新たな持続可能な森林管理手法の確立に取り組む。",
+          "source": {
+            "title": "令和8年10月（テニュア）公募情報（List of open recruitment for research staff）",
+            "url": "https://www.ffpri.go.jp/en/recruit/documents/20261001-aet.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "229",
+      "employers": [
+        {
+          "name": "ファナック株式会社",
+          "role": "研究開発員（ロボット研究開発統括本部）",
+          "description": "産業用ロボットを手がけるロボット研究開発統括本部において研究開発業務に従事する。小さいものを高速で移動できるゲンコツロボットや車を持ち上げる大ロボット、協働ロボットなど、多種多様なロボットを開発している。",
+          "source": {
+            "title": "FANUC INTERNSHIP | FANUC 新卒採用サイト",
+            "url": "https://www.fanuc.co.jp/ja/employ/recruit/internship/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "233",
+      "employers": [
+        {
+          "name": "株式会社エクソル",
+          "role": "施工管理職",
+          "description": "産業用太陽光発電システムの現場担当として、現場調査、施工図作成、工程管理、協力業者の工事発注、実行予算策定、原価管理、安全・品質管理等に携わる。同社は太陽光発電システムの設計・建設・メンテナンスを全国に提供している。",
+          "source": {
+            "title": "プレスリリース：100人規模の採用による法人営業、施工の体制強化を行い拡大する太陽光発電市場の多様なニーズに応えることを目指します",
+            "url": "https://www.xsol.co.jp/wp-content/uploads/2022/09/20220916_saiyopr.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
