@@ -3221,6 +3221,411 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "96",
+      "employers": [
+        {
+          "name": "株式会社朝日ビルメンテナンス",
+          "role": "パート（清掃業務）",
+          "description": "博多駅南のオフィスビルなど担当施設の清掃業務をパートで担当。日常清掃として掃除機かけや床・壁・扉・机・トイレの清掃などを行う。",
+          "source": {
+            "title": "求人採用情報｜朝日ビルメンテナンス",
+            "url": "https://www.asahibm.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "114",
+      "employers": [
+        {
+          "name": "阪南理美容株式会社（理容プラージュ）",
+          "role": "理容師（スタイリスト）",
+          "description": "理容師の仕事はカット、シェービング、シャンプーを基本的に分業で行い、理容プラージュでは理容師がカットやシェービングなどを担当する。",
+          "source": {
+            "title": "理容・美容プラージュ 正社員・アルバイト・パート求人サイト",
+            "url": "https://plage-job.net/jobfind-pc/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "118",
+      "employers": [
+        {
+          "name": "公益財団法人山梨厚生会",
+          "role": "クリーニング師（職業指導員）",
+          "description": "就労支援事業所「ひらしな」における作業・訓練の指導員として、白衣・雑巾・タオルの洗濯作業や、院内の清掃、床のワックス作業などの指導・見守りを行う。",
+          "source": {
+            "title": "クリーニング師（職業指導員）募集要項｜山梨厚生会",
+            "url": "https://www.kosei.jp/koseikai/adoption/others/cleaning/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "123",
+      "employers": [
+        {
+          "name": "ニッポンレンタカーアーバンネット株式会社",
+          "role": "レンタカー店舗スタッフ［社員］",
+          "description": "レンタカーの貸出・返却手続き、予約受付、洗車・清掃・点検業務、車の運転などを行う店舗スタッフの仕事。",
+          "source": {
+            "title": "ニッポンレンタカー公式採用サイト 求人詳細",
+            "url": "https://www.my9.jp/v2/nipponrentacar/index.cfm?fuseaction=job.detail&sgtno=N51_0001S_33",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "124",
+      "employers": [
+        {
+          "name": "藤田観光株式会社（ホテル椿山荘東京）",
+          "role": "ブライダルプランナー（コーディネート）",
+          "description": "成約した新郎新婦との打ち合わせ、挙式・披露宴のプラン・装飾・メニューの提案と調整、各種ベンダーとの連携を行う。",
+          "source": {
+            "title": "ブライダル部門｜ホテル椿山荘東京 新卒採用",
+            "url": "https://hotel-chinzanso-tokyo.jp/newrecruit/regularemp/bridal/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "199",
+      "employers": [
+        {
+          "name": "アート引越センター株式会社",
+          "role": "引越配送スタッフ（アルバイト）",
+          "description": "お客様の引越し作業を担当し、希望プランに応じて食器などの割れ物や大型家具・家電製品といった家財の梱包・運搬・荷解きを行う。",
+          "source": {
+            "title": "アート引越センター 堺支店 引越配送スタッフの求人詳細",
+            "url": "https://the0123-job.net/jobfind-pc/job/All/7398",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "216",
+      "employers": [
+        {
+          "name": "株式会社日本乗馬倶楽部",
+          "role": "厩舎作業スタッフ",
+          "description": "乗馬倶楽部で厩舎作業スタッフとして、馬房掃除や餌やりなど馬の世話を担当する。乗馬経験は問わず応募できる。",
+          "source": {
+            "title": "スタッフ募集｜日本乗馬倶楽部",
+            "url": "https://jhrc.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "220",
+      "employers": [
+        {
+          "name": "有限会社ガーデンテクノ",
+          "role": "造園工・正社員（経験者・有資格者）",
+          "description": "公共施設や会社・工場等の緑地整備・樹木管理、グラウンドの芝生管理、個人宅の庭園管理などを担当し、経験者は現場の管理業務も担う。",
+          "source": {
+            "title": "採用情報｜ガーデンテクノ",
+            "url": "https://garden-techno.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "404",
+      "employers": [
+        {
+          "name": "キューアンドエー株式会社",
+          "role": "PC入力スタッフ（データ入力・オペレーター）",
+          "description": "大手企業の基幹システムを操作し、必要な情報を入力する仕事。複数の項目を確認しながら正確に入力し、入力内容に間違いがないかチェックしながら作業する。",
+          "source": {
+            "title": "PC入力スタッフ｜キューアンドエー株式会社 採用情報",
+            "url": "https://recruit.qac.jp/job/25391491/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "406",
+      "employers": [
+        {
+          "name": "株式会社プロラボホールディングス",
+          "role": "営業事務",
+          "description": "エステサロン等へ卸す自社商品の受発注や在庫管理を担当。注文のシステム入力、顧客・売上管理、出荷関連業務、ECサイトの商品登録や受注データ処理も行う。",
+          "source": {
+            "title": "営業事務 募集要項｜プロラボホールディングス公式サイト",
+            "url": "https://prolabo.co.jp/recruit/mid/mid-salesoffice/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "407",
+      "employers": [
+        {
+          "name": "株式会社東海道シグマ",
+          "role": "労務（給与計算）事務［人事事務］",
+          "description": "総務部で自社および派遣社員の給与計算を担当。勤怠データの集計・入力、所得税計算や法定調書の作成、年末調整、入退社に伴う情報管理などを行う。",
+          "source": {
+            "title": "【自社募集】労務（給与計算）事務｜東海道シグマ",
+            "url": "https://sigma-jp.co.jp/job/detail/1382746",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "408",
+      "employers": [
+        {
+          "name": "株式会社リーフワークス",
+          "role": "総務事務",
+          "description": "総務に関わる一般事務全般を担当。受付や備品管理などの庶務、応募者対応などの人事、給与計算、入退社手続きなどの労務まで幅広く担う。",
+          "source": {
+            "title": "総務事務｜株式会社リーフワークス",
+            "url": "https://www.leafworks.jp/positions/general-affairs/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "410",
+      "employers": [
+        {
+          "name": "株式会社サンキュードラッグ",
+          "role": "調剤事務員",
+          "description": "調剤薬局で処方箋の受付やレセコン入力、お薬代の計算、薬のピッキング等の調剤補助、月末の保険請求を行い、薬剤師の業務をサポートする。",
+          "source": {
+            "title": "調剤事務員｜サンキュードラッグ",
+            "url": "https://www.drug39.co.jp/recruit/chouzai/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "417",
+      "employers": [
+        {
+          "name": "宮城県",
+          "role": "学校事務",
+          "description": "県立学校などで総務・経理に関する事務全般を担当。学校運営の予算や教職員の給与・旅費の経理事務、施設設備の維持・管理、物品の調達などを行う。",
+          "source": {
+            "title": "職種紹介：学校事務｜宮城県公式ウェブサイト",
+            "url": "https://www.pref.miyagi.jp/soshiki/zinziiinkai/bukyoku-syoukai-gakkoujimu.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "445",
+      "employers": [
+        {
+          "name": "住友不動産建物サービス株式会社",
+          "role": "マンション管理員（日勤管理員）",
+          "description": "日勤管理員として、清掃業務、巡回点検業務、受付業務、立ち会い業務、報告・連絡業務、管理組合運営補助業務を行う。",
+          "source": {
+            "title": "マンション管理員｜キャリア採用｜住友不動産建物サービス",
+            "url": "https://www.sumitate.co.jp/recruit/kanriin/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "446",
+      "employers": [
+        {
+          "name": "株式会社小田急ハウジング",
+          "role": "マンション管理フロント",
+          "description": "管理組合の運営サポート、建物・設備の維持管理、マンションの巡回、トラブル対応を行い、総会・理事会での報告、議事録作成、企画提案も担う。",
+          "source": {
+            "title": "マンション管理フロント｜小田急ハウジング",
+            "url": "https://www.odakyuhousing.co.jp/recruit/1531/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "458",
+      "employers": [
+        {
+          "name": "武井運輸株式会社",
+          "role": "仕分け、ピッキング",
+          "description": "リーチフォークリフトを使い、リストに記載された通りに商品を仕分け・集荷（ピッキング）する作業を担当する（免許は入社後取得可）。",
+          "source": {
+            "title": "武井運輸株式会社 採用サイト 職種詳細",
+            "url": "https://takei-unyu-r.com/detail5.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "459",
+      "employers": [
+        {
+          "name": "株式会社ベアーズ",
+          "role": "ハウスクリーニング",
+          "description": "エアコンや換気扇の分解洗浄、キッチン・バス・洗面・トイレなど、日常清掃では落とせない汚れを徹底的に落とす専門清掃を担当する。",
+          "source": {
+            "title": "お仕事紹介｜家事代行サービスのベアーズ 採用サイト",
+            "url": "https://bears-saiyou.net/info/info02/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "461",
+      "employers": [
+        {
+          "name": "株式会社マナ",
+          "role": "製造スタッフ（充填・包装）",
+          "description": "ドレッシングなどの液体調味料や健康食品の充填包装業務を担当し、小袋やビン・ボトルへの充填、ラベル包装、検品、包装を分担して行う。",
+          "source": {
+            "title": "採用サイト｜株式会社マナ",
+            "url": "https://e-manna.gogosaiyou.jp/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "468",
+      "employers": [
+        {
+          "name": "株式会社タケエイ",
+          "role": "ドライバー（産業廃棄物収集運搬）",
+          "description": "2t車・大型車・ユニック車などのドライバーとして、建設現場や工場から産業廃棄物を収集し、リサイクル工場まで運搬する。",
+          "source": {
+            "title": "採用サイト｜株式会社タケエイ",
+            "url": "https://www.takeei.co.jp/driver/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "471",
+      "employers": [
+        {
+          "name": "森実運輸株式会社",
+          "role": "現場作業員（港湾荷役）",
+          "description": "新居浜港周辺の岸壁で、接岸した船舶への貨物の積み込み・荷下ろしや石炭の荷揚げ補助、フレコン品・パレット品の積み込みなどを担当する。",
+          "source": {
+            "title": "港での船の荷物積み降ろし作業スタッフ｜森実運輸 採用サイト",
+            "url": "https://www.morizane.co.jp/recruit/recruit02/660/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "472",
+      "employers": [
+        {
+          "name": "株式会社趣味人",
+          "role": "ブリーダースタッフ",
+          "description": "群馬県の犬舎・猫舎で住み込み勤務し、犬・猫の飼育管理と繁殖を担う。体調や繁殖のサインを見極める飼育スキルが身につく仕事。",
+          "source": {
+            "title": "ブリーダースタッフの新卒採用｜株式会社趣味人",
+            "url": "https://shumijin.co.jp/recruit/recruit-breeder/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "474",
+      "employers": [
+        {
+          "name": "株式会社ノベルズデーリィーファーム",
+          "role": "酪農牧場スタッフ",
+          "description": "酪農牧場で乳牛の飼養管理全般を担当。搾乳・繁殖・分娩・診療・飼料・堆肥の6部門に分かれた分業体制で、所属部門の業務にあたる。",
+          "source": {
+            "title": "酪農牧場スタッフ（募集要項）｜ノベルズグループ採用サイト",
+            "url": "https://nobels.co.jp/recruit/jobs/3063/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "475",
+      "employers": [
+        {
+          "name": "Umios株式会社",
+          "role": "一般職（養殖場）",
+          "description": "養殖場での生産事業全般を担当し、給餌、潜水、出荷、設備管理、データ管理などを行う。勤務先はいずれかの事業所で、原則として異動はない。",
+          "source": {
+            "title": "採用情報｜Umios",
+            "url": "https://www.umios.com/jp/aquaculture/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "477",
+      "employers": [
+        {
+          "name": "株式会社サラファーム",
+          "role": "栽培管理",
+          "description": "岡山県笠岡市で、パプリカ・レタスの栽培管理を担当する正社員の募集。最先端農業に興味があり、栽培指導を担える人材を求めている。",
+          "source": {
+            "title": "栽培管理｜採用情報｜株式会社サラファーム",
+            "url": "https://www.sarafarm.jp/recruit/full_time_employee/job04/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "478",
+      "employers": [
+        {
+          "name": "株式会社RED APPLE",
+          "role": "生産職［農業生産部］",
+          "description": "青森県の農園でりんご栽培作業全般を担当。剪定・摘果・薬剤散布・収穫に加え、選果・出荷作業や高密植栽培の園地マネジメントを行う。",
+          "source": {
+            "title": "採用情報｜株式会社RED APPLE",
+            "url": "https://www.aomori-redapple.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "515",
+      "employers": [
+        {
+          "name": "日本郵便株式会社",
+          "role": "郵便局窓口スタッフ",
+          "description": "郵便局の窓口で、郵便業務や貯金・保険業務を行う仕事。接客が中心となるため、人と話すことが好きな方が歓迎される。",
+          "source": {
+            "title": "日本郵便・郵便局 アルバイト採用情報（お仕事紹介）",
+            "url": "https://hitomgr.jp/abmq/recruit/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
