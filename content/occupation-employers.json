@@ -3626,6 +3626,411 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "7",
+      "employers": [
+        {
+          "name": "味の素冷凍食品株式会社",
+          "role": "製造補助",
+          "description": "千葉工場で冷凍チャーハンやピラフをつくる製造補助。前処理（調味料の計量、具材の調理）、炊飯（ライン機械の操作、異物の選別）、包装（包装機械の操作、製品の箱詰め）の工程を担う。",
+          "source": {
+            "title": "お仕事紹介｜味の素冷凍食品（千葉工場）パート採用サイト",
+            "url": "https://www.ffa-ajinomoto.com/ffa/works.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "16",
+      "employers": [
+        {
+          "name": "株式会社ピックルスコーポレーション",
+          "role": "浅漬け・キムチ・惣菜等の食品製造作業",
+          "description": "浅漬けやキムチ、惣菜の製造工場で、届いた野菜の皮むき・カット、計量、漬物や惣菜のパッケージへの盛り付け、包装、梱包などを担当する。",
+          "source": {
+            "title": "ピックルスコーポレーション アルバイト・パート採用ホームページ",
+            "url": "https://www.picklesjob.com/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "17",
+      "employers": [
+        {
+          "name": "ノリタケ株式会社",
+          "role": "製造 食器",
+          "description": "伊万里工場で陶磁器食器（洋食器）の製造を担当し、製造のほか検査や梱包などの業務に携わる。",
+          "source": {
+            "title": "職種紹介｜Noritake 高校生向け採用サイト",
+            "url": "https://www.noritake.co.jp/recruit-highschool/job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "18",
+      "employers": [
+        {
+          "name": "石塚硝子株式会社",
+          "role": "生産オペレーター（製品製造に関する業務）",
+          "description": "本社岩倉工場で、ガラスびんやガラス食器等の製造工程を担当。オートメーション化された生産ラインで成形・検査・包装・加工などの業務に携わる。",
+          "source": {
+            "title": "募集要項｜石塚硝子株式会社 採用情報",
+            "url": "https://www.ishizuka.co.jp/recruitment/mid-career/requirements/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "119",
+      "employers": [
+        {
+          "name": "SDエンターテイメント株式会社",
+          "role": "フィットネスクラブスタッフ（トレーナー）",
+          "description": "自社が運営するフィットネスクラブの店舗スタッフとして、ジムでのトレーニング指導、スタジオ・プールでのインストラクター業務、施設設備の維持管理・安全管理、来店客の対応・接客を行う。",
+          "source": {
+            "title": "フィットネスクラブスタッフ（トレーナー）｜SDエンターテイメント採用情報",
+            "url": "https://sdentertainment.jp/recruit/requirements/225/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "120",
+      "employers": [
+        {
+          "name": "会津平和自動車学校",
+          "role": "自動車教習指導員",
+          "description": "教室で行う学科教習や教習車に乗って行う技能教習、高齢者講習などを行う。資格がない場合は取得の支援を受けながら、送迎やコース内整備、営業などの仕事も担う。",
+          "source": {
+            "title": "採用情報｜会津平和自動車学校",
+            "url": "https://heiwa-ds.com/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "121",
+      "employers": [
+        {
+          "name": "一般財団法人ヤマハ音楽振興会",
+          "role": "YAMAHA MUSIC SCHOOL講師（楽器・歌のレッスン）",
+          "description": "講師資格取得試験に合格し稼働前の講習会を受講したうえで、振興会と業務委託契約を結ぶ特約店の会場で、選択した楽器コースのレッスンを担当する。",
+          "source": {
+            "title": "募集要項 楽器・歌のレッスン｜YAMAHA MUSIC SCHOOL講師募集",
+            "url": "https://school.jp.yamaha.com/music-teacher/recruitment/ml/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "128",
+      "employers": [
+        {
+          "name": "静岡県",
+          "role": "児童福祉職（児童相談所の児童相談業務）",
+          "description": "静岡県の児童相談所において、子どもに関する様々な相談に応じ、子どもや家庭に対して助言・指導等の支援を行い、児童虐待相談への対応も担う児童福祉職の業務紹介。",
+          "source": {
+            "title": "職種ごとの業務紹介（児童福祉）｜静岡県公式ホームページ",
+            "url": "https://www.pref.shizuoka.jp/kensei/saiyoinfo/employ/job/1048377/1032718.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "179",
+      "employers": [
+        {
+          "name": "学校法人国際総合学園",
+          "role": "教員（自動車整備士）［WiZ 国際情報工科自動車大学校］",
+          "description": "グループの専門学校で科目を教えたり、クラス担任として学生の指導や管理をする。自動車整備士養成学科の教員は授業担当に加え、生活指導・就職指導、学校説明会での学科紹介や体験授業等も担う。",
+          "source": {
+            "title": "教員・職員 採用情報｜FSGカレッジリーグ",
+            "url": "https://fsg-college.jp/topics/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "189",
+      "employers": [
+        {
+          "name": "江田島海運株式会社",
+          "role": "機関士",
+          "description": "港湾タグの機関士として、エンジンの始動や出港準備、大型船の着岸補助、帰港後のエンジン停止とメンテナンスを担当する。",
+          "source": {
+            "title": "機関士｜採用情報｜江田島海運株式会社",
+            "url": "https://etakai.jp/recruit/engineer.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "205",
+      "employers": [
+        {
+          "name": "株式会社オーシャン リンク",
+          "role": "船員（航海士／機関士／甲板部員）",
+          "description": "自動車運搬船に特化した船舶管理のもと、内航船を運航する船員として航海士・機関士・甲板部員を募集。3〜4か月乗船し1か月休暇の勤務体系。",
+          "source": {
+            "title": "船員採用情報（オーシャン リンク）｜フジトランスグループ リクルートサイト",
+            "url": "https://recruit.fujitrans.co.jp/sailor_recruitment/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "241",
+      "employers": [
+        {
+          "name": "社会福祉法人青い鳥",
+          "role": "児童指導員・保育士（非常勤職員）",
+          "description": "横浜市中部地域療育センターが運営する施設で、障害児の療育及び生活指導等の保育業務を担当する児童指導員・保育士（非常勤職員）の募集。",
+          "source": {
+            "title": "児童指導員・保育士（非常勤職員募集）｜社会福祉法人青い鳥",
+            "url": "https://www.aoitori-y.jp/worksinfo/%e3%80%90%e9%9d%9e%e5%b8%b8%e5%8b%a4%e8%81%b7%e5%93%a1%e5%8b%9f%e9%9b%86%e3%80%91%e5%85%90%e7%ab%a5%e6%8c%87%e5%b0%8e%e5%93%a1%e3%83%bb%e4%bf%9d%e8%82%b2%e5%a3%ab/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "242",
+      "employers": [
+        {
+          "name": "社会福祉法人征峯会",
+          "role": "生活支援員",
+          "description": "指定障害者支援施設ピアしらとりで、知的障がいのある利用者への生活支援（食事・入浴・排せつ・着替えのサポート）、作業支援、余暇支援、夜勤などを担当する。",
+          "source": {
+            "title": "障がい者施設の生活支援スタッフ｜ピアしらとり｜社会福祉法人征峯会",
+            "url": "https://seihoukai-group.jp/recruitment/recruitment-10608?post_id=10608",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "243",
+      "employers": [
+        {
+          "name": "社会福祉法人信愛会",
+          "role": "生活相談員",
+          "description": "特別養護老人ホーム グレースの里に係る相談員業務を担当し、入居・退居・入院・退院の手続きやシステムへの入力作業を行う生活相談員（正職員）の募集。",
+          "source": {
+            "title": "生活相談員（正職員）応募フォーム｜社会福祉法人信愛会",
+            "url": "https://shinaikai.net/pages/76/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "370",
+      "employers": [
+        {
+          "name": "青森県教育委員会",
+          "role": "特別支援学校教諭",
+          "description": "県立特別支援学校で、障がいや病気の状態に応じて一人一人の能力を生かし、小学校・中学校・高等学校に準じた教科等の学習を行い、進学を目指す子どもたちも支援する。",
+          "source": {
+            "title": "教員募集パンフレット｜青森県教育委員会",
+            "url": "https://www.pref.aomori.lg.jp/soshiki/kyoiku/e-seisaku/files/saiyoupanfu.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "374",
+      "employers": [
+        {
+          "name": "東京都",
+          "role": "職業訓練指導員（東京都職員「職業訓練」職）",
+          "description": "都の職業能力開発センター・校や東京障害者職業能力開発校で訓練指導を行い、教科指導のほか教程・教材の作成準備、クラス運営、就職支援、生徒募集、入校選考、機械・機器の整備を担う。",
+          "source": {
+            "title": "職業訓練指導員｜TOKYOはたらくネット 職員採用",
+            "url": "https://www.hataraku.metro.tokyo.lg.jp/to-saiyou/shidouin-saiyou/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "383",
+      "employers": [
+        {
+          "name": "横浜労災病院（独立行政法人労働者健康安全機構）",
+          "role": "医療ソーシャルワーカー（正規職員）",
+          "description": "横浜労災病院において医療ソーシャルワーカー（正規職員）として退院支援業務及び相談業務等を担当する募集で、社会福祉士等の資格と業務経験が求められる。",
+          "source": {
+            "title": "医療ソーシャルワーカー（正規職員）募集｜横浜労災病院",
+            "url": "https://yokohamah.johas.go.jp/medical/news/recruit/20260129.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "438",
+      "employers": [
+        {
+          "name": "コカ・コーラ ボトラーズジャパンベンディング株式会社",
+          "role": "セールスパーソン（ルートセールス）",
+          "description": "自動販売機のルートセールスとして、販売データをもとに製品ラインナップを考え、新製品の説明、自販機の清掃や空容器回収まで行う。",
+          "source": {
+            "title": "仕事とキャリア｜コカ・コーラ ボトラーズジャパンベンディング",
+            "url": "https://www.ccbji.co.jp/ccbjv/recruit/career/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "451",
+      "employers": [
+        {
+          "name": "株式会社フジ建",
+          "role": "ダンプ運転手",
+          "description": "道路工事・舗装工事に伴い、岡山市を中心とした現場で4t・8tダンプの運転や残土処理を担当する。ドライバー兼現場作業員としての働き方も可能。",
+          "source": {
+            "title": "ダンプ運転手募集｜株式会社フジ建",
+            "url": "https://fujiken0008.com/job-openings/recruit2",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "452",
+      "employers": [
+        {
+          "name": "株式会社フィールドサービス",
+          "role": "送迎バス運転手",
+          "description": "企業送迎をメインに送迎バスを運行する。朝と夕方に業務が集中する働き方もあり、運行ルートや接客は研修を通じて身につける。",
+          "source": {
+            "title": "貸切・送迎バス運転手 採用情報｜フィールドサービス",
+            "url": "https://bus-jp.com/recruitment/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "453",
+      "employers": [
+        {
+          "name": "大興タクシー株式会社",
+          "role": "介護タクシー乗務員",
+          "description": "三河営業所で介護タクシーによるお客様の送迎と、病院の救急車両による患者様の輸送を担当する。介護職員初任者研修と二種免許等が必要。",
+          "source": {
+            "title": "介護タクシー採用｜大興タクシー株式会社",
+            "url": "https://taikoh-taxi.co.jp/recruit_kai/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "456",
+      "employers": [
+        {
+          "name": "加賀谷新聞店",
+          "role": "新聞配達員（朝刊配達＋宅配）",
+          "description": "秋田市内の販売所で朝刊配達を担当し、小さなエリアごとに新聞を届ける。担当区域内ではフリーペーパーや広報の全戸配達も行う。",
+          "source": {
+            "title": "求人情報｜加賀谷新聞店",
+            "url": "https://www.kagaya-shinbunten.com/recruit/shimbunhaitatsuin/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "462",
+      "employers": [
+        {
+          "name": "トヨタ自動車株式会社",
+          "role": "期間従業員",
+          "description": "愛知県内の工場で自動車製造の最前線を担い、プレス、溶接、塗装、組立など多岐にわたる工程の中で、チームで1台のクルマを作り上げる。",
+          "source": {
+            "title": "仕事内容｜トヨタ自動車 期間従業員募集サイト",
+            "url": "https://www.t-kikan.jp/work/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "463",
+      "employers": [
+        {
+          "name": "株式会社オオゼキ",
+          "role": "バックヤードスタッフ（精肉・青果・鮮魚部門）",
+          "description": "精肉・青果・鮮魚のバックヤードで、肉や魚のパック詰めや値札シール貼り、野菜の袋詰め、厨房やまな板の清掃などを担当する。",
+          "source": {
+            "title": "バックヤードのお仕事紹介｜オオゼキ アルバイト求人サイト",
+            "url": "https://recs-lp.com/ozeki/about-backyard/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "537",
+      "employers": [
+        {
+          "name": "横浜市教育委員会",
+          "role": "養護教諭",
+          "description": "市立学校の保健室で、子どもの表情や友達関係の変化を観察しながら来室対応を行い、健康診断の事務作業や会議、部活動で起きたけがの医療機関への付き添いなどの緊急対応も担う。",
+          "source": {
+            "title": "養護教諭～とある1日～｜横浜市公立学校教員募集サイト",
+            "url": "https://kyoinsaiyo.city.yokohama.lg.jp/working/454",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "540",
+      "employers": [
+        {
+          "name": "社会福祉法人たまご会",
+          "role": "指導員【児童発達支援管理責任者】",
+          "description": "発達障害や知的障害のある子どもの支援を担い、個別支援計画の作成・見直し、保護者との面談・相談対応、関係機関との連携、スタッフへの助言、サービス提供の全体管理を行う。",
+          "source": {
+            "title": "指導員（児童発達支援管理責任者）｜社会福祉法人たまご会",
+            "url": "https://www.tamagokai.or.jp/pages/120/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "552",
+      "employers": [
+        {
+          "name": "社会福祉法人出島福祉村",
+          "role": "サービス管理責任者",
+          "description": "障害福祉サービス事業所 三和ゆめランドで、利用者や保護者、相談支援事業所等からの相談受付、面談、個別支援計画書の作成、定期評価などを行う。",
+          "source": {
+            "title": "サービス管理責任者 募集ページ｜社会福祉法人出島福祉村",
+            "url": "https://dejimafukushi.or.jp/yume_recruit01/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
