@@ -38,6 +38,66 @@
     {
       "slug": "labor-force-june-2026",
       "reason": "2026-08-02に追加した最新一次資料の候補。既存30件の公開承認バッチ後に作成され、人による全主張・リンク・OG確認とGit承認証跡が未記録のため次回レビューへ保留"
+    },
+    {
+      "slug": "minimum-wage-2026",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "employment-trends-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "construction-labor-unit-price-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "disability-employment-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "childcare-leave-rate-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "elderly-employment-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "workplace-accidents-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "new-graduate-employment-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "teacher-exam-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "nurse-exam-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "foreign-workers-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "sme-whitepaper-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "gender-whitepaper-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "household-spending-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
+    },
+    {
+      "slug": "industrial-production-latest",
+      "reason": "新規作成の下書き。公開バッチでの公開手続き待ち"
     }
   ],
   "slugs": [

@@ -649,5 +649,277 @@
         "critical": false
       }
     ]
+  },
+  {
+    "claims": [
+      {
+        "claimId": "tax-vs-cpa-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "nta-tax-system-9203",
+          "egov-tax-accountant-act"
+        ],
+        "text": "税理士業務とは税務代理・税務書類の作成・税務相談であり、行うことができるのは税理士、税理士法人、国税局長に通知をした弁護士および弁護士法人に限られる"
+      },
+      {
+        "claimId": "tax-vs-cpa-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-cpa-act",
+          "jicpa-tokyo-cpa-work"
+        ],
+        "text": "報酬を得て財務書類の監査または証明を行う業務は、公認会計士または監査法人でなければ営むことができない"
+      },
+      {
+        "claimId": "tax-vs-cpa-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jicpa-tokyo-cpa-work"
+        ],
+        "text": "公認会計士は税理士登録をすることにより税務業務を行うことができる"
+      },
+      {
+        "claimId": "tax-vs-cpa-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-lawyer-act",
+          "nta-tax-system-9203"
+        ],
+        "text": "弁護士は当然に税理士の事務を行うことができる"
+      },
+      {
+        "claimId": "tax-vs-cpa-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-tax-accountant-act",
+          "jlt-cpa-act"
+        ],
+        "text": "税理士は税理士業務に付随して財務書類の作成、会計帳簿の記帳の代行その他財務に関する事務を行うことができるが、監査証明は税理士業務・付随業務のいずれにも含まれない"
+      },
+      {
+        "claimId": "tax-vs-cpa-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "nta-tax-exam-overview"
+        ],
+        "text": "税理士試験は会計学に属する科目2科目（簿記論・財務諸表論）と税法に属する科目から選択する3科目の合計5科目で、科目合格制をとる"
+      },
+      {
+        "claimId": "tax-vs-cpa-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jicpa-cpa-examination",
+          "jlt-cpa-act"
+        ],
+        "text": "公認会計士試験は公認会計士・監査審査会が行い、短答式試験（4科目）と論文式試験（5科目）からなる"
+      },
+      {
+        "claimId": "tax-vs-cpa-08",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-cpa-act",
+          "jicpa-cpa-examination"
+        ],
+        "text": "公認会計士となる資格は、試験合格に加え、業務補助等の期間が3年以上であり、実務補習を修了し内閣総理大臣の確認を受けた者に与えられる"
+      }
+    ],
+    "guideSlug": "tax-accountant-vs-cpa"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "law-shiho-gyosei-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-lawyer-act"
+        ],
+        "text": "弁護士は、訴訟事件、非訟事件及び審査請求等行政庁に対する不服申立事件に関する行為その他一般の法律事務を行うことを職務とする"
+      },
+      {
+        "claimId": "law-shiho-gyosei-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-lawyer-act"
+        ],
+        "text": "弁護士又は弁護士法人でない者は、報酬を得る目的で一般の法律事件に関して鑑定、代理、仲裁若しくは和解その他の法律事務を取り扱うことを業とすることができない"
+      },
+      {
+        "claimId": "law-shiho-gyosei-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "moj-shihoshoshi-business"
+        ],
+        "text": "司法書士の業務には、登記又は供託に関する手続の代理、裁判所・検察庁・法務局に提出する書類の作成、登記・供託に関する審査請求手続の代理、これらの事務に関する相談が含まれる"
+      },
+      {
+        "claimId": "law-shiho-gyosei-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "moj-shihoshoshi-certified"
+        ],
+        "text": "簡裁訴訟代理等関係業務は法務大臣の認定を受けた司法書士に限り行うことができ、対象は訴訟の目的となる物の価額が140万円を超えない請求事件等である"
+      },
+      {
+        "claimId": "law-shiho-gyosei-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "soumu-gyoseishoshi-system"
+        ],
+        "text": "行政書士は他人の依頼を受け報酬を得て官公署に提出する書類その他権利義務・事実証明に関する書類を作成することを業とし、この作成業務は行政書士又は行政書士法人でない者が対価を受けて業として行うことはできない"
+      },
+      {
+        "claimId": "law-shiho-gyosei-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "soumu-gyoseishoshi-system"
+        ],
+        "text": "行政書士は、その業務を行うことが他の法律において制限されているものについては業務を行うことができない"
+      },
+      {
+        "claimId": "law-shiho-gyosei-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-lawyer-act",
+          "courts-judicial-training"
+        ],
+        "text": "弁護士となる資格は司法修習生の修習を終えた者に与えられ、法曹となるには原則として法科大学院修了、司法試験合格、1年間の司法修習修了が必要である"
+      },
+      {
+        "claimId": "law-shiho-gyosei-08",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "shiho-shoshi-exam"
+        ],
+        "text": "司法書士試験は法務省が実施し、受験資格はなく誰でも受験でき、筆記試験と筆記合格者のみを対象とする口述試験で構成される"
+      },
+      {
+        "claimId": "law-shiho-gyosei-09",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "soumu-gyoseishoshi-system"
+        ],
+        "text": "行政書士試験は、指定試験機関である一般財団法人行政書士試験研究センターが全国統一試験を年1回実施している"
+      }
+    ],
+    "guideSlug": "lawyer-vs-shiho-vs-gyosei"
+  },
+  {
+    "guideSlug": "dx-producer-vs-it-consultant",
+    "claims": [
+      {
+        "claimId": "dxp-definition",
+        "text": "DXプロデューサーは、ITを含むデジタルの技術によって社会やビジネスの変革を目指し、その変革を担う人材である",
+        "sourceIds": [
+          "mhlw-jobtag-dx-producer"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "dxp-workflow",
+        "text": "DXプロデューサーの業務は、顧客とともに問題の所在を洗い出し、チームで検討を繰り返し、システム等の開発チームと協力してソリューションとしてまとめ顧客に提示する流れが一般例として示されている",
+        "sourceIds": [
+          "mhlw-jobtag-dx-producer"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "dxp-affiliation-and-entry",
+        "text": "DXプロデューサーは企業に所属する場合は開発部門や技術部門が多く、就くために特に学歴や資格は必要とされない",
+        "sourceIds": [
+          "mhlw-jobtag-dx-producer"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "itc-definition",
+        "text": "ITコンサルタントは、顧客のIT戦略に関してコンサルティングを行い、提案、助言する職業であり、経営戦略の策定に関するコンサルティングや、情報化の課題の整理・分析、解決法の検討を行う",
+        "sourceIds": [
+          "mhlw-jobtag-it-consultant"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "itc-entry-route",
+        "text": "ITコンサルタントは、情報系や経営系の大学・大学院を卒業し、ユーザー企業、コンサルティング企業、IT企業等で実務経験を積むのが一般的である",
+        "sourceIds": [
+          "mhlw-jobtag-it-consultant"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "itc-dx-consultant-name",
+        "text": "ITコンサルタントのうち、特にDXに係わる仕事をする人はDXコンサルタントと呼ばれる",
+        "sourceIds": [
+          "mhlw-jobtag-it-consultant"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "dxp-classification-overlap",
+        "text": "job tagの職業分類ではDXプロデューサーは「ITコンサルタント」等の区分に置かれ、別名にデジタルビジネスイノベーターとビジネスアーキテクトがある",
+        "sourceIds": [
+          "mhlw-jobtag-dx-producer"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "ipa-no-producer-type",
+        "text": "IPAのDX推進スキル標準の人材類型はビジネスアーキテクト、デザイナー、データサイエンティスト、データマネジメント、ソフトウェアエンジニア、サイバーセキュリティの6つで、「DXプロデューサー」という類型は存在せず、変革の目的定義と推進を担うビジネスアーキテクトが最も近い",
+        "sourceIds": [
+          "ipa-dss-p-overview"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      }
+    ]
   }
 ]
