@@ -178,10 +178,10 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         }}
       />
       <Breadcrumbs
-        items={[
-          { label: "トップ", href: "/" },
-          { label: category?.label ?? "職業", href: `/category/${occupation.categoryKey}/` },
-          { label: occupation.name },
+        trail={[
+          { name: "ホーム", path: "/" },
+          { name: category?.label ?? "職業", path: `/category/${occupation.categoryKey}/` },
+          { name: occupation.name, path: `/occupation/${id}/` },
         ]}
       />
       <h1>
