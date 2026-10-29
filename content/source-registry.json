@@ -1938,5 +1938,97 @@
     "sourceId": "mhlw-jobtag-web-director",
     "updateFrequency": "180d",
     "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=327"
+  },
+  {
+    "sourceId": "mhlw-jobtag-general-clerk",
+    "provider": "厚生労働省 job tag",
+    "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=428",
+    "isPrimary": true,
+    "claims": [
+      "一般事務の定義・仕事内容・就業条件・統計",
+      "一般事務と総務事務の対比記述"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29にPrintAllページを実際に開いて全文確認。一般事務は特定の分野を専門とせず様々な定型的な事務を行う職業で「庶務」と呼ばれることもあること、総務事務との対比記述（重なる部分もある）を確認。統計は厚生労働省編職業分類対応の集計で、その職業のみの値とは限らない注意書きがある。"
+  },
+  {
+    "sourceId": "mhlw-jobtag-accounting-clerk",
+    "provider": "厚生労働省 job tag",
+    "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=430",
+    "isPrimary": true,
+    "claims": [
+      "経理事務の定義・仕事内容・就業条件・統計"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29にPrintAllページを実際に開いて全文確認。経理事務は会計ソフト等を使い入出金・資金管理・給料支払等を行う職業で、関連資格は日商簿記検定・簿記能力検定、中途採用では決算等の経験が求められる傾向があることを確認。"
+  },
+  {
+    "sourceId": "mhlw-jobtag-general-affairs",
+    "provider": "厚生労働省 job tag",
+    "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=433",
+    "isPrimary": true,
+    "claims": [
+      "総務事務の仕事内容・就業条件"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29にPrintAllページを実際に開いて全文確認。総務事務は文書の分類・整理・保管、固定資産の管理、株主総会・取締役会の準備・運営、社内規定の作成・改定と周知等を担うこと、役立つ資格は入社後の取得が多いことを確認。"
+  },
+  {
+    "sourceId": "egov-clinical-lab-tech-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/333AC1000000076",
+    "isPrimary": true,
+    "claims": [
+      "臨床検査技師の定義・免許・国家試験・受験資格・名称制限"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（定義）、第3条（免許）、第12条（試験は年1回以上）、第15条（受験資格）、第20条（名称の使用禁止）を確認。法律の中に細胞検査士の規定はない。"
+  },
+  {
+    "sourceId": "jscc-cytotechnologist-exam-2026",
+    "provider": "公益社団法人 日本臨床細胞学会",
+    "url": "https://jscc.or.jp/files/cytotechnologist-exam-info-2026-01a.pdf",
+    "isPrimary": true,
+    "claims": [
+      "細胞検査士資格認定試験の受験資格・試験構成"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。受験資格は臨床検査技師または衛生検査技師の資格取得後に細胞診実務1年以上従事した者、学会認定の養成機関の卒業見込み者・卒業者、4年制大学で学会認定の養成課程を修了した者など。一次試験（筆記、細胞像試験）と二次試験（実技）。年度ごとに新しい実施要領へ差し替えて再確認する。"
+  },
+  {
+    "sourceId": "jscc-cytotechnologist-renewal",
+    "provider": "公益社団法人 日本臨床細胞学会",
+    "url": "https://jscc.or.jp/files/update-for-cytotechnologist-2025-01ct.pdf",
+    "isPrimary": true,
+    "claims": [
+      "細胞検査士の資格更新制度"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。資格は5年ごとに更新し、大会等への2回以上の出席を含めて最低350単位を満たす必要がある。"
+  },
+  {
+    "sourceId": "ctjsc-cytotechnologist-guide",
+    "provider": "細胞検査士会",
+    "url": "https://www.ctjsc.com/ctjsc_cms/assets/uploads/a7180c0ce38b5b8f6d8a851016d61e50.pdf",
+    "isPrimary": true,
+    "claims": [
+      "細胞検査士の位置づけ・細胞診の内容"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。細胞検査士は日本臨床細胞学会および日本臨床検査医学会が認定する資格で「細胞診を担う専門資格を有した臨床検査技師」と位置づけられる。"
   }
 ]
