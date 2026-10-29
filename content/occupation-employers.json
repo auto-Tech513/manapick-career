@@ -2156,6 +2156,396 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "70",
+      "employers": [
+        {
+          "name": "株式会社カインズ",
+          "role": "販売接客（パート）",
+          "description": "担当売場の接客販売やレジ、品出し、発注などの売場管理を担当する。パート社員は担当売場の管理からアルバイトのフォローまで幅広い業務を担う。",
+          "source": {
+            "title": "カインズ 佐久町店の求人情報｜カインズ採用サイト",
+            "url": "https://www.cainz-saiyo.com/job/bc009bc7-d6b8-4745-bacc-3d91a9053baf/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "77",
+      "employers": [
+        {
+          "name": "株式会社セブン-イレブン・ジャパン",
+          "role": "コンビニスタッフ",
+          "description": "接客・販売、商品の補充、店内清掃のほか、公共料金の支払い受付、宅配便の荷受け、各種店頭受け取りサービスなどを担当する。",
+          "source": {
+            "title": "セブン-イレブン 倉敷連島町店の募集詳細｜セブン-イレブン公式採用サイト",
+            "url": "https://ptj.sej.co.jp/arbeit/recruitment/jobfind-pc/job/All/83139",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "78",
+      "employers": [
+        {
+          "name": "株式会社ヴィ・ド・フランス",
+          "role": "販売接客スタッフ",
+          "description": "カフェカウンターでの接客や、パンを棚に並べる品出し、パン棚のコーディネート、焼きたてを知らせる声だしなど、店頭でお客様に製品を提供する仕事。",
+          "source": {
+            "title": "VIE DE FRANCEの求人一覧｜株式会社ヴィ・ド・フランス 採用ホームページ",
+            "url": "https://job-gear.net/viedefrance2/all/v_92_101/FGQ_13_5_DUD%2CID/MLlist.spn.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "104",
+      "employers": [
+        {
+          "name": "エヌピーエムズ株式会社",
+          "role": "ホール・キッチンスタッフ（コメダ珈琲店）",
+          "description": "ホールでは案内、オーダーの承り、商品提供・片付け、清掃を行い、キッチンではコーヒーなどのドリンクやシロノワール・軽食などのスナックメニューの製造と清掃を担う。",
+          "source": {
+            "title": "コメダ珈琲店 会津若松白虎通り店 ホール・キッチンスタッフの求人詳細｜コメダ珈琲店 採用サイト",
+            "url": "https://recruit.komeda-coffee.jp/komedarecruit2/AA1226977881/MDdetail.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "196",
+      "employers": [
+        {
+          "name": "出光リテール販売株式会社",
+          "role": "サービスステーション（SS）スタッフ（アルバイト）",
+          "description": "サービスステーションに勤務し、給油・接客や洗車、オイル・タイヤ交換などの整備作業を行う。車検受付など車に関する各種サービスの案内や相談も担う。",
+          "source": {
+            "title": "アルバイト採用情報｜出光リテール販売株式会社採用サイト",
+            "url": "https://www.idemitsu-rh.co.jp/job/baito/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "240",
+      "employers": [
+        {
+          "name": "国立大学法人三重大学（三重大学医学部附属病院）",
+          "role": "学童保育指導員（非常勤職員）",
+          "description": "小学生の外遊びや宿題の指導・見守りを行い、メール返信や出席簿入力などの事務作業、畑・草刈りや床拭きなどの環境整備も担当する。",
+          "source": {
+            "title": "三重大学医学部附属病院 学童保育指導員 募集要項",
+            "url": "https://www.mie-u.ac.jp/about/item/20250509%E5%AD%A6%E7%AB%A5%E4%BF%9D%E8%82%B2%E6%8C%87%E5%93%A1%EF%BC%88%E3%83%91%E3%83%BC%E3%83%88%EF%BC%89.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "244",
+      "employers": [
+        {
+          "name": "独立行政法人国立病院機構 大阪医療センター",
+          "role": "看護助手（手術室）",
+          "description": "手術室で看護師の指示のもと手術準備を行い、手術室内の環境整備、リネン・物品の整理整頓、物品・器材・薬品や他部署への搬送を担う。",
+          "source": {
+            "title": "手術室 看護助手 募集",
+            "url": "https://osaka.hosp.go.jp/wp-content/themes/osaka-iryou/doc/kyujin/nurse_03_260401_3.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "331",
+      "employers": [
+        {
+          "name": "株式会社博報堂プロダクツ",
+          "role": "コピーライター（兼統合プランナー）",
+          "description": "広告・プロモーション領域でコンセプトワークから企画立案、コピーライティング、統合的な施策展開までを担当。コミュニケーション戦略の立案と実行も行う。",
+          "source": {
+            "title": "株式会社博報堂プロダクツ 公式求人一覧（HRMOS）",
+            "url": "https://hrmos.co/pages/hakuhodo-products/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "418",
+      "employers": [
+        {
+          "name": "国際医療福祉大学成田病院",
+          "role": "事務（医事課）",
+          "description": "医事課で外来・入退院窓口の受付や診療費計算・会計、レセプト点検・提出などの診療報酬請求、施設基準の届出・管理、医事統計を行う。",
+          "source": {
+            "title": "医事課職員募集｜国際医療福祉大学成田病院",
+            "url": "https://naritahospital.iuhw.ac.jp/career/medical.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "425",
+      "employers": [
+        {
+          "name": "株式会社ベルパーク",
+          "role": "スマホコーディネーター（ショップクルー）",
+          "description": "カウンターでプランやサービスの提案、スマホの新規契約・機種変更・修理・情報変更などの基本業務を行い、契約書類の作成や在庫管理、売り場作りなどの店舗運営も担う。",
+          "source": {
+            "title": "ソフトバンクショップ求人ガイド（エアポートウォーク名古屋）",
+            "url": "https://jobs.softbank.jp/shops/2228/jobs/1811",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "436",
+      "employers": [
+        {
+          "name": "株式会社資生堂",
+          "role": "パーソナルビューティーパートナー（PBP）",
+          "description": "肌測定機器でお客さまの肌状態を解析し、要望に合わせたお手入れを提案する。タブレットのメーキャップシミュレーターやパーソナルカラー診断で似合うメイクアップも提案する。",
+          "source": {
+            "title": "パーソナルビューティーパートナー（PBP）とは？｜資生堂グループ企業情報サイト",
+            "url": "https://corp.shiseido.com/bc/jp/about/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "450",
+      "employers": [
+        {
+          "name": "株式会社ゼロ",
+          "role": "ドライバー（トレーラー乗務／キャリアカードライバー）",
+          "description": "トレーラーやトラック等の輸送機材を使って自動車を陸上輸送する仕事。全長17m・最大6台積みのトレーラーは幹線輸送やロット輸送に用いられ、大型けん引免許が必要。",
+          "source": {
+            "title": "ドライバー採用サイト｜ZERO",
+            "url": "https://zero-group-recruit.com/driver_recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "454",
+      "employers": [
+        {
+          "name": "マグチランドトランス株式会社",
+          "role": "大型ルート配送ドライバー",
+          "description": "大型トラック（冷蔵車メイン）で1日3～4便、和泉市を拠点に大阪府下の生協センター間を輸送する。カゴ台車・ドーリー台車使用で手積み作業はほぼない。",
+          "source": {
+            "title": "マグチランドトランス株式会社 テクノステージ出張所求人情報｜マグチグループ公式採用サイト",
+            "url": "https://www.maguchi-job.jp/maguchigr2/AE1026545100/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "455",
+      "employers": [
+        {
+          "name": "ヤマト運輸株式会社",
+          "role": "セールスドライバー（SD）",
+          "description": "担当エリアのお客さまへ荷物の配達・集荷・セールスなどの活動を行い、地域に密着しお客さまと直接つながりながら、安心で信頼できるサービスを提供する。",
+          "source": {
+            "title": "正社員セールスドライバー中途採用情報｜ヤマト運輸",
+            "url": "https://www.kuronekoyamato.co.jp/ytc/corp/recruit/sales-driver/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "457",
+      "employers": [
+        {
+          "name": "新日本流通サービス株式会社",
+          "role": "倉庫内作業スタッフ（食品物流センター）",
+          "description": "食品物流センターでデジタルピッキング仕分け（ランプが光った場所で表示数量の商品をピッキング）と、ケース商品のピッキング・積み口までの運搬を行う。",
+          "source": {
+            "title": "軽作業スタッフ募集（大津市）｜新日本流通サービス株式会社 採用サイト",
+            "url": "https://www.snr-recruit.jp/snr2/AE0723378827/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "466",
+      "employers": [
+        {
+          "name": "名古屋市（環境局）",
+          "role": "時給制ごみ・し尿等収集作業員（会計年度任用職員）",
+          "description": "環境局環境事業所に勤務し、名古屋市内のごみ・資源等の収集業務を行う（年末年始の収集に対応する募集）。",
+          "source": {
+            "title": "ごみ・資源を収集する会計年度時給制ごみ・し尿等収集作業員を募集します｜名古屋市公式ウェブサイト",
+            "url": "https://www.city.nagoya.jp/shisei/saiyou/1004301/1004376/1032340/1054791.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "482",
+      "employers": [
+        {
+          "name": "岡山理科大学獣医学教育病院",
+          "role": "動物看護師（契約職員）",
+          "description": "獣医学教育病院で診療補助など動物看護に関する業務一般を担当し、入院動物がいる場合は時差出勤や交代制で夜間勤務を行うこともある。",
+          "source": {
+            "title": "岡山理科大学獣医学教育病院 動物看護師募集要項",
+            "url": "https://www.vmth.ous.ac.jp/wp-content/uploads/b13441ca8f1b8530de5f57294f1cdbbd.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "491",
+      "employers": [
+        {
+          "name": "厚生労働省",
+          "role": "労働基準監督官",
+          "description": "労働基準法などの関係法令に基づき事業場に立ち入り、法違反の是正や労働条件の確保・改善、労働者の安全と健康の確保、労災補償の業務を行う。",
+          "source": {
+            "title": "労働基準監督官採用試験｜厚生労働省",
+            "url": "https://www.mhlw.go.jp/general/saiyo/kantokukan.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "493",
+      "employers": [
+        {
+          "name": "特許庁",
+          "role": "特許審査官",
+          "description": "国内外から出願された発明について関連技術を調査し、新しい発明であるか等の観点で特許性の審査を行う。施策の企画立案や法令改正、国際業務も担う。",
+          "source": {
+            "title": "特許庁採用情報メールマガジン VOL.90",
+            "url": "https://www.jpo.go.jp/news/saiyo/kokka/sns/document/index/vol_90.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "504",
+      "employers": [
+        {
+          "name": "株式会社ドミノ・ピザ ジャパン",
+          "role": "自転車デリバリーインストアスタッフ（大阪本町店）",
+          "description": "オリジナル電動自転車でピザをお客様へ配達し、配達先の住所確認と最短ルートのチェックを行うほか、電話受付・接客・調理も担当する。",
+          "source": {
+            "title": "ドミノ・ピザ 大阪本町店 自転車デリバリーインストアスタッフの求人詳細",
+            "url": "https://recruit.dominos.jp/jobfind-pc/job/All/6684",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "517",
+      "employers": [
+        {
+          "name": "独立行政法人国立病院機構 栃木医療センター",
+          "role": "歯科助手（非常勤）",
+          "description": "歯科口腔外科外来で、外来補助や手術補助、診療準備、歯科専用機器の保守管理、物品の管理・消毒・滅菌、窓口・電話対応補助を行う。",
+          "source": {
+            "title": "歯科助手（非常勤）募集 | 栃木医療センター",
+            "url": "https://tochigi.hosp.go.jp/recruit/shikajoshu_h.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "518",
+      "employers": [
+        {
+          "name": "橿原市（市立認定こども園）",
+          "role": "保育補助員（会計年度任用職員）",
+          "description": "市立認定こども園で保育士の補助として、給食・午睡の準備や片付け、保育室の清掃、おもちゃ等の消毒、園庭整備などを行う。",
+          "source": {
+            "title": "令和8年度 市立認定こども園の会計年度任用職員（保育士等）募集｜橿原市公式ホームページ",
+            "url": "https://www.city.kashihara.nara.jp/kosodate_kyoiku/kosodate/10/15704.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "521",
+      "employers": [
+        {
+          "name": "株式会社サイガ",
+          "role": "クレーンオペレータ",
+          "description": "13tから超大型まで多彩な移動式クレーンのオペレータを募集。未経験者は「なにわクレーン塾」で無料で資格を取得でき、全国のインフラ工事や災害復興支援の現場で活躍する。",
+          "source": {
+            "title": "採用情報｜株式会社サイガ",
+            "url": "https://saiga.info/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "527",
+      "employers": [
+        {
+          "name": "社会福祉法人狭山市社会福祉協議会",
+          "role": "サービス提供責任者（訪問介護事業所）",
+          "description": "訪問介護事業所のサービス提供責任者として、指定訪問介護の利用申込みに係る調整、訪問介護員等への技術指導、訪問介護計画の作成等を行う。",
+          "source": {
+            "title": "狭山市社会福祉協議会 期間契約職員 採用試験要項（サービス提供責任者）",
+            "url": "https://www.sayama-shakyou.or.jp/.assets/%E4%BB%A4%E5%92%8C7%E5%B9%B4%EF%BC%91%EF%BC%91%E6%9C%88%E6%8E%A1%E7%94%A8-%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85%EF%BC%88%E3%82%B5%E8%B2%AC%EF%BC%89%E7%AC%AC%EF%BC%92%E7%89%88.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "546",
+      "employers": [
+        {
+          "name": "栃木労働局",
+          "role": "厚生労働事務官（事務官（共通））",
+          "description": "公共職業安定所（ハローワーク）や労働局職業安定部で、求職者に対する職業相談・職業紹介、求人受理、雇用保険業務、雇用対策業務などを行う。",
+          "source": {
+            "title": "栃木労働局 厚生労働事務官の業務",
+            "url": "https://jsite.mhlw.go.jp/tochigi-roudoukyoku/content/contents/001815213.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "554",
+      "employers": [
+        {
+          "name": "株式会社青二プロダクション",
+          "role": "声優（所属タレント）",
+          "description": "声優として多数のタレントが所属する事務所。公式サイトのタレント検索では、所属声優の詳細情報とボイスサンプルを確認できる。",
+          "source": {
+            "title": "タレント・声優 詳細検索｜株式会社青二プロダクション",
+            "url": "https://www.aoni.co.jp/search/index.php?cmd=search&type=c&freeword=",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
