@@ -2972,5 +2972,173 @@
         "text": "臨床工学技士は省令で定める生命維持管理装置の操作について医師の具体的な指示を受けなければならず、医療関係者との連携が求められる"
       }
     ]
+  },
+  {
+    "guideSlug": "shiho-shoshi-vs-land-surveyor",
+    "claims": [
+      {
+        "claimId": "shiho2-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-shihoshoshi-act"
+        ],
+        "text": "司法書士の法定業務は、登記・供託手続の代理、法務局や裁判所・検察庁への提出書類の作成、登記・供託に関する審査請求の代理、相談であり、権利に関する登記が中心である"
+      },
+      {
+        "claimId": "shiho2-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-shihoshoshi-act",
+          "moj-shihoshoshi-certified"
+        ],
+        "text": "認定司法書士は、価額140万円以下の民事紛争等について簡易裁判所での代理業務を行うことができる"
+      },
+      {
+        "claimId": "shiho2-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-land-house-investigator-act"
+        ],
+        "text": "土地家屋調査士の中心は表示に関する登記に必要な調査・測量と申請手続の代理であり、司法書士が扱う権利に関する登記とは担当が分かれる"
+      },
+      {
+        "claimId": "shiho2-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-shihoshoshi-act",
+          "egov-land-house-investigator-act"
+        ],
+        "text": "司法書士試験と土地家屋調査士試験はどちらも法務大臣が筆記・口述で行い、登録先は日本司法書士会連合会と日本土地家屋調査士会連合会の各名簿である"
+      },
+      {
+        "claimId": "shiho2-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-shihoshoshi-act"
+        ],
+        "text": "司法書士の業務（第3条第1項第1号から第5号）は、司法書士会に入会している司法書士・司法書士法人でない者は行うことができない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "dentist-vs-dental-hygienist",
+    "claims": [
+      {
+        "claimId": "dent-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dentist-act"
+        ],
+        "text": "歯科医業は歯科医師でなければ行うことができず、歯科医師の任務は歯科医療及び保健指導を掌ることである"
+      },
+      {
+        "claimId": "dent-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dental-hygienist-act"
+        ],
+        "text": "歯科衛生士の業務は、歯科医師の指導の下に行う歯科予防処置と、歯科診療の補助、歯科保健指導である"
+      },
+      {
+        "claimId": "dent-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dentist-act"
+        ],
+        "text": "歯科医師は大学で歯学の正規の課程を修めて卒業し国家試験に合格するルートで、診療に従事するには1年以上の臨床研修が必要である"
+      },
+      {
+        "claimId": "dent-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dentist-act"
+        ],
+        "text": "歯科医師には診察治療の求めへの応召義務、自ら診察しない治療の禁止、診療録の5年保存義務がある"
+      },
+      {
+        "claimId": "dent-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dental-hygienist-act"
+        ],
+        "text": "歯科衛生士の診療補助では、主治の歯科医師の指示がない限り、診療機械の使用や医薬品の授与など衛生上危害を生ずるおそれのある行為はできない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "paramedic-vs-firefighter",
+    "claims": [
+      {
+        "claimId": "para-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-paramedic-act",
+          "mhlw-jobtag-paramedic"
+        ],
+        "text": "救急救命士は救急救命士法に基づく国家資格であり、消防士は国家資格ではなく消防本部の職員として採用される身分である"
+      },
+      {
+        "claimId": "para-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-paramedic-act"
+        ],
+        "text": "救急救命処置のうち省令で定める特定行為は、医師の具体的な指示を受けなければ行うことができない"
+      },
+      {
+        "claimId": "para-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-paramedic"
+        ],
+        "text": "救急車に乗務するには消防職の公務員試験を受けて消防士として採用される必要がある"
+      },
+      {
+        "claimId": "para-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "fdma-whitepaper-ambulance-advanced"
+        ],
+        "text": "消防職員は、救急業務に関する講習を修了し5年又は2,000時間以上救急業務に従事したのち、6か月以上の養成課程を修了して国家試験に合格することで救急救命士を取得できる"
+      },
+      {
+        "claimId": "para-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-paramedic"
+        ],
+        "text": "救急隊は消防職員で編成され、3人1組の救急隊のうち少なくとも1名は救急救命士の資格取得者を配備することが推奨されている"
+      }
+    ]
   }
 ]
