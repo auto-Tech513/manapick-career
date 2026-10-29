@@ -44,14 +44,15 @@
     {
       "slug": "reskilling-support-2026",
       "createdAt": "2026-07-13",
-      "status": "draft",
+      "status": "published",
       "primarySourceId": "meti-reskilling-careerup-2026",
-      "sourcePublishedAt": "",
-      "publishedAt": null,
-      "reviewedAt": null,
-      "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "sourcePublishedAt": "2026-03-24",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:f19c9cb79e2e31cad0a7585cec90d83508ebe2d4",
+      "contentSha256": "22fb9cd0b8e30a42f8cb78df32fb8d980b29104e291c1e745ac868ffdd1089c9"
     },
     {
       "slug": "career-break-white-paper-2025",
@@ -751,6 +752,19 @@
       "reviewedByHumanAt": "2026-10-29",
       "reviewEvidence": "git:7381f6df275466719377a46153c0abe0f054c384",
       "contentSha256": "dec9b8854d11b1bf8fc268ee36ad688439e191b97b2973b5a709f983a2cbdbb7"
+    },
+    {
+      "slug": "income-tax-threshold-2026",
+      "createdAt": "2026-10-30",
+      "status": "published",
+      "primarySourceId": "nta-2026-withholding-reform-summary",
+      "sourcePublishedAt": "2026-04-01",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:628d4d6d5fc6531b6e47d8863ac723c84bbede61",
+      "contentSha256": "a181fcc6c0ac0092f1c3e3e3dd9dd3fd8c9a4a2bca747e962818536421fc4af7"
     }
   ]
 }
