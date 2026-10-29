@@ -7,12 +7,12 @@ import { newsModifiedAt, newsNeedsRefresh, publishedNews } from "@/content/edito
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
 const newsTitle = "働く人のための、キャリアニュース";
-const newsDescription = "雇用統計、採用動向、学び直し、デジタル人材の一次資料を、出典と記録日、情報の期限を分けて案内します。";
+const newsDescription = `雇用統計、賃金、制度、学び直しの一次資料を、数字が示すこと・示さないことまで分けて読み解く${publishedNews.length}本の解説一覧です。出典と記録日、情報の期限を分けて案内します。`;
 const latestNewsModifiedAt = publishedNews.reduce((latest, item) => newsModifiedAt(item) > latest ? newsModifiedAt(item) : latest, "");
 const newsIndexImage = articleOgUrl("news", "index", `${newsTitle}|${publishedNews.length}|${latestNewsModifiedAt}`);
 
 export const metadata: Metadata = {
-  title: "キャリアニュース",
+  title: "キャリアニュース｜雇用・賃金・制度の一次資料を読み解く",
   description: newsDescription,
   alternates: { canonical: "/news/" },
   openGraph: {
@@ -51,6 +51,6 @@ export default function NewsIndex() {
       <div><CalendarCheck2 aria-hidden="true"/><span><small>掲載データの最終記録日</small><strong>{latestReviewedAt}</strong></span></div>
       <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、出典の記録日を分けて表示します。確認期限を超えた過去資料の記事が{archiveCount}件あります。現在の状況は公式出典をご覧ください。</p>
     </section>
-    <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: item.kind, summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: articleOgUrl("news", item.slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`) }))} kinds={kinds} />
+    <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: item.kind, summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: `/card/news/${item.slug}.png` }))} kinds={kinds} />
   </div></>;
 }

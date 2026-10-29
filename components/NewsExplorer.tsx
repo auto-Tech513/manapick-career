@@ -20,8 +20,7 @@ function NewsCard({ item, lead = false }: { item: NewsCardItem; lead?: boolean }
     <Link className={lead ? "article-card article-card-lead" : "article-card"} href={`/news/${item.slug}/`}>
       <span className="article-card-media">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={item.image} alt={item.title} loading="lazy" width={1200} height={630} />
-        <span className="article-card-chip">{item.kind}</span>
+        <img src={item.image} alt="" loading="lazy" width={800} height={420} />
         {lead ? (
           <span className="article-card-lead-badge">
             <Newspaper aria-hidden="true" />
@@ -30,6 +29,7 @@ function NewsCard({ item, lead = false }: { item: NewsCardItem; lead?: boolean }
         ) : null}
       </span>
       <span className="article-card-body">
+        <span className="article-card-tag">{item.kind}</span>
         {item.needsRefresh ? <span className="archive-badge">過去資料・更新確認期限超過</span> : null}
         <h3 className="phrase-breaks">
           <PhraseText text={item.title} />

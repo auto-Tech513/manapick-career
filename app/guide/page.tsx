@@ -6,10 +6,10 @@ import { guides } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
 const title = "迷いを、確認できる手順に変える職業ガイド";
-const description = "職業情報の読み方、学ぶ順番、AIと仕事の考え方を、公式出典と記録日付きで整理したガイドです。";
+const description = `職業の違い、職業情報の読み方、学ぶ順番、AIと仕事の考え方を、公式出典と確認日付きで整理した${guides.length}本のガイド一覧です。`;
 const latestGuideCheck = guides.map((guide) => guide.checkedAt).sort().at(-1) ?? "";
 const image = articleOgUrl("guide", "index", `${title}|${guides.length}|${latestGuideCheck}`);
-export const metadata: Metadata = { title: "職業ガイド", description, alternates: { canonical: "/guide/" }, openGraph: { title, description, url: absoluteUrl("/guide/"), type: "website", siteName: "manapick career", locale: "ja_JP", images: [{ url: image, width: 1200, height: 630, alt: title }] }, twitter: { card: "summary_large_image", title, description, images: [image] } };
+export const metadata: Metadata = { title: "職業ガイド｜職業の違いと仕事の読み方を公式出典で確認", description, alternates: { canonical: "/guide/" }, openGraph: { title, description, url: absoluteUrl("/guide/"), type: "website", siteName: "manapick career", locale: "ja_JP", images: [{ url: image, width: 1200, height: 630, alt: title }] }, twitter: { card: "summary_large_image", title, description, images: [image] } };
 
 const guideTopics = [
   { id: "check", label: "はじめの確認", description: "名前や印象より先に、仕事内容・条件・出典を確認する" },
@@ -51,7 +51,7 @@ export default function GuideIndex() {
     readMinutes: guide.readMinutes,
     checkedAt: guide.checkedAt,
     freshLevel: freshLevel(guide.checkedAt),
-    image: articleOgUrl("guide", guide.slug, `${guide.title}|${guide.checkedAt}`),
+    image: `/card/guide/${guide.slug}.png`,
   }));
 
   const url = absoluteUrl("/guide/");
