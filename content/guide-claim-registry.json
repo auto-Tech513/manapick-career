@@ -3479,5 +3479,172 @@
         "text": "両資格とも試験は都道府県知事が毎年1回以上行い、免状は都道府県知事が交付する"
       }
     ]
+  },
+  {
+    "guideSlug": "dental-technician-vs-dental-hygienist",
+    "claims": [
+      {
+        "claimId": "dtech-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-dental-technician-act"
+        ],
+        "text": "歯科技工とは、特定の患者の歯科医療に用いる補てつ物・充てん物・矯正装置を作成・修理・加工することであり、歯科医師又は歯科技工士でなければ業として行うことができない"
+      },
+      {
+        "claimId": "dtech-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-dental-technician-act"
+        ],
+        "text": "歯科技工は歯科医師の指示書に基づいて行い、指示書は技工終了後2年間保存される"
+      },
+      {
+        "claimId": "dtech-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-dental-technician-act"
+        ],
+        "text": "歯科技工士は、印象採得・咬合採得・試適・装着など患者の口腔に直接触れる行為をしてはならない"
+      },
+      {
+        "claimId": "dtech-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dental-hygienist-act"
+        ],
+        "text": "歯科衛生士は歯科医師の指導の下に予防処置を患者の口腔に直接行い、診療の補助と歯科保健指導を業とする"
+      },
+      {
+        "claimId": "dtech-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-dental-technician-act"
+        ],
+        "text": "歯科技工所は開設後10日以内に都道府県知事等への届出が必要である"
+      }
+    ]
+  },
+  {
+    "guideSlug": "prosthetist-vs-physical-therapist",
+    "claims": [
+      {
+        "claimId": "pros-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-prosthetist-act"
+        ],
+        "text": "義肢装具士は、医師の指示の下に、義肢・装具の装着部位の採型、製作、身体への適合を行う国家資格である"
+      },
+      {
+        "claimId": "pros-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-prosthetist-act"
+        ],
+        "text": "義肢装具士の採型と身体への適合は診療の補助として行うことができ、省令で定めるものは医師の具体的な指示が必要である"
+      },
+      {
+        "claimId": "pros-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-pt-ot-act"
+        ],
+        "text": "理学療法士は、運動や電気刺激・温熱などの物理的手段で基本的動作能力の回復を図る国家資格である"
+      },
+      {
+        "claimId": "pros-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-prosthetist-act"
+        ],
+        "text": "義肢装具士の国家試験の受験資格は、指定の学校・養成所で3年以上修得した者などに認められる"
+      },
+      {
+        "claimId": "pros-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-prosthetist-act"
+        ],
+        "text": "義肢装具士でない者は義肢装具士の名称を使うことができない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "customs-broker-vs-trade-practitioner",
+    "claims": [
+      {
+        "claimId": "cust-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-customs-brokerage-act"
+        ],
+        "text": "通関業は財務大臣の許可制であり、通関業者は営業所ごとに通関士を置き、税関へ提出する通関書類を通関士に審査・記名させなければならない"
+      },
+      {
+        "claimId": "cust-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-customs-brokerage-act"
+        ],
+        "text": "通関士は試験合格だけでは成立せず、通関業者の届出による財務大臣の確認を受けて成立し、その業者の業務に従事しなくなると通関士でなくなる"
+      },
+      {
+        "claimId": "cust-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-customs-brokerage-act"
+        ],
+        "text": "通関士試験は関税法等、通関手続の実務、通関業法の3科目で、受験資格の定めはなく、従事期間が通算15年以上・5年以上の者には科目の一部免除がある"
+      },
+      {
+        "claimId": "cust-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "boujitsu-official-top",
+          "boujitsu-questionstrend"
+        ],
+        "text": "貿易実務検定は日本貿易実務検定協会が実施する民間検定で、A級・B級・C級の3レベルがあり、貿易実務の能力・知識を客観的に測るものである"
+      },
+      {
+        "claimId": "cust-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-customs-brokerage-act",
+          "boujitsu-official-top"
+        ],
+        "text": "貿易実務検定の合格は、通関業の許可や通関士の確認とは別の制度であり、通関業務を行う根拠にはならない"
+      }
+    ]
   }
 ]
