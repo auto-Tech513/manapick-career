@@ -7,6 +7,8 @@ const policy = fs.readFileSync("content/editorial-policy.json", "utf8");
 const adScript = fs.readFileSync("components/AdSenseScript.tsx", "utf8");
 const adSlot = fs.readFileSync("components/AdSlot.tsx", "utf8");
 const editorialArticle = fs.readFileSync("components/EditorialArticle.tsx", "utf8");
+const careerPage = fs.readFileSync("app/career/[slug]/page.tsx", "utf8");
+const professionalCareerPage = fs.readFileSync("components/ProfessionalCareerPage.tsx", "utf8");
 const layout = fs.readFileSync("app/layout.tsx", "utf8");
 const globalCss = fs.readFileSync("app/globals.css", "utf8");
 const headers = fs.readFileSync("public/_headers", "utf8");
@@ -43,6 +45,12 @@ if (!adSlot.includes('data-ad-status') || !adSlot.includes('state === "unfilled"
 if (/\.ad-slot\[data-ad-status=[^\]]+\][^{]*\{[^}]*display\s*:\s*none/is.test(globalCss)) failures.push("未充填広告を独自CSSで非表示にしている");
 if (!editorialArticle.includes("index === 1 && <AdSlot")) failures.push("広告枠が本文2番目のセクション後に限定されていない");
 if (!editorialArticle.includes("<AdSenseScript />")) failures.push("長文記事にAdSense scriptがない");
+for (const [label, source] of [["職業ページ", careerPage], ["専門職ページ", professionalCareerPage]]) {
+  const slots = (source.match(/<AdSlot\b/g) ?? []).length;
+  if (slots !== 1) failures.push(`${label}の広告枠が1つでない: ${slots}`);
+  if (!source.includes('placement="career-after-section-3"')) failures.push(`${label}の広告配置が指定位置でない`);
+  if (!source.includes("<AdSenseScript />")) failures.push(`${label}にAdSense scriptがない`);
+}
 if (!layout.includes('"google-adsense-account"')) failures.push("AdSense accountメタタグがない");
 for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googlesyndication.com", "https://googleads.g.doubleclick.net", "https://tpc.googlesyndication.com"]) {
   if (!headers.includes(origin)) failures.push(`CSPに${origin}がない`);
@@ -50,9 +58,9 @@ for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googl
 
 const unexpectedAdImports = [...walk("app"), ...walk("components")]
   .filter((file) => /\.(?:tsx|ts)$/.test(file))
-  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx"))
+  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx"))
   .filter((file) => /(?:AdSenseScript|AdSlot)/.test(fs.readFileSync(file, "utf8")));
 if (unexpectedAdImports.length) failures.push(`広告が承認外ページへ混入: ${unexpectedAdImports.join(", ")}`);
 
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
-console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} is article-only`);
+console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} is articles+career only`);
