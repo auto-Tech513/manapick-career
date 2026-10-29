@@ -2095,5 +2095,70 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29にPrintAllページを実際に開いて全文確認（occupationId=431が営業事務であることを確認）。営業事務は営業担当からの指示を受けて資料や見積書を作成し、クライアント対応や管理業務を行うなど営業活動をサポートする職業で、入職に学歴・資格は不要、関連する資格はない。統計は厚生労働省編職業分類対応の集計で、その職業のみの値とは限らない注意書きがある。"
+  },
+  {
+    "sourceId": "egov-psychiatric-social-worker-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/409AC0000000131",
+    "isPrimary": true,
+    "claims": [
+      "精神保健福祉士の定義・業務・受験資格"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（定義：精神障害者の保健及び福祉に関する専門的知識及び技術をもって相談援助を行う）、第4条（資格）、第6条（試験は年1回以上）、第7条（受験資格、第11号に社会福祉士の短期養成ルート）、第28条（登録）、第41条（連携・医師の指導）、第42条（名称の使用制限）を確認。"
+  },
+  {
+    "sourceId": "egov-survey-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/324AC0000000188",
+    "isPrimary": true,
+    "claims": [
+      "測量士・測量士補の役割と資格要件"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第48条（測量士は計画を作製し又は実施する、測量士補は測量士の計画に従い従事する、基本測量・公共測量の従事は登録者に限る）、第49条（登録）、第50条（測量士となる資格）、第51条（測量士補となる資格）を確認。"
+  },
+  {
+    "sourceId": "gsi-surveyor-exam-registration",
+    "provider": "国土地理院",
+    "url": "https://www.gsi.go.jp/LAW/SHIKEN/SHIKEN-top.htm",
+    "isPrimary": true,
+    "claims": [
+      "測量士・測量士補試験の実施"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。試験は年1回実施され、学歴・年齢・実務経験を問わず受験できること、測量士は専門的学識及び応用能力、測量士補は専門的技術が判定されることを確認。"
+  },
+  {
+    "sourceId": "gsi-surveyor-registration-guide",
+    "provider": "国土地理院",
+    "url": "https://www.gsi.go.jp/LAW/SHIKEN-sikentoroku.html",
+    "isPrimary": true,
+    "claims": [
+      "測量士・測量士補の登録手続"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。資格要件を満たした者が国土地理院の名簿に登録の申請をする必要があることを確認。"
+  },
+  {
+    "sourceId": "egov-radiologic-technologist-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/326AC1000000226",
+    "isPrimary": true,
+    "claims": [
+      "診療放射線技師の定義・業務・受験資格"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（定義：厚生労働大臣の免許を受け、医師又は歯科医師の指示の下に放射線の人体に対する照射（撮影を含む）を業とする）、第3条（免許）、第18条（試験）、第20条（受験資格）、第24条（照射の業は医師・歯科医師・診療放射線技師のみ）、第24条の2（MRI・超音波など政令で定める画像診断装置を用いた検査も業務）、第25条（名称の禁止）、第26条（具体的な指示・業務場所）、第28条（照射録）を確認。"
   }
 ]
