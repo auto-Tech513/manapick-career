@@ -172,7 +172,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           "@type": "BreadcrumbList",
           itemListElement: [
             { "@type": "ListItem", position: 1, name: "トップ", item: absoluteUrl("/") },
-            { "@type": "ListItem", position: 2, name: category?.label ?? "職業", item: absoluteUrl(`/category/${occupation.categoryKey}/`) },
+            { "@type": "ListItem", position: 2, name: "職業一覧", item: absoluteUrl("/all/") },
             { "@type": "ListItem", position: 3, name: occupation.name, item: pageUrl },
           ],
         }}
@@ -180,7 +180,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
       <Breadcrumbs
         trail={[
           { name: "ホーム", path: "/" },
-          { name: category?.label ?? "職業", path: `/category/${occupation.categoryKey}/` },
+          { name: "職業一覧", path: "/all/" },
           { name: occupation.name, path: `/occupation/${id}/` },
         ]}
       />
