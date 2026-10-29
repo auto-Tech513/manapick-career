@@ -2573,5 +2573,62 @@
         "text": "介護福祉士・社会福祉士の名称は登録を受けた者だけが使用でき、無資格でも介護の仕事自体に就ける場合がある"
       }
     ]
+  },
+  {
+    "guideSlug": "certified-psychologist-vs-clinical-psychologist",
+    "claims": [
+      {
+        "claimId": "psych-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-certified-psychologist-act",
+          "mext-school-counselor-qa"
+        ],
+        "text": "公認心理師は公認心理師法に基づく国家資格であり、臨床心理士は文部科学省の公式文書で「日本臨床心理士資格認定協会の認定に係る」資格と示され、個別の法律に基づく国家資格ではない"
+      },
+      {
+        "claimId": "psych-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-certified-psychologist-act"
+        ],
+        "text": "公認心理師でない者は「公認心理師」の名称と、その名称中に「心理師」という文字を用いることが法律で禁止されている（公認心理師法第44条）"
+      },
+      {
+        "claimId": "psych-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mext-school-counselor-qa"
+        ],
+        "text": "スクールカウンセラーの選考対象として公認心理師と臨床心理士は並列に挙げられ、文部科学省は資格だけでなく面接等で活動実績も踏まえて選考するよう求めている"
+      },
+      {
+        "claimId": "psych-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-certified-psychologist-act"
+        ],
+        "text": "公認心理師の受験資格には、大学と大学院で必要な科目を修めるルートのほか、大学卒業後に定められた施設で実務に従事するルートがある（公認心理師法第7条）"
+      },
+      {
+        "claimId": "psych-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-certified-psychologist-act",
+          "mhlw-certified-psychologist-act-summary"
+        ],
+        "text": "公認心理師の法定の行為は、心理状態の観察・分析、本人と関係者への相談援助、心の健康に関する教育・情報提供の4つである"
+      }
+    ]
   }
 ]
