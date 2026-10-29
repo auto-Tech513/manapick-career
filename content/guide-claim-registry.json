@@ -1726,5 +1726,226 @@
       }
     ],
     "guideSlug": "web-designer-vs-graphic-vs-director"
+  },
+  {
+    "guideSlug": "clinical-lab-tech-vs-cytotechnologist",
+    "claims": [
+      {
+        "claimId": "clinical-vs-cyto-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-lab-tech-act"
+        ],
+        "text": "臨床検査技師は臨床検査技師等に関する法律に基づく国家資格で、厚生労働大臣の免許を受け、医師又は歯科医師の指示の下に検体検査及び厚生労働省令で定める生理学的検査を行う"
+      },
+      {
+        "claimId": "clinical-vs-cyto-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-lab-tech-act"
+        ],
+        "text": "臨床検査技師の免許は臨床検査技師国家試験に合格した者に対して与えられ、試験は厚生労働大臣が毎年少なくとも1回行う"
+      },
+      {
+        "claimId": "clinical-vs-cyto-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-lab-tech-act"
+        ],
+        "text": "臨床検査技師国家試験の受験資格は、指定の学校または臨床検査技師養成所で3年以上修習した者などが法律第15条に定められている"
+      },
+      {
+        "claimId": "clinical-vs-cyto-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-lab-tech-act"
+        ],
+        "text": "臨床検査技師でない者は臨床検査技師という名称またはこれに紛らわしい名称を使用してはならない（法律第20条）"
+      },
+      {
+        "claimId": "clinical-vs-cyto-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "ctjsc-cytotechnologist-guide"
+        ],
+        "text": "細胞検査士は日本臨床細胞学会および日本臨床検査医学会が認定する資格で、細胞診を担う専門資格を有した臨床検査技師という位置づけである"
+      },
+      {
+        "claimId": "clinical-vs-cyto-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jscc-cytotechnologist-exam-2026",
+          "ctjsc-cytotechnologist-guide"
+        ],
+        "text": "細胞検査士資格認定試験の受験資格には、臨床検査技師または衛生検査技師の資格取得後に主として細胞診検査の実務に1年以上従事した者などが含まれる"
+      },
+      {
+        "claimId": "clinical-vs-cyto-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jscc-cytotechnologist-exam-2026"
+        ],
+        "text": "細胞検査士認定試験は一次試験（筆記、細胞像試験）と二次試験（実技）からなる"
+      },
+      {
+        "claimId": "clinical-vs-cyto-08",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jscc-cytotechnologist-renewal",
+          "ctjsc-cytotechnologist-guide"
+        ],
+        "text": "細胞検査士の資格は5年ごとに更新するものとされ、学会の大会等への2回以上の出席を含めて最低350単位を満たすことなどが要件である"
+      }
+    ]
+  },
+  {
+    "guideSlug": "office-clerk-vs-accounting-clerk",
+    "claims": [
+      {
+        "claimId": "office-vs-accounting-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk"
+        ],
+        "text": "一般事務は特定の分野の事務を専門的に行うものではなく、様々な定型的な事務の仕事を行う職業で、庶務と呼ばれることもある"
+      },
+      {
+        "claimId": "office-vs-accounting-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-accounting-clerk"
+        ],
+        "text": "経理事務は経理・会計管理のソフトウェア等を使い、社外との取引に伴う入出金、社内の資金管理、給料の支払等を行う職業である"
+      },
+      {
+        "claimId": "office-vs-accounting-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk",
+          "mhlw-jobtag-accounting-clerk"
+        ],
+        "text": "一般事務・経理事務のどちらも入職にあたって特に学歴や資格は必要とされない"
+      },
+      {
+        "claimId": "office-vs-accounting-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-accounting-clerk"
+        ],
+        "text": "経理事務の関連資格は日商簿記検定と簿記能力検定で、中途採用では決算や財務にかかわる業務がこなせるなどの経験が求められる傾向がある"
+      },
+      {
+        "claimId": "office-vs-accounting-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk",
+          "mhlw-jobtag-accounting-clerk"
+        ],
+        "text": "job tagの統計では就業者数は一般事務が約264万人、経理事務が約152万人、賃金（年収）は一般事務541.4万円、経理事務512.2万円と掲載されているが、厚生労働省編職業分類に対応する集計であり必ずしもその職業のみの統計ではない"
+      },
+      {
+        "claimId": "office-vs-accounting-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk",
+          "mhlw-jobtag-accounting-clerk"
+        ],
+        "text": "一般事務は月末など締め切りが集中する時期に、経理事務は決算期に残業が多くなることがある"
+      }
+    ]
+  },
+  {
+    "guideSlug": "general-affairs-vs-office-clerk",
+    "claims": [
+      {
+        "claimId": "affairs-vs-office-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk"
+        ],
+        "text": "job tagは一般事務と総務事務を対比し、一般事務は各部署で定型的な業務にあたることが多いのに対し、総務事務は社内全体の設備・備品の管理、社内行事の企画・運営、社内ルールの策定・周知等にあたることが多いと説明している"
+      },
+      {
+        "claimId": "affairs-vs-office-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-affairs"
+        ],
+        "text": "総務事務の担当には文書の分類・整理・保管、建物・設備などの固定資産の管理、株主総会・取締役会の準備・運営などが含まれる"
+      },
+      {
+        "claimId": "affairs-vs-office-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-affairs"
+        ],
+        "text": "社内規定や社内ルールの作成・改定と社員への周知は総務事務の重要な役割とされている"
+      },
+      {
+        "claimId": "affairs-vs-office-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk",
+          "mhlw-jobtag-general-affairs"
+        ],
+        "text": "一般事務・総務事務のどちらも就くにあたって特に学歴や資格は必要とされない"
+      },
+      {
+        "claimId": "affairs-vs-office-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk"
+        ],
+        "text": "job tagは一般事務と総務事務について、企業によって部署名や仕事の範囲は異なり重なる部分もあると明記している"
+      },
+      {
+        "claimId": "affairs-vs-office-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-affairs"
+        ],
+        "text": "総務事務は一定以上の社内での勤務経験があると役に立ち、仕事に役立つ資格は入社前に取得することは求められておらず入社後に取得する場合が多い"
+      }
+    ]
   }
 ]
