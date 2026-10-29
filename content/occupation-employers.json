@@ -2546,6 +2546,351 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "6",
+      "employers": [
+        {
+          "name": "株式会社紀文食品",
+          "role": "製造職",
+          "description": "船橋工場のはんぺんラインなどで、魚のすり身などを原料に練り製品をつくる仕事。ラインの点検や製品の見た目・食感のチェック、機械トラブルの対応などを行う。",
+          "source": {
+            "title": "紀文の仕事：製造職｜紀文食品 採用情報",
+            "url": "https://www.kibun.co.jp/recruit/job01.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "11",
+      "employers": [
+        {
+          "name": "キッコーマン株式会社",
+          "role": "製造管理",
+          "description": "各製造現場において、求められる製造量を求められた品質を維持して生産できるよう計画・管理する仕事。製造ラインの管理・調整や、ラインの改善、設備の導入計画にも携わる。",
+          "source": {
+            "title": "仕事の流れと関わる職種｜キッコーマングループ 企業情報サイト",
+            "url": "https://www.kikkoman.com/jp/works/job.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "28",
+      "employers": [
+        {
+          "name": "株式会社春興業",
+          "role": "鉄筋工事（建築・土木）",
+          "description": "神奈川県厚木市を拠点とする同社の募集で、業務内容は建築・土木の鉄筋工事。勤務は全国各地の現場にも対応し、出張もある。",
+          "source": {
+            "title": "株式会社春興業 募集要項",
+            "url": "https://harukogyo.com/page04.aspx",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "37",
+      "employers": [
+        {
+          "name": "株式会社手塚商会",
+          "role": "タイル工",
+          "description": "タイル工を正社員として新規採用している。未経験者も対象で、タイル工の職人として一人前になるまで会社がサポートする。",
+          "source": {
+            "title": "求人情報｜株式会社手塚商会",
+            "url": "https://www.tedukashoukai.com/recruit",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "38",
+      "employers": [
+        {
+          "name": "株式会社西武技研",
+          "role": "左官職人",
+          "description": "主に10〜14階建てコンクリート造のマンションやテナントビルの新築工事現場で左官工事を施工し、壁のタイル下地・クロス下地・土間などを薄塗材料で仕上げる。",
+          "source": {
+            "title": "左官工事は東京都の株式会社西武技研｜未経験職人求人募集中",
+            "url": "https://www.seibu-giken-sakan.com/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "41",
+      "employers": [
+        {
+          "name": "大協建工株式会社",
+          "role": "技術系：現場施工（内装仕上工事職人）",
+          "description": "内装仕上工事の職人として、内装一式工事や内装リフォーム工事、耐震天井、耐風圧天井、音響システム工事などを現場で施工する。",
+          "source": {
+            "title": "RECRUIT INFO｜大協建工株式会社",
+            "url": "https://www.daikyokenko.co.jp/recruit/info/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "46",
+      "employers": [
+        {
+          "name": "株式会社大川工業",
+          "role": "配管工",
+          "description": "公共・民間の設備工事にかかわる配管の施工を担当する。対象は空調設備や給排水衛生設備などで、現場は沖縄県内の住宅・商業施設・公共施設など。",
+          "source": {
+            "title": "配管工の募集要項｜株式会社大川工業 採用サイト",
+            "url": "https://clients.itszai.jp/4e4459784d513d3d/recruitments/62?ref=true",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "50",
+      "employers": [
+        {
+          "name": "株式会社杉組",
+          "role": "総合解体工",
+          "description": "民間工事を中心に、マンションなどの解体工事、店舗の内装工事、ビルや工場の改修工事、コンクリートをはつる工事などを二人一組で担当する。",
+          "source": {
+            "title": "総合解体工の募集要項｜株式会社杉組 採用サイト",
+            "url": "https://clients.itszai.jp/4e5451344e513d3d/recruitments/38?ref=true",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "291",
+      "employers": [
+        {
+          "name": "大塚製薬株式会社",
+          "role": "生産職",
+          "description": "安心安全で高品質な医薬品や消費者製品（飲料、食品）を製造する仕事。法令遵守のもと製造設備の操作や管理を行い、交代制勤務でチームと協力しながら国内外に製品を供給する。",
+          "source": {
+            "title": "生産職｜大塚製薬",
+            "url": "https://www.otsuka.co.jp/recruit/job-introduction/production.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "293",
+      "employers": [
+        {
+          "name": "株式会社ブリヂストン",
+          "role": "製造技能契約社員（タイヤ工場）",
+          "description": "タイヤ製造の各工程（精練、押出、裁断、成型、加硫、検査など）のいずれかを担当し、機械やタイヤのセッティング、タイヤの運搬・整列などの作業を行う。",
+          "source": {
+            "title": "仕事内容｜タイヤ工場 製造技能契約社員 採用情報｜株式会社ブリヂストン",
+            "url": "https://www.bridgestone.co.jp/saiyou/plant/seizou/work/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "294",
+      "employers": [
+        {
+          "name": "コーセーインダストリーズ株式会社",
+          "role": "化粧品の製造・ライン業務",
+          "description": "群馬工場で、スキンケア・メイクアップ製品などの化粧品を容器に詰めたり、箱に入れたりするライン作業（化粧品包装仕上業務）を担当する。",
+          "source": {
+            "title": "化粧品の製造・ライン業務の募集内容｜コーセーインダストリーズ株式会社（公式採用プラットフォーム）",
+            "url": "https://entori.jp/kose-industries/job/2418104",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "315",
+      "employers": [
+        {
+          "name": "コムチュアネットワーク株式会社",
+          "role": "システム運用（運用維持管理保守）リーダー候補",
+          "description": "Microsoft 365やEntra ID、Intune等のエンドポイント運用維持管理、デバイスのライフサイクル管理、セキュリティポリシー適用、手順書整備や運用改善・自動化を担う。",
+          "source": {
+            "title": "コムチュア株式会社 システム運用（運用維持管理保守）リーダー候補｜HERP Careers",
+            "url": "https://herp.careers/careers/companies/comture-career/jobs/h4-cmhf22cx403qzpx072cl5o73r",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "316",
+      "employers": [
+        {
+          "name": "株式会社IVRy",
+          "role": "コーポレートエンジニア",
+          "description": "社内IT基盤の運用・自動化やSaaS管理に加え、従業員からのIT関連問い合わせへの対応と解決（ヘルプデスク業務）、ISMSに基づく情報セキュリティ運用を担う。",
+          "source": {
+            "title": "株式会社IVRy コーポレートエンジニア｜HERP Careers",
+            "url": "https://herp.careers/careers/companies/ivry/jobs/eR5EFLxgkBjs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "321",
+      "employers": [
+        {
+          "name": "国際航業株式会社",
+          "role": "AI開発のIT系技術者",
+          "description": "研究から商品化まで各段階のプロジェクトで課題を発見し技術的解決を提供。画像・点群・位置情報・音声・言語等の計測データを扱い、先端技術の調査も行う。",
+          "source": {
+            "title": "先端技術業務（技術職） AI開発のIT系技術者（募集要項57）｜国際航業",
+            "url": "https://www.kkc.co.jp/recruit/career/57.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "371",
+      "employers": [
+        {
+          "name": "学習塾Sophica（ソフィカ）",
+          "role": "学習塾講師",
+          "description": "中学生・高校生を中心とした生徒への学習指導を担当し、教科指導や質問対応・学習サポート、授業準備などの教室業務を行う。",
+          "source": {
+            "title": "講師募集・採用情報｜学習塾Sophica",
+            "url": "https://sophica.jp/recruit",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "372",
+      "employers": [
+        {
+          "name": "アークアカデミー",
+          "role": "専任教員／非常勤教員（留学部）",
+          "description": "約50か国から来日した留学生ら多様な学習者を対象に日本語の授業を担当する。授業外業務や担任業務も担い、1コマ45分の授業を行う。",
+          "source": {
+            "title": "ARCグループ 教員募集要項",
+            "url": "https://yousei.arc-academy.net/wp-content/uploads/2026/07/recruitment-info-202607.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "373",
+      "employers": [
+        {
+          "name": "ALEX英会話",
+          "role": "English Instructor（英会話講師）",
+          "description": "幼児から大人まで幅広い年齢の生徒に英語を教える。カリキュラムに沿って各クラスに合わせたレッスンを計画し、季節イベントの企画・運営にも携わる。",
+          "source": {
+            "title": "ALEX英会話 Career as English Instructor",
+            "url": "https://www.aes-kachidoki.com/careers",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "377",
+      "employers": [
+        {
+          "name": "寺田病院",
+          "role": "肛門外科（常勤医師）",
+          "description": "肛門外科の常勤医師として外来診療、病棟管理（40床）、内視鏡検査、手術などを担当する。外来は1コマあたり受診者数30〜50名程度。",
+          "source": {
+            "title": "医師看護士の求人情報｜寺田病院",
+            "url": "https://www.terada-hospital.or.jp/recruit_doctor/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "382",
+      "employers": [
+        {
+          "name": "神戸大学医学部附属病院",
+          "role": "臨床研究コーディネーター（CRC）（常勤：特命職員）",
+          "description": "臨床研究推進センターで治験・臨床研究のCRC業務を担う。資格に応じて採血・検体処理などの検査関連業務や試験薬管理業務も担当する。",
+          "source": {
+            "title": "神戸大学医学部附属病院 治験コーディネーター募集要項",
+            "url": "https://www.hosp.kobe-u.ac.jp/ctrc/recruit/documents/job_study261008.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "495",
+      "employers": [
+        {
+          "name": "株式会社IVRy",
+          "role": "データエンジニア（リードクラス）",
+          "description": "LLMOpsまで含めたデータ基盤・データプロダクトの設計・開発・運用をリードし、非構造化データの収集・正規化・統合やデータパイプラインの設計・開発・運用を担う。",
+          "source": {
+            "title": "株式会社IVRy データエンジニア（リードクラス）｜HERP Careers",
+            "url": "https://herp.careers/careers/companies/ivry/jobs/muSDeaGqLw6R",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "512",
+      "employers": [
+        {
+          "name": "ポールトゥウィン株式会社",
+          "role": "パチンコ・パチスロテスター（デバッグスタッフ）",
+          "description": "新作パチンコ・パチスロのデバッグスタッフとして、映像や動作のチェック（バグチェック）を行う。",
+          "source": {
+            "title": "ポールトゥウィン 台東区のアルバイト・パート求人一覧｜公式採用サイト",
+            "url": "https://ptw-recruit.jp/list/tokyo/ct_106/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "524",
+      "employers": [
+        {
+          "name": "株式会社タイミー",
+          "role": "プロダクトデザイナー（オープンポジション）",
+          "description": "ユーザーリサーチや定量・定性情報に基づく課題発見と仮説立案、プロトタイプ・UIによる具体化、マッチングや主要なUI/UXの改善を担う。",
+          "source": {
+            "title": "株式会社タイミー Product Designer（Open Position）｜HERP Careers",
+            "url": "https://herp.careers/careers/companies/timee/jobs/h4-cmhf0lloa02mbpx07kc4xshho",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "535",
+      "employers": [
+        {
+          "name": "独立行政法人地域医療機能推進機構大阪病院",
+          "role": "麻酔科医師",
+          "description": "術前・術中・術後の麻酔管理など、麻酔科に関わる業務を行う。正職員として日勤のほか当直勤務も担当する。",
+          "source": {
+            "title": "麻酔科医師 募集｜JCHO大阪病院",
+            "url": "https://osaka.jcho.go.jp/newera2/wp-content/uploads/2026/06/anesthesiologist_202607_01.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
