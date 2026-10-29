@@ -6346,6 +6346,321 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "301",
+      "employers": [
+        {
+          "name": "京セラ株式会社",
+          "role": "開発（ファインセラミック技術開発部）",
+          "description": "ファインセラミック事業本部でプロセス開発を担当し、デバイス用新規単結晶材料の加工技術開発やレーザー加工、シミュレーション解析技術の開発に取り組む。",
+          "source": {
+            "title": "社員インタビュー33 | 社員インタビュー | 新卒採用情報｜京セラ株式会社",
+            "url": "https://www.kyocera.co.jp/recruit/new/person/interview33.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "317",
+      "employers": [
+        {
+          "name": "NRIセキュアテクノロジーズ株式会社",
+          "role": "セキュリティアナリスト（SOC事業）",
+          "description": "お客様環境で発生しているセキュリティインシデントを24時間体制で監視・解析し、セキュリティ脅威の早期検出と対策支援を行い、セキュリティリスクの軽減に寄与する。",
+          "source": {
+            "title": "募集要項 | キャリア採用情報 | 情報セキュリティのNRIセキュア",
+            "url": "https://www.nri-secure.co.jp/career/recruit/recruitment-info?hsCtaAttrib=164228153987",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "366",
+      "employers": [
+        {
+          "name": "警視庁",
+          "role": "鑑識技術（科学捜査研究所 第二化学科 化学第三係）",
+          "description": "覚醒剤や大麻などの違法薬物について、各種分析機器を用いて鑑定を行い、事件解決に貢献する科学捜査研究所の鑑定業務を担う。",
+          "source": {
+            "title": "鑑識技術 | 職員インタビュー | 令和8年度警視庁採用サイト",
+            "url": "https://www.keishicho.metro.tokyo.lg.jp/saiyo/person/tech11.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "367",
+      "employers": [
+        {
+          "name": "大塚製薬株式会社",
+          "role": "研究技術職",
+          "description": "医療用医薬品および消費者製品の研究開発における、初期の基礎研究から技術導入とその整備に至るまで、様々な分野の業務を担う。",
+          "source": {
+            "title": "研究技術職｜大塚製薬",
+            "url": "https://www.otsuka.co.jp/recruit/training/research.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "368",
+      "employers": [
+        {
+          "name": "ペプチドリーム株式会社",
+          "role": "Senior Researcher（PDPS Discovery Group）",
+          "description": "独自の創薬探索プラットフォームPDPSを用いてヒット化合物や創薬候補化合物を探索し、基盤を強化する新たな手法や技術の開発を行う。",
+          "source": {
+            "title": "Jobs at PeptiDream｜PEPTIDREAM INC ペプチドリーム株式会社",
+            "url": "https://www.peptidream.com/en/careers/job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "492",
+      "employers": [
+        {
+          "name": "株式会社ラック",
+          "role": "セキュリティスペシャリスト",
+          "description": "顧客の情報システムへ攻撃者目線で攻撃を仕掛け、特定した脆弱性や問題点を報告し、実効的な対策へ落とし込むペネトレーションテストを一貫して担当する。",
+          "source": {
+            "title": "情報システムを超えて全てをハックする。ラックのホワイトハッカーが語る技術への探究と、エンジニアとしてのキャリア｜ラックの人を知る｜採用情報｜株式会社ラック",
+            "url": "https://www.lac.co.jp/recruit/people/interview05.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "505",
+      "employers": [
+        {
+          "name": "デジタルデータソリューション株式会社",
+          "role": "デジタル鑑識官",
+          "description": "デジタル機器の解析技術を活かし、サイバー攻撃や社内不正のインシデント対応、マルウェアの動作確認と解析などを行うデジタル鑑識官の仕事。",
+          "source": {
+            "title": "新卒採用情報 - デジタルデータソリューション株式会社（DDS）",
+            "url": "https://www.digitaldata-solution.co.jp/recruit/graduates/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "522",
+      "employers": [
+        {
+          "name": "常石ソリューションズ東京ベイ株式会社",
+          "role": "設計部 構造設計グループ",
+          "description": "船体の設計、強度計算、部材配置など、船が安全に浮かび貨物を運べるように構造を決める仕事を担当。",
+          "source": {
+            "title": "人を知る - 常石ソリューションズ東京ベイ株式会社 採用特設サイト",
+            "url": "https://www.tsuneishi.co.jp/tokyobay/recruit/people/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "533",
+      "employers": [
+        {
+          "name": "川崎車両株式会社",
+          "role": "鉄道車両、鉄道システムおよびそれら部品の設計、開発、製造、修理ならびに販売",
+          "description": "川崎車両グループの人財募集で、鉄道車両、鉄道システムおよび部品の設計、開発、製造、修理ならびに販売を担う正社員を募集している。",
+          "source": {
+            "title": "川崎車両株式会社",
+            "url": "https://www.khi.co.jp/rail/pdf/recruit_career.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "543",
+      "employers": [
+        {
+          "name": "エヌエス環境株式会社",
+          "role": "技術職（環境分析・調査・計測とコンサルタント）",
+          "description": "作業環境測定を含む環境モニタリングなど、環境分析・調査・計測とコンサルタントを担う技術職を募集している。",
+          "source": {
+            "title": "エヌエス環境株式会社　　募集要項 2027年度（2027年4月新卒採用）",
+            "url": "https://www.ns-kankyo.co.jp/wp-content/uploads/エヌエス環境　2027年新卒募集要項.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "330",
+      "employers": [
+        {
+          "name": "株式会社レコオーランド",
+          "role": "グラフィックデザイナー",
+          "description": "FASHIONSNAPおよび公式ECサイトF/STOREにおけるグラフィックデザインや、SNS・YouTubeコンテンツのフォーマット作成などを担う。",
+          "source": {
+            "title": "グラフィックデザイナーの採用情報 | RECO ORLANDO inc.",
+            "url": "https://recoorlando.co.jp/posts/graphic_designer",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "345",
+      "employers": [
+        {
+          "name": "株式会社ユー花園",
+          "role": "フラワーディレクター職（生花装飾・施工）",
+          "description": "フラワーディレクター部門（葬儀花）とホテルフローリスト部門（ブライダル装花）を中心に、生花装飾・施工を担うフラワーディレクター職などを募集。",
+          "source": {
+            "title": "募集要項｜ユー花園",
+            "url": "https://www.youkaen.com/recruit/offer",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "360",
+      "employers": [
+        {
+          "name": "マーシュ・マーサー・ジャパン株式会社",
+          "role": "コンサルタント",
+          "description": "組織・人事領域におけるコンサルティング全般を担当。組織・人事戦略策定、グローバル人事制度設計、人事機能改革などを支援する。",
+          "source": {
+            "title": "新卒採用",
+            "url": "https://www.mercer.com/ja-jp/careers/mercer-careers/recent-graduates/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "387",
+      "employers": [
+        {
+          "name": "神奈川県教育委員会",
+          "role": "スクールカウンセラー",
+          "description": "不登校やいじめ等の課題解決のため、心理の専門家として県内公立中学校・県立高校等に配置されるスクールカウンセラーを募集。",
+          "source": {
+            "title": "令和９年度神奈川県教育委員会スクールカウンセラー採用候補者選考募集案内",
+            "url": "https://www.pref.kanagawa.jp/documents/12402/01.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "506",
+      "employers": [
+        {
+          "name": "NRIセキュアテクノロジーズ株式会社",
+          "role": "セキュリティコンサルタント（グローバル系コンサルタント）",
+          "description": "グローバルに展開する顧客企業を支援し、海外拠点を含むセキュリティガバナンスの向上や顧客海外拠点のセキュリティ監査等を担当する。",
+          "source": {
+            "title": "募集要項 | キャリア採用情報 | 情報セキュリティのNRIセキュア",
+            "url": "https://www.nri-secure.co.jp/career/recruit/recruitment-info?hsCtaAttrib=164215475222",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "545",
+      "employers": [
+        {
+          "name": "東京交響楽団",
+          "role": "ヴィオラ・トゥッティ奏者、オーボエ2番奏者（イングリッシュホルン含む）",
+          "description": "公式オーディションにより、ヴィオラ・トゥッティ奏者1名とオーボエ2番奏者（イングリッシュホルン含む）1名の団員を募集。",
+          "source": {
+            "title": "オーディション（ヴィオラ・トゥッティ奏者、オーボエ2番奏者）のお知らせ - 東京交響楽団 TOKYO SYMPHONY ORCHESTRA",
+            "url": "https://tokyosymphony.jp/news/62695/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "395",
+      "employers": [
+        {
+          "name": "株式会社オリーブスパ",
+          "role": "セラピスト",
+          "description": "完全個室でお客様と一対一に向き合い、アロマトリートメントの施術を行う。研修では100分間の全身施術などの手技を学ぶ。",
+          "source": {
+            "title": "セラピストを知る | OLIVE SPA（オリーブスパ）採用サイト",
+            "url": "https://olive-spa.com/recruit/interview/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "437",
+      "employers": [
+        {
+          "name": "日本メナード化粧品株式会社",
+          "role": "ビューティアドバイザー",
+          "description": "隙間時間を活用してお客様のご自宅を訪問し、肌のお手入れ方法や化粧品のアドバイスを行う。研修で美容の知識や技術を学べる。",
+          "source": {
+            "title": "Wワーク・副業での働き方｜メナードビューティアドバイザー・エステセラピスト求人サイト",
+            "url": "https://www.menard.biz/work-style/side_job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "479",
+      "employers": [
+        {
+          "name": "株式会社花の海",
+          "role": "技術職",
+          "description": "西日本最大級のシステム農場で、主に野菜苗・花苗の生産、出荷、品質管理などを担当する技術職。",
+          "source": {
+            "title": "採用情報 | 花の海（西日本最大級のシステム農場）",
+            "url": "https://hana-umi.com/company/recruit.php",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "476",
+      "employers": [
+        {
+          "name": "株式会社舞台ファーム",
+          "role": "農業人材",
+          "description": "主に農場で農業に携わり、コメと野菜の双方の栽培・生育を担当。数値管理や経営管理の経験も積める。",
+          "source": {
+            "title": "採用情報 | 舞台ファーム",
+            "url": "https://butaifarm.com/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "329",
+      "employers": [
+        {
+          "name": "株式会社レコオーランド",
+          "role": "ディレクター",
+          "description": "FASHIONSNAPの掲載記事やタイアップ広告案件などのビジュアルディレクション、プロダクション業務を担当する。",
+          "source": {
+            "title": "ディレクターの採用情報 | RECO ORLANDO inc.",
+            "url": "https://recoorlando.co.jp/posts/creative_director",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
