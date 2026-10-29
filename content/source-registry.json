@@ -2914,5 +2914,122 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に条文本文を実際に開いて確認（昭和26年法律第285号）。第2条（博物館の定義：資料を収集・保管・展示し調査研究を行う機関）、第3条（博物館の事業）、第4条（学芸員は博物館資料の収集、保管、展示及び調査研究等の専門的事項をつかさどる。学芸員補は職務を助ける）、第5条（学芸員の資格：学士＋博物館に関する科目の単位修得等）、第6条（学芸員補の資格）を確認。"
+  },
+  {
+    "sourceId": "nenkin-wage-requirement-abolished-2026",
+    "provider": "日本年金機構",
+    "url": "https://www.nenkin.go.jp/oshirase/taisetu/jigyosho/2026/202610/100104.html",
+    "isPrimary": true,
+    "claims": [
+      "短時間労働者の賃金要件の撤廃（2026年10月1日）"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。令和7年年金制度改正法（令和7年法律第74号）に基づき、短時間労働者の加入要件のうち賃金要件（所定内賃金が月額8.8万円以上）が2026年10月1日に撤廃されたこと、残る要件（週の所定労働時間20時間以上、勤め先が従業員数51人以上の企業、学生でないこと）、特定減額特例対象者は原則加入対象外で申し出により加入できることを確認。ページの更新日は2026年10月1日。"
+  },
+  {
+    "sourceId": "mhlw-social-insurance-expansion",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000147284_00021.html",
+    "isPrimary": true,
+    "claims": [
+      "社会保険の加入対象の拡大の概要"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。令和7年年金制度改正法が2025年6月13日に成立したこと、拡大のポイント（企業規模要件の縮小・撤廃、賃金要件の撤廃、個人事業所の適用拡大）、月額8.8万円以上の要件が「年収106万円の壁」と呼ばれてきたこと、企業規模要件を10年かけて段階的に縮小・撤廃すること、保険料調整制度（3年間、事業主の追加負担分は全額を制度全体で支援）、FAQ（週20時間以上で扶養から外れる、2か月を超えて続くと加入対象となることがある、年収130万円以上では週20時間未満でも扶養から外れる）を確認。"
+  },
+  {
+    "sourceId": "nenkin-part-time-expansion",
+    "provider": "日本年金機構",
+    "url": "https://www.nenkin.go.jp/service/kounen/tekiyo/jigyosho/tanjikan.html",
+    "isPrimary": true,
+    "claims": [
+      "短時間労働者の適用拡大と企業規模要件の段階拡大"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。特定適用事業所の定義（被保険者総数が51人以上となることが見込まれる企業等）、企業規模要件の段階拡大（2027年10月から36人以上、2029年10月から21人以上、2032年10月から11人以上）、短時間労働者の要件、2か月以内の期間を定めて使用される方等は対象から除かれること、加入手続きは事業主が被保険者資格取得届を提出することを確認。"
+  },
+  {
+    "sourceId": "nta-private-salary-survey-2025",
+    "provider": "国税庁",
+    "url": "https://www.nta.go.jp/publication/statistics/kokuzeicho/minkan/gaiyou/2025.htm",
+    "isPrimary": true,
+    "claims": [
+      "令和7年分民間給与の平均給与"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。令和7年12月31日現在の給与所得者数6,080万人、1年を通じて勤務した給与所得者5,163万人の平均給与487万円（前年比1.9％増）、男性597万円・女性342万円、正社員（正職員）559万円・正社員（正職員）以外210万円を確認。"
+  },
+  {
+    "sourceId": "nta-private-salary-survey-2025-release",
+    "provider": "国税庁",
+    "url": "https://www.nta.go.jp/information/release/kokuzeicho/2026/minkan_2026/pdf/01.pdf",
+    "isPrimary": true,
+    "claims": [
+      "民間給与実態統計調査の報道発表"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。基幹統計で第77回であること、平均給与487万円で5年連続の増加、平均給料・手当412万円・平均賞与75万円の内訳、正社員の平均賞与102万円・正社員以外12万円、業種別で電気・ガス・熱供給・水道業854万円が最高であることを確認。公表日は2026年9月29日。"
+  },
+  {
+    "sourceId": "nta-private-salary-survey-2025-report",
+    "provider": "国税庁",
+    "url": "https://www.nta.go.jp/publication/statistics/kokuzeicho/minkan2025/pdf/2025_001.pdf",
+    "isPrimary": true,
+    "claims": [
+      "民間給与実態統計調査の結果報告全文"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。平均給与と給与の定義、1年を通じて勤務した給与所得者の定義、企業規模別の平均給与（資本金2,000万円未満416万円、資本金10億円以上692万円、個人の事業所289万円）、年齢階層別で男性55〜59歳が734万円で最高、平均年齢47.3歳・平均勤続年数12.5年、給与階級別分布で300万円超400万円以下が799万人（15.5％）で最多であることを確認。"
+  },
+  {
+    "sourceId": "mhlw-flexible-work-measures",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/flexiblework/",
+    "isPrimary": true,
+    "claims": [
+      "柔軟な働き方を実現するための措置"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。事業主は3歳から小学校就学前までの子を養育する労働者に対し、始業時刻の変更、テレワーク等（10日以上/月）、保育施設の設置運営等、養育両立支援休暇（10日以上/年）、短時間勤務制度の5つから2つ以上の措置を講じなければならないこと、適用開始は2025年10月1日であること、個別周知・意向確認の時期と方法を確認。ページ上に公表日の明記は確認できなかった。"
+  },
+  {
+    "sourceId": "mhlw-childcare-law-amendment-points",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/seisakunitsuite/bunya/koyou_roudou/koyoukintou/ryouritsu/ikuji/law-amendment/",
+    "isPrimary": true,
+    "claims": [
+      "育児・介護休業法の改正項目と施行日"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。柔軟な働き方を実現するための措置と個別の周知・意向確認は2025年10月1日施行、所定外労働の制限の対象拡大は2025年4月1日施行であることを確認。2026年10月1日施行とされる項目は含まれていなかった。"
+  },
+  {
+    "sourceId": "mhlw-childcare-amendment-overview-2024",
+    "provider": "厚生労働省",
+    "url": "https://jsite.mhlw.go.jp/ishikawa-roudoukyoku/content/contents/002010960.pdf",
+    "isPrimary": true,
+    "claims": [
+      "育児・介護休業法等改正法（令和6年法律第42号）の概要と施行期日"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に文書本文を実際に開いて確認。育児休業、介護休業等育児又は家族介護を行う労働者の福祉に関する法律及び次世代育成支援対策推進法の一部を改正する法律の概要（令和6年法律第42号、令和6年5月31日公布）。柔軟な働き方を実現するための措置（事業主が2つを選択して措置する義務、個別の周知・意向確認の義務付け）と個別の意向聴取・配慮は令和7年10月1日施行、所定外労働の制限の対象拡大等は令和7年4月1日施行であることを確認。"
   }
 ]
