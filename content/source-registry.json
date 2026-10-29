@@ -2160,5 +2160,70 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（定義：厚生労働大臣の免許を受け、医師又は歯科医師の指示の下に放射線の人体に対する照射（撮影を含む）を業とする）、第3条（免許）、第18条（試験）、第20条（受験資格）、第24条（照射の業は医師・歯科医師・診療放射線技師のみ）、第24条の2（MRI・超音波など政令で定める画像診断装置を用いた検査も業務）、第25条（名称の禁止）、第26条（具体的な指示・業務場所）、第28条（照射録）を確認。"
+  },
+  {
+    "sourceId": "egov-architect-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/325AC1000000202",
+    "isPrimary": true,
+    "claims": [
+      "一級建築士・二級建築士の免許、設計・工事監理の範囲、受験資格"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（一級は国土交通大臣、二級は都道府県知事の免許）、第3条（一級のみが設計・工事監理できる大規模建築物）、第3条の2（二級の担当範囲、条例による基準変更）、第4条（免許の要件：実務経験は免許段階の要件）、第14条・第15条（受験資格）を確認。"
+  },
+  {
+    "sourceId": "egov-land-house-investigator-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/325AC1000000228",
+    "isPrimary": true,
+    "claims": [
+      "土地家屋調査士の使命・業務・資格・登録"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第1条（使命）、第3条（業務：調査・測量、申請手続の代理、書類作成、筆界特定の代理等、紛争代理は認定調査士に限る）、第4条（資格）、第6条（試験は法務大臣が年1回以上、筆記・口述、測量士等は調査・測量分野の免除）、第8条（連合会の名簿への登録）、第68条（業務制限・名称制限）を確認。"
+  },
+  {
+    "sourceId": "moj-land-investigator-exam-guide",
+    "provider": "法務省（横浜地方法務局）",
+    "url": "https://houmukyoku.moj.go.jp/yokohama/content/001466093.pdf",
+    "isPrimary": true,
+    "claims": [
+      "土地家屋調査士試験の日程・手数料"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。令和8年の筆記試験は10月、口述試験は翌年1月、受験手数料は8,300円。年度ごとに新しい受験案内で再確認する。"
+  },
+  {
+    "sourceId": "mhlw-jobtag-nurse",
+    "provider": "厚生労働省 job tag",
+    "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=156",
+    "isPrimary": true,
+    "claims": [
+      "看護師の仕事内容（訪問看護を含む）、タスク実施率、就業条件"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29にPrintAllページを実際に開いて確認（occupationId=156が看護師）。訪問看護ステーションの看護師は患者宅を訪問してケアを行うこと、タスク実施率（観察96.2%、計測96.2%、医師の指示による処置94.2%）、看護大学・短大・養成所で3〜4年の専門教育と国家試験が必要なことを確認。"
+  },
+  {
+    "sourceId": "mhlw-visiting-nursing-designated-standard",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tc4892&dataType=1&pageNo=1",
+    "isPrimary": true,
+    "claims": [
+      "指定訪問看護の人員・運営基準、指示書、保険の優先関係"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に通知本文（令和2年3月5日保発0305第4号）を実際に開いて確認。看護職員は保健師・助産師・看護師・准看護師、開始時に主治医の指示書の交付を受けること、訪問看護計画・報告書を主治医へ提出すること、介護保険で受けられる場合は医療保険の訪問看護療養費は支給されないことを確認。"
   }
 ]
