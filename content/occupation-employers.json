@@ -4451,6 +4451,261 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "8",
+      "employers": [
+        {
+          "name": "株式会社フジ（松山デリカプロセスセンター）",
+          "role": "惣菜加工・盛付スタッフ（アルバイト・パート）",
+          "description": "松山デリカプロセスセンターで、お惣菜の加工・盛付作業としてサラダやお弁当、巻きずしの調理、パック詰め、値付けを行う。",
+          "source": {
+            "title": "松山デリカプロセスセンターのスタッフ募集｜フジ 求人サイト",
+            "url": "https://job.fuji-recruit.com/fujijob2/AC0329523016/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "34",
+      "employers": [
+        {
+          "name": "株式会社日さく",
+          "role": "さく井技術者",
+          "description": "井戸掘削・地質調査・防災工事を手がける会社で、さく井技術者として井戸の掘削工事に携わる。",
+          "source": {
+            "title": "キャリア採用情報｜株式会社日さく",
+            "url": "https://www.nissaku.co.jp/recruit/career.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "42",
+      "employers": [
+        {
+          "name": "将建塗装",
+          "role": "外壁塗装職人",
+          "description": "一般住宅やアパートの外壁塗装をはじめ、外壁や屋根の塗装、防水工事、シーリングなどを手がける。",
+          "source": {
+            "title": "求人情報｜将建塗装",
+            "url": "https://syouken-tosou.net/page06.aspx?ct=3",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "48",
+      "employers": [
+        {
+          "name": "東日本旅客鉄道株式会社",
+          "role": "総合職 土木（保線）",
+          "description": "線路の状態を検査して異常を見つけ、修繕方法を検討した後、工事で悪いところを確実に直す保線の仕事。",
+          "source": {
+            "title": "土木 キャリアストーリー｜JR東日本 採用サイト",
+            "url": "https://recruit.jreast.co.jp/people/cr_general_takahiro_tsukui/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "49",
+      "employers": [
+        {
+          "name": "有限会社三愛電設",
+          "role": "ラインスタッフ",
+          "description": "発電所から各地域へ電気を運ぶ送電設備の、鉄塔や送電線に関わる電気工事を安全を守りながら進める。",
+          "source": {
+            "title": "暮らしの電気をつなぐ、送電線工事の仕事｜三愛電設",
+            "url": "https://www.sanai-densetsu.co.jp/news/582416.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "69",
+      "employers": [
+        {
+          "name": "Nike Company Store東京（六本木）",
+          "role": "販売スタッフ（アルバイト）",
+          "description": "店舗での接客、フロア及びストックルームでの商品陳列、レジ操作や商品管理など店舗運営業務の実施・サポートを行う。",
+          "source": {
+            "title": "販売スタッフ Nike Company Store Tokyo｜NIKE公式キャリア",
+            "url": "https://careers.nike.com/販売スタッフ-アルバイト-nike-company-store-tokyo-六本木/job/R-73650",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "80",
+      "employers": [
+        {
+          "name": "クロウ・ワタナベ・コンサルティング株式会社",
+          "role": "コンサルタント（アソシエイト、グローバルコーポレートアドバイザリー部門）",
+          "description": "上司とともにクライアントとの会議に出席し、議論用の資料作成を担う。売却検討企業の事業・市場環境の調査や買収候補先の選定、提言のプレゼンテーションも行う。",
+          "source": {
+            "title": "Recruit Interview | Crowe Watanabe Consulting",
+            "url": "https://www.crowe.com/jp/en-us/about-us/our-office/advisory/recruit/interview1",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "113",
+      "employers": [
+        {
+          "name": "Deeper Travel Inc.（Deeper Japan）",
+          "role": "Deeper Japan認定通訳ガイド",
+          "description": "多彩なプライベート体験に同行し、現地の専門家と世界中からのゲストとの間を双方向の通訳で繋ぎ、伝統技術の背景などを分かりやすく伝えるアテンドを行う。",
+          "source": {
+            "title": "Careers | Deeper Japan",
+            "url": "https://www.deeperjapan.com/careers",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "117",
+      "employers": [
+        {
+          "name": "株式会社資生堂（SHISEIDO HAIR&MAKEUP ARTIST）",
+          "role": "ヘア＆メイクアップアーティスト",
+          "description": "広告やパリ・ニューヨーク・東京のファッションショーのヘアメイク、化粧品の色づくりや美容トレンドの研究を担い、資生堂のヘアメイクスクールSABFAで講師も務める。",
+          "source": {
+            "title": "ABOUT | SHISEIDO HAIR&MAKEUP ARTIST",
+            "url": "https://hma.shiseido.com/en/about/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "126",
+      "employers": [
+        {
+          "name": "株式会社河合楽器製作所",
+          "role": "調律技術者",
+          "description": "全国の営業所に配置され、ピアノのアフターケアを担当。調律のほか、音色・タッチ・操作性の調整、ピアノ製造に精通した技術者による修理や純正部品交換を行う。",
+          "source": {
+            "title": "Aftersales Service | Kawai Musical Instruments",
+            "url": "https://www.kawai.co.jp/en/brand/afterservice/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "146",
+      "employers": [
+        {
+          "name": "法務省",
+          "role": "法務教官",
+          "description": "人に寄り添い、立ち直りの歩みを支え、社会復帰に向けた教育を行う施設内処遇の専門家として勤務する。",
+          "source": {
+            "title": "法務省専門職員募集（人間科学）｜法務省",
+            "url": "https://www.moj.go.jp/content/001389612.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "172",
+      "employers": [
+        {
+          "name": "株式会社GENKIDO",
+          "role": "柔道整復師",
+          "description": "整骨院で患者様の治療を担当し、症状に合わせた施術を行い、痛みの改善と表情の変化を支える。",
+          "source": {
+            "title": "社員紹介｜株式会社GENKIDO 採用サイト",
+            "url": "https://genkido-job.com/interview/detail.php?id=105",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "174",
+      "employers": [
+        {
+          "name": "株式会社GENKIDO",
+          "role": "鍼灸師",
+          "description": "患者様から不調の内容を聞いて判断し、その方に合った鍼治療を提供する。首・肩・腰や自律神経系の不調に対応する。",
+          "source": {
+            "title": "社員紹介｜株式会社GENKIDO 採用サイト",
+            "url": "https://genkido-job.com/interview/detail.php?id=708",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "175",
+      "employers": [
+        {
+          "name": "川村義肢株式会社（KAWAMURAグループ）",
+          "role": "義肢装具士",
+          "description": "医療と連携し、義肢・装具の製作と適合に携わる。チーム医療の一員として、多様な義肢・装具を扱う仕事。",
+          "source": {
+            "title": "義肢装具士を応援します｜KAWAMURAグループ",
+            "url": "https://www.kawamura-gishi.com/po-encourage/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "182",
+      "employers": [
+        {
+          "name": "東北大学",
+          "role": "教授（大学院情報科学研究科）",
+          "description": "大学院で専門分野の研究を行い、大学院の授業と大学院生の研究指導、学内運営業務を担当する。",
+          "source": {
+            "title": "Recruitment Notice: Professor (Graduate School of Information Sciences) | Tohoku University",
+            "url": "https://www.tohoku.ac.jp/en/news/careers/professor_graduate_school_of_information_sciences.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "217",
+      "employers": [
+        {
+          "name": "リオブラボー（吉野川ラフティング）",
+          "role": "ラフティングガイド",
+          "description": "吉野川でボートを操縦し、お客様を安全に案内する。未経験者はトレーニングを経てガイド認定を目指す。",
+          "source": {
+            "title": "2026年ラフティングガイド募集｜リオブラボー",
+            "url": "https://www.riobravo.co.jp/blog/news/top-news/24750.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "386",
+      "employers": [
+        {
+          "name": "東京警察病院",
+          "role": "臨床心理士・公認心理師（非正規職員・産休代替要員）",
+          "description": "東京警察病院で心理検査及びリエゾン業務を主業務として担当する、臨床心理士・公認心理師の非正規職員の募集。",
+          "source": {
+            "title": "臨床心理士・公認心理師｜東京警察病院",
+            "url": "https://www.keisatsubyoin.or.jp/m/wordpress/wp-content/uploads/2026/03/適用採用.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
