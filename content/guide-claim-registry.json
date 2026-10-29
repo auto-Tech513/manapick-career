@@ -524,5 +524,130 @@
         "critical": false
       }
     ]
+  },
+  {
+    "guideSlug": "employer-examples-how-to-read",
+    "claims": [
+      {
+        "claimId": "employer-examples-method",
+        "text": "企業例は企業・法人自身が公開する職種・業務の記述に基づく例であり、求人の有無や採用可能性を示さない。",
+        "sourceIds": [
+          "jilpt-jobtag-description-7-01"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 180,
+        "critical": false
+      }
+    ]
+  },
+  {
+    "guideSlug": "income-ranking-how-to-read",
+    "claims": [
+      {
+        "claimId": "income-ranking-wage-structure",
+        "text": "賃金構造基本統計調査は雇用形態・職種・年齢等で賃金条件が異なることを示す公的統計である。",
+        "sourceIds": [
+          "mhlw-wage-structure-2025"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 180,
+        "critical": false
+      }
+    ]
+  },
+  {
+    "guideSlug": "training-benefit-before-application",
+    "claims": [
+      {
+        "claimId": "training-benefit-three-types",
+        "text": "教育訓練給付金の対象となる教育訓練は専門実践教育訓練、特定一般教育訓練、一般教育訓練の3種類がある。",
+        "sourceIds": [
+          "mhlw-training-benefit"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "training-benefit-general-rate",
+        "text": "一般教育訓練では教育訓練経費の20%（上限10万円）が訓練修了後に支給される。",
+        "sourceIds": [
+          "mhlw-training-benefit"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "training-benefit-professional-rate",
+        "text": "専門実践教育訓練では教育訓練経費の50%（年間上限40万円）が訓練受講中6か月ごとに支給される。",
+        "sourceIds": [
+          "mhlw-training-benefit"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": true
+      },
+      {
+        "claimId": "training-benefit-designated-search",
+        "text": "教育訓練給付金の対象として厚生労働大臣の指定を受けている講座は教育訓練講座検索システムで検索できる。",
+        "sourceIds": [
+          "mhlw-training-benefit"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": false
+      },
+      {
+        "claimId": "training-benefit-hellowork",
+        "text": "教育訓練給付金の支給申請はお住まいを管轄するハローワークで受付している。",
+        "sourceIds": [
+          "mhlw-training-benefit"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 90,
+        "critical": false
+      }
+    ]
+  },
+  {
+    "guideSlug": "jobtag-occupation-check",
+    "claims": [
+      {
+        "claimId": "jobtag-556-fields",
+        "text": "job tag解説系データver.7.01に556職業を収録し、職業名・別名・分類・仕事内容・就くには・労働条件・関連団体・関連資格が掲載される。",
+        "sourceIds": [
+          "jilpt-jobtag-description-7-01"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 180,
+        "critical": false
+      }
+    ]
+  },
+  {
+    "guideSlug": "qualification-official-route",
+    "claims": [
+      {
+        "claimId": "care-worker-route-official",
+        "text": "介護福祉士国家試験の受験資格ルートは社会福祉振興・試験センターが公式ページで公開している。",
+        "sourceIds": [
+          "sssc-care-worker"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 180,
+        "critical": false
+      },
+      {
+        "claimId": "registered-salesperson-system",
+        "text": "登録販売者は厚生労働省が案内する一般用医薬品の販売制度に基づく資格である。",
+        "sourceIds": [
+          "mhlw-medicine-sales"
+        ],
+        "lastCheckedAt": "2026-10-29",
+        "freshnessDays": 180,
+        "critical": false
+      }
+    ]
   }
 ]

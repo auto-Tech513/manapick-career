@@ -852,5 +852,19 @@
     "updateFrequency": "90d",
     "republication": "製品情報の独自要約と出典リンクのみ",
     "notes": "ロジクール公式ストア（楽天市場）の製品ページとAmazon.co.jp商品ページ（B07QQR6G5N）で製品名・仕様を確認。価格・在庫・レビューは転載しない。表示画像はAmazonアソシエイトの公式画像配信（ASIN指定）でAmazonのサーバーから表示し、自サイトへは保存しない。"
+  },
+  {
+    "sourceId": "mhlw-training-benefit",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/kyouiku.html",
+    "isPrimary": true,
+    "claims": [
+      "教育訓練給付金の3種類と給付率・上限",
+      "指定講座の検索と支給申請の窓口"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "90d",
+    "republication": "独自要約と出典リンクのみ",
+    "notes": "制度数値は改定されやすい。申込み直前に公式情報を再確認する。"
   }
 ]
