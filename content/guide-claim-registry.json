@@ -2115,5 +2115,183 @@
         "text": "job tagのタスク一覧では、営業事務について顧客の問い合わせに対応する（実施率89.3%）、請求書を発行する（71.4%）などが挙げられている"
       }
     ]
+  },
+  {
+    "guideSlug": "social-worker-vs-psychiatric-social-worker",
+    "claims": [
+      {
+        "claimId": "welfare-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act"
+        ],
+        "text": "社会福祉士は社会福祉士及び介護福祉士法に基づく国家資格で、登録を受け、社会福祉士の名称を用いて、身体上・精神上の障害や環境上の理由により日常生活を営むのに支障がある者の福祉に関する相談援助を業とする"
+      },
+      {
+        "claimId": "welfare-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-psychiatric-social-worker-act"
+        ],
+        "text": "精神保健福祉士は精神保健福祉士法に基づく国家資格で、登録を受け、精神障害者の保健及び福祉に関する専門的知識及び技術をもって、社会復帰や精神保健に関する相談援助を業とする"
+      },
+      {
+        "claimId": "welfare-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-psychiatric-social-worker-act"
+        ],
+        "text": "精神保健福祉士試験の受験資格には、社会福祉士であって精神保健福祉士短期養成施設等において6月以上必要な知識及び技能を修得した者が含まれる"
+      },
+      {
+        "claimId": "welfare-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-psychiatric-social-worker-act"
+        ],
+        "text": "精神保健福祉士は業務に当たり関係サービスとの連携を保ち、担当する精神障害者に主治の医師があるときはその指導を受けなければならない（精神保健福祉士法第41条）"
+      },
+      {
+        "claimId": "welfare-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act",
+          "egov-psychiatric-social-worker-act"
+        ],
+        "text": "社会福祉士・精神保健福祉士の試験はどちらも毎年1回以上、厚生労働大臣が行う"
+      }
+    ]
+  },
+  {
+    "guideSlug": "radiologic-technologist-vs-clinical-lab-tech",
+    "claims": [
+      {
+        "claimId": "radio-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-radiologic-technologist-act"
+        ],
+        "text": "診療放射線技師は診療放射線技師法に基づく国家資格で、厚生労働大臣の免許を受け、医師又は歯科医師の指示の下に放射線の人体に対する照射（撮影を含む）を業とする"
+      },
+      {
+        "claimId": "radio-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-radiologic-technologist-act"
+        ],
+        "text": "放射線の人体への照射の業は、医師、歯科医師又は診療放射線技師でなければ行うことができない（診療放射線技師法第24条）"
+      },
+      {
+        "claimId": "radio-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-radiologic-technologist-act"
+        ],
+        "text": "MRIや超音波診断装置など、政令で定める画像による診断のための装置を用いた検査も、医師又は歯科医師の指示の下に行うものに限り診療放射線技師の業務に含まれる"
+      },
+      {
+        "claimId": "radio-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-lab-tech-act"
+        ],
+        "text": "臨床検査技師は臨床検査技師等に関する法律に基づく国家資格で、医師又は歯科医師の指示の下に検体検査と厚生労働省令で定める生理学的検査を行う"
+      },
+      {
+        "claimId": "radio-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-lab-tech-act",
+          "egov-radiologic-technologist-act"
+        ],
+        "text": "臨床検査技師の受験資格には、指定の学校・養成所で3年以上修習した者に加え、医学・歯学・獣医学・薬学の正規の課程を修めて卒業し同等以上と認められる者も含まれるが、診療放射線技師の受験資格に同様の入口はない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "surveyor-vs-assistant-surveyor",
+    "claims": [
+      {
+        "claimId": "survey-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-survey-act"
+        ],
+        "text": "測量士は測量に関する計画を作製し、又は実施する者、測量士補は測量士の作製した計画に従い測量に従事する者である（測量法第48条）"
+      },
+      {
+        "claimId": "survey-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-survey-act"
+        ],
+        "text": "技術者として基本測量又は公共測量に従事する者は、登録された測量士又は測量士補でなければならない（測量法第48条第1項）"
+      },
+      {
+        "claimId": "survey-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-survey-act"
+        ],
+        "text": "測量士補となる資格には、大学・短期大学等で測量に関する科目を修めて卒業した者などが含まれ、実務経験は求められない"
+      },
+      {
+        "claimId": "survey-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-survey-act"
+        ],
+        "text": "測量士となる学歴ルートでは実務経験が必要で、大学卒は1年以上、短期大学等卒は3年以上、養成施設で1年以上修得した者は2年以上と定められている"
+      },
+      {
+        "claimId": "survey-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "gsi-surveyor-exam-registration"
+        ],
+        "text": "測量士・測量士補の国家試験は年1回実施され、学歴・年齢・実務経験を問わず受験できる"
+      },
+      {
+        "claimId": "survey-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-survey-act",
+          "gsi-surveyor-registration-guide"
+        ],
+        "text": "資格要件を満たしただけでは測量士・測量士補になれず、国土地理院に備える名簿への登録が必要である"
+      }
+    ]
   }
 ]
