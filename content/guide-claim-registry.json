@@ -2460,5 +2460,118 @@
         "text": "訪問介護でホームヘルパーとして働くには、介護福祉士、実務者研修修了、介護職員初任者研修修了のいずれかが必要である"
       }
     ]
+  },
+  {
+    "guideSlug": "first-class-vs-second-class-electrician",
+    "claims": [
+      {
+        "claimId": "electrician-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electrician-act"
+        ],
+        "text": "自家用電気工作物に係る電気工事の作業は第一種電気工事士のみが、一般用電気工作物等に係る電気工事の作業は第一種・第二種電気工事士が従事できる（電気工事士法第3条）"
+      },
+      {
+        "claimId": "electrician-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electrician-act",
+          "egov-electrician-enforcement-rule"
+        ],
+        "text": "第一種電気工事士免状は、試験合格に加えて電気に関する工事への3年以上の従事（実務の経験）が交付の要件であり、第二種には実務経験の要件がない"
+      },
+      {
+        "claimId": "electrician-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electrician-act"
+        ],
+        "text": "第一種電気工事士には免状交付の日から5年以内ごとの定期講習の受講義務があり、第二種にはこの規定がない"
+      },
+      {
+        "claimId": "electrician-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electrician-enforcement-order"
+        ],
+        "text": "学科試験の科目は第一種9科目・第二種7科目で、受験手数料は第一種14,400円（電子申請等13,000円）、第二種12,500円（同11,100円）である"
+      },
+      {
+        "claimId": "electrician-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electrician-act",
+          "egov-electrician-enforcement-rule"
+        ],
+        "text": "ネオン工事と非常用予備発電装置工事（特殊電気工事）は特種電気工事資格者の担当で、第一種電気工事士でも従事できない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "certified-care-worker-vs-social-worker",
+    "claims": [
+      {
+        "claimId": "carew-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act"
+        ],
+        "text": "介護福祉士と社会福祉士は、どちらも社会福祉士及び介護福祉士法に基づく国家資格で、国家試験への合格と登録簿への登録という仕組みが共通する"
+      },
+      {
+        "claimId": "carew-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act"
+        ],
+        "text": "介護福祉士の業務は心身の状況に応じた介護と本人・介護者への指導であり、介護には医師の指示の下に行われる喀痰吸引等も含まれる"
+      },
+      {
+        "claimId": "carew-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act"
+        ],
+        "text": "社会福祉士の法定業務は相談援助（相談、助言・指導、関係者との連絡・調整）であり、直接の身体介助は担わない"
+      },
+      {
+        "claimId": "carew-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act"
+        ],
+        "text": "介護福祉士試験の受験資格には、養成施設等で2年以上修得するルートのほか、3年以上の介護実務と6月以上の修得を組み合わせるルートや福祉系高校のルートがある"
+      },
+      {
+        "claimId": "carew-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act",
+          "mhlw-jobtag-care"
+        ],
+        "text": "介護福祉士・社会福祉士の名称は登録を受けた者だけが使用でき、無資格でも介護の仕事自体に就ける場合がある"
+      }
+    ]
   }
 ]
