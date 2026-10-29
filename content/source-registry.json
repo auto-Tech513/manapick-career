@@ -2368,5 +2368,135 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（鑑定評価は経済価値を判定し価額に表示すること）、第3条（鑑定士は鑑定評価を行う）、第4条（資格は試験合格＋実務修習修了＋国土交通大臣の確認）、第8条・第11条（試験は土地鑑定委員会、短答式・論文式）、第15条（国土交通省の名簿への登録）、第36条（鑑定業者の業務に関する鑑定評価の独占）、第39条（鑑定評価書への署名）を確認。"
+  },
+  {
+    "sourceId": "egov-clinical-engineer-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/362AC0000000060",
+    "isPrimary": true,
+    "claims": [
+      "臨床工学技士の定義・業務・受験資格"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（生命維持管理装置は呼吸・循環・代謝の機能を代替・補助する装置。臨床工学技士は医師の指示の下にその操作及び保守点検を行う）、第3条（試験・免許）、第14条（受験資格の複数ルート）、第37条・第38条（業務の範囲と医師の具体的な指示）を確認。"
+  },
+  {
+    "sourceId": "egov-veterinarian-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/324AC0000000186",
+    "isPrimary": true,
+    "claims": [
+      "獣医師の任務・免許・診療の独占"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第1条（任務）、第3条（獣医師国家試験に合格し農林水産大臣の免許）、第11条・第12条（試験と受験資格）、第17条（獣医師でなければ飼育動物の診療を業務としてはならない。対象は牛・馬・豚・犬・猫・鶏等）を確認。"
+  },
+  {
+    "sourceId": "egov-companion-animal-nurse-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/501AC1000000050",
+    "isPrimary": true,
+    "claims": [
+      "愛玩動物看護師の定義・免許・業務"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（愛玩動物は犬・猫その他政令で定める動物。愛玩動物看護師は農林水産大臣及び環境大臣の免許を受け、獣医師の指示の下に行う診療の補助、愛玩動物の看護、飼い主への支援を業とする）、第3条（試験と両大臣の免許）、第31条（受験資格）、第40条（診療の補助を業とできる）を確認。"
+  },
+  {
+    "sourceId": "mhlw-career-consultant-provisions",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/content/11801000/001013979.pdf",
+    "isPrimary": true,
+    "claims": [
+      "キャリアコンサルタントの定義・試験・登録・義務・名称制限"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。職業能力開発促進法の関係条文：第2条第5項（キャリアコンサルティングの定義）、第30条の3（名称を用いて行う）、第30条の4（試験と受験資格）、第30条の19（名簿登録、5年ごとの更新）、第30条の27（信用失墜行為の禁止、秘密保持）、第30条の28（名称の使用制限）、第99条の2（罰則）を確認。"
+  },
+  {
+    "sourceId": "mhlw-career-consulting-overview",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/career_consulting.html",
+    "isPrimary": true,
+    "claims": [
+      "キャリアコンサルタントの活動分野・登録制度の概要"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。活動分野（企業、ハローワーク等、教育機関、若者自立支援機関）、登録制（5年ごとの更新）の名称独占資格であること、更新講習（知識講習8時間以上、技能講習30時間以上）を確認。"
+  },
+  {
+    "sourceId": "mhlw-career-consultant-guide",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/jinzaikaihatsu/career_consultant01.html",
+    "isPrimary": true,
+    "claims": [
+      "キャリアコンサルタント試験の受験資格・実施機関"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。受験資格の4類型、登録試験機関（キャリアコンサルティング協議会、日本キャリア開発協会）、技能検定合格者の免除、指定登録機関による登録事務を確認。"
+  },
+  {
+    "sourceId": "jaico-course-guide",
+    "provider": "一般社団法人日本産業カウンセラー協会",
+    "url": "https://www.counselor.or.jp/course/tabid/123/Default.aspx",
+    "isPrimary": true,
+    "claims": [
+      "産業カウンセラーの位置づけ、国家資格との書き分け"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。協会が認定する資格は産業カウンセラーとシニア産業カウンセラーで、協会自身が「国家資格としてはキャリアコンサルタント」と書き分けていること、「産業カウンセラー」が協会の登録商標であることを確認。"
+  },
+  {
+    "sourceId": "jaico-yousei-course",
+    "provider": "一般社団法人日本産業カウンセラー協会",
+    "url": "https://www.counselor.or.jp/course/tabid/125/Default.aspx",
+    "isPrimary": true,
+    "claims": [
+      "産業カウンセラー養成講座の構成"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。養成講座の修了で試験の受験資格が得られること、使命（QWLの実現支援）、面接の体験学習104時間とe-Learningの理論科目を確認。"
+  },
+  {
+    "sourceId": "jaico-kansai-yousei",
+    "provider": "一般社団法人日本産業カウンセラー協会 関西支部",
+    "url": "https://kansai.counselor.or.jp/learning/yousei/yousei/",
+    "isPrimary": true,
+    "claims": [
+      "産業カウンセラーの活動領域、キャリアコンサルタントとの役割の違い"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。傾聴を基本とする支援、活動領域3つ（メンタルヘルス対策、キャリア形成、人間関係開発・職場環境改善）、呼称を使って活動できるのは試験合格し資格登録会員となった者のみ、両資格は「果たす役割が異なる」としてWライセンスを勧めていることを確認。"
+  },
+  {
+    "sourceId": "jaico-kanagawa-faq",
+    "provider": "一般社団法人日本産業カウンセラー協会 神奈川支部",
+    "url": "https://kanagawa.counselor.or.jp/faq/",
+    "isPrimary": true,
+    "claims": [
+      "産業カウンセラー試験の回数、資格登録の更新"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。試験は年2回、資格登録には更新制度があることを確認。"
   }
 ]
