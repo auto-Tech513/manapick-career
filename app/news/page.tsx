@@ -7,12 +7,12 @@ import { newsModifiedAt, newsNeedsRefresh, publishedNews } from "@/content/edito
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
 const newsTitle = "働く人のための、キャリアニュース";
-const newsDescription = "雇用統計、採用動向、学び直し、デジタル人材の一次資料を、出典と記録日、情報の期限を分けて案内します。";
+const newsDescription = `雇用統計、賃金、制度、学び直しの一次資料を、数字が示すこと・示さないことまで分けて読み解く${publishedNews.length}本の解説一覧です。出典と記録日、情報の期限を分けて案内します。`;
 const latestNewsModifiedAt = publishedNews.reduce((latest, item) => newsModifiedAt(item) > latest ? newsModifiedAt(item) : latest, "");
 const newsIndexImage = articleOgUrl("news", "index", `${newsTitle}|${publishedNews.length}|${latestNewsModifiedAt}`);
 
 export const metadata: Metadata = {
-  title: "キャリアニュース",
+  title: "キャリアニュース｜雇用・賃金・制度の一次資料を読み解く",
   description: newsDescription,
   alternates: { canonical: "/news/" },
   openGraph: {
