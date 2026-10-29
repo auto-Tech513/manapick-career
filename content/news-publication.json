@@ -716,38 +716,41 @@
     {
       "slug": "social-insurance-part-timers-2026",
       "createdAt": "2026-10-29",
-      "status": "draft",
+      "status": "published",
       "primarySourceId": "nenkin-wage-requirement-abolished-2026",
       "sourcePublishedAt": "2026-10-01",
-      "publishedAt": null,
-      "reviewedAt": null,
-      "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "publishedAt": "2026-10-29",
+      "reviewedAt": "2026-10-29",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-10-29",
+      "reviewEvidence": "git:7381f6df275466719377a46153c0abe0f054c384",
+      "contentSha256": "0a8858cb8ac5bf7ce22ee8fbdca88b4cdbb7641a388e80db8ff6779289b04386"
     },
     {
       "slug": "childcare-flexible-work-2026",
       "createdAt": "2026-10-29",
-      "status": "draft",
+      "status": "published",
       "primarySourceId": "mhlw-childcare-amendment-overview-2024",
       "sourcePublishedAt": "2024-05-31",
-      "publishedAt": null,
-      "reviewedAt": null,
-      "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "publishedAt": "2026-10-29",
+      "reviewedAt": "2026-10-29",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-10-29",
+      "reviewEvidence": "git:7381f6df275466719377a46153c0abe0f054c384",
+      "contentSha256": "fe99fa6f51f1e43f98beb2791c713a3f0f96c526580899741ac8e7d5c6ebdef5"
     },
     {
       "slug": "private-salary-survey-2025",
       "createdAt": "2026-10-29",
-      "status": "draft",
+      "status": "published",
       "primarySourceId": "nta-private-salary-survey-2025",
       "sourcePublishedAt": "2026-09-29",
-      "publishedAt": null,
-      "reviewedAt": null,
-      "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "publishedAt": "2026-10-29",
+      "reviewedAt": "2026-10-29",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-10-29",
+      "reviewEvidence": "git:7381f6df275466719377a46153c0abe0f054c384",
+      "contentSha256": "dec9b8854d11b1bf8fc268ee36ad688439e191b97b2973b5a709f983a2cbdbb7"
     }
   ]
 }
