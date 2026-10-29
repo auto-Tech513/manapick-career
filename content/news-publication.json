@@ -752,6 +752,18 @@
       "reviewedByHumanAt": "2026-10-29",
       "reviewEvidence": "git:7381f6df275466719377a46153c0abe0f054c384",
       "contentSha256": "dec9b8854d11b1bf8fc268ee36ad688439e191b97b2973b5a709f983a2cbdbb7"
+    },
+    {
+      "slug": "income-tax-threshold-2026",
+      "createdAt": "2026-10-30",
+      "status": "draft",
+      "primarySourceId": "nta-2026-withholding-reform-summary",
+      "sourcePublishedAt": "2026-04-01",
+      "publishedAt": null,
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
     }
   ]
 }
