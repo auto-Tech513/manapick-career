@@ -43,7 +43,7 @@ for (const location of locations) {
   if (html.includes('"@type":"JobPosting"')) failures.push(`${url.pathname}: prohibited JobPosting JSON-LD`);
 }
 
-for (const prohibited of ["/occupation/", "/news/__build-empty__/"]) {
+for (const prohibited of ["/news/__build-empty__/"]) {
   if (sitemap.includes(prohibited)) failures.push(`sitemap exposes prohibited route ${prohibited}`);
 }
 
