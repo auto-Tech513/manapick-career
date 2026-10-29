@@ -2801,5 +2801,176 @@
         "text": "施術所の開設は両法とも開設後10日以内に都道府県知事への届出が必要で、広告できる事項と守秘義務も両法に定められている"
       }
     ]
+  },
+  {
+    "guideSlug": "veterinarian-vs-animal-nurse",
+    "claims": [
+      {
+        "claimId": "vet-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-veterinarian-act"
+        ],
+        "text": "飼育動物の診療を業務として行えるのは獣医師だけであり、対象は牛・馬・豚・犬・猫・鶏など飼育動物全般である"
+      },
+      {
+        "claimId": "vet-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-companion-animal-nurse-act"
+        ],
+        "text": "愛玩動物看護師の業務は、獣医師の指示の下に行う診療の補助、愛玩動物の看護、飼い主への助言・支援であり、対象は犬・猫その他政令で定める愛玩動物に限られる"
+      },
+      {
+        "claimId": "vet-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-veterinarian-act",
+          "egov-companion-animal-nurse-act"
+        ],
+        "text": "免許を与えるのは獣医師が農林水産大臣、愛玩動物看護師が農林水産大臣と環境大臣である"
+      },
+      {
+        "claimId": "vet-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-companion-animal-nurse-act"
+        ],
+        "text": "愛玩動物看護師の受験資格には、大学での指定科目の修了のほか、都道府県知事指定の養成所で3年以上修得するルートがある"
+      },
+      {
+        "claimId": "vet-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-veterinarian-act"
+        ],
+        "text": "獣医師は自ら診察しないで診断書を交付したり医薬品の投与・処方をしたりしてはならない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "career-consultant-vs-industrial-counselor",
+    "claims": [
+      {
+        "claimId": "counsel-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-career-consultant-provisions",
+          "mhlw-career-consulting-overview",
+          "jaico-course-guide"
+        ],
+        "text": "キャリアコンサルタントは職業能力開発促進法に基づく国家資格（試験合格＋名簿登録、5年ごとの更新制の名称独占資格）であり、産業カウンセラーは日本産業カウンセラー協会が認定する資格で国家資格ではない"
+      },
+      {
+        "claimId": "counsel-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-career-consultant-provisions"
+        ],
+        "text": "キャリアコンサルティングとは、労働者の職業の選択、職業生活設計又は職業能力の開発及び向上に関する相談に応じ、助言及び指導を行うことである"
+      },
+      {
+        "claimId": "counsel-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jaico-kansai-yousei"
+        ],
+        "text": "産業カウンセラーの活動領域は、メンタルヘルス対策への支援、キャリア形成への支援、人間関係開発・職場環境改善への支援の3つである"
+      },
+      {
+        "claimId": "counsel-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jaico-yousei-course",
+          "jaico-kansai-yousei"
+        ],
+        "text": "産業カウンセラー養成講座は面接の体験学習104時間とe-Learningの理論科目で構成され、その修了が試験の受験資格を得る基本ルートである"
+      },
+      {
+        "claimId": "counsel-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jaico-course-guide",
+          "jaico-kansai-yousei"
+        ],
+        "text": "「産業カウンセラー」は協会の登録商標であり、呼称を使用して活動できるのは協会の資格試験に合格し資格登録会員となった者とされる"
+      }
+    ]
+  },
+  {
+    "guideSlug": "clinical-engineer-vs-clinical-lab-tech",
+    "claims": [
+      {
+        "claimId": "cleng-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-engineer-act"
+        ],
+        "text": "臨床工学技士の法定業務は、医師の指示の下に行う生命維持管理装置（呼吸・循環・代謝の機能を代替又は補助する装置）の操作と保守点検である"
+      },
+      {
+        "claimId": "cleng-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-lab-tech-act"
+        ],
+        "text": "臨床検査技師の法定業務は検体検査と生理学的検査であり、医師又は歯科医師の指示の下に行う"
+      },
+      {
+        "claimId": "cleng-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-engineer-act"
+        ],
+        "text": "臨床工学技士の受験資格には、養成所で3年以上修得するルートのほか、大学等で指定科目を修めた学びと養成所での修得を組み合わせるルートがある"
+      },
+      {
+        "claimId": "cleng-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-engineer-act",
+          "egov-clinical-lab-tech-act"
+        ],
+        "text": "定義上の指示の出し手は、臨床工学技士は医師のみ、臨床検査技師は医師又は歯科医師と異なる"
+      },
+      {
+        "claimId": "cleng-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-clinical-engineer-act"
+        ],
+        "text": "臨床工学技士は省令で定める生命維持管理装置の操作について医師の具体的な指示を受けなければならず、医療関係者との連携が求められる"
+      }
+    ]
   }
 ]
