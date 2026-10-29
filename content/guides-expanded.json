@@ -3366,13 +3366,13 @@
       "nta-tax-exam-overview",
       "jlt-lawyer-act"
     ],
-    "status": "draft",
+    "status": "published",
     "summary": "税理士は税務の専門家で、申告の代理・申告書の作成・税務相談が独占業務。公認会計士は監査と会計の専門家で、財務書類の監査・証明が独占業務です。どちらも会計を扱いますが、法律で守られた仕事の中身がまったく異なります。",
     "title": "税理士と公認会計士って何が違うの？ 申告はどっち、監査はどっちに頼めばいい？",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null,
-    "publishedAt": null
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "answer": "見分け方は「争いの代理人になれるか」「登記を代理できるか」「役所への書類作成が仕事か」です。弁護士は訴訟事件・非訟事件・行政庁への不服申立事件に関する行為その他一般の法律事務を行うことを職務とし（弁護士法第3条）、弁護士でない者が報酬目的で法律事務を業として扱うことは禁じられています（同法第72条）。司法書士は登記・供託手続の代理などが法定業務で、法務大臣の認定を受けた場合に限り、訴額140万円以下の簡裁事件などの代理も可能です。行政書士は官公署提出書類などの作成が独占業務で、提出手続の代理や作成相談も行いますが、登記や税務など他法で制限される書類は作成できません。",
@@ -3484,13 +3484,13 @@
       "shiho-shoshi-exam",
       "soumu-gyoseishoshi-system"
     ],
-    "status": "draft",
+    "status": "published",
     "summary": "弁護士は法律事務全般を扱える唯一の資格、司法書士は登記・供託の手続代理と裁判所提出書類の作成が中心、行政書士は官公署へ提出する書類の作成が中心です。重なるように見える仕事も、法律で代理できる範囲がはっきり分かれています。",
     "title": "弁護士と司法書士と行政書士、何が違うの？ 登記・裁判・許認可は誰に頼む？",
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null,
-    "publishedAt": null
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   },
   {
     "slug": "dx-producer-vs-it-consultant",
@@ -3499,7 +3499,7 @@
     "answer": "一言でいうと、DXプロデューサーはデジタル技術による変革を担う側の人材で、ITコンサルタントは顧客のIT戦略に助言する側の専門家です。job tagでは、DXプロデューサーはデジタルで社会やビジネスを変革することを目指し、課題の洗い出しから開発チームと協力したソリューションの取りまとめまで関わります。対してITコンサルタントは、経営戦略の策定支援や情報化の課題整理・分析を行い、提案・助言を行います。所属も対照的で、前者は企業の開発・技術部門に所属する例が多く、後者はコンサルティング企業などに所属して顧客を支援する形が一般的です。",
     "category": "職業の違い",
     "readMinutes": 10,
-    "status": "draft",
+    "status": "published",
     "createdAt": "2026-10-29",
     "checkedAt": "2026-10-29",
     "sourceIds": [
@@ -3605,9 +3605,9 @@
         ]
       }
     ],
-    "reviewedAt": null,
-    "reviewedBy": null,
-    "reviewedByHumanAt": null,
-    "publishedAt": null
+    "reviewedAt": "2026-10-29",
+    "reviewedBy": "manapick編集責任者",
+    "reviewedByHumanAt": "2026-10-29",
+    "publishedAt": "2026-10-29"
   }
 ]
