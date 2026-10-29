@@ -182,6 +182,31 @@ if (!includeDraftPreviews && fs.existsSync(publicGuideDirectory)) {
     if (entry.endsWith(".png") && !expected.has(entry)) fs.rmSync(path.join(publicGuideDirectory, entry));
   }
 }
+const shopSource = fs.readFileSync(path.join(root, "content/shop-products.ts"), "utf8");
+const shopCheckedAt = shopSource.match(/checkedAt:\s*"([^"]+)"/)?.[1] ?? checkedAtMatch[1];
+const staticPages = [
+  ...Object.entries(categoryLabels).map(([key, label]) => ({
+    slug: `category-${key}`,
+    title: `${label}の仕事`,
+    label: "カテゴリ別一覧",
+    date: checkedAtMatch[1],
+    type: "CATEGORY",
+  })),
+  {
+    slug: "shop",
+    title: "manapi商店｜学び直し・面接・仕事準備の道具",
+    label: "学びと仕事の道具",
+    date: shopCheckedAt,
+    type: "SHOP",
+  },
+];
+const publicPageDirectory = path.join(outputRoot, "page");
+if (!includeDraftPreviews && fs.existsSync(publicPageDirectory)) {
+  const expected = new Set(staticPages.map((item) => `${item.slug}.png`));
+  for (const entry of fs.readdirSync(publicPageDirectory)) {
+    if (entry.endsWith(".png") && !expected.has(entry)) fs.rmSync(path.join(publicPageDirectory, entry));
+  }
+}
 const publicCareerDirectory = path.join(outputRoot, "career");
 if (!includeDraftPreviews && fs.existsSync(publicCareerDirectory)) {
   const expected = new Set(careers.map((item) => `${item.slug}.png`));
@@ -203,4 +228,5 @@ await render(guideIndexOg, "GUIDE", "guide");
 for (const item of newsWithPublication) await render(item, "NEWS", "news");
 await render(newsIndexOg, "NEWS", "news");
 for (const career of careers) await render(career, "CAREER", "career");
+for (const page of staticPages) await render(page, page.type, "page");
 console.log(`OG generated with BIZ UDPGothic font files: newsArticles=${newsWithPublication.length} newsIndex=1 guides=${guides.length} guideIndex=1 careers=${careers.length}`);

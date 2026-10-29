@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { InfoPage } from "@/components/InfoPage";
-export const metadata: Metadata = {title:"作成方法・編集方針",alternates:{canonical:"/about-method/"}};
+export const metadata: Metadata = {title:"作成方法・編集方針",description:"manapick careerの作成方法と編集方針です。556職業の名録データの扱い、公式出典の示し方、日付と自動監視の区別、評価しないものを説明します。",alternates:{canonical:"/about-method/"}};
 export default function Page() {
   return <InfoPage eyebrow="Editorial method" title="作成方法・編集方針" lead="仕事内容に固有の説明と公式出典を示し、仕事から学びの入口へ案内します。">
     <h2>掲載の根拠</h2><ol><li>職業に固有の仕事内容と注意点がある</li><li>公式・公的な出典URLと記録日を示す</li><li>学習動画・AI・資格の対応先を個別ページで案内する</li><li>公開済みの解説と、職業名を調べる名録を区別する</li></ol>

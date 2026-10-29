@@ -8,12 +8,12 @@ import { JsonLd } from "@/components/JsonLd";
 import { ShareKit } from "@/components/ShareKit";
 import { newsBySlug, newsItems, newsModifiedAt, newsNeedsRefresh } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
-import { absoluteUrl, articleOgUrl } from "@/lib/site";
+import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
 import { buildNewsStaticParams, EMPTY_NEWS_ROUTE_SLUG } from "@/lib/news-static-params.mjs";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return buildNewsStaticParams(newsItems); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const item = newsBySlug(slug); if (!item) return {}; const modifiedAt = newsModifiedAt(item); const image = articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`); return { title: item.title, description: item.summary, alternates: { canonical: `/news/${slug}/` }, openGraph: { title: item.title, description: item.summary, type: "article", url: absoluteUrl(`/news/${slug}/`), publishedTime: item.publishedAt, modifiedTime: modifiedAt, images: [{ url: image, width: 1200, height: 630, alt: item.title }] }, twitter: { card: "summary_large_image", title: item.title, description: item.summary, images: [image] } }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const item = newsBySlug(slug); if (!item) return {}; const modifiedAt = newsModifiedAt(item); const image = articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`); return { title: item.title, description: metaDescription(item.summary), alternates: { canonical: `/news/${slug}/` }, openGraph: { title: item.title, description: metaDescription(item.summary), type: "article", url: absoluteUrl(`/news/${slug}/`), publishedTime: item.publishedAt, modifiedTime: modifiedAt, images: [{ url: image, width: 1200, height: 630, alt: item.title }] }, twitter: { card: "summary_large_image", title: item.title, description: metaDescription(item.summary), images: [image] } }; }
 
 export default async function NewsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

@@ -20,6 +20,29 @@ export const articleOgUrl = (kind: "news" | "guide" | "career", slug: string, re
   return url.toString();
 };
 
+export const pageOgUrl = (slug: string, revision = "") => {
+  const url = new URL(`${ARTICLE_OG_BASE}/page/${slug}.png`, `${SITE_URL}/`);
+  url.searchParams.set("v", stableRevision(`${ARTICLE_OG_REVISION}|page|${revision}`));
+  return url.toString();
+};
+
+// 検索結果で途切れにくい長さへ、文の区切りを保って短縮する。本文・構造化データには使わない。
+export function metaDescription(text: string, max = 120) {
+  const normalized = text.replace(/\s+/g, " ").trim();
+  if (normalized.length <= max) return normalized;
+  const sentences = normalized.match(/[^。]+。/g) ?? [];
+  let out = "";
+  for (const sentence of sentences) {
+    if ((out + sentence).length > max) break;
+    out += sentence;
+  }
+  if (out) return out;
+  const head = normalized.slice(0, max);
+  const comma = head.lastIndexOf("、");
+  if (comma >= Math.floor(max * 0.6)) return `${head.slice(0, comma)}。`;
+  return `${head.slice(0, max - 1)}…`;
+}
+
 export function safeJson(value: unknown) {
   return JSON.stringify(value).replace(/</g, "\\u003c");
 }
