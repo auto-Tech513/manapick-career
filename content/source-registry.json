@@ -2030,5 +2030,70 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に実際に開いて確認。細胞検査士は日本臨床細胞学会および日本臨床検査医学会が認定する資格で「細胞診を担う専門資格を有した臨床検査技師」と位置づけられる。"
+  },
+  {
+    "sourceId": "egov-dental-hygienist-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/323AC0000000204",
+    "isPrimary": true,
+    "claims": [
+      "歯科衛生士の定義・業務・国家試験・名称制限"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（定義：厚生労働大臣の免許を受け、歯科医師の指導の下に予防処置として付着物・沈着物の機械的除去と薬物塗布を行い、診療補助・歯科保健指導も業とできる）、第3条（国家試験合格と免許）、第11条・第12条（試験と受験資格）、第13条の2（診療補助の制限）、第13条の7（名称の使用禁止）を確認。歯科助手の資格規定は同法にない。"
+  },
+  {
+    "sourceId": "egov-dentist-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/323AC0000000202",
+    "isPrimary": true,
+    "claims": [
+      "歯科医業の範囲"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第17条（歯科医師でなければ歯科医業をなしてはならない）を確認。歯科助手の資格規定は同法にない。"
+  },
+  {
+    "sourceId": "mhlw-dental-act-art17-interpretation",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb2895&dataType=1",
+    "isPrimary": true,
+    "claims": [
+      "無免許者による医行為の禁止の解釈"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に通知本文（平成17年7月26日医政発第0726005号）を実際に開いて確認。免許を有さない者による医業（歯科医業を含む）は禁止されており、「医業」とは医行為を反復継続する意思をもって行うことと解釈されている。"
+  },
+  {
+    "sourceId": "egov-dietitian-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/322AC0000000245",
+    "isPrimary": true,
+    "claims": [
+      "栄養士・管理栄養士の定義・免許・国家試験"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第1条（栄養士は都道府県知事の免許で栄養の指導、管理栄養士は厚生労働大臣の免許で傷病者の療養のための栄養指導・高度な栄養指導・特別な配慮を必要とする給食管理等）、第2条（免許の与え方）、第5条の2・第5条の3（国家試験と受験資格）、第5条の5（医師の指導）、第6条（名称独占）を確認。"
+  },
+  {
+    "sourceId": "mhlw-jobtag-sales-clerk",
+    "provider": "厚生労働省 job tag",
+    "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=431",
+    "isPrimary": true,
+    "claims": [
+      "営業事務の定義・仕事内容・就業条件・統計"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29にPrintAllページを実際に開いて全文確認（occupationId=431が営業事務であることを確認）。営業事務は営業担当からの指示を受けて資料や見積書を作成し、クライアント対応や管理業務を行うなど営業活動をサポートする職業で、入職に学歴・資格は不要、関連する資格はない。統計は厚生労働省編職業分類対応の集計で、その職業のみの値とは限らない注意書きがある。"
   }
 ]

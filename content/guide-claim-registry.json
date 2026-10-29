@@ -1947,5 +1947,173 @@
         "text": "総務事務は一定以上の社内での勤務経験があると役に立ち、仕事に役立つ資格は入社前に取得することは求められておらず入社後に取得する場合が多い"
       }
     ]
+  },
+  {
+    "guideSlug": "dental-hygienist-vs-dental-assistant",
+    "claims": [
+      {
+        "claimId": "dental-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dental-hygienist-act"
+        ],
+        "text": "歯科衛生士は歯科衛生士法に基づく国家資格で、国家試験に合格し厚生労働大臣の免許を受け、歯科医師の指導の下に歯科予防処置（付着物・沈着物の機械的除去、薬物塗布）を行うほか、歯科診療の補助と歯科保健指導を業とできる"
+      },
+      {
+        "claimId": "dental-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dental-hygienist-act"
+        ],
+        "text": "歯科衛生士でない者は歯科衛生士又はこれに紛らわしい名称を使用してはならない（歯科衛生士法第13条の7）"
+      },
+      {
+        "claimId": "dental-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dentist-act"
+        ],
+        "text": "歯科医師でなければ歯科医業をなしてはならない（歯科医師法第17条）"
+      },
+      {
+        "claimId": "dental-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-dental-act-art17-interpretation"
+        ],
+        "text": "厚生労働省の通知は、免許を有さない者による医業（歯科医業を含む）は禁止されており、「医業」とは医行為を反復継続する意思をもって行うことだと解釈している"
+      },
+      {
+        "claimId": "dental-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dental-hygienist-act",
+          "egov-dentist-act"
+        ],
+        "text": "歯科助手には国家資格の制度がなく、歯科衛生士法・歯科医師法のどちらにも資格としての規定はない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "registered-dietitian-vs-dietitian",
+    "claims": [
+      {
+        "claimId": "dietitian-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dietitian-act"
+        ],
+        "text": "栄養士は都道府県知事の免許を受けて栄養の指導に従事する者で、免許は厚生労働大臣指定の養成施設で2年以上修得した者に都道府県知事が与える（国家試験の定めはない）"
+      },
+      {
+        "claimId": "dietitian-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dietitian-act"
+        ],
+        "text": "管理栄養士は厚生労働大臣の免許を受けて、傷病者に対する療養のため必要な栄養の指導、高度の専門的知識及び技術を要する健康の保持増進のための栄養の指導、特別の配慮を必要とする給食管理等を行う者で、免許は管理栄養士国家試験に合格した者に与えられる"
+      },
+      {
+        "claimId": "dietitian-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dietitian-act"
+        ],
+        "text": "管理栄養士国家試験の受験資格には、栄養士養成施設の修業年限に応じた実務経験（2年制は3年、3年制は2年、4年制は1年）を経るルートと、4年制の管理栄養士養成施設を卒業するルートがある"
+      },
+      {
+        "claimId": "dietitian-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dietitian-act"
+        ],
+        "text": "管理栄養士が傷病者に対する療養のため必要な栄養の指導を行うに当たっては、主治の医師の指導を受けなければならない"
+      },
+      {
+        "claimId": "dietitian-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dietitian-act"
+        ],
+        "text": "栄養士・管理栄養士はどちらも名称の使用が法律で制限される名称独占資格である"
+      }
+    ]
+  },
+  {
+    "guideSlug": "sales-admin-vs-office-clerk",
+    "claims": [
+      {
+        "claimId": "sales-vs-office-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-sales-clerk"
+        ],
+        "text": "営業事務は、営業担当からの指示を受けて資料や見積書を作成したり、クライアント対応や管理業務を行うなど、営業活動をサポートする職業である"
+      },
+      {
+        "claimId": "sales-vs-office-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-general-clerk"
+        ],
+        "text": "一般事務は特定の分野の事務を専門的に行うものではなく、様々な定型的な事務の仕事を行う職業である"
+      },
+      {
+        "claimId": "sales-vs-office-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-sales-clerk",
+          "mhlw-jobtag-general-clerk"
+        ],
+        "text": "営業事務・一般事務のどちらも入職にあたって特に学歴や資格は必要とされず、営業事務についてはjob tagで関連する資格はないとされている"
+      },
+      {
+        "claimId": "sales-vs-office-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-sales-clerk",
+          "mhlw-jobtag-general-clerk"
+        ],
+        "text": "job tagの統計では有効求人倍率は一般事務0.29倍、営業事務1.31倍と掲載されているが、厚生労働省編職業分類に対応する集計であり必ずしもその職業のみの統計ではない"
+      },
+      {
+        "claimId": "sales-vs-office-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-sales-clerk"
+        ],
+        "text": "job tagのタスク一覧では、営業事務について顧客の問い合わせに対応する（実施率89.3%）、請求書を発行する（71.4%）などが挙げられている"
+      }
+    ]
   }
 ]
