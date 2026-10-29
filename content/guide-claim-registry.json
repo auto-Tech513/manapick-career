@@ -3646,5 +3646,179 @@
         "text": "貿易実務検定の合格は、通関業の許可や通関士の確認とは別の制度であり、通関業務を行う根拠にはならない"
       }
     ]
+  },
+  {
+    "guideSlug": "lawyer-vs-prosecutor-vs-judge",
+    "claims": [
+      {
+        "claimId": "law3-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "courts-judicial-training",
+          "jlt-lawyer-act",
+          "egov-prosecutors-office-act",
+          "jlt-court-act"
+        ],
+        "text": "法曹三者は司法試験と司法修習という共通の入口を経て分かれ、弁護士は登録、検察官は二級の検察官への任命、裁判官は判事補への任命が起点である"
+      },
+      {
+        "claimId": "law3-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-prosecutors-office-act"
+        ],
+        "text": "検察官は公益の代表者として、刑事について公訴を行い、裁判の執行を監督し、いかなる犯罪についても捜査をすることができる"
+      },
+      {
+        "claimId": "law3-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-court-act"
+        ],
+        "text": "判事は、判事補・検察官・弁護士等の職を通算して10年以上経験した者の中から、最高裁判所の指名名簿に基づいて内閣が任命する"
+      },
+      {
+        "claimId": "law3-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "kensatsu-prosecutor-types"
+        ],
+        "text": "検事総長・次長検事・検事長は内閣が任免し、天皇が認証する"
+      },
+      {
+        "claimId": "law3-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jlt-lawyer-act"
+        ],
+        "text": "弁護士の使命は基本的人権の擁護と社会正義の実現であり、弁護士となるには弁護士名簿への登録が必要である"
+      }
+    ]
+  },
+  {
+    "guideSlug": "librarian-vs-curator",
+    "claims": [
+      {
+        "claimId": "lib-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-library-act",
+          "egov-museum-act"
+        ],
+        "text": "司書は図書館法に基づき図書館の専門的事務に従事する専門的職員であり、学芸員は博物館法に基づき博物館資料の収集・保管・展示・調査研究の専門的事項をつかさどる"
+      },
+      {
+        "claimId": "lib-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-library-act"
+        ],
+        "text": "司書の資格は、大学で図書館に関する科目を履修して卒業するか、大学・高専を卒業して司書講習を修了することなどで得られ、国家試験はない"
+      },
+      {
+        "claimId": "lib-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-museum-act"
+        ],
+        "text": "学芸員の資格の第1のルートは、学士の学位を有し大学で博物館に関する科目の単位を修得することであり、国家試験はない"
+      },
+      {
+        "claimId": "lib-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-library-act",
+          "egov-museum-act"
+        ],
+        "text": "司書補と学芸員補はどちらも専門職の職務を助ける補助職として法律に置かれている"
+      },
+      {
+        "claimId": "lib-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-library-act",
+          "egov-museum-act"
+        ],
+        "text": "図書館は資料を一般公衆の利用に供する施設であり、博物館は資料を展示し調査研究を行う機関である"
+      }
+    ]
+  },
+  {
+    "guideSlug": "police-officer-vs-self-defense-force",
+    "claims": [
+      {
+        "claimId": "pol-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-police-act",
+          "egov-jsdf-act"
+        ],
+        "text": "警察の責務は個人の生命・身体・財産の保護と犯罪の予防・捜査、交通の取締など国内の治安維持であり、自衛隊の主たる任務は我が国の防衛で、公共の秩序の維持は必要に応じ当たるものとされる"
+      },
+      {
+        "claimId": "pol-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-police-act",
+          "mod-pco-sapporo-recruit"
+        ],
+        "text": "都道府県警察の警察官は原則として地方公務員（警視正以上は地方警務官として国家公務員）であり、自衛官は防衛省の職員で特別職国家公務員として募集される"
+      },
+      {
+        "claimId": "pol-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-police-act",
+          "egov-jsdf-act"
+        ],
+        "text": "警察官の階級は9つ、自衛官の階級は陸・海・空ごとに16ある"
+      },
+      {
+        "claimId": "pol-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-jsdf-act"
+        ],
+        "text": "自衛隊の最高の指揮監督権は内閣総理大臣にあり、自衛官の採用は試験によるものと法律に定められている"
+      },
+      {
+        "claimId": "pol-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "npa-police-system"
+        ],
+        "text": "警察庁は国の機関として、広域組織犯罪への対処や鑑識・統計などの面で都道府県警察を指揮監督する"
+      }
+    ]
   }
 ]

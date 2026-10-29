@@ -2784,5 +2784,135 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に実際に開いて確認。A級・B級・C級の3つのレベルがあり、B級・C級はすべて選択式、A級は選択式と記述式で行われることを確認。"
+  },
+  {
+    "sourceId": "egov-prosecutors-office-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/322AC0000000061",
+    "isPrimary": true,
+    "claims": [
+      "検察官の職務・任命"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第3条（検察官の種類）、第4条（職務は公訴、法の正当な適用の請求、裁判の執行の監督、公益の代表者としての事務）、第6条（捜査）、第14条（法務大臣の指揮監督は個別事件では検事総長のみ）、第18条・第19条（任命資格）を確認。"
+  },
+  {
+    "sourceId": "moj-prosecutor-duties",
+    "provider": "法務省",
+    "url": "https://www.moj.go.jp/keiji1/keiji_keiji05.html",
+    "isPrimary": true,
+    "claims": [
+      "検察官の職務内容"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。捜査を行い起訴するかどうかを決めること（起訴猶予の権限を含む）、公判で立証すること、裁判の執行を指揮監督することが仕事として挙げられていることを確認。"
+  },
+  {
+    "sourceId": "kensatsu-prosecutor-types",
+    "provider": "検察庁",
+    "url": "https://www.kensatsu.go.jp/gyoumu/kensatsukan.htm",
+    "isPrimary": true,
+    "claims": [
+      "検察官の種類と任免"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。検察官は検事総長・次長検事・検事長・検事・副検事に区分され、検事総長・次長検事・検事長は内閣が任免し天皇が認証することを確認。"
+  },
+  {
+    "sourceId": "jlt-court-act",
+    "provider": "日本法令外国語訳データベース（法務省）",
+    "url": "https://www.japaneselawtranslation.go.jp/ja/laws/view/4150/ja",
+    "isPrimary": true,
+    "claims": [
+      "判事・判事補の任命"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第40条（下級裁判所の裁判官は最高裁判所の指名名簿により内閣が任命、任期10年で再任可）、第41条（最高裁判所の裁判官の資格）、第42条（判事は関連職を通算10年以上経験した者から任命）、第43条（判事補は司法修習修了者から任命）を確認。"
+  },
+  {
+    "sourceId": "egov-police-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/329AC0000000162",
+    "isPrimary": true,
+    "claims": [
+      "警察の責務・組織・身分・階級"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第1条（目的）、第2条（責務：生命・身体・財産の保護、犯罪の予防・鎮圧・捜査、被疑者の逮捕、交通の取締。権限の濫用禁止）、第36条（都道府県警察）、第56条（警視正以上は地方警務官として国家公務員）、第62条（階級は9つ）を確認。"
+  },
+  {
+    "sourceId": "egov-jsdf-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/329AC0000000165",
+    "isPrimary": true,
+    "claims": [
+      "自衛隊の任務・指揮・階級・採用"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（陸・海・空の自衛隊を含む定義）、第3条（主たる任務は我が国の防衛、公共の秩序の維持は必要に応じ）、第7条（内閣総理大臣が最高の指揮監督権）、第29条（地方協力本部が募集）、第32条（階級は16）、第35条（採用は試験による）を確認。"
+  },
+  {
+    "sourceId": "npa-police-system",
+    "provider": "警察庁",
+    "url": "https://www.npa.go.jp/about/overview/sikumi.html",
+    "isPrimary": true,
+    "claims": [
+      "警察庁と都道府県警察の関係"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。警察庁は広域組織犯罪への対処態勢や犯罪鑑識、犯罪統計等の事務について都道府県警察を指揮監督すること、都道府県警察には本部のほか警察署が置かれ、その下に交番・駐在所があることを確認。"
+  },
+  {
+    "sourceId": "mod-pco-sapporo-recruit",
+    "provider": "防衛省",
+    "url": "https://www.mod.go.jp/pco/sapporo/",
+    "isPrimary": true,
+    "claims": [
+      "自衛官の募集（特別職国家公務員）"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。自衛官は特別職国家公務員として募集され、地方協力本部が募集窓口となっていることを確認。"
+  },
+  {
+    "sourceId": "egov-library-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/325AC0000000118",
+    "isPrimary": true,
+    "claims": [
+      "図書館法・博物館法の専門的職員制度"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認（昭和25年法律第118号）。第2条（図書館の定義）、第3条（図書館奉仕）、第4条（専門的職員を司書及び司書補と称し、司書は図書館の専門的事務に従事）、第5条（司書の資格：大学で図書館に関する科目を履修、又は司書講習の修了等）、第6条（講習は大学が文部科学大臣の委嘱を受けて行い15単位以上）を確認。"
+  },
+  {
+    "sourceId": "egov-museum-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/326AC1000000285",
+    "isPrimary": true,
+    "claims": [
+      "図書館法・博物館法の専門的職員制度"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認（昭和26年法律第285号）。第2条（博物館の定義：資料を収集・保管・展示し調査研究を行う機関）、第3条（博物館の事業）、第4条（学芸員は博物館資料の収集、保管、展示及び調査研究等の専門的事項をつかさどる。学芸員補は職務を助ける）、第5条（学芸員の資格：学士＋博物館に関する科目の単位修得等）、第6条（学芸員補の資格）を確認。"
   }
 ]
