@@ -9,11 +9,11 @@ import { JsonLd } from "@/components/JsonLd";
 import { ShareKit } from "@/components/ShareKit";
 import { guideBySlug, guides } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
-import { absoluteUrl, articleOgUrl } from "@/lib/site";
+import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const guide = guideBySlug(slug); if (!guide) return {}; const image = articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`); return { title: guide.title, description: guide.summary, alternates: { canonical: `/guide/${slug}/` }, openGraph: { title: guide.title, description: guide.summary, type: "article", url: absoluteUrl(`/guide/${slug}/`), publishedTime: guide.publishedAt, modifiedTime: guide.checkedAt, images: [{ url: image, width: 1200, height: 630, alt: guide.title }] }, twitter: { card: "summary_large_image", title: guide.title, description: guide.summary, images: [image] } }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const guide = guideBySlug(slug); if (!guide) return {}; const image = articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`); return { title: guide.title, description: metaDescription(guide.summary), alternates: { canonical: `/guide/${slug}/` }, openGraph: { title: guide.title, description: metaDescription(guide.summary), type: "article", url: absoluteUrl(`/guide/${slug}/`), publishedTime: guide.publishedAt, modifiedTime: guide.checkedAt, images: [{ url: image, width: 1200, height: 630, alt: guide.title }] }, twitter: { card: "summary_large_image", title: guide.title, description: metaDescription(guide.summary), images: [image] } }; }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

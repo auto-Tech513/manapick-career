@@ -1,6 +1,6 @@
 import type { Metadata } from "next";import { InfoPage } from "@/components/InfoPage";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl } from "@/lib/site";
-export const metadata:Metadata={title:"よくある質問",alternates:{canonical:"/faq/"}};
+export const metadata:Metadata={title:"よくある質問",description:"manapick careerの使い方、出典の確認方法、年収や企業例の読み方など、よくある質問への回答をまとめます。サイトができること・しないことも明記します。",alternates:{canonical:"/faq/"}};
 const faqs=[{q:"このサイトで向いている仕事が分かりますか？",a:"分かるとは断定しません。入口案内は、興味や作業の好みと重なる職業を3つ提示し、次に調べるきっかけを作るものです。"},{q:"年収や将来性のランキングはありますか？",a:"将来性のランキングはありません。年収については、賃金構造基本統計調査の統計分類の平均年収換算を全体・ジャンル別に並べたランキングを掲載しています。職業そのものの年収ではなく、公式対応表で結ばれた統計分類の値であることを明記しています。"},{q:"求人へ応募できますか？",a:"できません。本サイトでは求人票、応募、履歴書登録、企業との連絡仲介を行いません。"},{q:"掲載内容の根拠はどこで確認できますか？",a:"各記事の公式出典と記録日をご覧ください。自動監視は資料の変化を検知するもので、記事の全記述の確認や視聴確認を意味しません。"},{q:"掲載日や更新日は自動で変わりますか？",a:"単なる取得や再ビルドで記事の公開日・出典の記録日を書き換えません。期限を超えた過去記事は、その旨を表示して保持します。"}];
 export default function Page(){return <><JsonLd data={{"@context":"https://schema.org","@type":"FAQPage",url:absoluteUrl("/faq/"),inLanguage:"ja-JP",mainEntity:faqs.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))}}/><InfoPage eyebrow="FAQ" title="よくある質問" lead="サイトの使い方と、できること・しないことを整理します。"><div className="faq-list">{faqs.map(x=><details key={x.q}><summary>{x.q}</summary><p>{x.a}</p></details>)}</div></InfoPage></>}

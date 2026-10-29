@@ -1,3 +1,3 @@
 import type { Metadata } from "next";import { InfoPage } from "@/components/InfoPage";
-export const metadata:Metadata={title:"プライバシーポリシー",alternates:{canonical:"/privacy/"}};
+export const metadata:Metadata={title:"プライバシーポリシー",description:"manapick careerのプライバシーポリシーです。入口案内の回答は端末内にのみ保存すること、アクセス解析、Cookieと広告の扱いを説明します。",alternates:{canonical:"/privacy/"}};
 export default function Page(){return <InfoPage eyebrow="Privacy" title="プライバシーポリシー" lead="取得する情報と、キャリア候補の入口案内の扱いを明確にします。"><h2>入口案内の回答</h2><p>回答は利用端末のlocalStorageだけに保存し、サーバーへ送信しません。GA4にも回答内容を送信しません。年齢、性別、国籍、障害、病歴、家族構成、収入などのセンシティブ情報を質問・保存・送信しません。</p><h2>アクセス解析</h2><p>Google Analytics 4（測定ID: G-WW5XWW0YFE）で、ページ閲覧や機能の利用件数を計測します。IP匿名化を有効にし、入口案内の回答内容や履歴書情報は扱いません。Cookieの利用はブラウザ側で制限できます。</p><h2>Cookie・広告</h2><p>GA4または承認後の広告でCookie等が利用される場合があります。現在は自動広告を有効化せず、承認済みの手動広告枠だけを使用します。</p><h2>外部リンク</h2><p>姉妹サイトや公式出典へ移動後は、各サイトのプライバシーポリシーが適用されます。</p></InfoPage>}

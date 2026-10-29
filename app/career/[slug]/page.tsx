@@ -16,7 +16,7 @@ import sourceRegistry from "@/content/source-registry.json";
 import { careerInsightBySlug } from "@/lib/career-insights";
 import { networkUrl } from "@/lib/network";
 import { AiDeepLinks } from "@/components/AiDeepLinks";
-import { absoluteUrl, articleOgUrl } from "@/lib/site";
+import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
 
 import profiles from '@/content/professional-careers.json';
 import { ProfessionalCareerPage } from '@/components/ProfessionalCareerPage';
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const job = publishedJobs.find((item) => item.slug === slug);
   const professional=profiles.items.find(item=>item.slug===slug);
-  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description:professional.summary,alternates:{canonical:`/career/${slug}/`},openGraph:{title,description:professional.summary,url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',images:[{url:image,width:1200,height:630,alt:title}]},twitter:{card:'summary_large_image',title,description:professional.summary,images:[image]}};}
+  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description:metaDescription(professional.summary),alternates:{canonical:`/career/${slug}/`},openGraph:{title,description:metaDescription(professional.summary),url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',images:[{url:image,width:1200,height:630,alt:title}]},twitter:{card:'summary_large_image',title,description:metaDescription(professional.summary),images:[image]}};}
   if (!job) return {};
   const title = `${job.name}の仕事内容・向いている人・資格・日本企業の例`;
   const description = `${job.name}は何をする仕事か。具体的な業務と成果物、作業から考える相性、資格の位置づけ、日本企業の公式職種例を、出典とともにcareer内で読めます。`;

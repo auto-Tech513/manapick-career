@@ -6,7 +6,7 @@ import { ArrowUpRight, BadgeCheck, Check, ExternalLink, ShoppingBag } from "luci
 import { JsonLd } from "@/components/JsonLd";
 import { careerShopPolicy, careerShopProducts } from "@/content/shop-products";
 import { NetworkSites } from "@/components/NetworkSites";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, pageOgUrl } from "@/lib/site";
 
 const title = "manapi商店｜学び直し・面接・仕事準備の道具";
 const description = "オンライン面接、学び直し、ポートフォリオ、作業環境に使う実在商品を、向く人・選ぶ理由・購入前の確認点・メーカー公式情報とともに掲載します。";
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: "/shop/" },
-  openGraph: { title, description, url, type: "website" },
-  twitter: { card: "summary", title, description },
+  openGraph: { title, description, url, type: "website", images: [{ url: pageOgUrl("shop", title), width: 1200, height: 630, alt: title }] },
+  twitter: { card: "summary_large_image", title, description, images: [pageOgUrl("shop", title)] },
 };
 
 const graph = {
