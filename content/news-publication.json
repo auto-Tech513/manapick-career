@@ -44,14 +44,15 @@
     {
       "slug": "reskilling-support-2026",
       "createdAt": "2026-07-13",
-      "status": "draft",
+      "status": "published",
       "primarySourceId": "meti-reskilling-careerup-2026",
       "sourcePublishedAt": "2026-03-24",
-      "publishedAt": null,
-      "reviewedAt": null,
-      "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:f19c9cb79e2e31cad0a7585cec90d83508ebe2d4",
+      "contentSha256": "22fb9cd0b8e30a42f8cb78df32fb8d980b29104e291c1e745ac868ffdd1089c9"
     },
     {
       "slug": "career-break-white-paper-2025",
