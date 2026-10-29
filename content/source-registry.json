@@ -2550,5 +2550,96 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29にPrintAllページを実際に開いて確認（occupationId=401が救急救命士）。救急車に乗務するには消防職の公務員試験を受けて消防士として採用される必要があること、消防職員の救急部門従事者67,006人中救急救命士は33,552人（令和6年度消防白書）、3人1組の救急隊に少なくとも1名の救急救命士の配備が推奨されていることを確認。"
+  },
+  {
+    "sourceId": "egov-doctor-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/323AC0000000201",
+    "isPrimary": true,
+    "claims": [
+      "医師の任務・医業の独占・臨床研修"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第1条（医療及び保健指導を掌る）、第2条・第6条（試験合格と医籍登録による免許）、第9条・第10条（試験は臨床上必要な医学及び公衆衛生）、第11条（受験資格）、第16条の2（診療には2年以上の臨床研修）、第17条（医業の独占）、第19条・第20条・第21条（応召義務、検案、出生証明書）、第23条（療養指導）、第24条（診療録5年保存）を確認。"
+  },
+  {
+    "sourceId": "egov-medical-care-act-enforcement-order",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/323CO0000000326",
+    "isPrimary": true,
+    "claims": [
+      "歯科の診療科名（歯科口腔外科等の根拠）"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第3条の2（広告できる診療科名。歯科医業については「歯科」及び「歯科」と小児・矯正・口腔外科等を組み合わせた名称が定められている）を確認。"
+  },
+  {
+    "sourceId": "egov-cook-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/333AC1000000147",
+    "isPrimary": true,
+    "claims": [
+      "調理師の定義・免許のルート・名称制限"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認（昭和33年法律第147号）。第1条（目的：調理技術の合理的な発達）、第2条（定義：調理師の名称を用いて調理の業務に従事することができる者として都道府県知事の免許を受けた者）、第3条（免許：第1号 養成施設で1年以上修得、第2号 調理業務2年以上ののち調理師試験合格）、第3条の2（試験は都道府県知事が行う）、第5条（調理師名簿への登録）、第8条（名称の使用制限）、第8条の2（施設ごとに調理師を置く努力義務）、第11条（違反は30万円以下の罰金）を確認。調理行為自体を調理師に限る業務独占の規定は同法にない。"
+  },
+  {
+    "sourceId": "egov-construction-business-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/324AC0000000100",
+    "isPrimary": true,
+    "claims": [
+      "技術検定、主任技術者・監理技術者の要件と職務"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第7条・第15条（営業所技術者の要件）、第26条（主任技術者・監理技術者の設置）、第26条の4（職務は施工計画の作成、工程管理、品質管理、技術上の指導監督）、第27条（技術検定は第一次・第二次に分かれ、合格で称号）を確認。"
+  },
+  {
+    "sourceId": "mlit-gijutsu-kentei-overview-2024",
+    "provider": "国土交通省",
+    "url": "https://www.mlit.go.jp/report/press/content/001609319.pdf",
+    "isPrimary": true,
+    "claims": [
+      "技術検定の受検資格（令和6年度以降）"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。1級第一次検定は年度末19歳以上、2級は17歳以上、第二次検定の実務経験要件（1級5年・特定実務経験を含む場合3年、2級3年）、特定実務経験の定義（4,500万円、建築一式は7,000万円以上）、一級建築士合格者の受検資格を確認。"
+  },
+  {
+    "sourceId": "mlit-technician-system-overview",
+    "provider": "国土交通省",
+    "url": "https://www.mlit.go.jp/common/001055211.pdf",
+    "isPrimary": true,
+    "claims": [
+      "主任技術者・監理技術者の資格要件"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。主任技術者の資格要件に一級国家資格者（1級施工管理技士・1級建築士・技術士）と二級国家資格者（2級施工管理技士等）、監理技術者は一級国家資格者等が中心であることを確認。"
+  },
+  {
+    "sourceId": "fcpe-construction-management-exam",
+    "provider": "一般財団法人建設業振興基金",
+    "url": "https://www.kensetsu-kikin.or.jp/assets/img/work/pdf/%E2%91%A8%E6%8A%80%E8%A1%93%E6%A3%9C%E5%AE%9A_250709.pdf",
+    "isPrimary": true,
+    "claims": [
+      "建築施工管理技術検定の実施機関と称号"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。国土交通大臣の指定試験機関として建築施工管理の検定を実施していること、第一次検定合格で技士補、第二次検定合格で技士の称号、2級建築施工管理の種別（建築・躯体・仕上げ）を確認。"
   }
 ]

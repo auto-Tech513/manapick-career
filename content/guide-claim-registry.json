@@ -3140,5 +3140,176 @@
         "text": "救急隊は消防職員で編成され、3人1組の救急隊のうち少なくとも1名は救急救命士の資格取得者を配備することが推奨されている"
       }
     ]
+  },
+  {
+    "guideSlug": "doctor-vs-dentist",
+    "claims": [
+      {
+        "claimId": "doc-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-doctor-act",
+          "egov-dentist-act"
+        ],
+        "text": "医師は医師法に基づき医業を独占し、任務は医療及び保健指導であり、歯科医師は歯科医師法に基づき歯科医業を独占し、任務は歯科医療及び保健指導である"
+      },
+      {
+        "claimId": "doc-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-doctor-act",
+          "egov-dentist-act"
+        ],
+        "text": "医師免許では歯科医業を行えず、歯科医師は医業を行えない。免許は相互に通用しない"
+      },
+      {
+        "claimId": "doc-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-doctor-act",
+          "egov-dentist-act"
+        ],
+        "text": "臨床研修は、医師が2年以上、歯科医師が1年以上と期間が異なる"
+      },
+      {
+        "claimId": "doc-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-medical-care-act-enforcement-order"
+        ],
+        "text": "歯科の診療科名には「歯科」と口腔外科等を組み合わせた名称が認められている"
+      },
+      {
+        "claimId": "doc-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-doctor-act"
+        ],
+        "text": "医師には検案や出生証明書の交付など、歯科医師にはない役割がある"
+      }
+    ]
+  },
+  {
+    "guideSlug": "cook-vs-registered-dietitian",
+    "claims": [
+      {
+        "claimId": "cook-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-cook-act"
+        ],
+        "text": "調理師は都道府県知事の免許であり、法律が制限するのは「調理師」の名称の使用で、調理行為自体は業務独占ではない"
+      },
+      {
+        "claimId": "cook-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-cook-act"
+        ],
+        "text": "調理師の免許には、指定の養成施設で1年以上修得するルートと、調理業務に2年以上従事して調理師試験に合格するルートがある"
+      },
+      {
+        "claimId": "cook-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-dietitian-act"
+        ],
+        "text": "管理栄養士は国家試験合格者に厚生労働大臣が与える免許で、傷病者の療養のための栄養指導や特別な配慮を必要とする給食管理が法定業務である"
+      },
+      {
+        "claimId": "cook-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-cook-act"
+        ],
+        "text": "調理師試験は厚生労働大臣の定める基準により都道府県知事が行い、全国一律の国家試験ではない"
+      },
+      {
+        "claimId": "cook-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-cook-act"
+        ],
+        "text": "給食施設等には施設ごとに調理師を置く努力義務がある"
+      }
+    ]
+  },
+  {
+    "guideSlug": "architect-vs-construction-manager",
+    "claims": [
+      {
+        "claimId": "arch-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-construction-business-act",
+          "egov-architect-act"
+        ],
+        "text": "建築士は建築士法の免許制（一級は国土交通大臣、二級は都道府県知事）で設計と工事監理を行い、建築施工管理技士は建設業法の技術検定の合格による称号で免許制ではない"
+      },
+      {
+        "claimId": "arch-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-construction-business-act",
+          "fcpe-construction-management-exam"
+        ],
+        "text": "技術検定は第一次検定（合格で技士補）と第二次検定（合格で技士）に分かれ、建築施工管理の指定試験機関は建設業振興基金である"
+      },
+      {
+        "claimId": "arch-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mlit-technician-system-overview",
+          "egov-construction-business-act"
+        ],
+        "text": "1級建築施工管理技士は主任技術者と監理技術者の両方に、2級は主任技術者になることができ、合格は営業所技術者の要件も満たす"
+      },
+      {
+        "claimId": "arch-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-construction-business-act"
+        ],
+        "text": "主任技術者・監理技術者の職務は、施工計画の作成、工程管理、品質管理その他の技術上の管理と、施工に従事する者の技術上の指導監督である"
+      },
+      {
+        "claimId": "arch-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mlit-gijutsu-kentei-overview-2024"
+        ],
+        "text": "第一次検定の受検資格は年齢のみ（1級19歳以上、2級17歳以上）で、実務経験は第二次検定の要件である"
+      }
+    ]
   }
 ]
