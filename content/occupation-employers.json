@@ -6661,6 +6661,226 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "480",
+      "employers": [
+        {
+          "name": "独立行政法人家畜改良センター",
+          "role": "技術専門職員",
+          "description": "全国の牧場等で家畜の飼養管理や飼料生産等の業務を担う技術専門職員を募集。2027年4月1日採用、採用予定者数は4名程度。",
+          "source": {
+            "title": "技術専門職員（高校生）募集案内",
+            "url": "https://www.nlbc.go.jp/assets/pdf/r8_youkou_koukousei.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "544",
+      "employers": [
+        {
+          "name": "管清工業株式会社",
+          "role": "現場施工職（公共事業部）",
+          "description": "専用機材を用い、下水道管内をカメラで確認して異物や破損をチェックし、調査・清掃・補修工事を実施する現場施工職を募集。",
+          "source": {
+            "title": "募集要項 | 管清工業株式会社 採用情報",
+            "url": "https://recruit.kansei-pipe.co.jp/requirements/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "363",
+      "employers": [
+        {
+          "name": "国立研究開発法人土木研究所",
+          "role": "主任研究員又は研究員",
+          "description": "流域水環境研究グループ自然共生研究センターで、河川環境の保全・創出に関する研究開発や行政等への技術支援を担う主任研究員又は研究員を募集。",
+          "source": {
+            "title": "国立研究開発法人土木研究所 経験者採用職員（総合職）公募（流域水環境研究グループ 自然共生研究センター 主任研究員又は研究員）",
+            "url": "https://www.pwri.go.jp/jpn/employ/saiyou/pdf/keiken_kyousei202605.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "364",
+      "employers": [
+        {
+          "name": "国立研究開発法人理化学研究所",
+          "role": "Research Scientist or Postdoctoral Researcher（研究員・特別研究員）",
+          "description": "人工知能研究を推進する革新知能統合研究センターの各チームで、機械学習等の研究に従事する研究員や特別研究員を募集している。",
+          "source": {
+            "title": "Job Openings | RIKEN",
+            "url": "https://www.riken.jp/careers/openings/index.html?indexname=careers_en&search=%22RIKEN+Center+for+Advanced+Intelligence+Project%22",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "365",
+      "employers": [
+        {
+          "name": "国立研究開発法人国立がん研究センター",
+          "role": "研究員（任期付き常勤職員）",
+          "description": "研究所の統合がん研究分野で、がんの分子疫学など大規模研究を行い、発がんメカニズムの解明や予防法・治療法の開発を目指す研究員を募集。",
+          "source": {
+            "title": "国立がん研究センター研究所 研究員（任期付き常勤職員）の募集について",
+            "url": "https://www.ncc.go.jp/jp/recruit/tougougann_kennkyuuinn.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "532",
+      "employers": [
+        {
+          "name": "東京女子大学",
+          "role": "准教授または講師（専門分野：社会学）",
+          "description": "社会学を専門分野とする教育職員（准教授または講師）1名を2027年4月1日採用で募集。現代教養学部社会コミュニケーション学科所属。",
+          "source": {
+            "title": "採用情報（教育職員 Faculty Members） | 採用情報 Employment Information | 東京女子大学",
+            "url": "https://www.twcu.ac.jp/main/employment/01.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "362",
+      "employers": [
+        {
+          "name": "一般財団法人工業所有権協力センター",
+          "role": "専門技術者",
+          "description": "特許の先行技術調査を行う専門技術者を募集。1,000名超の専門技術者が在籍し、先行技術調査の実績は累計400万件を超える。",
+          "source": {
+            "title": "一般財団法人 工業所有権協力センター(IPCC)",
+            "url": "https://www.ipcc.or.jp/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "347",
+      "employers": [
+        {
+          "name": "Love Table Labo.（ラブテーブルラボ）",
+          "role": "登録スタッフ",
+          "description": "登録スタッフとして、レシピ開発・フードコーディネート・商品開発・撮影などの仕事の案内を受けられる仕組みで、フードコーディネーターのアシスタント業務も含まれる。",
+          "source": {
+            "title": "登録スタッフの募集 - 商品企画・レシピ開発・撮影・フードコーディネートのことならLove Table Labo.（ラブテーブルラボ）",
+            "url": "https://www.love-table-labo.com/recruitment/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "349",
+      "employers": [
+        {
+          "name": "東京舞台照明大阪株式会社",
+          "role": "照明オペレーター（ライティング部）",
+          "description": "コンサートやイベント、舞台公演などの現場で、照明のデザインとオペレーション（操作）を担当する照明オペレーターを募集している。",
+          "source": {
+            "title": "採用情報｜舞台照明で感動をつくる仕事｜東京舞台照明大阪",
+            "url": "https://tokyobs-o.co.jp/recruit-lp/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "513",
+      "employers": [
+        {
+          "name": "株式会社ヒューアンドミント",
+          "role": "ナレーター",
+          "description": "声優・俳優プロダクションが実施する所属オーディション2026において、メールエントリー時のジャンル選択肢の一つとしてナレーターを明示し募集している。",
+          "source": {
+            "title": "所属オーディション2026",
+            "url": "https://hugh-and-mint.co.jp/audition2026/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "281",
+      "employers": [
+        {
+          "name": "株式会社愛木工業",
+          "role": "家具職人",
+          "description": "札幌市の特注家具メーカーが募集する家具職人。木材の加工から組み立て・仕上げまで、オーダー家具の製作工程を一貫して担う。",
+          "source": {
+            "title": "家具職人・現場監督・現場大工の求人｜札幌｜株式会社愛木工業",
+            "url": "https://www.aimoku-kougyou.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社サクラスタジオ",
+          "role": "家具職人",
+          "description": "大阪府豊中市の木工場を持つインテリア会社が募集する家具職人。木製家具の製作に加え、デザイン・設計にも携わる。",
+          "source": {
+            "title": "大阪・豊中の家具職人・インテリアスタッフ求人｜SACRA STUDIO",
+            "url": "https://sacra-pf.com/staff",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "285",
+      "employers": [
+        {
+          "name": "國枝建具製作所",
+          "role": "木製建具工",
+          "description": "東大阪市の建具製作会社が募集する木製建具工。木製建具の製作を担う職種で、未経験可・経験者優遇、正社員での募集。",
+          "source": {
+            "title": "國枝建具製作所｜採用情報｜東大阪の建具製作会社｜求人採用募集中",
+            "url": "https://kuniedatategu.com/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "385",
+      "employers": [
+        {
+          "name": "株式会社ツクイ",
+          "role": "マネジャー（ホーム長）",
+          "description": "有料老人ホーム『ツクイ・ポピルスガーデン』のホーム長（マネジャー）を募集する正社員求人。施設の責任者としてホーム運営を担う職種。",
+          "source": {
+            "title": "全国の株式会社ツクイ　パート・アルバイト・社員　求人情報一覧",
+            "url": "https://tsukui-recruit.net/jobfind-pc/area/All?jobtype=00001%2C00014%2C00021%2C00012&freeword=%E3%83%9D%E3%83%94%E3%83%AB%E3%82%B9%E3%82%AC%E3%83%BC%E3%83%87%E3%83%B3&utm_source=meta&utm_medium=cpc&utm_campaign=asc_mh&utm_term=120253232217730198&utm_content=120253233888260198&utm_id=120253232217730198_v2_s04_i97938782",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "422",
+      "employers": [
+        {
+          "name": "楽天グループ株式会社",
+          "role": "Group Compliance Promotion (Manager Candidate)",
+          "description": "楽天グループのコンプライアンス統括部門に所属し、グループ全体のコンプライアンス推進を担う職種。リスク・コンプライアンス支援業務を行う。",
+          "source": {
+            "title": "Group Compliance Promotion (Manager Candidate) - Risk & Compliance Support Section, Strategic Business Compliance Support Department, Group Compliance Supervisory Department at Rakuten",
+            "url": "https://japan-job-en.rakuten.careers/job/tokyo/group-compliance-promotion-manager-candidate-risk-and-compliance-support-section-strategic-business/32045/97722775280",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
