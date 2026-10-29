@@ -1,3 +1,4 @@
+import { PhraseText } from "@/components/PhraseTitle";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BookOpenText, Clock3 } from "lucide-react";
@@ -62,7 +63,7 @@ export default function GuideIndex() {
       <div className="editorial-index-grid">{topic.guides.map((guide) => <Link className="editorial-index-card" href={`/guide/${guide.slug}/`} key={guide.slug}>
         <span className="editorial-card-icon"><BookOpenText aria-hidden="true" /></span>
         <small>{guide.category}</small>
-        <h3>{guide.title}</h3>
+        <h3 className="phrase-breaks"><PhraseText text={guide.title} /></h3>
         <p>{guide.answer}</p>
         <ul>{guide.keyPoints.map((point) => <li key={point}>{point}</li>)}</ul>
         <span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span>
