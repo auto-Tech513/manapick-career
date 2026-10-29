@@ -6091,6 +6091,261 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "487",
+      "employers": [
+        {
+          "name": "株式会社タカラトミー",
+          "role": "Planning and development",
+          "description": "玩具メーカーのグループ採用ページで、企画・開発等を担う職種区分として掲載。勤務地は葛飾区の立石本社ビル・青戸オフィス等。",
+          "source": {
+            "title": "Recruitment｜The TOMY Group",
+            "url": "https://www.takaratomy.co.jp/company/recruit/en/recruitment/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "520",
+      "employers": [
+        {
+          "name": "株式会社フジ",
+          "role": "食品検査事務・検査補助",
+          "description": "松山検査センターで食品の微生物検査補助と事務を行うパート求人。フジ・マックスバリュ・マルナカの品質管理部門の仕事で未経験可。",
+          "source": {
+            "title": "〖フジの品質管理パートナー社員求人〗食の安全を守る検査事務スタッフを募集します！［愛媛県松山市］ - 求人情報詳細 | フジ 求人サイト｜アルバイト・パート・正社員",
+            "url": "https://job.fuji-recruit.com/fujijob2/AE0518291737/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "424",
+      "employers": [
+        {
+          "name": "ブックオフコーポレーション株式会社",
+          "role": "店舗スタッフ",
+          "description": "中途採用の店舗スタッフには販売・接客・サービスの経験が求められ、リユース商材の販売や買取を担い、店長やエリアマネージャーをめざす。",
+          "source": {
+            "title": "求める人物像 - キャリア採用サイト | 本を売るならBOOKOFF(ブックオフ)",
+            "url": "https://recruit.bookoff.co.jp/guideline/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "426",
+      "employers": [
+        {
+          "name": "タワーレコード株式会社",
+          "role": "販売スタッフ",
+          "description": "渋谷店・新宿店など関東（東京）の店舗で働くアルバイト・パートの販売スタッフを募集。時給1,280円、勤務時間は店舗により異なる。",
+          "source": {
+            "title": "関東（東京）アルバイト・パートの求人情報 - タワーレコード株式会社 採用サイト",
+            "url": "https://www.towerrecords-saiyo.com/jobs/tag_%E9%96%A2%E6%9D%B1%EF%BC%88%E6%9D%B1%E4%BA%AC%EF%BC%89/emtp_%E3%82%A2%E3%83%AB%E3%83%90%E3%82%A4%E3%83%88%E3%83%BB%E3%83%91%E3%83%BC%E3%83%88/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "384",
+      "employers": [
+        {
+          "name": "医療法人社団三喜会 鶴巻温泉病院",
+          "role": "医療ソーシャルワーカー",
+          "description": "入院患者の退院支援や療養支援、家族支援など医療ソーシャルワーカー業務全般を担当する。社会福祉士の資格を活かせる専門職。",
+          "source": {
+            "title": "募集要項",
+            "url": "https://sankikai.or.jp/tsurumaki/hrm/msw.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "412",
+      "employers": [
+        {
+          "name": "新デンシ株式会社",
+          "role": "生産管理",
+          "description": "コイルメーカーで生産計画の立案と進捗管理、在庫管理、原価管理、購買・外注管理を担当する生産管理の募集。",
+          "source": {
+            "title": "新デンシ株式会社採用サイト",
+            "url": "https://recruit.shindenshiltd.jp/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "433",
+      "employers": [
+        {
+          "name": "株式会社西松屋チェーン",
+          "role": "マーチャンダイザー",
+          "description": "プライベートブランド商品の開発を担い、市場のマーケティング、商品仕様の決定、価格設定、取引先とのコスト交渉、販促計画の立案まで担当。",
+          "source": {
+            "title": "西松屋 採用情報",
+            "url": "https://saiyo.24028.jp/lp2/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "490",
+      "employers": [
+        {
+          "name": "名古屋地方検察庁",
+          "role": "検察事務官",
+          "description": "検察官を補佐し、取調べの立会いや捜査書類の作成、関係機関との連絡・調整などを行う立会事務官の業務。",
+          "source": {
+            "title": "～検察事務官を目指す皆さんへ～",
+            "url": "https://www.kensatsu.go.jp/content/001354645.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "494",
+      "employers": [
+        {
+          "name": "認定NPO法人カタリバ",
+          "role": "事業を企画・開発する仕事",
+          "description": "新規事業の立ち上げや基盤整備など『0→1』『1→10』を担い、仕組みや体制を整えながら事業の企画・開発を進める仕事。",
+          "source": {
+            "title": "NPOカタリバの採用情報",
+            "url": "https://www.katariba.or.jp/recruit/job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "526",
+      "employers": [
+        {
+          "name": "一般社団法人日本ハンドボールリーグ",
+          "role": "事務局職員",
+          "description": "ハンドボールリーグの運営業務の企画や進捗管理、連絡調整、加盟チームとの連絡調整などを担う事務局職員の募集。",
+          "source": {
+            "title": "採用募集要項",
+            "url": "https://leagueh.jp/files/upload/202509/04_142315.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "327",
+      "employers": [
+        {
+          "name": "株式会社日本デザインセンター",
+          "role": "アートディレクター（グラフィックデザイナー）",
+          "description": "自らデザインしながらディレクションも担うグラフィックデザイナーを募集。ブランディングやVI・キービジュアル制作、商品販促のデザインとディレクションを行う。",
+          "source": {
+            "title": "第１制作部はアートディレクターを募集します – 日本デザインセンター",
+            "url": "https://www.ndc.co.jp/recruit/bic1i7g_t/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "333",
+      "employers": [
+        {
+          "name": "株式会社乃村工藝社",
+          "role": "デザイナー",
+          "description": "商業施設やホテル、博物館などの空間について、調査・企画からデザイン・設計、制作・施工までを手がける。展示デザインの基本設計・実施設計などを担当するデザイナーが在籍する。",
+          "source": {
+            "title": "採用情報 | 株式会社乃村工藝社 / NOMURA Co.,Ltd.",
+            "url": "https://www.nomurakougei.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "336",
+      "employers": [
+        {
+          "name": "株式会社ベイクルーズ",
+          "role": "企画デザイナー（レディース）",
+          "description": "レディースブランドの企画デザイナーを募集。商品企画をはじめ、素材や柄を組み合わせた商品開発、サンプルの管理など、商品づくりの一連の業務を担当する。",
+          "source": {
+            "title": "企画デザイナー（レディース/JOURNAL STANDARD L'ESSAGE＜ジャーナルスタンダード レサージュ＞） - BAYCREW'S GROUP",
+            "url": "https://baycrews.co.jp/recruitcareer-headoffice/41338",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "354",
+      "employers": [
+        {
+          "name": "株式会社ヒューマンサイエンス",
+          "role": "Technical Writer",
+          "description": "ソフトウェアや複雑な製品のマニュアルを制作する。製品情報を理解し、調査や取材を行って執筆するほか、企画・設計やプロジェクト全体の管理も担う。",
+          "source": {
+            "title": "WORK Job Introduction | HS ENTRY Human Science Recruitment Information",
+            "url": "https://www.science.co.jp/en/saiyo/work/job-category.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "394",
+      "employers": [
+        {
+          "name": "プロモツール株式会社",
+          "role": "調香師（ゼロから調香師を目指す人材育成コース）",
+          "description": "アシスタントからスタートし、指導を受けながら調香の技術を学び、4年で一人前を目指す人材育成コースで調香師を募集している。",
+          "source": {
+            "title": "採用情報 | プロモツール株式会社",
+            "url": "https://www.promotool.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "488",
+      "employers": [
+        {
+          "name": "法務省",
+          "role": "矯正心理専門職",
+          "description": "少年院や刑事施設などに勤務する心理の専門職。専門的なアセスメントや各種指導を担い、犯罪臨床の専門家として活躍する。法務省専門職員（人間科学）採用試験で募集される。",
+          "source": {
+            "title": "法務省専門職員（人間科学）募集パンフレット（2023年度）",
+            "url": "https://www.moj.go.JP/content/001389612.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "534",
+      "employers": [
+        {
+          "name": "そよかぜ探偵事務所",
+          "role": "調査員（専属調査員）",
+          "description": "浮気調査の現場を担当する専属調査員を募集。探偵社での勤務経験1年以上の経験者が対象で、業務委託・時給制で働く。",
+          "source": {
+            "title": "調査員募集のお知らせ – 浮気・不倫専門の探偵社「そよかぜ探偵事務所」",
+            "url": "https://soyokaze-tan.com/information/publication/news-41/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
