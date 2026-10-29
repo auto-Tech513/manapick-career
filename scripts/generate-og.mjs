@@ -223,6 +223,29 @@ if (usesPublicOutput && !includeDraftPreviews) {
     if (fs.existsSync(legacyDirectory)) fs.rmSync(legacyDirectory, { recursive: true, force: true });
   }
 }
+const occupationPublication = JSON.parse(fs.readFileSync(path.join(root, "content/occupation-publication.json"), "utf8"));
+const jobCatalog = JSON.parse(fs.readFileSync(path.join(root, "content/job-catalog.json"), "utf8"));
+const catalogById = new Map(jobCatalog.occupations.map((item) => [item.catalogId, item]));
+const catalogCategoryLabels = new Map(jobCatalog.categories.map((item) => [item.key, item.label]));
+const publishedOccupations = (occupationPublication.records ?? [])
+  .filter((record) => record.status === "published" && catalogById.has(record.catalogId))
+  .map((record) => {
+    const occupation = catalogById.get(record.catalogId);
+    return {
+      slug: record.catalogId,
+      title: `${occupation.name}の仕事内容・年収・なり方`,
+      label: catalogCategoryLabels.get(occupation.categoryKey) ?? "職業",
+      date: record.publishedAt ?? record.checkedAt ?? "",
+    };
+  });
+const publicOccupationDirectory = path.join(outputRoot, "occupation");
+if (!includeDraftPreviews && fs.existsSync(publicOccupationDirectory)) {
+  const expected = new Set(publishedOccupations.map((item) => `${item.slug}.png`));
+  for (const entry of fs.readdirSync(publicOccupationDirectory)) {
+    if (entry.endsWith(".png") && !expected.has(entry)) fs.rmSync(path.join(publicOccupationDirectory, entry));
+  }
+}
+for (const occupation of publishedOccupations) await render(occupation, "OCCUPATION", "occupation");
 for (const guide of guides) await render(guide, "GUIDE", "guide");
 await render(guideIndexOg, "GUIDE", "guide");
 for (const item of newsWithPublication) await render(item, "NEWS", "news");

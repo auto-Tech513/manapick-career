@@ -20,6 +20,12 @@ export const articleOgUrl = (kind: "news" | "guide" | "career", slug: string, re
   return url.toString();
 };
 
+export const occupationOgUrl = (catalogId: string, revision = "") => {
+  const url = new URL(`${ARTICLE_OG_BASE}/occupation/${catalogId}.png`, `${SITE_URL}/`);
+  url.searchParams.set("v", stableRevision(`${ARTICLE_OG_REVISION}|occupation|${revision}`));
+  return url.toString();
+};
+
 export const pageOgUrl = (slug: string, revision = "") => {
   const url = new URL(`${ARTICLE_OG_BASE}/page/${slug}.png`, `${SITE_URL}/`);
   url.searchParams.set("v", stableRevision(`${ARTICLE_OG_REVISION}|page|${revision}`));

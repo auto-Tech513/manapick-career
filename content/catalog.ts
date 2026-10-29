@@ -106,3 +106,29 @@ export function publishedOccupationRecord(catalogId: string) {
 export function occupationJobTagUrl(recordNumber: string) {
   return `https://shigoto.mhlw.go.jp/Occupation/Detail?occupationId=${encodeURIComponent(recordNumber)}`;
 }
+
+export type OccupationEmployerEntry = {
+  name: string;
+  role: string;
+  description: string;
+  source: { title: string; url: string; checkedAt: string };
+};
+
+export function occupationEmployers(catalogId: string): OccupationEmployerEntry[] {
+  const existing = employerRegistry.existingDossiers.find((item) => item.catalogId === catalogId);
+  const dossier = existing ? dossiers.items.find((item) => item.slug === existing.slug) : undefined;
+  if (dossier) {
+    return dossier.employers.flatMap((item) => {
+      const source = evidence.sources.find((entry) => entry.id === item.sourceId);
+      return source
+        ? [{ name: item.name, role: item.role, description: item.description, source: { title: source.title, url: source.url, checkedAt: source.accessedAt } }]
+        : [];
+    });
+  }
+  const registryItem = employerRegistry.items.find((item) => item.catalogId === catalogId);
+  return (registryItem?.employers ?? []) as OccupationEmployerEntry[];
+}
+
+export function occupationDossierSlug(catalogId: string): string | null {
+  return employerRegistry.existingDossiers.find((item) => item.catalogId === catalogId)?.slug ?? null;
+}

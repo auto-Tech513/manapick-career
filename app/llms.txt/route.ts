@@ -1,5 +1,5 @@
 import { categories, publishedJobs } from "@/content/jobs";
-import { occupationCatalog } from "@/content/catalog";
+import { occupationCatalog, publishedOccupationCatalog } from "@/content/catalog";
 import { guides, newsItems } from "@/content/editorial";
 import { popularityMethod } from "@/content/popularity-ranking";
 import { absoluteUrl } from "@/lib/site";
@@ -18,6 +18,11 @@ export function GET() {
     "## Published careers (source-linked)",
     ...publishedJobs.map((job) => `- [${job.name}](${absoluteUrl(`/career/${job.slug}/`)}): ${job.conclusion[0]}`),
     "",
+    ...(publishedOccupationCatalog.length ? [
+      "## Published occupation pages (source-linked)",
+      ...publishedOccupationCatalog.map((occupation) => `- [${occupation.name}](${absoluteUrl(`/occupation/${occupation.catalogId}/`)}): ${occupation.summary}`),
+      "",
+    ] : []),
     "## Popularity methodology",
     `- [人気職業アクセスランキング](${absoluteUrl("/ranking/")}): ${popularityMethod.description} ${popularityMethod.limitation}`,
     "",
