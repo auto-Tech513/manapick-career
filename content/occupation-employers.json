@@ -4031,6 +4031,426 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "29",
+      "employers": [
+        {
+          "name": "株式会社弘建",
+          "role": "鉄骨工",
+          "description": "マンション等の建築物の鉄骨の組立作業を担当する。未経験者はボルトを締めるなどの補助作業から覚えていく。",
+          "source": {
+            "title": "求人情報｜株式会社弘建",
+            "url": "https://www.hiroken-inc.co.jp/recruit",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "32",
+      "employers": [
+        {
+          "name": "株式会社大川組",
+          "role": "建設作業員",
+          "description": "東京都国立市周辺のマンション・学校・倉庫などの現場で、駐車場や外壁、フェンスなどの外構工事をメインに、鉄筋や土嚢作業など幅広い作業を担う。",
+          "source": {
+            "title": "建設作業員 募集要項｜株式会社大川組 採用サイト",
+            "url": "https://clients.itszai.jp/4e6a6b344f413d3d/recruitments/77735",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "35",
+      "employers": [
+        {
+          "name": "株式会社椿建設",
+          "role": "現場作業員（舗装工事）",
+          "description": "道路舗装や橋の補修、駐車場のアスファルト舗装および修繕工事を行い、現場の状況確認、施工プランの提案、工事の実施まで一貫して担当する。",
+          "source": {
+            "title": "採用情報｜株式会社椿建設",
+            "url": "https://www.tsubaki-recruit.jp/recruit",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "36",
+      "employers": [
+        {
+          "name": "木村ブロック工業",
+          "role": "ブロック積み工",
+          "description": "外構工事・ブロック工事等を手がけるブロック積み工として現場作業を担当する募集で、普通自動車免許（AT限定不可）が必要とされる。",
+          "source": {
+            "title": "採用情報｜木村ブロック工業",
+            "url": "https://kimurablock.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "39",
+      "employers": [
+        {
+          "name": "Ｅ・メタルシステム株式会社",
+          "role": "建築板金工",
+          "description": "建築物の屋根・外壁・雨樋工事および付随する作業と、自社工場での板金加工作業を担当する正社員の募集。",
+          "source": {
+            "title": "採用情報｜Ｅ・メタルシステム株式会社",
+            "url": "https://www.e-metal.co.jp/recruit.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "40",
+      "employers": [
+        {
+          "name": "株式会社タカフジ",
+          "role": "サッシ取付職人",
+          "description": "ビル・マンション・ホテル・公共施設など、それぞれの建物に合わせて製作されたサッシを現場で取り付け、ミリ単位の調整など繊細な施工をチームで担う。",
+          "source": {
+            "title": "サッシ取り付け職人｜株式会社タカフジ 採用サイト",
+            "url": "https://takafuji-recruit.com/craftsman/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "43",
+      "employers": [
+        {
+          "name": "株式会社進正工業",
+          "role": "防水工（正社員）",
+          "description": "マンション・ビル・工場・戸建てなど様々な建物の、シーリング（コーキング）工事・ウレタン防水・外壁塗装・外壁補修を担当する。",
+          "source": {
+            "title": "防水工・外壁塗装 正社員募集｜株式会社進正工業",
+            "url": "https://sinseikogyo-lp.com/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "44",
+      "employers": [
+        {
+          "name": "有限会社山内保温工業",
+          "role": "保温工事スタッフ",
+          "description": "設備空調工事と設備衛生工事の熱絶縁業務（保温・板金工事）を担当し、建物内外の配管やダクト、タンクなどを扱う現場で作業する。",
+          "source": {
+            "title": "保温工事スタッフ募集要項｜有限会社山内保温工業 採用サイト",
+            "url": "https://clients.itszai.jp/4d5467304e6a673d/recruitments/319429",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "109",
+      "employers": [
+        {
+          "name": "株式会社阪急トラベルサポート",
+          "role": "ツアーコンダクター（添乗員）",
+          "description": "お客様が旅行を安全に楽しめるよう、宿泊先や観光地、施設等との連絡、旅行全体のスケジュール管理やサポートを行う添乗員の仕事。",
+          "source": {
+            "title": "旅行添乗員｜株式会社阪急トラベルサポート 募集サイト",
+            "url": "https://conductor.hts-net.co.jp/case/t4775/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "112",
+      "employers": [
+        {
+          "name": "株式会社レイクウッドコーポレーション",
+          "role": "キャディ（CADDIE STAFF）",
+          "description": "お客様と一緒にコースを回り、クラブ等の受け渡しやバンカー・池等の人工物、グリーンまでの距離やグリーンの速さ・傾斜・芝目などのアドバイスを行い、プレーをサポートする。",
+          "source": {
+            "title": "総合採用サイト｜株式会社レイクウッドコーポレーション",
+            "url": "https://www.lake-wood.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "116",
+      "employers": [
+        {
+          "name": "TBCグループ株式会社",
+          "role": "エステティシャン（中途採用：正社員）",
+          "description": "フェイシャル・ボディシェイプ・脱毛・ブライダルエステなどのエステティックコースの提供や、TBCのオリジナル化粧品などの販売、お客様への接客を行う。",
+          "source": {
+            "title": "TBCグループ求人サイト",
+            "url": "https://tbc-recruit.net/jobfind-pc/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "125",
+      "employers": [
+        {
+          "name": "株式会社CaSy",
+          "role": "家事代行キャスト",
+          "description": "お客様のお宅を訪問し、お掃除代行として水回りやお部屋の掃除・片付けを、お料理代行としてご要望に沿った料理づくりや買い物代行を行う。",
+          "source": {
+            "title": "家事代行・家政婦の求人情報｜CaSy（カジー）",
+            "url": "https://casy.co.jp/staff_entry",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "127",
+      "employers": [
+        {
+          "name": "株式会社Find a way",
+          "role": "ネイリスト（未経験歓迎・経験者優遇）",
+          "description": "サロンワーク全般を担当し、ネイルケア・ジェル等の施術のほか、接客や売上・予約管理などを行うネイリストの仕事。",
+          "source": {
+            "title": "NailMix 採用ページ",
+            "url": "https://www.nailmix.jp/recruit",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "225",
+      "employers": [
+        {
+          "name": "イオンペット株式会社",
+          "role": "グルーマー（トリマー）",
+          "description": "店舗で犬や猫のグルーミング（シャワー、ブロー、カット等）を行い、健康に過ごしてもらうためのアドバイスやサポートも担う。同社ではトリマーをグルーマーと呼ぶ。",
+          "source": {
+            "title": "グルーマー採用｜イオンペット株式会社",
+            "url": "https://recruit.aeonpet.com/trimmer/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "249",
+      "employers": [
+        {
+          "name": "赤木コーセイ株式会社",
+          "role": "鋳造工",
+          "description": "鋳造工程ラインで注湯、砂出、切断作業やその他付随する業務を担当する。自動車関連部品や産業用ロボット部品の製造工程に携わる。",
+          "source": {
+            "title": "鋳造工｜赤木コーセイ株式会社",
+            "url": "https://akagikosei.co.jp/recruit/casting",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "251",
+      "employers": [
+        {
+          "name": "高橋金型工業株式会社",
+          "role": "金型工（各種機械による金型工）",
+          "description": "各種工作機械によるプラスチック金型加工及び部品加工を担当する。プラスチック金型の設計製作を行う会社で、未経験者も丁寧な指導を受けながら働ける。",
+          "source": {
+            "title": "募集要項｜高橋金型工業株式会社",
+            "url": "https://www.takahashi-kanagata.co.jp/recruitment.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "252",
+      "employers": [
+        {
+          "name": "株式会社タツミ",
+          "role": "金属プレス工",
+          "description": "加工能力35トン～400トンのフリクションクラッチプレス機（安全装置付き）を使用し、建築金物を主とした金属製品の単発加工及び順送加工を行う。製品によっては梱包作業も行う。",
+          "source": {
+            "title": "金属プレス工（新卒採用募集要項）｜株式会社タツミ",
+            "url": "https://www.tatsumi-web.com/recruit/requirements/newgrads/931/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "255",
+      "employers": [
+        {
+          "name": "有限会社池澤鍍金工業所",
+          "role": "製造ライン（表面処理・亜鉛めっき）",
+          "description": "主に自動車関連部品に、部品がさびないためのめっき（亜鉛めっき）を施す。自動ラインで、製品を治具に引っ掛ける作業を担当する。",
+          "source": {
+            "title": "採用情報｜池澤鍍金工業所",
+            "url": "https://ikezawa-plating.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "397",
+      "employers": [
+        {
+          "name": "株式会社公益社",
+          "role": "葬儀ディレクター",
+          "description": "寝台車でのお迎え、ご遺族との打合せ、式場・祭壇の設営、通夜や葬儀・告別式の式進行・運営、葬儀後のアフターサポートまでを担当する。",
+          "source": {
+            "title": "葬儀ディレクター｜株式会社公益社 求人情報",
+            "url": "https://www.koekisha.co.jp/recruit/director/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "402",
+      "employers": [
+        {
+          "name": "どい総合クリニック",
+          "role": "受付事務員",
+          "description": "医療機関の受付として業務全般を担当。保険証の受け渡し、電子カルテの操作、患者の誘導・案内、電話対応、書類の作成・スキャン、現金の受け渡し、次回予約の案内などを行う。",
+          "source": {
+            "title": "採用情報｜どい総合クリニック",
+            "url": "https://clinicdoi.com/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "411",
+      "employers": [
+        {
+          "name": "株式会社リエイ",
+          "role": "受付・事務・介護事務",
+          "description": "有料老人ホームで受付・窓口対応や書類作成・管理、介護報酬請求（レセプト業務）、備品の発注・管理、利用料金の請求・入金管理、入居契約の手続きなどを担当する。",
+          "source": {
+            "title": "受付・事務・介護事務の求人｜リエイグループ キャリア採用サイト",
+            "url": "https://tenriku.jp/rieigroup-recruit/search/custom?job=240",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "414",
+      "employers": [
+        {
+          "name": "株式会社山下回漕店",
+          "role": "貿易事務員",
+          "description": "顧客から依頼された貨物の輸出入に必要な手続きの代行、通関書類の作成、税関対応、データ入力等の一般事務作業など、貿易に関する事務作業に従事する。",
+          "source": {
+            "title": "貿易事務員 募集要項（神原志布志ロジスティクス公式サイト内）",
+            "url": "https://www.ss-yamashita.co.jp/pages/27/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "415",
+      "employers": [
+        {
+          "name": "損害保険ジャパン株式会社",
+          "role": "事務職（アソシエイトスタッフ）",
+          "description": "損害保険ジャパンの一般事務として、保険業務に関する内務事務やお客様対応・保険代理店対応を担当する。保険募集の仕事ではない。",
+          "source": {
+            "title": "お仕事について｜損保ジャパン一般事務の採用サイト",
+            "url": "https://www.sompo-japan-associatesaiyo.com/sjassociate/associate.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "416",
+      "employers": [
+        {
+          "name": "株式会社カタログハウス",
+          "role": "コールスタッフ（通販受注受付）",
+          "description": "通販カタログ『通販生活』の本社コールセンターで、電話での注文受付、注文の変更・キャンセル、問い合わせ対応と、注文に付随する事務業務を担当する。",
+          "source": {
+            "title": "コールスタッフ募集｜株式会社カタログハウス",
+            "url": "https://cataloghouse-saiyo.jp/job/-/info/detail/M0000003",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "498",
+      "employers": [
+        {
+          "name": "日鉄ケミカル＆マテリアル株式会社",
+          "role": "検査職（技能職）",
+          "description": "各事業拠点で、決められた品質が保たれているか、規格外のものが混在していないかを検査する。原料受入れ時の検査、中間品の検査、出荷前の最終検査などを行う。",
+          "source": {
+            "title": "技能職（製造オペレーター/検査職）採用｜日鉄ケミカル＆マテリアル",
+            "url": "https://www.nscm.nipponsteel.com/recruit_operator/inspection.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "503",
+      "employers": [
+        {
+          "name": "株式会社ヒガシトゥエンティワン",
+          "role": "PCキッティング作業員",
+          "description": "センター内や顧客先でPCやサーバのキッティング（初期設定）を担当。マスター作成やソフトウェアのインストール、周辺機器の設置・設定、POS端末の設置などを行う。",
+          "source": {
+            "title": "PCキッティング作業員｜ヒガシグループ採用",
+            "url": "https://hrmos.co/pages/e-higashi/jobs/1000056",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "514",
+      "employers": [
+        {
+          "name": "北越物流株式会社",
+          "role": "物流係事務スタッフ",
+          "description": "紙製品を全国の顧客へ届ける配送の段取りを担当。出荷手配に基づくトラック等の配車手配、出荷台数や配送スケジュールの管理、配送伝票の発行や倉庫への出荷指示を行う。",
+          "source": {
+            "title": "物流係事務スタッフ 募集｜北越物流株式会社 採用サイト",
+            "url": "https://recruit-hokuetsu-butsuryu.com/recruits/24476284",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "529",
+      "employers": [
+        {
+          "name": "株式会社片桐鉄工所",
+          "role": "機械加工・旋盤工",
+          "description": "工場内で旋盤・機械加工業務を担当し、丸棒・板・パイプなどの材料を図面に従い、汎用旋盤やボーリングを使用して精密に加工する。",
+          "source": {
+            "title": "採用情報｜株式会社片桐鉄工所",
+            "url": "https://www.katagiri-tekkou.co.jp/recruit.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
