@@ -2293,5 +2293,172 @@
         "text": "資格要件を満たしただけでは測量士・測量士補になれず、国土地理院に備える名簿への登録が必要である"
       }
     ]
+  },
+  {
+    "guideSlug": "first-class-vs-second-class-architect",
+    "claims": [
+      {
+        "claimId": "architect-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-architect-act"
+        ],
+        "text": "一級建築士は国土交通大臣の免許、二級建築士は都道府県知事の免許を受けて、建築物に関し設計、工事監理その他の業務を行う（建築士法第2条）"
+      },
+      {
+        "claimId": "architect-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-architect-act"
+        ],
+        "text": "学校・病院・百貨店等の用途で延べ面積500平方メートルを超える建築物、鉄筋コンクリート造・鉄骨造等で延べ面積300平方メートルを超える建築物など、建築士法第3条の建築物は一級建築士でなければ設計・工事監理ができない"
+      },
+      {
+        "claimId": "architect-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-architect-act"
+        ],
+        "text": "二級建築士が担当できないのは建築士法第3条の建築物だけであり、それ以外の建築物は一級・二級のいずれでも担当できる"
+      },
+      {
+        "claimId": "architect-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-architect-act"
+        ],
+        "text": "建築士試験の受験資格に実務経験は含まれておらず、実務経験は試験合格後に免許を受けるための要件として定められている"
+      },
+      {
+        "claimId": "architect-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-architect-act"
+        ],
+        "text": "二級建築士は一級建築士試験の受験資格の一つであり、二級建築士として実務経験を4年以上有することは一級建築士の免許要件の一つである"
+      }
+    ]
+  },
+  {
+    "guideSlug": "land-surveyor-vs-surveyor",
+    "claims": [
+      {
+        "claimId": "land-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-land-house-investigator-act"
+        ],
+        "text": "土地家屋調査士の業務には、表示登記に必要な土地・家屋の調査・測量、登記の申請手続の代理、申請書類の作成、筆界特定の手続の代理が含まれる（土地家屋調査士法第3条）"
+      },
+      {
+        "claimId": "land-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-land-house-investigator-act"
+        ],
+        "text": "土地家屋調査士等でない者は、表示登記の申請手続の代理などを業として行うことができない（土地家屋調査士法第68条）"
+      },
+      {
+        "claimId": "land-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-survey-act"
+        ],
+        "text": "測量士の役割は測量に関する計画を作製し、又は実施することであり、登記の申請代理は業務に含まれない（測量法第48条）"
+      },
+      {
+        "claimId": "land-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-land-house-investigator-act"
+        ],
+        "text": "土地家屋調査士試験は法務大臣が毎年1回以上行い筆記試験と口述試験で構成され、測量士・測量士補の資格者は調査・測量分野の筆記試験が免除される"
+      },
+      {
+        "claimId": "land-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-land-house-investigator-act",
+          "gsi-surveyor-registration-guide"
+        ],
+        "text": "土地家屋調査士は日本土地家屋調査士会連合会に備える名簿に、測量士は国土地理院に備える名簿に、それぞれ登録を受けなければならない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "home-visit-nurse-vs-home-helper",
+    "claims": [
+      {
+        "claimId": "visit-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-visiting-nursing-designated-standard",
+          "mhlw-jobtag-nurse"
+        ],
+        "text": "訪問看護は看護師等の看護職員が、主治医が発行する訪問看護指示書に基づいて、健康状態の観察や医師の指示による医療処置を行う仕事である"
+      },
+      {
+        "claimId": "visit-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-home-helper"
+        ],
+        "text": "訪問介護員の業務は食事・入浴・排泄などの身体介護と、調理・洗濯・掃除などの生活援助であり、点滴のような医療処置は範囲に含まれない"
+      },
+      {
+        "claimId": "visit-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-visiting-nursing-designated-standard"
+        ],
+        "text": "訪問看護は医療保険の訪問看護療養費と介護保険の居宅サービスの両方に位置づけられ、要介護被保険者等が介護保険で受けられる場合は医療保険の給付は行われない"
+      },
+      {
+        "claimId": "visit-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-nurse"
+        ],
+        "text": "看護師になるには看護大学・短期大学・看護師養成所で3年または4年の専門教育を修めたのち国家試験に合格する必要がある"
+      },
+      {
+        "claimId": "visit-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "fukushijinzai-welfare-jobs-guide"
+        ],
+        "text": "訪問介護でホームヘルパーとして働くには、介護福祉士、実務者研修修了、介護職員初任者研修修了のいずれかが必要である"
+      }
+    ]
   }
 ]
