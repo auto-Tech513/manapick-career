@@ -658,6 +658,42 @@
       "reviewedBy": null,
       "reviewedByHumanAt": null,
       "reviewEvidence": null
+    },
+    {
+      "slug": "wage-increase-survey-latest",
+      "createdAt": "2026-10-29",
+      "status": "draft",
+      "primarySourceId": "mhlw-wage-increase-survey-2026",
+      "sourcePublishedAt": "2026-10-21",
+      "publishedAt": null,
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
+    },
+    {
+      "slug": "skills-development-survey-latest",
+      "createdAt": "2026-10-29",
+      "status": "draft",
+      "primarySourceId": "mhlw-skills-development-survey-fy2025",
+      "sourcePublishedAt": "2026-07-31",
+      "publishedAt": null,
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
+    },
+    {
+      "slug": "spring-wage-settlement-2026",
+      "createdAt": "2026-10-29",
+      "status": "draft",
+      "primarySourceId": "mhlw-spring-wage-settlement-2026",
+      "sourcePublishedAt": "2026-07-31",
+      "publishedAt": null,
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
     }
   ]
 }
