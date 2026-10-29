@@ -2891,6 +2891,336 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "67",
+      "employers": [
+        {
+          "name": "株式会社明屋書店",
+          "role": "書店スタッフ",
+          "description": "レジ操作や接客サービスのほか、商品の陳列・装飾、仕入れやフェア企画、商品提案など書店業務全般を担う。",
+          "source": {
+            "title": "株式会社明屋書店 公式採用情報サイト",
+            "url": "https://haruya-recruit.jp/-/top/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "68",
+      "employers": [
+        {
+          "name": "株式会社インターメスティック",
+          "role": "ショップスタッフ（Zoff）",
+          "description": "フロアでの接客、フィッティング（かけ心地の調整）、レンズをフレーム形状に合わせる加工、視力測定を担当する。",
+          "source": {
+            "title": "ショップスタッフ採用｜INTERMESTIC INC.（Zoff）",
+            "url": "https://www.zoff.com/recruit/shop_staff/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "71",
+      "employers": [
+        {
+          "name": "イオンペット株式会社",
+          "role": "販売スタッフ（ペット用品販売）",
+          "description": "開店準備や閉店作業を行いながら、ペット関連商品の管理や売り場作成、お客さまへの対応と専門知識の提供を行う。",
+          "source": {
+            "title": "ペット用品販売採用｜イオンペット株式会社 採用情報サイト",
+            "url": "https://recruit.aeonpet.com/goods/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "72",
+      "employers": [
+        {
+          "name": "株式会社ハニーズ",
+          "role": "販売スタッフ",
+          "description": "接客やコーディネート提案、売場レイアウトの作成などを行う販売スタッフ。経験を積むとスタッフ育成も担う。",
+          "source": {
+            "title": "ハニーズ アルバイト・パート求人サイト",
+            "url": "https://honeys-saiyou.net/jobfind-pc/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "76",
+      "employers": [
+        {
+          "name": "株式会社JR東日本クロスステーション",
+          "role": "NewDays店舗スタッフ",
+          "description": "NewDays店舗で会計や道案内・店舗案内・乗換案内などの接客、商品の発注、売場作り（陳列）、清掃を担当する。",
+          "source": {
+            "title": "アルバイト採用情報｜お仕事紹介｜JR東日本クロスステーション",
+            "url": "https://hitomgr.jp/r2bk/recruit/job.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "111",
+      "employers": [
+        {
+          "name": "富士急ハイランド",
+          "role": "アトラクション担当スタッフ",
+          "description": "アトラクション担当として安全と安心を最優先に、機械の起動や施設の点検を行い、開園中はお客様への対応を通じてアトラクション体験を提供する。",
+          "source": {
+            "title": "Job details｜Fuji-Q Highland",
+            "url": "https://www.fujiq.jp/en/recruit/job_fujiq.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "257",
+      "employers": [
+        {
+          "name": "東京製鐵株式会社",
+          "role": "製鋼（製造オペレーター）",
+          "description": "鉄スクラップを電気炉を用いて溶かし、半製品をつくる製鋼部門の仕事。採用情報ページでは製造オペレーターの年収例も示されている。",
+          "source": {
+            "title": "職種紹介｜東京製鐵 キャリア採用サイト",
+            "url": "https://www.tokyosteel.co.jp/recruit_career/work/job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "259",
+      "employers": [
+        {
+          "name": "トスレック株式会社",
+          "role": "製造職（プリント基板実装のオペレータ業務）",
+          "description": "プリント基板実装のオペレータ業務を担当。チップマウンターなどの機械操作や設備の点検を行い、交替制で勤務する。",
+          "source": {
+            "title": "募集要項／製造｜トスレック株式会社",
+            "url": "https://www.tosslec.co.jp/recruit/career/manufacturing_r/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "378",
+      "employers": [
+        {
+          "name": "東京都立小児総合医療センター",
+          "role": "専攻医（シニアレジデント・小児科コース）",
+          "description": "小児科の専攻医（シニアレジデント）として、小児総合医療センターを中心に3年間の専門臨床研修を行う。勤務は週5日で宿直があり、修了後は都立病院等への就職も可能。",
+          "source": {
+            "title": "当院への一次登録を希望される方へ（小児科コース）｜東京都立病院機構",
+            "url": "https://www.tmhp.jp/shouni/recruit/doctor3/pediatrics/senior-pediatrics01.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "379",
+      "employers": [
+        {
+          "name": "寺田病院",
+          "role": "内科医師（常勤）",
+          "description": "外来診療と病棟管理（1〜5床）を担当し、外来では健診・人間ドックや冬季の予防接種も行う。1コマの受診者数は30〜40名程度で、救急対応もある。",
+          "source": {
+            "title": "医師看護士の求人情報｜寺田病院",
+            "url": "https://www.terada-hospital.or.jp/recruit_doctor/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "380",
+      "employers": [
+        {
+          "name": "東京都立小児総合医療センター",
+          "role": "シニアレジデント（児童・思春期精神科）",
+          "description": "児童・思春期精神科のシニアレジデントとして3年間研修し、子どものこころ専門医または精神科専門医の資格取得を目指す。採用人数は5名。",
+          "source": {
+            "title": "シニアレジデント（児童・思春期精神科）を志望される方へ｜東京都立病院機構",
+            "url": "https://www.tmhp.jp/shouni/recruit/doctor3/senior-psychiatry/psychiatry01.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "381",
+      "employers": [
+        {
+          "name": "医療法人社団新愛会 東府中病院",
+          "role": "産婦人科医師（常勤）",
+          "description": "産婦人科の常勤医師として、分娩（自然分娩・無痛分娩・帝王切開）に対応するほか、腹腔鏡手術・婦人科手術等も行う。産婦人科専門医が応募資格。",
+          "source": {
+            "title": "産婦人科 常勤医師 募集要項｜東府中病院",
+            "url": "https://www.higashifuchu-hp.jp/wp-content/uploads/2026/05/dfd1b520d54ab7ceb5c7599fbc807a12.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "390",
+      "employers": [
+        {
+          "name": "株式会社東横イン",
+          "role": "ルームメイクスタッフ（東横INN豊橋駅東口）",
+          "description": "ビジネスホテルの客室清掃を担当し、ベッドメイクやバスルーム清掃、掃除機掛け、備品補充などの作業をスタッフで分担して進める。",
+          "source": {
+            "title": "東横INN豊橋駅東口 ルームメイクスタッフの求人詳細",
+            "url": "https://toyoko-inn-recruit.net/jobfind-pc/job/All/28638",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "391",
+      "employers": [
+        {
+          "name": "株式会社東横イン",
+          "role": "ホテリエスタッフ（フロント、東横INN熊本新市街）",
+          "description": "ビジネスホテルのフロントで、チェックイン・チェックアウトをはじめとする接客や予約確認などの電話応対、バックヤードの事務作業を行う。",
+          "source": {
+            "title": "東横INN熊本新市街 ホテリエスタッフの求人詳細",
+            "url": "https://toyoko-inn-recruit.net/jobfind-pc/job/All/8784",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "392",
+      "employers": [
+        {
+          "name": "株式会社すかいらーくホールディングス",
+          "role": "ファミリーレストランのホールスタッフ（から好し 上尾久保店）",
+          "description": "ファミリーレストランで来店客の接客全般を担当し、席への案内、注文受け、料理・ドリンクの提供、テーブルの片付け、レジ業務を行う。",
+          "source": {
+            "title": "ファミリーレストランのホールスタッフ求人情報｜すかいらーく公式アルバイト採用サイト",
+            "url": "https://arbaito.skylark.co.jp/csaiyo/f1dr/pc_job/show/18299/666274",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "393",
+      "employers": [
+        {
+          "name": "株式会社吉野家",
+          "role": "ホールスタッフ・キッチンスタッフ（吉野家 美濃加茂店）",
+          "description": "牛丼チェーンの店舗で、フロアでのお客様の案内などの接客と、牛丼をはじめとするメニューの調理・盛りつけを担当する。",
+          "source": {
+            "title": "吉野家 美濃加茂店のアルバイト・パート求人情報",
+            "url": "https://www.yoshinoya.com/baito/op71872/job134238578/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "439",
+      "employers": [
+        {
+          "name": "DAIWA CYCLE株式会社",
+          "role": "サイクルショップの販売スタッフ",
+          "description": "店頭での接客販売のほか、自転車の組立・修理、商品陳列や在庫管理などを担当する。",
+          "source": {
+            "title": "DAIWA CYCLE 公式採用プラットフォーム 求人情報",
+            "url": "https://kyz2x4k2q.jbplt.jp/recruit/7430380",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "464",
+      "employers": [
+        {
+          "name": "一冨士フードサービス株式会社",
+          "role": "調理補助",
+          "description": "幼稚園・保育園の給食厨房で、調理師の補助として主菜・副菜・汁物づくりを担い、完成した料理のクラス別配缶や食器の洗浄を行う。",
+          "source": {
+            "title": "幼稚園給食の調理補助 求人情報詳細｜一冨士フードサービス株式会社 採用サイト",
+            "url": "https://www.ifsco-group.jp/ifscog2/AE1023417274/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "465",
+      "employers": [
+        {
+          "name": "北見市",
+          "role": "給食調理員（会計年度任用職員）",
+          "description": "常呂学校給食センターに勤務する会計年度任用職員として、学校給食の調理および調理補助業務を担当する。",
+          "source": {
+            "title": "令和7年度 会計年度任用職員募集要領【給食調理員】｜北見市",
+            "url": "https://www.city.kitami.lg.jp/common/img/content/content_20250418_164402.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "536",
+      "employers": [
+        {
+          "name": "厚生労働省（検疫所）",
+          "role": "検疫官（看護師）",
+          "description": "空港や港湾で入国者・帰国者に対する検疫や健康相談を行い、感染症を媒介する動物の捕獲調査、国際航行する船舶内の衛生状態の確認等も担う。",
+          "source": {
+            "title": "検疫官（看護師）職業詳細｜職業情報提供サイト（job tag）",
+            "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=564",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "547",
+      "employers": [
+        {
+          "name": "国際医療福祉大学成田病院",
+          "role": "専攻医（整形外科プログラム）",
+          "description": "整形外科の専攻医として専門研修プログラム（募集5名）に参加し、整形外科専門医の取得を目指して、高い専門性と実践的な技術の修得に取り組む。",
+          "source": {
+            "title": "各プログラムの体制 専攻医募集｜国際医療福祉大学成田病院",
+            "url": "https://naritahospital.iuhw.ac.jp/career/resident/program.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "555",
+      "employers": [
+        {
+          "name": "Astemo株式会社",
+          "role": "専属産業医（佐和工場）",
+          "description": "佐和健康管理センタで専属産業医として、健康診断や長時間労働者への面談、ストレスチェック面談、就業措置判断、職場巡視、海外赴任者の健診判定等を行う。",
+          "source": {
+            "title": "Astemo株式会社 公式求人一覧（HRMOS）",
+            "url": "https://hrmos.co/pages/astemo/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
