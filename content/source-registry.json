@@ -2225,5 +2225,83 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に通知本文（令和2年3月5日保発0305第4号）を実際に開いて確認。看護職員は保健師・助産師・看護師・准看護師、開始時に主治医の指示書の交付を受けること、訪問看護計画・報告書を主治医へ提出すること、介護保険で受けられる場合は医療保険の訪問看護療養費は支給されないことを確認。"
+  },
+  {
+    "sourceId": "egov-electrician-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/335AC0000000139",
+    "isPrimary": true,
+    "claims": [
+      "第一種・第二種電気工事士の従事範囲、免状交付の要件、講習義務"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第3条（自家用電気工作物の工事作業は第一種のみ、一般用電気工作物等は第一種・第二種、特殊電気工事は特種電気工事資格者、簡易電気工事は認定電気工事従事者も可）、第4条（免状は都道府県知事が交付、第一種は試験合格＋実務の経験、第二種は試験合格等）、第4条の三（第一種の5年ごとの講習義務）を確認。"
+  },
+  {
+    "sourceId": "egov-electrician-enforcement-order",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/335CO0000000260",
+    "isPrimary": true,
+    "claims": [
+      "電気工事士試験の方法・科目・手数料"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第7条・第10条（学科試験と技能試験）、第8条（学科科目：第一種9科目、第二種7科目）、第9条（第二種の学科免除）、手数料（第一種14,400円・電子申請等13,000円、第二種12,500円・同11,100円）を確認。"
+  },
+  {
+    "sourceId": "egov-electrician-enforcement-rule",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/335M50000400097",
+    "isPrimary": true,
+    "claims": [
+      "第一種免状の実務の経験、自家用電気工作物の範囲"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を確認。第1条の二（自家用電気工作物から除かれる発電所・変電所・最大電力500キロワット以上の需要設備等）、第2条の二（特殊電気工事はネオン工事・非常用予備発電装置工事）、第2条の四（第一種の実務の経験は電気に関する工事への3年以上の従事）を確認。"
+  },
+  {
+    "sourceId": "egov-certified-psychologist-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/427AC1000000068",
+    "isPrimary": true,
+    "claims": [
+      "公認心理師の定義・業務・試験・登録・名称制限"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第2条（定義と4つの行為）、第6条・第7条（試験と受験資格3ルート）、第28条（登録）、第41条（秘密保持）、第42条（連携・主治医の指示）、第44条（名称制限：「心理師」という文字の使用禁止）を確認。"
+  },
+  {
+    "sourceId": "mhlw-certified-psychologist-act-summary",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/file/05-Shingikai-12201000-Shakaiengokyokushougaihokenfukushibu-Kikakuka/0000141930.pdf",
+    "isPrimary": true,
+    "claims": [
+      "公認心理師法の概要"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。法の目的、4つの行為、受験資格3類型、義務、名称使用制限、主務大臣は文部科学大臣及び厚生労働大臣であることを確認。"
+  },
+  {
+    "sourceId": "mext-school-counselor-qa",
+    "provider": "文部科学省",
+    "url": "https://www.mext.go.jp/a_menu/shotou/seitoshidou/20250715-ope_dev03-2.pdf",
+    "isPrimary": true,
+    "claims": [
+      "スクールカウンセラーの資格要件（公認心理師と臨床心理士の並列表記）"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。A4で、スクールカウンセラー等活用事業実施要領におけるスクールカウンセラーの選考対象として「公認心理師」と「公益財団法人日本臨床心理士資格認定協会の認定に係る臨床心理士」が並列に挙げられていることを確認（ほか精神科医、大学教員等、同等と認めた者）。選考では資格だけでなく面接等で活動実績も踏まえるよう求めていること、災害時にスクールカウンセラーを緊急配置できることも確認。"
   }
 ]
