@@ -756,14 +756,15 @@
     {
       "slug": "income-tax-threshold-2026",
       "createdAt": "2026-10-30",
-      "status": "draft",
+      "status": "published",
       "primarySourceId": "nta-2026-withholding-reform-summary",
       "sourcePublishedAt": "2026-04-01",
-      "publishedAt": null,
-      "reviewedAt": null,
-      "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:628d4d6d5fc6531b6e47d8863ac723c84bbede61",
+      "contentSha256": "a181fcc6c0ac0092f1c3e3e3dd9dd3fd8c9a4a2bca747e962818536421fc4af7"
     }
   ]
 }
