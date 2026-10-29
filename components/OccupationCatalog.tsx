@@ -21,7 +21,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
   employersById: Record<string, string[]>;
 }) {
   const statisticsByCode = useMemo(() => new Map(incomeStatistics.map(item => [item.classificationCode, item])), [incomeStatistics]);
-  const [order, setOrder] = useState("familiar");
+  const [order, setOrder] = useState("name");
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   useEffect(() => {
@@ -40,11 +40,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
       return categoryMatch && fieldMatch && textMatch;
     });
     if (order === "source") return matches;
-    const priority = ["92", "89", "156", "131", "90", "84", "85", "83", "158", "159", "179", "180", "183"];
-    return [...matches].sort((a,b) => {
-      if (order === "familiar") { const ai = priority.indexOf(a.recordNumber), bi = priority.indexOf(b.recordNumber); if (ai >= 0 || bi >= 0) return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi); }
-      return a.name.localeCompare(b.name, "ja");
-    });
+    return [...matches].sort((a,b) => a.name.localeCompare(b.name, "ja"));
   }, [occupations, query, category, field, order]);
   const pageCount = Math.max(1, Math.ceil(filtered.length / perPage));
   const currentPage = Math.min(page, pageCount);
@@ -61,10 +57,10 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
     <div className="catalog-controls">
       <label className="search-box"><Search aria-hidden="true" /><span className="sr-only">職業名録を検索</span><input value={query} onChange={(event) => changeQuery(event.target.value)} placeholder="職業名・別名で検索" /></label>
       <label><span>大分類</span><select value={category} onChange={(event) => changeCategory(event.target.value)}><option value="all">すべて（{occupations.length}）</option>{categories.map((item) => <option value={item.key} key={item.key}>{item.label}（{occupations.filter(occupation => occupation.categoryKey === item.key).length}）</option>)}</select></label>
-      <label><span>並び順</span><select value={order} onChange={event => { setOrder(event.target.value); setPage(1); setExpandedId(null); }} aria-label="並び順（人気・年収順ではありません）"><option value="familiar">士業・医療・保育・教育から</option><option value="name">職業名順</option><option value="source">公式データの収録順</option></select></label>
+      <label><span>並び順</span><select value={order} onChange={event => { setOrder(event.target.value); setPage(1); setExpandedId(null); }} aria-label="並び順（人気・年収順ではありません）"><option value="name">職業名順</option><option value="source">公式データの収録順</option></select></label>
     </div>
     <div className="catalog-fields" role="group" aria-label="分野から探す"><strong>分野から探す</strong><p>大分類15分野で全556職業に届きます。最後の3つは分野をまたぐテーマ別の入口です。</p><div><button type="button" aria-pressed={field === "all"} onClick={() => changeField("all")}>すべて</button>{discovery.groups.map(group => <button type="button" aria-pressed={field === group.key} key={group.key} onClick={() => changeField(group.key)}>{group.label}（{group.catalogIds.length}）</button>)}</div></div>
-    <div className="catalog-quick-search" aria-label="職業名からすぐ探す"><span>名前からすぐ探す</span>{["税理士","弁護士","公認会計士","司法書士","行政書士","社会保険労務士","看護師","保育士","薬剤師","小学校教員"].map(name=><button key={name} type="button" onClick={()=>{setCategory("all");setField("all");changeQuery(name);}}>{name}</button>)}</div>
+    <div className="catalog-quick-search" aria-label="職業名からすぐ探す"><span>名前からすぐ探す</span>{["税理士","弁護士","看護師","薬剤師","保育士","小学校教員","施設介護員","大工","路線バス運転士","パティシエ","美容師","西洋料理調理人（コック）","スーパー店員","警察官（都道府県警察）","動物園飼育員","ビル清掃","コールセンターオペレーター","中小企業診断士","プログラマー"].map(name=><button key={name} type="button" onClick={()=>{setCategory("all");setField("all");changeQuery(name);}}>{name}</button>)}</div>
     <div className="catalog-summary" aria-live="polite"><strong>{filtered.length}</strong>件中 {filtered.length ? (currentPage - 1) * perPage + 1 : 0}〜{Math.min(currentPage * perPage, filtered.length)}件</div>
     <div className="catalog-grid">{visible.map((occupation) => {
       const categoryInfo = categories.find((item) => item.key === occupation.categoryKey);
