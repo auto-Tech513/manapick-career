@@ -2498,5 +2498,57 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に実際に開いて確認。試験は年2回、資格登録には更新制度があることを確認。"
+  },
+  {
+    "sourceId": "egov-shihoshoshi-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/325AC1000000197",
+    "isPrimary": true,
+    "claims": [
+      "司法書士の業務・認定司法書士・試験・登録"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第1条（登記、供託、訴訟その他の法律事務の専門家）、第3条（業務：登記・供託の代理、法務局・裁判所提出書類の作成、認定司法書士は140万円以下の簡裁代理と筆界特定の相談・代理も）、第4条（資格）、第6条（試験は法務大臣、筆記・口述）、第8条（司法書士名簿への登録）、第73条（業務の制限）を確認。"
+  },
+  {
+    "sourceId": "mhlw-paramedic-act",
+    "provider": "厚生労働省",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=80061000&",
+    "isPrimary": true,
+    "claims": [
+      "救急救命士の定義・特定行為・受験資格"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文全文を実際に開いて確認。第2条（救急救命処置と救急救命士の定義）、第3条（試験・免許）、第34条（受験資格：第1号 養成所2年以上、第4号 消防職員のルート）、第43条（診療の補助として業とできる）、第44条（特定行為は医師の具体的な指示が必要、業務場所は救急用自動車等が原則）を確認。"
+  },
+  {
+    "sourceId": "fdma-whitepaper-ambulance-advanced",
+    "provider": "総務省消防庁",
+    "url": "https://www.fdma.go.jp/publication/hakusho/r5/chapter2/section5/66962.html",
+    "isPrimary": true,
+    "claims": [
+      "消防職員の救急救命士取得ルート、特定行為の拡大"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。消防職員は講習修了と5年又は2,000時間以上の救急業務ののち6か月以上の養成課程を修了し国家試験に合格する流れであること、取得後は160時間以上の病院実習と2年ごとの再教育、特定行為が気管挿管・薬剤投与へ拡大されたことを確認。"
+  },
+  {
+    "sourceId": "mhlw-jobtag-paramedic",
+    "provider": "厚生労働省 job tag",
+    "url": "https://shigoto.mhlw.go.jp/User/Occupation/PrintAll?occupationId=401",
+    "isPrimary": true,
+    "claims": [
+      "救急救命士の仕事、消防士として採用される必要性、救急隊の編成"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29にPrintAllページを実際に開いて確認（occupationId=401が救急救命士）。救急車に乗務するには消防職の公務員試験を受けて消防士として採用される必要があること、消防職員の救急部門従事者67,006人中救急救命士は33,552人（令和6年度消防白書）、3人1組の救急隊に少なくとも1名の救急救命士の配備が推奨されていることを確認。"
   }
 ]
