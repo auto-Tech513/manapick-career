@@ -20,6 +20,8 @@ import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
 
 import profiles from '@/content/professional-careers.json';
 import { ProfessionalCareerPage } from '@/components/ProfessionalCareerPage';
+import { AdSlot } from "@/components/AdSlot";
+import { AdSenseScript } from "@/components/AdSenseScript";
 import { CareerIncome } from '@/components/CareerIncome';
 
 export const dynamicParams = false;
@@ -112,6 +114,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
 
   return <>
     <JsonLd data={graph} />
+    <AdSenseScript />
     <PageEvent name="career_open" params={{ career_slug: job.slug }} />
     <div className="detail-shell">
       <Breadcrumbs trail={[{name:"ホーム",path:"/"},{name:category?.label ?? job.category,path:`/category/${job.category}/`},{name:job.name,path:`/career/${job.slug}/`}]} />
@@ -136,6 +139,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
           </section>
           <CareerIncome slug={slug} />
           <FitDepth dossier={dossier} />
+          <AdSlot unit="career" placement="career-after-section-3" />
           <QualificationDepth dossier={dossier} />
           <EmployerDepth dossier={dossier} />
           <section id="industry">

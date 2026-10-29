@@ -10,9 +10,9 @@ const DEFAULT_SLOT = "8041327454";
 type AdsWindow = Window & { adsbygoogle?: unknown[] };
 type AdState = "pending" | "filled" | "optimized" | "unfilled";
 
-export function AdSlot({ label = "広告", placement = "editorial-after-section-2" }: { label?: string; placement?: string }) {
+export function AdSlot({ label = "広告", placement = "editorial-after-section-2", unit = "article" }: { label?: string; placement?: string; unit?: "article" | "career" }) {
   const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || DEFAULT_CLIENT;
-  const slot = process.env.NEXT_PUBLIC_ADSENSE_SLOT?.trim() || DEFAULT_SLOT;
+  const slot = (unit === "career" ? process.env.NEXT_PUBLIC_ADSENSE_SLOT_CAREER?.trim() : undefined) || process.env.NEXT_PUBLIC_ADSENSE_SLOT?.trim() || DEFAULT_SLOT;
   const slotRef = useRef<HTMLModElement>(null);
   const [state, setState] = useState<AdState>("pending");
 
