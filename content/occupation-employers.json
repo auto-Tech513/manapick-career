@@ -5781,6 +5781,316 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "339",
+      "employers": [
+        {
+          "name": "株式会社動画工房",
+          "role": "作画",
+          "description": "動画・原画・作監・キャラクターデザインの作画業務を担当する募集で、採用人数は5名、契約社員（正社員登用あり）です。",
+          "source": {
+            "title": "求人票",
+            "url": "https://www.dogakobo.com/recruit/pdf/アニメーター(2027新卒).pdf",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社A-1 Pictures",
+          "role": "作画_原画職／作画_動画職",
+          "description": "原画職と動画職を募集する作画職の求人で、雇用形態は契約社員、選考では作画実技試験を実施します。",
+          "source": {
+            "title": "求人票",
+            "url": "https://a1p.jp/wp/wp-content/uploads/2025/02/2026jobpostingshain-2.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "355",
+      "employers": [
+        {
+          "name": "ニチダイ株式会社",
+          "role": "DTPオペレーター",
+          "description": "アクリルグッズ製造に伴うデザイン編集・リサイズ・校正などのDTP全般と、印刷機等のオペレートを担当する正社員募集です。",
+          "source": {
+            "title": "ニチダイ株式会社 / 東住吉区アニメやアーティスト系アクリルグッズの製造です！◆土日祝休み◆（大阪府大阪市東住吉区） | ニチダイ株式会社 採用サイト",
+            "url": "https://job-gear.net/nichidai2/AC1030228005/MDkyujin_d.htm?from=top",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "556",
+      "employers": [
+        {
+          "name": "株式会社JMC",
+          "role": "製造職（3Dプリンター出力製品）",
+          "description": "中途採用の募集職種として、神奈川県横浜市の3Dプリンター出力製品の製造職と検査作業スタッフを募集しています。",
+          "source": {
+            "title": "リクルート | 3Dプリンター・鋳造・CTのJMC",
+            "url": "https://www.jmc-rp.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "497",
+      "employers": [
+        {
+          "name": "株式会社エネックス",
+          "role": "タンクローリー乗務員",
+          "description": "石油製品をSSや需要家へ配送し荷役作業を行うほか、タンクローリーに充てんした高圧ガス（LNG）を需要家へ配送する。",
+          "source": {
+            "title": "タンクローリー乗務員　募集要項",
+            "url": "https://www.enex-jot.co.jp/recruit/pdf/2025CHUBU.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "388",
+      "employers": [
+        {
+          "name": "ル・アンジェ株式会社",
+          "role": "ベビーシッター",
+          "description": "ご自宅でのシッティングのほか、病気のお子様を見守る病児保育や、保育園に代わり保育業務を行う居宅保育、産後ケアなど様々な仕事を案内している。",
+          "source": {
+            "title": "【公式】ル・アンジェ採用サイト | 保育経験を活かしてあなたに合ったライフワークを。",
+            "url": "https://www.leange.co.jp/recruit_childcare/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "528",
+      "employers": [
+        {
+          "name": "ソーシャルインクルー株式会社",
+          "role": "世話人",
+          "description": "グループホームの世話人として入居者様の生活全般をサポートし、掃除や調理、入浴介助などを行い、ご自身でできるよう支える。",
+          "source": {
+            "title": "世話人　M.T　　　入居者様がもつ力を信じて。家族のように寄り添う世話人の仕事 | ソーシャルインクルー 株式会社　採用情報",
+            "url": "https://recruit.socialinclu.co.jp/member/detail/id=689",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "430",
+      "employers": [
+        {
+          "name": "野村證券株式会社",
+          "role": "株式関連商品の自己売買業務",
+          "description": "野村證券の資金を使って株式関連商品の自己売買（ディーリング）を行うエクイティ・トレーディング部で、担当プロダクトのトレーディング業務を行う。",
+          "source": {
+            "title": "【エクイティ・トレーディング部】株式関連商品の自己売買業務 | 野村證券株式会社",
+            "url": "https://progres02.jposting.net/pgnomura/u/job.phtml?job_code=1193",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "444",
+      "employers": [
+        {
+          "name": "あいおいニッセイ同和損害保険株式会社",
+          "role": "営業部門（リテール）",
+          "description": "代理店を通じて特定エリアの企業や個人のお客さまへ最適なリスクコンサルティングを行い、代理店の経営指導や新たな代理店開拓を担う。",
+          "source": {
+            "title": "仕事紹介 | あいおいニッセイ同和損保　新卒採用ホームページ",
+            "url": "https://www.aioinissaydowa-saiyou.com/works/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "499",
+      "employers": [
+        {
+          "name": "味の素株式会社",
+          "role": "食品事業本部/国内営業部門外勤営業担当",
+          "description": "家庭用商品または業務用商品の得意先営業活動を行う外勤担当者として、得意先の課題を解決し、商品・サービスの価値を伝えて成果を創出する。",
+          "source": {
+            "title": "味の素株式会社",
+            "url": "https://hrmos.co/pages/ajinomoto/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "489",
+      "employers": [
+        {
+          "name": "出入国在留管理庁",
+          "role": "一般職（入国審査官）",
+          "description": "関西国際空港などで外国人の上陸審査や出国確認、日本人の出帰国の確認などの出入国審査業務に携わるほか、在留審査業務などを行う。",
+          "source": {
+            "title": "職員インタビュー（総合職／一般職（入国審査官）／入国警備官） | 出入国在留管理庁",
+            "url": "https://www.moj.go.jp/isa/supply/recruitment/01_00536.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "502",
+      "employers": [
+        {
+          "name": "シミック株式会社",
+          "role": "CRA（臨床開発モニター）",
+          "description": "シミックグループの公式採用プラットフォームに『CRA（臨床開発モニター）』の求人が掲載され、人材を募集している。",
+          "source": {
+            "title": "シミックグループ/CMIC Group",
+            "url": "https://hrmos.co/pages/cmicg/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "525",
+      "employers": [
+        {
+          "name": "株式会社A-1 Pictures",
+          "role": "制作進行",
+          "description": "2026年4月採用の求人票で制作進行を募集しており、勤務予定地は阿佐ヶ谷スタジオ、阿佐ヶ谷第2スタジオ、新高円寺スタジオとされている。",
+          "source": {
+            "title": "求人票",
+            "url": "https://a1p.jp/wp/wp-content/uploads/2025/02/2026jobpostingshain-2.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "538",
+      "employers": [
+        {
+          "name": "株式会社乃村工藝社",
+          "role": "プランナー",
+          "description": "博覧会・博物館などの施設の調査・企画・コンサルティングから運営・管理までを手がける企業で、施設の企画や体験設計を担うプランナーを募集。",
+          "source": {
+            "title": "採用情報 | 株式会社乃村工藝社 / NOMURA Co.,Ltd.",
+            "url": "https://www.nomurakougei.co.jp/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "539",
+      "employers": [
+        {
+          "name": "東京女子大学",
+          "role": "専任事務職員",
+          "description": "私立大学の専任事務職員を新卒・既卒の区分で募集しており、多岐にわたる業務によって大学の運営が支えられていると説明している。",
+          "source": {
+            "title": "採用情報 Employment Information",
+            "url": "https://www.twcu.ac.jp/main/employment/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "549",
+      "employers": [
+        {
+          "name": "株式会社レノバ",
+          "role": "事業開発",
+          "description": "国内の洋上風力発電の事業開発チームに所属し、地域貢献策の検討・推進や新規事業の企画・開発など幅広い業務に関与している。",
+          "source": {
+            "title": "RENOVA, Inc. / 株式会社レノバ 社員インタビュー / People at Renova の求人一覧",
+            "url": "https://hrmos.co/pages/renova/jobs?category=2009315200427409409",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "325",
+      "employers": [
+        {
+          "name": "株式会社A-1 Pictures",
+          "role": "CG",
+          "description": "2026年4月採用の求人票でCG職を募集しており、CG・撮影の勤務予定地は朝日生命ビルスタジオとされている。",
+          "source": {
+            "title": "求人票",
+            "url": "https://a1p.jp/wp/wp-content/uploads/2025/02/2026jobpostingshain-2.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "326",
+      "employers": [
+        {
+          "name": "任天堂株式会社",
+          "role": "ゲーム開発",
+          "description": "新卒採用の理工系募集職種として『ゲーム開発』を掲げ、ゲーム開発に携わる人材を採用している。",
+          "source": {
+            "title": "新卒採用：募集要項｜採用情報｜任天堂",
+            "url": "https://www.nintendo.co.jp/jobs/recruit/requirements/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "442",
+      "employers": [
+        {
+          "name": "スパークス・アセット・マネジメント株式会社",
+          "role": "ファンドマネージャー（運用調査本部）",
+          "description": "投資信託『スパークス・新・国際優良日本株ファンド（愛称：厳選投資）』の運用をファンドマネージャーが担当し、運用方針を投資家向けに発信している。",
+          "source": {
+            "title": "お客様向け資料 スパークス・新・国際優良日本株ファンド 2026年6月 愛称： 厳選投資",
+            "url": "https://www.sparx.co.jp/report/doc/report-gen_202606.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "443",
+      "employers": [
+        {
+          "name": "株式会社日本M&Aセンター",
+          "role": "M&Aコンサルタント",
+          "description": "コンサルタント職としてM&AコンサルタントとM&Aコンサルタント（IBD領域担当）を募集職種一覧に掲載している。",
+          "source": {
+            "title": "募集職種一覧｜日本M&Aセンターグループ 採用サイト",
+            "url": "https://recruit.nihon-ma.co.jp/recruitment/position/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "485",
+      "employers": [
+        {
+          "name": "独立行政法人国際協力機構（JICA）",
+          "role": "JICA専門家",
+          "description": "個人でJICA専門家になるにはJICA PARTNERの公示案件・公募案件への応募が必要で、高度な専門性や3〜20年の業務経験、語学力が求められる。",
+          "source": {
+            "title": "4．国際協力の仕事に挑戦する（組織形態別エントリー方法） | 国際キャリアＱ＆Ａ - JICA PARTNER",
+            "url": "https://partner.jica.go.jp/Contents/StaticContents?htmlName=international_career_faq4",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
