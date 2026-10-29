@@ -3311,5 +3311,173 @@
         "text": "第一次検定の受検資格は年齢のみ（1級19歳以上、2級17歳以上）で、実務経験は第二次検定の要件である"
       }
     ]
+  },
+  {
+    "guideSlug": "childcare-worker-vs-babysitter",
+    "claims": [
+      {
+        "claimId": "baby-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-child-welfare-act",
+          "tokyo-ninkagai-setsumei"
+        ],
+        "text": "保育士は児童福祉法に基づく登録資格で名称独占があり、ベビーシッターという国家資格は存在しない"
+      },
+      {
+        "claimId": "baby-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "tokyo-ninkagai-setsumei",
+          "kyoto-ninkagai-shidou-kijun"
+        ],
+        "text": "ベビーシッター事業は認可外の居宅訪問型保育事業として、事業開始の日から1か月以内に都道府県知事等への届出が必要で、無届けは50万円以下の過料の対象である"
+      },
+      {
+        "claimId": "baby-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "kyoto-ninkagai-shidou-kijun"
+        ],
+        "text": "居宅訪問型保育事業では、保育に従事する者1人に対して預かる乳幼児は原則1人である"
+      },
+      {
+        "claimId": "baby-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "kyoto-ninkagai-shidou-kijun"
+        ],
+        "text": "居宅訪問型保育事業の保育に従事する者について、保育士又は看護師の資格を有する者の配置は「望ましい」とされるにとどまる"
+      },
+      {
+        "claimId": "baby-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-child-welfare-act"
+        ],
+        "text": "保育士になるには、指定保育士養成施設の卒業か保育士試験の合格に加えて、保育士登録が必要である"
+      }
+    ]
+  },
+  {
+    "guideSlug": "electrician-vs-chief-electricity-engineer",
+    "claims": [
+      {
+        "claimId": "elec-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electricity-business-act"
+        ],
+        "text": "電気主任技術者は、事業用電気工作物の設置者が工事・維持・運用に関する保安の監督をさせるため、免状保持者の中から選任するものである"
+      },
+      {
+        "claimId": "elec-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electricity-business-enforcement-rule"
+        ],
+        "text": "電気主任技術者の監督範囲は、第一種が事業用電気工作物全般、第二種が電圧17万ボルト未満、第三種が電圧5万ボルト未満（出力5千キロワット以上の発電所・蓄電所を除く）である"
+      },
+      {
+        "claimId": "elec-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electricity-business-act"
+        ],
+        "text": "電気主任技術者免状は経済産業大臣が交付し、試験合格のルートと学歴・資格と実務の経験によるルートがある"
+      },
+      {
+        "claimId": "elec-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electrician-act",
+          "egov-electricity-business-act"
+        ],
+        "text": "電気工事士は電気工事の作業に従事する資格であり、電気主任技術者の免状だけでは工事作業に従事できず、電気工事士だけでは主任技術者に選任されない"
+      },
+      {
+        "claimId": "elec-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-electricity-business-act"
+        ],
+        "text": "事業用電気工作物の工事・維持・運用に従事する者は、主任技術者が保安のためにする指示に従わなければならない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "hazardous-materials-vs-fire-equipment",
+    "claims": [
+      {
+        "claimId": "haz-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-fire-service-act"
+        ],
+        "text": "製造所等では、免状を持たない者は甲種又は乙種危険物取扱者が立ち会わなければ危険物を取り扱うことができない"
+      },
+      {
+        "claimId": "haz-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-fire-service-act"
+        ],
+        "text": "消防設備士は、免状を持たない者は政令で定める消防用設備等の工事（設置に係るもの）又は整備を行うことができない"
+      },
+      {
+        "claimId": "haz-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-fire-service-act"
+        ],
+        "text": "甲種と乙種の線引きは両資格で異なり、危険物取扱者は扱える危険物の種類の差、消防設備士は工事ができるかどうかの差である"
+      },
+      {
+        "claimId": "haz-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-fire-service-act"
+        ],
+        "text": "甲種の受験資格は、危険物取扱者が化学系学科の卒業等又は乙種取得後2年以上の実務経験、消防設備士が機械・電気・工業化学・土木・建築系学科の卒業等又は乙種取得後2年以上の整備経験である"
+      },
+      {
+        "claimId": "haz-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-fire-service-act"
+        ],
+        "text": "両資格とも試験は都道府県知事が毎年1回以上行い、免状は都道府県知事が交付する"
+      }
+    ]
   }
 ]

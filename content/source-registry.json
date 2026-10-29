@@ -2641,5 +2641,70 @@
     "updateFrequency": "180d",
     "republication": "要約と出典リンクのみ",
     "notes": "2026-10-29に実際に開いて確認。国土交通大臣の指定試験機関として建築施工管理の検定を実施していること、第一次検定合格で技士補、第二次検定合格で技士の称号、2級建築施工管理の種別（建築・躯体・仕上げ）を確認。"
+  },
+  {
+    "sourceId": "tokyo-ninkagai-setsumei",
+    "provider": "東京都福祉局",
+    "url": "https://www.fukushi.metro.tokyo.lg.jp/kodomo/hoiku/ninkagai/setsumei",
+    "isPrimary": true,
+    "claims": [
+      "ベビーシッター事業の届出制・指導監督基準"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。認可外保育施設の設置者は事業開始の日から1か月以内に届出が義務付けられていること、「認可外の居宅訪問型保育事業（いわゆるベビーシッター業）」の届出様式が用意されていること、設置者は報告徴収・立入調査などの指導監督の対象になることを確認。"
+  },
+  {
+    "sourceId": "kyoto-ninkagai-shidou-kijun",
+    "provider": "京都府",
+    "url": "https://www.pref.kyoto.jp/kosodate/ninkagai_01riyou02.html",
+    "isPrimary": true,
+    "claims": [
+      "ベビーシッター事業の届出制・指導監督基準"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に実際に開いて確認。居宅訪問型保育事業では保育に従事する者1人につき乳幼児は原則1人、保育士又は看護師の資格を有する者の配置は「望ましい」とされていること、届出をしない者は50万円以下の過料（児童福祉法第62条の4）、設置者は研修の受講状況も届け出ることを確認。"
+  },
+  {
+    "sourceId": "egov-electricity-business-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/339AC0000000170",
+    "isPrimary": true,
+    "claims": [
+      "電気主任技術者の選任・免状の種類と交付"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第43条（設置者は保安の監督のため免状保持者から主任技術者を選任、選任・解任の届出、誠実義務、従事者は保安上の指示に従う）、第44条（免状は第一種・第二種・第三種、経済産業大臣が交付、試験合格又は学歴・資格と実務経験のルート）を確認。"
+  },
+  {
+    "sourceId": "egov-electricity-business-enforcement-rule",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/407M50000400077",
+    "isPrimary": true,
+    "claims": [
+      "電気主任技術者の監督できる範囲"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認。第56条（第一種は事業用電気工作物全般、第二種は電圧17万ボルト未満、第三種は電圧5万ボルト未満で出力5千キロワット以上の発電所・蓄電所を除く）を確認。"
+  },
+  {
+    "sourceId": "egov-fire-service-act",
+    "provider": "e-Gov法令検索（デジタル庁）",
+    "url": "https://laws.e-gov.go.jp/law/323AC1000000186",
+    "isPrimary": true,
+    "claims": [
+      "消防法の危険物取扱者・消防設備士の制度"
+    ],
+    "checkedAt": "2026-10-29",
+    "updateFrequency": "180d",
+    "republication": "要約と出典リンクのみ",
+    "notes": "2026-10-29に条文本文を実際に開いて確認（昭和23年法律第186号）。第2条第7項（危険物の定義）、第13条（危険物保安監督者は甲種又は乙種で6月以上の実務経験者から選任、免状を持たない者は甲種・乙種の立会いがなければ取扱い不可）、第13条の2（免状は甲種・乙種・丙種、都道府県知事が交付）、第13条の3（試験と甲種の受験資格）、第17条の5（免状のない者は消防用設備等の工事・整備を行えない）、第17条の6・第17条の7・第17条の8（甲種は工事と整備、乙種は整備、免状交付と甲種の受験資格）を確認。"
   }
 ]
