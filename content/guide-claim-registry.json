@@ -921,5 +921,810 @@
         "critical": true
       }
     ]
+  },
+  {
+    "claims": [
+      {
+        "claimId": "sharoushi-vs-gyosei-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-sharoushi-faq",
+          "mhlw-jobtag-sharoushi"
+        ],
+        "text": "社会保険労務士の業務は、労働・社会保険に関する申請書等の作成、提出代行、事務代理、帳簿書類の作成、紛争解決手続の代理、相談・指導などであり、厚生労働省はFAQで9項目を挙げている"
+      },
+      {
+        "claimId": "sharoushi-vs-gyosei-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-sharoushi-faq"
+        ],
+        "text": "申請書等の作成・提出代行・事務代理は、社会保険労務士と社会保険労務士法人だけが行える"
+      },
+      {
+        "claimId": "sharoushi-vs-gyosei-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-sharoushi-faq"
+        ],
+        "text": "あっせん・調停・ADRなど紛争解決手続の代理は、紛争解決手続代理業務試験に合格し名簿に付記を受けた特定社会保険労務士に限られる"
+      },
+      {
+        "claimId": "sharoushi-vs-gyosei-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-sharoushi-faq",
+          "mhlw-jobtag-sharoushi"
+        ],
+        "text": "社会保険労務士になるには試験合格に加えて労働・社会保険事務の実務経験2年以上が必要であり、実務経験がない場合は全国社会保険労務士会連合会の講習を修了する道があり、同連合会の名簿登録が必要である"
+      },
+      {
+        "claimId": "sharoushi-vs-gyosei-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-gyoseishoshi-act"
+        ],
+        "text": "行政書士は官公署に提出する書類と権利義務・事実証明に関する書類の作成を業とし、他の法律で制限されている書類は扱えない（行政書士法第1条の3）"
+      },
+      {
+        "claimId": "sharoushi-vs-gyosei-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "soumu-gyoseishoshi-seido"
+        ],
+        "text": "行政書士法第1条の3の業務は、行政書士・行政書士法人以外が対価を得て業として行うことはできない"
+      },
+      {
+        "claimId": "sharoushi-vs-gyosei-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-gyoseishoshi-act"
+        ],
+        "text": "許認可等に関する不服申立ての手続の代理は、日本行政書士会連合会の研修課程を修了した特定行政書士に限る（行政書士法第1条の4第2項）"
+      },
+      {
+        "claimId": "sharoushi-vs-gyosei-08",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "soumu-gyoseishoshi-seido",
+          "egov-gyoseishoshi-act"
+        ],
+        "text": "行政書士試験は指定試験機関が年1回実施し、資格者には弁護士・弁理士・公認会計士・税理士の有資格者や公務員として行政事務に20年（高卒等は17年以上）従事した者も含まれ、登録は都道府県行政書士会を経由して日本行政書士会連合会に行う"
+      }
+    ],
+    "guideSlug": "sharoushi-vs-gyoseishoshi"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "shindanshi-vs-consultant-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "chusho-shindanshi-touroku-form"
+        ],
+        "text": "中小企業診断士の登録申請は、中小企業支援法第11条第1項の登録要件に基づき、経済産業大臣に対して行う"
+      },
+      {
+        "claimId": "shindanshi-vs-consultant-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "chusho-shindanshi-qa"
+        ],
+        "text": "中小企業診断士の取得ルートは、第1次・第2次試験合格後に15日の実務要件を満たすルートと、第1次試験合格後に養成課程・登録養成課程を修了するルートの2つである"
+      },
+      {
+        "claimId": "shindanshi-vs-consultant-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "chusho-shindanshi-qa"
+        ],
+        "text": "第1次試験は全7科目の多肢選択式・短答式で年1回実施され、合格基準は総点60%以上かつ40%未満の科目がないこと、第1次合格の有効期間は2年である"
+      },
+      {
+        "claimId": "shindanshi-vs-consultant-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-keiei-consultant"
+        ],
+        "text": "経営コンサルタントはjob tagで職業として解説され、経営戦略・組織人事戦略・マーケティング戦略の策定や業務改善の提案とその実現支援を行う"
+      },
+      {
+        "claimId": "shindanshi-vs-consultant-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-keiei-consultant"
+        ],
+        "text": "job tagは経営コンサルタント関連の資格として中小企業診断士や経営士などを挙げつつ、これらの資格がなくても経営コンサルタントになることは可能であると明記している"
+      },
+      {
+        "claimId": "shindanshi-vs-consultant-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-keiei-consultant"
+        ],
+        "text": "経営コンサルタントの仕事は情報収集・現場視察から分析、提案、計画やマニュアルの作成、研修、実施確認と継続支援へ進み、専門分野では中小企業診断士など他の専門家とチームを組むこともある"
+      }
+    ],
+    "guideSlug": "shindanshi-vs-keiei-consultant"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "se-covers-full-process",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jobtag-se-jutaku"
+        ],
+        "text": "システムエンジニア（受託開発）は、要件定義から基本設計・詳細設計、テスト、導入、保守まで開発工程全体を担う"
+      },
+      {
+        "claimId": "se-requirements-latent-issues",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jobtag-se-jutaku"
+        ],
+        "text": "要件定義では、ヒアリングにより顧客自身が自覚していない課題まで抽出する"
+      },
+      {
+        "claimId": "programmer-builds-from-detailed-design",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jobtag-programmer"
+        ],
+        "text": "プログラマーはSEが作成した詳細設計に基づいてプログラムを作成し、コーディング・単体テスト・デバッグ・保守ドキュメント作成を行う"
+      },
+      {
+        "claimId": "integration-tests-by-se",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jobtag-se-jutaku",
+          "jobtag-programmer"
+        ],
+        "text": "結合テストや受け入れテスト、納品後のアフターケアはSEが担当する工程とされる"
+      },
+      {
+        "claimId": "no-license-or-degree-required",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jobtag-se-jutaku",
+          "jobtag-programmer"
+        ],
+        "text": "システムエンジニア（受託開発）・プログラマーとも、特に学歴や資格は必要とされていない"
+      },
+      {
+        "claimId": "fe-target-image-basic",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "ipa-fe-exam"
+        ],
+        "text": "基本情報技術者試験の対象者像は基本的知識・技能をもち実践的な活用能力を身に付けた者で、期待する技術水準に「自らプログラムを作成できる」が含まれる"
+      },
+      {
+        "claimId": "ap-sa-target-image-upstream",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "ipa-ap-exam",
+          "ipa-sa-exam"
+        ],
+        "text": "応用情報技術者試験は企画・要件定義や設計・開発を担う人材像、システムアーキテクト試験は要件定義とアーキテクチャ設計を主導する上級エンジニア像を示している"
+      },
+      {
+        "claimId": "programmer-to-se-path",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "jobtag-se-jutaku",
+          "jobtag-programmer"
+        ],
+        "text": "プログラマーとして経験を積んでからSEになる場合がある"
+      }
+    ],
+    "guideSlug": "se-vs-programmer"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "nurse-definition-art5",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "看護師は、厚生労働大臣の免許を受けて、傷病者若しくはじよく婦に対する療養上の世話又は診療の補助を行うことを業とする者である（法第5条）"
+      },
+      {
+        "claimId": "midwife-definition-art3",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "助産師は、助産又は妊婦、じよく婦若しくは新生児の保健指導を行うことを業とする女子である（法第3条）"
+      },
+      {
+        "claimId": "public-nurse-definition-art2",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "保健師は、厚生労働大臣の免許を受けて、保健師の名称を用いて、保健指導に従事することを業とする者である（法第2条）"
+      },
+      {
+        "claimId": "dual-exam-requirement-art7",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "保健師・助産師の免許には、各国家試験に加えて看護師国家試験の合格も必要である（法第7条）"
+      },
+      {
+        "claimId": "exclusive-scope-art29-31",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "各業務は有資格者以外行うことができず、保健師及び助産師は看護師の業を行うことができる（法第29条〜第31条）"
+      },
+      {
+        "claimId": "medical-act-limit-art37",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "保健師・助産師・看護師は、主治の医師又は歯科医師の指示があった場合を除き、診療機械の使用や医薬品の授与等の行為をしてはならない（法第37条）"
+      },
+      {
+        "claimId": "midwife-abnormal-art38",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "助産師は、妊婦・産婦・じよく婦・胎児・新生児に異常があると認めたときは、医師の診療を求めさせることを要し、自ら処置をしてはならない（法第38条、臨時応急の手当を除く）"
+      },
+      {
+        "claimId": "hokenshi-exam-subjects-eligibility",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokenshi-exam"
+        ],
+        "text": "保健師国家試験の科目は公衆衛生看護学、疫学、保健統計学及び保健医療福祉行政論であり、受験資格は指定学校等で1年以上必要な学科を修めた者などで、出願には看護師国家試験の合格証書の写し等の提出が求められる"
+      }
+    ],
+    "guideSlug": "nurse-vs-midwife-vs-public-nurse"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "pt-ot-st-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-pt-ot-act"
+        ],
+        "text": "理学療法士と作業療法士は理学療法士及び作業療法士法に基づく国家資格で、厚生労働大臣の免許を受けて業務を行う"
+      },
+      {
+        "claimId": "pt-ot-st-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-st-act"
+        ],
+        "text": "言語聴覚士は言語聴覚士法に基づく国家資格で、厚生労働大臣の免許を受けて業務を行う"
+      },
+      {
+        "claimId": "pt-ot-st-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-pt-ot-act"
+        ],
+        "text": "理学療法は、身体に障害のある者に対し、主として基本的動作能力の回復を図るため、治療体操その他の運動を行わせ、電気刺激・マッサージ・温熱その他の物理的手段を加えることである"
+      },
+      {
+        "claimId": "pt-ot-st-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-pt-ot-act"
+        ],
+        "text": "作業療法は、身体又は精神に障害のある者に対し、主として応用的動作能力又は社会的適応能力の回復を図るため、手芸・工作その他の作業を行わせることである"
+      },
+      {
+        "claimId": "pt-ot-st-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-pt-ot-act"
+        ],
+        "text": "理学療法士・作業療法士は医師の指示の下に業務を行う"
+      },
+      {
+        "claimId": "pt-ot-st-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-st-act"
+        ],
+        "text": "言語聴覚士は、音声機能・言語機能又は聴覚に障害のある者について、機能の維持向上を図るため、言語訓練その他の訓練、これに必要な検査及び助言、指導その他の援助を行う"
+      },
+      {
+        "claimId": "pt-ot-st-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-st-act"
+        ],
+        "text": "言語聴覚士が診療の補助として行う嚥下訓練など厚生労働省令で定める行為は、医師又は歯科医師の指示の下に行う"
+      },
+      {
+        "claimId": "pt-ot-st-08",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-pt-ot-act"
+        ],
+        "text": "理学療法士・作業療法士の国家試験は、指定された学校・養成施設等で3年以上必要な知識及び技能を修得した者などが受験できる"
+      }
+    ],
+    "guideSlug": "pt-vs-ot-vs-st"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "hoiku-kyoin-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-child-welfare-act"
+        ],
+        "text": "保育士は、保育士登録を受け、保育士の名称を用いて、児童の保育及び児童の保護者に対する保育に関する指導を行うことを業とする者である（児童福祉法第18条の4）"
+      },
+      {
+        "claimId": "hoiku-kyoin-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-child-welfare-act"
+        ],
+        "text": "保育士となる資格は、指定保育士養成施設の卒業や保育士試験の合格などにより得られる（児童福祉法第18条の6）"
+      },
+      {
+        "claimId": "hoiku-kyoin-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-child-welfare-act"
+        ],
+        "text": "保育所と幼保連携型認定こども園は児童福祉施設であり、児童福祉法の児童は満18歳に満たない者をいう"
+      },
+      {
+        "claimId": "hoiku-kyoin-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-teacher-license-act"
+        ],
+        "text": "教育職員は各相当の免許状を有する者でなければならず、幼稚園教諭の普通免許状は専修・一種・二種に区分される"
+      },
+      {
+        "claimId": "hoiku-kyoin-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-teacher-license-act"
+        ],
+        "text": "幼稚園教諭の普通免許状は、基礎資格を有し大学等で所定の単位を修得した者などに都道府県教育委員会が授与する"
+      },
+      {
+        "claimId": "hoiku-kyoin-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-school-education-act"
+        ],
+        "text": "幼稚園は学校教育法上の学校であり、入園できるのは満3歳から小学校就学の始期に達するまでの幼児である"
+      },
+      {
+        "claimId": "hoiku-kyoin-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-school-education-act"
+        ],
+        "text": "幼稚園は義務教育及びその後の教育の基礎を培うものとして、幼児の心身の発達を助長することを目的とする"
+      },
+      {
+        "claimId": "hoiku-kyoin-08",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-certified-kodomoen-act"
+        ],
+        "text": "幼保連携型認定こども園の保育教諭等は、幼稚園教諭の普通免許状を有し、かつ保育士登録を受けた者でなければならない"
+      }
+    ],
+    "guideSlug": "hoikushi-vs-yochien-kyoin"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "pharm-seller-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-pharmaceuticals-act"
+        ],
+        "text": "要指導医薬品を販売又は授与できるのは薬剤師のみであり、薬局・店舗の開設者は薬剤師に販売又は授与させなければならない"
+      },
+      {
+        "claimId": "pharm-seller-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-pharmaceuticals-act"
+        ],
+        "text": "一般用医薬品はリスクの程度に応じて第1類・第2類・第3類に区分される"
+      },
+      {
+        "claimId": "pharm-seller-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-pharmaceuticals-act"
+        ],
+        "text": "第1類医薬品は薬剤師のみが販売でき、第2類・第3類医薬品は薬剤師又は登録販売者が販売できる"
+      },
+      {
+        "claimId": "pharm-seller-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-pharmaceuticals-act"
+        ],
+        "text": "要指導医薬品の情報提供と指導は薬剤師が対面等の方法で書面を用いて行う義務があり、第1類医薬品の情報提供も薬剤師が書面で行う義務である"
+      },
+      {
+        "claimId": "pharm-seller-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-pharmacists-act"
+        ],
+        "text": "薬剤師でない者は販売又は授与の目的で調剤してはならず、登録販売者は調剤を行えない"
+      },
+      {
+        "claimId": "pharm-seller-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-pharmacists-act"
+        ],
+        "text": "薬剤師になるには大学で薬学の正規の課程（6年制）を修了して薬剤師国家試験に合格し、厚生労働大臣の免許を受ける必要がある"
+      },
+      {
+        "claimId": "pharm-seller-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-pharmaceuticals-act",
+          "mhlw-registered-seller-notice"
+        ],
+        "text": "登録販売者は都道府県知事の試験に合格し都道府県知事の登録を受ける資格であり、試験の受験に学歴・実務経験は不要である"
+      }
+    ],
+    "guideSlug": "pharmacist-vs-registered-seller"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "riyobi-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-barbers-act"
+        ],
+        "text": "理容とは頭髪の刈込、顔そり等の方法により容姿を整えることと理容師法で定義される"
+      },
+      {
+        "claimId": "riyobi-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-beauticians-act"
+        ],
+        "text": "美容とはパーマネントウエーブ、結髪、化粧等の方法により容姿を美しくすることと美容師法で定義される"
+      },
+      {
+        "claimId": "riyobi-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-barbers-act",
+          "mhlw-beauticians-act"
+        ],
+        "text": "顔そりは理容の定義に含まれるが、美容の定義には含まれていない"
+      },
+      {
+        "claimId": "riyobi-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-barber-beautician-notice-2015"
+        ],
+        "text": "平成27年7月17日付け健康局長通知に基づく現在の運用では、理容師がパーマネントウエーブを行うことや美容師がカッティングを行うことに制限はない"
+      },
+      {
+        "claimId": "riyobi-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-barbers-act",
+          "mhlw-beauticians-act"
+        ],
+        "text": "理容師は原則として理容所以外、美容師は原則として美容所以外の場所で業を行ってはならない"
+      },
+      {
+        "claimId": "riyobi-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-barbers-act",
+          "mhlw-beauticians-act"
+        ],
+        "text": "理容・美容のいずれも、免許を受けた者でなければ業として行うことができない"
+      },
+      {
+        "claimId": "riyobi-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-barbers-act",
+          "mhlw-beauticians-act"
+        ],
+        "text": "両資格とも、指定養成施設での修得を経て国家試験に合格し、厚生労働大臣の免許を受けるという取得ルートである"
+      }
+    ],
+    "guideSlug": "riyoshi-vs-biyoshi"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "care-vs-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-kaigo-hoken-act"
+        ],
+        "text": "介護支援専門員は介護保険法第7条第5項で、要介護者等からの相談に応じ、適切なサービスを利用できるよう市町村やサービス事業者、介護保険施設等との連絡調整等を行う者であって、介護支援専門員証の交付を受けたものと定義されている"
+      },
+      {
+        "claimId": "care-vs-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-care-manager"
+        ],
+        "text": "ケアマネジャーの中核業務はケアプラン（介護サービス計画）の作成であり、サービス担当者会議の運営・参加、定期訪問によるモニタリング、介護報酬の給付管理も担う"
+      },
+      {
+        "claimId": "care-vs-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-care-manager",
+          "fukushijinzai-welfare-jobs-guide"
+        ],
+        "text": "ケアマネジャーになるには、法定資格に基づく業務・相談援助業務・対人援助業務のいずれかで通算5年かつ900日以上の実務経験などを経て、介護支援専門員実務研修受講試験に合格し、実務研修を修了して都道府県の名簿に登録する必要があり、登録は5年ごとの更新制である"
+      },
+      {
+        "claimId": "care-vs-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-home-helper"
+        ],
+        "text": "訪問介護員は利用者の居宅を訪問し、食事・入浴・排泄等の身体介護と、調理・洗濯・掃除・買物などの家事支援を行う"
+      },
+      {
+        "claimId": "care-vs-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-home-helper",
+          "fukushijinzai-welfare-jobs-guide"
+        ],
+        "text": "訪問介護員として働くには介護職員初任者研修課程の修了が必要であり、無資格のまま居宅介護のホームヘルパーの仕事に就くことはできない"
+      },
+      {
+        "claimId": "care-vs-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-facility-care-worker"
+        ],
+        "text": "施設介護員は社会福祉施設で入所・通所する利用者の食事・入浴・排泄等の世話と自立支援を行い、入職にあたって学歴や資格は必要とされないが、24時間介護サービスを提供する施設では交替勤務や夜間勤務がある"
+      },
+      {
+        "claimId": "care-vs-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-care-worker-act",
+          "mhlw-aichi-care-training"
+        ],
+        "text": "介護福祉士は社会福祉士及び介護福祉士法に基づく国家資格であり、実務経験3年以上と指定された養成施設での6か月以上の課程修了などを経て国家試験の受験資格が得られ、実務者研修修了と実務経験3年の組合せもそのルートとして案内されている"
+      }
+    ],
+    "guideSlug": "care-manager-vs-home-helper-vs-facility-staff"
+  },
+  {
+    "claims": [
+      {
+        "claimId": "web-vs-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-web-designer"
+        ],
+        "text": "WebデザイナーはWebサイトの企画・デザイン等を行う職種であり、プログラム言語を用いた制作に関わる場合もあるが、仕事の中心はデザインである"
+      },
+      {
+        "claimId": "web-vs-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-graphic-designer"
+        ],
+        "text": "グラフィックデザイナーは広告、出版物、商品パッケージ、シンボルマーク、ロゴタイプなど主に平面のビジュアルデザインを行い、印刷物等を制作することが多い"
+      },
+      {
+        "claimId": "web-vs-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-web-director"
+        ],
+        "text": "WebディレクターはWebサイト構築の受注から企画・設計、制作進行、運用までの各段階で様々な仕事を指揮する「現場監督」の役割を担う"
+      },
+      {
+        "claimId": "web-vs-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-web-director"
+        ],
+        "text": "Webディレクターの業務には依頼主との打ち合わせ、スタッフやプログラマーへの制作指示、成果物のチェック、進捗の把握が含まれ、特にコスト・予算管理が重要である"
+      },
+      {
+        "claimId": "web-vs-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-web-designer"
+        ],
+        "text": "Webデザイナーは入職にあたり特に学歴や資格は必要とされないが、関連資格として厚生労働省の技能検定「ウェブデザイン技能士」がある"
+      },
+      {
+        "claimId": "web-vs-06",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-graphic-designer"
+        ],
+        "text": "グラフィックデザイナーは入職にあたり特に資格は必要とされないが、ビジュアル表現の技術や色彩理論、レイアウトを学び、ある程度の制作能力があることが必要とされる"
+      },
+      {
+        "claimId": "web-vs-07",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-web-director"
+        ],
+        "text": "Webディレクターは特に学歴や資格は必要とされないが、Webデザイナーやプログラマーとして実務経験を積んでからチームを指揮する立場となるのが一般的である"
+      }
+    ],
+    "guideSlug": "web-designer-vs-graphic-vs-director"
   }
 ]
