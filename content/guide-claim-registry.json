@@ -2630,5 +2630,176 @@
         "text": "公認心理師の法定の行為は、心理状態の観察・分析、本人と関係者への相談援助、心の健康に関する教育・情報提供の4つである"
       }
     ]
+  },
+  {
+    "guideSlug": "nurse-vs-assistant-nurse",
+    "claims": [
+      {
+        "claimId": "nurse2-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "看護師は厚生労働大臣の免許、准看護師は都道府県知事の免許を受け、准看護師の定義には医師・歯科医師又は看護師の指示を受けて行うことが明記されている"
+      },
+      {
+        "claimId": "nurse2-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "看護師国家試験は厚生労働大臣が、准看護師試験は都道府県知事が厚生労働大臣の定める基準に従って実施し、登録先も看護師籍（厚生労働省）と准看護師籍（都道府県）に分かれる"
+      },
+      {
+        "claimId": "nurse2-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-jobtag-nurse",
+          "mhlw-hokanpo-law"
+        ],
+        "text": "養成課程は看護師が3年または4年の専門教育、准看護師は2年の課程が入口である"
+      },
+      {
+        "claimId": "nurse2-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "准看護師は、免許後の実務3年以上、または高等学校等卒業と2年以上の修業により、看護師国家試験の受験資格を得られる"
+      },
+      {
+        "claimId": "nurse2-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-hokanpo-law"
+        ],
+        "text": "手順書による特定行為と特定行為研修は看護師だけの制度であり、准看護師にはない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "real-estate-agent-vs-appraiser",
+    "claims": [
+      {
+        "claimId": "estate-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-takken-act"
+        ],
+        "text": "宅地建物取引士の独占的な役割は重要事項説明と重要事項説明書・契約書面への記名であり、宅地建物取引業者には事務所等ごとに専任の宅地建物取引士の設置義務がある"
+      },
+      {
+        "claimId": "estate-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-real-estate-appraisal-act"
+        ],
+        "text": "不動産鑑定士の業務は不動産の鑑定評価（経済価値を判定し価額に表示すること）であり、不動産鑑定業者の業務に関しては鑑定士でない者は鑑定評価を行えない"
+      },
+      {
+        "claimId": "estate-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-takken-act"
+        ],
+        "text": "宅地建物取引士試験は都道府県知事が行い、登録には省令で定める期間以上の実務経験等が必要である"
+      },
+      {
+        "claimId": "estate-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-real-estate-appraisal-act"
+        ],
+        "text": "不動産鑑定士は土地鑑定委員会の試験（短答式・論文式）に加えて実務修習の修了と国土交通大臣の確認が必要で、国土交通省の名簿に登録する"
+      },
+      {
+        "claimId": "estate-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-real-estate-appraisal-act"
+        ],
+        "text": "鑑定評価書には、関与した不動産鑑定士が資格を表示して署名しなければならない"
+      }
+    ]
+  },
+  {
+    "guideSlug": "anma-hari-kyu-vs-judo-seifuku",
+    "claims": [
+      {
+        "claimId": "ahaki-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-ahaki-act",
+          "egov-judo-seifuku-act"
+        ],
+        "text": "あん摩マッサージ指圧師・はり師・きゅう師は1つの法律に置かれた3つの免許であり、柔道整復師は柔道整復師法に基づく単独の免許で、どちらも厚生労働大臣の免許による国家資格である"
+      },
+      {
+        "claimId": "ahaki-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "mhlw-judo-ryoyohi-shiryo",
+          "egov-ahaki-act"
+        ],
+        "text": "柔道整復の療養費の対象は外傷性が明らかな骨折・脱臼・打撲・捻挫・肉ばなれ等であり、あはき側は手技・はり・きゅうが免許ごとの業務である"
+      },
+      {
+        "claimId": "ahaki-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-ahaki-act",
+          "egov-judo-seifuku-act"
+        ],
+        "text": "脱臼・骨折の患部への施術は、あん摩マッサージ指圧師も柔道整復師も医師の同意が必要であり、柔道整復師には応急手当の例外がある"
+      },
+      {
+        "claimId": "ahaki-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-ahaki-act",
+          "egov-judo-seifuku-act"
+        ],
+        "text": "どちらの資格も、認定・指定の学校又は養成施設で3年以上学び、国家試験に合格して名簿への登録により免許を受ける"
+      },
+      {
+        "claimId": "ahaki-05",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-10-29",
+        "sourceIds": [
+          "egov-ahaki-act",
+          "egov-judo-seifuku-act"
+        ],
+        "text": "施術所の開設は両法とも開設後10日以内に都道府県知事への届出が必要で、広告できる事項と守秘義務も両法に定められている"
+      }
+    ]
   }
 ]
