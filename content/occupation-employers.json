@@ -5186,6 +5186,601 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "33",
+      "employers": [
+        {
+          "name": "海上保安庁",
+          "role": "潜水士",
+          "description": "巡視船艇の乗組員として治安の確保や海難救助等に従事した後、希望と適性に応じ潜水士など特殊任務のスペシャリストになる道がある。",
+          "source": {
+            "title": "採用情報 - 海上保安学校学生",
+            "url": "https://www.kaiho.mlit.go.jp/01kanku/recruit/rec_jcgs.html",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "海洋建設株式会社",
+          "role": "潜水士",
+          "description": "潜水調査をメインに海洋生物や沿岸・海域の環境調査、人工魚礁のモニタリングを行い、潜水士の資格を活かして海の環境づくりに携わる。",
+          "source": {
+            "title": "海洋建設(株)水産環境研究所",
+            "url": "https://sites.google.com/kaiyoh.com/recruit/%E3%83%AA%E3%82%AF%E3%83%AB%E3%83%BC%E3%83%88",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "54",
+      "employers": [
+        {
+          "name": "株式会社ベルク",
+          "role": "店長",
+          "description": "食品スーパーマーケット・チェーンの店舗で店長を務め、店舗全体の責任者として、一からその基盤を築いていく役割を担っている。",
+          "source": {
+            "title": "社員紹介 | INTERVIEW | 採用情報 | ベルク",
+            "url": "https://recruit.belc.jp/employment/interview/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "73",
+      "employers": [
+        {
+          "name": "釜石ガス株式会社",
+          "role": "検針員",
+          "description": "ハンディターミナルによるガスメーターの検針を担当する。釜石市と大槌町の供給区域で1日あたり約200〜300件を検針する。",
+          "source": {
+            "title": "ガスメータ検針員大募集",
+            "url": "https://www.kamaishigas.co.jp/pdf/info_202601_001.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "81",
+      "employers": [
+        {
+          "name": "株式会社ＦＰパートナー",
+          "role": "ファイナンシャルプランナー（FP社員）",
+          "description": "無料FP相談サイト「マネードクター」を運営する会社で、生命保険・損害保険などの金融商品の販売とアフターサービスを行うファイナンシャルプランナーを募集している。",
+          "source": {
+            "title": "FP採用 | ファイナンシャルプランナーの転職・求人、あなたらしく働くならマネードクター（マネドク）",
+            "url": "https://fp-moneydoctor.com/lp/recruit_fp/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "129",
+      "employers": [
+        {
+          "name": "宇都宮市",
+          "role": "生活保護ケースワーク業務",
+          "description": "市役所本庁舎の生活福祉課で、生活保護の被保護者との面接・相談、生活の保障や自立助長の援助、それらに付随する事務処理を担う会計年度任用職員の募集。",
+          "source": {
+            "title": "令和８年度会計年度任用職員（生活保護ケースワーク業務）を募集します",
+            "url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/036/466/aaaaaaaaa.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "136",
+      "employers": [
+        {
+          "name": "株式会社トーカイ",
+          "role": "福祉用具専門相談員",
+          "description": "浜松支店で、利用者の希望や心身の状況・環境を踏まえた福祉用具貸与計画の作成、選定の援助・相談・情報提供、納品・調整・使用方法の説明、訪問による使用状況確認を行う。",
+          "source": {
+            "title": "掲示用重要事項①",
+            "url": "https://www.tokai-corp.com/silver/wp_silver/wp-content/uploads/2026/04/2277100448_20260708.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "161",
+      "employers": [
+        {
+          "name": "社会医療法人財団白十字会 白十字病院",
+          "role": "細胞検査士",
+          "description": "臨床検査技術部で細胞診検査を担当し、細胞検査士の認定資格を持つ技師が顕微鏡で細胞を観察して良性・悪性を判定する。",
+          "source": {
+            "title": "細胞診検査",
+            "url": "https://www.fukuoka.hakujyujikai.or.jp/storage/uploads/files/pamphlet05_vol01.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "208",
+      "employers": [
+        {
+          "name": "株式会社インプレス",
+          "role": "編集職",
+          "description": "専門テーマの書籍や雑誌の企画・取材・編集・校正・進行管理を行う編集職。パソコン入門書『できるシリーズ』の企画と編集などを担当する。",
+          "source": {
+            "title": "採用情報-編集職 - 株式会社インプレス",
+            "url": "https://www.impress.co.jp/recruit-01editor.html",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社講談社",
+          "role": "編集",
+          "description": "学芸・学術分野の編集として、『講談社現代新書』『ブルーバックス』『講談社学術文庫』など書籍シリーズや単行本の企画・編集を行う。",
+          "source": {
+            "title": "お仕事紹介｜講談社採用ポータルサイト",
+            "url": "https://recruit.kodansha.co.jp/work/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "209",
+      "employers": [
+        {
+          "name": "株式会社マガジンハウス",
+          "role": "編集者",
+          "description": "『BRUTUS』編集部で特集の企画を深掘りし、取材・撮影から入稿・校正、発売時の告知素材の手配まで雑誌づくりを担う編集者の仕事。",
+          "source": {
+            "title": "雑誌ができるまで | MESSAGE | マガジンハウス　新卒採用2027",
+            "url": "https://s.magazineworld.jp/info/recruit/2027/work_flow01.html",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社小学館",
+          "role": "雑誌編集者",
+          "description": "ライフスタイル誌や週刊誌、ファッション誌などの編集を担う雑誌編集者。企画や取材を通じて誌面を作り、書籍を担当することもある。",
+          "source": {
+            "title": "よくある質問｜採用サイト｜小学館",
+            "url": "https://jinji.shogakukan.co.jp/company/faq_editor/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "215",
+      "employers": [
+        {
+          "name": "日本テレビ放送網株式会社",
+          "role": "中継ディレクター",
+          "description": "スポーツ番組や中継を担い、中継ディレクターが自らカメラのスイッチングを行って選手やスポーツの魅力を最大限に引き出す仕事。",
+          "source": {
+            "title": "日テレの仕事 | 日テレ 採用サイト",
+            "url": "https://www.ntv.co.jp/jinji/works/introduction/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社TBSテレビ",
+          "role": "ディレクター",
+          "description": "情報制作局で『THE TIME,』や『ひるおび』など生放送の情報番組を制作する仕事。若いディレクターが企画を通す機会もある。",
+          "source": {
+            "title": "仕事内容の紹介｜TBSテレビ：TBS RECRUIT",
+            "url": "https://www.tbs.co.jp/job/work/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "224",
+      "employers": [
+        {
+          "name": "公益財団法人関西盲導犬協会",
+          "role": "訓練部／盲導犬訓練担当職員",
+          "description": "当協会で育成する候補犬を訓練し、盲導犬訓練士や盲導犬歩行指導員を目指す。主に犬の飼育管理、盲導犬の訓練、視覚障がい者への歩行・生活指導を行う。",
+          "source": {
+            "title": "正職員（訓練部）の募集について",
+            "url": "https://kansai-guidedog.jp/report/33ac6e3af92d7224ed1246c85b299dd8fc4da4be.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "公益財団法人日本盲導犬協会",
+          "role": "盲導犬訓練士（候補者）",
+          "description": "盲導犬訓練士学校に所属し、協会の理念と方法で盲導犬の候補犬訓練ができる技術と知識を習得する。候補犬の飼育・運動・清掃等の犬舎業務も行う。",
+          "source": {
+            "title": "盲導犬訓練士（候補者）募集要項（2025年度採用情報）",
+            "url": "https://files.microcms-assets.io/assets/6b440ad22cc949f889b7e133bd8cb4be/404cff0f0e8841fa819a90a9c16ffe25/2025%E5%B9%B4%E5%BA%A6%E6%8E%A1%E7%94%A8%E6%83%85%E5%A0%B1.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "232",
+      "employers": [
+        {
+          "name": "日天株式会社",
+          "role": "プロジェクト開発部・施工管理部",
+          "description": "太陽光発電設備の施工管理を担当。導入相談時に屋根や敷地の現地調査を行い、設置可能な面積や容量を確認し、その内容をもとに見積書や図面を作成して最適な施工プランを検討する。",
+          "source": {
+            "title": "日天株式会社 採用サイト 2026｜未来を照らすのは、あなたの一歩",
+            "url": "https://recruit.nitten-solar.co.jp/recruit/mid-career/construction-manager",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "234",
+      "employers": [
+        {
+          "name": "オリックス・リニューアブルエナジー・マネジメント株式会社",
+          "role": "電気主任技術者",
+          "description": "全国各地で電気主任技術者を募集。太陽光発電所・蓄電所の運営・管理業務（O&M）全般を担当し、発電所の規模によって募集要件が異なる。",
+          "source": {
+            "title": "オリックス・リニューアブルエナジー・マネジメント株式会社 会社案内パンフレット",
+            "url": "https://www.orix.co.jp/orem/company/pdf/ORIX_Renewable_Energy_Management_Corporation_Pamphlet.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "236",
+      "employers": [
+        {
+          "name": "株式会社MonotaRO",
+          "role": "商品開発スペシャリスト（化学製品カテゴリー）",
+          "description": "BtoBオンラインストアを運営し、化学系プライベートブランド商品の商品企画や、製品化に向けた性能評価を行う商品開発スペシャリストを募集している。",
+          "source": {
+            "title": "商品開発スペシャリスト（化学製品カテゴリー） | 株式会社MonotaRO",
+            "url": "https://hrmos.co/pages/monotaro/jobs/701B0110_001",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社メロンブックス",
+          "role": "IPコンテンツ・オリジナルグッズ企画開発プロデューサー（経験者募集）",
+          "description": "店舗・通販の購買データを背景に、IPを活用したオリジナルグッズの企画・開発からイベントプロデュースまでを担うプロデューサーを募集している。",
+          "source": {
+            "title": "プロダクトづくりのノウハウを、市場規模拡大中の「IPビジネス」へ。 メロンブックスで、あなたの“企画力×好き”をヒット商品に変える。 | 株式会社メロンブックス",
+            "url": "https://hrmos.co/pages/melonbooks/jobs/C2KT0",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "237",
+      "employers": [
+        {
+          "name": "株式会社viviON",
+          "role": "EC運営担当",
+          "description": "キャラクターグッズのセカンダリーECサイト「viviON BLUE」で、商品登録・更新や在庫管理、サイト内情報の更新などを担うEC運営担当を募集している。",
+          "source": {
+            "title": "キャラクターグッズECの運営・企画・改善を担うEC運営担当 | 株式会社viviON",
+            "url": "https://hrmos.co/pages/vivion-recruit/jobs/0000063",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "247",
+      "employers": [
+        {
+          "name": "Oishii Farm株式会社",
+          "role": "栽培管理者",
+          "description": "独自の植物工場でいちごを生産する同社の公式採用ページで、プラントサイエンス（植物研究・栽培管理）部門の栽培管理者を募集している。",
+          "source": {
+            "title": "Oishii Farm 募集職種一覧 / Oishii Farm株式会社",
+            "url": "https://open.talentio.com/r/1/c/oishii_farm/homes/4510",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "256",
+      "employers": [
+        {
+          "name": "彦島製錬株式会社",
+          "role": "工務課 電気係（非鉄金属製錬工場等での電気計装設備の企画・設計/保全保守業務担当）",
+          "description": "亜鉛製錬工場等の新規設備設置・増設・改造における電気計装設備の設計業務や補修繕業務を、協力会社と協働しながら担当する。",
+          "source": {
+            "title": "三井金属グループ 求人一覧",
+            "url": "https://hrmos.co/pages/mitsui-kinzoku/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "三井金属株式会社",
+          "role": "竹原製煉所 設備技術課 工場設備エンジニア（機械系）",
+          "description": "竹原製煉所で工場設備の機械担当として生産設備の点検・保守・修理・整備や改善業務に従事し、工事の発注や施工管理も担う。",
+          "source": {
+            "title": "三井金属グループ 求人一覧",
+            "url": "https://hrmos.co/pages/mitsui-kinzoku/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "263",
+      "employers": [
+        {
+          "name": "株式会社イトーキ",
+          "role": "組立技術者／滋賀",
+          "description": "設備機器製品（自動倉庫、セキュリティ機器など）の電制および機構部品の組み立てを担い、設計図面や作業手順書を確認しながら組み立てる。",
+          "source": {
+            "title": "株式会社イトーキ",
+            "url": "https://hrmos.co/pages/itokisaiyo/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "267",
+      "employers": [
+        {
+          "name": "株式会社椿本チエイン",
+          "role": "【埼玉】搬送設備・機器のフィールドサービス",
+          "description": "マテハンシステムや自動化設備の保守点検・メンテナンス業務全般を担当し、保守点検計画の策定や協力会社との調整、現場管理を行う。",
+          "source": {
+            "title": "株式会社椿本チエイン",
+            "url": "https://hrmos.co/pages/tsubakimoto/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "269",
+      "employers": [
+        {
+          "name": "株式会社ニコン",
+          "role": "【半導体装置事業部】半導体露光装置及び計測装置の構想設計・開発エンジニア",
+          "description": "半導体露光装置及び計測装置の構想設計および開発業務を担当し、装置全体の仕様や設計方針を定め、機械・電気・ソフトウェア設計に指針を示す役割を担う。",
+          "source": {
+            "title": "職種検索|株式会社ニコン",
+            "url": "https://job.axol.jp/qd/c/nikon/job/search?page=1&searchKey=9j0XcNstLtSopqwiKkveS",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "273",
+      "employers": [
+        {
+          "name": "パナソニック マーケティングジャパン株式会社",
+          "role": "サービスエンジニア",
+          "description": "お客様が購入されたパナソニック製品の訪問修理を行い、AV家電から白物家電まで幅広い商品を扱う。社内勉強会で修理技術や最新の商品知識も学べる。",
+          "source": {
+            "title": "パナソニック マーケティングジャパン｜パート・契約社員・業務委託採用情報｜サービスエンジニアなど",
+            "url": "https://hitomgr.jp/kz2v/recruit/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "274",
+      "employers": [
+        {
+          "name": "日揮ホールディングス株式会社",
+          "role": "配管",
+          "description": "プラント内の機器をつなぐ配管やプラント全体の配置を決めるレイアウト設計を担当し、配管の強度解析や材料・機材の選定も行う。",
+          "source": {
+            "title": "新卒採用情報サイト | 日揮ホールディングス株式会社（JGC HOLDINGS CORPORATION）",
+            "url": "https://www.jgc.com/saiyo/work-person/job.html",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "東洋エンジニアリング株式会社",
+          "role": "技術系総合職",
+          "description": "石油化学・化学・ガス・エネルギーなどの各種プラントの構築に向け、基本設計や詳細設計（機器、配管、制御、電気等）、調達、建設工事まで一連の業務を遂行する。",
+          "source": {
+            "title": "RECRUIT INFORMATION | 東洋エンジニアリング",
+            "url": "https://recruit.toyo-eng.com/information/recruitinformation/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "286",
+      "employers": [
+        {
+          "name": "日清食品株式会社",
+          "role": "研究開発",
+          "description": "即席麺、即席ライス、低温食品等の製品開発に携わり、麺、スープ、具材、包材の各分野の担当者が協力して一つの製品を作り上げ、新規技術も創出する。",
+          "source": {
+            "title": "職種紹介 | 新卒採用サイト | 日清食品株式会社",
+            "url": "https://www.nissin.com/jp/recruit/nissinfoods/work/?course=corp",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "297",
+      "employers": [
+        {
+          "name": "日本原子力研究開発機構",
+          "role": "Engineering staff",
+          "description": "核不拡散・核セキュリティ分野で、中性子・ガンマ線の検出・測定技術や核フォレンジクス等の技術開発を担う技術系職員を募集している。",
+          "source": {
+            "title": "Japan Atomic Energy Agency : Recruitment",
+            "url": "https://www.jaea.go.jp/english/news/recruitment/career/461/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "299",
+      "employers": [
+        {
+          "name": "中外製薬株式会社",
+          "role": "タンパク質科学に関連する質量分析の専門性を有する研究員",
+          "description": "高分解能LC-MS/MS等を用いてタンパク質やリガンドの化学構造解析や分子間相互作用解析を行い、新規分析法の開発も担う研究員を募集している。",
+          "source": {
+            "title": "タンパク質科学に関連する質量分析の専門性を有する研究員 / Research Scientist - Protein Science/Mass Spectrometry | 研究本部 / Research Division | 職種詳細 | 中外製薬株式会社",
+            "url": "https://js03.jposting.net/chugaicareer/u/job.phtml?job_code=316",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "協和キリン株式会社",
+          "role": "クオリティサイエンス職",
+          "description": "原料・資材の受入試験、製造工程のモニタリング、製品の品質評価や安定性評価などを行い、分析／データ解析の専門家として活躍が期待される職種である。",
+          "source": {
+            "title": "職種紹介｜採用情報サイト｜協和キリン株式会社",
+            "url": "https://www.kyowakirin.co.jp/careers/recruit/work/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "305",
+      "employers": [
+        {
+          "name": "協和キリン株式会社",
+          "role": "製薬技術研究職：CMC開発・製剤・生産プロセス",
+          "description": "抗体医薬品をはじめとするバイオ医薬品の生産技術を追求し、遺伝子細胞療法の製造技術の研究にも関与する、CMC開発・製剤・生産プロセスの研究職である。",
+          "source": {
+            "title": "職種紹介｜採用情報サイト｜協和キリン株式会社",
+            "url": "https://www.kyowakirin.co.jp/careers/recruit/work/",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "中外製薬株式会社",
+          "role": "創薬におけるバイオロジクス分析研究員",
+          "description": "新規バイオロジクス開発や新規創薬技術開発において、開発分子の分析評価と新規分析技術の確立を担うバイオロジクス分析研究員を募集している。",
+          "source": {
+            "title": "創薬におけるバイオロジクス分析研究員 / Research Scientist - Biologics Analysis for Drug Discovery | 研究本部 / Research Division | 職種詳細 | 中外製薬株式会社",
+            "url": "https://js03.jposting.net/chugaicareer/u/job.phtml?job_code=213",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "306",
+      "employers": [
+        {
+          "name": "宇宙航空研究開発機構",
+          "role": "技術系職種",
+          "description": "技術系職種には人工衛星やロケットの開発・運用、宇宙環境利用、基盤的な技術研究などがあたり、JAXA職員の約70％が技術系に属している。",
+          "source": {
+            "title": "JAXAの求める人物像とキャリアパスとは | ファン!ファン!JAXA!",
+            "url": "https://fanfun.jaxa.jp/jaxas/no086/03.html",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "インターステラテクノロジズ株式会社",
+          "role": "開発部",
+          "description": "小型人工衛星打上げロケット「ZERO」の打上げや量産化に向け、設計・生産技術・試験・品質管理など開発の全プロセスに取り組む開発部を募集している。",
+          "source": {
+            "title": "CAREERS | インターステラテクノロジズ株式会社 – Interstellar Technologies",
+            "url": "https://www.istellartech.com/careers/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "307",
+      "employers": [
+        {
+          "name": "三菱重工業株式会社",
+          "role": "航空エンジン／【愛知】民間航空機向けエンジン（燃焼器・タービン等）／先行開発・設計 および開発・量産・運用支援",
+          "description": "次世代機向け環境適合型燃焼器・高性能タービンを中心に製品開発・技術開発を行い、民間航空エンジン製品の設計や要素技術開発、先行設計開発を担当する。",
+          "source": {
+            "title": "三菱重工業株式会社 航空エンジン の求人一覧",
+            "url": "https://hrmos.co/pages/mhi/jobs?category=1892751257056817154",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "135",
+      "employers": [
+        {
+          "name": "国立大学法人東海国立大学機構",
+          "role": "学生支援本部キャリアサポートセンター相談員（契約職員）",
+          "description": "留学生や海外留学経験学生へのキャリア教育・就職支援、学生からのキャリア・就職に関する相談対応、全学の就職やキャリア支援イベントの運営などを担う。",
+          "source": {
+            "title": "名古屋大学学生支援本部キャリアサポートセンター相談員（契約職員）の募集について",
+            "url": "https://www.NAGOYA-U.AC.jp/employment/upload_images/20241126_career.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "150",
+      "employers": [
+        {
+          "name": "国際連合",
+          "role": "Young Professionals Programme",
+          "description": "国連事務局での国際公務員としてのキャリアについて学ぶ若手専門職プログラムとして紹介され、国連事務局の多様な人材採用の一環に位置づけられている。",
+          "source": {
+            "title": "UN Careers",
+            "url": "https://careers.un.org/lbw/home.aspx?viewtype=GP",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "国連女性機関（UN Women）",
+          "role": "Strategic Partnership Advisor",
+          "description": "外務省の国際機関幹部候補職員派遣の募集ポストで、パートナーシップ拡大・強化や資源動員に関する戦略的アドバイス、組織的指導、技術的リーダーシップ等が求められる。",
+          "source": {
+            "title": "2026 年度（令和 8 年度） 国際機関幹部候補職員派遣：募集要項 （国連女性機関（UN Women）戦略的パートナーシップ部）",
+            "url": "https://www.mofa-irc.go.jp/dl-data/MidCareer2026_UNWomen_Announcement.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "324",
+      "employers": [
+        {
+          "name": "株式会社AbemaTV",
+          "role": "映像ディレクター",
+          "description": "ABEMAで配信される番組コンテンツのPR映像・OP映像制作を中心に、企画考案や編集構成の作成、撮影ディレクション、編集から納品までを担当する。",
+          "source": {
+            "title": "【VX Studio】映像ディレクター 映像のチカラで自社サービスの成長を担う映像ディレクター募集！ | サイバーエージェントグループ",
+            "url": "https://hrmos.co/pages/cyberagent-group/jobs/0000357",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "AOI Pro. Inc.",
+          "role": "プロダクションマネージャー",
+          "description": "制作部でCMなどの映像制作に携わり、プロダクションマネージャーとして企画から納品までの制作進行を仕切り、スタッフ調整や予算管理などを担う。",
+          "source": {
+            "title": "入社後3カ年計画 | 新卒採用2027 |AOI Pro. Inc. 採用サイト",
+            "url": "https://recruit.aoi-pro.com/graduate/plan/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
