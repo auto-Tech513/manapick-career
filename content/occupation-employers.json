@@ -4706,6 +4706,486 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "47",
+      "employers": [
+        {
+          "name": "株式会社日立ビルシステムエンジニアリング",
+          "role": "施工技能者",
+          "description": "エレベーター・エスカレーターなどの昇降機やビル設備を設置・更新・維持管理する施工技能者として、都市の安全で快適なインフラを支える。",
+          "source": {
+            "title": "採用情報：株式会社 日立ビルシステムエンジニアリング",
+            "url": "https://www.hitachi-buildingsystems-eng.co.jp/recruit/index.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "61",
+      "employers": [
+        {
+          "name": "TOPPAN",
+          "role": "営業企画職",
+          "description": "企画提案型の営業企画職として、クライアントの課題分析から戦略立案、実行までを一気通貫で担う。パッケージやマーケティングDXなど分野別の職種がある。",
+          "source": {
+            "title": "営業企画職｜職種紹介｜新卒採用サイト｜TOPPANグループサイト",
+            "url": "https://www.holdings.toppan.com/ja/recruit/shinsotsu/jobguide/producer.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "66",
+      "employers": [
+        {
+          "name": "株式会社ケーズホールディングス",
+          "role": "販売職",
+          "description": "ケーズデンキの各店舗で、家電製品や携帯電話などの販売職として販売・接客を行い、商品整理などの関連業務も担当する。",
+          "source": {
+            "title": "ケーズホールディングス新卒採用　2027年卒向け",
+            "url": "https://www.ksdenki-recruit.com/kshd/newgrad-detail.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "74",
+      "employers": [
+        {
+          "name": "株式会社セブン-イレブン・ジャパン",
+          "role": "オペレーション・フィールド・カウンセラー（OFC）",
+          "description": "お店ごとに配置される店舗経営相談員（OFC）として加盟店を訪問し、品揃えや鮮度管理など基本4原則に沿って情報提供やアドバイスを行い、経営をサポートする。",
+          "source": {
+            "title": "私たちにできること",
+            "url": "https://www.sej.co.jp/library/csr/pdf/csr/mindbook/2018_2019/22_27.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "97",
+      "employers": [
+        {
+          "name": "株式会社JR西日本メンテック",
+          "role": "車両清掃（鉄道関連事業）",
+          "description": "JR西日本グループの一員として、鉄道に関連する車両・駅の清掃や車両基地内での運転などを担当し、安全・安心・快適な空間を提供する。",
+          "source": {
+            "title": "株式会社JR西日本メンテック - TOPページ",
+            "url": "https://j-maintec.co.jp/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "148",
+      "employers": [
+        {
+          "name": "国税庁",
+          "role": "税務職員",
+          "description": "税務職員採用試験で採用され、税務大学校での普通科研修（1年）を経て税務署に配属。国税に関する申告・手続の相談や申告指導、税務調査、滞納者への納付指導・督促などを担う。",
+          "source": {
+            "title": "国家公務員 税務職員採用試験",
+            "url": "https://www.nta.go.jp/about/organization/sendai/recruitment/zeimushokuin/pdf/leaflet_r05.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "149",
+      "employers": [
+        {
+          "name": "外務省",
+          "role": "外務省職員（総合職・専門職員・一般職）",
+          "description": "本省と在外公館に勤務する。総合職は多様なポストを経験し管理職・幹部をめざし、専門職員は語学力と分野の専門性を生かし、一般職は会計・文書管理・領事事務などを担う。",
+          "source": {
+            "title": "外交青書 2024 ｜ 外務省における採用情報 ｜ 外務省",
+            "url": "https://www.mofa.go.jp/mofaj/gaiko/bluebook/2024/html/data05.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "183",
+      "employers": [
+        {
+          "name": "独立行政法人国立文化財機構",
+          "role": "研究職員（主任研究員又は研究員）",
+          "description": "東京国立博物館に勤務する研究職員として、文化財に関する調査・研究、収集、保管、管理、展示、公開、修理、教育普及などの業務を担う。",
+          "source": {
+            "title": "研究職員採用（東京国立博物館_東洋考古）の公募について",
+            "url": "https://www.tnm.jp/uploads/r_db/recruit/240701saiyo_toyokouko_1349_404_1.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "200",
+      "employers": [
+        {
+          "name": "矢吹海運株式会社",
+          "role": "通関士",
+          "description": "AEO認定通関業者の通関士として、輸出入に関する専門知識を生かし、最新の法令改正を踏まえた実践的なアドバイスを顧客へ直接提供する。",
+          "source": {
+            "title": "通関コンサルティング サービスのご案内",
+            "url": "https://www.yabuki-kaiun.co.jp/pdf/Customs Consulting.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "213",
+      "employers": [
+        {
+          "name": "日本放送協会",
+          "role": "記者",
+          "description": "NHKの新卒採用で「仕事紹介」に掲げられる職種の一つ。職員紹介では現役の記者が「早く正確に一報を出す」仕事ぶりを語っている。",
+          "source": {
+            "title": "新卒採用情報 | NHK",
+            "url": "https://www.nhk.or.jp/saiyo/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "231",
+      "employers": [
+        {
+          "name": "ファナック株式会社",
+          "role": "フィールドエンジニア",
+          "description": "顧客の工場に出張し、工作機械の保守やCNCなどFA商品の修理、産業用ロボットの点検・修理、ロボドリルの据え付けを行う。",
+          "source": {
+            "title": "社員インタビュー T.T. | FANUC 新卒採用サイト",
+            "url": "https://www.fanuc.co.jp/ja/employ/recruit/interview/tt/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "254",
+      "employers": [
+        {
+          "name": "湯本電機株式会社",
+          "role": "マシンオペレーター",
+          "description": "マシニングセンタや旋盤加工機を操作し、加工の段取りや加工プログラムの作成、納期・加工条件の打合せを行う。",
+          "source": {
+            "title": "マシニングオペレーター採用｜「進化し続けるマチコウバで働く。」湯本電機株式会社の採用サイト",
+            "url": "https://recruit.yumoto.jp/position/machine-operator",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "258",
+      "employers": [
+        {
+          "name": "東亜非破壊検査株式会社",
+          "role": "検査員",
+          "description": "中途採用で入社した社員が検査員として工場の定修業務に従事し、浸透探傷試験（PT）レベル2の一次試験も受験している。",
+          "source": {
+            "title": "2025年度入社　北九州営業所　T | 新入社員 | 東亜非破壊検査株式会社　Blog | 東亜非破壊検査株式会社",
+            "url": "https://www.toandi.co.jp/blog/003/entry-665.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "270",
+      "employers": [
+        {
+          "name": "株式会社トーエネック",
+          "role": "技術系総合職（電気設備工事）",
+          "description": "新設ビルの電気設備工事で施工管理を担当し、図面作成や顧客・協力業者との打合せ、現場の進捗管理などを行う。",
+          "source": {
+            "title": "To Energy Engineering Create",
+            "url": "https://www.toenec.co.jp/docs/recruit_pamphlet_202601.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "271",
+      "employers": [
+        {
+          "name": "ファナック株式会社",
+          "role": "FA ハードウェア研究開発本部",
+          "description": "CNCやロボットコントローラのハードウェアなどの研究開発を行い、電気・電子設計を中心に担当する。",
+          "source": {
+            "title": "職種紹介 | FANUC 新卒採用サイト",
+            "url": "https://www.fanuc.co.jp/ja/employ/recruit/job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "272",
+      "employers": [
+        {
+          "name": "株式会社ミライト・ワン",
+          "role": "通信インフラエンジニア",
+          "description": "埼玉県エリアで通信工事の設計グループリーダーを務め、通信回線の復旧や電線類地中化工事の設計、工事の進捗管理、現場調査を担う。",
+          "source": {
+            "title": "Jumpei.K | 先輩社員を知る - WORK & PEOPLE | 新卒採用サイト | ミライト・ワン",
+            "url": "https://rect.mirait-one.com/work-people/interview06.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "292",
+      "employers": [
+        {
+          "name": "ファナック株式会社",
+          "role": "製造（生産管理）",
+          "description": "製造部門で、生産における無駄をなくし利益を最大化させるための生産計画の立案や実行を担当する職種。",
+          "source": {
+            "title": "職種紹介 | FANUC 新卒採用サイト",
+            "url": "https://www.fanuc.co.jp/ja/employ/recruit/job/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "295",
+      "employers": [
+        {
+          "name": "ENEOS株式会社",
+          "role": "運転員",
+          "description": "製油所の担当エリアを監視・点検し、装置の稼働状態を計器や音、熱などでチェックして、安全・正常な運転を管理する。",
+          "source": {
+            "title": "ENEOS高専高校早わかりハンドブック",
+            "url": "https://www.eneos.co.jp/highschool/recruit/pdf/pamphlet_school.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "298",
+      "employers": [
+        {
+          "name": "株式会社JERA",
+          "role": "発電プラントのオペレーター（担当～課長代理）",
+          "description": "火力発電設備の運転監視・操作や機器機能テスト、系統の縁切り操作、巡視点検、設備管理、発災時の初動対応を担う。",
+          "source": {
+            "title": "株式会社JERA",
+            "url": "https://hrmos.co/pages/jera/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "507",
+      "employers": [
+        {
+          "name": "イオスエンジニアリング＆サービス株式会社",
+          "role": "Maintenance and Inspection of Wind Turbines",
+          "description": "風車と受変電設備の定期点検・予防保全を担い、避雷針やブレード、タワーの点検、超音波探傷などの状態監視保全を行う。",
+          "source": {
+            "title": "Maintenance and Inspection of Wind Turbines | Business | Eos Engineering & Service Co., Ltd.",
+            "url": "https://eos-es.co.jp/en/business/maintenance.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "312",
+      "employers": [
+        {
+          "name": "株式会社宇部情報システム",
+          "role": "自社開発パッケージソフトのシステムエンジニア(東京)",
+          "description": "自社製品システム「社宅管理システム 借上くん」について、Fit＆Gapからカスタマイズ、設計・実装・テスト、運用保守までを担当する。",
+          "source": {
+            "title": "【東京】自社開発パッケージソフトのシステムエンジニア | 株式会社宇部情報システム",
+            "url": "https://hrmos.co/pages/uis/jobs/0000224-3",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "313",
+      "employers": [
+        {
+          "name": "株式会社サイバーエージェント",
+          "role": "【メディア事業部】Flutterエンジニア",
+          "description": "メディア事業のWINTICKET等でFlutterを用いたアプリ開発を行うポジションで、現在はWINTICKETにてFlutterエンジニアを募集している。",
+          "source": {
+            "title": "【メディア事業部】Flutterエンジニア | サイバーエージェントグループ",
+            "url": "https://hrmos.co/pages/cyberagent-group/jobs/0000515",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "314",
+      "employers": [
+        {
+          "name": "CTCテクノロジー株式会社",
+          "role": "AS26-12-01_【即戦力】マルチクラウド×フルスタックインフラエンジニア ― 提案から構築まで一気通貫",
+          "description": "大手顧客のITインフラ基盤プロジェクトをリードし、クラウド・オンプレ・MWの設計・構築や運用設計・引き渡しを担当する。",
+          "source": {
+            "title": "AS26-12-01_【即戦力】マルチクラウド×フルスタックインフラエンジニア ― 提案から構築まで一気通貫 | CTCテクノロジー株式会社",
+            "url": "https://hrmos.co/pages/ctct/jobs/AS26-12-01",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "318",
+      "employers": [
+        {
+          "name": "株式会社NTTドコモ",
+          "role": "プロジェクトマネージャー",
+          "description": "情報システム部で、AWSを使ったサービス開発・運用を担い、要件定義から設計、試験、リリースや保守まで関わる。",
+          "source": {
+            "title": "プロジェクトマネージャー 情報システム部 | キャリア採用 | NTTドコモ採用",
+            "url": "https://information.nttdocomo-fresh.jp/career/position/planning/ITP006-2025.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "400",
+      "employers": [
+        {
+          "name": "ベリーベスト法律事務所",
+          "role": "パラリーガル（法律事務職員）",
+          "description": "お客様のお悩みのヒアリング、裁判書類の作成補助、リーガルリサーチのサポートなど幅広い業務に携わり、弁護士と連携してサービスを提供する。",
+          "source": {
+            "title": "パラリーガル（法律事務職員）の採用・求人｜ベリーベスト法律事務所",
+            "url": "https://www.vbest.jp/recruit/staff/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "401",
+      "employers": [
+        {
+          "name": "弁護士法人大江橋法律事務所",
+          "role": "弁護士秘書",
+          "description": "担当弁護士の秘書業務全般として電話対応、スケジュール調整、会議アレンジ、出張手配・精算、資料整理や請求書作成、法律事務の補助を行う。",
+          "source": {
+            "title": "募集要項（弁護士秘書）",
+            "url": "https://www.ohebashi.com/jp/recruit/532c35c4e6c1a184f4b437b7855871dab30918f6.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "419",
+      "employers": [
+        {
+          "name": "LINE WORKS株式会社",
+          "role": "広報・PR",
+          "description": "同社を主語としたコーポレート広報を担い、広報戦略の設計・推進、メディアリレーション構築、プレスリリースの企画・作成・配信などを行う。",
+          "source": {
+            "title": "LINE WORKS株式会社",
+            "url": "https://hrmos.co/pages/line-works/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社ブシロード",
+          "role": "広報・進行管理/ブシロードクリエイティブ（正社員・契約社員）",
+          "description": "ブシロードクリエイティブで広報担当を募集し、商品プロモーション、SNS・自社HPの運用、プレスリリース作成や制作スケジュール管理を行う。",
+          "source": {
+            "title": "広報・進行管理/ブシロードクリエイティブ（正社員・契約社員） | 株式会社ブシロード",
+            "url": "https://hrmos.co/pages/bushiroad/jobs/0000281",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "421",
+      "employers": [
+        {
+          "name": "楽天グループ株式会社",
+          "role": "グループコンプライアンス統括部 法務部 コーポレート法務課：法務メンバー",
+          "description": "法務部で楽天市場や楽天トラベルなど幅広いサービスに関する法的相談や契約対応、新サービスのローンチ、買収・組織再編を法的検討・提案で支援する。",
+          "source": {
+            "title": "Rakutenのグループコンプライアンス統括部　法務部　コーポレート法務課：法務メンバーの内容",
+            "url": "https://japan-job-jp.rakuten.careers/%e3%82%b8%e3%83%a7%e3%83%96/%e6%9d%b1%e4%ba%ac%e9%83%bb/%e3%82%af%e3%83%ab%e3%83%bc%e3%83%95%e3%82%b3%e3%83%b3%e3%83%95%e3%83%a9%e3%82%a4%e3%82%a2%e3%83%b3%e3%82%b9%e7%b5%b1%e6%8b%ac%e9%83%a8-%e6%b3%95%e5%8b%99%e9%83%a8-%e3%82%b3%e3%83%bc%e3%83%9b%e3%83%ac%e3%83%bc%e3%83%88%e6%b3%95%e5%8b%99%e8%aa%b2-%e6%b3%95%e5%8b%99%e3%83%a1%e3%83%b3%e3%83%8f%e3%83%bc/41927/102143725232",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "国立研究開発法人科学技術振興機構",
+          "role": "主任専門員（法務担当）",
+          "description": "法務・コンプライアンス部で内部部署からの法務相談への対応、契約書等の作成・チェック・交渉支援、法務に関する企画・研修等を担当する。",
+          "source": {
+            "title": "法務・コンプライアンス部　法務・コンプライアンス課_主任専門員（法務担当）",
+            "url": "https://www.jst.go.jp/saiyou/pdf/bosyu250512_houmu.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "440",
+      "employers": [
+        {
+          "name": "Munich Re",
+          "role": "Pricing Actuary, Life & Health",
+          "description": "東京で生命・医療保険事業を担当し、経験調査、商品リスク評価、テクニカルプライシングを行い、プライシング施策を推進する。",
+          "source": {
+            "title": "Pricing Actuary, Life & Health in Tokyo at Munich Re",
+            "url": "https://careers.munichre.com/en/job/tokyo/pricing-actuary-life-and-health/3342/34560088448",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "ジブラルタ生命保険株式会社",
+          "role": "アクチュアリー職",
+          "description": "確率論や統計論などの数理的手法で将来のリスクや不確実性を分析し、米国会計基準の保険負債の計算や決算業務等を行う。",
+          "source": {
+            "title": "未来を語る｜アクチュアリー職｜本社スタッフ｜ジブラルタ生命｜新卒採用総合サイト",
+            "url": "https://www.gib-life.co.jp/st/about/recruit/newgrads/sp/special-actually/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "441",
+      "employers": [
+        {
+          "name": "国立研究開発法人科学技術振興機構",
+          "role": "主任専門員（情報システム内部監査）",
+          "description": "監査部で情報システムに関する内部監査計画に基づく規定監査やリスクアプローチ監査を実施し、契約監視委員会の運営等を担う。",
+          "source": {
+            "title": "監査部_主任専門員（情報システム内部監査）",
+            "url": "https://www.jst.go.jp/saiyou/pdf/bosyu260427_kansa02.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
