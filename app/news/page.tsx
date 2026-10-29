@@ -1,8 +1,8 @@
-import { PhraseText } from "@/components/PhraseTitle";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, CalendarCheck2, CalendarDays, Newspaper, ShieldCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
+import { NewsExplorer, type NewsCardItem } from "@/components/NewsExplorer";
 import { newsModifiedAt, newsNeedsRefresh, publishedNews } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 };
 
 export default function NewsIndex() {
-  const [lead, ...rest] = publishedNews;
+  const [lead] = publishedNews;
   const archiveCount = publishedNews.filter(newsNeedsRefresh).length;
   const kinds = [...new Set(publishedNews.map((item) => item.kind))];
   const latestSourceDate = publishedNews.reduce((latest, item) => item.sourcePublishedAt > latest ? item.sourcePublishedAt : latest, "");
@@ -51,8 +51,6 @@ export default function NewsIndex() {
       <div><CalendarCheck2 aria-hidden="true"/><span><small>掲載データの最終記録日</small><strong>{latestReviewedAt}</strong></span></div>
       <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、出典の記録日を分けて表示します。確認期限を超えた過去資料の記事が{archiveCount}件あります。現在の状況は公式出典をご覧ください。</p>
     </section>
-    <nav className="news-kind-nav" aria-label="ニュースのテーマ">{kinds.map((kind) => <span key={kind}>{kind}</span>)}</nav>
-    <Link className="news-featured" href={`/news/${lead.slug}/`}><span className="news-featured-badge"><Newspaper aria-hidden="true" />注目解説</span><small>{lead.kind}・資料公表 {lead.sourcePublishedAt}・公開 {lead.publishedAt}</small>{newsNeedsRefresh(lead) ? <span className="archive-badge">過去資料・更新確認期限超過</span> : null}<h2 className="phrase-breaks"><PhraseText text={lead.title} /></h2><p>{lead.answer}</p><ul>{lead.keyPoints.map((point) => <li key={point}>{point}</li>)}</ul><em>全文を読む <ArrowRight aria-hidden="true" /></em></Link>
-    <div className="news-index-list">{rest.map((item) => <Link href={`/news/${item.slug}/`} key={item.slug}><span className="editorial-card-icon"><Newspaper aria-hidden="true" /></span><span><small>{item.kind}</small>{newsNeedsRefresh(item) ? <span className="archive-badge">過去資料・更新確認期限超過</span> : null}<h2 className="phrase-breaks"><PhraseText text={item.title} /></h2><p>{item.summary}</p><em><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}<span>公開 {item.publishedAt}</span></em></span><ArrowRight aria-hidden="true" /></Link>)}</div>
+    <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: item.kind, summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: articleOgUrl("news", item.slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`) }))} kinds={kinds} />
   </div></>;
 }

@@ -1,8 +1,7 @@
-import { PhraseText } from "@/components/PhraseTitle";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BookOpenText, Clock3 } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
+import { GuideExplorer, type GuideCardItem } from "@/components/GuideExplorer";
 import { guides } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
@@ -14,6 +13,7 @@ export const metadata: Metadata = { title: "職業ガイド", description, alter
 
 const guideTopics = [
   { id: "check", label: "はじめの確認", description: "名前や印象より先に、仕事内容・条件・出典を確認する" },
+  { id: "diff", label: "職業の違い", description: "混同しやすい職業の組み合わせを、法律と公式出典で比べる" },
   { id: "try", label: "小さく試す", description: "作業と成果物を小さく試し、経験を言葉にする" },
   { id: "learn", label: "学びを組み立てる", description: "動画・講座・学習時間を、無理のない順番へ整える" },
   { id: "ai", label: "AIと仕事を見直す", description: "変わる作業と人が確認する作業を分けて考える" },
@@ -21,6 +21,7 @@ const guideTopics = [
 ] as const;
 
 function topicForCategory(category: string): (typeof guideTopics)[number]["id"] {
+  if (category === "職業の違い") return "diff";
   if (["AI活用", "AI検証"].includes(category)) return "ai";
   if (["資格と応募", "資格の確認"].includes(category)) return "qualification";
   if (["学び方", "学習ルート", "学習計画", "学習設計", "動画学習", "上達確認", "講座比較"].includes(category)) return "learn";
@@ -28,11 +29,30 @@ function topicForCategory(category: string): (typeof guideTopics)[number]["id"] 
   return "check";
 }
 
+function freshLevel(checkedAt: string): number {
+  const days = Math.max(0, Math.floor((Date.now() - new Date(`${checkedAt}T00:00:00+09:00`).getTime()) / 86400000));
+  if (days <= 45) return 3;
+  if (days <= 120) return 2;
+  return 1;
+}
+
 export default function GuideIndex() {
-  const topics = guideTopics.map((topic) => ({
+  const topicsWithGuides = guideTopics.map((topic) => ({
     ...topic,
     guides: guides.filter((guide) => topicForCategory(guide.category) === topic.id),
   })).filter((topic) => topic.guides.length > 0);
+  const topics = topicsWithGuides.map((topic) => ({ id: topic.id, label: topic.label, description: topic.description }));
+  const items: GuideCardItem[] = guides.map((guide) => ({
+    slug: guide.slug,
+    title: guide.title,
+    category: guide.category,
+    topic: topicForCategory(guide.category),
+    answer: guide.answer,
+    readMinutes: guide.readMinutes,
+    checkedAt: guide.checkedAt,
+    freshLevel: freshLevel(guide.checkedAt),
+    image: articleOgUrl("guide", guide.slug, `${guide.title}|${guide.checkedAt}`),
+  }));
 
   const url = absoluteUrl("/guide/");
   const graph = { "@context": "https://schema.org", "@graph": [
@@ -45,30 +65,9 @@ export default function GuideIndex() {
     <header className="page-heading">
       <span className="eyebrow">career guide</span>
       <h1>迷いを、確認できる手順に変える。</h1>
-      <p>職業名だけで決めず、仕事内容・注意点・出典を読み、次に試す学びへつなげます。すべての記事に先に結論、目次、公式出典、確認日があります。</p>
+      <p>職業名だけで決めず、仕事内容・注意点・出典を読み、次に試す学びへつなげます。すべての記事に先に結論、目次、公式出典、確認日があります。テーマを選ぶと、その場で絞り込めます。各カードには、読む・試す目安の時間と、出典の確認日と新しさを表示します。</p>
     </header>
 
-    <nav className="guide-topic-nav" aria-label="ガイドのテーマ">
-      {topics.map((topic) => <a href={`#guide-topic-${topic.id}`} key={topic.id}>
-        <span>{topic.label}</span>
-        <small>{topic.guides.length}件</small>
-      </a>)}
-    </nav>
-
-    {topics.map((topic, topicIndex) => <section className="guide-topic-section" id={`guide-topic-${topic.id}`} key={topic.id}>
-      <div className="guide-topic-heading">
-        <span>{String(topicIndex + 1).padStart(2, "0")}</span>
-        <div><h2>{topic.label}</h2><p>{topic.description}</p></div>
-      </div>
-      <div className="editorial-index-grid">{topic.guides.map((guide) => <Link className="editorial-index-card" href={`/guide/${guide.slug}/`} key={guide.slug}>
-        <span className="editorial-card-icon"><BookOpenText aria-hidden="true" /></span>
-        <small>{guide.category}</small>
-        <h3 className="phrase-breaks"><PhraseText text={guide.title} /></h3>
-        <p>{guide.answer}</p>
-        <ul>{guide.keyPoints.map((point) => <li key={point}>{point}</li>)}</ul>
-        <span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span>
-        <em>読む <ArrowRight aria-hidden="true" /></em>
-      </Link>)}</div>
-    </section>)}
+    <GuideExplorer items={items} topics={topics} />
   </div></>;
 }
