@@ -6881,6 +6881,211 @@
           }
         }
       ]
+    },
+    {
+      "catalogId": "356",
+      "employers": [
+        {
+          "name": "株式会社協同工芸社",
+          "role": "印刷機械オペレーター",
+          "description": "食品用シールや化粧品などのラベル印刷を手がける印刷メーカー。印刷機械オペレーターとしてシーリング印刷機の操作を担当し、3色から6色の印刷機を扱う。",
+          "source": {
+            "title": "中途採用 製造",
+            "url": "https://kyodokogeisha.co.jp/wp/wp-content/uploads/2026/07/中途採用-製造-3.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "337",
+      "employers": [
+        {
+          "name": "株式会社センワ",
+          "role": "企画（パターンメーキング）",
+          "description": "ワールドグループの縫製工場で、衣料品の製造及び製造企画を行う。新卒採用の職種として企画（パターンメーキング）と縫製技能職を募集している。",
+          "source": {
+            "title": "ワールドグループ の全ての求人一覧",
+            "url": "https://herp.careers/v1/worldgroup",
+            "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社ワールドインダストリーニット",
+          "role": "企画（パターン・サンプル作成）",
+          "description": "ワールドグループのニット縫製工場で衣料品の製造及び製造企画を行う。新卒採用では企画（パターン・サンプル作成）などを募集。",
+          "source": {
+            "title": "ワールドグループ の全ての求人一覧",
+            "url": "https://herp.careers/v1/worldgroup",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "519",
+      "employers": [
+        {
+          "name": "株式会社名村造船所",
+          "role": "技能職",
+          "description": "新卒の技能職を採用する造船会社。技能職には6か月間の新入職員研修を行い、船舶建造に関する知識の学習や溶接技能訓練、現場実習を実施している。",
+          "source": {
+            "title": "News Release（2024年度 新入職員が入社しました）",
+            "url": "https://www.namura.co.jp/ja/news/news20240411/main/0/link/20240411.pdf",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "448",
+      "employers": [
+        {
+          "name": "株式会社JERA",
+          "role": "発電プラントのオペレーター（担当～課長代理）",
+          "description": "火力発電所で発電設備の運転を担う。ボイラやタービン、発電機、計装制御装置などの監視・操作、設備管理、巡視点検、発災時の初動対応を行う。",
+          "source": {
+            "title": "株式会社JERA",
+            "url": "https://hrmos.co/pages/jera/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "338",
+      "employers": [
+        {
+          "name": "株式会社Cygames",
+          "role": "イラストレーター／原画",
+          "description": "ゲーム内イラストの原画制作を担当するイラストレーター職。PhotoshopやCLIP STUDIO PAINT等の描画ツールによる原画制作の実務経験が必須とされる。",
+          "source": {
+            "title": "イラストレーター／原画／東京 | Cygamesグループ",
+            "url": "https://hrmos.co/pages/cygames/jobs/0000048",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "334",
+      "employers": [
+        {
+          "name": "積水ハウス株式会社",
+          "role": "インテリアコーディネーター（専門職）",
+          "description": "お客様の理想の暮らしをカタチにする仕事として、内装・家具・照明・カーテンなど住まい全体のトータルコーディネートを行う専門職。",
+          "source": {
+            "title": "募集要項｜新卒採用情報｜積水ハウス",
+            "url": "https://www.saiyo-sekisuihouse.jp/application/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "420",
+      "employers": [
+        {
+          "name": "株式会社東京通信グループ",
+          "role": "IR担当者",
+          "description": "適時開示資料やIR資料の作成、株主・投資家対応に加え、ニュースリリースや広報動画コンテンツの作成・配信まで担うIR担当者を募集している。",
+          "source": {
+            "title": "株式会社東京通信グループ",
+            "url": "https://hrmos.co/pages/tokyo-tsushin/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "369",
+      "employers": [
+        {
+          "name": "株式会社大和総研",
+          "role": "リサーチ（経済分析）",
+          "description": "国内外の経済動向を調査・分析し、将来予測や政策提言をレポートやセミナーで発信する、民間シンクタンクのリサーチ業務を紹介している。",
+          "source": {
+            "title": "リサーチ | 仕事・技術を知る | 大和総研 採用サイト",
+            "url": "https://www.dir.co.jp/recruit/business/research.html",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "501",
+      "employers": [
+        {
+          "name": "キヤノン株式会社",
+          "role": "電気設計技術者（メディカル）",
+          "description": "医療用画像診断装置や体外診断装置の製品開発を担う組織で、CT・MRI・X線装置などの新機種の試作基板・製品基板の回路設計、評価および現行機種の基板改廃対応を行う。",
+          "source": {
+            "title": "キヤノン株式会社",
+            "url": "https://hrmos.co/pages/canon/jobs",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "500",
+      "employers": [
+        {
+          "name": "株式会社ティアフォー",
+          "role": "Senior Machine Learning Engineer（自動運転End to Endモデル）",
+          "description": "自動運転車両向けにEnd to End機械学習モデルの開発を担い、モデルの学習・最適化や車載ECUへの実装、大規模データの管理、学習基盤の設計・運用を行う。",
+          "source": {
+            "title": "1022_Senior Machine Learning Engineer, (自動運転End to Endモデル) - 株式会社ティアフォー",
+            "url": "https://herp.careers/v1/tier4/sEcpAbZicCO_",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "171",
+      "employers": [
+        {
+          "name": "株式会社フレアス",
+          "role": "施術者",
+          "description": "ご自宅や高齢者施設などに訪問し、ご利用者様に合わせたマッサージや鍼灸施術を行います。さする・揉む・押すなどの手技で血行やリンパの流れを促進し、痛みや筋緊張を和らげます。",
+          "source": {
+            "title": "施術者 ｜ フレアス採用サイト",
+            "url": "https://recruit.fureasu.jp/sejutsu/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "447",
+      "employers": [
+        {
+          "name": "株式会社パットコーポレーション",
+          "role": "交通誘導警備スタッフ",
+          "description": "工事・建設現場をメインに、歩行者や車両を安全に案内する交通誘導の仕事。決められた手順に沿って行う業務で、特別な経験や資格は必要ない。",
+          "source": {
+            "title": "株式会社パットコーポレーション／採用情報 / 株式会社パットコーポレーション（千葉県市川市） | 株式会社パットコーポレーション 採用情報サイト",
+            "url": "https://offer.pat-co.jp/patcorporation2/AE0601784888/MDkyujin_d.htm",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
+    },
+    {
+      "catalogId": "460",
+      "employers": [
+        {
+          "name": "株式会社アサンテ",
+          "role": "技術職",
+          "description": "契約内容に基づいて住宅の施工作業を担当し、事業の柱であるシロアリ防除をはじめ湿気対策や地震対策などを施す。二人一組で行動し1日に1〜2件の施工作業を行う。",
+          "source": {
+            "title": "株式会社アサンテ 正社員・契約社員・アルバイト 求人サイト",
+            "url": "https://www.asante.co.jp/employment/career/",
+            "checkedAt": "2026-10-29"
+          }
+        }
+      ]
     }
   ]
 }
