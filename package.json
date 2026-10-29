@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "prebuild": "npm run income:check && npm run catalog:briefs && npm run career-depth:check && npm run og:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
+    "prebuild": "npm run income:check && npm run catalog:briefs && npm run career-depth:check && npm run og:generate && npm run card:generate && npm run content:check && npm run catalog:check && npm run editorial:check && npm run news-review:check && npm run news-static:check && npm run backlog:check && npm run monetization:check && npm run shop:check && npm run competitive:check && npm run source:check && npm run similarity:check",
     "build": "next build --webpack",
     "postbuild": "node scripts/cleanup-empty-news-route.mjs",
     "start": "next dev --webpack",
@@ -43,7 +43,8 @@
     "catalog:briefs": "node scripts/generate-occupation-briefs.mjs",
     "career-depth:check": "node scripts/check-career-depth.mjs",
     "career-depth:network": "python3 scripts/audit-career-evidence.py",
-    "income:check": "python3 scripts/import-occupation-income.py --check && node scripts/check-income.mjs"
+    "income:check": "python3 scripts/import-occupation-income.py --check && node scripts/check-income.mjs",
+    "card:generate": "node scripts/generate-card-images.mjs"
   },
   "dependencies": {
     "@expo-google-fonts/biz-udpgothic": "0.4.2",

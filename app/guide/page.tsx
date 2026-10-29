@@ -51,7 +51,7 @@ export default function GuideIndex() {
     readMinutes: guide.readMinutes,
     checkedAt: guide.checkedAt,
     freshLevel: freshLevel(guide.checkedAt),
-    image: articleOgUrl("guide", guide.slug, `${guide.title}|${guide.checkedAt}`),
+    image: `/card/guide/${guide.slug}.png`,
   }));
 
   const url = absoluteUrl("/guide/");

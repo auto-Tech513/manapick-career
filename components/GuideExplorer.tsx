@@ -36,10 +36,10 @@ function GuideCard({ item, lead = false }: { item: GuideCardItem; lead?: boolean
     <Link className={lead ? "article-card article-card-lead" : "article-card"} href={`/guide/${item.slug}/`}>
       <span className="article-card-media">
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={item.image} alt={item.title} loading="lazy" width={1200} height={630} />
-        <span className="article-card-chip">{item.category}</span>
+        <img src={item.image} alt="" loading="lazy" width={800} height={420} />
       </span>
       <span className="article-card-body">
+        <span className="article-card-tag">{item.category}</span>
         <h3 className="phrase-breaks">
           <PhraseText text={item.title} />
         </h3>
