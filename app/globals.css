@@ -3758,3 +3758,9 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
   .home-discovery a:nth-child(3) {border-right:0;}
   .home-discovery a:nth-child(-n+3) {border-bottom:1px solid var(--line);}
 }
+
+/* 文節単位の改行（PhraseTitle + budoux）。見出しが単語の途中で割れないようにする */
+.phrase-breaks {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
