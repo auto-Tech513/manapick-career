@@ -60,12 +60,11 @@
       "status": "draft",
       "primarySourceId": "career-break-whitepaper-2025",
       "sourcePublishedAt": "2025-11-04",
-      "publishedAt": "2026-10-30",
-      "reviewedAt": "2026-10-30",
+      "publishedAt": null,
+      "reviewedAt": null,
       "reviewedBy": null,
-      "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
-      "contentSha256": "a3800bf8888edaa23f81653f5e6c08df49cb535f7b04e8eadd5dc75a25e3a670"
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
     },
     {
       "slug": "labor-force-may-2026",
@@ -268,12 +267,11 @@
       "status": "draft",
       "primarySourceId": "works-jpsed-2026-design",
       "sourcePublishedAt": "",
-      "publishedAt": "2026-10-30",
-      "reviewedAt": "2026-10-30",
+      "publishedAt": null,
+      "reviewedAt": null,
       "reviewedBy": null,
-      "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
-      "contentSha256": "f4b371af6b9f300467b37bbc323cec805bc9cdce18e734a7ac8f6100e1e5afd1"
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
     },
     {
       "slug": "workplace-learning-ojt-offjt-2025",
@@ -437,12 +435,11 @@
       "status": "draft",
       "primarySourceId": "stat-labor-force-2026-06",
       "sourcePublishedAt": "2026-07-31",
-      "publishedAt": "2026-10-30",
-      "reviewedAt": "2026-10-30",
+      "publishedAt": null,
+      "reviewedAt": null,
       "reviewedBy": null,
-      "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
-      "contentSha256": "46e3731be71743355e3d48f82604e108c8248935031da571d4b8e1faaac27f04"
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
     },
     {
       "slug": "labor-force-august-2026",
