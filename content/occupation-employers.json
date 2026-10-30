@@ -579,16 +579,6 @@
             "url": "https://recruit.jreast.co.jp/positions/train_staff/",
             "checkedAt": "2026-10-29"
           }
-        },
-        {
-          "name": "東京地下鉄株式会社（東京メトロ）",
-          "role": "運転士（運輸職種）",
-          "description": "東京メトロの運転士として列車の運転を担い、異常時には対応・処置を行う職種の例。",
-          "source": {
-            "title": "運輸系職種｜鉄道業のプロを突き詰める人たち｜東京地下鉄株式会社 新卒情報 エキスパート職サイト",
-            "url": "https://tokyometro-recruit.jp/tokyometro-expert/projecttalk/1/",
-            "checkedAt": "2026-10-29"
-          }
         }
       ]
     },
@@ -727,21 +717,6 @@
           "source": {
             "title": "山崎製パン株式会社 中途（正社員）採用サイト",
             "url": "https://yamazakipan-recruit.net/",
-            "checkedAt": "2026-10-29"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "3",
-      "employers": [
-        {
-          "name": "株式会社リージョナルクリエーション長崎",
-          "role": "パティシエ",
-          "description": "長崎スタジアムシティ内のホテルやレストラン、VIPラウンジなどで提供するデザートの企画～製造までを一貫して担当する。主な業務は仕込みや調理業務全般、メニューの企画・開発。",
-          "source": {
-            "title": "パティシエ | キャリア採用 | ジャパネットグループ採用サイト",
-            "url": "https://corporate.japanet.co.jp/recruit/career/j3420/",
             "checkedAt": "2026-10-29"
           }
         }
@@ -1128,11 +1103,11 @@
         {
           "name": "トヨタ自動車株式会社",
           "role": "モビリティ・デジタルソフト開発（技術職）",
-          "description": "未来のクルマを創造するための先端研究や先行開発、製品開発を担当し、バーチャル技術を活用した性能設計をもとに実験車を試作してテストを行う。",
+          "description": "未来のモビリティのための先端研究や先行開発、製品開発を担当し、コネクティッド技術開発や、ソフトウェアからモビリティ開発をリードする取り組みに挑戦する。",
           "source": {
-            "title": "モビリティ・デジタルソフト開発 | 社員インタビュー | 採用情報 | トヨタ自動車株式会社",
-            "url": "https://www.toyota-recruit.com/interview/008/",
-            "checkedAt": "2026-10-29"
+            "title": "職種紹介 新卒採用 | トヨタの仕事と人 | 新卒採用情報 | 採用情報 | トヨタ自動車株式会社",
+            "url": "https://recruit.toyota/saiyo/project/course/",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -1172,12 +1147,12 @@
       "employers": [
         {
           "name": "株式会社デンソー",
-          "role": "ソフトウェアアーキテクト：統合ECU",
-          "description": "複数ECUの機能を統合した統合ECUの制御ソフトウェア開発に従事し、統合ECUのソフトウェア開発統括を務める。",
+          "role": "統合ECUソフトウェア開発",
+          "description": "複数ECUの機能を統合した統合ECUについて、部門横断チームでソフトウェア開発や設計管理を行う職種の例。",
           "source": {
-            "title": "ソフトウェアで「気が利いた」モビリティ社会を目指す | デンソーソフトウェア採用サイト",
-            "url": "https://careers.denso.com/software/interviews/05/",
-            "checkedAt": "2026-10-29"
+            "title": "Tooling in support of cross-departmental integrated-ECU development｜デンソー DRIVEN BASE",
+            "url": "https://www.denso.com/global/en/driven-base/tech-design/integrated-ecu_2/",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -1337,12 +1312,12 @@
       "employers": [
         {
           "name": "日本ハム株式会社",
-          "role": "総合職",
-          "description": "食肉加工品（ハム・ソーセージ等）および調理食品の製造・販売を事業とし、「シャウエッセン」を基幹商品とする加工食品部門などで調理加工品の開発・製造に携わる（同グループ採用情報の会社紹介による）。",
+          "role": "製造・開発（総合職）",
+          "description": "日本ハムの加工食品の製造を担当する職種の例。安全かつ高品質で安定した生産を担い、品質管理や設備、工程改善なども担当する（同社採用サイトの職種紹介による）。",
           "source": {
-            "title": "会社を探す－ 日本ハム株式会社｜ニッポンハムグループ採用情報",
-            "url": "https://www.nipponham.co.jp/recruit/company/nipponham.html",
-            "checkedAt": "2026-10-29"
+            "title": "日本ハムの職種｜日本ハム採用情報｜日本ハム株式会社",
+            "url": "https://www.nipponham.co.jp/recruit/fresh/job/",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -1491,8 +1466,8 @@
           "description": "登録翻訳者として、Webサイトや企業ブログ、動画、SNS等の広報・マーケティング分野のコンテンツをはじめ、IR資料・統合報告書・プレスリリースなどの投資家向け資料、各種マニュアル、医療分野の文書（医師向け教科書等）など幅広い分野の翻訳を担当する。",
           "source": {
             "title": "翻訳会社 株式会社サン・フレア（パートナー募集ページ：インタビュー／お仕事紹介）",
-            "url": "https://www.sunflare.com/recruit/index.php?m=pj",
-            "checkedAt": "2026-10-29"
+            "url": "https://recruit.sunflare.com/?m=pj",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -1581,8 +1556,8 @@
           "description": "がん登録業務、診療情報管理業務、DPC関連業務、医療安全管理業務、患者サービスに係る業務、医師事務作業補助業務などを行う。",
           "source": {
             "title": "診療情報管理士（常勤） 募集要項",
-            "url": "https://www.jihs.go.jp/content11/recruit/070/pdf/260706_01.pdf",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.jihs.go.jp/content11/recruit/070/pdf/261005_01.pdf",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -2136,8 +2111,8 @@
           "description": "ホテルやデパート、複合ビルなど、多くの人々が行き交う大型施設に常駐する。施設の隅々を巡回しながら、セキュリティ機器などの稼働確認や施設管理などを行い、出入管理を行う「セキュリティ」の役割に加え、施設の安全利用を促す「コンシェルジュ」としての役割も担う。",
           "source": {
             "title": "人と仕事を知る［仕事紹介］｜ALSOK 新卒採用サイト",
-            "url": "https://alsok.co.jp/saiyo/newgraduate/workers/",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.alsok.co.jp/saiyo/newgraduate/workers/",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -2238,26 +2213,11 @@
         {
           "name": "国立大学法人三重大学（三重大学医学部附属病院）",
           "role": "学童保育指導員（非常勤職員）",
-          "description": "小学生の外遊びや宿題の指導・見守りを行い、メール返信や出席簿入力などの事務作業、畑・草刈りや床拭きなどの環境整備も担当する。",
+          "description": "小学生の外遊びや宿題の指導・見守りを行い、メール返信や出席簿入力などの事務作業、遊び場の草抜きや清掃などの環境整備も担当する。",
           "source": {
-            "title": "三重大学医学部附属病院 学童保育指導員 募集要項",
-            "url": "https://www.mie-u.ac.jp/about/item/20250509%E5%AD%A6%E7%AB%A5%E4%BF%9D%E8%82%B2%E6%8C%87%E5%93%A1%EF%BC%88%E3%83%91%E3%83%BC%E3%83%88%EF%BC%89.pdf",
-            "checkedAt": "2026-10-29"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "244",
-      "employers": [
-        {
-          "name": "独立行政法人国立病院機構 大阪医療センター",
-          "role": "看護助手（手術室）",
-          "description": "手術室で看護師の指示のもと手術準備を行い、手術室内の環境整備、リネン・物品の整理整頓、物品・器材・薬品や他部署への搬送を担う。",
-          "source": {
-            "title": "手術室 看護助手 募集",
-            "url": "https://osaka.hosp.go.jp/wp-content/themes/osaka-iryou/doc/kyujin/nurse_03_260401_3.pdf",
-            "checkedAt": "2026-10-29"
+            "title": "学童保育指導員 ｜ 三重大学医学部附属病院",
+            "url": "https://www.hosp.mie-u.ac.jp/recruit/data/gakudohoikushidou/",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -2691,8 +2651,8 @@
           "description": "タイヤ製造の各工程（精練、押出、裁断、成型、加硫、検査など）のいずれかを担当し、機械やタイヤのセッティング、タイヤの運搬・整列などの作業を行う。",
           "source": {
             "title": "仕事内容｜タイヤ工場 製造技能契約社員 採用情報｜株式会社ブリヂストン",
-            "url": "https://www.bridgestone.co.jp/saiyou/plant/seizou/work/index.html",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.bridgestone.co.jp/saiyou/plant/seizou/work/",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -2720,9 +2680,9 @@
           "role": "システム運用（運用維持管理保守）リーダー候補",
           "description": "Microsoft 365やEntra ID、Intune等のエンドポイント運用維持管理、デバイスのライフサイクル管理、セキュリティポリシー適用、手順書整備や運用改善・自動化を担う。",
           "source": {
-            "title": "コムチュア株式会社 システム運用（運用維持管理保守）リーダー候補｜HERP Careers",
-            "url": "https://herp.careers/careers/companies/comture-career/jobs/h4-cmhf22cx403qzpx072cl5o73r",
-            "checkedAt": "2026-10-29"
+            "title": "ワークプレイスシステム運用リーダー候補 | コムチュア株式会社",
+            "url": "https://hrmos.co/pages/comture-career/jobs/WMS_1",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -2870,9 +2830,9 @@
           "role": "プロダクトデザイナー（オープンポジション）",
           "description": "ユーザーリサーチや定量・定性情報に基づく課題発見と仮説立案、プロトタイプ・UIによる具体化、マッチングや主要なUI/UXの改善を担う。",
           "source": {
-            "title": "株式会社タイミー Product Designer（Open Position）｜HERP Careers",
-            "url": "https://herp.careers/careers/companies/timee/jobs/h4-cmhf0lloa02mbpx07kc4xshho",
-            "checkedAt": "2026-10-29"
+            "title": "Product Designer（Open Position） / プロダクトデザイナー（オープンポジション） | 株式会社タイミー",
+            "url": "https://hrmos.co/pages/timee/jobs/16822514041183191764",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -2915,9 +2875,9 @@
           "role": "ショップスタッフ（Zoff）",
           "description": "フロアでの接客、フィッティング（かけ心地の調整）、レンズをフレーム形状に合わせる加工、視力測定を担当する。",
           "source": {
-            "title": "ショップスタッフ採用｜INTERMESTIC INC.（Zoff）",
-            "url": "https://www.zoff.com/recruit/shop_staff/",
-            "checkedAt": "2026-10-29"
+            "title": "Zoffのメガネ販売スタッフ／関東エリア合同募集【全国社員】 | 株式会社インターメスティック/ゾフ",
+            "url": "https://hrmos.co/pages/imzoff/jobs/2220151649586053121",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -3423,11 +3383,11 @@
         {
           "name": "宮城県",
           "role": "学校事務",
-          "description": "県立学校などで総務・経理に関する事務全般を担当。学校運営の予算や教職員の給与・旅費の経理事務、施設設備の維持・管理、物品の調達などを行う。",
+          "description": "県内の公立学校などで総務・経理に関する事務全般を担当。学校運営の予算管理や、教職員の給与・旅費などの経理事務を行う。",
           "source": {
-            "title": "職種紹介：学校事務｜宮城県公式ウェブサイト",
-            "url": "https://www.pref.miyagi.jp/soshiki/zinziiinkai/bukyoku-syoukai-gakkoujimu.html",
-            "checkedAt": "2026-10-29"
+            "title": "学校事務｜宮城県 職員紹介資料（令和7年度版）",
+            "url": "https://www.pref.miyagi.jp/documents/58526/r7gakuji1.pdf",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -3862,21 +3822,6 @@
           "source": {
             "title": "職業訓練指導員｜TOKYOはたらくネット 職員採用",
             "url": "https://www.hataraku.metro.tokyo.lg.jp/to-saiyou/shidouin-saiyou/index.html",
-            "checkedAt": "2026-10-29"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "383",
-      "employers": [
-        {
-          "name": "横浜労災病院（独立行政法人労働者健康安全機構）",
-          "role": "医療ソーシャルワーカー（正規職員）",
-          "description": "横浜労災病院において医療ソーシャルワーカー（正規職員）として退院支援業務及び相談業務等を担当する募集で、社会福祉士等の資格と業務経験が求められる。",
-          "source": {
-            "title": "医療ソーシャルワーカー（正規職員）募集｜横浜労災病院",
-            "url": "https://yokohamah.johas.go.jp/medical/news/recruit/20260129.html",
             "checkedAt": "2026-10-29"
           }
         }
@@ -4836,8 +4781,8 @@
           "description": "AEO認定通関業者の通関士として、輸出入に関する専門知識を生かし、最新の法令改正を踏まえた実践的なアドバイスを顧客へ直接提供する。",
           "source": {
             "title": "通関コンサルティング サービスのご案内",
-            "url": "https://www.yabuki-kaiun.co.jp/pdf/Customs Consulting.pdf",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.yabuki-kaiun.co.jp/pdf/Customs%20Consulting.pdf",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -5151,16 +5096,6 @@
       "catalogId": "440",
       "employers": [
         {
-          "name": "Munich Re",
-          "role": "Pricing Actuary, Life & Health",
-          "description": "東京で生命・医療保険事業を担当し、経験調査、商品リスク評価、テクニカルプライシングを行い、プライシング施策を推進する。",
-          "source": {
-            "title": "Pricing Actuary, Life & Health in Tokyo at Munich Re",
-            "url": "https://careers.munichre.com/en/job/tokyo/pricing-actuary-life-and-health/3342/34560088448",
-            "checkedAt": "2026-10-29"
-          }
-        },
-        {
           "name": "ジブラルタ生命保険株式会社",
           "role": "アクチュアリー職",
           "description": "確率論や統計論などの数理的手法で将来のリスクや不確実性を分析し、米国会計基準の保険負債の計算や決算業務等を行う。",
@@ -5252,21 +5187,6 @@
           "source": {
             "title": "FP採用 | ファイナンシャルプランナーの転職・求人、あなたらしく働くならマネードクター（マネドク）",
             "url": "https://fp-moneydoctor.com/lp/recruit_fp/",
-            "checkedAt": "2026-10-29"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "129",
-      "employers": [
-        {
-          "name": "宇都宮市",
-          "role": "生活保護ケースワーク業務",
-          "description": "市役所本庁舎の生活福祉課で、生活保護の被保護者との面接・相談、生活の保障や自立助長の援助、それらに付随する事務処理を担う会計年度任用職員の募集。",
-          "source": {
-            "title": "令和８年度会計年度任用職員（生活保護ケースワーク業務）を募集します",
-            "url": "https://www.city.utsunomiya.lg.jp/_res/projects/default_project/_page_/001/036/466/aaaaaaaaa.pdf",
             "checkedAt": "2026-10-29"
           }
         }
@@ -6668,11 +6588,11 @@
         {
           "name": "独立行政法人家畜改良センター",
           "role": "技術専門職員",
-          "description": "全国の牧場等で家畜の飼養管理や飼料生産等の業務を担う技術専門職員を募集。2027年4月1日採用、採用予定者数は4名程度。",
+          "description": "全国の牧場等で家畜の飼養管理や飼料生産等の業務を担う技術専門職員を募集。2027年4月1日採用、採用予定者数は2名程度。",
           "source": {
             "title": "技術専門職員（高校生）募集案内",
-            "url": "https://www.nlbc.go.jp/assets/pdf/r8_youkou_koukousei.pdf",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.nlbc.go.jp/assets/pdf/r8_youkou_gisen_koukou2.pdf",
+            "checkedAt": "2026-10-30"
           }
         }
       ]
@@ -6717,21 +6637,6 @@
           "source": {
             "title": "Job Openings | RIKEN",
             "url": "https://www.riken.jp/careers/openings/index.html?indexname=careers_en&search=%22RIKEN+Center+for+Advanced+Intelligence+Project%22",
-            "checkedAt": "2026-10-29"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "365",
-      "employers": [
-        {
-          "name": "国立研究開発法人国立がん研究センター",
-          "role": "研究員（任期付き常勤職員）",
-          "description": "研究所の統合がん研究分野で、がんの分子疫学など大規模研究を行い、発がんメカニズムの解明や予防法・治療法の開発を目指す研究員を募集。",
-          "source": {
-            "title": "国立がん研究センター研究所 研究員（任期付き常勤職員）の募集について",
-            "url": "https://www.ncc.go.jp/jp/recruit/tougougann_kennkyuuinn.pdf",
             "checkedAt": "2026-10-29"
           }
         }
