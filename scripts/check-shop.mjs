@@ -23,10 +23,15 @@ for (const sourceId of referencedSources) if (!sourceIds.has(sourceId)) failures
 if (referencedSources.length !== productIds.length) failures.push("every product must have exactly one registered official source");
 if (!page.includes('rel="sponsored nofollow noopener noreferrer"')) failures.push("Amazon links lack sponsored disclosure");
 if (!page.includes("PR・Amazon") || !page.includes("careerShopPolicy.disclosure") || !shop.includes("Amazonのアソシエイト")) failures.push("visible PR disclosure is missing");
-const images = [...shop.matchAll(/amazonImage\("([A-Z0-9]{10})"\)/g)].map((match) => match[1]);
+// 2026-10-30: image delivery switched from the ASIN widget (ws-fe, rendered blank) to
+// direct Amazon media-CDN URLs. Image IDs are opaque, so the ASIN-match rule was replaced
+// by a host/format rule; each ID's pairing with its product is documented in
+// content/shop-products.ts and was visually verified on 2026-10-30.
+const images = [...shop.matchAll(/amazonImage\("([A-Za-z0-9+-]+)"\)/g)].map((match) => match[1]);
 const imageCredits = [...shop.matchAll(/^\s+imageCredit: "([^\"]+)",$/gm)].map((match) => match[1]);
-if (images.length !== productIds.length) failures.push("every product must use an Amazon official image-delivery URL built from its ASIN");
-if (images.some((asin, index) => !amazonUrls[index]?.includes(`/dp/${asin}`))) failures.push("each product image ASIN must match its Amazon product link ASIN");
+if (images.length !== productIds.length) failures.push("every product must use an Amazon media-CDN image URL");
+if (new Set(images).size !== images.length) failures.push("duplicate shop image id");
+if (!shop.includes("https://m.media-amazon.com/images/I/${imageId}._SL500_.jpg")) failures.push("shop images must be served from Amazon's media CDN");
 if (imageCredits.length !== productIds.length || imageCredits.some((credit) => !credit.includes("Amazon") || !credit.includes("PR"))) failures.push("every product photo must disclose that the image is served by Amazon (PR)");
 if (!page.includes("product.image") || !page.includes("product.imageCredit")) failures.push("product image or source credit is not rendered");
 if (page.includes("商品写真は姉妹サイトと同じ") || page.includes("公開前に権利確認が必要")) failures.push("shop page still contains stale unverified-image disclosure");
