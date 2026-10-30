@@ -3953,3 +3953,21 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .editorial-article > section > ul.source-list > li { display: block; }
 .source-list a { overflow-wrap: anywhere; }
 .source-list li p { overflow-wrap: anywhere; }
+
+/* === article figures / items / steps (2026-10-31) === */
+.article-figures-grid { display: grid; grid-template-columns: 1fr; gap: .7rem; margin-top: 1rem; }
+.article-figure-card { border: 2px solid var(--ink); border-radius: var(--radius-2); background: var(--bg); padding: .8rem .95rem; box-shadow: 4px 4px 0 var(--primary); }
+.article-figure-card span { display: block; color: var(--muted); font-size: .76rem; font-weight: 700; line-height: 1.5; }
+.article-figure-card strong { display: block; margin-top: .25rem; color: var(--ink); font-size: 1.72rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.article-items-list { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .55rem; }
+.article-items-list li { display: flex; gap: .55rem; align-items: flex-start; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--bg); padding: .65rem .8rem; }
+.article-items-list svg { width: 19px; height: 19px; flex: none; margin-top: .15rem; color: var(--primary-aa); }
+.article-items-list strong { color: var(--ink); font-size: .95rem; }
+.article-items-list small { display: block; color: var(--muted); font-size: .8rem; margin-top: .15rem; line-height: 1.55; }
+.article-steps-list { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .55rem; }
+.article-steps-list li { display: flex; gap: .8rem; align-items: center; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--bg); padding: .6rem .8rem; color: var(--ink); font-weight: 650; font-size: .92rem; line-height: 1.55; }
+.article-step-number { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--ink); color: #fff; font-weight: 800; font-size: .85rem; font-variant-numeric: tabular-nums; }
+@media (min-width: 641px) {
+  .article-figures-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .article-items-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
