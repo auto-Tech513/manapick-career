@@ -55,7 +55,7 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
     <Link href="/" aria-label={`${config.name} トップへ`} prefetch={false}><NetworkBrand /></Link>
     {children ? <div className="mp-header-search">{children}</div> : null}
     <nav className="mp-main-nav" aria-label="主要ナビゲーション">{config.nav.slice(0, 5).map(item => <a key={item.href} href={item.href}>{item.label}</a>)}</nav>
-    <nav className="mp-switch" aria-label="manapick 4サイト切替">{config.sites.map(site => <a key={site.id} className={`mp-badge mp-badge--${site.id}`} aria-current={site.id === config.id ? "page" : undefined} href={site.id === config.id ? "/" : networkUrl(site.url, config.id, "header")}>{site.short}<small>{site.role}</small></a>)}</nav>
+    <nav className="mp-switch" aria-label="manapick 5サイト切替">{config.sites.map(site => <a key={site.id} className={`mp-badge mp-badge--${site.id}`} aria-current={site.id === config.id ? "page" : undefined} href={site.id === config.id ? "/" : networkUrl(site.url, config.id, "header")}>{site.short}<small>{site.role}</small></a>)}</nav>
     <details ref={menu} className="mp-menu"><summary aria-label="サイトメニュー"><Menu size={20} strokeWidth={2.4} aria-hidden="true" className="mp-menu-open-icon" /><X size={20} strokeWidth={2.4} aria-hidden="true" className="mp-menu-close-icon" /><span>メニュー</span></summary><nav aria-label="サイトメニュー" onClick={() => { if (menu.current) menu.current.open = false; }}>
       <Link href="/" prefetch={false} className="mp-menu-home"><Home size={18} strokeWidth={2.2} aria-hidden="true" /><span><strong>トップ</strong><small>manapick career の入口</small></span></Link>
       <p className="mp-menu-label" id="mp-menu-search-label">職業を調べる</p>
@@ -64,7 +64,7 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
       <div className="mp-menu-rows" role="group" aria-labelledby="mp-menu-read-label">{readHrefs.map(renderRow)}</div>
       <p className="mp-menu-label" id="mp-menu-other-label">その他</p>
       <div className="mp-menu-rows" role="group" aria-labelledby="mp-menu-other-label">{otherHrefs.map(renderRow)}</div>
-      <p className="mp-menu-label" id="mp-menu-sites-label">学ぶ・選ぶ・証明する・仕事につなぐ</p>
+      <p className="mp-menu-label" id="mp-menu-sites-label">学ぶ・選ぶ・証明する・仕事につなぐ・企業を読む</p>
       <div className="mp-menu-sites" role="group" aria-labelledby="mp-menu-sites-label">{config.sites.map(site => <a key={site.id} href={site.id === config.id ? "/" : networkUrl(site.url, config.id, "menu")} className="mp-menu-site" aria-current={site.id === config.id ? "page" : undefined}><span className={`mp-badge mp-badge--${site.id}`}>{site.short}</span><span className="mp-menu-site-text"><strong>{site.name}</strong><small>{site.role} — {site.description}</small></span>{site.id === config.id ? null : <ArrowUpRight size={16} aria-hidden="true" className="mp-menu-row-arrow" />}</a>)}</div>
     </nav></details>
   </div></header>;

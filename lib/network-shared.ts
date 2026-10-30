@@ -1,6 +1,6 @@
 import { applyAmazonTag } from "./amazon-link.mjs";
 import affiliate from "../content/affiliate-settings.json";
-const hosts = new Set(["manapick.app", "ai.manapick.app", "license.manapick.app", "career.manapick.app"]);
+const hosts = new Set(["manapick.app", "ai.manapick.app", "license.manapick.app", "career.manapick.app", "company.manapick.app"]);
 /** Same attribution vocabulary across the network; do not alter third-party URLs. */
 export function networkUrl(href: string, source: string, content: string) {
   const url = new URL(href);
