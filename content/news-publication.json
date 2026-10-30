@@ -60,11 +60,12 @@
       "status": "draft",
       "primarySourceId": "career-break-whitepaper-2025",
       "sourcePublishedAt": "2025-11-04",
-      "publishedAt": null,
-      "reviewedAt": null,
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "a3800bf8888edaa23f81653f5e6c08df49cb535f7b04e8eadd5dc75a25e3a670"
     },
     {
       "slug": "labor-force-may-2026",
@@ -76,8 +77,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "12638d464c95e603b20b6f6a2846b087babee056a00ac48d60be39fac99ca44d"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "8fc851dada17e604d03909ceb94d03711d1dbd413f3127401657d1204c9f34c2"
     },
     {
       "slug": "labor-market-three-indicators-2026",
@@ -89,8 +90,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "360f8ab1a7985eba2e0062067cb99f6f24a29af4a0d4acf2588dccbb6ca9272b"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "53a827caec61baea6c16704275e85f9cf1020fd27f900f6b1c5df9e06571e1b8"
     },
     {
       "slug": "monthly-earnings-may-2026",
@@ -102,8 +103,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "7e7408f4351c626f4dd8c04bf3509f1140f3545c52477bed833c6d090358e7de"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "bbc616683810627a22c00f7725c218eba5f15f19f0636842a66e8dbf819d02fa"
     },
     {
       "slug": "nominal-real-wages-2026",
@@ -115,8 +116,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "691ead26ad2cf75625812dd7c7f31f67e6b2be83979fdfe23274cbc38e4b7c29"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "a48edaa01e16159a534aae1454a512dbe925fa5fc681658642aea250ff110aa3"
     },
     {
       "slug": "working-hours-may-2026",
@@ -128,8 +129,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "feb27a95dbb0fc4f1e26beb0a2a1aadae5fa2c0fa3974c055d1c121605d902f2"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "e8b5e9d183c6b6801658bdba35eba796df10917678a7bd4190fe3386c7f9f0c6"
     },
     {
       "slug": "wage-structure-2025",
@@ -141,8 +142,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "1cfcc0768982e1662bdf9d836d6ca2a1f545ebf5c9282fb25db5c5ba18267288"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "49ac1c01937821648d8e65e759028fe04f1310334de6f9bc7ef5d1a0eac27fb2"
     },
     {
       "slug": "wages-by-employment-type-2025",
@@ -154,8 +155,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "142c2384971c05ec2e9c811671e4ad85f22041a3c52e85cf49e4cd8867be7c54"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "21b443328685dabf136bbc4a4e7bbef07333d901afb828217c43cf88a34fbd59"
     },
     {
       "slug": "dx-self-assessment-1164-2026",
@@ -167,8 +168,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "990525efba6cbe6c2a6cad3fd4c2d5aeafc12a2e7d1da893b26a9c587c146317"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "bbf5b9af4e3a797e50e6049e1cd9dd3f2f3199605b26fc81379a115801bed889"
     },
     {
       "slug": "dx-indicator-2026-revision",
@@ -180,8 +181,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "15c5cb7e18fbf901f52b34e05ebd0636d3f8fb96b3eb47788049862a7e1295d2"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "e462ec3d861fbaea0d1d794b16e832eef65ca466bf67ccaa5a4c92ab1d9c397f"
     },
     {
       "slug": "ai-explanation-survey-2000-2026",
@@ -193,8 +194,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "a16fc50d5f9dff84290b53972013ffafd4a4162ea119cb7953319e9e043f5e17"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "5839da96f4a458b4e8965d13a8c55491d5626bd32b6b51d9e05f9a10fec149c4"
     },
     {
       "slug": "ai-explanation-at-work-2026",
@@ -206,8 +207,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "ae3a8b93a9fd938713d4371644d8e05c2ec8c3377e7fc8888a16571958275ff4"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "19c8bcc0fe9f63f3c3178ecb3b8c7bf7fc58b775eaeab6cb2da7400992c7032e"
     },
     {
       "slug": "dx-award-2026-lessons",
@@ -219,8 +220,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "c213b8fa8e85d2fc6ff1ade101f81aca0d2ff43c98bf842ee5e60ea8af45496b"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "b4df2f4a17b24b4547484b495db2016c28dedaed408614dce6cf9571dce28d2c"
     },
     {
       "slug": "digital-talent-ai-era-2026",
@@ -232,8 +233,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "c35cd403b6f1295c07b5409c56b6e0928548ccb0d7eb9aadd2cda253aa7ccebe"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "bcc68db7098a3ec7026c69c579ba35f17d16fa25d44647345308dbabf34bdb75"
     },
     {
       "slug": "human-investment-panel-2026",
@@ -245,8 +246,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "e8f10b1705ddc0337ce29e420585962a6dd8175b596262c031d96ff12b2cadcf"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "9249b1a4c6bd7e5cfef26a0e972a2f3812a03faeed2aa79ed7b13a97c107bb73"
     },
     {
       "slug": "telework-2016-2024",
@@ -258,8 +259,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "33e5707dc6ac813ac93adf901b713c93767d7fe02c842b72269a6726be0bacb2"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "694771f9b3e855b1799f7b5f4f92da73873bdd1810a039a3c61ec034cf26e78c"
     },
     {
       "slug": "jpsed-2026-survey-design",
@@ -267,11 +268,12 @@
       "status": "draft",
       "primarySourceId": "works-jpsed-2026-design",
       "sourcePublishedAt": "",
-      "publishedAt": null,
-      "reviewedAt": null,
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "f4b371af6b9f300467b37bbc323cec805bc9cdce18e734a7ac8f6100e1e5afd1"
     },
     {
       "slug": "workplace-learning-ojt-offjt-2025",
@@ -283,8 +285,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "6a4ec77705d1388ab3873df98ac7f0df2287329e9a52edf7008cb2c4df2b8c35"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "eef27134870193209870f46330960583b3367f269451178dd0b595f1cb85edea"
     },
     {
       "slug": "job-change-hope-reality-gap-2025",
@@ -296,8 +298,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "b499312159b4ffa715caa67b459a707051b978ca7e877c13d0846147d5b06d55"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "0f3bb16b1b6668c24ffe0bd1882454f10d8e6d242534793f8b4c0ebd6ae549fe"
     },
     {
       "slug": "long-working-hours-2025",
@@ -309,8 +311,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "5ea2bfbdb9a9482d342ab890cd4da636ccbe18c6cfdef68ebac8e8f7b3412c28"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "8a8ed6d8f47065fbe2d4c894acd72abd99b35013edfa93b312e784d4dfc5ddb0"
     },
     {
       "slug": "employment-whitepaper-2026",
@@ -322,8 +324,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "a2fdb4586fed921af4a2af8fcf50d56b86cf4c593f69adc502f650d066f3cfd1"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "72f9cb0e16d9d231bffd2f053da041eca1dcb73d276257baa4bcd2e456ec587f"
     },
     {
       "slug": "graduate-recruiting-process-2026",
@@ -335,8 +337,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "380c713c034fb562e19903d8f91db0c989eb7cafef3f29f036785a59e4623acc"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "3e9c1474696731aa770df598caa29171956f381bbee280c518739cea84f71440"
     },
     {
       "slug": "future-of-work-whitepaper-2026",
@@ -348,8 +350,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "8ab13a4ec6479898e919a638c526f8e569b6467e06b09b548e9cbaa9340b5a6c"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "042b694e6cc470b33d24d8e886ae390e3989ebe4fe4dd801a5b58819ef20feda"
     },
     {
       "slug": "japan-labor-chartbook-june-2026",
@@ -361,8 +363,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "9e8bb0805cf9abe9c2f3cf9ce1a30ce1dfa39076470d0baee8a624cb6d2b39fd"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "7c8be899544623c82a34bb951da5a61ab18a9fe021016d8b1472438a3b32eec1"
     },
     {
       "slug": "digital-skills-across-occupations-2026",
@@ -374,8 +376,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "bbfaf18510f8ebce90b9c9aa276ddee4a0e05573a8058e19e6c393dd4323a490"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "74a66eb5336cabbefc328f18419fcd0c72ebd7f842b2c45fd52986b6d5f70afc"
     },
     {
       "slug": "labor-data-before-career-decision-2026",
@@ -387,8 +389,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "2cdaa3fdd7766de88b5e53e1b71135d39a6c17a3ea06d1c312aca784d02a04ed"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "ed4366c73e182375541640f357ed3cd343516e8ad68d8ea77ea732f531a06cc3"
     },
     {
       "slug": "overwork-compensation-2025",
@@ -400,8 +402,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "f1da74af9a4ac8444db12c615acf79ecdf531efdaea83372b33025e816021776"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "f3fc519fca3d5acd1fc5da480c219cc3b3a0593549de9b9fac8eeebafd0a8de9"
     },
     {
       "slug": "ipa-dx-trends-2026",
@@ -413,8 +415,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "23a2114a66b354792d81bc805f4aa5b531ab5a6f22a7cf7a1def5bd1f3748d66"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "f9a327cf8d854b2deba5ceec8ea75b48f33a2cad8f910e4343406f4920959409"
     },
     {
       "slug": "care-worker-exam-39",
@@ -426,8 +428,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "77475b36f5b1581403d8253f962acac4339461a7634489b807c0a6c236b61477"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "547eb16fee33d0682ce30a8acb00453784328575b50363efd5c338d60189c579"
     },
     {
       "slug": "labor-force-june-2026",
@@ -435,11 +437,12 @@
       "status": "draft",
       "primarySourceId": "stat-labor-force-2026-06",
       "sourcePublishedAt": "2026-07-31",
-      "publishedAt": null,
-      "reviewedAt": null,
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": null,
-      "reviewedByHumanAt": null,
-      "reviewEvidence": null
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "46e3731be71743355e3d48f82604e108c8248935031da571d4b8e1faaac27f04"
     },
     {
       "slug": "labor-force-august-2026",
@@ -451,8 +454,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "5cc5dd7b1a418b61ac5e6ebf7411eb6f3d17271f665e3a6b295a007fce957d45"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "ff0ba67691c8f6400ecf459e8d2f706a8b98f97d8bd4dda2f88aebccb7b7aec1"
     },
     {
       "slug": "job-openings-august-2026",
@@ -464,8 +467,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "997eb38c2a14dc55e94e8ced2921074f7ab68cfd28fe05fb9f7bfed34142c103"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "adf3eb222014fc78ad74a27507cdb2e94ec964c202413693443c59133596f422"
     },
     {
       "slug": "monthly-earnings-august-2026",
@@ -477,8 +480,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "3895c0ee06ac51493757e7b5596afc6e7fecef39b0f1a0f9bf05fd817787ed0e"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "c3ab87d662d5f10fedd8fd37b83b3a1241327a2a114066734e3e76cb90546d8a"
     },
     {
       "slug": "minimum-wage-2026",
@@ -486,12 +489,12 @@
       "status": "published",
       "primarySourceId": "mhlw-minimum-wage-2026",
       "sourcePublishedAt": "2026-09-03",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "3522d7912da09c8616e644c089102c006e8fd1681054f6fb9f7dd95876999006"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "db1a8e2528bbca13c58548f460d2110372624457a7685c33ef0e5bc6cf7f20e4"
     },
     {
       "slug": "employment-trends-latest",
@@ -499,12 +502,12 @@
       "status": "published",
       "primarySourceId": "mhlw-employment-trends-2025",
       "sourcePublishedAt": "2026-08-31",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "63159844eedd0b6267223e5822384af2c57a3b8398934ee1a9586de9031af514"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "79ec9fbeeb84343283d12ce9204a3906f0764ec8b03b136fa8c48e96fb14869e"
     },
     {
       "slug": "construction-labor-unit-price-latest",
@@ -512,12 +515,12 @@
       "status": "published",
       "primarySourceId": "mlit-construction-labor-unit-price-2026",
       "sourcePublishedAt": "2026-02-17",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "44ce38fe27be404b71bb4f7291ca2d8c85cb9d766cc703e3f76244020c0bfb02"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "f77933bed72ee05ee44f80de9fd1b2b4869033d2a5cf073bcde25aaf3c16612d"
     },
     {
       "slug": "disability-employment-latest",
@@ -525,12 +528,12 @@
       "status": "published",
       "primarySourceId": "mhlw-disability-employment-2025",
       "sourcePublishedAt": "2025-12-19",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "21263d760711a7e953054cc98bc171fe9aaa9687ca6c0e9d7e30c666dac78cf6"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "ddc2e58fd858688795e8c904b90f4ff9b0fc7597a6a2fad61322e48f67280626"
     },
     {
       "slug": "childcare-leave-rate-latest",
@@ -538,12 +541,12 @@
       "status": "published",
       "primarySourceId": "mhlw-equal-employment-survey-fy2025-childcare",
       "sourcePublishedAt": "2026-07-31",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "b10d414914c91dbf2e6ebe2945a26e21d8a603cc442d2ef143c4981c3aced553"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "4ce48fd82fa62d79f43bc3411925373db3c0aef32d70acb8342eb16ce66da2ac"
     },
     {
       "slug": "elderly-employment-latest",
@@ -555,8 +558,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "6219070d28366b07863d268f496a732d3f36fd824d27a593a2d0304b93c77dfc"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "1c3086be8a434d8f6a4c0430cb91db3dea8a567bb4d5923c68d9aa44ab680215"
     },
     {
       "slug": "workplace-accidents-latest",
@@ -564,12 +567,12 @@
       "status": "published",
       "primarySourceId": "mhlw-workplace-accidents-2025",
       "sourcePublishedAt": "2026-05-27",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "662c027998c6e25aec91119521ec962813db882c43e7e2e6bfcf3219df72fc42"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "3cb285831fa6caf0d37ce9b272323612c675d7fc09965c55dcfa01cb1367f595"
     },
     {
       "slug": "new-graduate-employment-latest",
@@ -581,8 +584,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "08d2eb8b9f172c1e6234e16138379601d244c7ae838aac18cab74d38c0481c22"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "054757bc90836726653d232729b1fcf0c6b6254f67a45b34b8a0809ca324e33d"
     },
     {
       "slug": "teacher-exam-latest",
@@ -594,8 +597,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "d243adf1072bcbead1b1e4549c9bfe983bb54ae4f839838740ca56fa4c972b1d"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "be7c07132adede5cda04e40ba1d36b2eef2d8972594f3fc6fe34e9b4104d754c"
     },
     {
       "slug": "nurse-exam-latest",
@@ -603,12 +606,12 @@
       "status": "published",
       "primarySourceId": "mhlw-nurse-exam-2026",
       "sourcePublishedAt": "2026-03-24",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "6554efaad601411b3c19146ca36090e1d4fe8f4804771cae84925ec7a07e0db5"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "1f2ea26aa71275913af561dcf3bc9dd2fc82b260f3935534c93ab803d349ad9e"
     },
     {
       "slug": "foreign-workers-latest",
@@ -620,8 +623,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "f5bd76c2350aa1a8f8b07c67249cfe6482f2188783f7ec61bfb7a967479b4834"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "29bf77aeaf088c8c498e914f23dd9d79ee27a7d3c245dd60e232a12b14b1e04b"
     },
     {
       "slug": "sme-whitepaper-latest",
@@ -629,12 +632,12 @@
       "status": "published",
       "primarySourceId": "meti-sme-whitepaper-2026",
       "sourcePublishedAt": "2026-04-24",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "5a7e4fee3d63ee578d30966e6d9a9031fa2bc29045ce246daa55c16800869da3"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "d852b7178d104867e6d1950ebd83adeb30e68086e9a9649e551b4f21e5f16622"
     },
     {
       "slug": "gender-whitepaper-latest",
@@ -642,12 +645,12 @@
       "status": "published",
       "primarySourceId": "cao-gender-whitepaper-r08",
       "sourcePublishedAt": "2026-07-10",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "26fb02689a5e26e2dfc1aa6efa999d60e1667b987092533b99a320b9ac427eb6"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "9b5ff0d3b51da335157bd4790ded666c835a67e7ff8a59508e523251ea55923d"
     },
     {
       "slug": "household-spending-latest",
@@ -655,12 +658,12 @@
       "status": "published",
       "primarySourceId": "stat-household-survey-monthly",
       "sourcePublishedAt": "2026-10-09",
-      "publishedAt": "2026-10-29",
-      "reviewedAt": "2026-10-29",
+      "publishedAt": "2026-10-30",
+      "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
-      "reviewedByHumanAt": "2026-10-29",
-      "reviewEvidence": "git:a2362c75e3540ce0336b684a7e125259fc203152",
-      "contentSha256": "4beb99315ff69d1dddd006b555d87838894763149d3fb8b4c403f664bd578831"
+      "reviewedByHumanAt": "2026-10-30",
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "2106724008de35c45f532ed6f3c77ed63b51af87cdb9a5061aac38b59b1e0e1b"
     },
     {
       "slug": "industrial-production-latest",
@@ -672,8 +675,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "3136129f4ad024f4f5c7528dfcd612cebc556fec147b8c05a65b0947896f56f3"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "c3abba943f69567e5853c2df6a7f41140e4b94ffe6571a6e4abefba029814ef6"
     },
     {
       "slug": "wage-increase-survey-latest",
@@ -685,8 +688,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "4d2803c4f627c657d9a30678c083260e5d10a6582f886ab98bdb7b4d4b5d755d"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "dc565ddcdb3ab96aaac331d2e8b6401e514f47024a131e649ddb8dce21240837"
     },
     {
       "slug": "skills-development-survey-latest",
@@ -698,8 +701,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "0a1ff9bbb8fa6a52016002466ade3c145ab2ca5595b60269cb14ceb67c1fc406"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "4d8af43680f5de0996da5995d8021baf5416cba3d6d01b9fa2a0f5c408b65f50"
     },
     {
       "slug": "spring-wage-settlement-2026",
@@ -711,8 +714,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "3aeb3f833ebeac16893043a6153a1426e1d5f3873b74d152b28ae055cc1657e8"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "b023dfaf182174c28a595e93893ba6672b468fa52ea5bc3eab73141cee1eefff"
     },
     {
       "slug": "social-insurance-part-timers-2026",
@@ -724,8 +727,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "7db80cffcdaff31260ac98b819d2b435cc33e701a917fc138e4534b335c989af"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "1cec3bf6d3b56278f6119485250166f8d1fc442a1f2a1829097fb3922b246e74"
     },
     {
       "slug": "childcare-flexible-work-2026",
@@ -737,8 +740,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "ad62ec9cd3a03581ed06c860480676905093cab18e8963385f8c525a008b7849"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "4efed0387e9fa5dfe65e191d5dfb4e19628a2bee88036cd47c0b12c0722458d2"
     },
     {
       "slug": "private-salary-survey-2025",
@@ -750,8 +753,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:6dc3d7b01b266fcc2f2245a4d25ddf206d260ba9",
-      "contentSha256": "f2fa1da53780a1b862c75ae3e03db778cc2c46fe839a8d719d068ced7fb485b4"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "d3f112821a8b577389fb35ea121173cde86f3855088ac37495c7e3a96371f618"
     },
     {
       "slug": "income-tax-threshold-2026",
@@ -763,8 +766,8 @@
       "reviewedAt": "2026-10-30",
       "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
       "reviewedByHumanAt": "2026-10-30",
-      "reviewEvidence": "git:628d4d6d5fc6531b6e47d8863ac723c84bbede61",
-      "contentSha256": "a181fcc6c0ac0092f1c3e3e3dd9dd3fd8c9a4a2bca747e962818536421fc4af7"
+      "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
+      "contentSha256": "ccbfed378296ae8f0bbc5d5999728727dff707f63867ecae939e7744f70a5dfb"
     }
   ]
 }
