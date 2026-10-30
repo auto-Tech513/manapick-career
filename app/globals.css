@@ -3842,3 +3842,23 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .career-shop-headline { margin: .35rem 0 0; font-size: .92rem; font-weight: 800; line-height: 1.55; color: var(--ink); }
 .career-shop-specs { display: flex; flex-wrap: wrap; gap: .35rem; margin: .55rem 0 0; padding: 0; list-style: none; }
 .career-shop-specs li { padding: .28rem .5rem; border: 1px solid var(--line); border-radius: 999px; font-size: .68rem; font-weight: 700; color: var(--primary-aa); background: var(--bg); }
+
+/* manapi shop v2 (2026-10-30): scene-grouped, hook-led cards, stronger CTA */
+.career-shop-hero-chips { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .9rem; }
+.career-shop-hero-chips span { display: inline-flex; align-items: center; gap: .3rem; padding: .35rem .6rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font-size: .68rem; font-weight: 800; }
+.career-shop-hero-chips svg { width: 14px; height: 14px; color: var(--primary-aa); }
+.career-shop-scene { margin-top: 2.6rem; scroll-margin-top: 90px; }
+.career-shop-scene-head { max-width: 760px; margin-bottom: 1rem; }
+.career-shop-scene-head h2 { margin: 0 0 .35rem; color: var(--ink); font-size: clamp(1.35rem, 2.6vw, 1.8rem); font-weight: 720; }
+.career-shop-scene-head p { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.8; }
+.career-shop-hook { margin: .55rem 0 .1rem; color: var(--ink); font-size: 1.02rem; font-weight: 800; line-height: 1.55; }
+.career-shop-card h3 { margin: 0 0 .5rem; color: var(--ink); font-size: 1.18rem; font-weight: 700; }
+.career-shop-points { display: grid; gap: .3rem; margin: 0 0 .7rem; padding: .65rem .7rem; border-radius: var(--radius-1); background: var(--bg); list-style: none; }
+.career-shop-points li { display: flex; gap: .4rem; align-items: flex-start; color: var(--ink); font-size: .76rem; font-weight: 700; line-height: 1.55; }
+.career-shop-points svg { flex: 0 0 auto; width: 14px; height: 14px; margin-top: .15rem; color: var(--primary-aa); }
+.career-shop-card-body > .career-shop-reason { color: var(--muted); font-size: .82rem; line-height: 1.85; }
+.career-shop-fit p { font-size: .78rem; }
+.career-shop-checks li { font-size: .74rem; }
+.career-shop-actions a { min-height: 48px; font-size: .78rem; }
+.career-shop-buy { box-shadow: 0 6px 16px rgb(0 0 0 / .12); }
+.career-shop-method .career-shop-principles { margin: .4rem 0 1rem; padding: 0; border: 0; background: transparent; }
