@@ -37,6 +37,14 @@
       "role": "仕事につなぐ",
       "description": "仕事内容から、次の学びを決める",
       "url": "https://career.manapick.app/"
+    },
+    {
+      "id": "company",
+      "name": "manapick company",
+      "short": "company",
+      "role": "企業を読む",
+      "description": "企業を物語と数字で読む",
+      "url": "https://company.manapick.app/"
     }
   ],
   "nav": [

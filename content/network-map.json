@@ -2,7 +2,8 @@
   "sites": {
     "learning":{"baseUrl":"https://manapick.app"},
     "ai":{"baseUrl":"https://ai.manapick.app"},
-    "license":{"baseUrl":"https://license.manapick.app"}
+    "license":{"baseUrl":"https://license.manapick.app"},
+    "company":{"baseUrl":"https://company.manapick.app"}
   },
   "items": {
     "learning:home":{"siteId":"learning","path":"/"},
