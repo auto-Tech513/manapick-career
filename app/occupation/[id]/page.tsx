@@ -83,8 +83,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     : `${occupation.name}の仕事内容・なり方・資格｜企業例と公式出典`;
   const description = metaDescription(
     statistic
-      ? `${occupation.summary} 年収は${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${manYen(statistic.annualizedMeanYen)}。仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典とともに整理します。`
-      : `${occupation.summary} 仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典とともに整理します。`,
+      ? `${occupation.name}の年収は、${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${manYen(statistic.annualizedMeanYen)}。仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典とともに整理します。`
+      : `${occupation.name}の仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典とともに整理します。${occupation.summary}`,
   );
   const image = occupationOgUrl(id, `${occupation.name}|${record.publishedAt}`);
   return {
@@ -141,6 +141,18 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         ? `関連資格として ${occupation.qualifications.join("、")} が挙げられます。要否と取得経路は、このページの「就くには」と公式情報で確認してください。`
         : `この職業の解説では、入職に必須の資格は示されていません。学歴や資格の要否は、このページの「就くには」と公式情報で確認してください。`,
     },
+    ...(statistic
+      ? [
+          {
+            question: `${occupation.name}の平均年齢はどのくらいですか`,
+            answer: `${incomeMetadata.surveyYear}年賃金構造基本統計調査で${occupation.name}に対応する分類「${statistic.classificationName}」の平均年齢は${statistic.meanAge}歳です。この職業単独の集計ではなく、対応分類全体の平均です。`,
+          },
+          {
+            question: `示されている年収は中央値ですか`,
+            answer: `いいえ。本サイトの金額は「${incomeMetadata.formula}」で計算した平均年収換算であり、年収の中央値ではありません。平均は高収入層の影響を受けるため、典型的な一人分の収入と一致するとは限りません。`,
+          },
+        ]
+      : []),
   ];
   const pageUrl = absoluteUrl(`/occupation/${id}/`);
   return (
