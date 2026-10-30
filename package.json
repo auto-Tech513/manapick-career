@@ -45,7 +45,8 @@
     "career-depth:network": "python3 scripts/audit-career-evidence.py",
     "income:check": "python3 scripts/import-occupation-income.py --check && node scripts/check-income.mjs",
     "card:generate": "node scripts/generate-card-images.mjs",
-    "indexnow:submit": "node scripts/indexnow-submit.mjs"
+    "indexnow:submit": "node scripts/indexnow-submit.mjs",
+    "charts:check": "node --experimental-strip-types scripts/check-article-charts.mjs"
   },
   "dependencies": {
     "@expo-google-fonts/biz-udpgothic": "0.4.2",
