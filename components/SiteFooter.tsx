@@ -9,5 +9,5 @@ export function SiteFooter() {
       <div><strong>サイト情報</strong><Link href="/about-method/">作成方法</Link><Link href="/operator/">運営者</Link><Link href="/privacy/">プライバシー</Link><Link href="/affiliate/">広告・PR</Link></div>
       <div><strong>大切な情報</strong><Link href="/glossary/">用語集</Link><Link href="/faq/">FAQ</Link><Link href="/disclaimer/">免責事項</Link><Link href="/contact/">訂正・お問い合わせ</Link></div>
     </nav>
-  </div><div className="footer-note">© manapick career　このサイトは求人紹介・職業あっせんを行いません。</div></footer>;
+  </div><div className="footer-note">© manapick career　職業の仕事内容と学びの入口を、出典つきで案内しています。</div></footer>;
 }
