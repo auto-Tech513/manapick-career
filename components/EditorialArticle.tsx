@@ -5,6 +5,7 @@ import { Fragment } from "react";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import { AdSlot } from "@/components/AdSlot";
 import type { EditorialNetworkLink, EditorialSection } from "@/content/editorial";
+import { relatedPublishedOccupationsForCareers } from "@/content/catalog";
 import { publishedJobs } from "@/content/jobs";
 import prLinks from "@/content/pr-links.json";
 
@@ -40,6 +41,7 @@ export function EditorialArticle({
   estimateLabel?: string;
 }) {
   const relatedJobs = publishedJobs.filter((job) => relatedCareerSlugs.includes(job.slug));
+  const relatedOccupations = relatedPublishedOccupationsForCareers(relatedCareerSlugs).slice(0, 6);
   const offers = prLinks.enabled ? prLinks.items.filter((offer) => offer.placements.includes(pathname)) : [];
   const toc = <ol>{sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`}><span>{String(index + 1).padStart(2, "0")}</span>{section.heading.replace(/^\d+\.\s*/, "")}</a></li>)}</ol>;
   return <>
@@ -54,6 +56,7 @@ export function EditorialArticle({
         {sections.map((section, index) => <Fragment key={section.id}><section id={section.id} className="article-section"><span className="article-section-number">SECTION {String(index + 1).padStart(2, "0")}</span><h2 className="phrase-breaks"><PhraseText text={section.heading} /></h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.points && <ul>{section.points.map((point) => <li key={point}><CheckCircle2 aria-hidden="true" />{point}</li>)}</ul>}</section>{index === 1 && <AdSlot placement={`${pathname}after-section-2`} />}</Fragment>)}
         {relatedArticles && relatedArticles.links.length > 0 && <section className="related-careers"><span className="article-section-number">MORE READING</span><h2>{relatedArticles.heading}</h2><div>{relatedArticles.links.map((link) => <Link key={link.href} href={link.href}><span><strong>{link.title}</strong><small>{link.meta}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}
         {relatedJobs.length > 0 && <section className="related-careers"><span className="article-section-number">NEXT STEP</span><h2>関連する職業の仕事内容を確認</h2><p>記事の内容を、実際の作業・注意点・学び方と結び付けて確認できます。</p><div>{relatedJobs.map((job) => <Link key={job.slug} href={`/career/${job.slug}/`}><span><strong>{job.name}</strong><small>{job.conclusion[0]}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}
+        {relatedOccupations.length > 0 && <section className="related-careers"><span className="article-section-number">OCCUPATION PAGES</span><h2>関連する職業ページ</h2><p>この記事で触れた分野の職業を、仕事内容・年収の目安・なり方・企業例まで、出典つきの個別ページで読めます。</p><div>{relatedOccupations.map((item) => <Link key={item.catalogId} href={`/occupation/${item.catalogId}/`}><span><strong>{item.name}</strong><small>仕事内容・年収・なり方</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}
         {networkLinks && networkLinks.length > 0 && <section className="related-careers network-bridges"><span className="article-section-number">MANAPICK NETWORK</span><h2>この手順を、学び・AI・資格へつなぐ</h2><p>記事を読んだ後に必要な確認だけを選べます。各サイトの独自ページへ進み、公式情報と現在の条件を確認してください。</p><div>{networkLinks.map((item) => <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer"><span><strong>{item.label}</strong><small>{item.description}</small></span><ArrowUpRight aria-hidden="true" /></a>)}</div></section>}
         {offers.map((offer) => <aside className="learning-offer" key={offer.offerId} aria-label={`${offer.provider}のPR情報`}><span>PR</span><div><small>{offer.disclosure}</small><h2>{offer.label}</h2><p>{offer.description}</p><p className="offer-caution">価格・無料体験・給付対象・申込条件は、リンク先の公式表示で最新情報を確認してください。</p></div><a href={offer.url} target="_blank" rel="sponsored nofollow noopener noreferrer">公式情報を確認 <ArrowUpRight aria-hidden="true" /></a></aside>)}
         <section className="article-review"><h2>執筆・確認情報</h2><dl><div><dt>執筆</dt><dd>{author}</dd></div><div><dt>編集</dt><dd>{editor}</dd></div><div><dt>出典台帳の記録日</dt><dd>{checkedAt}</dd></div><div><dt>確認方法</dt><dd>公的資料と一次情報を出典付きで整理。自動監視による資料の変化検知と、本文の正確性の確認は区別します</dd></div></dl><h3>参照した公式情報</h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul><p className="correction-note">誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>へお知らせください。過去の資料に基づく記事は、その時点の記録として案内します。</p></section>
