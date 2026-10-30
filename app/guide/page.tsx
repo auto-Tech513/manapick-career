@@ -47,7 +47,7 @@ export default function GuideIndex() {
     title: guide.title,
     category: guide.category,
     topic: topicForCategory(guide.category),
-    answer: guide.answer,
+    summary: guide.summary,
     readMinutes: guide.readMinutes,
     checkedAt: guide.checkedAt,
     freshLevel: freshLevel(guide.checkedAt),
