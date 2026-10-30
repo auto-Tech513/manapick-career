@@ -83,8 +83,8 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     : `${occupation.name}の仕事内容・なり方・資格｜企業例と公式出典`;
   const description = metaDescription(
     statistic
-      ? `${occupation.name}の年収は、${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${manYen(statistic.annualizedMeanYen)}。仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典とともに整理します。`
-      : `${occupation.name}の仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典とともに整理します。${occupation.summary}`,
+      ? `${occupation.name}の年収は、${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${manYen(statistic.annualizedMeanYen)}。仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典つきで掲載します。`
+      : `${occupation.name}の仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典つきで掲載します。${occupation.summary}`,
   );
   const image = occupationOgUrl(id, `${occupation.name}|${record.publishedAt}`);
   return {
@@ -145,7 +145,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
       ? [
           {
             question: `${occupation.name}の平均年齢はどのくらいですか`,
-            answer: `${incomeMetadata.surveyYear}年賃金構造基本統計調査で${occupation.name}に対応する分類「${statistic.classificationName}」の平均年齢は${statistic.meanAge}歳です。この職業単独の集計ではなく、対応分類全体の平均です。`,
+            answer: `${incomeMetadata.surveyYear}年賃金構造基本統計調査で${occupation.name}に対応する分類「${statistic.classificationName}」の平均年齢は${statistic.meanAge}歳です。`,
           },
           {
             question: `示されている年収は中央値ですか`,
@@ -211,10 +211,10 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         {statistic ? (
           <p>
             年収の目安は、{incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「{statistic.classificationName}」による平均年収換算で
-            <strong>{manYen(statistic.annualizedMeanYen)}</strong>です（この職業単独の統計ではありません）。
+            <strong>{manYen(statistic.annualizedMeanYen)}</strong>です。
           </p>
         ) : (
-          <p>この職業には、本サイトの賃金統計に対応する分類がないため、年収換算は示していません。</p>
+          <p>この職業には、賃金統計の対応分類がありません。</p>
         )}
       </div>
 
@@ -222,21 +222,40 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         <h2>収入データの読み方</h2>
         {statistic ? (
           <>
+            <dl className="occupation-stats">
+              <div>
+                <dt>平均年収換算</dt>
+                <dd>{manYen(statistic.annualizedMeanYen)}</dd>
+              </div>
+              <div>
+                <dt>月の現金給与額</dt>
+                <dd>{statistic.monthlyCashThousandYen}千円</dd>
+              </div>
+              <div>
+                <dt>年間賞与・特別給与</dt>
+                <dd>{statistic.annualBonusThousandYen}千円</dd>
+              </div>
+              <div>
+                <dt>平均年齢</dt>
+                <dd>{statistic.meanAge}歳</dd>
+              </div>
+            </dl>
             <p>
-              対応分類「{statistic.classificationName}」：平均年収換算 {manYen(statistic.annualizedMeanYen)}／月の現金給与額{" "}
-              {statistic.monthlyCashThousandYen}千円／年間賞与その他特別給与額 {statistic.annualBonusThousandYen}千円／平均年齢 {statistic.meanAge}歳。
-              計算方法は「{incomeMetadata.formula}」です。
+              統計分類は「{statistic.classificationName}」です。{incomeMetadata.population}の集計で、集計された人の推計は
+              {statistic.estimatedWorkers.toLocaleString("ja-JP")}人です。
             </p>
-            <ul>
+            <details className="income-method">
+              <summary>計算方法と統計の対象</summary>
+              <p>計算方法は「{incomeMetadata.formula}」です。</p>
               {incomeMetadata.limitations.map((line) => (
-                <li key={line}>{line}</li>
+                <p key={line}>{line}</p>
               ))}
-            </ul>
+            </details>
           </>
         ) : (
           <p>
-            {incomeMetadata.surveyYear}年賃金構造基本統計調査には、この職業に対応づけられる分類がありません。公務員など調査の対象外の働き方を含むため、
-            本サイトでは年収換算を示さず、金額を推測で補いません。給与水準は、志望先の公式な給与表や募集要項で確認してください。
+            {incomeMetadata.surveyYear}年賃金構造基本統計調査には、この職業に対応づけられる分類がありません。公務員など調査の対象外の働き方を含む職業です。
+            給与水準は、志望先の公式な給与表や募集要項に載っています。
           </p>
         )}
       </section>
@@ -279,7 +298,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
       {employers.length ? (
         <section className="article-section" id="employers">
           <h2>企業例・働く場の例（公式確認済み）</h2>
-          <p>次の組織は、公式ページで{occupation.name}に関わる職種や採用の案内を確認した例です。募集の有無は時期で変わるため、公式ページで最新を確認してください。</p>
+          <p>次の組織は、公式ページで{occupation.name}に関わる職種や採用の案内を確認した例です。最新の募集状況は各公式ページに載っています。</p>
           <ul className="source-list">
             {employers.map((employer) => (
               <li key={`${employer.name}-${employer.role}`}>
@@ -364,7 +383,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         </ul>
         <p className="article-review">
           仕事内容・就くには・労働条件・関連資格の本文は、職業情報提供サイト（job tag）解説系ダウンロードデータ ver.7.01（独立行政法人労働政策研究・研修機構）に基づきます。
-          収入は{incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類による換算で、この職業単独の統計とは限りません。適性や採用可能性は判定しません。
+          収入は{incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類による平均年収換算です。
         </p>
       </section>
     </main>

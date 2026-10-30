@@ -60,7 +60,7 @@ function textElement(text, { x, y, size, weight = 400, color = "#ffffff" }) {
 
 function renderSvg({ title, label, date, type }) {
   const layout = layoutOgTitle(title);
-  const badgeWidth = type === "NEWS" ? 124 : type === "GUIDE" ? 142 : 168;
+  const badgeWidth = type === "NEWS" ? 124 : type === "GUIDE" ? 142 : type === "OCCUPATION" ? 248 : 168;
   const titleHeight = layout.fontSize + (layout.lines.length - 1) * layout.lineHeight;
   const firstLineTop = Math.round(280 - titleHeight / 2);
   const titleLines = layout.lines.map((line, index) => textElement(line, {
