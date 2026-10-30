@@ -9,6 +9,7 @@ const adSlot = fs.readFileSync("components/AdSlot.tsx", "utf8");
 const editorialArticle = fs.readFileSync("components/EditorialArticle.tsx", "utf8");
 const careerPage = fs.readFileSync("app/career/[slug]/page.tsx", "utf8");
 const professionalCareerPage = fs.readFileSync("components/ProfessionalCareerPage.tsx", "utf8");
+const occupationPage = fs.readFileSync("app/occupation/[id]/page.tsx", "utf8");
 const layout = fs.readFileSync("app/layout.tsx", "utf8");
 const globalCss = fs.readFileSync("app/globals.css", "utf8");
 const headers = fs.readFileSync("public/_headers", "utf8");
@@ -51,6 +52,12 @@ for (const [label, source] of [["職業ページ", careerPage], ["専門職ペ�
   if (!source.includes('placement="career-after-section-3"')) failures.push(`${label}の広告配置が指定位置でない`);
   if (!source.includes("<AdSenseScript />")) failures.push(`${label}にAdSense scriptがない`);
 }
+{
+  const slots = (occupationPage.match(/<AdSlot\b/g) ?? []).length;
+  if (slots !== 1) failures.push(`職業個別ページの広告枠が1つでない: ${slots}`);
+  if (!occupationPage.includes('placement="occupation-after-work"')) failures.push("職業個別ページの広告配置が指定位置でない");
+  if (!occupationPage.includes("<AdSenseScript />")) failures.push("職業個別ページにAdSense scriptがない");
+}
 if (!layout.includes('"google-adsense-account"')) failures.push("AdSense accountメタタグがない");
 for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googlesyndication.com", "https://googleads.g.doubleclick.net", "https://tpc.googlesyndication.com"]) {
   if (!headers.includes(origin)) failures.push(`CSPに${origin}がない`);
@@ -58,9 +65,9 @@ for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googl
 
 const unexpectedAdImports = [...walk("app"), ...walk("components")]
   .filter((file) => /\.(?:tsx|ts)$/.test(file))
-  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx"))
+  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx") && !file.endsWith("app/occupation/[id]/page.tsx"))
   .filter((file) => /(?:AdSenseScript|AdSlot)/.test(fs.readFileSync(file, "utf8")));
 if (unexpectedAdImports.length) failures.push(`広告が承認外ページへ混入: ${unexpectedAdImports.join(", ")}`);
 
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
-console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} is articles+career only`);
+console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} is articles+career+occupation only`);

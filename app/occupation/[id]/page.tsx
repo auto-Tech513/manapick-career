@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
+import { AdSlot } from "@/components/AdSlot";
+import { AdSenseScript } from "@/components/AdSenseScript";
 import {
   catalogCategory,
   occupationDossierSlug,
@@ -177,6 +179,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           ],
         }}
       />
+      <AdSenseScript />
       <Breadcrumbs
         trail={[
           { name: "ホーム", path: "/" },
@@ -232,6 +235,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           <p key={index}>{part}</p>
         ))}
       </section>
+
+      <AdSlot unit="career" placement="occupation-after-work" />
 
       <section className="article-section" id="entry">
         <h2>就くには</h2>
