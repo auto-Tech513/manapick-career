@@ -23,6 +23,7 @@ import { ProfessionalCareerPage } from '@/components/ProfessionalCareerPage';
 import { AdSlot } from "@/components/AdSlot";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import { CareerIncome } from '@/components/CareerIncome';
+import { relatedPublishedOccupationsForCareer } from "@/content/catalog";
 
 export const dynamicParams = false;
 
@@ -70,6 +71,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
   const category = categories.find((item) => item.key === job.category);
   const sources = sourceRegistry.filter((source) => job.sourceIds.includes(source.sourceId));
   const relatedNews = publishedNews.filter((item) => item.relatedCareerSlugs.includes(job.slug)).slice(0, 3);
+  const relatedOccupations = relatedPublishedOccupationsForCareer(job.slug);
   const adjacentJobs = insight.adjacentJobs.map((item) => ({
     ...item,
     job: publishedJobs.find((candidate) => candidate.slug === item.slug),
@@ -190,6 +192,8 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
             <p className="section-lead">市場全体の数字を個人の採用可能性へ置き換えず、一次資料の範囲と確認日を読んで、次に確かめる条件を決めます。</p>
             {relatedNews.length ? <div className="career-news-grid">{relatedNews.map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span><Newspaper aria-hidden="true" />{item.kind}</span><strong>{item.title}</strong><p>{item.summary}</p><small>公開 {item.publishedAt}／確認 {item.checkedAt}</small></Link>)}</div> : <div className="news-empty"><p>この職業へ直接結び付けた公開済みニュースは現在ありません。下書きの記事は表示しません。</p><Link className="button secondary" href="/news/">公開済みニュースを見る</Link></div>}
           </section>
+
+          {relatedOccupations.length ? <section className="editorial-block" id="related-occupations"><h2>同じ分野の職業ページ</h2><p className="section-lead">同じ分類で個別ページを公開している職業です。年収の目安は、各ページで統計の範囲とあわせて確認できます。</p><ul>{relatedOccupations.map((item) => <li key={item.catalogId}><Link href={`/occupation/${item.catalogId}/`}>{item.name}の個別ページ</Link></li>)}</ul></section> : null}
 
           <section className="editorial-block" id="sources">
             <span className="section-num">09 / SOURCES</span><h2>出典と作成記録</h2><p>仕事内容の追加解説、作業から考える相性、資格の位置づけ、企業例は、公式資料をAIが照合・整理したものです。下記の既存本文の編集記録と、今回の追加解説の照合日は別の記録です。</p><p>追加解説の照合日：{dossier.researchedAt}。現場取材、就業体験、視聴確認の記録は追加していません。</p>

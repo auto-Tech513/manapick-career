@@ -77,6 +77,8 @@ export function NewsExplorer({ items, kinds }: { items: NewsCardItem[]; kinds: s
       </div>
       <p className="article-topic-note" aria-live="polite">
         {filtered.length}記事を表示しています。
+        {kind === "賃金・労働時間" ? " 毎月公表される賃金統計の読み解きです。前の月と並べて読むと、変化の向きが見えます。" : null}
+        {kind === "雇用統計" ? " 毎月公表される雇用統計の読み解きです。前の月と並べて読むと、変化の向きが見えます。" : null}
       </p>
       {lead ? (
         <div className="article-grid">
