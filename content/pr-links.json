@@ -12,11 +12,17 @@
       "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
       "verifiedAt": "2026-10-29",
       "placements": [
-        "/news/reskilling-support-2026/",
         "/guide/build-a-learning-route-from-tasks/",
+        "/guide/choose-one-learning-video/",
         "/guide/compare-training-total-cost/",
+        "/guide/four-week-learning-review/",
+        "/guide/learning-stop-rules/",
+        "/guide/qualification-official-route/",
+        "/guide/qualification-required-or-optional/",
+        "/guide/qualification-study-before-application/",
         "/guide/training-benefit-before-application/",
-        "/guide/video-ai-license-learning-route/"
+        "/guide/video-ai-license-learning-route/",
+        "/news/reskilling-support-2026/"
       ]
     }
   ]
