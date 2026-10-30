@@ -5,6 +5,7 @@ import catalog from "@/content/job-catalog.json";
 import employersData from "@/content/occupation-employers.json";
 import profiles from "@/content/professional-careers.json";
 import { NetworkSites } from "@/components/NetworkSites";
+import { publishedOccupationCatalog } from "@/content/catalog";
 
 export const metadata: Metadata = {
   title: "企業・法人・公的機関の例がある職業一覧",
@@ -24,6 +25,7 @@ export default function EmployersPage() {
     list.push(item);
     itemsByCategory.set(occupation.categoryKey, list);
   }
+  const publishedOccupationIds = new Set(publishedOccupationCatalog.map(item => item.catalogId));
   const dossierById = new Map(profiles.items.map(item => [item.recordNumber, item]));
   const dossiers = employersData.existingDossiers
     .map(entry => ({ entry, profile: dossierById.get(entry.catalogId) ?? profiles.items.find(item => item.slug === entry.slug) }))
@@ -42,7 +44,9 @@ export default function EmployersPage() {
           if (!occupation) return null;
           return <li key={item.catalogId}>
             <div><h3>{occupation.name}</h3><p>{item.employers.map(employer => employer.name).join("／")}</p></div>
-            <Link href="/all/">名録で読む <ArrowUpRight aria-hidden="true" /></Link>
+            {publishedOccupationIds.has(item.catalogId)
+              ? <Link href={`/occupation/${item.catalogId}/`}>個別ページで読む <ArrowUpRight aria-hidden="true" /></Link>
+              : <Link href="/all/">名録で読む <ArrowUpRight aria-hidden="true" /></Link>}
           </li>;
         })}</ul>
       </section>;
