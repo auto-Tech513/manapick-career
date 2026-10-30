@@ -6,14 +6,18 @@ export const careerShopPolicy = {
   independence: "報酬額、承認状況、EPC、在庫、レビュー数を掲載順に使いません。価格・在庫・配送・仕様は購入前に販売ページとメーカー公式ページで確認してください。",
 };
 
-/** Product images are served by Amazon's official Associates image delivery (ASIN-based).
- *  Images are never downloaded or re-hosted on this site. Lineup re-verified on 2026-10-30
- *  against maker official pages and Amazon.co.jp product pages: MX Master 4 replaced the 3S
- *  (new flagship, released 2025), the PowerConf S500 was removed (maker store sold out),
- *  and Soundcore Liberty 5 + BenQ ScreenBar Halo 2 were added. ASINs for the new items come
- *  from the makers' official Amazon purchase links / Amazon's indexed product pages. */
-const amazonImage = (asin: string) =>
-  `https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=${asin}&Format=_SL500_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=${settings.amazonTag}`;
+/** Product images are Amazon-served files hot-linked from Amazon's media CDN
+ *  (m.media-amazon.com) — never downloaded or re-hosted on this site. Delivery was
+ *  switched on 2026-10-30 from the legacy Associates widget (ws-fe.amazon-adsystem.com),
+ *  which rendered as blank frames for the site owner and in browser checks, to direct
+ *  CDN URLs. Each image ID below was matched to its product from Amazon-indexed sources
+ *  and visually verified against the product on 2026-10-30 (BenQ 41fmQI53UNL is from the
+ *  amazon.com listing of the same ASIN B0DK59YKRS; Liberty 5 and SanDisk IDs are from
+ *  Amazon listings of the same model). Anker PowerConf S500 was removed on 2026-10-30:
+ *  Anker Japan's official page states a product recall for units sold 2022-12-29 to
+ *  2025-10-21 and its official store lists it sold out. */
+const amazonImage = (imageId: string) =>
+  `https://m.media-amazon.com/images/I/${imageId}._SL500_.jpg`;
 
 export type ShopScene = "interview" | "desk" | "focus" | "repeat";
 
@@ -44,7 +48,7 @@ export const careerShopProducts = [
   {
     id: "logicool-c920n",
     scene: "interview" as ShopScene,
-    image: amazonImage("B07QQR6G5N"),
+    image: amazonImage("41lMwAXpAUL"),
     imageAlt: "ロジクール Webカメラ C920n の商品写真",
     imageCredit: "商品画像：Amazon.co.jp（PR）",
     category: "オンライン面接・映像",
@@ -62,7 +66,7 @@ export const careerShopProducts = [
   {
     id: "logicool-mx-master-4",
     scene: "desk" as ShopScene,
-    image: amazonImage("B0FR8M3WS8"),
+    image: amazonImage("61BPuOamilL"),
     imageAlt: "Logicool MX Master 4（ワイヤレスマウス）の商品写真",
     imageCredit: "商品画像：Amazon.co.jp（PR）",
     category: "入力・資料整理",
@@ -80,7 +84,7 @@ export const careerShopProducts = [
   {
     id: "flexispot-e7",
     scene: "desk" as ShopScene,
-    image: amazonImage("B092VWSH47"),
+    image: amazonImage("615BO0n3kFS"),
     imageAlt: "FLEXISPOT E7 電動昇降デスク（天板セット）の商品写真",
     imageCredit: "商品画像：Amazon.co.jp（PR）",
     category: "学習環境・姿勢",
@@ -98,7 +102,7 @@ export const careerShopProducts = [
   {
     id: "benq-screenbar-halo-2",
     scene: "desk" as ShopScene,
-    image: amazonImage("B0DK59YKRS"),
+    image: amazonImage("41fmQI53UNL"),
     imageAlt: "BenQ ScreenBar Halo 2（モニター掛けライト）の商品写真",
     imageCredit: "商品画像：Amazon.co.jp（PR）",
     category: "学習環境・明るさ",
@@ -116,7 +120,7 @@ export const careerShopProducts = [
   {
     id: "anker-liberty-5",
     scene: "focus" as ShopScene,
-    image: amazonImage("B0DRVB48LJ"),
+    image: amazonImage("51uvODKpE+L"),
     imageAlt: "Anker Soundcore Liberty 5（ワイヤレスイヤホン）の商品写真",
     imageCredit: "商品画像：Amazon.co.jp（PR）",
     category: "集中・移動学習",
@@ -134,7 +138,7 @@ export const careerShopProducts = [
   {
     id: "sandisk-extreme-portable-ssd",
     scene: "focus" as ShopScene,
-    image: amazonImage("B0C5SC2V95"),
+    image: amazonImage("61zuR3UMnWL"),
     imageAlt: "SanDisk Extreme Portable SSD（2TB）の商品写真",
     imageCredit: "商品画像：Amazon.co.jp（PR）",
     category: "作品・バックアップ",
@@ -152,7 +156,7 @@ export const careerShopProducts = [
   {
     id: "elgato-stream-deck-neo",
     scene: "repeat" as ShopScene,
-    image: amazonImage("B0CWL3V6R8"),
+    image: amazonImage("61lMOu6N8lL"),
     imageAlt: "Elgato Stream Deck Neo（カスタマイズ可能なキー8個のコントローラー）の商品写真",
     imageCredit: "商品画像：Amazon.co.jp（PR）",
     category: "作業の反復操作",
