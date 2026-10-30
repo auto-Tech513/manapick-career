@@ -5,6 +5,7 @@ import evidence from "./career-evidence.json";
 import publication from "./occupation-publication.json";
 import employerRegistry from "./occupation-employers.json";
 import dossiers from "./career-dossiers.json";
+import professionalCareers from "./professional-careers.json";
 import { createHash } from "node:crypto";
 
 export type CatalogOccupation = (typeof catalog.occupations)[number];
@@ -131,4 +132,29 @@ export function occupationEmployers(catalogId: string): OccupationEmployerEntry[
 
 export function occupationDossierSlug(catalogId: string): string | null {
   return employerRegistry.existingDossiers.find((item) => item.catalogId === catalogId)?.slug ?? null;
+}
+
+export function careerSlugCatalogId(slug: string): string | null {
+  const dossier = employerRegistry.existingDossiers.find((item) => item.slug === slug);
+  if (dossier) return dossier.catalogId;
+  for (const [name, candidate] of Object.entries(humanReviewedSlugByOccupation)) {
+    if (candidate === slug) {
+      const occupation = occupationCatalog.find((item) => item.name === name);
+      if (occupation) return occupation.catalogId;
+    }
+  }
+  const profile = (professionalCareers.items as { slug: string; name: string }[]).find((item) => item.slug === slug);
+  if (profile) {
+    const occupation = occupationCatalog.find((item) => item.name === profile.name);
+    if (occupation) return occupation.catalogId;
+  }
+  return null;
+}
+
+export function relatedPublishedOccupationsForCareer(slug: string) {
+  const catalogId = careerSlugCatalogId(slug);
+  if (!catalogId) return [];
+  const self = catalogOccupation(catalogId);
+  if (!self) return [];
+  return publishedOccupationCatalog.filter((item) => item.categoryKey === self.categoryKey && item.catalogId !== catalogId);
 }
