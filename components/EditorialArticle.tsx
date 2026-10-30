@@ -4,6 +4,8 @@ import { ArrowRight, ArrowUpRight, CalendarDays, CheckCircle2, Clock3, ListTree 
 import { Fragment } from "react";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import { AdSlot } from "@/components/AdSlot";
+import { ArticleChart } from "@/components/ArticleChart";
+import { articleChartForPathname } from "@/content/article-charts";
 import type { EditorialNetworkLink, EditorialSection } from "@/content/editorial";
 import { relatedPublishedOccupationsForCareers } from "@/content/catalog";
 import { publishedJobs } from "@/content/jobs";
@@ -40,6 +42,7 @@ export function EditorialArticle({
   relatedArticles?: { heading: string; links: { href: string; title: string; meta: string }[] };
   estimateLabel?: string;
 }) {
+  const chart = articleChartForPathname(pathname);
   const relatedJobs = publishedJobs.filter((job) => relatedCareerSlugs.includes(job.slug));
   const relatedOccupations = relatedPublishedOccupationsForCareers(relatedCareerSlugs).slice(0, 6);
   const offers = prLinks.enabled ? prLinks.items.filter((offer) => offer.placements.includes(pathname)) : [];
@@ -53,6 +56,7 @@ export function EditorialArticle({
         {offers.length > 0 && <p className="article-pr-notice"><strong>PRを含みます</strong> 記事の結論・掲載順・比較結果は、広告と切り分けて編集しています。</p>}
         <section className="article-answer" aria-labelledby="article-answer-title"><span>先に結論</span><h2 id="article-answer-title">この記事の答え</h2><p>{answer}</p></section>
         <section className="article-key-points"><h2>この記事の要点</h2><ul>{keyPoints.map((point) => <li key={point}><CheckCircle2 aria-hidden="true" />{point}</li>)}</ul></section>
+        {chart && <ArticleChart chart={chart} />}
         {sections.map((section, index) => <Fragment key={section.id}><section id={section.id} className="article-section"><span className="article-section-number">SECTION {String(index + 1).padStart(2, "0")}</span><h2 className="phrase-breaks"><PhraseText text={section.heading} /></h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.points && <ul>{section.points.map((point) => <li key={point}><CheckCircle2 aria-hidden="true" />{point}</li>)}</ul>}</section>{index === 1 && <AdSlot placement={`${pathname}after-section-2`} />}</Fragment>)}
         {relatedArticles && relatedArticles.links.length > 0 && <section className="related-careers"><span className="article-section-number">MORE READING</span><h2>{relatedArticles.heading}</h2><div>{relatedArticles.links.map((link) => <Link key={link.href} href={link.href}><span><strong>{link.title}</strong><small>{link.meta}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}
         {relatedJobs.length > 0 && <section className="related-careers"><span className="article-section-number">NEXT STEP</span><h2>関連する職業の仕事内容を確認</h2><p>記事の内容を、実際の作業・注意点・学び方と結び付けて確認できます。</p><div>{relatedJobs.map((job) => <Link key={job.slug} href={`/career/${job.slug}/`}><span><strong>{job.name}</strong><small>{job.conclusion[0]}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}

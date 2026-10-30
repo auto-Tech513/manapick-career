@@ -3931,3 +3931,25 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .published-occupation-index ul { display: flex; flex-wrap: wrap; gap: .5rem; list-style: none; padding: 0; margin: 0; }
 .published-occupation-index li a { display: inline-block; padding: .45rem .8rem; border: 1.5px solid var(--ink, #172033); border-radius: 999px; background: #fff; color: inherit; text-decoration: none; font-size: .92rem; }
 .published-occupation-index li a:hover { background: var(--primary, #ffd700); }
+
+/* === article charts (2026-10-30): 本文の公表値を横棒で示す。スマホは縦積み === */
+.article-chart { margin: 1.6rem 0 0; padding: 1.1rem 1.15rem 1rem; border: 2px solid var(--ink); border-radius: var(--radius-3); background: var(--surface); box-shadow: 5px 5px 0 var(--primary); }
+.article-chart figcaption { margin-bottom: .8rem; }
+.article-chart-eyebrow { color: var(--primary-aa); font-size: .67rem; font-weight: 900; letter-spacing: .12em; }
+.article-chart figcaption h3 { margin: .2rem 0 0; font-size: 1.02rem; font-weight: 800; line-height: 1.55; }
+.article-chart-bars { display: grid; gap: .68rem; }
+.article-chart-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "label value" "track track"; align-items: baseline; column-gap: .6rem; row-gap: .22rem; }
+.article-chart-label { grid-area: label; font-size: .8rem; font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+.article-chart-value { grid-area: value; font-size: .92rem; font-weight: 900; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.article-chart-track { grid-area: track; display: block; height: 12px; border-radius: 999px; background: var(--bg); border: 1px solid var(--line); overflow: hidden; }
+.article-chart-fill { display: block; height: 100%; border-radius: 999px; background: var(--primary); }
+.article-chart-note { margin: .8rem 0 0; color: var(--muted); font-size: .76rem; line-height: 1.7; }
+@media (min-width: 641px) {
+  .article-chart-row { grid-template-columns: minmax(9.5rem, 32%) minmax(0, 1fr) auto; grid-template-areas: "label track value"; align-items: center; }
+  .article-chart { padding: 1.25rem 1.4rem 1.1rem; }
+}
+
+/* === mobile fix (2026-10-30): 出典・企業例リストは縦積みに戻し、長いリンク文字列を折り返す === */
+.editorial-article > section > ul.source-list > li { display: block; }
+.source-list a { overflow-wrap: anywhere; }
+.source-list li p { overflow-wrap: anywhere; }
