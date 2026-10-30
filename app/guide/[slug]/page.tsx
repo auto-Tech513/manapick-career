@@ -20,6 +20,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const guide = guideBySlug(slug);
   if (!guide) notFound();
   const sources = sourceRegistry.filter((source) => guide.sourceIds.includes(source.sourceId));
+  const relatedGuides = guides.filter((g) => g.category === guide.category && g.slug !== slug).sort((a, b) => (a.checkedAt < b.checkedAt ? 1 : -1)).slice(0, 3);
+  const relatedArticles = { heading: guide.category === "職業の違い" ? "ほかの職業の違いも比べる" : "同じテーマのガイドを読む", links: relatedGuides.map((g) => ({ href: `/guide/${g.slug}/`, title: g.title, meta: `${g.category}・読む・試す目安 約${g.readMinutes}分` })) };
   const url = absoluteUrl(`/guide/${slug}/`);
   const graph = { "@context": "https://schema.org", "@graph": [
     { "@type": "Article", headline: guide.title, description: guide.summary, mainEntityOfPage: url, url, image: articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`), datePublished: guide.publishedAt, dateModified: guide.checkedAt, inLanguage: "ja-JP", author: { "@type": "Organization", name: guide.author, url: absoluteUrl("/operator/") }, editor: { "@type": "Organization", name: guide.editor, url: absoluteUrl("/operator/") }, publisher: { "@id": absoluteUrl("/#organization") }, citation: sources.map((source) => source.url) },
@@ -31,7 +33,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <Link className="back-link" href="/guide/"><ArrowLeft aria-hidden="true" />ガイド一覧へ</Link>
     <header className="page-heading article-heading"><span className="eyebrow">{guide.category}</span><h1 className="phrase-breaks"><PhraseText text={guide.title} /></h1><p>{guide.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
     <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />
-    <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.networkLinks} estimateLabel="読む・試す目安"/>
+    <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.networkLinks} relatedArticles={relatedArticles} estimateLabel="読む・試す目安"/>
     <AiDeepLinks path={`/guide/${slug}/`} />
   </div></>;
 }

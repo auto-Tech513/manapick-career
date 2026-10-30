@@ -21,6 +21,8 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   const item = newsBySlug(slug);
   if (!item) notFound();
   const sources = sourceRegistry.filter((source) => item.sourceIds.includes(source.sourceId));
+  const relatedNews = newsItems.filter((n) => n.kind === item.kind && n.slug !== slug).sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1)).slice(0, 3);
+  const relatedArticles = { heading: `ほかの「${item.kind}」の解説を読む`, links: relatedNews.map((n) => ({ href: `/news/${n.slug}/`, title: n.title, meta: `資料公表 ${n.sourcePublishedAt}` })) };
   const url = absoluteUrl(`/news/${slug}/`);
   const modifiedAt = newsModifiedAt(item);
   const articleText = item.sections.flatMap((section) => section.paragraphs).join("");
@@ -35,6 +37,6 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
     <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1 className="phrase-breaks"><PhraseText text={item.title} /></h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>出典台帳の記録 {item.checkedAt}</span><span>公開台帳の記録 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
     {newsNeedsRefresh(item) ? <aside className="source-freshness-notice" data-news-archive="true" role="note"><h2>過去の公表資料に基づく記事です</h2><p>資料確認日の記録は{item.checkedAt}です。更新確認の期限を超えています。現在の状況を示す情報として使わず、下記の公式出典で最新の発表を確認してください。</p></aside> : null}
     <ShareKit title={item.title} summary={item.summary} url={url} kind="news" />
-    <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources}/>
+    <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources} relatedArticles={relatedArticles}/>
   </div></>;
 }

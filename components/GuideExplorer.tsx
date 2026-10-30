@@ -9,7 +9,7 @@ export type GuideCardItem = {
   title: string;
   category: string;
   topic: string;
-  answer: string;
+  summary: string;
   readMinutes: number;
   checkedAt: string;
   freshLevel: number;
@@ -43,7 +43,7 @@ function GuideCard({ item, lead = false }: { item: GuideCardItem; lead?: boolean
         <h3 className="phrase-breaks">
           <PhraseText text={item.title} />
         </h3>
-        <p>{item.answer}</p>
+        <p>{item.summary}</p>
         <span className="article-card-meta">
           <Freshness level={item.freshLevel} checkedAt={item.checkedAt} />
           <span className="article-card-minutes">

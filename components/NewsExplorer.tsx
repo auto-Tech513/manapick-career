@@ -38,7 +38,7 @@ function NewsCard({ item, lead = false }: { item: NewsCardItem; lead?: boolean }
         <span className="article-card-meta">
           <span className="article-card-dates">
             <CalendarDays aria-hidden="true" />
-            資料公表 {item.sourcePublishedAt}・公開 {item.publishedAt}
+            資料公表 {item.sourcePublishedAt}
           </span>
           <span className="article-card-more">
             全文を読む <ArrowRight aria-hidden="true" />

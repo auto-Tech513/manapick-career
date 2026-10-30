@@ -22,6 +22,7 @@ export function EditorialArticle({
   readMinutes,
   pathname,
   networkLinks,
+  relatedArticles,
   estimateLabel = "読了目安",
 }: {
   answer: string;
@@ -35,6 +36,7 @@ export function EditorialArticle({
   readMinutes: number;
   pathname: string;
   networkLinks?: EditorialNetworkLink[];
+  relatedArticles?: { heading: string; links: { href: string; title: string; meta: string }[] };
   estimateLabel?: string;
 }) {
   const relatedJobs = publishedJobs.filter((job) => relatedCareerSlugs.includes(job.slug));
@@ -50,6 +52,7 @@ export function EditorialArticle({
         <section className="article-answer" aria-labelledby="article-answer-title"><span>先に結論</span><h2 id="article-answer-title">この記事の答え</h2><p>{answer}</p></section>
         <section className="article-key-points"><h2>この記事の要点</h2><ul>{keyPoints.map((point) => <li key={point}><CheckCircle2 aria-hidden="true" />{point}</li>)}</ul></section>
         {sections.map((section, index) => <Fragment key={section.id}><section id={section.id} className="article-section"><span className="article-section-number">SECTION {String(index + 1).padStart(2, "0")}</span><h2 className="phrase-breaks"><PhraseText text={section.heading} /></h2>{section.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}{section.points && <ul>{section.points.map((point) => <li key={point}><CheckCircle2 aria-hidden="true" />{point}</li>)}</ul>}</section>{index === 1 && <AdSlot placement={`${pathname}after-section-2`} />}</Fragment>)}
+        {relatedArticles && relatedArticles.links.length > 0 && <section className="related-careers"><span className="article-section-number">MORE READING</span><h2>{relatedArticles.heading}</h2><div>{relatedArticles.links.map((link) => <Link key={link.href} href={link.href}><span><strong>{link.title}</strong><small>{link.meta}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}
         {relatedJobs.length > 0 && <section className="related-careers"><span className="article-section-number">NEXT STEP</span><h2>関連する職業の仕事内容を確認</h2><p>記事の内容を、実際の作業・注意点・学び方と結び付けて確認できます。</p><div>{relatedJobs.map((job) => <Link key={job.slug} href={`/career/${job.slug}/`}><span><strong>{job.name}</strong><small>{job.conclusion[0]}</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}
         {networkLinks && networkLinks.length > 0 && <section className="related-careers network-bridges"><span className="article-section-number">MANAPICK NETWORK</span><h2>この手順を、学び・AI・資格へつなぐ</h2><p>記事を読んだ後に必要な確認だけを選べます。各サイトの独自ページへ進み、公式情報と現在の条件を確認してください。</p><div>{networkLinks.map((item) => <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer"><span><strong>{item.label}</strong><small>{item.description}</small></span><ArrowUpRight aria-hidden="true" /></a>)}</div></section>}
         {offers.map((offer) => <aside className="learning-offer" key={offer.offerId} aria-label={`${offer.provider}のPR情報`}><span>PR</span><div><small>{offer.disclosure}</small><h2>{offer.label}</h2><p>{offer.description}</p><p className="offer-caution">価格・無料体験・給付対象・申込条件は、リンク先の公式表示で最新情報を確認してください。</p></div><a href={offer.url} target="_blank" rel="sponsored nofollow noopener noreferrer">公式情報を確認 <ArrowUpRight aria-hidden="true" /></a></aside>)}
