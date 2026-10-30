@@ -161,6 +161,80 @@ export const articleCharts: Record<string, ArticleChart> = {
       { label: "納期を管理する", value: 69.6, display: "69.6%" },
     ],
   },
+  "overwork-compensation-2025": {
+    title: "精神障害の支給決定（認定基準上の出来事別・令和7年度）",
+    note: "出来事は、心理的負荷の強度を評価するために類型化された項目です。",
+    bars: [
+      { label: "パワーハラスメント", value: 222, display: "222件" },
+      { label: "顧客等からの著しい迷惑行為", value: 127, display: "127件" },
+      { label: "セクシュアルハラスメント", value: 127, display: "127件" },
+      { label: "仕事内容・仕事量の大きな変化", value: 113, display: "113件" },
+    ],
+  },
+  "ipa-dx-trends-2026": {
+    title: "AIの利用用途（企業回答・DX動向2026）",
+    note: "割合は回答企業の利用状況で、作業が無人化された割合ではありません。",
+    bars: [
+      { label: "文書・音声の要約・翻訳・校正", value: 82.5, display: "82.5%" },
+      { label: "文書・レポートの作成", value: 80.5, display: "80.5%" },
+      { label: "情報検索・収集・分析・レポーティング", value: 77.0, display: "77.0%" },
+      { label: "自社製品・サービスの高度化", value: 10.9, display: "10.9%" },
+      { label: "生産・物流・サービス提供の計画支援", value: 6.0, display: "6.0%" },
+    ],
+  },
+  "employment-trends-latest": {
+    title: "転職入職者の賃金変動（前職との比較・2025年）",
+    note: "残りは「変わらない」です。入職率は14.7％、離職率は13.7％でした。",
+    bars: [
+      { label: "増加", value: 40.8, display: "40.8％" },
+      { label: "減少", value: 31.0, display: "31.0％" },
+    ],
+  },
+  "foreign-workers-latest": {
+    title: "国籍別の外国人労働者数（令和7年10月末時点）",
+    note: "割合では、ベトナムが全体の23.6%、中国が16.8%、フィリピンが10.1%です。",
+    bars: [
+      { label: "ベトナム", value: 605906, display: "605,906人" },
+      { label: "中国", value: 431949, display: "431,949人" },
+      { label: "フィリピン", value: 260869, display: "260,869人" },
+    ],
+  },
+  "wage-increase-survey-latest": {
+    title: "2026年の賃金改定の動向（企業の割合）",
+    note: "1人平均賃金の改定額は13,926円（前年13,601円）、改定率は4.4％です。対象は常用労働者100人以上の民営企業です。",
+    bars: [
+      { label: "引き上げた・引き上げる", value: 92.0, display: "92.0％" },
+      { label: "未定", value: 5.1, display: "5.1％" },
+      { label: "改定を実施しない", value: 2.1, display: "2.1％" },
+      { label: "引き下げた・引き下げる", value: 0.4, display: "0.4％" },
+      { label: "変わらなかった・変わらない", value: 0.4, display: "0.4％" },
+    ],
+  },
+  "graduate-recruiting-process-2026": {
+    title: "採用プロセスの実施状況（企業調査）",
+    note: "利用率は優劣を示すものではなく、複数の接点を併用する企業もあります。",
+    bars: [
+      { label: "Web説明会", value: 66.4, display: "66.4%" },
+      { label: "対面説明会", value: 61.2, display: "61.2%" },
+    ],
+  },
+  "disability-employment-latest": {
+    title: "民間企業の障害者実雇用率と法定雇用率（令和7年6月1日現在）",
+    note: "法定雇用率を達成した企業の割合は46.0％で、半数を下回ります。",
+    bars: [
+      { label: "法定雇用率", value: 2.5, display: "2.5％" },
+      { label: "実雇用率", value: 2.41, display: "2.41％" },
+    ],
+  },
+  "paramedic-vs-firefighter": {
+    title: "消防に所属する救急救命士のタスク実施率（job tag）",
+    note: "job tagのタスク一覧に載る実施率です。",
+    bars: [
+      { label: "地域住民への応急手当・AEDの講習", value: 100.0, display: "100.0％" },
+      { label: "人命の救出活動", value: 95.7, display: "95.7％" },
+      { label: "消火活動", value: 91.3, display: "91.3％" },
+    ],
+  },
 };
 
 export function articleChartForPathname(pathname: string): ArticleChart | undefined {
