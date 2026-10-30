@@ -33,7 +33,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <Link className="back-link" href="/guide/"><ArrowLeft aria-hidden="true" />ガイド一覧へ</Link>
     <header className="page-heading article-heading"><span className="eyebrow">{guide.category}</span><h1 className="phrase-breaks"><PhraseText text={guide.title} /></h1><p>{guide.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
     <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />
-    <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.networkLinks} relatedArticles={relatedArticles} estimateLabel="読む・試す目安"/>
+    <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.sections.some((section) => section.paragraphs.some((paragraph) => paragraph.includes("manapick AI") || paragraph.includes("manapick license"))) ? [] : guide.networkLinks} relatedArticles={relatedArticles} estimateLabel="読む・試す目安"/>
     <AiDeepLinks path={`/guide/${slug}/`} />
   </div></>;
 }
