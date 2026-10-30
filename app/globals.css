@@ -3839,3 +3839,6 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
   .article-tabs::-webkit-scrollbar { display: none; }
   .article-tabs button { flex: 0 0 auto; }
 }
+.career-shop-headline { margin: .35rem 0 0; font-size: .92rem; font-weight: 800; line-height: 1.55; color: var(--ink); }
+.career-shop-specs { display: flex; flex-wrap: wrap; gap: .35rem; margin: .55rem 0 0; padding: 0; list-style: none; }
+.career-shop-specs li { padding: .28rem .5rem; border: 1px solid var(--line); border-radius: 999px; font-size: .68rem; font-weight: 700; color: var(--primary-aa); background: var(--bg); }
