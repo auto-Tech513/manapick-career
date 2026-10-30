@@ -158,3 +158,15 @@ export function relatedPublishedOccupationsForCareer(slug: string) {
   if (!self) return [];
   return publishedOccupationCatalog.filter((item) => item.categoryKey === self.categoryKey && item.catalogId !== catalogId);
 }
+
+export function relatedPublishedOccupationsForCareers(slugs: string[]) {
+  const seen = new Map<string, (typeof publishedOccupationCatalog)[number]>();
+  for (const slug of slugs) {
+    const catalogId = careerSlugCatalogId(slug);
+    if (!catalogId) continue;
+    const self = publishedOccupationCatalog.find((item) => item.catalogId === catalogId);
+    if (self) seen.set(self.catalogId, self);
+    for (const item of relatedPublishedOccupationsForCareer(slug)) seen.set(item.catalogId, item);
+  }
+  return [...seen.values()];
+}
