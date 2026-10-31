@@ -765,6 +765,18 @@
       "reviewedByHumanAt": "2026-10-30",
       "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
       "contentSha256": "ccbfed378296ae8f0bbc5d5999728727dff707f63867ecae939e7744f70a5dfb"
+    },
+    {
+      "slug": "professional-digital-skills-data-ai-exam-2026",
+      "createdAt": "2026-10-31",
+      "status": "draft",
+      "primarySourceId": "ipa-pd-data-ai-syllabus-2026",
+      "sourcePublishedAt": "2026-10-30",
+      "publishedAt": null,
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
     }
   ]
 }

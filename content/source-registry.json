@@ -3148,5 +3148,47 @@
   "updateFrequency": "90d",
   "republication": "製品情報の独自要約と出典リンクのみ",
   "notes": "価格・在庫・レビューは転載しない。商品画像はAmazon公式画像配信（ASIN）で表示。ASINはBenQ公式の購入ページのAmazonリンクから確認。"
+ },
+ {
+  "sourceId": "ipa-pd-data-ai-syllabus-2026",
+  "provider": "独立行政法人情報処理推進機構（IPA）",
+  "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260630.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年10月30日にプロフェッショナルデジタルスキル（データ・AI）試験（仮称）のシラバス案Ver.0.1を掲載したこと",
+   "シラバス案は変更される可能性があり、データマネジメント、データ・AI活用、データエンジニアリング、データ処理とアルゴリズムを扱うこと"
+  ],
+  "checkedAt": "2026-10-31",
+  "updateFrequency": "30d",
+  "republication": "公式資料の事実を独自要約し、本文・図表・問題文は転載しない",
+  "notes": "2027年度開始予定であり、正式名称・実施条件の確定とは扱わない。公開ページの更新日と版番号を再確認する。"
+ },
+ {
+  "sourceId": "ipa-pd-data-ai-sample-2026",
+  "provider": "独立行政法人情報処理推進機構（IPA）",
+  "url": "https://www.ipa.go.jp/shiken/syllabus/henkou/2026/20260622.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年10月30日にプロフェッショナルデジタルスキル（データ・AI）試験（仮称）科目Bサンプル問題を掲載したこと",
+   "サンプルは出題分野・形式のイメージで、実際の試験と同じ問題作成・確認工程を経ていないこと"
+  ],
+  "checkedAt": "2026-10-31",
+  "updateFrequency": "30d",
+  "republication": "問題文は転載せず、公式の位置付けと利用上の注意だけを独自要約",
+  "notes": "IPAは著作権を放棄していない。本文では問題の再掲や解答の転載を行わない。"
+ },
+ {
+  "sourceId": "ipa-exam-system-review-2026",
+  "provider": "独立行政法人情報処理推進機構（IPA）",
+  "url": "https://www.ipa.go.jp/shiken/minaoshi/index.html",
+  "isPrimary": true,
+  "claims": [
+   "情報処理技術者試験は2027年度から新試験制度へ移行する予定であること",
+   "新制度のシラバスとサンプル問題が段階的に公表されていること"
+  ],
+  "checkedAt": "2026-10-31",
+  "updateFrequency": "30d",
+  "republication": "制度概要を独自要約し、出典リンクのみ掲載",
+  "notes": "開始時期は予定。申込、日程、料金、合格基準は正式な試験案内が出た時点で別途確認する。"
  }
 ]
