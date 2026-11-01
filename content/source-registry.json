@@ -3148,5 +3148,47 @@
   "updateFrequency": "90d",
   "republication": "製品情報の独自要約と出典リンクのみ",
   "notes": "価格・在庫・レビューは転載しない。商品画像はAmazon公式画像配信（ASIN）で表示。ASINはBenQ公式の購入ページのAmazonリンクから確認。"
+ },
+ {
+  "sourceId": "stat-labor-force-2026-09",
+  "provider": "総務省統計局",
+  "url": "https://www.soumu.go.jp/menu_news/s-news/01toukei04_01000307.html",
+  "isPrimary": true,
+  "claims": [
+   "労働力調査（基本集計）2026年9月分及び7〜9月期平均の公表（2026年10月30日）",
+   "2026年9月の完全失業率（季節調整値）2.4%"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "総務省の報道資料ページで9月分公表を確認。詳細数値は結果の概要（stat-labor-force-2026-09-summary）で確認。"
+ },
+ {
+  "sourceId": "stat-labor-force-2026-09-summary",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/roudou/sokuhou/tsuki/pdf/gaiyou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "2026年9月分の就業者数6,896万人、雇用者数6,265万人、雇用形態別雇用者数、産業別就業者数、就業率、求職理由別完全失業者数、非労働力人口"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "労働力調査（基本集計）2026年9月分結果の概要（令和8年10月30日公表）で確認。このURLは最新月の概要に差し替わるため、次回確認時は対象月を照合する。"
+ },
+ {
+  "sourceId": "mhlw-job-openings-2026-09",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/newpage_76960.html",
+  "isPrimary": true,
+  "claims": [
+   "令和8年9月の有効求人倍率1.19倍、新規求人倍率2.19倍、正社員有効求人倍率1.01倍",
+   "新規求人の産業別前年同月比と都道府県別有効求人倍率",
+   "正社員有効求人倍率の算出方法の注記"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "monthly",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "一般職業紹介状況（令和8年9月分、2026年10月30日公表）の本文で確認。ハローワーク経由の集計であり、個人の採用見通しへ置き換えない。"
  }
 ]
