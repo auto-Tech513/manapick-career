@@ -16,6 +16,7 @@ import {
   publishedOccupationRecord,
 } from "@/content/catalog";
 import sourceRegistry from "@/content/source-registry.json";
+import companyLinks from "@/content/company-links.json";
 import { incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
@@ -191,6 +192,17 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           ],
         }}
       />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Occupation",
+          name: occupation.name,
+          description: occupation.summary,
+          mainEntityOfPage: pageUrl,
+          ...(category?.label ? { occupationalCategory: category.label } : {}),
+          ...(occupation.qualifications.length ? { skills: occupation.qualifications.join("、") } : {}),
+        }}
+      />
       <AdSenseScript />
       <Breadcrumbs
         trail={[
@@ -300,15 +312,23 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           <h2>企業例・働く場の例（公式確認済み）</h2>
           <p>次の組織は、公式ページで{occupation.name}に関わる職種や採用の案内を確認した例です。最新の募集状況は各公式ページに載っています。</p>
           <ul className="source-list">
-            {employers.map((employer) => (
+            {employers.map((employer) => {
+              const company = (companyLinks.links as unknown as Record<string, { companyName: string; code: string; url: string }>)[employer.name];
+              return (
               <li key={`${employer.name}-${employer.role}`}>
                 <strong>{employer.name}</strong>（{employer.role}）
                 <p>{employer.description}</p>
                 <a href={employer.source.url} target="_blank" rel="noopener noreferrer">
                   公式ページ：{employer.source.title}（確認日 {employer.source.checkedAt}） <ArrowUpRight aria-hidden="true" />
                 </a>
+                {company ? (
+                  <a href={company.url} target="_blank" rel="noopener noreferrer">
+                    企業情報：{company.companyName}（証券コード {company.code}）を manapick company で見る <ArrowUpRight aria-hidden="true" />
+                  </a>
+                ) : null}
               </li>
-            ))}
+              );
+            })}
           </ul>
         </section>
       ) : null}
