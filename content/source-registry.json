@@ -3217,5 +3217,20 @@
   "updateFrequency": "irregular",
   "republication": "独自要約と出典リンクのみ",
   "notes": "職業情報提供サイト（job tag）の警察官（都道府県警察）ページで確認。警察法第2条の職務と同内容が掲載されている。"
+ },
+ {
+  "sourceId": "fdma-fire-organization",
+  "provider": "総務省消防庁",
+  "url": "https://www.fdma.go.jp/singi_kento/kento/items/kento185_04_shiryo2.pdf",
+  "isPrimary": true,
+  "claims": [
+   "市町村は、その区域における消防を十分に果たすべき責任を有する（消防組織法第6条）",
+   "市町村は消防本部・消防署・消防団の全部又は一部を設ける（消防組織法第9条）",
+   "消防庁の役割は消防制度の企画立案や広域的対応を要する事務であり、現場の消防は市町村が担う"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "irregular",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "消防庁の検討会資料「日本の消防組織の概要等」で、消防組織法の条文に基づく市町村消防の原則を確認。資料自体は平成28年時点の組織数を含むため、件数類は引用しない。"
  }
 ]

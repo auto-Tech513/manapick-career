@@ -3830,8 +3830,9 @@
         "freshnessDays": 90,
         "lastCheckedAt": "2026-11-01",
         "sourceIds": [
-          "egov-fire-service-act",
-          "egov-police-act"
+          "fdma-fire-organization",
+          "egov-police-act",
+          "mhlw-jobtag-firefighter"
         ],
         "text": "消防は原則として市町村が責任を持ち消防本部が担い、警察は都道府県に都道府県警察が置かれる"
       },

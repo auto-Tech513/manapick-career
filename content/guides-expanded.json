@@ -9060,6 +9060,7 @@
     "slug": "firefighter-vs-police-officer",
     "sourceIds": [
       "mhlw-jobtag-firefighter",
+      "fdma-fire-organization",
       "mhlw-jobtag-police-officer",
       "egov-fire-service-act",
       "egov-police-act",
