@@ -11,6 +11,7 @@ import { ArrowLeft, ArrowRight, ArrowUpRight, CircleAlert, Newspaper } from "luc
 import { JsonLd } from "@/components/JsonLd";
 import { PageEvent, TrackedExternalLink } from "@/components/Tracking";
 import { publishedNews } from "@/content/editorial";
+import { researchSelectedNewsSlugs } from "@/content/research-selection";
 import { categories, publishedJobs } from "@/content/jobs";
 import sourceRegistry from "@/content/source-registry.json";
 import { careerInsightBySlug } from "@/lib/career-insights";
@@ -70,7 +71,18 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
   const exactVideos = relation?.nodes.filter(node => node.kind === "video") ?? [];
   const category = categories.find((item) => item.key === job.category);
   const sources = sourceRegistry.filter((source) => job.sourceIds.includes(source.sourceId));
-  const relatedNews = publishedNews.filter((item) => item.relatedCareerSlugs.includes(job.slug)).slice(0, 3);
+  // 関連ニュースは公開日降順が基本だが、データ室の選定（一次資料の優先順位）を先に置く。
+  // 公開日だけだと選定済みの古い一次資料解説が枠から落ちる（例：就職白書2026）。
+  const relatedNews = publishedNews
+    .filter((item) => item.relatedCareerSlugs.includes(job.slug))
+    .sort((a, b) => {
+      const rankA = researchSelectedNewsSlugs.indexOf(a.slug);
+      const rankB = researchSelectedNewsSlugs.indexOf(b.slug);
+      const selectedA = rankA === -1 ? Number.MAX_SAFE_INTEGER : rankA;
+      const selectedB = rankB === -1 ? Number.MAX_SAFE_INTEGER : rankB;
+      return selectedA - selectedB;
+    })
+    .slice(0, 3);
   const relatedOccupations = relatedPublishedOccupationsForCareer(job.slug);
   const adjacentJobs = insight.adjacentJobs.map((item) => ({
     ...item,

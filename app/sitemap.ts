@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const latestNewsCheck = latest(...newsItems.map(newsModifiedAt));
   const latestEditorialCheck = latest(latestGuideCheck ?? "", latestNewsCheck ?? "");
   const latestSiteCheck = latest(latestJobCheck ?? "", latestEditorialCheck ?? "", occupationCatalogSource.datasetUpdatedAt);
+  // lastModified は、コンテンツ由来の日付を引けるページにだけ付ける。
+  // 日付の根拠がない固定ページ（/shop/ /privacy/ など）には付けない。
   const contentDerivedDates: Record<string, string | undefined> = {
     "/": latestSiteCheck,
     "/route/": latestJobCheck,
@@ -23,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/guide/": latestGuideCheck,
     "/news/": latestNewsCheck,
     "/research/": latestNewsCheck,
+    "/employers/": latest(latestJobCheck ?? "", occupationCatalogSource.datasetUpdatedAt),
     "/all/": latest(latestJobCheck ?? "", occupationCatalogSource.datasetUpdatedAt),
   };
   const fixed = ["/", "/route/", "/compare/", "/ranking/", "/skills/", "/guide/", "/news/", "/research/", "/shop/", "/employers/", "/glossary/", "/faq/", "/about-method/", "/operator/", "/privacy/", "/affiliate/", "/disclaimer/", "/contact/", "/all/"];
