@@ -3148,5 +3148,74 @@
   "updateFrequency": "90d",
   "republication": "製品情報の独自要約と出典リンクのみ",
   "notes": "価格・在庫・レビューは転載しない。商品画像はAmazon公式画像配信（ASIN）で表示。ASINはBenQ公式の購入ページのAmazonリンクから確認。"
+ },
+ {
+  "sourceId": "stat-labor-force-2026-09",
+  "provider": "総務省統計局",
+  "url": "https://www.soumu.go.jp/menu_news/s-news/01toukei04_01000307.html",
+  "isPrimary": true,
+  "claims": [
+   "労働力調査（基本集計）2026年9月分及び7〜9月期平均の公表（2026年10月30日）",
+   "2026年9月の完全失業率（季節調整値）2.4%"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "総務省の報道資料ページで9月分公表を確認。詳細数値は結果の概要（stat-labor-force-2026-09-summary）で確認。"
+ },
+ {
+  "sourceId": "stat-labor-force-2026-09-summary",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/roudou/sokuhou/tsuki/pdf/gaiyou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "2026年9月分の就業者数6,896万人、雇用者数6,265万人、雇用形態別雇用者数、産業別就業者数、就業率、求職理由別完全失業者数、非労働力人口"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "労働力調査（基本集計）2026年9月分結果の概要（令和8年10月30日公表）で確認。このURLは最新月の概要に差し替わるため、次回確認時は対象月を照合する。"
+ },
+ {
+  "sourceId": "mhlw-job-openings-2026-09",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/newpage_76960.html",
+  "isPrimary": true,
+  "claims": [
+   "令和8年9月の有効求人倍率1.19倍、新規求人倍率2.19倍、正社員有効求人倍率1.01倍",
+   "新規求人の産業別前年同月比と都道府県別有効求人倍率",
+   "正社員有効求人倍率の算出方法の注記"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "monthly",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "一般職業紹介状況（令和8年9月分、2026年10月30日公表）の本文で確認。ハローワーク経由の集計であり、個人の採用見通しへ置き換えない。"
+ },
+ {
+  "sourceId": "mhlw-jobtag-firefighter",
+  "provider": "厚生労働省 job tag",
+  "url": "https://shigoto.mhlw.go.jp/User/Occupation/Detail/155",
+  "isPrimary": true,
+  "claims": [
+   "消防官の仕事内容（災害現場での消火・救助、24時間交替制、火災予防の検査・指導）",
+   "消防官は消防員に分類される公務の職業である"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "irregular",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "職業情報提供サイト（job tag）の消防官ページで確認。数値情報は賃金構造基本統計調査等の統計に基づく参考値として扱う。"
+ },
+ {
+  "sourceId": "mhlw-jobtag-police-officer",
+  "provider": "厚生労働省 job tag",
+  "url": "https://shigoto.mhlw.go.jp/User/Occupation/Detail/140",
+  "isPrimary": true,
+  "claims": [
+   "警察官（都道府県警察）の仕事内容は、個人の生命・身体・財産の保護、犯罪の予防・捜査、交通の取締り、公共の安全と秩序の維持である"
+  ],
+  "checkedAt": "2026-11-01",
+  "updateFrequency": "irregular",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "職業情報提供サイト（job tag）の警察官（都道府県警察）ページで確認。警察法第2条の職務と同内容が掲載されている。"
  }
 ]

@@ -765,6 +765,32 @@
       "reviewedByHumanAt": "2026-10-30",
       "reviewEvidence": "git:849060ea132b01b36fc068fcfc944ef01a61a7b6",
       "contentSha256": "ccbfed378296ae8f0bbc5d5999728727dff707f63867ecae939e7744f70a5dfb"
+    },
+    {
+      "slug": "labor-force-september-2026",
+      "createdAt": "2026-11-01",
+      "status": "published",
+      "primarySourceId": "stat-labor-force-2026-09",
+      "sourcePublishedAt": "2026-10-30",
+      "publishedAt": "2026-11-01",
+      "reviewedAt": "2026-11-01",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-01",
+      "reviewEvidence": "git:0228e7041daa345981d40b3b5fd699c94fd88d52",
+      "contentSha256": "bbeed35c1d69c7a9606ae1ea827aa4aaaa374d6640f367e1b9d5badc913e09a2"
+    },
+    {
+      "slug": "job-openings-september-2026",
+      "createdAt": "2026-11-01",
+      "status": "published",
+      "primarySourceId": "mhlw-job-openings-2026-09",
+      "sourcePublishedAt": "2026-10-30",
+      "publishedAt": "2026-11-01",
+      "reviewedAt": "2026-11-01",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-01",
+      "reviewEvidence": "git:d67195829658c03496aee086844013024375a338",
+      "contentSha256": "1a9c8f4362f3e3a2c2ba9f912ba74635f7245389814a28c88274d646c5c748ac"
     }
   ]
 }

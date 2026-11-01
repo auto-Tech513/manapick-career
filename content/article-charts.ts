@@ -402,6 +402,32 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "job-openings-september-2026": {
+    "title": "都道府県別の有効求人倍率（2026年9月・就業地別）",
+    "note": "全国の有効求人倍率（季節調整値）は1.19倍で、正社員有効求人倍率は1.01倍でした。",
+    "bars": [
+      {
+        "label": "福井県",
+        "value": 1.74,
+        "display": "1.74倍"
+      },
+      {
+        "label": "山梨県",
+        "value": 1.74,
+        "display": "1.74倍"
+      },
+      {
+        "label": "全国",
+        "value": 1.19,
+        "display": "1.19倍"
+      },
+      {
+        "label": "大阪府",
+        "value": 0.96,
+        "display": "0.96倍"
+      }
+    ]
+  },
   "labor-force-august-2026": {
     "title": "産業別の就業者数（2026年8月）",
     "note": "前年同月と比べ、医療，福祉は23万人増、製造業は21万人減でした。",
@@ -425,6 +451,32 @@ export const articleCharts: Record<string, ArticleChart> = {
         "display": "348万人",
         "label": "運輸業，郵便業",
         "value": 348
+      }
+    ]
+  },
+  "labor-force-september-2026": {
+    "title": "産業別の就業者数（2026年9月）",
+    "note": "前年同月と比べ、医療，福祉は29万人増、製造業は6万人増でした。",
+    "bars": [
+      {
+        "display": "1,036万人",
+        "label": "製造業",
+        "value": 1036
+      },
+      {
+        "display": "967万人",
+        "label": "医療，福祉",
+        "value": 967
+      },
+      {
+        "display": "497万人",
+        "label": "サービス業（他に分類されないもの）",
+        "value": 497
+      },
+      {
+        "display": "475万人",
+        "label": "建設業",
+        "value": 475
       }
     ]
   },

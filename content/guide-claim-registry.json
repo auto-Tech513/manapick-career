@@ -3820,5 +3820,118 @@
         "text": "警察庁は国の機関として、広域組織犯罪への対処や鑑識・統計などの面で都道府県警察を指揮監督する"
       }
     ]
+  },
+  {
+    "guideSlug": "firefighter-vs-police-officer",
+    "claims": [
+      {
+        "claimId": "fp-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "egov-fire-service-act",
+          "egov-police-act"
+        ],
+        "text": "消防は原則として市町村が責任を持ち消防本部が担い、警察は都道府県に都道府県警察が置かれる"
+      },
+      {
+        "claimId": "fp-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "mhlw-jobtag-firefighter"
+        ],
+        "text": "消防官は災害現場で消火・人命救助にあたり、24時間交替制で消防署に待機し、火災予防の検査・指導も行う"
+      },
+      {
+        "claimId": "fp-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "egov-police-act",
+          "mhlw-jobtag-police-officer"
+        ],
+        "text": "警察官の職務は、個人の生命・身体・財産の保護、犯罪の予防・捜査、被疑者の逮捕、交通の取締り、公共の安全と秩序の維持である"
+      },
+      {
+        "claimId": "fp-04",
+        "critical": false,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "mhlw-jobtag-paramedic"
+        ],
+        "text": "救急業務は消防において行われ、救急車に乗務するには消防士として採用される必要がある"
+      },
+      {
+        "claimId": "fp-05",
+        "critical": false,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "npa-police-system"
+        ],
+        "text": "警察は警察庁と都道府県警察の二層構造で、現場の警察活動は都道府県警察が担う"
+      }
+    ]
+  },
+  {
+    "guideSlug": "certified-care-worker-vs-childcare-worker",
+    "claims": [
+      {
+        "claimId": "cc-01",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "egov-care-worker-act"
+        ],
+        "text": "介護福祉士は、身体上・精神上の障害により日常生活に支障がある者への介護と、介護者への指導を行う国家資格である"
+      },
+      {
+        "claimId": "cc-02",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "egov-child-welfare-act"
+        ],
+        "text": "保育士は、児童の保育と保護者に対する保育に関する指導を行う国家資格で、都道府県知事の登録を受ける"
+      },
+      {
+        "claimId": "cc-03",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "sssc-care-worker",
+          "egov-care-worker-act"
+        ],
+        "text": "介護福祉士は国家試験への合格と登録が必要で、実務経験3年以上と実務者研修による受験ルートがある"
+      },
+      {
+        "claimId": "cc-04",
+        "critical": true,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "egov-child-welfare-act"
+        ],
+        "text": "保育士は指定保育士養成施設の卒業または保育士試験合格により登録資格が得られ、保育士試験は都道府県知事が行う"
+      },
+      {
+        "claimId": "cc-05",
+        "critical": false,
+        "freshnessDays": 90,
+        "lastCheckedAt": "2026-11-01",
+        "sourceIds": [
+          "mhlw-wage-structure-2025"
+        ],
+        "text": "賃金構造基本統計調査には保育士の単独分類があり年収換算の平均は427.6万円だが、介護福祉士に対応する単独分類はない"
+      }
+    ]
   }
 ]
