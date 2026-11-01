@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-01",
+  "source": "company.manapick.app の公開データ（companies.json / listed.json、2026-11-01時点）",
+  "method": "企業例の名称と上場企業名を、法人格（株式会社等）を除いた表記で完全一致照合し、証券コードで裏付けたものだけを収録。一致しない企業（非上場・士業法人・相互会社など）はリンクしない。",
+  "links": {
+    "キッコーマン株式会社": {
+      "companyName": "キッコーマン",
+      "code": "2801",
+      "url": "https://company.manapick.app/company/kikkoman/"
+    },
+    "キヤノン株式会社": {
+      "companyName": "キヤノン",
+      "code": "7751",
+      "url": "https://company.manapick.app/company/canon/"
+    },
+    "トヨタ自動車株式会社": {
+      "companyName": "トヨタ自動車",
+      "code": "7203",
+      "url": "https://company.manapick.app/company/toyota/"
+    },
+    "ニチダイ株式会社": {
+      "companyName": "ニチダイ",
+      "code": "6467",
+      "url": "https://company.manapick.app/company/nichidai/"
+    },
+    "ノリタケ株式会社": {
+      "companyName": "ノリタケ",
+      "code": "5331",
+      "url": "https://company.manapick.app/company/noritake/"
+    },
+    "ファナック株式会社": {
+      "companyName": "ファナック",
+      "code": "6954",
+      "url": "https://company.manapick.app/company/fanuc/"
+    },
+    "ペプチドリーム株式会社": {
+      "companyName": "ペプチドリーム",
+      "code": "4587",
+      "url": "https://company.manapick.app/company/peptidream/"
+    },
+    "ルネサス エレクトロニクス株式会社": {
+      "companyName": "ルネサスエレクトロニクス",
+      "code": "6723",
+      "url": "https://company.manapick.app/company/renesas/"
+    },
+    "三井金属株式会社": {
+      "companyName": "三井金属",
+      "code": "5706",
+      "url": "https://company.manapick.app/company/mitsui-mining-and-smelting/"
+    },
+    "三菱重工業株式会社": {
+      "companyName": "三菱重工業",
+      "code": "7011",
+      "url": "https://company.manapick.app/company/mitsubishi-heavy/"
+    },
+    "中外製薬株式会社": {
+      "companyName": "中外製薬",
+      "code": "4519",
+      "url": "https://company.manapick.app/company/chugai/"
+    },
+    "京セラ株式会社": {
+      "companyName": "京セラ",
+      "code": "6971",
+      "url": "https://company.manapick.app/company/kyocera/"
+    },
+    "任天堂株式会社": {
+      "companyName": "任天堂",
+      "code": "7974",
+      "url": "https://company.manapick.app/company/nintendo/"
+    },
+    "伊藤忠商事株式会社": {
+      "companyName": "伊藤忠商事",
+      "code": "8001",
+      "url": "https://company.manapick.app/company/itochu/"
+    },
+    "住友林業株式会社": {
+      "companyName": "住友林業",
+      "code": "1911",
+      "url": "https://company.manapick.app/company/sumitomo-forestry/"
+    },
+    "協和キリン株式会社": {
+      "companyName": "協和キリン",
+      "code": "4151",
+      "url": "https://company.manapick.app/company/kyowa-kirin/"
+    },
+    "味の素株式会社": {
+      "companyName": "味の素",
+      "code": "2802",
+      "url": "https://company.manapick.app/company/ajinomoto/"
+    },
+    "山崎製パン株式会社": {
+      "companyName": "山崎製パン",
+      "code": "2212",
+      "url": "https://company.manapick.app/company/yamazaki-baking/"
+    },
+    "日揮ホールディングス株式会社": {
+      "companyName": "日揮ホールディングス",
+      "code": "1963",
+      "url": "https://company.manapick.app/company/jgc-holdings/"
+    },
+    "日本ハム株式会社": {
+      "companyName": "日本ハム",
+      "code": "2282",
+      "url": "https://company.manapick.app/company/nh-foods/"
+    },
+    "東京製鐵株式会社": {
+      "companyName": "東京製鐵",
+      "code": "5423",
+      "url": "https://company.manapick.app/company/tokyo-steel-manufacturing/"
+    },
+    "東日本旅客鉄道株式会社": {
+      "companyName": "東日本旅客鉄道",
+      "code": "9020",
+      "url": "https://company.manapick.app/company/jr-east/"
+    },
+    "東洋エンジニアリング株式会社": {
+      "companyName": "東洋エンジニアリング",
+      "code": "6330",
+      "url": "https://company.manapick.app/company/toyo-engineering/"
+    },
+    "東海旅客鉄道株式会社": {
+      "companyName": "東海旅客鉄道",
+      "code": "9022",
+      "url": "https://company.manapick.app/company/jr-central/"
+    },
+    "株式会社きんでん": {
+      "companyName": "きんでん",
+      "code": "1944",
+      "url": "https://company.manapick.app/company/kinden/"
+    },
+    "株式会社すかいらーくホールディングス": {
+      "companyName": "すかいらーくホールディングス",
+      "code": "3197",
+      "url": "https://company.manapick.app/company/skylark-holdings/"
+    },
+    "株式会社ゆうちょ銀行": {
+      "companyName": "ゆうちょ銀行",
+      "code": "7182",
+      "url": "https://company.manapick.app/company/japan-post-bank/"
+    },
+    "株式会社アサンテ": {
+      "companyName": "アサンテ",
+      "code": "6073",
+      "url": "https://company.manapick.app/company/asante/"
+    },
+    "株式会社イトーキ": {
+      "companyName": "イトーキ",
+      "code": "7972",
+      "url": "https://company.manapick.app/company/itoki/"
+    },
+    "株式会社インターメスティック": {
+      "companyName": "インターメスティック",
+      "code": "262A",
+      "url": "https://company.manapick.app/company/intermestic/"
+    },
+    "株式会社ケーズホールディングス": {
+      "companyName": "ケーズホールディングス",
+      "code": "8282",
+      "url": "https://company.manapick.app/company/ks-holdings/"
+    },
+    "株式会社サイバーエージェント": {
+      "companyName": "サイバーエージェント",
+      "code": "4751",
+      "url": "https://company.manapick.app/company/cyberagent/"
+    },
+    "株式会社サンクゼール": {
+      "companyName": "サンクゼール",
+      "code": "2937",
+      "url": "https://company.manapick.app/company/st-cousair/"
+    },
+    "株式会社ゼロ": {
+      "companyName": "ゼロ",
+      "code": "9028",
+      "url": "https://company.manapick.app/company/zero/"
+    },
+    "株式会社タイミー": {
+      "companyName": "タイミー",
+      "code": "215A",
+      "url": "https://company.manapick.app/company/timee/"
+    },
+    "株式会社タカラトミー": {
+      "companyName": "タカラトミー",
+      "code": "7867",
+      "url": "https://company.manapick.app/company/takara-tomy/"
+    },
+    "株式会社ティアフォー": {
+      "companyName": "ティアフォー",
+      "code": "593A",
+      "url": "https://company.manapick.app/company/tier-iv/"
+    },
+    "株式会社デンソー": {
+      "companyName": "デンソー",
+      "code": "6902",
+      "url": "https://company.manapick.app/company/denso/"
+    },
+    "株式会社トーエネック": {
+      "companyName": "トーエネック",
+      "code": "1946",
+      "url": "https://company.manapick.app/company/toenec/"
+    },
+    "株式会社トーカイ": {
+      "companyName": "トーカイ",
+      "code": "9729",
+      "url": "https://company.manapick.app/company/tokai/"
+    },
+    "株式会社ニコン": {
+      "companyName": "ニコン",
+      "code": "7731",
+      "url": "https://company.manapick.app/company/nikon/"
+    },
+    "株式会社フジ": {
+      "companyName": "フジ",
+      "code": "8278",
+      "url": "https://company.manapick.app/company/fuji/"
+    },
+    "株式会社フレアス": {
+      "companyName": "フレアス",
+      "code": "7062",
+      "url": "https://company.manapick.app/company/flares/"
+    },
+    "株式会社ブシロード": {
+      "companyName": "ブシロード",
+      "code": "7803",
+      "url": "https://company.manapick.app/company/bushiroad/"
+    },
+    "株式会社ブリヂストン": {
+      "companyName": "ブリヂストン",
+      "code": "5108",
+      "url": "https://company.manapick.app/company/bridgestone/"
+    },
+    "株式会社ベルク": {
+      "companyName": "ベルク",
+      "code": "9974",
+      "url": "https://company.manapick.app/company/belc/"
+    },
+    "株式会社ベルパーク": {
+      "companyName": "ベルパーク",
+      "code": "9441",
+      "url": "https://company.manapick.app/company/bell-park/"
+    },
+    "株式会社ミライト・ワン": {
+      "companyName": "ミライト・ワン",
+      "code": "1417",
+      "url": "https://company.manapick.app/company/mirait-one/"
+    },
+    "株式会社レノバ": {
+      "companyName": "レノバ",
+      "code": "9519",
+      "url": "https://company.manapick.app/company/renova/"
+    },
+    "株式会社乃村工藝社": {
+      "companyName": "乃村工藝社",
+      "code": "9716",
+      "url": "https://company.manapick.app/company/nomura/"
+    },
+    "株式会社名村造船所": {
+      "companyName": "名村造船所",
+      "code": "7014",
+      "url": "https://company.manapick.app/company/namura-zosen/"
+    },
+    "株式会社帝国ホテル": {
+      "companyName": "帝国ホテル",
+      "code": "9708",
+      "url": "https://company.manapick.app/company/imperial-hotel/"
+    },
+    "株式会社東京通信グループ": {
+      "companyName": "東京通信グループ",
+      "code": "7359",
+      "url": "https://company.manapick.app/company/tokyo-communications-group/"
+    },
+    "株式会社椿本チエイン": {
+      "companyName": "椿本チエイン",
+      "code": "6371",
+      "url": "https://company.manapick.app/company/tsubakimoto-chain/"
+    },
+    "株式会社河合楽器製作所": {
+      "companyName": "河合楽器製作所",
+      "code": "7952",
+      "url": "https://company.manapick.app/company/kawai-musical-instruments/"
+    },
+    "株式会社紀文食品": {
+      "companyName": "紀文食品",
+      "code": "2933",
+      "url": "https://company.manapick.app/company/kibun-foods/"
+    },
+    "株式会社西松屋チェーン": {
+      "companyName": "西松屋チェーン",
+      "code": "7545",
+      "url": "https://company.manapick.app/company/nishimatsuya-chain/"
+    },
+    "株式会社資生堂": {
+      "companyName": "資生堂",
+      "code": "4911",
+      "url": "https://company.manapick.app/company/shiseido/"
+    },
+    "株式会社高島屋": {
+      "companyName": "高島屋",
+      "code": "8233",
+      "url": "https://company.manapick.app/company/takashimaya/"
+    },
+    "楽天グループ株式会社": {
+      "companyName": "楽天グループ",
+      "code": "4755",
+      "url": "https://company.manapick.app/company/rakuten-group/"
+    },
+    "武田薬品工業株式会社": {
+      "companyName": "武田薬品工業",
+      "code": "4502",
+      "url": "https://company.manapick.app/company/takeda/"
+    },
+    "石塚硝子株式会社": {
+      "companyName": "石塚硝子",
+      "code": "5204",
+      "url": "https://company.manapick.app/company/ishizuka-glass/"
+    },
+    "積水ハウス株式会社": {
+      "companyName": "積水ハウス",
+      "code": "1928",
+      "url": "https://company.manapick.app/company/sekisui-house/"
+    },
+    "鹿島建設株式会社": {
+      "companyName": "鹿島建設",
+      "code": "1812",
+      "url": "https://company.manapick.app/company/kajima/"
+    }
+  }
+}

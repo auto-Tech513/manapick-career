@@ -33,13 +33,14 @@ export const metadata: Metadata={
 export const viewport:Viewport={themeColor:"#ffd700",width:"device-width",initialScale:1,viewportFit:"cover"};
 
 const graph={"@context":"https://schema.org","@graph":[
-  {"@type":"Organization","@id":absoluteUrl("/#organization"),name:"manapick",url:"https://manapick.app/",sameAs:["https://x.com/manapick_app"]},
+  {"@type":"Organization","@id":absoluteUrl("/#organization"),name:"manapick",url:"https://manapick.app/",sameAs:["https://manapick.app/","https://ai.manapick.app/","https://license.manapick.app/","https://career.manapick.app/","https://company.manapick.app/","https://x.com/manapick_app"]},
   {"@type":"WebSite","@id":absoluteUrl("/#website"),name:SITE_NAME,url:SITE_URL,inLanguage:"ja-JP",publisher:{"@id":absoluteUrl("/#organization")},isPartOf:{"@type":"WebSite",name:"manapick",url:"https://manapick.app/"}},
   {"@type":"ItemList","@id":absoluteUrl("/#network-navigation"),name:"manapick公式サイト",itemListElement:[
     {"@type":"SiteNavigationElement",position:1,name:"学ぶ",url:"https://manapick.app/"},
     {"@type":"SiteNavigationElement",position:2,name:"AIを選ぶ",url:"https://ai.manapick.app/"},
     {"@type":"SiteNavigationElement",position:3,name:"資格で証明",url:"https://license.manapick.app/"},
-    {"@type":"SiteNavigationElement",position:4,name:"仕事につなぐ",url:SITE_URL}
+    {"@type":"SiteNavigationElement",position:4,name:"仕事につなぐ",url:SITE_URL},
+    {"@type":"SiteNavigationElement",position:5,name:"企業を読む",url:"https://company.manapick.app/"}
   ]}
 ]};
 
