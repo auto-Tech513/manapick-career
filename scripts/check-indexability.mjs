@@ -20,6 +20,12 @@ const uniqueLocations = new Set(locations);
 if (!locations.length) failures.push("sitemap has no URLs");
 if (uniqueLocations.size !== locations.length) failures.push(`sitemap has ${locations.length - uniqueLocations.size} duplicate URL(s)`);
 
+// サイトマップ件数の急減ガード：基準値（scripts/sitemap-baseline.json）の95%を下回ったら失敗させる。
+// 意図的な取り下げで下回る場合は、基準値そのものを更新して意図を記録すること。
+const sitemapBaseline = JSON.parse(await read("scripts/sitemap-baseline.json"));
+const sitemapFloor = Math.floor(sitemapBaseline.count * 0.95);
+if (locations.length < sitemapFloor) failures.push(`sitemap URL count ${locations.length} fell below 95% of baseline ${sitemapBaseline.count} (floor ${sitemapFloor}); if this shrink is intentional, update scripts/sitemap-baseline.json`);
+
 for (const location of locations) {
   let url;
   try {
@@ -78,4 +84,4 @@ if (failures.length) {
   process.exit(1);
 }
 
-console.log(`indexability: ${locations.length} unique sitemap URLs; canonical/robots/output OK; ${careerEntries.length} career OG+TOC routes; draft and JobPosting exposure 0`);
+console.log(`indexability: ${locations.length} unique sitemap URLs (baseline ${sitemapBaseline.count}); canonical/robots/output OK; ${careerEntries.length} career OG+TOC routes; draft and JobPosting exposure 0`);

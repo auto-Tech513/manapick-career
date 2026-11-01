@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BarChart3, BookOpenCheck, Building2, CircleAlert, Database, SearchCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { newsItems } from "@/content/editorial";
+import { researchSelectedNewsSlugs } from "@/content/research-selection";
 import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: { title: "キャリアデータ室 | manapick career", description: "労働市場の数字を、職業順位や転職成功率へ変換せずに読む。", url: absoluteUrl("/research/"), images: [{ url: absoluteUrl("/og.png"), width: 1200, height: 630 }] },
 };
 
-const selectedSlugs = ["labor-force-may-2026", "monthly-earnings-may-2026", "wage-structure-2025", "dx-self-assessment-1164-2026", "workplace-learning-ojt-offjt-2025", "employment-whitepaper-2026"];
+const selectedSlugs = researchSelectedNewsSlugs;
 const method = [
   { icon: Database, title: "示すこと", copy: "誰を、いつ、どの方法で調べた数字か。分子・分母、調査対象、単位を一次資料で確認します。" },
   { icon: CircleAlert, title: "示さないこと", copy: "個人の適性、採用可能性、将来年収、特定企業の働きやすさへ置き換えられない範囲を明記します。" },

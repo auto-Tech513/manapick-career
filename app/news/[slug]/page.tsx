@@ -21,8 +21,17 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   const item = newsBySlug(slug);
   if (!item) notFound();
   const sources = sourceRegistry.filter((source) => item.sourceIds.includes(source.sourceId));
-  const relatedNews = newsItems.filter((n) => n.kind === item.kind && n.slug !== slug).sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1)).slice(0, 3);
-  const relatedArticles = { heading: `ほかの「${item.kind}」の解説を読む`, links: relatedNews.map((n) => ({ href: `/news/${n.slug}/`, title: n.title, meta: `資料公表 ${n.sourcePublishedAt}` })) };
+  // 関連記事は同種を優先し、3件に満たない場合は「出典の共有」「対象職業の共有」の順で補う。
+  // 同種が1〜2本しかない分類では、補わないと関連枠が1件以下になってしまうため。
+  const byPublishedDesc = (a: (typeof newsItems)[number], b: (typeof newsItems)[number]) => (a.publishedAt < b.publishedAt ? 1 : -1);
+  const sameKindNews = newsItems.filter((n) => n.kind === item.kind && n.slug !== slug).sort(byPublishedDesc);
+  const chosenSlugs = new Set([slug, ...sameKindNews.map((n) => n.slug)]);
+  const sharedSourceNews = newsItems.filter((n) => !chosenSlugs.has(n.slug) && n.sourceIds.some((sourceId) => item.sourceIds.includes(sourceId))).sort(byPublishedDesc);
+  sharedSourceNews.forEach((n) => chosenSlugs.add(n.slug));
+  const sharedCareerNews = newsItems.filter((n) => !chosenSlugs.has(n.slug) && n.relatedCareerSlugs.some((careerSlug) => item.relatedCareerSlugs.includes(careerSlug))).sort(byPublishedDesc);
+  const relatedNews = [...sameKindNews, ...sharedSourceNews, ...sharedCareerNews].slice(0, 3);
+  const relatedHeading = relatedNews.every((n) => n.kind === item.kind) ? `ほかの「${item.kind}」の解説を読む` : "関連する解説を読む";
+  const relatedArticles = { heading: relatedHeading, links: relatedNews.map((n) => ({ href: `/news/${n.slug}/`, title: n.title, meta: `資料公表 ${n.sourcePublishedAt}` })) };
   const url = absoluteUrl(`/news/${slug}/`);
   const modifiedAt = newsModifiedAt(item);
   const articleText = item.sections.flatMap((section) => section.paragraphs).join("");
