@@ -1,0 +1,453 @@
+{
+  "source": "manapick license content/licenses.json（資格224件）＋ content/income-links.json の career 対応20組",
+  "note": "職業ページ分は資格名の正規化完全一致のみ（推測の対応付けなし）。ドシエ分は license 側で検証済みの対応の逆引きで、資格欄にリンク済みの資格は除く。",
+  "generatedAt": "2026-11-03",
+  "occupations": {
+    "21": [
+      {
+        "name": "二級建築士",
+        "slug": "kenchikushi-2"
+      },
+      {
+        "name": "技術士（建設部門）",
+        "slug": "gijutsushi"
+      }
+    ],
+    "24": [
+      {
+        "name": "測量士",
+        "slug": "sokuryoshi"
+      },
+      {
+        "name": "測量士補",
+        "slug": "sokuryo-ho"
+      },
+      {
+        "name": "土地家屋調査士",
+        "slug": "chosashi"
+      }
+    ],
+    "26": [
+      {
+        "name": "二級建築士",
+        "slug": "kenchikushi-2"
+      }
+    ],
+    "45": [
+      {
+        "name": "第一種電気主任技術者",
+        "slug": "denken-1"
+      },
+      {
+        "name": "第二種電気主任技術者",
+        "slug": "denken-2"
+      },
+      {
+        "name": "第三種電気主任技術者",
+        "slug": "denken-3"
+      },
+      {
+        "name": "第二種電気工事士",
+        "slug": "denki-2"
+      }
+    ],
+    "46": [
+      {
+        "name": "給水装置工事主任技術者",
+        "slug": "water-supply-equipment-chief-technician"
+      }
+    ],
+    "79": [
+      {
+        "name": "中小企業診断士",
+        "slug": "shindanshi"
+      }
+    ],
+    "80": [
+      {
+        "name": "中小企業診断士",
+        "slug": "shindanshi"
+      },
+      {
+        "name": "公認会計士",
+        "slug": "cpa"
+      },
+      {
+        "name": "税理士",
+        "slug": "zeirishi"
+      }
+    ],
+    "82": [
+      {
+        "name": "社会保険労務士",
+        "slug": "sharoshi"
+      }
+    ],
+    "83": [
+      {
+        "name": "司法書士",
+        "slug": "shihoshoshi"
+      }
+    ],
+    "84": [
+      {
+        "name": "行政書士",
+        "slug": "gyoseishoshi"
+      },
+      {
+        "name": "税理士",
+        "slug": "zeirishi"
+      },
+      {
+        "name": "司法書士",
+        "slug": "shihoshoshi"
+      },
+      {
+        "name": "土地家屋調査士",
+        "slug": "chosashi"
+      },
+      {
+        "name": "宅地建物取引士（旧：宅地建物取引主任者）",
+        "slug": "takken"
+      }
+    ],
+    "85": [
+      {
+        "name": "二級建築士",
+        "slug": "kenchikushi-2"
+      },
+      {
+        "name": "測量士",
+        "slug": "sokuryoshi"
+      },
+      {
+        "name": "測量士補",
+        "slug": "sokuryo-ho"
+      },
+      {
+        "name": "司法書士",
+        "slug": "shihoshoshi"
+      },
+      {
+        "name": "土地家屋調査士",
+        "slug": "chosashi"
+      },
+      {
+        "name": "行政書士",
+        "slug": "gyoseishoshi"
+      }
+    ],
+    "88": [
+      {
+        "name": "司法試験",
+        "slug": "shiho-shiken"
+      }
+    ],
+    "89": [
+      {
+        "name": "公認会計士",
+        "slug": "cpa"
+      }
+    ],
+    "91": [
+      {
+        "name": "公認会計士",
+        "slug": "cpa"
+      },
+      {
+        "name": "税理士",
+        "slug": "zeirishi"
+      }
+    ],
+    "92": [
+      {
+        "name": "不動産鑑定士",
+        "slug": "fudosan-kanteishi"
+      },
+      {
+        "name": "宅地建物取引士（旧：宅地建物取引主任者）",
+        "slug": "takken"
+      }
+    ],
+    "93": [
+      {
+        "name": "気象予報士",
+        "slug": "kisho-yohoshi"
+      }
+    ],
+    "98": [
+      {
+        "name": "調理師",
+        "slug": "chori"
+      }
+    ],
+    "99": [
+      {
+        "name": "調理師",
+        "slug": "chori"
+      }
+    ],
+    "100": [
+      {
+        "name": "調理師",
+        "slug": "chori"
+      }
+    ],
+    "114": [
+      {
+        "name": "理容師",
+        "slug": "riyoshi"
+      },
+      {
+        "name": "美容師",
+        "slug": "biyoshi"
+      }
+    ],
+    "115": [
+      {
+        "name": "美容師",
+        "slug": "biyoshi"
+      },
+      {
+        "name": "理容師",
+        "slug": "riyoshi"
+      }
+    ],
+    "130": [
+      {
+        "name": "保育士",
+        "slug": "hoikushi"
+      }
+    ],
+    "131": [
+      {
+        "name": "介護福祉士",
+        "slug": "kaigo-fukushi"
+      }
+    ],
+    "132": [
+      {
+        "name": "介護福祉士",
+        "slug": "kaigo-fukushi"
+      }
+    ],
+    "133": [
+      {
+        "name": "介護福祉士",
+        "slug": "kaigo-fukushi"
+      }
+    ],
+    "155": [
+      {
+        "name": "准看護師",
+        "slug": "assistant-nurse"
+      },
+      {
+        "name": "保健師",
+        "slug": "public-health-nurse"
+      },
+      {
+        "name": "助産師",
+        "slug": "midwife"
+      }
+    ],
+    "156": [
+      {
+        "name": "助産師",
+        "slug": "midwife"
+      }
+    ],
+    "158": [
+      {
+        "name": "歯科医師",
+        "slug": "dentist"
+      }
+    ],
+    "159": [
+      {
+        "name": "保健師",
+        "slug": "public-health-nurse"
+      }
+    ],
+    "163": [
+      {
+        "name": "臨床工学技士",
+        "slug": "clinical-engineer"
+      }
+    ],
+    "164": [
+      {
+        "name": "歯科技工士",
+        "slug": "dental-technician"
+      }
+    ],
+    "172": [
+      {
+        "name": "柔道整復師",
+        "slug": "judo-therapist"
+      }
+    ],
+    "195": [
+      {
+        "name": "二級自動車整備士",
+        "slug": "auto-mechanic-2"
+      }
+    ],
+    "200": [
+      {
+        "name": "通関士",
+        "slug": "tsukanshi"
+      }
+    ],
+    "221": [
+      {
+        "name": "獣医師",
+        "slug": "veterinarian"
+      }
+    ],
+    "222": [
+      {
+        "name": "潜水士",
+        "slug": "sensuishi"
+      }
+    ],
+    "241": [
+      {
+        "name": "社会福祉士",
+        "slug": "shakai-fukushi"
+      },
+      {
+        "name": "精神保健福祉士",
+        "slug": "seishin-fukushi"
+      }
+    ],
+    "384": [
+      {
+        "name": "社会福祉士",
+        "slug": "shakai-fukushi"
+      },
+      {
+        "name": "精神保健福祉士",
+        "slug": "seishin-fukushi"
+      }
+    ],
+    "401": [
+      {
+        "name": "秘書検定2級",
+        "slug": "hisho-2"
+      }
+    ],
+    "403": [
+      {
+        "name": "秘書検定2級",
+        "slug": "hisho-2"
+      }
+    ],
+    "407": [
+      {
+        "name": "社会保険労務士",
+        "slug": "sharoshi"
+      },
+      {
+        "name": "第二種衛生管理者",
+        "slug": "eisei-kanri-2"
+      }
+    ],
+    "408": [
+      {
+        "name": "第三種電気主任技術者",
+        "slug": "denken-3"
+      },
+      {
+        "name": "第二種衛生管理者",
+        "slug": "eisei-kanri-2"
+      }
+    ],
+    "423": [
+      {
+        "name": "登録販売者（一般医薬品)",
+        "slug": "touroku-hanbai"
+      }
+    ],
+    "527": [
+      {
+        "name": "介護福祉士",
+        "slug": "kaigo-fukushi"
+      }
+    ]
+  },
+  "dossierExtra": {
+    "nurse": [
+      {
+        "slug": "nurse",
+        "name": "看護師国家試験"
+      }
+    ],
+    "lawyer": [
+      {
+        "slug": "shiho-shiken",
+        "name": "司法試験"
+      }
+    ],
+    "certified-care-worker": [
+      {
+        "slug": "kaigo-shoninsha",
+        "name": "介護職員初任者研修"
+      }
+    ],
+    "web-marketer": [
+      {
+        "slug": "web-analyst-waca",
+        "name": "ウェブ解析士"
+      }
+    ],
+    "data-analyst": [
+      {
+        "slug": "data-scientist-kentei",
+        "name": "データサイエンティスト検定 リテラシーレベル"
+      },
+      {
+        "slug": "ai-901",
+        "name": "Microsoft Certified: AI Fundamentals（AI-901）"
+      }
+    ],
+    "it-consultant": [
+      {
+        "slug": "pm",
+        "name": "プロジェクトマネージャ試験（PM）"
+      },
+      {
+        "slug": "pmp",
+        "name": "PMP（Project Management Professional）"
+      }
+    ],
+    "web-designer": [
+      {
+        "slug": "webdesign-2",
+        "name": "ウェブデザイン技能検定2級"
+      },
+      {
+        "slug": "adobe-photoshop",
+        "name": "Adobe Certified Professional Photoshop"
+      }
+    ],
+    "video-editor": [
+      {
+        "slug": "cg-creator-2",
+        "name": "CGクリエイター検定 ベーシック"
+      }
+    ],
+    "office-administration": [
+      {
+        "slug": "vba-expert-excel-standard",
+        "name": "VBAエキスパート Excel VBA スタンダード"
+      }
+    ],
+    "software-engineer": [
+      {
+        "slug": "ap",
+        "name": "応用情報技術者試験（AP）"
+      }
+    ]
+  }
+}

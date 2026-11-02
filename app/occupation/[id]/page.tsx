@@ -18,6 +18,7 @@ import {
 import sourceRegistry from "@/content/source-registry.json";
 import companyLinks from "@/content/company-links.json";
 import industryLinks from "@/content/company-industry-links.json";
+import licenseLinks from "@/content/license-links.json";
 import { incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
@@ -303,11 +304,34 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
       {occupation.qualifications.length ? (
         <section className="article-section" id="qualifications">
           <h2>関連資格</h2>
-          <ul>
-            {occupation.qualifications.map((name) => (
-              <li key={name}>{name}</li>
-            ))}
-          </ul>
+          {(() => {
+            const links = new Map(
+              (((licenseLinks.occupations as unknown as Record<string, Array<{ name: string; slug: string }>>)[id] ?? [])).map((entry) => [entry.name, entry.slug]),
+            );
+            return (
+              <>
+                <ul>
+                  {occupation.qualifications.map((name) => {
+                    const slug = links.get(name);
+                    return (
+                      <li key={name}>
+                        {slug ? (
+                          <a href={`https://license.manapick.app/license/${slug}/`} target="_blank" rel="noopener noreferrer">
+                            {name} <ArrowUpRight aria-hidden="true" />
+                          </a>
+                        ) : (
+                          name
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+                {links.size ? (
+                  <p>リンクのある資格は、manapick license の資格ページで合格率・受験料・学習範囲を確認できます。</p>
+                ) : null}
+              </>
+            );
+          })()}
           <p>資格の要否と取得経路は、「就くには」の記述と、資格制度の公式情報で確認してください。</p>
         </section>
       ) : null}
