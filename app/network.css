@@ -135,6 +135,10 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .depth-qualifications h3,.depth-employers h3{font-size:20px;margin:12px 0;line-height:1.6}
 .depth-label{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:4px 8px;font-size:12px;font-weight:700;line-height:1.6;color:var(--primary-aa);background:var(--primary-soft)}
 .depth-qualifications dl{display:grid;gap:16px;margin:16px 0}.depth-actions>a{font-size:13px;color:var(--primary-aa);text-decoration:underline}
+.depth-license-extra{margin-top:28px}
+.depth-license-extra ul{display:grid;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.depth-license-extra li a{display:inline-flex;align-items:center;gap:4px;min-height:24px;font-size:14px;color:var(--primary-aa);text-decoration:underline}
+.depth-license-extra li a svg{width:13px;height:13px}
 .employer-scope,.depth-record{font-size:12px!important;color:var(--muted);line-height:1.8!important}
 .catalog-card .catalog-work-summary{font-size:14px;line-height:1.8;min-height:0;color:var(--ink)}
 .catalog-card-actions{flex-wrap:wrap}
