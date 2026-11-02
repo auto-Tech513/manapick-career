@@ -256,6 +256,10 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               統計分類は「{statistic.classificationName}」です。{incomeMetadata.population}の集計で、集計された人の推計は
               {statistic.estimatedWorkers.toLocaleString("ja-JP")}人です。
             </p>
+            <p>
+              <a href={`/tools/net-income/?yen=${statistic.annualizedMeanYen}`}>この年収の手取りを試算する</a>
+              （社会保険料・所得税・住民税を引いた目安。計算の前提はリンク先に明示しています）
+            </p>
             <details className="income-method">
               <summary>計算方法と統計の対象</summary>
               <p>計算方法は「{incomeMetadata.formula}」です。</p>
