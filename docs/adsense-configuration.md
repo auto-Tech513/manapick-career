@@ -54,3 +54,10 @@
 - [Factors that affect ad serving](https://support.google.com/adsense/answer/10196)
 - [Ad serving limits](https://support.google.com/adsense/answer/9437976)
 - [Guide to ads.txt](https://support.google.com/adsense/answer/7679060)
+
+## 2026-11-03 変更（Claude／今村さんの「不備を修正」指示による）
+
+- AdSenseのAd intents自動最適化テスト（2026-10-23開始）を「パターンを適用」で終了し、manapick.app の自動広告設定を編集可能にした
+- `career.manapick.app` のページ除外（セクション全体）を削除した。広告スクリプトはニュース・ガイド・職業詳細ページだけで読み込むため、ホーム・manapi商店・一覧・入口案内には引き続き広告は出ない
+- 自動広告のフォーマットにサイドレール広告とMultiplex広告を追加した
+- `components/AdSenseScript.tsx` で、本番ホスト（manapick.app とそのサブドメイン）以外では広告スクリプトを読み込まないようにした（*.pages.dev・localhost の閲覧がAdSenseに計上されていたため）

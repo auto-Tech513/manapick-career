@@ -8,6 +8,8 @@ export function AdSenseScript() {
   const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || DEFAULT_CLIENT;
 
   useEffect(() => {
+    // 本番（manapick.app とそのサブドメイン）以外では広告を読み込まない（プレビュー・ローカル閲覧の計上防止）
+    if (!/(^|\.)manapick\.app$/.test(window.location.hostname)) return;
     if (document.getElementById("manapick-career-adsense")) return;
     const script = document.createElement("script");
     script.id = "manapick-career-adsense";
