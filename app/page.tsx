@@ -14,7 +14,7 @@ export default function Home(){return <>
   <section className="home-hero"><div className="home-hero-inner"><div className="home-hero-copy">
     <div className="career-search-intro"><div><span className="eyebrow">manapick career / 仕事を知る</span><h1>どんな仕事を<br className="home-heading-break"/>知りたいですか？</h1><p>556職業の仕事内容と年収の目安を、公式出典と確認日つきで調べられます。{publishedOccupationCatalog.length}職業の個別ページと、職業の違いを比べる88本のガイドもあります。</p></div><Link href="/route/" className="home-route-link">迷ったら入口案内 <ArrowRight aria-hidden="true" /></Link></div>
     <form className="home-search" action="/all/#catalog-title" method="get" role="search"><label className="sr-only" htmlFor="home-job-search">職業名・別名で検索</label><Search aria-hidden="true"/><input id="home-job-search" name="q" placeholder="例：看護師、税理士、デザイン"/><button type="submit">検索 <ArrowRight aria-hidden="true" /></button></form>
-    <nav className="home-discovery" aria-label="職業情報の探し方"><Link href="/all/">556職業から探す <ArrowRight aria-hidden="true"/></Link><Link href="/career/tax-accountant/">税理士</Link><Link href="/career/lawyer/">弁護士</Link><Link href="/career/nurse/">看護師</Link><Link href="/career/childcare-worker/">保育士</Link><Link href="/compare/">仕事を比べる</Link></nav>
+    <nav className="home-discovery" aria-label="職業情報の探し方"><Link href="/all/">556職業から探す <ArrowRight aria-hidden="true"/></Link><Link href="/career/tax-accountant/">税理士</Link><Link href="/career/lawyer/">弁護士</Link><Link href="/career/nurse/">看護師</Link><Link href="/career/childcare-worker/">保育士</Link><Link href="/compare/">仕事を比べる</Link><Link href="/tools/net-income/">手取りを試算する</Link></nav>
   </div></div></section>
   <div className="home-profession-wrap"><ProfessionalEntries/></div>
   <CareerBriefing />

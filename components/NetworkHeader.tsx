@@ -4,7 +4,7 @@ import NetworkBrand from "./NetworkBrand";
 
 
 import { useEffect, useRef, type ReactNode } from "react";
-import { ArrowUpRight, BarChart3, BookA, BookOpen, BriefcaseBusiness, CircleHelp, Compass, FileText, GitCompareArrows, Home, Mail, Menu, Newspaper, Search, ShoppingBag, Sparkles, Trophy, X, type LucideIcon } from "lucide-react";
+import { ArrowUpRight, BarChart3, BookA, Calculator, BookOpen, BriefcaseBusiness, CircleHelp, Compass, FileText, GitCompareArrows, Home, Mail, Menu, Newspaper, Search, ShoppingBag, Sparkles, Trophy, X, type LucideIcon } from "lucide-react";
 import config from "../content/network-site.json";
 import { networkUrl } from "../lib/network-shared";
 
@@ -19,6 +19,7 @@ const navMeta: Record<string, { icon: LucideIcon; description: string }> = {
   "/research/": { icon: BarChart3, description: "キャリアデータ室" },
   "/skills/": { icon: Sparkles, description: "仕事から見るスキル" },
   "/ranking/": { icon: Trophy, description: "人気職業アクセスランキング" },
+  "/tools/net-income/": { icon: Calculator, description: "年収から手取りの目安を試算する" },
   "/shop/": { icon: ShoppingBag, description: "学び直し・面接・仕事準備の道具" },
   "/about-method/": { icon: FileText, description: "作成方法・編集方針" },
   "/faq/": { icon: CircleHelp, description: "よくある質問" },
@@ -26,7 +27,7 @@ const navMeta: Record<string, { icon: LucideIcon; description: string }> = {
   "/contact/": { icon: Mail, description: "訂正・お問い合わせ" },
 };
 const featureHrefs = ["/all/", "/route/", "/compare/", "/skills/"];
-const readHrefs = ["/employers/", "/guide/", "/news/", "/research/", "/ranking/"];
+const readHrefs = ["/employers/", "/guide/", "/news/", "/research/", "/ranking/", "/tools/net-income/"];
 const otherHrefs = ["/shop/", "/about-method/", "/faq/", "/glossary/", "/contact/"];
 
 /** AI SiteHeader: header-inner, brand-mark, main-nav and menu layout, adapted for career without changing the reference repository. */
@@ -38,7 +39,7 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
     window.addEventListener("mp-open-menu", open); document.addEventListener("keydown", close);
     return () => { window.removeEventListener("mp-open-menu", open); document.removeEventListener("keydown", close); };
   }, []);
-  const navItem = (href: string) => config.nav.find(item => item.href === href);
+  const navItem = (href: string) => config.nav.find(item => item.href === href) ?? (href === "/tools/net-income/" ? { href, label: "手取りシミュレーター" } : undefined);
   const renderCard = (href: string) => {
     const item = navItem(href); const meta = navMeta[href];
     if (!item || !meta) return null;

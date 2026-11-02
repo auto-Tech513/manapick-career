@@ -30,7 +30,7 @@ export function IncomeRanking({ overall, groups }: { overall: IncomeRankEntry[];
   return <>
     <section aria-labelledby="income-rank-title" className="income-rank-section">
       <header className="page-heading"><span className="eyebrow">賃金構造基本統計調査 2025年 × 公式対応表</span><h2 id="income-rank-title">年収ランキング（統計分類の平均年収換算）</h2>
-        <p>各職業に公式対応表（job tag 職業分類対応表）で結ばれた職種分類の「平均年収換算」を並べたものです。職業そのものの年収ではなく、同じ分類に結ばれた職業は同額になります。換算式は 2025年6月の「きまって支給する現金給与額」×12＋年間賞与その他特別給与額です。税・社会保険料控除前の金額で、手取りや初任給、求人の提示額ではありません。</p></header>
+        <p>各職業に公式対応表（job tag 職業分類対応表）で結ばれた職種分類の「平均年収換算」を並べたものです。職業そのものの年収ではなく、同じ分類に結ばれた職業は同額になります。換算式は 2025年6月の「きまって支給する現金給与額」×12＋年間賞与その他特別給与額です。税・社会保険料控除前の金額で、手取りや初任給、求人の提示額ではありません。手取りの目安は<Link href="/tools/net-income/">手取りシミュレーター</Link>で試算できます。</p></header>
       <h3 className="income-rank-subtitle">全体トップ10</h3>
       <div className="ranking-list"><RankList entries={overall} /></div>
     </section>
