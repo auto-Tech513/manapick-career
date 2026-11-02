@@ -3983,3 +3983,23 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
   .article-figures-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .article-items-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* === net-income simulator (2026-11-02) === */
+.sim-wrap { display: grid; gap: 1.2rem; margin-top: 1.2rem; }
+.sim-form { display: grid; gap: .9rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--bg); padding: 1rem; }
+.sim-form label { display: grid; gap: .35rem; font-weight: 700; font-size: .92rem; color: var(--ink); }
+.sim-form input, .sim-form select { min-height: 44px; border: 1px solid var(--line); border-radius: 8px; padding: .45rem .6rem; font-size: 1rem; background: #fff; color: var(--ink); }
+.sim-input-row { display: flex; align-items: center; gap: .5rem; }
+.sim-input-row input { flex: 1; }
+.sim-rates { border-top: 1px dashed var(--line); padding-top: .7rem; display: grid; gap: .7rem; }
+.sim-rates summary { cursor: pointer; font-weight: 700; min-height: 24px; }
+.sim-rates p { margin: 0; color: var(--muted); font-size: .8rem; line-height: 1.6; }
+.sim-result { border: 2px solid var(--ink); border-radius: var(--radius-2); background: var(--bg); padding: 1rem; box-shadow: 4px 4px 0 var(--primary); }
+.sim-result-label { margin: 0; color: var(--muted); font-size: .8rem; font-weight: 700; }
+.sim-result-value { margin: .3rem 0 0; font-size: 2rem; font-weight: 800; color: var(--ink); line-height: 1.2; font-variant-numeric: tabular-nums; }
+.sim-result-value span { font-size: .95rem; font-weight: 700; margin-left: .5rem; }
+.sim-result-sub { margin: .35rem 0 0; color: var(--muted); font-size: .88rem; }
+.sim-table { width: 100%; border-collapse: collapse; margin-top: .9rem; font-size: .92rem; }
+.sim-table th, .sim-table td { padding: .45rem .2rem; border-bottom: 1px solid var(--line); text-align: left; }
+.sim-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sim-table .sim-total th, .sim-table .sim-total td { border-bottom: none; font-weight: 800; }
