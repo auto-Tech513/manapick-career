@@ -17,6 +17,7 @@ import {
 } from "@/content/catalog";
 import sourceRegistry from "@/content/source-registry.json";
 import companyLinks from "@/content/company-links.json";
+import industryLinks from "@/content/company-industry-links.json";
 import { incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
@@ -336,6 +337,38 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           </ul>
         </section>
       ) : null}
+
+      {(() => {
+        const industryEntry = (industryLinks.occupations as unknown as Record<string, { industries: Array<{ name: string; total: number; directoryUrl?: string }>; companies: Array<{ name: string; code: string; slug: string }> }>)[id];
+        if (!industryEntry) return null;
+        return (
+          <section className="article-section" id="industry-companies">
+            <h2>関連する業種の上場企業（manapick company）</h2>
+            <p>
+              以下は、この職業と関連する業種（{industryEntry.industries.map((industry) => industry.name).join("、")}）に分類される上場企業の一部です。各社の直近決算の売上高が確認できる範囲で、大きい順に{industryEntry.companies.length}社まで表示しています。各社の事業内容は manapick company の企業ページで確認できます。
+            </p>
+            <p>
+              この一覧は、日本取引所グループの業種分類（東証上場銘柄一覧・2026年9月30日時点）に基づく関連表示で、各社がこの職業の採用を行っていることを示すものではありません。{employers.length ? "採用・募集の確認済みの例は、上の「企業例・働く場の例（公式確認済み）」をご覧ください。" : null}
+            </p>
+            <ul className="source-list">
+              {industryEntry.companies.map((company) => (
+                <li key={company.code}>
+                  <a href={`https://company.manapick.app/company/${company.slug}/`} target="_blank" rel="noopener noreferrer">
+                    企業情報：{company.name}（証券コード {company.code}）を manapick company で見る <ArrowUpRight aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+            {industryEntry.industries.filter((industry) => industry.directoryUrl).map((industry) => (
+              <p key={industry.name}>
+                <a href={industry.directoryUrl} target="_blank" rel="noopener noreferrer">
+                  {industry.name}の上場企業（全{industry.total}社）を manapick company で見る <ArrowUpRight aria-hidden="true" />
+                </a>
+              </p>
+            ))}
+          </section>
+        );
+      })()}
 
       <section className="article-section" id="editorial">
         <h2>manapick編集部による確認のポイント</h2>

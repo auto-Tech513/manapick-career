@@ -3691,6 +3691,17 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .catalog-income-note,.income-method-panel { padding:20px; border:1px solid var(--line); border-radius:var(--radius-2); margin:24px 0; background:var(--surface); }
 .income-method-panel p,.income-method p { line-height:1.9; }
 .income-method summary { cursor:pointer; font-weight:700; padding:12px 0; }
+.sim-notes { margin: 0 0 4px; }
+.sim-notes > summary { cursor: pointer; font-weight: 700; padding: 14px 2px; min-height: 44px; }
+.sim-notes h2:first-of-type { margin-top: 4px; }
+.research-method-fold > summary { cursor: pointer; display: flex; flex-direction: column; gap: 2px; padding: 6px 2px 14px; min-height: 44px; }
+.research-method-fold-title { color: var(--ink); font-size: 1.45rem; font-weight: 800; line-height: 1.4; }
+.research-method-fold-hint { color: var(--muted); font-size: .8rem; }
+.research-method-fold .research-method-grid { margin-top: 4px; }
+.ranking-method-fold { margin-bottom: 1.2rem; }
+.ranking-method-fold > summary { cursor: pointer; display: flex; align-items: baseline; gap: .6rem; font-weight: 700; padding: 12px 2px; min-height: 44px; }
+.ranking-method-fold > summary small { color: var(--muted); font-weight: 400; }
+.ranking-method-fold .ranking-method { margin-bottom: 0; }
 @media(max-width:900px) { .professional-grid {grid-template-columns:repeat(2,minmax(0,1fr));} }
 @media(max-width:540px) { .professional-grid {grid-template-columns:1fr;} .income-basis > div {display:block;} .income-basis dd {margin-top:5px;} .income-figure {padding:16px;} }
 .catalog-quick-search {display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0;}

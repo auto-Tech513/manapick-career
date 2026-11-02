@@ -25,6 +25,8 @@ export default function NetIncomePage() {
       <NetIncomeSimulator />
 
       <section className="editorial-block">
+        <details className="sim-notes">
+        <summary>計算の前提と根拠を確認する</summary>
         <h2>計算の前提</h2>
         <ul>
           <li>給与所得控除は国税庁 No.1410 の令和8年分の表、基礎控除は No.1199 の令和8年分の額（合計所得金額に応じて最大104万円）を使います。</li>
@@ -40,6 +42,7 @@ export default function NetIncomePage() {
           <li><a href="https://www.kyoukaikenpo.or.jp/" target="_blank" rel="noopener noreferrer">全国健康保険協会（協会けんぽ）</a></li>
           <li><a href="https://www.nenkin.go.jp/" target="_blank" rel="noopener noreferrer">日本年金機構（厚生年金保険料率）</a></li>
         </ul>
+        </details>
         <p>
           職業ごとの平均年収は<Link href="/ranking/">年収ランキング</Link>や各職業ページで確認できます。
           各職業ページの年収欄からは、その金額を入れた状態でこのシミュレーターを開けます。
