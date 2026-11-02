@@ -48,23 +48,54 @@ function incomeTaxRate(taxable: number): { tax: number } {
   return { tax: 0 };
 }
 
+
+const parseNum = (text: string): number => {
+  const n = Number(text);
+  return Number.isFinite(n) ? n : 0;
+};
+
+// 入力中の文字列を壊さないためのサニタイズ。数値化は計算側で行う。
+// 先行ゼロを圧縮し（"0300"→"300"、ただし "0.5" の先頭0は残す）、
+// 小数点は1つだけ残す。
+function sanitizeNumeric(text: string, decimal: boolean): string {
+  let t = decimal ? text.replace(/[^0-9.]/g, "") : text.replace(/[^0-9]/g, "");
+  if (decimal) {
+    const firstDot = t.indexOf(".");
+    if (firstDot >= 0) t = t.slice(0, firstDot + 1) + t.slice(firstDot + 1).replace(/\./g, "");
+  }
+  return t.replace(/^0+(?=\d)/, "");
+}
+
+function normalizeOnBlur(text: string, max: number): string {
+  if (text === "") return "";
+  const t = text.replace(/\.$/, "").replace(/^0+(?=\d)/, "");
+  const n = Number(t);
+  if (!Number.isFinite(n)) return "";
+  const clamped = Math.min(Math.max(n, 0), max);
+  return String(clamped);
+}
+
 const yen = (value: number) => `${Math.round(value).toLocaleString("ja-JP")}円`;
 const manYen = (value: number) => `${(value / 10000).toLocaleString("ja-JP", { maximumFractionDigits: 1 })}万円`;
 
 export function NetIncomeSimulator() {
-  const [grossMan, setGrossMan] = useState(450);
+  const [grossText, setGrossText] = useState("450");
   const [ageBand, setAgeBand] = useState<"under40" | "40to64" | "65plus">("under40");
   const [dependents, setDependents] = useState(0);
-  const [healthRate, setHealthRate] = useState(10.0);
-  const [nursingRate, setNursingRate] = useState(1.59);
-  const [unemploymentRate, setUnemploymentRate] = useState(0.6);
+  const [healthText, setHealthText] = useState("10");
+  const [nursingText, setNursingText] = useState("1.59");
+  const [unemploymentText, setUnemploymentText] = useState("0.6");
+  const grossMan = parseNum(grossText);
+  const healthRate = parseNum(healthText);
+  const nursingRate = parseNum(nursingText);
+  const unemploymentRate = parseNum(unemploymentText);
 
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
       const yenParam = new URLSearchParams(window.location.search).get("yen");
       const parsed = yenParam ? Number(yenParam) : NaN;
       if (Number.isFinite(parsed) && parsed >= 500_000 && parsed <= 50_000_000) {
-        setGrossMan(Math.round((parsed / 10000) * 10) / 10);
+        setGrossText(String(Math.round((parsed / 10000) * 10) / 10));
       }
     });
     return () => cancelAnimationFrame(frame);
@@ -111,7 +142,7 @@ export function NetIncomeSimulator() {
         <label>
           年収（額面・税込）
           <span className="sim-input-row">
-            <input type="number" min={0} max={5000} step={1} value={grossMan} onChange={(e) => setGrossMan(Number(e.target.value))} inputMode="decimal" />
+            <input type="text" value={grossText} onChange={(e) => setGrossText(sanitizeNumeric(e.target.value, false))} onBlur={() => setGrossText((t) => normalizeOnBlur(t, 5000))} inputMode="numeric" autoComplete="off" aria-label="年収（万円）" />
             万円
           </span>
         </label>
@@ -135,15 +166,15 @@ export function NetIncomeSimulator() {
           <summary>保険料率の前提を変更する</summary>
           <label>
             健康保険料率（全体・%）※初期値は協会けんぽ全国平均水準の目安
-            <input type="number" min={0} max={15} step={0.01} value={healthRate} onChange={(e) => setHealthRate(Number(e.target.value))} inputMode="decimal" />
+            <input type="text" value={healthText} onChange={(e) => setHealthText(sanitizeNumeric(e.target.value, true))} onBlur={() => setHealthText((t) => normalizeOnBlur(t, 15))} inputMode="decimal" autoComplete="off" aria-label="健康保険料率（%）" />
           </label>
           <label>
             介護保険料率（全体・%）※初期値は令和7年度の協会けんぽ料率
-            <input type="number" min={0} max={5} step={0.01} value={nursingRate} onChange={(e) => setNursingRate(Number(e.target.value))} inputMode="decimal" />
+            <input type="text" value={nursingText} onChange={(e) => setNursingText(sanitizeNumeric(e.target.value, true))} onBlur={() => setNursingText((t) => normalizeOnBlur(t, 5))} inputMode="decimal" autoComplete="off" aria-label="介護保険料率（%）" />
           </label>
           <label>
             雇用保険料率（本人負担・%）※初期値は一般の事業の令和7年度料率
-            <input type="number" min={0} max={3} step={0.05} value={unemploymentRate} onChange={(e) => setUnemploymentRate(Number(e.target.value))} inputMode="decimal" />
+            <input type="text" value={unemploymentText} onChange={(e) => setUnemploymentText(sanitizeNumeric(e.target.value, true))} onBlur={() => setUnemploymentText((t) => normalizeOnBlur(t, 3))} inputMode="decimal" autoComplete="off" aria-label="雇用保険料率（%）" />
           </label>
           <p>厚生年金保険料率は18.3%（本人負担は半分）で固定しています。健康保険料は本人負担が半分として計算します。</p>
         </details>

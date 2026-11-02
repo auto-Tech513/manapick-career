@@ -1,0 +1,2610 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-03",
+  "source": "manapick company の公開データ（listed.json: 日本取引所グループ（JPX）東証上場銘柄一覧、2026-09-30時点／companies.json）",
+  "method": "日本取引所グループの業種分類（東証33業種）に基づく対応表 content/company-industry-map.json で、業種の中核業務になる公開職業へ振り分けた。各職業では売上高（各社の直近決算）が確認できる範囲で大きい順に最大10社を表示し、残りは company の業種別一覧へ案内する。業種分類に基づく関連表示であり、各社の採用有無を示すものではない。",
+  "occupations": {
+    "21": {
+      "industries": [
+        {
+          "name": "建設業",
+          "total": 155,
+          "directoryUrl": "https://company.manapick.app/directory/industry/2050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "大和ハウス工業",
+          "code": "1925",
+          "slug": "daiwa-house"
+        },
+        {
+          "name": "積水ハウス",
+          "code": "1928",
+          "slug": "sekisui-house"
+        },
+        {
+          "name": "鹿島建設",
+          "code": "1812",
+          "slug": "kajima"
+        },
+        {
+          "name": "大林組",
+          "code": "1802",
+          "slug": "obayashi"
+        },
+        {
+          "name": "住友林業",
+          "code": "1911",
+          "slug": "sumitomo-forestry"
+        },
+        {
+          "name": "大成建設",
+          "code": "1801",
+          "slug": "taisei"
+        },
+        {
+          "name": "清水建設",
+          "code": "1803",
+          "slug": "shimizu"
+        },
+        {
+          "name": "長谷工コーポレーション",
+          "code": "1808",
+          "slug": "haseko"
+        },
+        {
+          "name": "インフロニア・ホールディングス",
+          "code": "5076",
+          "slug": "infronia-holdings"
+        },
+        {
+          "name": "五洋建設",
+          "code": "1893",
+          "slug": "goyo-construction"
+        }
+      ]
+    },
+    "24": {
+      "industries": [
+        {
+          "name": "建設業",
+          "total": 155,
+          "directoryUrl": "https://company.manapick.app/directory/industry/2050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "大和ハウス工業",
+          "code": "1925",
+          "slug": "daiwa-house"
+        },
+        {
+          "name": "積水ハウス",
+          "code": "1928",
+          "slug": "sekisui-house"
+        },
+        {
+          "name": "鹿島建設",
+          "code": "1812",
+          "slug": "kajima"
+        },
+        {
+          "name": "大林組",
+          "code": "1802",
+          "slug": "obayashi"
+        },
+        {
+          "name": "住友林業",
+          "code": "1911",
+          "slug": "sumitomo-forestry"
+        },
+        {
+          "name": "大成建設",
+          "code": "1801",
+          "slug": "taisei"
+        },
+        {
+          "name": "清水建設",
+          "code": "1803",
+          "slug": "shimizu"
+        },
+        {
+          "name": "長谷工コーポレーション",
+          "code": "1808",
+          "slug": "haseko"
+        },
+        {
+          "name": "インフロニア・ホールディングス",
+          "code": "5076",
+          "slug": "infronia-holdings"
+        },
+        {
+          "name": "五洋建設",
+          "code": "1893",
+          "slug": "goyo-construction"
+        }
+      ]
+    },
+    "26": {
+      "industries": [
+        {
+          "name": "建設業",
+          "total": 155,
+          "directoryUrl": "https://company.manapick.app/directory/industry/2050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "大和ハウス工業",
+          "code": "1925",
+          "slug": "daiwa-house"
+        },
+        {
+          "name": "積水ハウス",
+          "code": "1928",
+          "slug": "sekisui-house"
+        },
+        {
+          "name": "鹿島建設",
+          "code": "1812",
+          "slug": "kajima"
+        },
+        {
+          "name": "大林組",
+          "code": "1802",
+          "slug": "obayashi"
+        },
+        {
+          "name": "住友林業",
+          "code": "1911",
+          "slug": "sumitomo-forestry"
+        },
+        {
+          "name": "大成建設",
+          "code": "1801",
+          "slug": "taisei"
+        },
+        {
+          "name": "清水建設",
+          "code": "1803",
+          "slug": "shimizu"
+        },
+        {
+          "name": "長谷工コーポレーション",
+          "code": "1808",
+          "slug": "haseko"
+        },
+        {
+          "name": "インフロニア・ホールディングス",
+          "code": "5076",
+          "slug": "infronia-holdings"
+        },
+        {
+          "name": "五洋建設",
+          "code": "1893",
+          "slug": "goyo-construction"
+        }
+      ]
+    },
+    "45": {
+      "industries": [
+        {
+          "name": "建設業",
+          "total": 155,
+          "directoryUrl": "https://company.manapick.app/directory/industry/2050/"
+        },
+        {
+          "name": "電気・ガス業",
+          "total": 28,
+          "directoryUrl": "https://company.manapick.app/directory/industry/4050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "東京電力ホールディングス",
+          "code": "9501",
+          "slug": "tepco-holdings"
+        },
+        {
+          "name": "大和ハウス工業",
+          "code": "1925",
+          "slug": "daiwa-house"
+        },
+        {
+          "name": "積水ハウス",
+          "code": "1928",
+          "slug": "sekisui-house"
+        },
+        {
+          "name": "関西電力",
+          "code": "9503",
+          "slug": "kansai-electric-power"
+        },
+        {
+          "name": "中部電力",
+          "code": "9502",
+          "slug": "chubu-electric-power"
+        },
+        {
+          "name": "鹿島建設",
+          "code": "1812",
+          "slug": "kajima"
+        },
+        {
+          "name": "東京瓦斯",
+          "code": "9531",
+          "slug": "tokyo-gas"
+        },
+        {
+          "name": "大林組",
+          "code": "1802",
+          "slug": "obayashi"
+        },
+        {
+          "name": "東北電力",
+          "code": "9506",
+          "slug": "tohoku-electric-power"
+        },
+        {
+          "name": "住友林業",
+          "code": "1911",
+          "slug": "sumitomo-forestry"
+        }
+      ]
+    },
+    "46": {
+      "industries": [
+        {
+          "name": "建設業",
+          "total": 155,
+          "directoryUrl": "https://company.manapick.app/directory/industry/2050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "大和ハウス工業",
+          "code": "1925",
+          "slug": "daiwa-house"
+        },
+        {
+          "name": "積水ハウス",
+          "code": "1928",
+          "slug": "sekisui-house"
+        },
+        {
+          "name": "鹿島建設",
+          "code": "1812",
+          "slug": "kajima"
+        },
+        {
+          "name": "大林組",
+          "code": "1802",
+          "slug": "obayashi"
+        },
+        {
+          "name": "住友林業",
+          "code": "1911",
+          "slug": "sumitomo-forestry"
+        },
+        {
+          "name": "大成建設",
+          "code": "1801",
+          "slug": "taisei"
+        },
+        {
+          "name": "清水建設",
+          "code": "1803",
+          "slug": "shimizu"
+        },
+        {
+          "name": "長谷工コーポレーション",
+          "code": "1808",
+          "slug": "haseko"
+        },
+        {
+          "name": "インフロニア・ホールディングス",
+          "code": "5076",
+          "slug": "infronia-holdings"
+        },
+        {
+          "name": "五洋建設",
+          "code": "1893",
+          "slug": "goyo-construction"
+        }
+      ]
+    },
+    "56": {
+      "industries": [
+        {
+          "name": "小売業",
+          "total": 342,
+          "directoryUrl": "https://company.manapick.app/directory/industry/6100/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "イオン",
+          "code": "8267",
+          "slug": "aeon"
+        },
+        {
+          "name": "セブン&アイ・ホールディングス",
+          "code": "3382",
+          "slug": "seven-i-holdings"
+        },
+        {
+          "name": "ファーストリテイリング",
+          "code": "9983",
+          "slug": "fast-retailing"
+        },
+        {
+          "name": "パン・パシフィック・インターナショナルホールディングス",
+          "code": "7532",
+          "slug": "pan-pacific-international-holdings"
+        },
+        {
+          "name": "ヤマダホールディングス",
+          "code": "9831",
+          "slug": "yamada-holdings"
+        },
+        {
+          "name": "ツルハホールディングス",
+          "code": "3391",
+          "slug": "tsuruha-holdings"
+        },
+        {
+          "name": "トライアルホールディングス",
+          "code": "141A",
+          "slug": "trial-holdings"
+        },
+        {
+          "name": "ゼンショーホールディングス",
+          "code": "7550",
+          "slug": "zensho-holdings"
+        },
+        {
+          "name": "マツキヨココカラ＆カンパニー",
+          "code": "3088",
+          "slug": "matsukiyococokara"
+        },
+        {
+          "name": "コスモス薬品",
+          "code": "3349",
+          "slug": "cosmos-yakuhin"
+        }
+      ]
+    },
+    "62": {
+      "industries": [
+        {
+          "name": "医薬品",
+          "total": 80,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "武田薬品工業",
+          "code": "4502",
+          "slug": "takeda"
+        },
+        {
+          "name": "大塚ホールディングス",
+          "code": "4578",
+          "slug": "otsuka-holdings"
+        },
+        {
+          "name": "アステラス製薬",
+          "code": "4503",
+          "slug": "astellas"
+        },
+        {
+          "name": "第一三共",
+          "code": "4568",
+          "slug": "daiichi-sankyo"
+        },
+        {
+          "name": "中外製薬",
+          "code": "4519",
+          "slug": "chugai"
+        },
+        {
+          "name": "エーザイ",
+          "code": "4523",
+          "slug": "eisai"
+        },
+        {
+          "name": "小野薬品工業",
+          "code": "4528",
+          "slug": "ono-pharmaceutical"
+        },
+        {
+          "name": "塩野義製薬",
+          "code": "4507",
+          "slug": "shionogi"
+        },
+        {
+          "name": "協和キリン",
+          "code": "4151",
+          "slug": "kyowa-kirin"
+        },
+        {
+          "name": "住友ファーマ",
+          "code": "4506",
+          "slug": "sumitomo-pharma"
+        }
+      ]
+    },
+    "77": {
+      "industries": [
+        {
+          "name": "小売業",
+          "total": 342,
+          "directoryUrl": "https://company.manapick.app/directory/industry/6100/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "イオン",
+          "code": "8267",
+          "slug": "aeon"
+        },
+        {
+          "name": "セブン&アイ・ホールディングス",
+          "code": "3382",
+          "slug": "seven-i-holdings"
+        },
+        {
+          "name": "ファーストリテイリング",
+          "code": "9983",
+          "slug": "fast-retailing"
+        },
+        {
+          "name": "パン・パシフィック・インターナショナルホールディングス",
+          "code": "7532",
+          "slug": "pan-pacific-international-holdings"
+        },
+        {
+          "name": "ヤマダホールディングス",
+          "code": "9831",
+          "slug": "yamada-holdings"
+        },
+        {
+          "name": "ツルハホールディングス",
+          "code": "3391",
+          "slug": "tsuruha-holdings"
+        },
+        {
+          "name": "トライアルホールディングス",
+          "code": "141A",
+          "slug": "trial-holdings"
+        },
+        {
+          "name": "ゼンショーホールディングス",
+          "code": "7550",
+          "slug": "zensho-holdings"
+        },
+        {
+          "name": "マツキヨココカラ＆カンパニー",
+          "code": "3088",
+          "slug": "matsukiyococokara"
+        },
+        {
+          "name": "コスモス薬品",
+          "code": "3349",
+          "slug": "cosmos-yakuhin"
+        }
+      ]
+    },
+    "92": {
+      "industries": [
+        {
+          "name": "不動産業",
+          "total": 161,
+          "directoryUrl": "https://company.manapick.app/directory/industry/8050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "三井不動産",
+          "code": "8801",
+          "slug": "mitsui-fudosan"
+        },
+        {
+          "name": "大東建託",
+          "code": "1878",
+          "slug": "daito-trust-construction"
+        },
+        {
+          "name": "三菱地所",
+          "code": "8802",
+          "slug": "mitsubishi-estate"
+        },
+        {
+          "name": "飯田グループホールディングス",
+          "code": "3291",
+          "slug": "iida-group-holdings"
+        },
+        {
+          "name": "オープンハウスグループ",
+          "code": "3288",
+          "slug": "open-house-group"
+        },
+        {
+          "name": "東急不動産ホールディングス",
+          "code": "3289",
+          "slug": "tokyu-fudosan-holdings"
+        },
+        {
+          "name": "住友不動産",
+          "code": "8830",
+          "slug": "sumitomo-realty"
+        },
+        {
+          "name": "野村不動産ホールディングス",
+          "code": "3231",
+          "slug": "nomura-real-estate-holdings"
+        },
+        {
+          "name": "ヒューリック",
+          "code": "3003",
+          "slug": "hulic"
+        },
+        {
+          "name": "東京建物",
+          "code": "8804",
+          "slug": "tokyo-tatemono"
+        }
+      ]
+    },
+    "184": {
+      "industries": [
+        {
+          "name": "陸運業",
+          "total": 60,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "東日本旅客鉄道",
+          "code": "9020",
+          "slug": "jr-east"
+        },
+        {
+          "name": "NIPPON EXPRESSホールディングス",
+          "code": "9147",
+          "slug": "nippon-express-holdings"
+        },
+        {
+          "name": "東海旅客鉄道",
+          "code": "9022",
+          "slug": "jr-central"
+        },
+        {
+          "name": "ヤマトホールディングス",
+          "code": "9064",
+          "slug": "yamato-holdings"
+        },
+        {
+          "name": "西日本旅客鉄道",
+          "code": "9021",
+          "slug": "jr-west"
+        },
+        {
+          "name": "近鉄グループホールディングス",
+          "code": "9041",
+          "slug": "kintetsu-group-holdings"
+        },
+        {
+          "name": "SGホールディングス",
+          "code": "9143",
+          "slug": "sg-holdings"
+        },
+        {
+          "name": "阪急阪神ホールディングス",
+          "code": "9042",
+          "slug": "hankyu-hanshin-holdings"
+        },
+        {
+          "name": "東急",
+          "code": "9005",
+          "slug": "tokyu"
+        },
+        {
+          "name": "センコーグループホールディングス",
+          "code": "9069",
+          "slug": "senko-group-holdings"
+        }
+      ]
+    },
+    "186": {
+      "industries": [
+        {
+          "name": "陸運業",
+          "total": 60,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "東日本旅客鉄道",
+          "code": "9020",
+          "slug": "jr-east"
+        },
+        {
+          "name": "NIPPON EXPRESSホールディングス",
+          "code": "9147",
+          "slug": "nippon-express-holdings"
+        },
+        {
+          "name": "東海旅客鉄道",
+          "code": "9022",
+          "slug": "jr-central"
+        },
+        {
+          "name": "ヤマトホールディングス",
+          "code": "9064",
+          "slug": "yamato-holdings"
+        },
+        {
+          "name": "西日本旅客鉄道",
+          "code": "9021",
+          "slug": "jr-west"
+        },
+        {
+          "name": "近鉄グループホールディングス",
+          "code": "9041",
+          "slug": "kintetsu-group-holdings"
+        },
+        {
+          "name": "SGホールディングス",
+          "code": "9143",
+          "slug": "sg-holdings"
+        },
+        {
+          "name": "阪急阪神ホールディングス",
+          "code": "9042",
+          "slug": "hankyu-hanshin-holdings"
+        },
+        {
+          "name": "東急",
+          "code": "9005",
+          "slug": "tokyu"
+        },
+        {
+          "name": "センコーグループホールディングス",
+          "code": "9069",
+          "slug": "senko-group-holdings"
+        }
+      ]
+    },
+    "187": {
+      "industries": [
+        {
+          "name": "空運業",
+          "total": 7,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5150/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "ANAホールディングス",
+          "code": "9202",
+          "slug": "ana-holdings"
+        },
+        {
+          "name": "日本航空",
+          "code": "9201",
+          "slug": "jal"
+        },
+        {
+          "name": "スカイマーク",
+          "code": "9204",
+          "slug": "skymark"
+        },
+        {
+          "name": "スターフライヤー",
+          "code": "9206",
+          "slug": "starflyer"
+        },
+        {
+          "name": "アジア航測",
+          "code": "9233",
+          "slug": "asia-air-survey"
+        }
+      ]
+    },
+    "190": {
+      "industries": [
+        {
+          "name": "陸運業",
+          "total": 60,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "東日本旅客鉄道",
+          "code": "9020",
+          "slug": "jr-east"
+        },
+        {
+          "name": "NIPPON EXPRESSホールディングス",
+          "code": "9147",
+          "slug": "nippon-express-holdings"
+        },
+        {
+          "name": "東海旅客鉄道",
+          "code": "9022",
+          "slug": "jr-central"
+        },
+        {
+          "name": "ヤマトホールディングス",
+          "code": "9064",
+          "slug": "yamato-holdings"
+        },
+        {
+          "name": "西日本旅客鉄道",
+          "code": "9021",
+          "slug": "jr-west"
+        },
+        {
+          "name": "近鉄グループホールディングス",
+          "code": "9041",
+          "slug": "kintetsu-group-holdings"
+        },
+        {
+          "name": "SGホールディングス",
+          "code": "9143",
+          "slug": "sg-holdings"
+        },
+        {
+          "name": "阪急阪神ホールディングス",
+          "code": "9042",
+          "slug": "hankyu-hanshin-holdings"
+        },
+        {
+          "name": "東急",
+          "code": "9005",
+          "slug": "tokyu"
+        },
+        {
+          "name": "センコーグループホールディングス",
+          "code": "9069",
+          "slug": "senko-group-holdings"
+        }
+      ]
+    },
+    "192": {
+      "industries": [
+        {
+          "name": "空運業",
+          "total": 7,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5150/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "ANAホールディングス",
+          "code": "9202",
+          "slug": "ana-holdings"
+        },
+        {
+          "name": "日本航空",
+          "code": "9201",
+          "slug": "jal"
+        },
+        {
+          "name": "スカイマーク",
+          "code": "9204",
+          "slug": "skymark"
+        },
+        {
+          "name": "スターフライヤー",
+          "code": "9206",
+          "slug": "starflyer"
+        },
+        {
+          "name": "アジア航測",
+          "code": "9233",
+          "slug": "asia-air-survey"
+        }
+      ]
+    },
+    "193": {
+      "industries": [
+        {
+          "name": "陸運業",
+          "total": 60,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "東日本旅客鉄道",
+          "code": "9020",
+          "slug": "jr-east"
+        },
+        {
+          "name": "NIPPON EXPRESSホールディングス",
+          "code": "9147",
+          "slug": "nippon-express-holdings"
+        },
+        {
+          "name": "東海旅客鉄道",
+          "code": "9022",
+          "slug": "jr-central"
+        },
+        {
+          "name": "ヤマトホールディングス",
+          "code": "9064",
+          "slug": "yamato-holdings"
+        },
+        {
+          "name": "西日本旅客鉄道",
+          "code": "9021",
+          "slug": "jr-west"
+        },
+        {
+          "name": "近鉄グループホールディングス",
+          "code": "9041",
+          "slug": "kintetsu-group-holdings"
+        },
+        {
+          "name": "SGホールディングス",
+          "code": "9143",
+          "slug": "sg-holdings"
+        },
+        {
+          "name": "阪急阪神ホールディングス",
+          "code": "9042",
+          "slug": "hankyu-hanshin-holdings"
+        },
+        {
+          "name": "東急",
+          "code": "9005",
+          "slug": "tokyu"
+        },
+        {
+          "name": "センコーグループホールディングス",
+          "code": "9069",
+          "slug": "senko-group-holdings"
+        }
+      ]
+    },
+    "195": {
+      "industries": [
+        {
+          "name": "輸送用機器",
+          "total": 80,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3700/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "トヨタ自動車",
+          "code": "7203",
+          "slug": "toyota"
+        },
+        {
+          "name": "本田技研工業",
+          "code": "7267",
+          "slug": "honda"
+        },
+        {
+          "name": "日産自動車",
+          "code": "7201",
+          "slug": "nissan-motor"
+        },
+        {
+          "name": "デンソー",
+          "code": "6902",
+          "slug": "denso"
+        },
+        {
+          "name": "スズキ",
+          "code": "7269",
+          "slug": "suzuki"
+        },
+        {
+          "name": "アイシン",
+          "code": "7259",
+          "slug": "aisin"
+        },
+        {
+          "name": "マツダ",
+          "code": "7261",
+          "slug": "mazda-motor"
+        },
+        {
+          "name": "SUBARU",
+          "code": "7270",
+          "slug": "subaru"
+        },
+        {
+          "name": "いすゞ自動車",
+          "code": "7202",
+          "slug": "isuzu-motors"
+        },
+        {
+          "name": "三菱自動車工業",
+          "code": "7211",
+          "slug": "mitsubishi-motors"
+        }
+      ]
+    },
+    "200": {
+      "industries": [
+        {
+          "name": "海運業",
+          "total": 11,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5100/"
+        },
+        {
+          "name": "倉庫・運輸関連業",
+          "total": 31,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5200/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "日本郵船",
+          "code": "9101",
+          "slug": "nippon-yusen"
+        },
+        {
+          "name": "商船三井",
+          "code": "9104",
+          "slug": "mitsui-osk"
+        },
+        {
+          "name": "川崎汽船",
+          "code": "9107",
+          "slug": "kawasaki-kisen"
+        },
+        {
+          "name": "三井倉庫ホールディングス",
+          "code": "9302",
+          "slug": "mitsui-soko-holdings"
+        },
+        {
+          "name": "上組",
+          "code": "9364",
+          "slug": "kamigumi"
+        },
+        {
+          "name": "三菱倉庫",
+          "code": "9301",
+          "slug": "mitsubishi-logistics"
+        },
+        {
+          "name": "ＮＳユナイテッド海運",
+          "code": "9110",
+          "slug": "ns-united-kaiun"
+        },
+        {
+          "name": "キユーソー流通システム",
+          "code": "9369",
+          "slug": "kyuso-distribution-system"
+        },
+        {
+          "name": "住友倉庫",
+          "code": "9303",
+          "slug": "sumitomo-warehouse"
+        },
+        {
+          "name": "飯野海運",
+          "code": "9119",
+          "slug": "iino-kaiun"
+        }
+      ]
+    },
+    "201": {
+      "industries": [
+        {
+          "name": "空運業",
+          "total": 7,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5150/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "ANAホールディングス",
+          "code": "9202",
+          "slug": "ana-holdings"
+        },
+        {
+          "name": "日本航空",
+          "code": "9201",
+          "slug": "jal"
+        },
+        {
+          "name": "スカイマーク",
+          "code": "9204",
+          "slug": "skymark"
+        },
+        {
+          "name": "スターフライヤー",
+          "code": "9206",
+          "slug": "starflyer"
+        },
+        {
+          "name": "アジア航測",
+          "code": "9233",
+          "slug": "asia-air-survey"
+        }
+      ]
+    },
+    "203": {
+      "industries": [
+        {
+          "name": "空運業",
+          "total": 7,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5150/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "ANAホールディングス",
+          "code": "9202",
+          "slug": "ana-holdings"
+        },
+        {
+          "name": "日本航空",
+          "code": "9201",
+          "slug": "jal"
+        },
+        {
+          "name": "スカイマーク",
+          "code": "9204",
+          "slug": "skymark"
+        },
+        {
+          "name": "スターフライヤー",
+          "code": "9206",
+          "slug": "starflyer"
+        },
+        {
+          "name": "アジア航測",
+          "code": "9233",
+          "slug": "asia-air-survey"
+        }
+      ]
+    },
+    "204": {
+      "industries": [
+        {
+          "name": "輸送用機器",
+          "total": 80,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3700/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "トヨタ自動車",
+          "code": "7203",
+          "slug": "toyota"
+        },
+        {
+          "name": "本田技研工業",
+          "code": "7267",
+          "slug": "honda"
+        },
+        {
+          "name": "日産自動車",
+          "code": "7201",
+          "slug": "nissan-motor"
+        },
+        {
+          "name": "デンソー",
+          "code": "6902",
+          "slug": "denso"
+        },
+        {
+          "name": "スズキ",
+          "code": "7269",
+          "slug": "suzuki"
+        },
+        {
+          "name": "アイシン",
+          "code": "7259",
+          "slug": "aisin"
+        },
+        {
+          "name": "マツダ",
+          "code": "7261",
+          "slug": "mazda-motor"
+        },
+        {
+          "name": "SUBARU",
+          "code": "7270",
+          "slug": "subaru"
+        },
+        {
+          "name": "いすゞ自動車",
+          "code": "7202",
+          "slug": "isuzu-motors"
+        },
+        {
+          "name": "三菱自動車工業",
+          "code": "7211",
+          "slug": "mitsubishi-motors"
+        }
+      ]
+    },
+    "260": {
+      "industries": [
+        {
+          "name": "機械",
+          "total": 209,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3600/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "ダイキン工業",
+          "code": "6367",
+          "slug": "daikin"
+        },
+        {
+          "name": "三菱重工業",
+          "code": "7011",
+          "slug": "mitsubishi-heavy"
+        },
+        {
+          "name": "小松製作所（コマツ）",
+          "code": "6301",
+          "slug": "komatsu"
+        },
+        {
+          "name": "クボタ",
+          "code": "6326",
+          "slug": "kubota"
+        },
+        {
+          "name": "ジェイテクト",
+          "code": "6473",
+          "slug": "jtekt"
+        },
+        {
+          "name": "IHI",
+          "code": "7013",
+          "slug": "ihi"
+        },
+        {
+          "name": "日立建機",
+          "code": "6305",
+          "slug": "hitachi-construction-machinery"
+        },
+        {
+          "name": "住友重機械工業",
+          "code": "6302",
+          "slug": "sumitomo-heavy-industries"
+        },
+        {
+          "name": "荏原製作所",
+          "code": "6361",
+          "slug": "ebara"
+        },
+        {
+          "name": "日本精工",
+          "code": "6471",
+          "slug": "nsk"
+        }
+      ]
+    },
+    "262": {
+      "industries": [
+        {
+          "name": "輸送用機器",
+          "total": 80,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3700/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "トヨタ自動車",
+          "code": "7203",
+          "slug": "toyota"
+        },
+        {
+          "name": "本田技研工業",
+          "code": "7267",
+          "slug": "honda"
+        },
+        {
+          "name": "日産自動車",
+          "code": "7201",
+          "slug": "nissan-motor"
+        },
+        {
+          "name": "デンソー",
+          "code": "6902",
+          "slug": "denso"
+        },
+        {
+          "name": "スズキ",
+          "code": "7269",
+          "slug": "suzuki"
+        },
+        {
+          "name": "アイシン",
+          "code": "7259",
+          "slug": "aisin"
+        },
+        {
+          "name": "マツダ",
+          "code": "7261",
+          "slug": "mazda-motor"
+        },
+        {
+          "name": "SUBARU",
+          "code": "7270",
+          "slug": "subaru"
+        },
+        {
+          "name": "いすゞ自動車",
+          "code": "7202",
+          "slug": "isuzu-motors"
+        },
+        {
+          "name": "三菱自動車工業",
+          "code": "7211",
+          "slug": "mitsubishi-motors"
+        }
+      ]
+    },
+    "265": {
+      "industries": [
+        {
+          "name": "電気機器",
+          "total": 228,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3650/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "ソニーグループ",
+          "code": "6758",
+          "slug": "sony-group"
+        },
+        {
+          "name": "日立製作所",
+          "code": "6501",
+          "slug": "hitachi"
+        },
+        {
+          "name": "パナソニックホールディングス",
+          "code": "6752",
+          "slug": "panasonic-holdings"
+        },
+        {
+          "name": "三菱電機",
+          "code": "6503",
+          "slug": "mitsubishi-electric"
+        },
+        {
+          "name": "キヤノン",
+          "code": "7751",
+          "slug": "canon"
+        },
+        {
+          "name": "日本電気",
+          "code": "6701",
+          "slug": "nec"
+        },
+        {
+          "name": "富士通",
+          "code": "6702",
+          "slug": "fujitsu"
+        },
+        {
+          "name": "ニデック",
+          "code": "6594",
+          "slug": "nidec"
+        },
+        {
+          "name": "リコー",
+          "code": "7752",
+          "slug": "ricoh"
+        },
+        {
+          "name": "TDK",
+          "code": "6762",
+          "slug": "tdk"
+        }
+      ]
+    },
+    "291": {
+      "industries": [
+        {
+          "name": "医薬品",
+          "total": 80,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "武田薬品工業",
+          "code": "4502",
+          "slug": "takeda"
+        },
+        {
+          "name": "大塚ホールディングス",
+          "code": "4578",
+          "slug": "otsuka-holdings"
+        },
+        {
+          "name": "アステラス製薬",
+          "code": "4503",
+          "slug": "astellas"
+        },
+        {
+          "name": "第一三共",
+          "code": "4568",
+          "slug": "daiichi-sankyo"
+        },
+        {
+          "name": "中外製薬",
+          "code": "4519",
+          "slug": "chugai"
+        },
+        {
+          "name": "エーザイ",
+          "code": "4523",
+          "slug": "eisai"
+        },
+        {
+          "name": "小野薬品工業",
+          "code": "4528",
+          "slug": "ono-pharmaceutical"
+        },
+        {
+          "name": "塩野義製薬",
+          "code": "4507",
+          "slug": "shionogi"
+        },
+        {
+          "name": "協和キリン",
+          "code": "4151",
+          "slug": "kyowa-kirin"
+        },
+        {
+          "name": "住友ファーマ",
+          "code": "4506",
+          "slug": "sumitomo-pharma"
+        }
+      ]
+    },
+    "308": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "309": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "310": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "311": {
+      "industries": [
+        {
+          "name": "電気機器",
+          "total": 228,
+          "directoryUrl": "https://company.manapick.app/directory/industry/3650/"
+        },
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソニーグループ",
+          "code": "6758",
+          "slug": "sony-group"
+        },
+        {
+          "name": "日立製作所",
+          "code": "6501",
+          "slug": "hitachi"
+        },
+        {
+          "name": "パナソニックホールディングス",
+          "code": "6752",
+          "slug": "panasonic-holdings"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "三菱電機",
+          "code": "6503",
+          "slug": "mitsubishi-electric"
+        },
+        {
+          "name": "キヤノン",
+          "code": "7751",
+          "slug": "canon"
+        },
+        {
+          "name": "日本電気",
+          "code": "6701",
+          "slug": "nec"
+        }
+      ]
+    },
+    "313": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "316": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "319": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "321": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "322": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "326": {
+      "industries": [
+        {
+          "name": "ゲーム事業を営む上場企業（manapick company の事業分類）",
+          "total": 12
+        }
+      ],
+      "companies": [
+        {
+          "name": "任天堂",
+          "code": "7974",
+          "slug": "nintendo"
+        },
+        {
+          "name": "バンダイナムコホールディングス",
+          "code": "7832",
+          "slug": "bandai-namco"
+        },
+        {
+          "name": "コナミグループ",
+          "code": "9766",
+          "slug": "konami-group"
+        },
+        {
+          "name": "セガサミーホールディングス",
+          "code": "6460",
+          "slug": "sega-sammy"
+        },
+        {
+          "name": "ネクソン",
+          "code": "3659",
+          "slug": "nexon"
+        },
+        {
+          "name": "スクウェア・エニックス・ホールディングス",
+          "code": "9684",
+          "slug": "square-enix"
+        },
+        {
+          "name": "タカラトミー",
+          "code": "7867",
+          "slug": "takara-tomy"
+        },
+        {
+          "name": "カプコン",
+          "code": "9697",
+          "slug": "capcom"
+        },
+        {
+          "name": "株式会社ディー・エヌ・エー",
+          "code": "2432",
+          "slug": "dena"
+        },
+        {
+          "name": "コーエーテクモホールディングス",
+          "code": "3635",
+          "slug": "koei-tecmo-holdings"
+        }
+      ]
+    },
+    "358": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "406": {
+      "industries": [
+        {
+          "name": "卸売業",
+          "total": 297,
+          "directoryUrl": "https://company.manapick.app/directory/industry/6050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "三菱商事",
+          "code": "8058",
+          "slug": "mitsubishi-corp"
+        },
+        {
+          "name": "伊藤忠商事",
+          "code": "8001",
+          "slug": "itochu"
+        },
+        {
+          "name": "三井物産",
+          "code": "8031",
+          "slug": "mitsui-co"
+        },
+        {
+          "name": "豊田通商",
+          "code": "8015",
+          "slug": "toyota-tsusho"
+        },
+        {
+          "name": "丸紅",
+          "code": "8002",
+          "slug": "marubeni"
+        },
+        {
+          "name": "住友商事",
+          "code": "8053",
+          "slug": "sumitomo-corp"
+        },
+        {
+          "name": "メディパルホールディングス",
+          "code": "7459",
+          "slug": "medipal-holdings"
+        },
+        {
+          "name": "アルフレッサ ホールディングス",
+          "code": "2784",
+          "slug": "alfresa-holdings"
+        },
+        {
+          "name": "双日",
+          "code": "2768",
+          "slug": "sojitz"
+        },
+        {
+          "name": "スズケン",
+          "code": "9987",
+          "slug": "suzuken"
+        }
+      ]
+    },
+    "407": {
+      "industries": [
+        {
+          "name": "人材サービス業の上場企業（manapick company の事業分類）",
+          "total": 11
+        }
+      ],
+      "companies": [
+        {
+          "name": "リクルートホールディングス",
+          "code": "6098",
+          "slug": "recruit-holdings"
+        },
+        {
+          "name": "パーソルホールディングス",
+          "code": "2181",
+          "slug": "persol-holdings"
+        },
+        {
+          "name": "パソナグループ",
+          "code": "2168",
+          "slug": "pasona-group"
+        },
+        {
+          "name": "オープンアップグループ",
+          "code": "2154",
+          "slug": "open-up-group"
+        },
+        {
+          "name": "ＵＴグループ",
+          "code": "2146",
+          "slug": "ut-group"
+        },
+        {
+          "name": "ウィルグループ",
+          "code": "6089",
+          "slug": "will-group"
+        },
+        {
+          "name": "メイテックグループホールディングス",
+          "code": "9744",
+          "slug": "meitec-group-holdings"
+        },
+        {
+          "name": "エン",
+          "code": "4849",
+          "slug": "en"
+        },
+        {
+          "name": "ディップ",
+          "code": "2379",
+          "slug": "dip"
+        },
+        {
+          "name": "ジェイエイシーリクルートメント",
+          "code": "2124",
+          "slug": "jac-recruitment"
+        }
+      ]
+    },
+    "413": {
+      "industries": [
+        {
+          "name": "銀行業",
+          "total": 79,
+          "directoryUrl": "https://company.manapick.app/directory/industry/7050/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "三菱UFJフィナンシャル・グループ",
+          "code": "8306",
+          "slug": "mufg"
+        },
+        {
+          "name": "三井住友フィナンシャルグループ",
+          "code": "8316",
+          "slug": "smfg"
+        },
+        {
+          "name": "みずほフィナンシャルグループ",
+          "code": "8411",
+          "slug": "mizuho-fg"
+        },
+        {
+          "name": "三井住友トラストグループ",
+          "code": "8309",
+          "slug": "sumitomo-mitsui-trust-group"
+        },
+        {
+          "name": "ゆうちょ銀行",
+          "code": "7182",
+          "slug": "japan-post-bank"
+        },
+        {
+          "name": "りそなホールディングス",
+          "code": "8308",
+          "slug": "resona-holdings"
+        },
+        {
+          "name": "SBI新生銀行",
+          "code": "8303",
+          "slug": "sbi-shinsei-bank"
+        },
+        {
+          "name": "ふくおかフィナンシャルグループ",
+          "code": "8354",
+          "slug": "fukuoka-financial-group"
+        },
+        {
+          "name": "横浜フィナンシャルグループ",
+          "code": "7186",
+          "slug": "yokohama-financial-group"
+        },
+        {
+          "name": "千葉銀行",
+          "code": "8331",
+          "slug": "chiba-bank"
+        }
+      ]
+    },
+    "423": {
+      "industries": [
+        {
+          "name": "小売業",
+          "total": 342,
+          "directoryUrl": "https://company.manapick.app/directory/industry/6100/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "イオン",
+          "code": "8267",
+          "slug": "aeon"
+        },
+        {
+          "name": "セブン&アイ・ホールディングス",
+          "code": "3382",
+          "slug": "seven-i-holdings"
+        },
+        {
+          "name": "ファーストリテイリング",
+          "code": "9983",
+          "slug": "fast-retailing"
+        },
+        {
+          "name": "パン・パシフィック・インターナショナルホールディングス",
+          "code": "7532",
+          "slug": "pan-pacific-international-holdings"
+        },
+        {
+          "name": "ヤマダホールディングス",
+          "code": "9831",
+          "slug": "yamada-holdings"
+        },
+        {
+          "name": "ツルハホールディングス",
+          "code": "3391",
+          "slug": "tsuruha-holdings"
+        },
+        {
+          "name": "トライアルホールディングス",
+          "code": "141A",
+          "slug": "trial-holdings"
+        },
+        {
+          "name": "ゼンショーホールディングス",
+          "code": "7550",
+          "slug": "zensho-holdings"
+        },
+        {
+          "name": "マツキヨココカラ＆カンパニー",
+          "code": "3088",
+          "slug": "matsukiyococokara"
+        },
+        {
+          "name": "コスモス薬品",
+          "code": "3349",
+          "slug": "cosmos-yakuhin"
+        }
+      ]
+    },
+    "428": {
+      "industries": [
+        {
+          "name": "保険業",
+          "total": 16,
+          "directoryUrl": "https://company.manapick.app/directory/industry/7150/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "第一ライフグループ",
+          "code": "8750",
+          "slug": "daiichi-life"
+        },
+        {
+          "name": "東京海上ホールディングス",
+          "code": "8766",
+          "slug": "tokio-marine"
+        },
+        {
+          "name": "MS&ADインシュアランスグループホールディングス",
+          "code": "8725",
+          "slug": "ms-ad"
+        },
+        {
+          "name": "かんぽ生命保険",
+          "code": "7181",
+          "slug": "japan-post-insurance"
+        },
+        {
+          "name": "SOMPOホールディングス",
+          "code": "8630",
+          "slug": "sompo-holdings"
+        },
+        {
+          "name": "T&Dホールディングス",
+          "code": "8795",
+          "slug": "t-and-d-holdings"
+        },
+        {
+          "name": "ソニーフィナンシャルグループ",
+          "code": "8729",
+          "slug": "sony-financial-group"
+        },
+        {
+          "name": "ＳＢＩインシュアランスグループ",
+          "code": "7326",
+          "slug": "sbi-insurance-group"
+        },
+        {
+          "name": "アニコム ホールディングス",
+          "code": "8715",
+          "slug": "anicom-holdings"
+        },
+        {
+          "name": "ライフネット生命保険",
+          "code": "7157",
+          "slug": "lifenet-insurance"
+        }
+      ]
+    },
+    "449": {
+      "industries": [
+        {
+          "name": "陸運業",
+          "total": 60,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5050/"
+        },
+        {
+          "name": "倉庫・運輸関連業",
+          "total": 31,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5200/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "東日本旅客鉄道",
+          "code": "9020",
+          "slug": "jr-east"
+        },
+        {
+          "name": "NIPPON EXPRESSホールディングス",
+          "code": "9147",
+          "slug": "nippon-express-holdings"
+        },
+        {
+          "name": "東海旅客鉄道",
+          "code": "9022",
+          "slug": "jr-central"
+        },
+        {
+          "name": "ヤマトホールディングス",
+          "code": "9064",
+          "slug": "yamato-holdings"
+        },
+        {
+          "name": "西日本旅客鉄道",
+          "code": "9021",
+          "slug": "jr-west"
+        },
+        {
+          "name": "近鉄グループホールディングス",
+          "code": "9041",
+          "slug": "kintetsu-group-holdings"
+        },
+        {
+          "name": "SGホールディングス",
+          "code": "9143",
+          "slug": "sg-holdings"
+        },
+        {
+          "name": "阪急阪神ホールディングス",
+          "code": "9042",
+          "slug": "hankyu-hanshin-holdings"
+        },
+        {
+          "name": "東急",
+          "code": "9005",
+          "slug": "tokyu"
+        },
+        {
+          "name": "センコーグループホールディングス",
+          "code": "9069",
+          "slug": "senko-group-holdings"
+        }
+      ]
+    },
+    "457": {
+      "industries": [
+        {
+          "name": "倉庫・運輸関連業",
+          "total": 31,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5200/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "三井倉庫ホールディングス",
+          "code": "9302",
+          "slug": "mitsui-soko-holdings"
+        },
+        {
+          "name": "上組",
+          "code": "9364",
+          "slug": "kamigumi"
+        },
+        {
+          "name": "三菱倉庫",
+          "code": "9301",
+          "slug": "mitsubishi-logistics"
+        },
+        {
+          "name": "キユーソー流通システム",
+          "code": "9369",
+          "slug": "kyuso-distribution-system"
+        },
+        {
+          "name": "住友倉庫",
+          "code": "9303",
+          "slug": "sumitomo-warehouse"
+        },
+        {
+          "name": "日本トランスシティ",
+          "code": "9310",
+          "slug": "japan-transcity"
+        },
+        {
+          "name": "安田倉庫",
+          "code": "9324",
+          "slug": "yasuda-logistics"
+        },
+        {
+          "name": "澁澤倉庫",
+          "code": "9304",
+          "slug": "shibusawa-warehouse"
+        },
+        {
+          "name": "キムラユニティー",
+          "code": "9368",
+          "slug": "kimura-unity"
+        },
+        {
+          "name": "エーアイテイー",
+          "code": "9381",
+          "slug": "ait"
+        }
+      ]
+    },
+    "495": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    },
+    "524": {
+      "industries": [
+        {
+          "name": "情報・通信業",
+          "total": 647,
+          "directoryUrl": "https://company.manapick.app/directory/industry/5250/"
+        }
+      ],
+      "companies": [
+        {
+          "name": "NTT",
+          "code": "9432",
+          "slug": "ntt"
+        },
+        {
+          "name": "ソフトバンクグループ",
+          "code": "9984",
+          "slug": "softbank-group"
+        },
+        {
+          "name": "ソフトバンク",
+          "code": "9434",
+          "slug": "softbank-corp"
+        },
+        {
+          "name": "KDDI",
+          "code": "9433",
+          "slug": "kddi"
+        },
+        {
+          "name": "LINEヤフー",
+          "code": "4689",
+          "slug": "ly-corp"
+        },
+        {
+          "name": "大塚商会",
+          "code": "4768",
+          "slug": "otsuka-corporation"
+        },
+        {
+          "name": "野村総合研究所",
+          "code": "4307",
+          "slug": "nomura-research-institute"
+        },
+        {
+          "name": "光通信",
+          "code": "9435",
+          "slug": "hikari-tsushin"
+        },
+        {
+          "name": "TISI",
+          "code": "3626",
+          "slug": "tis"
+        },
+        {
+          "name": "フジ・メディア・ホールディングス",
+          "code": "4676",
+          "slug": "fuji-media-holdings"
+        }
+      ]
+    }
+  }
+}

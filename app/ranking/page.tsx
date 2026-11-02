@@ -40,7 +40,7 @@ export default function RankingPage() {
   return <div className="page-shell ranking-page">
     <JsonLd data={{ "@context": "https://schema.org", "@type": "ItemList", name: "人気職業アクセスランキング", numberOfItems: popularityRanking.length, itemListElement: popularityRanking.map((item) => ({ "@type": "ListItem", position: item.rank, name: item.name, url: item.careerSlug ? absoluteUrl(`/career/${item.careerSlug}/`) : absoluteUrl("/all/") })) }} />
     <header className="page-heading"><span className="eyebrow">公式アクセス履歴 × manapick連携</span><h1>人気職業アクセスランキング</h1><p>人気の順序はjob tagのアクセス履歴だけを使います。manapickの動画・AI・資格表示は、次に確認できる情報の有無であり、順位には一切加えていません。</p></header>
-    <section className="ranking-method"><div><strong>順位の根拠</strong><p>{popularityMethod.description}</p></div><div><strong>この順位が示さないこと</strong><p>{popularityMethod.limitation}</p></div><a href={popularityMethod.sourceUrl} target="_blank" rel="noopener noreferrer">公式ランキングを確認 <ArrowUpRightIcon /></a><small>最終確認 {popularityMethod.checkedAt}</small></section>
+    <details className="ranking-method-fold"><summary><span>順位の根拠と、示さないこと</span><small>最終確認 {popularityMethod.checkedAt}</small></summary><div className="ranking-method"><div><strong>順位の根拠</strong><p>{popularityMethod.description}</p></div><div><strong>この順位が示さないこと</strong><p>{popularityMethod.limitation}</p></div><a href={popularityMethod.sourceUrl} target="_blank" rel="noopener noreferrer">公式ランキングを確認 <ArrowUpRightIcon /></a></div></details>
     <PopularityRanking entries={popularityRanking} />
     <IncomeRanking overall={overall} groups={groups} />
     <NetworkSites />
