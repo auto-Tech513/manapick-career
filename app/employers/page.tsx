@@ -33,7 +33,7 @@ export default function EmployersPage() {
   const total = employersData.items.length + dossiers.length;
   return <div className="page-shell employers-page">
     <header className="page-heading"><span className="eyebrow">公式ページで確認した職場の例</span><h1>企業・法人・公的機関の例がある職業</h1>
-      <p>556職業のうち、現在 {total} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。確認が取れていない職業は載せていません。</p></header>
+      <p>556職業のうち、現在 {total} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。確認が取れていない職業は載せていません。載せていない職業は、公式ページで確認できた例がまだ見つかっていないためで、その職業で働く場が存在しないという意味ではありません。</p></header>
     {catalog.categories.map(category => {
       const items = itemsByCategory.get(category.key);
       if (!items?.length) return null;

@@ -10,7 +10,7 @@ import { networkUrl } from "../lib/network-shared";
 
 /** Short, page-grounded descriptions for the menu. Wording follows each page's own title. */
 const navMeta: Record<string, { icon: LucideIcon; description: string }> = {
-  "/all/": { icon: Search, description: "556職業の仕事内容・関連資格と出典付き解説" },
+  "/all/": { icon: Search, description: "556職業の名録。仕事内容・関連資格・年収の目安を出典つきで" },
   "/employers/": { icon: BriefcaseBusiness, description: "企業・法人・公的機関の例を確認できた職業の一覧" },
   "/route/": { icon: Compass, description: "キャリア候補の入口案内" },
   "/compare/": { icon: GitCompareArrows, description: "職業を並べて比べる" },

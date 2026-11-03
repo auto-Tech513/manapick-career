@@ -47,5 +47,6 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
     {newsNeedsRefresh(item) ? <aside className="source-freshness-notice" data-news-archive="true" role="note"><h2>過去の公表資料に基づく記事です</h2><p>資料確認日の記録は{item.checkedAt}で、更新確認の期限を過ぎています。最新の発表は下記の公式出典に載っています。</p></aside> : null}
     <ShareKit title={item.title} summary={item.summary} url={url} kind="news" />
     <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources} relatedArticles={relatedArticles}/>
+    <p className="article-method-note">この記事の数字の読み方と編集方針は<Link href="/about-method/">作成方法・編集方針</Link>にまとめています。</p>
   </div></>;
 }
