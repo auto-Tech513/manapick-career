@@ -1,4 +1,4 @@
 "use client";
 declare global{interface Window{gtag?:(...args:unknown[])=>void}}
-export type CareerEvent="career_open"|"route_result"|"network_click"|"compare"|"pr_click";
+export type CareerEvent="career_open"|"route_result"|"network_click"|"compare"|"pr_click"|"workstyle_start"|"workstyle_complete"|"workstyle_action";
 export function trackEvent(name:CareerEvent,params:Record<string,string|number|boolean>={}){window.gtag?.("event",name,params)}
