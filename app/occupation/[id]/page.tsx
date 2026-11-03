@@ -159,7 +159,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
   ];
   const pageUrl = absoluteUrl(`/occupation/${id}/`);
   return (
-    <main className="editorial-article">
+    <div className="editorial-article occupation-article">
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -467,6 +467,6 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           収入は{incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類による平均年収換算です。
         </p>
       </section>
-    </main>
+    </div>
   );
 }

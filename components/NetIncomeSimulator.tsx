@@ -184,18 +184,20 @@ export function NetIncomeSimulator() {
         <p className="sim-result-label">手取りの目安（年額）</p>
         <p className="sim-result-value">{manYen(result.net)}<span>（{yen(result.net)}）</span></p>
         <p className="sim-result-sub">月額の目安 {manYen(result.netMonthly)} ／ 額面に対する手取り率 {result.netRate.toFixed(1)}%</p>
-        <table className="sim-table">
-          <tbody>
-            <tr><th>額面年収</th><td>{yen(result.gross)}</td></tr>
-            <tr><th>健康保険料（本人負担）</th><td>−{yen(result.health)}</td></tr>
-            {ageBand === "40to64" ? <tr><th>介護保険料（本人負担）</th><td>−{yen(result.nursing)}</td></tr> : null}
-            <tr><th>厚生年金保険料（本人負担）</th><td>−{yen(result.pension)}</td></tr>
-            <tr><th>雇用保険料</th><td>−{yen(result.unemployment)}</td></tr>
-            <tr><th>所得税（復興特別所得税を含む）</th><td>−{yen(result.incomeTax)}</td></tr>
-            <tr><th>住民税（所得割＋均等割）</th><td>−{yen(result.residentTax)}</td></tr>
-            <tr className="sim-total"><th>差し引き合計</th><td>−{yen(result.totalDeductions)}</td></tr>
-          </tbody>
-        </table>
+        <div className="sim-table-scroll">
+          <table className="sim-table">
+            <tbody>
+              <tr><th>額面年収</th><td>{yen(result.gross)}</td></tr>
+              <tr><th>健康保険料（本人負担）</th><td>−{yen(result.health)}</td></tr>
+              {ageBand === "40to64" ? <tr><th>介護保険料（本人負担）</th><td>−{yen(result.nursing)}</td></tr> : null}
+              <tr><th>厚生年金保険料（本人負担）</th><td>−{yen(result.pension)}</td></tr>
+              <tr><th>雇用保険料</th><td>−{yen(result.unemployment)}</td></tr>
+              <tr><th>所得税（復興特別所得税を含む）</th><td>−{yen(result.incomeTax)}</td></tr>
+              <tr><th>住民税（所得割＋均等割）</th><td>−{yen(result.residentTax)}</td></tr>
+              <tr className="sim-total"><th>差し引き合計</th><td>−{yen(result.totalDeductions)}</td></tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
