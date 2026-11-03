@@ -3085,6 +3085,8 @@ dd {
 .employers-list p { margin: .2rem 0 0; color: var(--muted); font-size: .78rem; line-height: 1.6; }
 .employers-list a { display: inline-flex; align-items: center; min-height: 44px; gap: .3rem; flex: none; color: var(--primary-aa); font-size: .75rem; font-weight: 850; }
 .employers-note { margin-top: 2rem; color: var(--muted); font-size: .8rem; line-height: 1.8; }
+.article-method-note { margin-top: 2rem; color: var(--muted); font-size: .85rem; line-height: 1.8; }
+.article-method-note a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .income-rank-section { margin-top: 3rem; }
 .income-rank-subtitle { margin: 1.2rem 0 .8rem; font-size: 1.05rem; font-weight: 800; }
 .income-rank-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }

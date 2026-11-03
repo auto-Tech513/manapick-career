@@ -360,7 +360,13 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
             })}
           </ul>
         </section>
-      ) : null}
+      ) : (
+        <section className="article-section" id="employers">
+          <h2>企業例・働く場の例（公式確認済み）</h2>
+          <p>この職業については、公式ページで職種名と仕事内容を確認できた企業例がまだ見つかっていないため、掲載していません。企業例は、各組織の公式ページ（採用・職種紹介・業務紹介など）で確認できたものだけを、出典と確認日つきで載せています。確認できたものから追加します。</p>
+          <p>企業例がないのは、この職業で働く場が存在しないという意味ではありません。</p>
+        </section>
+      )}
 
       {(() => {
         const industryEntry = (industryLinks.occupations as unknown as Record<string, { industries: Array<{ name: string; total: number; directoryUrl?: string }>; companies: Array<{ name: string; code: string; slug: string }> }>)[id];
