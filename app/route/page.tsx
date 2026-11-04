@@ -1,6 +1,7 @@
 import { routeCandidate } from "@/lib/career-card";
 import type { Metadata } from "next";
-import { ArrowRight } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import "./route.css";
 import { RouteGuide } from "@/components/RouteGuide";
 import { WorkstyleDiagnosis } from "@/components/WorkstyleDiagnosis";
 import { buildWorkstyleCards } from "@/lib/workstyle-cards";
@@ -22,9 +23,15 @@ export default function RoutePage() {
         <h1>キャリア候補の入口案内</h1>
         <p>探し方は2つあります。いまの関心から入る3問の案内と、働き方の好みから入る12問の診断です。どちらも調べ始める候補を出すための入口で、適性や向き不向きの判定ではありません。</p>
       </div>
-      <nav className="home-discovery" aria-label="入口の選び方">
-        <a href="#interest">関心から探す（3問）<ArrowRight aria-hidden="true" /></a>
-        <a href="#workstyle">働き方から探す（12問）<ArrowRight aria-hidden="true" /></a>
+      <nav className="route-chooser" aria-label="入口の選び方">
+        <a href="#interest">
+          <span className="rc-body"><span className="rc-title">関心から探す（3問）</span><span className="rc-desc">興味・取り組みたい作業・使える学習時間から、調べ始める候補を提示します</span></span>
+          <ArrowDown aria-hidden="true" />
+        </a>
+        <a href="#workstyle">
+          <span className="rc-body"><span className="rc-title">働き方から探す（12問）</span><span className="rc-desc">仕事場面での好みから16タイプの働き方の傾向と、職業への入口を示します</span></span>
+          <ArrowDown aria-hidden="true" />
+        </a>
       </nav>
       <section id="interest" aria-labelledby="interest-title" style={{ marginTop: "3rem", scrollMarginTop: "110px" }}>
         <h2 id="interest-title">いまの関心から探す</h2>
