@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { WorkstyleDiagnosis } from "@/components/WorkstyleDiagnosis";
 import { buildWorkstyleCards } from "@/lib/workstyle-cards";
+import "./workstyle.css";
 import { absoluteUrl } from "@/lib/site";
 
 const title = "16タイプ働き方診断";
