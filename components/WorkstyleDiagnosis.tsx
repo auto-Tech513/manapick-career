@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, RotateCcw } from "lucide-react";
 import { axisStrength, typeCodeFromScores, workstyleAxes, workstyleQuestions, workstyleTypes, type WorkstyleAxisKey } from "@/content/workstyle-diagnosis";
 import { trackEvent } from "@/lib/analytics";
+import "./workstyle.css";
 
 export interface WorkstyleCard {
   catalogId: string;
@@ -160,7 +161,7 @@ export function WorkstyleDiagnosis({ cardsByType }: { cardsByType: Record<string
         </> : null}
         <div className="wsd-next-actions">
           <Link href="/compare/">気になった職業を比べる<ArrowRight aria-hidden="true" /></Link>
-          <Link href="/route/">関心から探す入口案内も試す<ArrowRight aria-hidden="true" /></Link>
+          <a href="#interest">関心から探す入口案内も試す<ArrowRight aria-hidden="true" /></a>
           <Link href="/all/">556職業の名録で探す<ArrowRight aria-hidden="true" /></Link>
         </div>
         <details className="wsd-about">
