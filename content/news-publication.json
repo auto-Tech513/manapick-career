@@ -791,6 +791,19 @@
       "reviewedByHumanAt": "2026-11-01",
       "reviewEvidence": "git:d67195829658c03496aee086844013024375a338",
       "contentSha256": "e7e0f7bfc37a6eb07766518da6f62f665c0edfe89c632426fddbcc9d99b12795"
+    },
+    {
+      "slug": "security-camp-connect-2027",
+      "createdAt": "2026-11-05",
+      "status": "draft",
+      "primarySourceId": "ipa-security-camp-connect-2027",
+      "sourcePublishedAt": "2026-11-04",
+      "publishedAt": null,
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null,
+      "contentSha256": null
     }
   ]
 }

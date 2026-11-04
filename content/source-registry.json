@@ -3232,5 +3232,35 @@
   "updateFrequency": "irregular",
   "republication": "独自要約と出典リンクのみ",
   "notes": "消防庁の検討会資料「日本の消防組織の概要等」で、消防組織法の条文に基づく市町村消防の原則を確認。資料自体は平成28年時点の組織数を含むため、件数類は引用しない。"
- }
+  },
+  {
+    "sourceId": "ipa-security-camp-connect-2027",
+    "provider": "独立行政法人情報処理推進機構（IPA）",
+    "url": "https://www.ipa.go.jp/jinzai/security-camp/connect/index.html",
+    "isPrimary": true,
+    "claims": [
+      "セキュリティ・キャンプ2027コネクトは2027年3月20日から23日まで千葉県船橋市で開催され、定員は全体で50名程度",
+      "エントリー締切は2026年12月2日23時59分、応募課題回答提出締切は12月9日23時59分",
+      "Aコース4クラスとBコース4クラスがあり、受講料・食費・宿泊費は無料、交通費は規程に基づき支援される"
+    ],
+    "checkedAt": "2026-11-05",
+    "updateFrequency": "irregular",
+    "republication": "独自要約と出典リンクのみ",
+    "notes": "IPAが2026年11月4日に公開した開催概要で確認。締切、クラス、定員、費用は更新の可能性があるため、応募直前に公式ページを再確認する。"
+  },
+  {
+    "sourceId": "ipa-security-camp-connect-2027-faq",
+    "provider": "独立行政法人情報処理推進機構（IPA）",
+    "url": "https://www.ipa.go.jp/jinzai/security-camp/connect/faq.html",
+    "isPrimary": true,
+    "claims": [
+      "受講費、教材費、期間中の食事、宿泊費は無料で、往復交通費は主催者規程に沿った経路と金額で支払われる",
+      "講義とセッションは日本語で行われ、参加者同士の議論があるため日本語での会話能力が必須",
+      "会場までの交通手段は参加者自身が手配し、クラスによって事前学習の有無と内容が異なる"
+    ],
+    "checkedAt": "2026-11-05",
+    "updateFrequency": "irregular",
+    "republication": "独自要約と出典リンクのみ",
+    "notes": "IPAが2026年11月4日に公開したFAQで確認。費用の対象範囲、交通手配、日本語要件、事前学習についての補足資料。"
+  }
 ]
