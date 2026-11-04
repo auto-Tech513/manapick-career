@@ -428,6 +428,27 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "labor-economics-whitepaper-2026": {
+    "title": "2040年に不足が見込まれる人材（経済産業省の推計）",
+    "note": "令和8年版労働経済白書が引用する経済産業省「2040年の就業構造推計（改訂版）」の値です。前提に基づく推計で、確定した予測ではありません。同じ推計では、事務職に約440万人の余剰が見込まれています。",
+    "bars": [
+      {
+        "label": "AI・ロボット等利活用人材",
+        "value": 340,
+        "display": "約340万人"
+      },
+      {
+        "label": "理系卒",
+        "value": 120,
+        "display": "約120万人"
+      },
+      {
+        "label": "現場人材",
+        "value": 54,
+        "display": "約54万人"
+      }
+    ]
+  },
   "labor-force-august-2026": {
     "title": "産業別の就業者数（2026年8月）",
     "note": "前年同月と比べ、医療，福祉は23万人増、製造業は21万人減でした。",
