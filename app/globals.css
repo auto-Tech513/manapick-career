@@ -1023,6 +1023,32 @@ main {
   gap: 0.4rem;
   font-size: 0.78rem;
 }
+.compare-picker-head {
+  align-items: baseline;
+  justify-content: space-between;
+}
+.compare-count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+.compare-none,
+.compare-limit {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0;
+}
+.compare-limit {
+  margin-top: 0.6rem;
+}
+.compare-picker button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+@media (min-width: 761px) and (max-width: 1023px) {
+  .compare-scroll table { min-width: 760px; }
+  .compare-scroll th:first-child { width: 132px; }
+}
 .compare-scroll {
   overflow-x: auto;
   border: 1px solid var(--line);
@@ -2083,10 +2109,22 @@ dd {
   .route-options button { min-height: 60px; }
   .route-results article { padding: .9rem; }
 
-  .compare-picker > div { flex-wrap: nowrap; overflow-x: auto; margin-inline: -.9rem; padding: 0 .9rem .5rem; scrollbar-width: none; }
-  .compare-picker > div::-webkit-scrollbar { display: none; }
+  .compare-picker .compare-options { flex-wrap: nowrap; overflow-x: auto; margin-inline: -.9rem; padding: 0 .9rem .5rem; scrollbar-width: none; mask-image: linear-gradient(to right, #000 92%, transparent); }
+  .compare-picker .compare-options::-webkit-scrollbar { display: none; }
   .compare-picker button { flex: 0 0 auto; }
-  .compare-scroll { margin-inline: -.9rem; border-radius: 0; border-inline: 0; }
+  .compare-scroll { overflow: visible; border: 0; border-radius: 0; background: transparent; margin-inline: 0; }
+  .compare-scroll table { display: block; min-width: 0; width: auto; }
+  .compare-scroll tbody, .compare-scroll tr, .compare-scroll td { display: block; width: auto; }
+  .compare-scroll thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .compare-scroll thead th { position: static; }
+  .compare-scroll tbody tr { border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); margin-bottom: 1rem; overflow: hidden; }
+  .compare-scroll tbody th { position: static; display: block; width: auto; background: var(--bg); box-shadow: none; padding: .8rem 1rem; font-size: 1rem; border-bottom: 1px solid var(--line); border-right: 0; }
+  .compare-scroll td { padding: .9rem 1rem 1.05rem; border-right: 0; border-bottom: 1px dashed var(--line); font-size: 1rem; line-height: 1.8; }
+  .compare-scroll tr td:last-of-type { border-bottom: 0; }
+  .compare-scroll td::before { content: attr(data-job); display: block; font-size: .78rem; font-weight: 800; letter-spacing: .02em; color: var(--primary-aa); margin-bottom: .35rem; }
+  .compare-scroll td ul { padding-left: 1.1rem; }
+  .compare-scroll td li { margin-bottom: .3rem; }
+  .compare-scroll td a { display: flex; align-items: center; min-height: 44px; }
 
   .footer-inner { gap: 2rem; }
   .footer-inner nav { gap: 1.1rem; }
