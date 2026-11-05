@@ -1,0 +1,75 @@
+/* manapick メルマガ登録フォーム（Kit・ネイティブPOST）のスタイル。
+   新規機能の CSS は globals.css に入れない既定ルールに従い、部品側に置く。 */
+.newsletter-form {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-2);
+  background: var(--surface);
+  padding: 1.25rem;
+  margin: 2rem 0;
+}
+.newsletter-form--footer {
+  margin: 0 0 2rem;
+}
+.newsletter-form-title {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.5rem;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+.newsletter-form-title svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-aa);
+}
+.newsletter-form-text {
+  margin: 0 0 0.9rem;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+.newsletter-form-label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.newsletter-form-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.newsletter-form-row input {
+  flex: 1 1 240px;
+  min-height: 48px;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-1);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1rem;
+}
+.newsletter-form-row button {
+  min-height: 48px;
+  padding: 0.6rem 1.4rem;
+  border: 1px solid var(--primary-aa);
+  border-radius: var(--radius-1);
+  background: var(--primary);
+  color: var(--primary-ink);
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.newsletter-form-note {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+.newsletter-form-note a {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
