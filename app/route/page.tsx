@@ -10,7 +10,7 @@ import { publishedJobs, categories } from "@/content/jobs";
 export const metadata: Metadata = {
   title: "キャリア候補の入口案内",
   description: "興味・取り組みたい作業・学習時間の3問から候補を提示する入口案内と、仕事場面での好みの12問から働き方の傾向と職業への入口を示す16タイプ働き方診断。どちらも適性や向き不向きの判定ではありません。",
-  alternates: { canonical: "/route/" },
+  alternates: { canonical: "/route/", types: { "application/rss+xml": "/feed.xml" } },
 };
 
 export default function RoutePage() {

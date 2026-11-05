@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "手取りシミュレーター｜年収から手取りの目安を試算",
   description:
     "額面年収から、社会保険料・所得税・住民税を差し引いた手取りの目安を試算します。計算の前提と根拠（国税庁の控除表など）をすべて明示した簡易試算です。",
-  alternates: { canonical: "/tools/net-income/" },
+  alternates: { canonical: "/tools/net-income/", types: { "application/rss+xml": "/feed.xml" } },
 };
 
 export default function NetIncomePage() {

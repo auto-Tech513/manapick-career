@@ -15,7 +15,7 @@ const url = absoluteUrl("/shop/");
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/shop/" },
+  alternates: { canonical: "/shop/", types: { "application/rss+xml": "/feed.xml" } },
   openGraph: { title, description, url, type: "website", images: [{ url: pageOgUrl("shop", title), width: 1200, height: 675, alt: title }] },
   twitter: { card: "summary_large_image", title, description, images: [pageOgUrl("shop", title)] },
 };

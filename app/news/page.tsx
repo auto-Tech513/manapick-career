@@ -14,7 +14,7 @@ const newsIndexImage = articleOgUrl("news", "index", `${newsTitle}|${publishedNe
 export const metadata: Metadata = {
   title: "キャリアニュース｜雇用・賃金・制度の一次資料を読み解く",
   description: newsDescription,
-  alternates: { canonical: "/news/" },
+  alternates: { canonical: "/news/", types: { "application/rss+xml": "/feed.xml" } },
   openGraph: {
     title: newsTitle,
     description: newsDescription,

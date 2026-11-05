@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, BadgeCheck, BarChart3, Blocks, FileText, MessageCircle, Palette, ShieldCheck } from "lucide-react";
 import { publishedJobs } from "@/content/jobs";
 
-export const metadata: Metadata = { title: "仕事から見るスキル", description: "職業ページで確認したスキルを、技術、データ、対人、制作、業務運営、安全の6群に整理し、使う職業と場面から探せます。", alternates: { canonical: "/skills/" } };
+export const metadata: Metadata = { title: "仕事から見るスキル", description: "職業ページで確認したスキルを、技術、データ、対人、制作、業務運営、安全の6群に整理し、使う職業と場面から探せます。", alternates: { canonical: "/skills/", types: { "application/rss+xml": "/feed.xml" } } };
 
 const groups = [
   { key: "technology", label: "技術・デジタル", description: "道具や仕組みを理解し、作る・設定する", icon: Blocks, words: ["プログラミング", "Git", "HTML", "CSS", "データベース", "IT", "Figma", "編集ソフト", "会計ソフト"] },

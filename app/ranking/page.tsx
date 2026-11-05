@@ -8,7 +8,7 @@ import catalog from "@/content/job-catalog.json";
 import { incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { absoluteUrl } from "@/lib/site";
 
-export const metadata: Metadata = { title: "人気職業アクセスランキング・年収ランキング", description: "厚生労働省job tagのアクセス履歴に基づく人気職業ランキングと、賃金構造基本統計調査2025年の統計分類の平均年収換算による全体・ジャンル別年収ランキング。", alternates: { canonical: "/ranking/" } };
+export const metadata: Metadata = { title: "人気職業アクセスランキング・年収ランキング", description: "厚生労働省job tagのアクセス履歴に基づく人気職業ランキングと、賃金構造基本統計調査2025年の統計分類の平均年収換算による全体・ジャンル別年収ランキング。", alternates: { canonical: "/ranking/", types: { "application/rss+xml": "/feed.xml" } } };
 
 function incomeEntries(): IncomeRankEntry[] {
   const entries: IncomeRankEntry[] = [];

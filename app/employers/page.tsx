@@ -10,7 +10,7 @@ import { publishedOccupationCatalog } from "@/content/catalog";
 export const metadata: Metadata = {
   title: "企業・法人・公的機関の例がある職業一覧",
   description: "各職業について、その仕事を行っている具体的な企業・法人・公的機関の例を公式ページで確認し、出典付きで載せた職業の一覧。募集の継続や採用可能性を示すものではありません。",
-  alternates: { canonical: "/employers/" },
+  alternates: { canonical: "/employers/", types: { "application/rss+xml": "/feed.xml" } },
 };
 
 type EmployerItem = (typeof employersData.items)[number];

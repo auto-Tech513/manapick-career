@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return {
     title,
     description,
-    alternates: { canonical: `/occupation/${id}/` },
+    alternates: { canonical: `/occupation/${id}/`, types: { "application/rss+xml": "/feed.xml" } },
     openGraph: {
       title,
       description,
