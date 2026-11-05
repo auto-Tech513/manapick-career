@@ -7,6 +7,7 @@ import { EditorialArticle } from "@/components/EditorialArticle";
 import { AiDeepLinks } from "@/components/AiDeepLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { ShareKit } from "@/components/ShareKit";
+import { NewsletterForm } from "@/components/NewsletterForm";
 import { guideBySlug, guides } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
@@ -36,6 +37,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <figure className="article-cover"><img src={articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`)} alt={guide.title} width={1200} height={675} /></figure>
     <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.sections.some((section) => section.paragraphs.some((paragraph) => paragraph.includes("manapick AI") || paragraph.includes("manapick license"))) ? [] : guide.networkLinks} relatedArticles={relatedArticles} estimateLabel="読む・試す目安"/>
     <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />
+    <NewsletterForm context="article" />
     <AiDeepLinks path={`/guide/${slug}/`} />
   </div></>;
 }
