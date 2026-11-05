@@ -10,10 +10,11 @@ import { newsBySlug, newsItems, newsModifiedAt, newsNeedsRefresh } from "@/conte
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
 import { buildNewsStaticParams, EMPTY_NEWS_ROUTE_SLUG } from "@/lib/news-static-params.mjs";
+import "@/components/article-cover.css";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return buildNewsStaticParams(newsItems); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const item = newsBySlug(slug); if (!item) return {}; const modifiedAt = newsModifiedAt(item); const image = articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`); return { title: item.title, description: metaDescription(item.summary), alternates: { canonical: `/news/${slug}/` }, openGraph: { title: item.title, description: metaDescription(item.summary), type: "article", url: absoluteUrl(`/news/${slug}/`), publishedTime: item.publishedAt, modifiedTime: modifiedAt, images: [{ url: image, width: 1200, height: 630, alt: item.title }] }, twitter: { card: "summary_large_image", title: item.title, description: metaDescription(item.summary), images: [image] } }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const item = newsBySlug(slug); if (!item) return {}; const modifiedAt = newsModifiedAt(item); const image = articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`); return { title: item.title, description: metaDescription(item.summary), alternates: { canonical: `/news/${slug}/` }, openGraph: { title: item.title, description: metaDescription(item.summary), type: "article", url: absoluteUrl(`/news/${slug}/`), publishedTime: item.publishedAt, modifiedTime: modifiedAt, images: [{ url: image, width: 1200, height: 675, alt: item.title }] }, twitter: { card: "summary_large_image", title: item.title, description: metaDescription(item.summary), images: [image] } }; }
 
 export default async function NewsPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -44,6 +45,7 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
     <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/news/">ニュース</Link><span>/</span><span aria-current="page">{item.kind}</span></nav>
     <Link className="back-link" href="/news/"><ArrowLeft aria-hidden="true" />ニュース一覧へ</Link>
     <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1 className="phrase-breaks"><PhraseText text={item.title} /></h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>出典台帳の記録 {item.checkedAt}</span><span>公開台帳の記録 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
+    <figure className="article-cover"><img src={articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`)} alt={item.title} width={1200} height={675} /></figure>
     {newsNeedsRefresh(item) ? <aside className="source-freshness-notice" data-news-archive="true" role="note"><h2>過去の公表資料に基づく記事です</h2><p>資料確認日の記録は{item.checkedAt}で、更新確認の期限を過ぎています。最新の発表は下記の公式出典に載っています。</p></aside> : null}
     <ShareKit title={item.title} summary={item.summary} url={url} kind="news" />
     <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources} relatedArticles={relatedArticles}/>

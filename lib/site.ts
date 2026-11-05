@@ -2,7 +2,7 @@ export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://career.man
 export const SITE_NAME = "manapick career";
 export const TAGLINE = "なりたい仕事まで、迷わせない。";
 export const ARTICLE_OG_BASE = "/og/biz-udp-v1";
-export const ARTICLE_OG_REVISION = "biz-udp-resvg-v1";
+export const ARTICLE_OG_REVISION = "biz-udp-resvg-v2";
 export const absoluteUrl = (path = "/") => new URL(path, `${SITE_URL}/`).toString();
 
 function stableRevision(value: string) {

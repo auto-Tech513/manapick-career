@@ -100,7 +100,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       url: absoluteUrl(`/occupation/${id}/`),
       type: "article",
       locale: "ja_JP",
-      images: [{ url: image, width: 1200, height: 630, alt: title }],
+      images: [{ url: image, width: 1200, height: 675, alt: title }],
     },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };

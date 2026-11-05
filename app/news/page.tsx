@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: absoluteUrl("/news/"),
     siteName: "manapick career",
     locale: "ja_JP",
-    images: [{ url: newsIndexImage, width: 1200, height: 630, alt: newsTitle }],
+    images: [{ url: newsIndexImage, width: 1200, height: 675, alt: newsTitle }],
   },
   twitter: {
     card: "summary_large_image",
