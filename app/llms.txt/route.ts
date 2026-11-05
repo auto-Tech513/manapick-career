@@ -1,4 +1,5 @@
 import { categories, publishedJobs } from "@/content/jobs";
+import professionalCareers from "@/content/professional-careers.json";
 import { occupationCatalog, publishedOccupationCatalog } from "@/content/catalog";
 import { guides, newsItems } from "@/content/editorial";
 import { popularityMethod } from "@/content/popularity-ranking";
@@ -27,6 +28,7 @@ export function GET() {
     "",
     "## Published careers (source-linked)",
     ...publishedJobs.map((job) => `- [${job.name}](${absoluteUrl(`/career/${job.slug}/`)}): ${job.conclusion[0]}`),
+    ...professionalCareers.items.map((profile) => `- [${profile.name}](${absoluteUrl(`/career/${profile.slug}/`)}): ${profile.summary}`),
     "",
     ...(publishedOccupationCatalog.length ? [
       "## Published occupation pages (source-linked)",

@@ -26,6 +26,7 @@ export function EditorialArticle({
   author,
   editor,
   checkedAt,
+  reviewedAt,
   readMinutes,
   pathname,
   networkLinks,
@@ -40,6 +41,7 @@ export function EditorialArticle({
   author: string;
   editor: string;
   checkedAt: string;
+  reviewedAt?: string;
   readMinutes: number;
   pathname: string;
   networkLinks?: EditorialNetworkLink[];
@@ -73,7 +75,7 @@ export function EditorialArticle({
         {relatedOccupations.length > 0 && <section className="related-careers"><span className="article-section-number">OCCUPATION PAGES</span><h2>関連する職業ページ</h2><p>この記事で触れた分野の職業を、仕事内容・年収の目安・なり方・企業例まで、出典つきの個別ページで読めます。</p><div>{relatedOccupations.map((item) => <Link key={item.catalogId} href={`/occupation/${item.catalogId}/`}><span><strong>{item.name}</strong><small>仕事内容・年収・なり方</small></span><ArrowRight aria-hidden="true" /></Link>)}</div></section>}
         {networkLinks && networkLinks.length > 0 && <section className="related-careers network-bridges"><span className="article-section-number">MANAPICK NETWORK</span><h2>この手順を、学び・AI・資格へつなぐ</h2><p>読み終えたら、学び・AI・資格の各サイトで、この記事の内容を次の行動につなげられます。</p><div>{networkLinks.map((item) => <a key={item.href} href={item.href} target="_blank" rel="noopener noreferrer"><span><strong>{item.label}</strong><small>{item.description}</small></span><ArrowUpRight aria-hidden="true" /></a>)}</div></section>}
         {offers.map((offer) => <aside className="learning-offer" key={offer.offerId} aria-label={`${offer.provider}のPR情報`}><span>PR</span><div><small>{offer.disclosure}</small><h2>{offer.label}</h2><p>{offer.description}</p><p className="offer-caution">価格・無料体験・給付対象・申込条件は、リンク先の公式表示が最新です。</p></div><a href={offer.url} target="_blank" rel="sponsored nofollow noopener noreferrer">公式情報を確認 <ArrowUpRight aria-hidden="true" /></a></aside>)}
-        <section className="article-review"><h2>執筆・確認情報</h2><dl><div><dt>執筆</dt><dd>{author}</dd></div><div><dt>編集</dt><dd>{editor}</dd></div><div><dt>出典台帳の記録日</dt><dd>{checkedAt}</dd></div><div><dt>確認方法</dt><dd>公的資料と一次情報を出典付きで整理。自動監視による資料の変化検知と、本文の正確性の確認は区別します</dd></div></dl><h3>参照した公式情報</h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul><p className="correction-note">誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>へお知らせください。過去の資料に基づく記事は、その時点の記録として案内します。</p></section>
+        <section className="article-review"><h2>執筆・確認情報</h2><dl><div><dt>執筆</dt><dd>{author}</dd></div><div><dt>編集</dt><dd>{editor}</dd></div><div><dt>出典台帳の記録日</dt><dd>{checkedAt}</dd></div>{reviewedAt ? <div><dt>公開台帳の記録日</dt><dd>{reviewedAt}</dd></div> : null}<div><dt>確認方法</dt><dd>公的資料と一次情報を出典付きで整理。自動監視による資料の変化検知と、本文の正確性の確認は区別します</dd></div></dl><h3>参照した公式情報</h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul><p className="correction-note">誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>へお知らせください。過去の資料に基づく記事は、その時点の記録として案内します。</p></section>
         <p className="article-checked"><CalendarDays aria-hidden="true" />この記事の内容確認日：{checkedAt}</p>
       </article>
     </div>
