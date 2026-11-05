@@ -1,7 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Clock3 } from "lucide-react";
+import { ArrowRight, Clock3, Flame } from "lucide-react";
 import { PhraseText } from "./PhraseTitle";
 
 export type GuideCardItem = {
@@ -104,7 +104,7 @@ export function GuideExplorer({ items, topics }: { items: GuideCardItem[]; topic
       {topic === "all" ? (
         <div className="article-trend">
           <h2 className="article-trend-title">
-            <span aria-hidden="true">🔥</span> 最近、出典を確認したガイド
+            <Flame aria-hidden="true" size={19} /> 最近、出典を確認したガイド
           </h2>
           <div className="article-trend-grid">
             {trend.map((item) => (

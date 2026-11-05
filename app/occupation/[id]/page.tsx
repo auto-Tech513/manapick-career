@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
+import { PhraseText } from "@/components/PhraseTitle";
 import { AdSlot } from "@/components/AdSlot";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import {
@@ -213,8 +214,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           { name: occupation.name, path: `/occupation/${id}/` },
         ]}
       />
-      <h1>
-        {occupation.name}の仕事内容・年収・なり方
+      <h1 className="phrase-breaks">
+        <PhraseText text={`${occupation.name}の仕事内容・年収・なり方`} />
       </h1>
       <p className="article-checked">
         出典確認日：{record.checkedAt}／公開日：{record.publishedAt}／分野：{category?.label}
