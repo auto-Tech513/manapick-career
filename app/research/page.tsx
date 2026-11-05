@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "キャリアデータ室",
   description: "雇用、賃金、学び、AI・DXの一次資料を、示すこと・示さないこと・次に確認することへ分けて読むためのデータ案内です。",
   alternates: { canonical: "/research/" },
-  openGraph: { title: "キャリアデータ室 | manapick career", description: "労働市場の数字を、職業順位や転職成功率へ変換せずに読む。", url: absoluteUrl("/research/"), images: [{ url: absoluteUrl("/og.png"), width: 1200, height: 630 }] },
+  openGraph: { title: "キャリアデータ室 | manapick career", description: "労働市場の数字を、職業順位や転職成功率へ変換せずに読む。", url: absoluteUrl("/research/"), images: [{ url: absoluteUrl("/og.png"), width: 1200, height: 675 }] },
 };
 
 const selectedSlugs = researchSelectedNewsSlugs;

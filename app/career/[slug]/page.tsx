@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const job = publishedJobs.find((item) => item.slug === slug);
   const professional=profiles.items.find(item=>item.slug===slug);
-  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description:metaDescription(professional.summary),alternates:{canonical:`/career/${slug}/`},openGraph:{title,description:metaDescription(professional.summary),url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',images:[{url:image,width:1200,height:630,alt:title}]},twitter:{card:'summary_large_image',title,description:metaDescription(professional.summary),images:[image]}};}
+  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description:metaDescription(professional.summary),alternates:{canonical:`/career/${slug}/`},openGraph:{title,description:metaDescription(professional.summary),url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',images:[{url:image,width:1200,height:675,alt:title}]},twitter:{card:'summary_large_image',title,description:metaDescription(professional.summary),images:[image]}};}
   if (!job) return {};
   const title = `${job.name}の仕事内容・向いている人・資格・日本企業の例`;
   const description = `${job.name}は何をする仕事か。具体的な業務と成果物、作業から考える相性、資格の位置づけ、日本企業の公式職種例を、出典とともにcareer内で読めます。`;
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       siteName: "manapick career",
       locale: "ja_JP",
       modifiedTime: careerDossierBySlug.get(slug)?.researchedAt ?? job.checkedAt,
-      images: [{ url: image, width: 1200, height: 630, alt: `${job.name}の仕事内容・違い・転職準備` }],
+      images: [{ url: image, width: 1200, height: 675, alt: `${job.name}の仕事内容・違い・転職準備` }],
     },
     twitter: { card: "summary_large_image", title, description, images: [image] },
   };

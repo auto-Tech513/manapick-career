@@ -10,10 +10,11 @@ import { ShareKit } from "@/components/ShareKit";
 import { guideBySlug, guides } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
+import "@/components/article-cover.css";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return guides.map((guide) => ({ slug: guide.slug })); }
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const guide = guideBySlug(slug); if (!guide) return {}; const image = articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`); return { title: guide.title, description: metaDescription(guide.summary), alternates: { canonical: `/guide/${slug}/` }, openGraph: { title: guide.title, description: metaDescription(guide.summary), type: "article", url: absoluteUrl(`/guide/${slug}/`), publishedTime: guide.publishedAt, modifiedTime: guide.checkedAt, images: [{ url: image, width: 1200, height: 630, alt: guide.title }] }, twitter: { card: "summary_large_image", title: guide.title, description: metaDescription(guide.summary), images: [image] } }; }
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> { const { slug } = await params; const guide = guideBySlug(slug); if (!guide) return {}; const image = articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`); return { title: guide.title, description: metaDescription(guide.summary), alternates: { canonical: `/guide/${slug}/` }, openGraph: { title: guide.title, description: metaDescription(guide.summary), type: "article", url: absoluteUrl(`/guide/${slug}/`), publishedTime: guide.publishedAt, modifiedTime: guide.checkedAt, images: [{ url: image, width: 1200, height: 675, alt: guide.title }] }, twitter: { card: "summary_large_image", title: guide.title, description: metaDescription(guide.summary), images: [image] } }; }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -32,6 +33,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/guide/">ガイド</Link><span>/</span><span aria-current="page">{guide.category}</span></nav>
     <Link className="back-link" href="/guide/"><ArrowLeft aria-hidden="true" />ガイド一覧へ</Link>
     <header className="page-heading article-heading"><span className="eyebrow">{guide.category}</span><h1 className="phrase-breaks"><PhraseText text={guide.title} /></h1><p>{guide.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
+    <figure className="article-cover"><img src={articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`)} alt={guide.title} width={1200} height={675} /></figure>
     <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />
     <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.sections.some((section) => section.paragraphs.some((paragraph) => paragraph.includes("manapick AI") || paragraph.includes("manapick license"))) ? [] : guide.networkLinks} relatedArticles={relatedArticles} estimateLabel="読む・試す目安"/>
     <AiDeepLinks path={`/guide/${slug}/`} />

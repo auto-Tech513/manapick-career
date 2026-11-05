@@ -692,7 +692,7 @@ if (!beforeOgGeneration) {
       continue;
     }
     const size = readPngSize(image);
-    if (!size || size.width !== 1200 || size.height !== 630) failures.push(`${path.relative(root, image)}: OG画像が1200×630 PNGではない`);
+    if (!size || size.width !== 1200 || size.height !== 675) failures.push(`${path.relative(root, image)}: OG画像が1200×675 PNGではない`);
     const previousImage = path.join(root, "public/og/jp-v2", item.directory, `${item.slug}.png`);
     if (fs.existsSync(previousImage) && fs.readFileSync(image).equals(fs.readFileSync(previousImage))) {
       failures.push(`${path.relative(root, image)}: 旧Noto生成画像とbyte-identical（BIZ UDPGothicが適用されていない）`);

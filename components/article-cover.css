@@ -1,0 +1,15 @@
+/* 記事カバー画像（ニュース・ガイド詳細ページのヘッダー直下）
+   Google Discoverの大きな画像表示に合わせ、og:imageと同じ
+   1200x675のカバーを本文側にもimg要素で置くための最小スタイル。
+   globals.cssには入れない（ページ側CSSで完結させる）。 */
+.article-cover {
+  margin: 22px 0 4px;
+}
+
+.article-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line, #d9dfea);
+  border-radius: 14px;
+}
