@@ -1,6 +1,6 @@
 import { careerCard } from "@/lib/career-card";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Bot, GraduationCap, Search } from "lucide-react";
+import { ArrowRight, BadgeCheck, Bot, Building2, GraduationCap, Search } from "lucide-react";
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
 import { CareerBriefing } from "@/components/CareerBriefing";
@@ -27,6 +27,7 @@ export default function Home(){return <>
     <a className="step blue" href="https://manapick.app/" target="_blank" rel="noopener noreferrer"><GraduationCap/><span>01</span><strong>学ぶ</strong><p>学習動画とロードマップ</p></a>
     <a className="step red" href="https://ai.manapick.app/" target="_blank" rel="noopener noreferrer"><Bot/><span>02</span><strong>AIを選ぶ</strong><p>仕事に使う具体的なAI</p></a>
     <a className="step green" href="https://license.manapick.app/" target="_blank" rel="noopener noreferrer"><BadgeCheck/><span>03</span><strong>資格で証明</strong><p>公式要件を確認して比較</p></a>
-    <div className="step gold current"><ArrowRight/><span>04</span><strong>仕事につなぐ</strong><p>仕事内容と入口を整理</p></div>
+    <a className="step rose" href="https://company.manapick.app/" target="_blank" rel="noopener noreferrer"><Building2/><span>04</span><strong>企業を読む</strong><p>上場企業の事業と決算</p></a>
+    <div className="step gold current"><ArrowRight/><span>05</span><strong>仕事につなぐ</strong><p>仕事内容と入口を整理</p></div>
   </div></section>
 </>}

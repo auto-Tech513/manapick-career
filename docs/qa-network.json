@@ -156,6 +156,12 @@
       "url": "https://license.manapick.app/license/kaigo-fukushi/",
       "status": 200,
       "state": "ok"
+    },
+    {
+      "itemId": "company:home",
+      "url": "https://company.manapick.app/",
+      "status": 200,
+      "state": "ok"
     }
   ]
 }

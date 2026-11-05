@@ -504,6 +504,9 @@ main {
 .step.green > svg {
   color: var(--primary-aa);
 }
+.step.rose > svg {
+  color: var(--primary-aa);
+}
 .step.gold {
   background: var(--primary-soft);
 }
