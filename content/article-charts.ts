@@ -120,6 +120,27 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "education-training-benefit-guide": {
+    "title": "教育訓練給付金の基本の給付率",
+    "note": "修了時に支給される基本の割合です。追加給付を含めた最大は、特定一般50％、専門実践80％になります。上限額は一般10万円、特定一般20万円、専門実践は年間40万円です。",
+    "bars": [
+      {
+        "label": "一般教育訓練",
+        "value": 20,
+        "display": "20％"
+      },
+      {
+        "label": "特定一般教育訓練",
+        "value": 40,
+        "display": "40％"
+      },
+      {
+        "label": "専門実践教育訓練",
+        "value": 50,
+        "display": "50％"
+      }
+    ]
+  },
   "elderly-employment-latest": {
     "title": "65歳までの雇用確保措置の内訳（実施済み企業）",
     "note": "65歳までの雇用確保措置を実施済みの企業は99.9％です。70歳までの就業確保措置の実施済みは34.8％にとどまります。",
