@@ -31,6 +31,7 @@
     "license:mos":{"siteId":"license","path":"/license/mos/"},
     "license:webdesign-3":{"siteId":"license","path":"/license/webdesign-3/"},
     "license:touroku-hanbai":{"siteId":"license","path":"/license/touroku-hanbai/"},
-    "license:kaigo-fukushi":{"siteId":"license","path":"/license/kaigo-fukushi/"}
+    "license:kaigo-fukushi":{"siteId":"license","path":"/license/kaigo-fukushi/"},
+    "company:home":{"siteId":"company","path":"/"}
   }
 }

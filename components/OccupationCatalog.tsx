@@ -3,7 +3,7 @@
 import { OccupationBrief } from "@/components/OccupationBrief";
 import { IncomeFigure } from "@/components/IncomeFigure";
 import type { IncomeStatistic } from "@/lib/occupation-income";
-import { startTransition, useEffect, useMemo, useState } from "react";
+import { Fragment, startTransition, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BadgeCheck, BookOpenCheck, Bot, ChevronLeft, ChevronRight, GraduationCap, Search } from "lucide-react";
 import type { CatalogCategory, OccupationDirectoryEntry } from "@/content/catalog";
@@ -12,7 +12,7 @@ import discovery from "@/content/occupation-discovery.json";
 const perPage = 24;
 const occupationJobTagUrl = (recordNumber: string) => `https://shigoto.mhlw.go.jp/Occupation/Detail?occupationId=${encodeURIComponent(recordNumber)}`;
 
-export function OccupationCatalog({ occupations, categories, detailedLinks, briefVersion, incomeStatistics, employersById, publishedIds }: {
+export function OccupationCatalog({ occupations, categories, detailedLinks, briefVersion, incomeStatistics, employersById, publishedIds, companyUrlByName }: {
   occupations: OccupationDirectoryEntry[];
   categories: CatalogCategory[];
   detailedLinks: Record<string, string>;
@@ -20,6 +20,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
   incomeStatistics: IncomeStatistic[];
   employersById: Record<string, string[]>;
   publishedIds: string[];
+  companyUrlByName?: Record<string, string>;
 }) {
   const statisticsByCode = useMemo(() => new Map(incomeStatistics.map(item => [item.classificationCode, item])), [incomeStatistics]);
   const publishedIdSet = useMemo(() => new Set(publishedIds), [publishedIds]);
@@ -74,7 +75,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
         <p className="catalog-vintage">公式の解説更新年：{occupation.updatedYears.description ? `${occupation.updatedYears.description}年` : "記載なし"}。制度や資格の現行条件は別途確認してください。</p>
         <IncomeFigure compact={expandedId !== occupation.catalogId} name={occupation.name} statistic={occupation.incomeCode ? statisticsByCode.get(occupation.incomeCode) : undefined} />
         {occupation.aliases.length ? <p><span>別名</span>{occupation.aliases.slice(0, 3).join("、")}</p> : <p className="catalog-no-alias">job tag掲載名で確認できます</p>}
-        {employersById[occupation.catalogId]?.length ? <p className="catalog-employers"><span>企業例</span>{employersById[occupation.catalogId].slice(0, 2).join("、")}{employersById[occupation.catalogId].length > 2 ? ` ほか${employersById[occupation.catalogId].length - 2}件` : ""}</p> : null}
+        {employersById[occupation.catalogId]?.length ? <p className="catalog-employers"><span>企業例</span>{employersById[occupation.catalogId].slice(0, 2).map((name, index) => <Fragment key={name}>{index ? "、" : null}{companyUrlByName?.[name] ? <a href={companyUrlByName[name]} target="_blank" rel="noopener noreferrer">{name}</a> : name}</Fragment>)}{employersById[occupation.catalogId].length > 2 ? ` ほか${employersById[occupation.catalogId].length - 2}件` : ""}</p> : null}
         <div className="catalog-card-actions"><button type="button" className="catalog-read" aria-expanded={expandedId === occupation.catalogId} aria-controls={expandedId === occupation.catalogId ? `occupation-brief-${occupation.catalogId}` : undefined} onClick={() => setExpandedId(expandedId === occupation.catalogId ? null : occupation.catalogId)}>{expandedId === occupation.catalogId ? "説明を閉じる" : "仕事内容・入職条件・資格を読む"}</button>{occupationPageHref ? <Link className="catalog-detail" href={occupationPageHref}><BadgeCheck aria-hidden="true" />個別ページで読む <ArrowRight aria-hidden="true" /></Link> : null}{detail ? <Link className="catalog-detail" href={`/career/${detail}/`}><BadgeCheck aria-hidden="true" />企業例まで読む career解説 <ArrowRight aria-hidden="true" /></Link> : occupationPageHref ? null : <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer"><BookOpenCheck aria-hidden="true" />公式job tagで仕事内容を確認 <ArrowUpRight aria-hidden="true" /></a>}</div>
         {expandedId === occupation.catalogId ? <OccupationBrief key={occupation.catalogId} catalogId={occupation.catalogId} name={occupation.name} version={briefVersion} /> : null}
         <details><summary>学びにつなぐ</summary><div><a href="https://manapick.app/" target="_blank" rel="noopener noreferrer"><GraduationCap aria-hidden="true" />動画</a><a href="https://ai.manapick.app/" target="_blank" rel="noopener noreferrer"><Bot aria-hidden="true" />AI</a><a href="https://license.manapick.app/" target="_blank" rel="noopener noreferrer"><BadgeCheck aria-hidden="true" />資格</a></div></details>
