@@ -3454,5 +3454,33 @@
   "updateFrequency": "monthly",
   "republication": "統計の独自要約と出典リンクのみ",
   "notes": "2026年10月9日公表の家計調査報告（2026年8月分）PDFで確認。実質化には消費者物価指数（持家の帰属家賃を除く総合）を用いる。"
+ },
+ {
+  "sourceId": "stat-consumer-prices-2026-08",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年8月分の消費者物価指数（全国、2025年基準）の総合・生鮮食品を除く総合・生鮮食品及びエネルギーを除く総合",
+   "エネルギー、生鮮食品を除く食料、宿泊料、水道料などの前年同月比"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年9月18日公表。8月分の数値は、9月分公表資料（全国の指数PDF）に収録された8月分の指数・増減率・寄与度で確認した。基準は2025年=100。"
+ },
+ {
+  "sourceId": "stat-consumer-prices-2026-09",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年9月分の消費者物価指数（全国、2025年基準）の総合・生鮮食品を除く総合・生鮮食品及びエネルギーを除く総合",
+   "費目別・品目別の前年同月比と、エネルギー価格変動対策の試算効果"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年10月23日公表の全国の指数PDFで確認。うるち米はコシヒカリを除く銘柄。基準は2025年=100。"
  }
 ]

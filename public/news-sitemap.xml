@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://career.manapick.app/news/consumer-prices-september-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>コアCPI2.1%に加速、コアコア2.4%。消費者物価2026年9月分と、政策が抑える0.82ポイント</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/monthly-earnings-june-2026/</loc>
     <news:news>
       <news:publication>
@@ -65,6 +76,17 @@
       </news:publication>
       <news:publication_date>2026-11-07</news:publication_date>
       <news:title>消費支出31万975円、実質3.1%減で9か月連続マイナス。家計調査2026年8月分を読む</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/consumer-prices-august-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>総合1.9%、コア1.7%、コアコア1.9%。消費者物価2026年8月分、『1%台後半』でそろった月を読む</news:title>
     </news:news>
   </url>
   <url>
