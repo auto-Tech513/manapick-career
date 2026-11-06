@@ -57,6 +57,28 @@
     </news:news>
   </url>
   <url>
+    <loc>https://career.manapick.app/news/aging-whitepaper-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>高齢化率29.4%、労働力の13.7%は65歳以上。令和8年版高齢社会白書は『働く高齢者』の白書でもある</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/job-changer-survey-2025/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>辞めた理由は賃金・将来不安・仕事内容が同率。選んだ理由は『技能が活かせる』。5年ぶりの転職者実態調査を読む</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/labor-force-july-2026/</loc>
     <news:news>
       <news:publication>
@@ -98,6 +120,17 @@
       </news:publication>
       <news:publication_date>2026-11-07</news:publication_date>
       <news:title>大卒の3年以内離職率31.2%、でも規模で2倍の差。新規学卒の離職状況（令和5年3月卒）の読み方</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/labor-force-detailed-q2-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>非正規2,146万人、4期ぶりの増加。増えた理由は『正規の仕事がない』ではなかった（労働力調査詳細集計・2026年4〜6月期）</news:title>
     </news:news>
   </url>
   <url>
