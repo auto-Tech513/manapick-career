@@ -987,6 +987,19 @@
       "reviewedByHumanAt": "2026-11-07",
       "reviewEvidence": "git:a89c98838570fdc8d170b6aec954ba3f09f8c43f",
       "contentSha256": "440c3c3c09c4f14cdb5fb6c889bc39c7bdc6a6bf9ea725d9b03ec6cf5cf283ac"
+    },
+    {
+      "slug": "manufacturing-workforce-survey-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "jilpt-manufacturing-survey-2026-press",
+      "sourcePublishedAt": "2026-05-27",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:5a64fe00a4f646ef1c903875cf1a013cadc41d00",
+      "contentSha256": "f44b126d2ad8c251b65471846b650b946d1931302b56269b56d3cbb63cd5fab6"
     }
   ]
 }
