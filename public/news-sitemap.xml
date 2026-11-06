@@ -101,6 +101,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://career.manapick.app/news/manufacturing-workforce-survey-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>製造業の7割が人手不足。技能継承を9割が重視するのに、うまくいっているのは3割だけ</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/consumer-prices-august-2026/</loc>
     <news:news>
       <news:publication>
