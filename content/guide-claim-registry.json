@@ -4578,5 +4578,200 @@
     "text": "キャリアコンサルタントの活動分野は公的機関、企業内、学校、民間窓口など多岐にわたり、登録制度の概要は厚生労働省が公表している"
    }
   ]
+ },
+ {
+  "guideSlug": "wage-statistics-how-to-read",
+  "claims": [
+   {
+    "claimId": "ws-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-wage-structure-overview"
+    ],
+    "text": "きまって支給する現金給与額は、就業規則等で定められた支給条件・算定方法により6月分として支給された現金給与額で、税・社会保険料の控除前の額。基本給や諸手当のほか超過労働給与額も含まれる。所定内給与額は、きまって支給する現金給与額から超過労働給与額を差し引いた額"
+   },
+   {
+    "claimId": "ws-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-wage-structure-overview"
+    ],
+    "text": "年間賞与その他特別給与額は、昨年1年間（調査前年の1月から12月）に支払われた賞与、期末手当等の特別給与の合計額"
+   },
+   {
+    "claimId": "ws-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-wage-structure-overview"
+    ],
+    "text": "賃金構造基本統計調査の対象は、5人以上の常用労働者を雇用する民営事業所（5～9人は企業規模5～9人の事業所に限る）及び10人以上の公営事業所から抽出した約8万事業所・約170万人で、調査年6月分の賃金等を同年7月に調査する"
+   },
+   {
+    "claimId": "ws-04",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-wage-structure-overview"
+    ],
+    "text": "企業規模の区分は常用労働者1,000人以上が大企業、100～999人が中企業、10～99人が小企業。調査の利用上の注意として、集計区分によってはサンプルサイズが少なく標本誤差が大きくなる場合がある"
+   }
+  ]
+ },
+ {
+  "guideSlug": "job-openings-ratio-how-to-read",
+  "claims": [
+   {
+    "claimId": "jo-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-job-openings-2026-05"
+    ],
+    "text": "一般職業紹介状況はハローワーク（公共職業安定所）での求人・求職・就職の状況をまとめた統計で、有効求人倍率は月間有効求人数を月間有効求職者数で割った値。ハローワークを通じた求人と求職の集計であり、民間の求人サイトの求人は含まれない"
+   },
+   {
+    "claimId": "jo-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-job-openings-2026-08"
+    ],
+    "text": "2026年8月の有効求人倍率（季節調整値）は1.18倍、新規求人倍率は2.06倍、正社員有効求人倍率は1.00倍。都道府県別の有効求人倍率は就業地別で最高が福井県1.72倍・最低が大阪府0.95倍、受理地別では最高が東京都1.70倍・最低が神奈川県0.83倍"
+   },
+   {
+    "claimId": "jo-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-job-openings-2026-08"
+    ],
+    "text": "正社員有効求人倍率は、正社員の有効求人数をパートタイムを除く常用の有効求職者数で割って計算する。この求職者には派遣労働者や契約社員を希望する人も含まれるため、厚生労働省は厳密な意味での正社員の求人倍率より低い値になると注記している"
+   },
+   {
+    "claimId": "jo-04",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-job-openings-2026-08"
+    ],
+    "text": "季節調整値は季節指数の見直しにより過去分が改定されることがあり、厚生労働省は令和7年12月以前の数値を令和8年1月分の公表時に改定したと注記している"
+   }
+  ]
+ },
+ {
+  "guideSlug": "primary-source-search-guide",
+  "claims": [
+   {
+    "claimId": "ps-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "estat-portal"
+    ],
+    "text": "政府統計の総合窓口（e-Stat）では、政府統計の調査結果を、すべての統計一覧、17の統計分野、統計を作成した府省等の組織から探すことができ、各統計の公表予定も確認できる"
+   },
+   {
+    "claimId": "ps-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "egov-laws"
+    ],
+    "text": "e-Gov 法令検索では、法令名、キーワード、法令番号、法令種別（法律、政令、府省令、規則など）で現行法令を検索し、条文を確認できる"
+   },
+   {
+    "claimId": "ps-03",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-wage-structure-overview"
+    ],
+    "text": "賃金構造基本統計調査の調査の概要には目的・対象・抽出方法・調査の時期と用語の解説、利用上の注意（集計区分によっては標本誤差が大きくなる場合がある等）が掲載されており、数字の前に確認できる"
+   }
+  ]
+ },
+ {
+  "guideSlug": "side-job-checks-guide",
+  "claims": [
+   {
+    "claimId": "sj-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-side-job-guideline"
+    ],
+    "text": "厚生労働省「副業・兼業の促進に関するガイドライン」（平成30年1月策定、令和4年7月改定）は、裁判例の整理として、労働者が労働時間以外の時間をどのように利用するかは基本的には労働者の自由であり、企業が制限できるのは労務提供上の支障、業務上の秘密の漏洩、競業により自社の利益が害される場合、自社の名誉や信用を損なう行為や信頼関係を破壊する行為がある場合としている"
+   },
+   {
+    "claimId": "sj-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-side-job-guideline"
+    ],
+    "text": "ガイドラインは企業の対応として、原則、副業・兼業を認める方向とすることが適当であり、禁止・一律許可制の企業は精査のうえ、支障をもたらす事情がなければ労働者の希望に応じて原則として認める方向で検討することが求められている。副業・兼業に係る相談、自己申告等を行ったことによる不利益な取扱いはできない"
+   },
+   {
+    "claimId": "sj-03",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-side-job-guideline"
+    ],
+    "text": "ガイドラインは労働者の留意点として、就業時間や健康の自己管理と、職務専念義務、秘密保持義務、競業避止義務への意識を挙げている。モデル就業規則（平成30年1月改定）には「労働者は、勤務時間外において、他の会社等の業務に従事することができる」との規定がある"
+   }
+  ]
+ },
+ {
+  "guideSlug": "disability-work-support-guide",
+  "claims": [
+   {
+    "claimId": "dw-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-disability-employment-rate"
+    ],
+    "text": "障害者の法定雇用率は令和8年（2026年）7月から民間企業で2.5％から2.7％に引き上げられ（国・地方公共団体等3.0％、都道府県等の教育委員会2.9％）、対象となる事業主の範囲は常用労働者40.0人以上から37.5人以上に広がった"
+   },
+   {
+    "claimId": "dw-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-disability-employment-2025"
+    ],
+    "text": "厚生労働省の集計（令和7年6月1日現在）では、民間企業の雇用障害者数は70万4,610人で過去最高、実雇用率は2.41％、法定雇用率達成企業の割合は46.0％"
+   },
+   {
+    "claimId": "dw-03",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq"
+    ],
+    "text": "障害者等の就職困難者の所定給付日数は、被保険者期間1年未満で150日、1年以上では45歳未満300日、45歳以上65歳未満360日"
+   }
+  ]
  }
 ]
