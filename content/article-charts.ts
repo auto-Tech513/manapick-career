@@ -726,6 +726,27 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "manufacturing-workforce-survey-2026": {
+    "title": "人手不足への対応（不足と答えた企業、複数回答）",
+    "note": "人材不足と答えた3,092社の対応です。複数回答のため、合計は100%になりません。",
+    "bars": [
+      {
+        "display": "69.0%",
+        "label": "中途採用の強化",
+        "value": 69.0
+      },
+      {
+        "display": "50.5%",
+        "label": "初任給や賃金等の処遇の引き上げ",
+        "value": 50.5
+      },
+      {
+        "display": "48.5%",
+        "label": "定年後再雇用者など高齢者の活用",
+        "value": 48.5
+      }
+    ]
+  },
   "minimum-wage-2026": {
     "title": "2026年度の地域別最低賃金（時間額）",
     "note": "発効日は都道府県ごとに2026年10月1日から12月2日まで異なります。",
