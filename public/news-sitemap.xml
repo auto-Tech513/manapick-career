@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://career.manapick.app/news/labor-force-september-2026/</loc>
+    <loc>https://career.manapick.app/news/monthly-earnings-september-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-01</news:publication_date>
-      <news:title>完全失業率2.4%。就業者増の主役は非正規だった9月分労働力調査の読み方</news:title>
+      <news:publication_date>2026-11-06</news:publication_date>
+      <news:title>現金給与総額4.6%増、実質賃金2.2%増、夏季賞与44.9万円。9月の給与の読み方</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/job-openings-september-2026/</loc>
+    <loc>https://career.manapick.app/news/labor-economics-whitepaper-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-01</news:publication_date>
-      <news:title>有効求人倍率1.19倍、0.01ポイント上昇。上昇の理由は求人増ではない</news:title>
+      <news:publication_date>2026-11-05</news:publication_date>
+      <news:title>AI投資だけでは足りない――令和8年版労働経済白書が示した、人への投資との同時推進</news:title>
     </news:news>
   </url>
 </urlset>
