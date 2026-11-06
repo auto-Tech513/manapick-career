@@ -56,6 +56,48 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "consumer-prices-august-2026": {
+    "title": "3つの指数の前年同月比（2026年8月・全国）",
+    "note": "2025年=100の消費者物価指数です。前月比は季節調整値で、総合は0.0%でした。",
+    "bars": [
+      {
+        "display": "1.9%",
+        "label": "総合",
+        "value": 1.9
+      },
+      {
+        "display": "1.9%",
+        "label": "生鮮食品及びエネルギーを除く総合",
+        "value": 1.9
+      },
+      {
+        "display": "1.7%",
+        "label": "生鮮食品を除く総合",
+        "value": 1.7
+      }
+    ]
+  },
+  "consumer-prices-september-2026": {
+    "title": "3つの指数の前年同月比（2026年9月・全国）",
+    "note": "2025年=100の消費者物価指数です。前月比は季節調整値で、総合は0.4%上昇でした。",
+    "bars": [
+      {
+        "display": "2.4%",
+        "label": "生鮮食品及びエネルギーを除く総合",
+        "value": 2.4
+      },
+      {
+        "display": "2.1%",
+        "label": "総合",
+        "value": 2.1
+      },
+      {
+        "display": "2.1%",
+        "label": "生鮮食品を除く総合",
+        "value": 2.1
+      }
+    ]
+  },
   "customs-broker-vs-trade-practitioner": {
     "title": "通関士試験で科目の一部免除となる従事期間",
     "note": "通関業者の通関業務や、官庁における関税その他通関に関する事務に従事した期間が対象です",

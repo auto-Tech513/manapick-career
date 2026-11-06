@@ -922,6 +922,32 @@
       "reviewedByHumanAt": "2026-11-07",
       "reviewEvidence": "git:5da5551553b134522b30a06e88cf37fd91dd87d2",
       "contentSha256": "5be65d82ff487d36318f81eb93feac9c255f436b1b0ce194768ec82f9de55d8d"
+    },
+    {
+      "slug": "consumer-prices-august-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "stat-consumer-prices-2026-08",
+      "sourcePublishedAt": "2026-09-18",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "9813e1a9f5b04b8970c0a7b11b1b6741c6df7f21ab72b3a5b060fede36111353"
+    },
+    {
+      "slug": "consumer-prices-september-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "stat-consumer-prices-2026-09",
+      "sourcePublishedAt": "2026-10-23",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "c584a3520f72c1eec359d6879ea2e4c9d23cc7f16cb7227ea26499b0d9c875d3"
     }
   ]
 }
