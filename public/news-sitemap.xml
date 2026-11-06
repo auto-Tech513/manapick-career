@@ -35,6 +35,39 @@
     </news:news>
   </url>
   <url>
+    <loc>https://career.manapick.app/news/labor-force-july-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>失業率2.4%に下がっても就業者は増えていない。2026年7月の労働力調査の読み方</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/job-openings-june-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>有効求人倍率1.18倍、正社員は1.00倍ちょうど。2026年6月の求人の読み方</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/job-openings-july-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>有効求人倍率1.18倍で横ばい、新規求人は前年割れ。2026年7月の求人に表れた足踏み</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/monthly-earnings-september-2026/</loc>
     <news:news>
       <news:publication>
