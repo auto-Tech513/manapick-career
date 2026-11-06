@@ -3412,5 +3412,47 @@
   "updateFrequency": "monthly",
   "republication": "統計の独自要約と出典リンクのみ",
   "notes": "2026年8月28日公表の報道発表で確認。倍率は季節調整値で前月と同水準。新規求人（原数値）は前年同月比0.8%減と減少に転じた。ハローワーク経由の需給であり、民間求人媒体は含まない。"
+ },
+ {
+  "sourceId": "mhlw-welfare-whitepaper-2026",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/wp/hakusyo/kousei/26/index.html",
+  "isPrimary": true,
+  "claims": [
+   "令和8年版厚生労働白書の第1部テーマと、医療・介護・福祉の従事者数",
+   "介護サービス受給者数、介護職員数、国民意識調査におけるテクノロジー導入への賛否"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "yearly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年9月29日公表。2001年の発刊から25冊目。第1部テーマは「これからの医療・介護・福祉の現場で働くことを考える」。数値は白書第1章・第2章の公表資料で確認した。"
+ },
+ {
+  "sourceId": "mhlw-new-graduate-turnover-2026",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/houdou/0000177553_00011.html",
+  "isPrimary": true,
+  "claims": [
+   "令和5年3月卒業者の就職後3年以内離職率（学歴別）",
+   "事業所規模別・産業別の就職後3年以内離職率"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "yearly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年10月23日公表の報道発表で確認。雇用保険の加入記録から新規学卒者と推定した集計であり、離職理由や離職後の就業状態は問わない。"
+ },
+ {
+  "sourceId": "stat-household-spending-2026-08",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/kakei/sokuhou/tsuki/index.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年8月分の消費支出（二人以上の世帯）と10費目別の内訳",
+   "勤労者世帯の実収入、可処分所得、消費支出、平均消費性向"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年10月9日公表の家計調査報告（2026年8月分）PDFで確認。実質化には消費者物価指数（持家の帰属家賃を除く総合）を用いる。"
  }
 ]

@@ -293,6 +293,32 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "household-spending-august-2026": {
+    "title": "消費支出と主な費目（2026年8月・二人以上の世帯）",
+    "note": "消費支出は10費目の合計です。金額は1世帯当たり1か月分で、増減率は実質の前年同月比です。",
+    "bars": [
+      {
+        "display": "310,975円",
+        "label": "消費支出",
+        "value": 310975
+      },
+      {
+        "display": "104,220円",
+        "label": "食料",
+        "value": 104220
+      },
+      {
+        "display": "43,647円",
+        "label": "交通・通信",
+        "value": 43647
+      },
+      {
+        "display": "36,572円",
+        "label": "教養娯楽",
+        "value": 36572
+      }
+    ]
+  },
   "household-spending-latest": {
     "title": "消費支出の実質増減率（前年同月比・二人以上の世帯）",
     "note": "8月は3.1％減と、減少が続いています。",
@@ -753,6 +779,32 @@ export const articleCharts: Record<string, ArticleChart> = {
         "label": "短期大学",
         "value": 97.4,
         "display": "97.4%"
+      }
+    ]
+  },
+  "new-graduate-turnover-2026": {
+    "title": "学歴別の就職後3年以内離職率（令和5年3月卒業者）",
+    "note": "雇用保険の加入記録から新規学卒者と推定した集計です。離職理由は問いません。",
+    "bars": [
+      {
+        "display": "54.5%",
+        "label": "中学卒",
+        "value": 54.5
+      },
+      {
+        "display": "43.1%",
+        "label": "短大等卒",
+        "value": 43.1
+      },
+      {
+        "display": "36.9%",
+        "label": "高校卒",
+        "value": 36.9
+      },
+      {
+        "display": "31.2%",
+        "label": "大学卒",
+        "value": 31.2
       }
     ]
   },
