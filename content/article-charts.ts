@@ -402,6 +402,53 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "job-openings-july-2026": {
+    "title": "都道府県別の有効求人倍率（2026年7月・就業地別）",
+    "note": "全国の有効求人倍率（季節調整値）は1.18倍で、正社員有効求人倍率は1.00倍でした。",
+    "bars": [
+      {
+        "label": "福井県",
+        "value": 1.69,
+        "display": "1.69倍"
+      },
+      {
+        "label": "山梨県",
+        "value": 1.69,
+        "display": "1.69倍"
+      },
+      {
+        "label": "全国",
+        "value": 1.18,
+        "display": "1.18倍"
+      },
+      {
+        "label": "大阪府",
+        "value": 0.95,
+        "display": "0.95倍"
+      }
+    ]
+  },
+  "job-openings-june-2026": {
+    "title": "都道府県別の有効求人倍率（2026年6月・就業地別）",
+    "note": "全国の有効求人倍率（季節調整値）は1.18倍で、正社員有効求人倍率は1.00倍でした。",
+    "bars": [
+      {
+        "label": "福井県",
+        "value": 1.72,
+        "display": "1.72倍"
+      },
+      {
+        "label": "全国",
+        "value": 1.18,
+        "display": "1.18倍"
+      },
+      {
+        "label": "大阪府",
+        "value": 0.96,
+        "display": "0.96倍"
+      }
+    ]
+  },
   "job-openings-august-2026": {
     "title": "都道府県別の有効求人倍率（2026年8月・就業地別）",
     "note": "全国の有効求人倍率（季節調整値）は1.18倍で、正社員有効求人倍率は1.00倍でした。",

@@ -844,6 +844,45 @@
       "reviewedByHumanAt": "2026-11-07",
       "reviewEvidence": "git:4774193668d105c2f4929bd1de54c10faddd1b0f",
       "contentSha256": "4c1dcffd22b19f5e40693966d508c3cda6bdac9cbc640d03ae8dbd42f611b6b1"
+    },
+    {
+      "slug": "labor-force-july-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "stat-labor-force-2026-07",
+      "sourcePublishedAt": "2026-08-28",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "7d1dbc3c847a2e9efad96fe9a6f21c066d04bbbd1fff7351ad25288263028a02"
+    },
+    {
+      "slug": "job-openings-june-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "mhlw-job-openings-2026-06",
+      "sourcePublishedAt": "2026-07-31",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "24c978cc5cdf88a45dab170511890a26b9d0bcfe05d33c8cfd9dc3840e97491a"
+    },
+    {
+      "slug": "job-openings-july-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "mhlw-job-openings-2026-07",
+      "sourcePublishedAt": "2026-08-28",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "bc7d7dc441afd36a9d88f261fa0431eef2c3be71090e3b7c9623119f6a5604c1"
     }
   ]
 }
