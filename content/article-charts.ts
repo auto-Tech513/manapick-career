@@ -600,6 +600,32 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "monthly-earnings-september-2026": {
+    "title": "給与の内訳（事業所規模5人以上・2026年9月）",
+    "note": "現金給与総額は、きまって支給する給与に特別に支払われた給与を加えた総額です。",
+    "bars": [
+      {
+        "display": "311,409円",
+        "label": "現金給与総額",
+        "value": 311409
+      },
+      {
+        "display": "299,151円",
+        "label": "きまって支給する給与",
+        "value": 299151
+      },
+      {
+        "display": "279,182円",
+        "label": "所定内給与",
+        "value": 279182
+      },
+      {
+        "display": "12,258円",
+        "label": "特別に支払われた給与",
+        "value": 12258
+      }
+    ]
+  },
   "new-graduate-employment-latest": {
     "title": "学校種別の就職率（2026年3月卒業者・4月1日現在）",
     "note": "就職率は、卒業生全員ではなく就職希望者を分母にした割合です。",

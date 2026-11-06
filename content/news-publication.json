@@ -804,6 +804,19 @@
    "reviewedByHumanAt": "2026-11-05",
    "reviewEvidence": "git:18cd6776f788853007ad3db4e25dafde12b67a35",
    "contentSha256": "20fabe83fafb796efdde5f39979cd68d581cd2f2a948f7eef771042d693ba31e"
+  },
+  {
+   "slug": "monthly-earnings-september-2026",
+   "createdAt": "2026-11-06",
+   "status": "published",
+   "primarySourceId": "mhlw-monthly-labor-2026-09",
+   "sourcePublishedAt": "2026-11-06",
+   "publishedAt": "2026-11-06",
+   "reviewedAt": "2026-11-06",
+   "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+   "reviewedByHumanAt": "2026-11-06",
+   "reviewEvidence": "git:0000000",
+   "contentSha256": "0000000000000000000000000000000000000000000000000000000000000000"
   }
  ]
 }
