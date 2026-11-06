@@ -4300,5 +4300,283 @@
     "text": "短期訓練受講費は、ハローワークの受講指導を受けて対象訓練を修了した場合に教育訓練経費の20％（上限10万円、下限なし）が支給される制度で、受講前の照会・受講指導の手続きが必要。申請は修了日の翌日から1か月以内"
    }
   ]
+ },
+ {
+  "guideSlug": "childcare-leave-benefit-guide",
+  "claims": [
+   {
+    "claimId": "cb-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-childcare-benefit-pamphlet",
+     "mhlw-childcare-leave-site"
+    ],
+    "text": "育児休業給付金の支給額は休業開始時賃金日額×支給日数×67％（育児休業開始から181日目以降は50％）。休業開始時賃金日額は休業開始前6か月の賃金総額を180で割って算出する"
+   },
+   {
+    "claimId": "cb-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-childcare-benefit-pamphlet"
+    ],
+    "text": "育児休業給付金の支給要件は、育児休業開始日前2年間に賃金支払基礎日数が11日以上ある月（11日以上の月が12か月ない場合は基礎時間数80時間以上の月を含む）が12か月以上あること"
+   },
+   {
+    "claimId": "cb-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-childcare-benefit-pamphlet"
+    ],
+    "text": "育児休業給付金の対象は原則1歳未満の子を養育するための育児休業（2回まで分割取得可）で、保育所に入所できない場合など一定の要件を満たせば1歳6か月まで、再延長により2歳まで延長できる場合がある"
+   },
+   {
+    "claimId": "cb-04",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-childcare-benefit-pamphlet"
+    ],
+    "text": "出生時育児休業給付金は、子の出生後8週間の期間内に合計4週間分（28日）を限度として産後パパ育休（2回まで分割取得可）を取得した場合に支給される"
+   },
+   {
+    "claimId": "cb-05",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-childcare-leave-site"
+    ],
+    "text": "出生後休業支援給付金は、子の出生直後の一定期間内に被保険者と配偶者の両方が14日以上の育児休業を取得した場合に、最大28日間、休業開始時賃金日額の13％が上乗せされ、育児休業給付金と合わせて給付率80％（手取りで10割相当）となる。賃金日額には上限額がある"
+   },
+   {
+    "claimId": "cb-06",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-childcare-benefit-pamphlet"
+    ],
+    "text": "育児時短就業給付金は令和7年4月1日に創設され、2歳未満の子を養育するために週の所定労働時間を短縮して就業し賃金が低下するなど一定の要件を満たした場合に支給される。育児休業等給付は非課税で、育児休業中は申出により健康保険・厚生年金保険料が免除される"
+   }
+  ]
+ },
+ {
+  "guideSlug": "long-term-care-leave-benefit-guide",
+  "claims": [
+   {
+    "claimId": "cl-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-family-care-benefit-leaflet"
+    ],
+    "text": "介護休業給付金の支給額は原則として休業開始時賃金日額×支給日数×67％。賃金月額が546,600円を超える場合は546,600円となり、1支給単位期間あたりの上限額は366,222円（令和9年7月31日までの額）"
+   },
+   {
+    "claimId": "cl-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-family-care-benefit-leaflet"
+    ],
+    "text": "介護休業給付金は、支給対象となる同じ対象家族について93日を限度に3回までに限り支給される。一回の介護休業期間は最長3か月で、一回につき最大3支給単位期間が対象になる"
+   },
+   {
+    "claimId": "cl-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-family-care-benefit-leaflet"
+    ],
+    "text": "介護休業給付金の支給対象者は、介護休業開始日前2年間に賃金支払基礎日数が11日以上ある完全月（80時間以上の完全月を含む）が12か月以上ある被保険者。期間雇用者は、休業開始予定日から93日を経過する日から6か月を経過する日までに労働契約が満了することが明らかでないことも必要"
+   },
+   {
+    "claimId": "cl-04",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-family-care-benefit-leaflet"
+    ],
+    "text": "介護休業給付金の申請は、一回の介護休業終了後、終了日の翌日から2か月を経過する日の属する月の末日までに行う必要がある。事業主は支給申請書を提出する日までに休業開始時賃金月額証明書を提出する必要がある"
+   },
+   {
+    "claimId": "cl-05",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq"
+    ],
+    "text": "常時本人の介護を必要とする親族の疾病・負傷等のために離職を余儀なくされた場合は、特定理由離職者（正当な理由のある自己都合）の範囲に含まれる"
+   }
+  ]
+ },
+ {
+  "guideSlug": "retirement-work-guide",
+  "claims": [
+   {
+    "claimId": "rt-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-basic-benefit"
+    ],
+    "text": "高年齢求職者給付金は65歳以上の被保険者への一時金で、被保険者期間1年以上なら基本手当日額の50日分、1年未満なら30日分。失業の認定は1回限り"
+   },
+   {
+    "claimId": "rt-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq",
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "60歳以上の定年等による退職者は、離職日の翌日から2か月以内に就職を希望しない期間（1年が限度）を申し出ることで、その期間分を受給期間の1年に加算できる"
+   },
+   {
+    "claimId": "rt-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "高年齢雇用継続基本給付金は、基本手当等を受けずに60歳以後も雇用される人が、60歳到達後の各月の賃金が60歳到達時の賃金の75％未満である場合に、各月の賃金の10％を限度として低下率に応じて支給される（60歳到達日等が令和7年3月31日以前の場合は15％）"
+   },
+   {
+    "claimId": "rt-04",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "高年齢再就職給付金は、基本手当を受給していた60歳以上65歳未満の人が支給日数を100日以上残して再就職し、再就職後の各月の賃金が賃金日額の30日分と比べて75％未満である場合に支給され、再就職手当とは同時に受けられない"
+   },
+   {
+    "claimId": "rt-05",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "65歳未満の人に支給される特別支給の老齢厚生年金・退職共済年金と基本手当は同時には受けられず、基本手当を受けるために求職の申込みをすると、基本手当の受給が終了するまでの期間、年金が全額支給停止になる"
+   },
+   {
+    "claimId": "rt-06",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "特定受給資格者・特定理由離職者として基本手当を受ける人には国民健康保険料（税）の軽減制度があり届出が必要だが、高年齢受給資格者・特例受給資格者は軽減の対象にならない"
+   }
+  ]
+ },
+ {
+  "guideSlug": "job-card-guide",
+  "claims": [
+   {
+    "claimId": "jc-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "my-job-card-guide"
+    ],
+    "text": "ジョブ・カードは厚生労働省が様式を定め、「生涯を通じたキャリア・プランニング」及び「職業能力証明」の機能を担うツールとして普及が進められている。学生、在職者、求職者など幅広い人の求職活動やキャリア形成に用いられる"
+   },
+   {
+    "claimId": "jc-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "my-job-card-guide"
+    ],
+    "text": "ジョブ・カードは様式1キャリア・プランシート（在職者用・学生用・求職者用の作成補助シートがある）、様式2職務経歴シート、様式3職業能力証明シート（免許・資格、学習歴・訓練歴）の3様式で構成される"
+   },
+   {
+    "claimId": "jc-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "my-job-card-guide"
+    ],
+    "text": "ジョブ・カードの作成方法は、マイジョブ・カードのサイト上で作る方法、ダウンロードしてPCで作る方法、印刷して紙で作る方法の3つ。アカウント登録をすればオンラインで作成・保存・編集ができ、作成したジョブ・カードから履歴書や職務経歴書を作成・編集することもできる"
+   },
+   {
+    "claimId": "jc-04",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "my-job-card-guide",
+     "carigaku-career-consulting"
+    ],
+    "text": "キャリア形成・リスキリング相談コーナーでは無料でジョブ・カードを活用したキャリアコンサルティングを受けられる。訓練前キャリアコンサルティングは事前にジョブ・カードを作成したうえで実施され、記入状況により予約時間内に終わらない可能性があるため、可能な限り空白のないように記載することが案内されている"
+   }
+  ]
+ },
+ {
+  "guideSlug": "career-consulting-where-guide",
+  "claims": [
+   {
+    "claimId": "cc-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "carigaku-career-consulting"
+    ],
+    "text": "全国47か所のキャリア形成・リスキリング支援センター及び全国のハローワークに設置しているキャリア形成・リスキリング相談コーナーでは、ジョブ・カードを活用したキャリアコンサルティングを無料で実施している。この事業のキャリアコンサルティングでは職業紹介は行っておらず、事前にジョブ・カードを作成したうえで実施する"
+   },
+   {
+    "claimId": "cc-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "carigaku-career-consulting"
+    ],
+    "text": "専門実践教育訓練給付や特定一般教育訓練給付の受給に必要な訓練前キャリアコンサルティングも、支援センターと相談コーナーで無料で実施している"
+   },
+   {
+    "claimId": "cc-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-career-consultant-provisions"
+    ],
+    "text": "キャリアコンサルタントは職業能力開発促進法に規定された国家資格で、労働者の職業の選択、職業生活設計、職業能力の開発・向上に関する相談に応じ、助言や指導を行う専門家。試験と登録の制度があり、名称の使用にも制限がある"
+   },
+   {
+    "claimId": "cc-04",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-career-consulting-overview"
+    ],
+    "text": "キャリアコンサルタントの活動分野は公的機関、企業内、学校、民間窓口など多岐にわたり、登録制度の概要は厚生労働省が公表している"
+   }
+  ]
  }
 ]
