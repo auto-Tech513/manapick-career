@@ -14,6 +14,27 @@ export type ArticleChart = {
 // 値だけを使う。表示文字列（display）が本文に逐語で存在することを
 // scripts/check-article-charts.mjs で機械照合する。
 export const articleCharts: Record<string, ArticleChart> = {
+  "aging-whitepaper-2026": {
+    "title": "年齢階級別の労働力人口比率（令和7年）",
+    "note": "各年齢層の人口のうち、就業者と完全失業者を合わせた労働力人口の割合です。",
+    "bars": [
+      {
+        "display": "56.1%",
+        "label": "65〜69歳",
+        "value": 56.1
+      },
+      {
+        "display": "36.7%",
+        "label": "70〜74歳",
+        "value": 36.7
+      },
+      {
+        "display": "12.7%",
+        "label": "75歳以上",
+        "value": 12.7
+      }
+    ]
+  },
   "architect-vs-construction-manager": {
     "title": "技術検定・第一次検定を受検できる年齢",
     "note": "第一次検定は、学歴や実務経験を問わず受検できます。",
@@ -470,6 +491,27 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "job-changer-survey-2025": {
+    "title": "自己都合で辞めた理由の上位（3つまでの複数回答）",
+    "note": "直前の勤め先を自己都合で離職した転職者の回答です。複数回答のため、合計は100%になりません。",
+    "bars": [
+      {
+        "display": "25.5%",
+        "label": "賃金が低かったから",
+        "value": 25.5
+      },
+      {
+        "display": "25.2%",
+        "label": "会社の将来に不安を感じたから",
+        "value": 25.2
+      },
+      {
+        "display": "24.7%",
+        "label": "満足のいく仕事内容でなかったから",
+        "value": 24.7
+      }
+    ]
+  },
   "job-openings-july-2026": {
     "title": "都道府県別の有効求人倍率（2026年7月・就業地別）",
     "note": "全国の有効求人倍率（季節調整値）は1.18倍で、正社員有効求人倍率は1.00倍でした。",
@@ -608,6 +650,27 @@ export const articleCharts: Record<string, ArticleChart> = {
         "display": "348万人",
         "label": "運輸業，郵便業",
         "value": 348
+      }
+    ]
+  },
+  "labor-force-detailed-q2-2026": {
+    "title": "非正規についた主な理由（2026年4〜6月期平均）",
+    "note": "非正規の職員・従業員が現職の雇用形態についた主な理由です。理由不詳を含みます。",
+    "bars": [
+      {
+        "display": "810万人",
+        "label": "自分の都合のよい時間に働きたいから",
+        "value": 810
+      },
+      {
+        "display": "341万人",
+        "label": "家計の補助・学費等を得たいから",
+        "value": 341
+      },
+      {
+        "display": "161万人",
+        "label": "正規の職員・従業員の仕事がないから",
+        "value": 161
       }
     ]
   },

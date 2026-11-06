@@ -948,6 +948,45 @@
       "reviewedByHumanAt": "2026-11-07",
       "reviewEvidence": "git:10e7bbcd8f06c07ae827ad9d8f86ca6f9d752b9d",
       "contentSha256": "c584a3520f72c1eec359d6879ea2e4c9d23cc7f16cb7227ea26499b0d9c875d3"
+    },
+    {
+      "slug": "aging-whitepaper-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "cao-aging-whitepaper-2026",
+      "sourcePublishedAt": "2026-06-12",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "7eae05eecd2c2ff85efb4aa6eae9adeba81d9810920afec6e0c7b9e6b61e2632"
+    },
+    {
+      "slug": "labor-force-detailed-q2-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "stat-lfs-detailed-2026-q2",
+      "sourcePublishedAt": "2026-08-10",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "1496ba65290f001b80fb45bfeae60afd39d3edfaa152427c2e0e3603fdf0c281"
+    },
+    {
+      "slug": "job-changer-survey-2025",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "mhlw-job-changer-survey-2025",
+      "sourcePublishedAt": "2026-09-25",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:0000000",
+      "contentSha256": "440c3c3c09c4f14cdb5fb6c889bc39c7bdc6a6bf9ea725d9b03ec6cf5cf283ac"
     }
   ]
 }

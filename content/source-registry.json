@@ -3482,5 +3482,47 @@
   "updateFrequency": "monthly",
   "republication": "統計の独自要約と出典リンクのみ",
   "notes": "2026年10月23日公表の全国の指数PDFで確認。うるち米はコシヒカリを除く銘柄。基準は2025年=100。"
+ },
+ {
+  "sourceId": "cao-aging-whitepaper-2026",
+  "provider": "内閣府",
+  "url": "https://www8.cao.go.jp/kourei/whitepaper/w-2026/zenbun/08pdf_index.html",
+  "isPrimary": true,
+  "claims": [
+   "令和8年版高齢社会白書における65歳以上人口・高齢化率と将来推計",
+   "労働力人口に占める65歳以上の割合、年齢階級別の労働力人口比率、特集の国際比較調査における就業意欲"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "yearly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年6月12日に閣議決定・公表（内閣府の高齢社会対策ページで公表日を確認）。高齢社会対策基本法に基づく法定白書で31回目。数値は白書の概要版・全文で確認した。"
+ },
+ {
+  "sourceId": "stat-lfs-detailed-2026-q2",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/roudou/sokuhou/4hanki/dt/pdf/gaiyou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "労働力調査（詳細集計）2026年4〜6月期平均の正規・非正規の職員・従業員数と割合",
+   "非正規の職員・従業員が現職の雇用形態についた主な理由、失業期間別失業者数、転職者数"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "quarterly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年8月10日公表の結果の概要PDFで確認。リンク先PDFは四半期ごとに入れ替わるため、確認時点では2026年4〜6月期平均版だった。"
+ },
+ {
+  "sourceId": "mhlw-job-changer-survey-2025",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/toukei/list/6-18.html",
+  "isPrimary": true,
+  "claims": [
+   "令和7（2025）年転職者実態調査における転職者の離職理由（自己都合の割合と理由の内訳）",
+   "現在の勤め先を選んだ理由、転職活動の方法、転職者がいる事業所の割合"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "irregular",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年9月25日公表。前回2020年調査以来5年ぶり。概況PDFで主要数値を確認。対象は調査対象事業所に直近1年間に入社した一般労働者であり、離職者全体ではない。"
  }
 ]
