@@ -4011,5 +4011,294 @@
     "text": "離職者は被保険者資格を喪失した日（離職日の翌日）から受講開始日までが原則1年以内。妊娠、出産、育児、疾病、負傷などで受講が困難な期間がある場合は適用対象期間の延長ができ、最大で離職後20年以内まで受講開始できる"
    }
   ]
+ },
+ {
+  "guideSlug": "unemployment-benefit-steps",
+  "claims": [
+   {
+    "claimId": "ub-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-basic-benefit",
+     "hellowork-insurance-faq"
+    ],
+    "text": "基本手当の受給要件は、失業の状態にあることと、離職の日以前2年間に被保険者期間が通算12か月以上あること（特定受給資格者・特定理由離職者は1年間に6か月以上で可）。被保険者期間は賃金支払基礎日数11日以上または基礎時間数80時間以上ある月を1か月と計算する"
+   },
+   {
+    "claimId": "ub-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-basic-benefit"
+    ],
+    "text": "基本手当日額は離職直前6か月の賃金合計を180で割った賃金日額の約50～80％（60～64歳は45～80％）。上限額（令和8年8月1日現在）は30歳未満7,450円、30歳以上45歳未満8,270円、45歳以上60歳未満9,110円、60歳以上65歳未満7,830円"
+   },
+   {
+    "claimId": "ub-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq"
+    ],
+    "text": "所定給付日数は一般の離職者が被保険者期間10年未満90日、10年以上20年未満120日、20年以上150日。特定受給資格者は90～330日、就職困難者は150・300・360日"
+   },
+   {
+    "claimId": "ub-04",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq"
+    ],
+    "text": "待期は受給資格決定日から通算7日間で離職理由にかかわらず一律。正当な理由のない自己都合の給付制限は、離職日が令和7年4月1日以降は原則1か月、それ以前は原則2か月。5年間に2回以上の自己都合受給資格決定または重責解雇の場合は3か月。紹介や訓練の拒否でも1か月の給付制限がある"
+   },
+   {
+    "claimId": "ub-05",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "令和7年4月1日以降に受講を開始した教育訓練給付金の対象訓練・公共職業訓練等・短期訓練受講費の対象訓練を、離職の日前1年以内に受けた（途中退校を除く）か離職の日以後に受けている自己都合離職者は、訓練を受ける期間と受け終わった後の期間について給付制限が解除される"
+   },
+   {
+    "claimId": "ub-06",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq",
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "受給期間は離職日の翌日から原則1年間（330日は1年と30日、360日は1年と60日）。病気・妊娠・出産・育児・介護等で引き続き30日以上働けない場合は最大3年間の延長が可能。60歳以上の定年退職者は2か月以内の申出で最長1年間の加算、起業した人は事業実施期間を最長3年間算入しない特例がある"
+   },
+   {
+    "claimId": "ub-07",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-guide",
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "失業の認定は原則として4週間に1回で、失業認定申告書と雇用保険受給資格者証を提出する。基本手当の振込みは認定からおおむね1週間程度"
+   }
+  ]
+ },
+ {
+  "guideSlug": "hello-work-first-visit-guide",
+  "claims": [
+   {
+    "claimId": "hw-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "求職申込み手続きはどのハローワークでも受け付けるが、雇用保険受給手続きは住所を管轄するハローワークで行う"
+   },
+   {
+    "claimId": "hw-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-procedure"
+    ],
+    "text": "受給資格決定の必要書類は、離職票（－1、2）、個人番号確認書類、身元（実在）確認書類、写真2枚（縦3.0cm×横2.4cm、マイナンバーカード提示で省略可）、本人名義の預金通帳またはキャッシュカード"
+   },
+   {
+    "claimId": "hw-03",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-procedure"
+    ],
+    "text": "雇用保険の手続き時間は平日8時30分～17時15分で、求職の申込みには時間がかかるため16時前までの来所が推奨されている"
+   },
+   {
+    "claimId": "hw-04",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "求職申込みの方法は、所内の検索・登録用端末で仮登録して窓口で手続きする方法と、自宅からハローワークインターネットサービスでオンライン求職登録をする方法がある。雇用保険の受給手続きには窓口での追加手続きが必要"
+   },
+   {
+    "claimId": "hw-05",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet",
+     "hellowork-insurance-guide"
+    ],
+    "text": "受給の流れは受給資格の決定、雇用保険説明会（待期満了後になる場合もある）、待期、原則4週間に1回の失業の認定、基本手当の支払いの順で進む"
+   },
+   {
+    "claimId": "hw-06",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-leavers-pamphlet"
+    ],
+    "text": "求職者マイページのオンライン自主応募はハローワーク紹介とはならないため、再就職手当等の受給を検討している場合は注意が必要"
+   }
+  ]
+ },
+ {
+  "guideSlug": "employment-insurance-eligibility",
+  "claims": [
+   {
+    "claimId": "ei-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq"
+    ],
+    "text": "雇用保険の被保険者となる要件は、31日以上の雇用見込みがあることと、1週間の所定労働時間が20時間以上であることの2つで、両方に該当すれば原則として本人の意思にかかわらず当然に被保険者となる。事業主には資格取得の届出義務がある"
+   },
+   {
+    "claimId": "ei-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq"
+    ],
+    "text": "被保険者資格取得の届出が適正かどうかは雇用保険被保険者証と資格取得等確認通知書で確認でき、労働者本人からハローワークに照会することもできる（来所時は本人・住所確認書類を持参）"
+   },
+   {
+    "claimId": "ei-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-employment-insurance-reform-2028"
+    ],
+    "text": "令和6年雇用保険制度改正により、被保険者要件の週所定労働時間は2028年10月1日から20時間以上から10時間以上に変更され、被保険者期間を1か月と数える基準も賃金支払基礎日数6日以上または時間数40時間以上に緩和される"
+   },
+   {
+    "claimId": "ei-04",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-insurance-faq"
+    ],
+    "text": "被保険者期間は、離職日から1か月ごとに区切った期間のうち、賃金支払基礎日数が11日以上または賃金の支払の基礎となった時間数が80時間以上ある月を1か月と計算する"
+   }
+  ]
+ },
+ {
+  "guideSlug": "reemployment-allowance-guide",
+  "claims": [
+   {
+    "claimId": "ra-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-reemployment-allowance-leaflet"
+    ],
+    "text": "再就職手当の支給額は支給残日数×給付率×基本手当日額。給付率は支給残日数が所定給付日数の3分の2以上で70％、3分の1以上で60％。計算に用いる基本手当日額の上限は6,745円（60歳以上65歳未満は5,454円）で毎年8月1日に改定される"
+   },
+   {
+    "claimId": "ra-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-reemployment-allowance-leaflet"
+    ],
+    "text": "再就職手当の支給要件は、待期満了後の就職・事業開始、前日までの失業認定と支給残日数3分の1以上、離職前の事業主等への再就職でないこと、給付制限がある人は待期満了後1か月以内はハローワークまたは職業紹介事業者の紹介による就職であること、1年を超える勤務が確実なこと、原則として雇用保険の被保険者になること、過去3年以内に再就職手当・常用就職支度手当の受給がないこと、受給資格決定前に採用内定していた事業主でないこと"
+   },
+   {
+    "claimId": "ra-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-reemployment-allowance-leaflet"
+    ],
+    "text": "再就職手当の申請期限は就職した日の翌日から1か月以内で、本人・代理人・郵送で申請できる"
+   },
+   {
+    "claimId": "ra-04",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-stepup-benefits"
+    ],
+    "text": "就業促進定着手当は、再就職手当の支給を受けた人が同じ再就職先に6か月以上雇用され、再就職後6か月の賃金1日分が離職前の賃金日額を下回る場合に支給される。上限は基本手当日額×支給残日数（再就職手当を受ける前）×20％で、申請は6か月経過日の翌日から2か月間"
+   },
+   {
+    "claimId": "ra-05",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-stepup-benefits"
+    ],
+    "text": "常用就職支度手当は、支給残日数が所定給付日数の3分の1未満の受給資格者等のうち就職困難な人が安定した職業に就いた場合に支給され、支給額は90（残日数が90日未満の場合は残日数、45日未満の場合は45）×40％×基本手当日額"
+   }
+  ]
+ },
+ {
+  "guideSlug": "job-training-choice",
+  "claims": [
+   {
+    "claimId": "jt-01",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-basic-benefit"
+    ],
+    "text": "ハローワーク所長の受講指示で公共職業訓練等を受ける場合、訓練終了日まで基本手当が継続支給され、受講手当（日額500円、上限20,000円）、通所手当（月額最高42,500円）、寄宿手当（月額10,700円）が別途支給される"
+   },
+   {
+    "claimId": "jt-02",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-jobseeker-support"
+    ],
+    "text": "求職者支援制度は、ハローワークに求職の申込みをし雇用保険被保険者や受給資格者でない人が、無料の職業訓練を受講できる制度。給付金の支給要件を満たさない場合でも無料の職業訓練は受講できる"
+   },
+   {
+    "claimId": "jt-03",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "mhlw-jobseeker-support"
+    ],
+    "text": "職業訓練受講給付金（受講手当は月10万円）の支給要件は、本人収入が月8万円以下、世帯全体の収入が月30万円以下、世帯全体の金融資産が300万円以下、居住地以外の土地・建物を所有していないこと、訓練実施日への出席（やむを得ない欠席は8割以上）、過去6年以内に同給付金の支給を受けていないことなど"
+   },
+   {
+    "claimId": "jt-04",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-07",
+    "sourceIds": [
+     "hellowork-stepup-benefits"
+    ],
+    "text": "短期訓練受講費は、ハローワークの受講指導を受けて対象訓練を修了した場合に教育訓練経費の20％（上限10万円、下限なし）が支給される制度で、受講前の照会・受講指導の手続きが必要。申請は修了日の翌日から1か月以内"
+   }
+  ]
  }
 ]
