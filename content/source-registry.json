@@ -3342,5 +3342,33 @@
   "updateFrequency": "monthly",
   "republication": "統計の独自要約と出典リンクのみ",
   "notes": "2026年11月6日公表の速報（PDF版の調査結果の概要）で確認。速報値は確報で改訂され得る。9月分には夏季賞与の集計が併せて掲載される。名目・実質、事業所規模、共通事業所を分けて読む。"
+ },
+ {
+  "sourceId": "mhlw-monthly-labor-2026-06-final",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2606r/2606r.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年6月分結果（確報）の現金給与総額、きまって支給する給与、所定内給与、特別に支払われた給与",
+   "就業形態別賃金、二つの実質賃金指数、共通事業所による賃金、労働時間と回収率"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年8月24日公表の確報（調査結果の概要）で確認。6月は夏季賞与の支給が集中し、特別に支払われた給与が現金給与総額の4割超を占める特殊な月。名目・実質、事業所規模、共通事業所を分けて読む。"
+ },
+ {
+  "sourceId": "mhlw-monthly-labor-2026-07-final",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2607r/2607r.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年7月分結果（確報）の現金給与総額、きまって支給する給与、所定内給与、特別に支払われた給与",
+   "就業形態別賃金、二つの実質賃金指数、共通事業所による賃金、労働時間と回収率"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年9月28日公表の確報（調査結果の概要）で確認。7月は夏季賞与の支給が支給月の遅い事業所に残る月で、特別に支払われた給与は6月から大きく減少する。名目・実質、事業所規模、共通事業所を分けて読む。"
  }
 ]
