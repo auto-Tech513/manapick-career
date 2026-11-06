@@ -13,6 +13,17 @@
     </news:news>
   </url>
   <url>
+    <loc>https://career.manapick.app/news/welfare-whitepaper-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>介護職員213万人、看護職員175万人。厚生労働白書2026が描く「現場で働く」ということ</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/labor-force-june-2026/</loc>
     <news:news>
       <news:publication>
@@ -43,6 +54,28 @@
       </news:publication>
       <news:publication_date>2026-11-07</news:publication_date>
       <news:title>失業率2.4%に下がっても就業者は増えていない。2026年7月の労働力調査の読み方</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/household-spending-august-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>消費支出31万975円、実質3.1%減で9か月連続マイナス。家計調査2026年8月分を読む</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/new-graduate-turnover-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-07</news:publication_date>
+      <news:title>大卒の3年以内離職率31.2%、でも規模で2倍の差。新規学卒の離職状況（令和5年3月卒）の読み方</news:title>
     </news:news>
   </url>
   <url>

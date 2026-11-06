@@ -883,6 +883,45 @@
       "reviewedByHumanAt": "2026-11-07",
       "reviewEvidence": "git:ab42d8f756190b2e39af3f3ddaf373ff2a49cd3e",
       "contentSha256": "bc7d7dc441afd36a9d88f261fa0431eef2c3be71090e3b7c9623119f6a5604c1"
+    },
+    {
+      "slug": "welfare-whitepaper-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "mhlw-welfare-whitepaper-2026",
+      "sourcePublishedAt": "2026-09-29",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:5da5551553b134522b30a06e88cf37fd91dd87d2",
+      "contentSha256": "aeed4648da36aa7d108567c85e986c0add91408a2c8d418267d273f49a68a3a2"
+    },
+    {
+      "slug": "new-graduate-turnover-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "mhlw-new-graduate-turnover-2026",
+      "sourcePublishedAt": "2026-10-23",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:5da5551553b134522b30a06e88cf37fd91dd87d2",
+      "contentSha256": "a6d5dd56cea310329fe112d4b4413596e88a1fe9dbf97461873161f68c274eb3"
+    },
+    {
+      "slug": "household-spending-august-2026",
+      "createdAt": "2026-11-07",
+      "status": "published",
+      "primarySourceId": "stat-household-spending-2026-08",
+      "sourcePublishedAt": "2026-10-09",
+      "publishedAt": "2026-11-07",
+      "reviewedAt": "2026-11-07",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-07",
+      "reviewEvidence": "git:5da5551553b134522b30a06e88cf37fd91dd87d2",
+      "contentSha256": "5be65d82ff487d36318f81eb93feac9c255f436b1b0ce194768ec82f9de55d8d"
     }
   ]
 }
