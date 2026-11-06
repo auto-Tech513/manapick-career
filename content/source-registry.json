@@ -3370,5 +3370,47 @@
   "updateFrequency": "monthly",
   "republication": "統計の独自要約と出典リンクのみ",
   "notes": "2026年9月28日公表の確報（調査結果の概要）で確認。7月は夏季賞与の支給が支給月の遅い事業所に残る月で、特別に支払われた給与は6月から大きく減少する。名目・実質、事業所規模、共通事業所を分けて読む。"
+ },
+ {
+  "sourceId": "stat-labor-force-2026-07",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/roudou/sokuhou/tsuki/",
+  "isPrimary": true,
+  "claims": [
+   "2026年7月の就業者数、雇用者数、完全失業者数、完全失業率",
+   "労働力人口、非労働力人口、就業率、正規・非正規の職員従業員数"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年8月28日公表の月次結果を確認。就業者が前年同月と同数の一方で、完全失業率（季節調整値）が前月比で低下した月。実数と率、原数値と季節調整値を区別し、全国平均を個別職種・地域の採用可能性へ外挿しない。"
+ },
+ {
+  "sourceId": "mhlw-job-openings-2026-06",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/newpage_74767.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年6月分の有効求人倍率、新規求人倍率、正社員有効求人倍率",
+   "産業別の新規求人の増減と都道府県別の有効求人倍率"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年7月31日公表の報道発表で確認。倍率は季節調整値、正社員有効求人倍率は1.00倍。新規求人は原数値の前年同月比で産業別に確認した。ハローワーク経由の需給であり、民間求人媒体は含まない。"
+ },
+ {
+  "sourceId": "mhlw-job-openings-2026-07",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/newpage_75707.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年7月分の有効求人倍率、新規求人倍率、正社員有効求人倍率",
+   "産業別の新規求人の増減と都道府県別の有効求人倍率"
+  ],
+  "checkedAt": "2026-11-07",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年8月28日公表の報道発表で確認。倍率は季節調整値で前月と同水準。新規求人（原数値）は前年同月比0.8%減と減少に転じた。ハローワーク経由の需給であり、民間求人媒体は含まない。"
  }
 ]
