@@ -4,6 +4,7 @@ import { ArrowDown } from "lucide-react";
 import "./route.css";
 import { RouteGuide } from "@/components/RouteGuide";
 import { WorkstyleDiagnosis } from "@/components/WorkstyleDiagnosis";
+import { PathwayForm } from "@/components/PathwayForm";
 import { buildWorkstyleCards } from "@/lib/workstyle-cards";
 import { publishedJobs, categories } from "@/content/jobs";
 
@@ -32,6 +33,10 @@ export default function RoutePage() {
           <span className="rc-body"><span className="rc-title">働き方から探す（12問）</span><span className="rc-desc">仕事場面での好みから16タイプの働き方の傾向と、職業への入口を示します</span></span>
           <ArrowDown aria-hidden="true" />
         </a>
+        <a href="#pathway">
+          <span className="rc-body"><span className="rc-title">資格から探す（開発中）</span><span className="rc-desc">資格→職業→企業を一度にたどる入口を開発中です。事前登録で開始のお知らせを受け取れます</span></span>
+          <ArrowDown aria-hidden="true" />
+        </a>
       </nav>
       <section id="interest" aria-labelledby="interest-title" style={{ marginTop: "3rem", scrollMarginTop: "110px" }}>
         <h2 id="interest-title">いまの関心から探す</h2>
@@ -44,6 +49,13 @@ export default function RoutePage() {
         <h2 id="workstyle-title">働き方から探す（16タイプ働き方診断）</h2>
         <p>働き方の好みから、知らない職業に出会うための入口です。</p>
         <WorkstyleDiagnosis cardsByType={cardsByType} />
+      </section>
+      <section id="pathway" aria-labelledby="pathway-title" style={{ marginTop: "4.5rem", scrollMarginTop: "110px" }}>
+        <h2 id="pathway-title">資格から探す（開発中）</h2>
+        <p>資格を起点に、その資格で目指せる職業と、その職業に関わる上場企業までを一度にたどれる入口を開発しています。いまは需要を確認している段階で、開始時期は未定です。関心のある資格があれば、事前登録で教えていただけると、開発の優先順位づけに役立ちます。</p>
+        <div style={{ maxWidth: 920, margin: "0 auto" }}>
+          <PathwayForm />
+        </div>
       </section>
     </div>
   );
