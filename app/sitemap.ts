@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { categories, publishedJobs } from "@/content/jobs";
 import { guides, newsItems, newsModifiedAt } from "@/content/editorial";
 import { occupationCatalogSource, publishedOccupationCatalog, publishedOccupationRecord } from "@/content/catalog";
+import { employerCategories } from "@/lib/employers";
 import { absoluteUrl } from "@/lib/site";
 import profiles from '@/content/professional-careers.json';
 export const dynamic="force-static";
@@ -42,6 +43,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         ...(categoryCheck ? { lastModified: new Date(categoryCheck) } : {}),
       };
     }),
+    ...employerCategories.map((category) => ({
+      url: absoluteUrl(`/employers/${category.key}/`),
+      lastModified: new Date(latest(latestJobCheck ?? "", occupationCatalogSource.datasetUpdatedAt) as string),
+    })),
     ...publishedOccupationCatalog.map((occupation) => ({
       url: absoluteUrl(`/occupation/${occupation.catalogId}/`),
       lastModified: new Date(publishedOccupationRecord(occupation.catalogId)?.reviewedByHumanAt ?? occupationCatalogSource.datasetUpdatedAt),
