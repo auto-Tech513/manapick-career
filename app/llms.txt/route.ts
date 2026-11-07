@@ -4,13 +4,13 @@ import { occupationCatalog, publishedOccupationCatalog } from "@/content/catalog
 import { guides, newsItems } from "@/content/editorial";
 import { popularityMethod } from "@/content/popularity-ranking";
 import { absoluteUrl } from "@/lib/site";
-import { incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
+import { formatManYen1dp, incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 
 function occupationLine(occupation: (typeof publishedOccupationCatalog)[number]) {
   const code = incomeOccupationByCatalogId.get(occupation.catalogId)?.classificationCode;
   const statistic = code ? incomeStatisticByCode.get(code) : undefined;
   const income = statistic
-    ? ` 年収は${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${(statistic.annualizedMeanYen / 10000).toFixed(1)}万円、平均年齢${statistic.meanAge}歳。`
+    ? ` 年収は${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${formatManYen1dp(statistic.annualizedMeanYen)}万円、平均年齢${statistic.meanAge}歳。`
     : "";
   return `- [${occupation.name}](${absoluteUrl(`/occupation/${occupation.catalogId}/`)}): ${occupation.summary}${income}`;
 }

@@ -20,7 +20,7 @@ import sourceRegistry from "@/content/source-registry.json";
 import companyLinks from "@/content/company-links.json";
 import industryLinks from "@/content/company-industry-links.json";
 import licenseLinks from "@/content/license-links.json";
-import { incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
+import { formatManYen1dp, incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
 
@@ -67,7 +67,7 @@ function paragraphs(text: string) {
 }
 
 function manYen(yen: number) {
-  return `${(yen / 10000).toFixed(1)}万円`;
+  return `${formatManYen1dp(yen)}万円`;
 }
 
 function occupationIncome(catalogId: string) {
