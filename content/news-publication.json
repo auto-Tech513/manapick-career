@@ -3,6 +3,18 @@
   "reviewPolicy": "published requires a named editorial review record and a traceable main-branch approval; automated additions remain draft",
   "records": [
     {
+      "slug": "labor-force-detailed-q3-2026",
+      "createdAt": "2026-11-10",
+      "status": "draft",
+      "primarySourceId": "stat-lfs-detailed-2026-q3",
+      "sourcePublishedAt": "2026-11-10",
+      "publishedAt": null,
+      "reviewedAt": null,
+      "reviewedBy": null,
+      "reviewedByHumanAt": null,
+      "reviewEvidence": null
+    },
+    {
       "slug": "job-openings-may-2026",
       "createdAt": "2026-07-13",
       "status": "published",
