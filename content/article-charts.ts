@@ -408,6 +408,32 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "household-spending-september-2026": {
+    "title": "消費支出と主な費目（2026年9月・二人以上の世帯）",
+    "note": "消費支出は10費目の合計です。金額は1世帯当たり1か月分で、増減率は実質の前年同月比です。",
+    "bars": [
+      {
+        "display": "289,536円",
+        "label": "消費支出",
+        "value": 289536
+      },
+      {
+        "display": "93,350円",
+        "label": "食料",
+        "value": 93350
+      },
+      {
+        "display": "44,057円",
+        "label": "交通・通信",
+        "value": 44057
+      },
+      {
+        "display": "29,127円",
+        "label": "教養娯楽",
+        "value": 29127
+      }
+    ]
+  },
   "income-tax-threshold-2026": {
     "title": "合計所得金額で変わる基礎控除（令和8年分）",
     "note": "給与所得控除の最低保障額74万円と合わせた課税最低限は178万円です。",

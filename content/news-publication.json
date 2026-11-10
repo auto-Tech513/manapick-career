@@ -1000,6 +1000,19 @@
       "reviewedByHumanAt": "2026-11-07",
       "reviewEvidence": "git:5a64fe00a4f646ef1c903875cf1a013cadc41d00",
       "contentSha256": "f44b126d2ad8c251b65471846b650b946d1931302b56269b56d3cbb63cd5fab6"
+    },
+    {
+      "slug": "household-spending-september-2026",
+      "createdAt": "2026-11-10",
+      "status": "published",
+      "primarySourceId": "stat-household-spending-2026-09",
+      "sourcePublishedAt": "2026-11-10",
+      "publishedAt": "2026-11-10",
+      "reviewedAt": "2026-11-10",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-10",
+      "reviewEvidence": "git:ece983b726c352f50f17af9caf6031158219cdb2",
+      "contentSha256": "7fffa0a297c6f8a949bc9db2d5404bc9475a1edc224051d53962a04f551e17de"
     }
   ]
 }
