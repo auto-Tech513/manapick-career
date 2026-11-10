@@ -1,5 +1,21 @@
 [
- {
+  {
+    "sourceId": "stat-lfs-detailed-2026-q3",
+    "provider": "総務省統計局",
+    "url": "https://www.stat.go.jp/data/roudou/sokuhou/4hanki/dt/pdf/gaiyou.pdf",
+    "isPrimary": true,
+    "claims": [
+      "労働力調査（詳細集計）2026年7〜9月期平均の正規・非正規の職員・従業員数、割合、非正規の雇用形態についた主な理由",
+      "失業者192万人、失業期間3か月未満71万人、3か月以上120万人、1年以上59万人と、それぞれの前年同期増減",
+      "追加就労希望就業者189万人、潜在労働力人口32万人、未活用労働指標LU4 5.8%と男女別の水準",
+      "非労働力人口、就業希望者、求職活動をしていない主な理由"
+    ],
+    "checkedAt": "2026-11-10",
+    "updateFrequency": "quarterly",
+    "republication": "統計の独自要約と出典リンクのみ",
+    "notes": "2026年11月10日公表の結果概要PDF（全14ページ）を確認。URLは四半期ごとに最新資料へ入れ替わるため、確認時点では2026年7〜9月期平均版。標本調査の全国四半期平均であり、個人の適性、採用可能性、将来性を保証しない。"
+  },
+  {
   "sourceId": "mhlw-jobtag-it-consultant",
   "provider": "厚生労働省 job tag",
   "url": "https://shigoto.mhlw.go.jp/Occupation/Detail?occupationId=362",
