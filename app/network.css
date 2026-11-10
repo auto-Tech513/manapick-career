@@ -108,7 +108,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .detail-content{min-width:0;overflow-wrap:anywhere}
 
 /* Career explanations are read here; references remain secondary actions. */
-.job-hero h1 small{font-size:14px;line-height:1.7;font-weight:600;color:var(--muted)}
+.job-hero h1 small{font-size:14px;line-height:1.7;font-weight:700;color:var(--muted)}
 .depth-summary{font-size:17px;line-height:1.95;color:var(--ink)}
 .work-stages{list-style:none;padding:0;margin:24px 0;display:grid;gap:18px}
 .work-stages>li{display:flex;gap:16px;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--surface)}

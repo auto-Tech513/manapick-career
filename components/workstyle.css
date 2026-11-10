@@ -1,7 +1,7 @@
 
 /* 16タイプ働き方診断 */
 .wsd-intro { max-width: 680px; margin: 0 auto; text-align: center; }
-.wsd-start { display: inline-flex; align-items: center; gap: .5rem; min-height: 56px; padding: .9rem 2rem; border: none; border-radius: 999px; background: var(--accent, #1f7a4d); color: #fff; font-size: 1.05rem; font-weight: 700; cursor: pointer; }
+.wsd-start { display: inline-flex; align-items: center; gap: .5rem; min-height: 56px; padding: .9rem 2rem; border: none; border-radius: 999px; background: var(--accent, #1f7a4d); color: var(--ink, #172033); font-size: 1.05rem; font-weight: 700; cursor: pointer; }
 .wsd-start svg { width: 20px; height: 20px; }
 .wsd-saved { margin-top: 1.5rem; color: var(--muted); font-size: .9rem; }
 .wsd-saved p { margin: 0 0 .4rem; }

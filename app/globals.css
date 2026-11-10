@@ -1779,7 +1779,7 @@ dd {
   margin: 1.4rem 0 0;
   color: var(--muted);
   font-size: clamp(1rem, 1.2vw, 1.1rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.9;
 }
 
@@ -2157,13 +2157,13 @@ dd {
 .home-hero h1 {
   max-width: 13ch;
   font-size: clamp(2.2rem, 3.15vw, 3.4rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: -0.045em;
 }
 
 .home-hero h1 > span {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .home-hero h1 mark {
@@ -2667,14 +2667,14 @@ dd {
 .home-hero h1 {
   max-width: 14ch;
   font-size: clamp(2.15rem, 3vw, 3.15rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.22;
   letter-spacing: -.035em;
 }
 
-.home-hero h1 > span { font-weight: 600; }
+.home-hero h1 > span { font-weight: 700; }
 .home-hero h1 mark { font-weight: 800; }
-.home-hero-copy > p { font-weight: 600; }
+.home-hero-copy > p { font-weight: 700; }
 
 .explorer-head h2,
 .section-heading h2,
@@ -2918,7 +2918,7 @@ dd {
 .editorial-article .article-section h2 { margin: .35rem 0 1rem; font-size: clamp(1.45rem, 2.35vw, 1.85rem); font-weight: 700; line-height: 1.5; }
 .editorial-article p { color: var(--ink); font-size: .96rem; font-weight: 400; line-height: 2.05; }
 .editorial-article .article-section > p + p { margin-top: 1.25rem; }
-.editorial-article > section > ul > li { font-weight: 600; }
+.editorial-article > section > ul > li { font-weight: 700; }
 
 .related-careers { padding: clamp(1.2rem, 3vw, 1.8rem); border-radius: var(--radius-2); background: var(--ink); }
 .related-careers h2 { margin: .3rem 0 .5rem; color: #fff; font-size: 1.35rem; }
@@ -3094,7 +3094,7 @@ dd {
 .catalog-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .65rem; }
 .catalog-card { display: flex; min-width: 0; min-height: 230px; flex-direction: column; padding: 1rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
 .catalog-card > small { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .35rem; color: var(--primary-aa); font-size: .75rem; font-weight: 800; }
-.catalog-card > small span { color: var(--muted); font-weight: 600; }
+.catalog-card > small span { color: var(--muted); font-weight: 700; }
 .catalog-card h3 { margin: .45rem 0 .35rem; color: var(--ink); font-size: 1rem; font-weight: 700; line-height: 1.45; }
 .catalog-card > p { margin: 0; color: var(--muted); font-size: .75rem; line-height: 1.6; }
 .catalog-card > p span { margin-right: .45rem; color: var(--ink); font-weight: 800; }
@@ -3333,7 +3333,7 @@ dd {
     var(--surface);
 }
 .occupation-detail-heading h1 { margin: .45rem 0 .8rem; color: var(--ink); font-size: clamp(2rem, 4.8vw, 3.75rem); font-weight: 700; line-height: 1.28; }
-.occupation-detail-heading h1 small { margin-left: .35em; color: var(--muted); font-size: .38em; font-weight: 600; letter-spacing: 0; }
+.occupation-detail-heading h1 small { margin-left: .35em; color: var(--muted); font-size: .38em; font-weight: 700; letter-spacing: 0; }
 .occupation-detail-heading > p { max-width: 48rem; margin: 0; color: var(--muted); font-size: .98rem; line-height: 1.9; }
 .occupation-aliases { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: 1rem; }
 .occupation-aliases strong,
@@ -3394,7 +3394,7 @@ dd {
 .occupation-reviewed-link strong,
 .occupation-next-actions a > span { color: var(--ink); font-size: .75rem; font-weight: 800; }
 .occupation-reviewed-link small,
-.occupation-next-actions a small { margin-top: .1rem; color: var(--muted); font-size: .75rem; font-weight: 600; }
+.occupation-next-actions a small { margin-top: .1rem; color: var(--muted); font-size: .75rem; font-weight: 700; }
 .occupation-next-actions { gap: .4rem; }
 .occupation-next-actions a > svg:first-child { width: 30px; height: 30px; padding: 7px; border-radius: var(--radius-1); background: var(--bg); color: var(--ink); }
 .occupation-next-actions a > svg:last-child,
@@ -4067,7 +4067,7 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .sim-result-value span { font-size: .95rem; font-weight: 700; margin-left: .5rem; }
 .sim-result-sub { margin: .35rem 0 0; color: var(--muted); font-size: .88rem; }
 .sim-table-scroll { overflow-x: auto; }
-.sim-table { width: 100%; min-width: 340px; border-collapse: collapse; margin-top: .9rem; font-size: .92rem; }
+.sim-table { width: 100%; min-width: 0; border-collapse: collapse; margin-top: .9rem; font-size: .92rem; }
 @media (min-width: 900px) {
   .sim-wrap { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; }
   .sim-result { position: sticky; top: 84px; }
