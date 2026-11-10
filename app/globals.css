@@ -4067,7 +4067,7 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .sim-result-value span { font-size: .95rem; font-weight: 700; margin-left: .5rem; }
 .sim-result-sub { margin: .35rem 0 0; color: var(--muted); font-size: .88rem; }
 .sim-table-scroll { overflow-x: auto; }
-.sim-table { width: 100%; min-width: 340px; border-collapse: collapse; margin-top: .9rem; font-size: .92rem; }
+.sim-table { width: 100%; min-width: 0; border-collapse: collapse; margin-top: .9rem; font-size: .92rem; }
 @media (min-width: 900px) {
   .sim-wrap { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; }
   .sim-result { position: sticky; top: 84px; }
