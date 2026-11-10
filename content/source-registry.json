@@ -3851,5 +3851,19 @@
   "updateFrequency": "annual",
   "republication": "統計の独自要約と出典リンクのみ",
   "notes": "2026年5月27日公表のプレスリリースPDF全18ページを2026-11-07に直接読み、主要数値を原文で確認した。既存エントリ jilpt-manufacturing-workforce-2026（2026-10-26確認、既存記事が使用）とは別エントリとして登録し、既存記事の確認記録に影響させない。複数回答の設問が多く、個別企業や職種の採用可能性を保証しない。"
+ },
+ {
+  "sourceId": "stat-household-spending-2026-09",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/kakei/sokuhou/tsuki/index.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年9月分の消費支出（二人以上の世帯）と10費目別の内訳",
+   "勤労者世帯の実収入、可処分所得、消費支出、平均消費性向"
+  ],
+  "checkedAt": "2026-11-10",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月10日公表の家計調査報告（2026年9月分）速報PDFで確認。実質化には消費者物価指数（持家の帰属家賃を除く総合）を用いる。"
  }
 ]
