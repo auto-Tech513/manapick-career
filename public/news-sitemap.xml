@@ -3,13 +3,6 @@
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
     <loc>https://career.manapick.app/news/household-spending-september-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-10</news:publication_date>
-      <news:title>消費支出28万9,536円、実質6.8%減で10か月連続マイナス。家計調査2026年9月分を読む</news:title>
-    </news:news>
+    <lastmod>2026-11-10</lastmod>
   </url>
 </urlset>
