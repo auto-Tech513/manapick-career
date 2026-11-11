@@ -42,6 +42,15 @@ export function metaDescription(text: string, max = 120) {
     if ((out + sentence).length > max) break;
     out += sentence;
   }
+  // 文単位の切り取りでは短すぎる場合、続きを句読点の区切りまで足してスニペットの長さを確保する。
+  if (out && out.length < Math.floor(max * 0.65) && out.length < normalized.length) {
+    const rest = normalized.slice(out.length);
+    const budget = max - out.length;
+    const head = rest.slice(0, budget);
+    const comma = head.lastIndexOf("、");
+    if (comma >= Math.floor(budget * 0.6)) return `${out}${head.slice(0, comma)}。`;
+    return `${out}${head.slice(0, Math.max(0, budget - 1))}…`;
+  }
   if (out) return out;
   const head = normalized.slice(0, max);
   const comma = head.lastIndexOf("、");

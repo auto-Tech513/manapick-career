@@ -6,7 +6,7 @@ import { guides } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 
 const title = "迷いを、確認できる手順に変える職業ガイド";
-const description = `職業の違い、職業情報の読み方、学ぶ順番、AIと仕事の考え方を、公式出典と確認日付きで整理した${guides.length}本のガイド一覧です。`;
+const description = `職業の違い、職業情報の読み方、学ぶ順番、AIと仕事の考え方を、公式出典と確認日付きで整理した${guides.length}本のガイド一覧です。知りたいことのテーマから絞り込んで探せます。`;
 const latestGuideCheck = guides.map((guide) => guide.checkedAt).sort().at(-1) ?? "";
 const image = articleOgUrl("guide", "index", `${title}|${guides.length}|${latestGuideCheck}`);
 export const metadata: Metadata = { title: "職業ガイド｜職業の違いと仕事の読み方を公式出典で確認", description, alternates: { canonical: "/guide/", types: { "application/rss+xml": "/feed.xml" } }, openGraph: { title, description, url: absoluteUrl("/guide/"), type: "website", siteName: "manapick career", locale: "ja_JP", images: [{ url: image, width: 1200, height: 675, alt: title }] }, twitter: { card: "summary_large_image", title, description, images: [image] } };
