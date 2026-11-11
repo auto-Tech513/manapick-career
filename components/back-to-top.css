@@ -1,0 +1,23 @@
+
+/* ページトップへ戻るボタン（全ページ共通）。スマホでは下部タブバーの上に置く */
+.back-to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  z-index: 45;
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--surface);
+  box-shadow: var(--shadow-2);
+  cursor: pointer;
+}
+.back-to-top svg { width: 22px; height: 22px; }
+.back-to-top:hover { background: var(--primary-dark, #665500); border-color: var(--primary-dark, #665500); }
+@media (max-width: 1100px) {
+  .back-to-top { bottom: calc(64px + env(safe-area-inset-bottom) + 12px); }
+}
