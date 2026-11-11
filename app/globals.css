@@ -4075,3 +4075,14 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .sim-table th, .sim-table td { padding: .45rem .2rem; border-bottom: 1px solid var(--line); text-align: left; }
 .sim-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .sim-table .sim-total th, .sim-table .sim-total td { border-bottom: none; font-weight: 800; }
+
+/* CAR-U03: 1 列グリッドの暗黙列が中身の最小幅まで広がり、375px で横にはみ出すのを防ぐ */
+.article-key-points ul,
+.source-list,
+.employers-list { grid-template-columns: minmax(0, 1fr); }
+.article-key-points li,
+.source-list li,
+.employers-list li { min-width: 0; }
+.employers-list li > :first-child { min-width: 0; }
+.article-key-points li,
+.source-list small { overflow-wrap: anywhere; }
