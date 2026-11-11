@@ -4,6 +4,7 @@ import NetworkFooter from "../components/NetworkFooter";
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/Analytics";
 import { BottomNav } from "@/components/BottomNav";
+import { BackToTop } from "@/components/BackToTop";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -45,5 +46,5 @@ const graph={"@context":"https://schema.org","@graph":[
 ]};
 
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><head><script id="ga4-queue" dangerouslySetInnerHTML={{__html:analyticsBootstrap(measurementId)}} /></head><body>
-  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/>
+  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/><BackToTop/>
 <NetworkAnalytics /><NetworkFooter /></body></html>}

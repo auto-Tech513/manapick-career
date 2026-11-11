@@ -1,0 +1,34 @@
+
+/* ランキングページ専用: ページ内目次・絞り込みチップ・いろいろランキング */
+
+/* ページ内目次 */
+.ranking-anchor-nav { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1.1rem 0 .4rem; }
+.ranking-anchor-nav a { display: inline-flex; align-items: center; min-height: 44px; padding: .45rem .9rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font-size: .85rem; font-weight: 800; text-decoration: none; }
+.ranking-anchor-nav a:hover { border-color: var(--ink); }
+#popularity, #income, #extra { scroll-margin-top: 96px; }
+
+/* 絞り込みチップ（人気・年収 共通） */
+.ranking-filters { display: flex; flex-wrap: wrap; gap: .45rem; margin: 0 0 1rem; }
+.ranking-filters button { display: inline-flex; align-items: center; min-height: 44px; padding: .45rem .9rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--ink); font-size: .85rem; font-weight: 800; cursor: pointer; }
+.ranking-filters button span { margin-left: .35rem; font-size: .75rem; opacity: .7; }
+.ranking-filters button:hover { border-color: var(--ink); }
+.ranking-filters button.active { background: var(--primary); border-color: var(--primary); color: var(--ink); }
+.ranking-note { margin: .8rem 0 0; color: var(--muted); font-size: .85rem; line-height: 1.7; }
+.ranking-live { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.ranking-empty { margin: 1rem 0; color: var(--muted); font-size: .9rem; }
+
+/* いろいろランキング */
+.extra-rank-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem 1.2rem; margin-top: 1.2rem; }
+.extra-rank-group { min-width: 0; }
+.extra-rank-group > h3 { margin: 0 0 .35rem; font-size: 1.05rem; font-weight: 800; color: var(--ink); }
+.extra-rank-note { margin: 0 0 .7rem; color: var(--muted); font-size: .82rem; line-height: 1.7; }
+.extra-rank-list { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.extra-rank-list li { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; align-items: center; gap: .8rem; padding: .8rem .9rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
+.extra-rank-list .ranking-number { min-height: 52px; font-size: 1.2rem; }
+.extra-rank-list .ranking-copy { min-width: 0; }
+.extra-rank-list .ranking-copy h4 { margin: .1rem 0 .25rem; color: var(--ink); font-size: .95rem; font-weight: 700; line-height: 1.5; }
+.extra-rank-list .ranking-copy small { color: var(--muted); font-size: .75rem; line-height: 1.6; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .extra-rank-groups { grid-template-columns: 1fr; }
+  .extra-rank-list li { grid-template-columns: 56px minmax(0, 1fr) auto; gap: .6rem; padding: .7rem; }
+}
