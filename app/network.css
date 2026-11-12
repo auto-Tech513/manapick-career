@@ -158,3 +158,41 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .network-sites .network-sites-current{color:var(--primary-aa);font-weight:700;font-size:12px}
 .network-sites .network-sites-go{display:inline-flex;align-items:center;gap:4px;color:var(--primary-aa);font-weight:700;font-size:12px}
 .network-sites li a{display:flex;flex-direction:column;gap:8px}
+
+/* 2026-11-12: スマートフォンで押しにくかったリンクのタップ範囲を44px以上にする。
+   広げた分は負のマージンで相殺し、文字の位置と周囲の配置は変えない。 */
+/* パンくず（高さ24px・21px）。すぐ下に「一覧へ戻る」リンクがあるため、主に上側へ広げて範囲を重ねない */
+.crumbs a {
+  min-height: 44px;
+  padding: 20px 4px 0;
+  margin: -20px -4px 0;
+}
+.breadcrumbs a {
+  min-height: 44px;
+  margin-block: -10px;
+  padding-inline: 4px;
+  margin-inline: -4px;
+}
+.article-breadcrumbs a {
+  padding: 17px 5px 6px;
+  margin: -17px -5px -6px;
+}
+/* 職業ページ「同じ分野の職業ページ」：白いカード全体を押せるようにする（文字だけが押せた） */
+.editorial-article #network h3 + ul > li > a {
+  flex: 1 1 auto;
+  padding: 11.2px 12.8px;
+  margin: -11.2px -12.8px;
+}
+/* 出典リスト（記事・解説・計算ツールの注記）：行の上下の余白（12px）の内側でタップ範囲を広げる */
+:is(.article-review, .editorial-block, .sim-notes) .source-list a {
+  padding-block: 10px;
+  margin-block: -10px;
+}
+/* フッターのサイト名（高さ34px）と、職業カードの見出しリンク（インライン、高さ20px） */
+.site-footer .brand-home-link {
+  padding-block: 5px;
+  margin-block: -5px;
+}
+.job-card h3 > a {
+  padding-block: 12px;
+}
