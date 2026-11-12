@@ -196,3 +196,14 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .job-card h3 > a {
   padding-block: 12px;
 }
+
+/* 2026-11-13: 企業例一覧で社名が語の途中で折れていた退行（PR #169 で社名に min-width:0 を付けたため）を戻す。
+   社名は文節より細くしない。入りきらないときは「個別ページ」リンクを次の行へ送る */
+.employers-list li { flex-wrap: wrap; }
+.employers-list li > :first-child { min-width: auto; }
+/* 2026-11-13: 2文字のパンくず（幅42〜43px）も44px以上にする */
+.crumbs a,
+.breadcrumbs a,
+.article-breadcrumbs a {
+  min-width: 44px;
+}
