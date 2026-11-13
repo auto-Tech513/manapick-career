@@ -12,7 +12,7 @@ import { absoluteUrl, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
 import "./globals.css";
 import "./network.css";
 
-const description="仕事内容、必要スキル、学ぶ順番、資格、AI活用を公式情報から整理。職業を順位付けせず、次に調べる入口を見つけるサイトです。";
+const description="仕事内容、必要スキル、学ぶ順番、資格、AI活用を公式情報から整理。職業を順位付けせず、次に調べる入口を見つけるサイトです。職業ごとの詳しい解説、統計から読む年収の目安、公式ページで確認した企業例、公的統計のニュースとガイド、16タイプの働き方診断まで、出典を確認しながらたどれます。職業の比較ページも用意しています。";
 
 export const metadata: Metadata={
   metadataBase:new URL(SITE_URL), title:{default:`${SITE_NAME} | ${TAGLINE}`,template:`%s | ${SITE_NAME}`},description,

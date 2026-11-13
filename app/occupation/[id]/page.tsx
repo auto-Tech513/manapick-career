@@ -85,10 +85,14 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const title = statistic
     ? `${occupation.name}の仕事内容・年収・なり方｜企業例と資格を公式出典で確認`
     : `${occupation.name}の仕事内容・なり方・資格｜企業例と公式出典`;
+  const workText = occupation.work.replace(/\s+/g, " ").trim();
+  const summaryText = occupation.summary.replace(/\s+/g, " ").trim();
+  const entryText = occupation.entry.replace(/\s+/g, " ").trim();
+  const bodySource = `${workText.startsWith(summaryText) ? workText : `${summaryText}${workText}`}${entryText}`;
   const description = metaDescription(
     statistic
-      ? `${occupation.name}の年収は、${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${manYen(statistic.annualizedMeanYen)}。仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典つきで掲載します。`
-      : `${occupation.name}の仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典つきで掲載します。${occupation.summary}`,
+      ? `${occupation.name}の年収は、${incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類「${statistic.classificationName}」による平均年収換算で${manYen(statistic.annualizedMeanYen)}。同調査での平均年齢は${statistic.meanAge}歳です。仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典つきで掲載します。${bodySource}`
+      : `${occupation.name}の仕事内容、就くには、労働条件、関連資格、公式確認済みの企業例を出典つきで掲載します。${bodySource}`,
   );
   const image = occupationOgUrl(id, `${occupation.name}|${record.publishedAt}`);
   return {

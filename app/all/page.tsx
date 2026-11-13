@@ -13,7 +13,7 @@ import { incomeStatistics, incomeMetadata } from '@/lib/occupation-income';
 import { ProfessionalEntries } from '@/components/ProfessionalEntries';
 import profiles from '@/content/professional-careers.json';
 const title = `${occupationCatalog.length}職業の名録｜仕事内容・関連資格・年収の目安と出典`;
-const description = `${occupationCatalog.length}職業の仕事内容・入職条件・労働条件・関連資格と年収の目安を、出典つきで検索・閲覧できる名録です。そのうち${publishedOccupationCatalog.length}職業には個別ページ、${publishedJobs.length + profiles.items.length}職業には独自解説があります。`;
+const description = `${occupationCatalog.length}職業の仕事内容・入職条件・労働条件・関連資格と年収の目安を、出典つきで検索・閲覧できる名録です。そのうち${publishedOccupationCatalog.length}職業には個別ページ、${publishedJobs.length + profiles.items.length}職業には独自解説があります。名前や分野から検索でき、気になる職業は個別ページで仕事内容と出典を詳しく確認できます。年収の目安は、対応する統計分類がある職業にのみ示しています。`;
 const image = absoluteUrl("/og.png");
 export const metadata: Metadata = { title, description, alternates: { canonical: "/all/", types: { "application/rss+xml": "/feed.xml" } }, openGraph: { title, description, url: absoluteUrl("/all/"), type: "website", siteName: "manapick career", locale: "ja_JP", images: [{ url: image, width: 1200, height: 675, alt: "manapick career 職業名録" }] }, twitter: { card: "summary_large_image", title, description, images: [image] } };
 
