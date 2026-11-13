@@ -9,7 +9,7 @@ import "./employers.css";
 
 export const metadata: Metadata = {
   title: "企業・法人・公的機関の例がある職業一覧",
-  description: "各職業について、その仕事を行っている具体的な企業・法人・公的機関の例を公式ページで確認し、出典付きで載せた職業の一覧。募集の継続や採用可能性を示すものではありません。",
+  description: "各職業について、その仕事を行っている具体的な企業・法人・公的機関の例を公式ページで確認し、出典付きで載せた職業の一覧。分野別のページから職業ごとの個別ページへ進み、職場の例とあわせて仕事内容や出典を確認できます。募集の継続や採用可能性を示すものではありません。全14分野のカテゴリページから、職業ごとの例へ進めます。",
   alternates: { canonical: "/employers/", types: { "application/rss+xml": "/feed.xml" } },
   openGraph: { title: "企業・法人・公的機関の例がある職業一覧 | manapick career", description: "公式ページで確認した職場の例を、分野別に職業ごとへ整理した一覧。", url: absoluteUrl("/employers/"), images: [{ url: absoluteUrl("/og.png"), width: 1200, height: 675 }] },
 };

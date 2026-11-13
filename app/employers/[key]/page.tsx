@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: { params: Promise<{ key: stri
   if (!category) return {};
   const title = `${category.label}の企業・法人・公的機関の例がある職業`;
   const examples = category.items.slice(0, 3).map(item => occupationById.get(item.catalogId)?.name).filter(Boolean).join("・");
-  const description = `${category.description}。${examples}など${category.items.length}職業について、公式ページで確認した企業・法人・公的機関の例を出典付きで載せています。募集の継続や採用可能性を示すものではありません。`;
+  const description = `${category.description}。${examples}など${category.items.length}職業について、公式ページで確認した企業・法人・公的機関の例を出典付きで載せています。各職業の個別ページでは、職場の例とあわせて仕事内容、就くには、関連資格も確認できます。募集の継続や採用可能性を示すものではありません。`;
   return {
     title, description,
     alternates: { canonical: `/employers/${key}/`, types: { "application/rss+xml": "/feed.xml" } },

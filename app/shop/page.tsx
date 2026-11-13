@@ -9,7 +9,7 @@ import { NetworkSites } from "@/components/NetworkSites";
 import { absoluteUrl, pageOgUrl } from "@/lib/site";
 
 const title = "manapi商店｜学び直し・面接・仕事準備の道具";
-const description = "オンライン面接、学び直し、ポートフォリオ、作業環境に使う実在商品を、向く人・選ぶ理由・購入前の確認点・メーカー公式情報とともに掲載します。";
+const description = "オンライン面接、学び直し、ポートフォリオ、作業環境に使う実在商品を、向く人・選ぶ理由・購入前の確認点・メーカー公式情報とともに掲載します。場面ごとに商品を分けて掲載し、価格や仕様は販売ページで最新情報を確認できるよう案内しています。迷ったときは、向く人と選ぶ理由から場面に合うものを選べます。";
 const url = absoluteUrl("/shop/");
 
 export const metadata: Metadata = {

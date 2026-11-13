@@ -32,8 +32,8 @@ export const pageOgUrl = (slug: string, revision = "") => {
   return url.toString();
 };
 
-// 検索結果で途切れにくい長さへ、文の区切りを保って短縮する。本文・構造化データには使わない。
-export function metaDescription(text: string, max = 120) {
+// 検索結果のスニペットとして十分な長さ（150〜160字目安）へ、文の区切りを保って整える。本文・構造化データには使わない。
+export function metaDescription(text: string, max = 160) {
   const normalized = text.replace(/\s+/g, " ").trim();
   if (normalized.length <= max) return normalized;
   const sentences = normalized.match(/[^。]+。/g) ?? [];
@@ -42,19 +42,20 @@ export function metaDescription(text: string, max = 120) {
     if ((out + sentence).length > max) break;
     out += sentence;
   }
-  // 文単位の切り取りでは短すぎる場合、続きを句読点の区切りまで足してスニペットの長さを確保する。
-  if (out && out.length < Math.floor(max * 0.65) && out.length < normalized.length) {
+  // 文単位の切り取りでは短すぎる場合、続きを足してスニペットの長さを確保する。
+  // 句読点で切って十分な長さになる場合だけ句読点切りを使い、短くなりすぎる場合は上限まで使う。
+  if (out && out.length < max - 12 && out.length < normalized.length) {
     const rest = normalized.slice(out.length);
     const budget = max - out.length;
     const head = rest.slice(0, budget);
     const comma = head.lastIndexOf("、");
-    if (comma >= Math.floor(budget * 0.6)) return `${out}${head.slice(0, comma)}。`;
+    if (comma >= Math.floor(budget * 0.6) && out.length + comma + 1 >= max - 12) return `${out}${head.slice(0, comma)}。`;
     return `${out}${head.slice(0, Math.max(0, budget - 1))}…`;
   }
   if (out) return out;
   const head = normalized.slice(0, max);
   const comma = head.lastIndexOf("、");
-  if (comma >= Math.floor(max * 0.6)) return `${head.slice(0, comma)}。`;
+  if (comma >= Math.floor(max * 0.6) && comma + 1 >= max - 12) return `${head.slice(0, comma)}。`;
   return `${head.slice(0, max - 1)}…`;
 }
 

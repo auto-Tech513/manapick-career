@@ -1,7 +1,7 @@
 import type { Metadata } from "next";import { InfoPage } from "@/components/InfoPage";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl } from "@/lib/site";
-export const metadata:Metadata={title:"よくある質問",description:"manapick careerの使い方、出典の確認方法、年収や企業例の読み方、情報の鮮度、訂正依頼の方法など、よくある質問への回答をまとめます。サイトができること・しないことも明記します。",alternates:{canonical:"/faq/", types: { "application/rss+xml": "/feed.xml" }}};
+export const metadata:Metadata={title:"よくある質問",description:"manapick careerの使い方、出典の確認方法、年収や企業例の読み方、情報の鮮度、訂正依頼の方法など、よくある質問への回答をまとめます。サイトができること・しないことも明記します。載っていない疑問は、訂正・お問い合わせのページから送れます。",alternates:{canonical:"/faq/", types: { "application/rss+xml": "/feed.xml" }}};
 const groups:{title:string;items:{q:string;a:string}[]}[]=[
 {title:"サイトの基本",items:[
 {q:"このサイトで向いている仕事が分かりますか？",a:"入口案内が、興味や作業の好みと重なる職業を3つ提示し、次に調べるきっかけを作ります。向いているかどうかは、仕事内容や条件を読み、実際の作業を試しながら確かめるのが確実です。"},

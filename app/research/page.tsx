@@ -8,7 +8,7 @@ import { absoluteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "キャリアデータ室",
-  description: "雇用、賃金、学び、AI・DXの一次資料を、示すこと・示さないこと・次に確認することへ分けて読むためのデータ案内です。資料ごとに、対象範囲と確認日もあわせて示します。",
+  description: "雇用、賃金、学び、AI・DXの一次資料を、示すこと・示さないこと・次に確認することへ分けて読むためのデータ案内です。資料ごとに、対象範囲と確認日もあわせて示します。資料はテーマごとに整理し、新しい一次資料を確認するたびに追加します。数字をそのまま引用せず、対象範囲と時点をそろえて読むための注意も示します。",
   alternates: { canonical: "/research/", types: { "application/rss+xml": "/feed.xml" } },
   openGraph: { title: "キャリアデータ室 | manapick career", description: "労働市場の数字を、職業順位や転職成功率へ変換せずに読む。", url: absoluteUrl("/research/"), images: [{ url: absoluteUrl("/og.png"), width: 1200, height: 675 }] },
 };

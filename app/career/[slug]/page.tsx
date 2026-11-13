@@ -36,10 +36,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const job = publishedJobs.find((item) => item.slug === slug);
   const professional=profiles.items.find(item=>item.slug===slug);
-  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description:metaDescription(professional.summary),alternates:{canonical:`/career/${slug}/`, types: { "application/rss+xml": "/feed.xml" }},openGraph:{title,description:metaDescription(professional.summary),url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',modifiedTime:professional.researchedAt,images:[{url:image,width:1200,height:675,alt:title}]},twitter:{card:'summary_large_image',title,description:metaDescription(professional.summary),images:[image]}};}
+  const dossierSummary=careerDossierBySlug.get(slug)?.summary;
+  if(professional){const title=`${professional.name}の仕事内容・資格・平均年収・日本企業の例`;const description=metaDescription(`${dossierSummary ?? professional.summary}仕事内容、向いている人、資格の位置づけ、日本企業の公式職種例を、出典とともに確認できます。`);const image=articleOgUrl('career',slug,`${professional.name}|${professional.researchedAt}|professional-v1`);return {title,description,alternates:{canonical:`/career/${slug}/`, types: { "application/rss+xml": "/feed.xml" }},openGraph:{title,description,url:absoluteUrl(`/career/${slug}/`),type:'article',locale:'ja_JP',modifiedTime:professional.researchedAt,images:[{url:image,width:1200,height:675,alt:title}]},twitter:{card:'summary_large_image',title,description,images:[image]}};}
   if (!job) return {};
   const title = `${job.name}の仕事内容・向いている人・資格・日本企業の例`;
-  const description = `${job.name}は何をする仕事か。具体的な業務と成果物、作業から考える相性、資格の位置づけ、日本企業の公式職種例を、出典とともにcareer内で読めます。`;
+  const description = dossierSummary ? metaDescription(`${dossierSummary}仕事内容、向いている人、資格の位置づけ、日本企業の公式職種例を、出典とともに確認できます。`) : `${job.name}は何をする仕事か。具体的な業務と成果物、作業から考える相性、資格の位置づけ、日本企業の公式職種例を、出典とともにcareer内で読めます。`;
   const image = articleOgUrl("career", job.slug, `${job.name}|${job.checkedAt}|career-depth-v2`);
   return {
     title,
