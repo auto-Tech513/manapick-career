@@ -989,6 +989,16 @@
             "url": "https://www.ana.co.jp/group/recruit/ana-recruit/interview/talk23.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "株式会社JALエンジニアリング",
+          "role": "航空整備士（エアラインエンジニア）",
+          "description": "JALグループの航空機の運航整備、機体点検整備、エンジン整備、装備品整備を担う。",
+          "source": {
+            "title": "航空整備士（エアラインエンジニア）の求人票（2026年4月入社）",
+            "url": "https://www.jalec.co.jp/recruit/pdf/jalec_boshu_2026_03r.pdf",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -1589,6 +1599,16 @@
             "url": "https://recruit.flypeach.com/staff/airport_customercontrol.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "ANAエアポートサービス株式会社",
+          "role": "旅客サービス業務",
+          "description": "羽田空港で、国内線・国際線の航空券の発券や搭乗手続き、搭乗ゲート、到着ロビーでの案内などを担当する。一部、外国航空会社のハンドリングも受託する。",
+          "source": {
+            "title": "事業紹介（旅客サービス業務）",
+            "url": "https://www.anaas.ana-g.com/products/ps/",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -1603,6 +1623,16 @@
             "title": "運輸系統 | 仕事紹介 | 東海旅客鉄道 キャリア採用サイト",
             "url": "https://saiyo.jr-central.co.jp/career/work/transport/",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "東京都交通局",
+          "role": "駅係員（鉄道営業）",
+          "description": "都営地下鉄の各駅で駅係員業務を担当する。駅係員の後は、将来、車掌・運転士等への任用がある。",
+          "source": {
+            "title": "運輸系職員（駅係員）の募集要項",
+            "url": "https://www.kotsu.metro.tokyo.jp/information/career/toei/recruit/recruit01_20200601_01.html",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -2234,6 +2264,16 @@
             "url": "https://naritahospital.iuhw.ac.jp/career/medical.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "医療法人徳洲会 茅ヶ崎徳洲会病院",
+          "role": "総合事務職（メディカルクラーク）",
+          "description": "受付・案内・電話対応、医師の診療補助業務や電子カルテの代行入力など、病院内での医療事務業務を担当する。",
+          "source": {
+            "title": "総合事務職（メディカルクラーク）の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1408011257761&kjhyoKjKbn=1&kjhyoDtiID=&kjhyoKsNo=",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -2623,6 +2663,16 @@
             "title": "生産職｜大塚製薬",
             "url": "https://www.otsuka.co.jp/recruit/job-introduction/production.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "京都薬品工業株式会社",
+          "role": "医薬品の製造スタッフ（製剤）",
+          "description": "医家向け・薬局向け医薬品の製造で、原料の計量、製造機器の操作、検査、製造記録の管理を担当する。",
+          "source": {
+            "title": "医薬品の製造スタッフ（製剤）の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2601026753361&kjhyoKjKbn=1&kjhyoDtiID=&kjhyoKsNo=",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
