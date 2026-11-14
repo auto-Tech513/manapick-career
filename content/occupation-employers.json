@@ -389,6 +389,16 @@
             "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/me/index.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "医療法人財団樹徳会 上ヶ原病院",
+          "role": "臨床工学技士",
+          "description": "124床の病院で、高気圧酸素業務と医療機器の管理業務、患者ケアの補助を担当する。",
+          "source": {
+            "title": "臨床工学技士の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2804011577461&kjhyoKjKbn=1&kjhyoDtiID=&kjhyoKsNo=",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -403,6 +413,16 @@
             "title": "歯科技工士・歯科衛生士 | 横浜市立大学附属病院",
             "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/dental/index.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "医療法人 川上歯科医院",
+          "role": "歯科衛生士",
+          "description": "歯科医師の指示で歯石の除去やフッ素塗布などの予防処置を行い、患者への歯磨き指導や歯の健康指導、治療の準備を担当する。",
+          "source": {
+            "title": "歯科衛生士の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=4401025113761&kjhyoKjKbn=1&kjhyoDtiID=&kjhyoKsNo=",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -1043,6 +1063,16 @@
             "title": "先輩社員インタビュー｜株式会社海遊館 採用ホームページ",
             "url": "https://www.kaiyukan.com/company/recruit/kaiyukanrecruit/interview/interview03/",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社サンシャインエンタプライズ",
+          "role": "飼育展示担当（海獣）",
+          "description": "サンシャイン水族館としながわ水族館で、海獣の飼育展示業務を担当する。",
+          "source": {
+            "title": "サンシャイン水族館・しながわ水族館 飼育展示（海獣）担当者の求人票",
+            "url": "https://www.sunshine-ep.co.jp/wp-content/uploads/2025/11/info_202511_2.pdf",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
