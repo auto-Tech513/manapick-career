@@ -21,7 +21,7 @@ import sourceRegistry from "@/content/source-registry.json";
 import companyLinks from "@/content/company-links.json";
 import industryLinks from "@/content/company-industry-links.json";
 import licenseLinks from "@/content/license-links.json";
-import { formatManYen1dp, incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
+import { ageBandsByCode, ageIncomeNote, formatManYen1dp, incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
 
@@ -295,6 +295,32 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                 <p key={line}>{line}</p>
               ))}
             </details>
+            {(ageBandsByCode.get(statistic.classificationCode) ?? []).length >= 3 ? (
+              <div className="occupation-agebands">
+                <h3>年代別の平均年収換算（対応分類「{statistic.classificationName}」）</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th scope="col">年齢階級</th>
+                      <th scope="col">平均年収換算</th>
+                      <th scope="col">推計労働者数</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {(ageBandsByCode.get(statistic.classificationCode) ?? []).map((band) => (
+                      <tr key={band.band}>
+                        <th scope="row">{band.band}</th>
+                        <td>{formatManYen1dp(band.annualizedMeanYen)}万円</td>
+                        <td>{band.estimatedWorkers != null ? `${band.estimatedWorkers.toLocaleString("ja-JP")}人` : "—"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                <p className="occupation-agebands-note">
+                  {ageIncomeNote}出典は同じ調査の第5表（年齢階級別）です。労働者数が少ない階級は、少数の人の値に左右されます。
+                </p>
+              </div>
+            ) : null}
           </>
         ) : (
           <p>
