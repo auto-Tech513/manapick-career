@@ -1,19 +1,36 @@
+import "./home.css";
 import { careerCard } from "@/lib/career-card";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, Bot, Building2, GraduationCap, Search } from "lucide-react";
+import { ArrowRight, BadgeCheck, Bot, Building2, GraduationCap } from "lucide-react";
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
 import { CareerBriefing } from "@/components/CareerBriefing";
 import { DailyCareerLoop } from "@/components/DailyCareerLoop";
 import { EditorialPreview } from "@/components/EditorialPreview";
 import { guides, publishedNews } from "@/content/editorial";
-import { occupationCatalog, publishedOccupationCatalog } from "@/content/catalog";
+import { humanReviewedSlugByOccupation, occupationCatalog, occupationCatalogCategories, occupationDirectory, publishedOccupationCatalog } from "@/content/catalog";
+import { HomeSearch, type HomeSearchItem } from "@/components/HomeSearch";
+import profiles from "@/content/professional-careers.json";
 
 import { ProfessionalEntries } from '@/components/ProfessionalEntries';
-export default function Home(){return <>
+export default function Home(){
+  const detailedLinks: Record<string, string> = {...humanReviewedSlugByOccupation, ...Object.fromEntries(profiles.items.map(item => [item.name, item.slug]))};
+  const publishedIdSet = new Set(publishedOccupationCatalog.map(item => item.catalogId));
+  const homeSearchItems: HomeSearchItem[] = occupationDirectory.map((occupation) => {
+    const detail = detailedLinks[occupation.name];
+    const hasPage = publishedIdSet.has(occupation.catalogId);
+    return {
+      name: occupation.name,
+      aliases: occupation.aliases,
+      category: occupationCatalogCategories.find(item => item.key === occupation.categoryKey)?.label ?? "",
+      href: detail ? `/career/${detail}/` : hasPage ? `/occupation/${occupation.catalogId}/` : `/all/?q=${encodeURIComponent(occupation.name)}#catalog-title`,
+      note: detail ? "career解説あり" : hasPage ? "個別ページあり" : "職業一覧で見る",
+    };
+  });
+  return <>
   <section className="home-hero"><div className="home-hero-inner"><div className="home-hero-copy">
     <div className="career-search-intro"><div><span className="eyebrow">manapick career / 仕事を知る</span><h1>どんな仕事を<br className="home-heading-break"/>知りたいですか？</h1><p>{occupationCatalog.length}職業の仕事内容と年収の目安を、公式出典と確認日つきで調べられます。そのうち{publishedOccupationCatalog.length}職業は、編集部が中身を厚く書いた個別ページを用意しました。職業の違いを比べるガイドも{guides.length}本あります。</p></div><Link href="/route/" className="home-route-link">迷ったら入口案内 <ArrowRight aria-hidden="true" /></Link></div>
-    <form className="home-search" action="/all/#catalog-title" method="get" role="search"><label className="sr-only" htmlFor="home-job-search">職業名・別名で検索</label><Search aria-hidden="true"/><input id="home-job-search" name="q" placeholder="例：看護師、税理士、デザイン"/><button type="submit">検索 <ArrowRight aria-hidden="true" /></button></form>
+    <HomeSearch items={homeSearchItems} />
     <nav className="home-discovery" aria-label="職業情報の探し方"><Link href="/all/">556職業から探す <ArrowRight aria-hidden="true"/></Link><Link href="/career/tax-accountant/">税理士</Link><Link href="/career/lawyer/">弁護士</Link><Link href="/career/nurse/">看護師</Link><Link href="/career/childcare-worker/">保育士</Link><Link href="/compare/">仕事を比べる</Link><Link href="/tools/net-income/">手取りを試算する</Link><Link href="/route/#workstyle">働き方から探す</Link></nav>
   </div></div></section>
   <div className="home-profession-wrap"><ProfessionalEntries/></div>
