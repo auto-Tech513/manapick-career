@@ -639,6 +639,16 @@
             "url": "https://www.kyoinsaiyopr.metro.tokyo.lg.jp/realvoices/03.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "学校法人作新学院",
+          "role": "高等学校教員（常勤講師）",
+          "description": "栃木県宇都宮市の作新学院高等学校で、数学・英語・国語・理科（生物）の教員を募集している。常勤講師として採用し、2年目以降に専任教諭への登用を予定する形で、勤務先はトップ英進部・英進部・総合進学部・情報科学部のいずれか。公立高校の教諭とは異なる、私立高校の教員の例。",
+          "source": {
+            "title": "高等学校教員募集（2027年度・作新学院高等学校）",
+            "url": "https://www.sakushin.ac.jp/news/93639/",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -1914,6 +1924,16 @@
             "url": "https://www.city.toyota.aichi.jp/shisei/1073283/1073586/1029075/1080361.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "特定非営利活動法人 まちづくり津島",
+          "role": "図書館司書",
+          "description": "愛西市中央図書館の指定管理者として、資料の収集選択・整理、カウンターでの貸出・返却、レファレンスや企画を担う。司書の資格が必須で、同じ法人が津島市立図書館の運営も受託している。学校図書館の司書とは異なる、公共図書館（指定管理）の司書の例。",
+          "source": {
+            "title": "図書館司書の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2310007820561",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -2323,6 +2343,16 @@
             "title": "レストラン | 部門・職種紹介 | 帝国ホテル 採用サイト",
             "url": "https://www.imperialhotel.co.jp/recruit/works-interviews/introduction/works002",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "三甲株式会社",
+          "role": "ソムリエ",
+          "description": "名古屋の三甲ゴルフ倶楽部名古屋シティクラブ（会員制クラブのレストラン）で、会員の好みや料理に合わせたワインのセレクトとペアリング提案、ワインの仕入れ・管理やリストの作成、接遇サービス、ワイン会などのイベント企画を担う。ソムリエ資格が必須。ホテルのレストランとは異なる、会員制クラブのソムリエの例。",
+          "source": {
+            "title": "ソムリエの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2101029865961",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
