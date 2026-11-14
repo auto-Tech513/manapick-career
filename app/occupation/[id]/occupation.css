@@ -64,6 +64,47 @@
   text-decoration: underline;
 }
 
+.occupation-agebands {
+  margin-top: 1.2rem;
+}
+
+.occupation-agebands h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.occupation-agebands table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.occupation-agebands th,
+.occupation-agebands td {
+  border: 1px solid var(--line);
+  padding: 0.4rem 0.6rem;
+  text-align: right;
+}
+
+.occupation-agebands thead th {
+  background: var(--surface);
+  text-align: right;
+}
+
+.occupation-agebands tbody th {
+  text-align: left;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.occupation-agebands-note {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
 @media (max-width: 540px) {
   .occupation-keypoints dl {
     grid-template-columns: 1fr;

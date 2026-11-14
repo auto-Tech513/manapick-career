@@ -1,5 +1,11 @@
 import income from '@/content/occupation-income.json';
+import ageIncome from '@/content/occupation-income-age.json';
 import scopes from '@/content/career-income-scope.json';
+export type AgeBand = { band: string; annualizedMeanYen: number; estimatedWorkers: number | null };
+export const ageBandsByCode = new Map<string, AgeBand[]>(
+  ageIncome.classifications.map((item) => [item.classificationCode, item.bands as AgeBand[]]),
+);
+export const ageIncomeNote = ageIncome.note;
 export type IncomeStatistic = (typeof income.statistics)[number];
 export const incomeStatistics = income.statistics;
 export const incomeStatisticByCode = new Map(income.statistics.map(item => [item.classificationCode,item]));

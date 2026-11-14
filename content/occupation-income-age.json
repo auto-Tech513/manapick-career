@@ -1,0 +1,8741 @@
+{
+ "schemaVersion": 1,
+ "surveyYear": 2025,
+ "publishedAt": "2026-03-24",
+ "retrievedAt": "2026-11-14",
+ "population": "全国・男女計・企業規模計（10人以上）・一般労働者（短時間労働者以外）",
+ "formula": "(2025年6月のきまって支給する現金給与額 × 12 ＋ 年間賞与その他特別給与額) × 1000",
+ "note": "年齢階級別の値は、同じ統計分類について年齢階級ごとに集計した平均年収換算です。年代が上がると勤続年数も長くなるため、年齢だけの効果ではありません。公表値がない（-）階級は含みません。",
+ "sources": [
+  {
+   "id": "wage-table5",
+   "title": "令和7年賃金構造基本統計調査 一般労働者 職種第5表",
+   "url": "https://www.e-stat.go.jp/stat-search/files?layout=datalist&stat_infid=000040421120",
+   "downloadUrl": "https://www.e-stat.go.jp/stat-search/file-download?statInfId=000040421120&fileKind=4",
+   "file": "data/official-income/wage-2025-table5.xlsx",
+   "sha256": "c182c8b13f09e91c40bde6ddc20dcf181148173f9fdc1a46cca4da519a22a35e"
+  }
+ ],
+ "classifications": [
+  {
+   "classificationCode": "1031",
+   "classificationName": "管理的職業従事者",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4845100,
+     "estimatedWorkers": 480
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 6627400,
+     "estimatedWorkers": 7560
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 7886400,
+     "estimatedWorkers": 25560
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 8897500,
+     "estimatedWorkers": 85000
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 9525400,
+     "estimatedWorkers": 218660
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 9764400,
+     "estimatedWorkers": 358630
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 10136900,
+     "estimatedWorkers": 478880
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 10255200,
+     "estimatedWorkers": 383730
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 8615600,
+     "estimatedWorkers": 149180
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6704600,
+     "estimatedWorkers": 38100
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5836200,
+     "estimatedWorkers": 12540
+    }
+   ]
+  },
+  {
+   "classificationCode": "1051",
+   "classificationName": "研究者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3073800,
+     "estimatedWorkers": 280
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3816000,
+     "estimatedWorkers": 5470
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5386200,
+     "estimatedWorkers": 25290
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6611400,
+     "estimatedWorkers": 28050
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7631900,
+     "estimatedWorkers": 23860
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8810000,
+     "estimatedWorkers": 21460
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 9397600,
+     "estimatedWorkers": 24850
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 9961900,
+     "estimatedWorkers": 19320
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 10838800,
+     "estimatedWorkers": 18660
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7786300,
+     "estimatedWorkers": 10290
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6795600,
+     "estimatedWorkers": 3430
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 15805200,
+     "estimatedWorkers": 660
+    }
+   ]
+  },
+  {
+   "classificationCode": "1072",
+   "classificationName": "電気・電子・電気通信技術者（通信ネットワーク技術者を除く）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3372300,
+     "estimatedWorkers": 2220
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3978000,
+     "estimatedWorkers": 29150
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5401100,
+     "estimatedWorkers": 47720
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6681800,
+     "estimatedWorkers": 40720
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7193400,
+     "estimatedWorkers": 33380
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8255300,
+     "estimatedWorkers": 36580
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8305000,
+     "estimatedWorkers": 37890
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8506400,
+     "estimatedWorkers": 41660
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 8747800,
+     "estimatedWorkers": 36150
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6270500,
+     "estimatedWorkers": 23240
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4917300,
+     "estimatedWorkers": 4500
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4968800,
+     "estimatedWorkers": 1460
+    }
+   ]
+  },
+  {
+   "classificationCode": "1073",
+   "classificationName": "機械技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3057700,
+     "estimatedWorkers": 2680
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3861400,
+     "estimatedWorkers": 28510
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5053100,
+     "estimatedWorkers": 53940
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5919500,
+     "estimatedWorkers": 47840
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6849100,
+     "estimatedWorkers": 48110
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7385400,
+     "estimatedWorkers": 47360
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7749200,
+     "estimatedWorkers": 42810
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8053400,
+     "estimatedWorkers": 49610
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 8421500,
+     "estimatedWorkers": 39460
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5747900,
+     "estimatedWorkers": 24340
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4737100,
+     "estimatedWorkers": 8750
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4352300,
+     "estimatedWorkers": 2410
+    }
+   ]
+  },
+  {
+   "classificationCode": "1074",
+   "classificationName": "輸送用機器技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3156300,
+     "estimatedWorkers": 2690
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4055900,
+     "estimatedWorkers": 13600
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5413500,
+     "estimatedWorkers": 26450
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6664100,
+     "estimatedWorkers": 25760
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7597500,
+     "estimatedWorkers": 24010
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8036800,
+     "estimatedWorkers": 25760
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8730700,
+     "estimatedWorkers": 20840
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8590700,
+     "estimatedWorkers": 22090
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 9393800,
+     "estimatedWorkers": 17850
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6760300,
+     "estimatedWorkers": 13590
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5600900,
+     "estimatedWorkers": 930
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4177200,
+     "estimatedWorkers": 130
+    }
+   ]
+  },
+  {
+   "classificationCode": "1076",
+   "classificationName": "金属技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2468900,
+     "estimatedWorkers": 820
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3855100,
+     "estimatedWorkers": 1650
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5568000,
+     "estimatedWorkers": 3760
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5661400,
+     "estimatedWorkers": 4370
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6877900,
+     "estimatedWorkers": 3510
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6397300,
+     "estimatedWorkers": 4680
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6500800,
+     "estimatedWorkers": 5370
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6676100,
+     "estimatedWorkers": 4970
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6890000,
+     "estimatedWorkers": 3390
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6145500,
+     "estimatedWorkers": 2980
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4001900,
+     "estimatedWorkers": 940
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3507600,
+     "estimatedWorkers": 190
+    }
+   ]
+  },
+  {
+   "classificationCode": "1077",
+   "classificationName": "化学技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2933300,
+     "estimatedWorkers": 230
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3719400,
+     "estimatedWorkers": 3270
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4942200,
+     "estimatedWorkers": 10770
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5986800,
+     "estimatedWorkers": 10740
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6522000,
+     "estimatedWorkers": 9900
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6962800,
+     "estimatedWorkers": 8540
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7010100,
+     "estimatedWorkers": 7970
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7581800,
+     "estimatedWorkers": 7940
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7886500,
+     "estimatedWorkers": 7000
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7128600,
+     "estimatedWorkers": 3470
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4621200,
+     "estimatedWorkers": 1250
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 6134000,
+     "estimatedWorkers": 30
+    }
+   ]
+  },
+  {
+   "classificationCode": "1091",
+   "classificationName": "建築技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3519700,
+     "estimatedWorkers": 2150
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4114700,
+     "estimatedWorkers": 32290
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5509700,
+     "estimatedWorkers": 53680
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6363100,
+     "estimatedWorkers": 44030
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7101400,
+     "estimatedWorkers": 32920
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7474800,
+     "estimatedWorkers": 33930
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7649300,
+     "estimatedWorkers": 37490
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8084100,
+     "estimatedWorkers": 47910
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 8796000,
+     "estimatedWorkers": 36880
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7431800,
+     "estimatedWorkers": 26390
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5849300,
+     "estimatedWorkers": 16310
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4390500,
+     "estimatedWorkers": 9330
+    }
+   ]
+  },
+  {
+   "classificationCode": "1092",
+   "classificationName": "土木技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2828400,
+     "estimatedWorkers": 2670
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4352300,
+     "estimatedWorkers": 22290
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5554100,
+     "estimatedWorkers": 35230
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5990100,
+     "estimatedWorkers": 28600
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6684900,
+     "estimatedWorkers": 21480
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6252700,
+     "estimatedWorkers": 25540
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6857600,
+     "estimatedWorkers": 36300
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7264100,
+     "estimatedWorkers": 42050
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7352200,
+     "estimatedWorkers": 35790
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6463000,
+     "estimatedWorkers": 27750
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5163400,
+     "estimatedWorkers": 19350
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4857700,
+     "estimatedWorkers": 10990
+    }
+   ]
+  },
+  {
+   "classificationCode": "1093",
+   "classificationName": "測量技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2649600,
+     "estimatedWorkers": 410
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3622000,
+     "estimatedWorkers": 2980
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4189600,
+     "estimatedWorkers": 2450
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4859200,
+     "estimatedWorkers": 2660
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5315700,
+     "estimatedWorkers": 2120
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5641000,
+     "estimatedWorkers": 1480
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6062800,
+     "estimatedWorkers": 3480
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5999100,
+     "estimatedWorkers": 5480
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5626900,
+     "estimatedWorkers": 2820
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7567100,
+     "estimatedWorkers": 4070
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4177600,
+     "estimatedWorkers": 1570
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3320700,
+     "estimatedWorkers": 750
+    }
+   ]
+  },
+  {
+   "classificationCode": "1101",
+   "classificationName": "システムコンサルタント・設計者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2896500,
+     "estimatedWorkers": 70
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4766100,
+     "estimatedWorkers": 11510
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 6416000,
+     "estimatedWorkers": 45980
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 8660900,
+     "estimatedWorkers": 28850
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 9681400,
+     "estimatedWorkers": 18430
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 11890400,
+     "estimatedWorkers": 18700
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 12262800,
+     "estimatedWorkers": 15810
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 11037200,
+     "estimatedWorkers": 13370
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 11638400,
+     "estimatedWorkers": 13340
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6183900,
+     "estimatedWorkers": 6380
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6776200,
+     "estimatedWorkers": 1610
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4607600,
+     "estimatedWorkers": 90
+    }
+   ]
+  },
+  {
+   "classificationCode": "1104",
+   "classificationName": "ソフトウェア作成者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2677200,
+     "estimatedWorkers": 630
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3630000,
+     "estimatedWorkers": 108530
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4847100,
+     "estimatedWorkers": 188070
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5595200,
+     "estimatedWorkers": 128960
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6359900,
+     "estimatedWorkers": 91670
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6862900,
+     "estimatedWorkers": 86420
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7292100,
+     "estimatedWorkers": 78270
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7224100,
+     "estimatedWorkers": 63250
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7195400,
+     "estimatedWorkers": 44590
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6544000,
+     "estimatedWorkers": 24330
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6002700,
+     "estimatedWorkers": 2950
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4735200,
+     "estimatedWorkers": 180
+    }
+   ]
+  },
+  {
+   "classificationCode": "1109",
+   "classificationName": "その他の情報処理・通信技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2836200,
+     "estimatedWorkers": 490
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3883100,
+     "estimatedWorkers": 15440
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4526600,
+     "estimatedWorkers": 29250
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5489400,
+     "estimatedWorkers": 27920
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6041300,
+     "estimatedWorkers": 21050
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6804600,
+     "estimatedWorkers": 24830
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7021500,
+     "estimatedWorkers": 27780
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7245100,
+     "estimatedWorkers": 33420
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7778100,
+     "estimatedWorkers": 20200
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5298200,
+     "estimatedWorkers": 12000
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3747100,
+     "estimatedWorkers": 2210
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2717000,
+     "estimatedWorkers": 230
+    }
+   ]
+  },
+  {
+   "classificationCode": "1119",
+   "classificationName": "他に分類されない技術者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3006500,
+     "estimatedWorkers": 1250
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3729700,
+     "estimatedWorkers": 9170
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4813900,
+     "estimatedWorkers": 16340
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5596000,
+     "estimatedWorkers": 16310
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6139800,
+     "estimatedWorkers": 15840
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6660400,
+     "estimatedWorkers": 16300
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6721600,
+     "estimatedWorkers": 15150
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7407400,
+     "estimatedWorkers": 21460
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7433300,
+     "estimatedWorkers": 16360
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5612600,
+     "estimatedWorkers": 12590
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5212600,
+     "estimatedWorkers": 3760
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3529900,
+     "estimatedWorkers": 760
+    }
+   ]
+  },
+  {
+   "classificationCode": "1121",
+   "classificationName": "医師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 5922700,
+     "estimatedWorkers": 1700
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 7571600,
+     "estimatedWorkers": 21070
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 10862700,
+     "estimatedWorkers": 18070
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 14697400,
+     "estimatedWorkers": 15510
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 17462100,
+     "estimatedWorkers": 15590
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 17034000,
+     "estimatedWorkers": 14550
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 17799200,
+     "estimatedWorkers": 15980
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 18891600,
+     "estimatedWorkers": 17600
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 19814600,
+     "estimatedWorkers": 12840
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 18189100,
+     "estimatedWorkers": 6670
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 15895600,
+     "estimatedWorkers": 5580
+    }
+   ]
+  },
+  {
+   "classificationCode": "1122",
+   "classificationName": "歯科医師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2482800,
+     "estimatedWorkers": 450
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5631200,
+     "estimatedWorkers": 1660
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 11833300,
+     "estimatedWorkers": 2040
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 12150200,
+     "estimatedWorkers": 2940
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 13520100,
+     "estimatedWorkers": 1160
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 12828600,
+     "estimatedWorkers": 930
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 11353900,
+     "estimatedWorkers": 1130
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 11509100,
+     "estimatedWorkers": 410
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7607000,
+     "estimatedWorkers": 450
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 7272000,
+     "estimatedWorkers": 70
+    }
+   ]
+  },
+  {
+   "classificationCode": "1123",
+   "classificationName": "獣医師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3495600,
+     "estimatedWorkers": 80
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4904000,
+     "estimatedWorkers": 1200
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5922600,
+     "estimatedWorkers": 900
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7517300,
+     "estimatedWorkers": 590
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8941500,
+     "estimatedWorkers": 230
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8949000,
+     "estimatedWorkers": 730
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 9165200,
+     "estimatedWorkers": 380
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 9929800,
+     "estimatedWorkers": 140
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5350100,
+     "estimatedWorkers": 190
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3986300,
+     "estimatedWorkers": 60
+    }
+   ]
+  },
+  {
+   "classificationCode": "1124",
+   "classificationName": "薬剤師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4083700,
+     "estimatedWorkers": 2810
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4947600,
+     "estimatedWorkers": 23020
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5331900,
+     "estimatedWorkers": 17240
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5980000,
+     "estimatedWorkers": 9100
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5952000,
+     "estimatedWorkers": 11600
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6758400,
+     "estimatedWorkers": 9990
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6429900,
+     "estimatedWorkers": 8370
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6574900,
+     "estimatedWorkers": 6020
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5500700,
+     "estimatedWorkers": 2970
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6120300,
+     "estimatedWorkers": 1810
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4469700,
+     "estimatedWorkers": 1940
+    }
+   ]
+  },
+  {
+   "classificationCode": "1131",
+   "classificationName": "保健師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4045300,
+     "estimatedWorkers": 600
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4853600,
+     "estimatedWorkers": 1630
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4590400,
+     "estimatedWorkers": 1830
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5732200,
+     "estimatedWorkers": 2310
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5425900,
+     "estimatedWorkers": 2000
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5581400,
+     "estimatedWorkers": 2850
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5757200,
+     "estimatedWorkers": 1860
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7264800,
+     "estimatedWorkers": 1490
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5684400,
+     "estimatedWorkers": 470
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3643500,
+     "estimatedWorkers": 10
+    }
+   ]
+  },
+  {
+   "classificationCode": "1132",
+   "classificationName": "助産師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4383100,
+     "estimatedWorkers": 2000
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5370100,
+     "estimatedWorkers": 3780
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5257100,
+     "estimatedWorkers": 1930
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5758500,
+     "estimatedWorkers": 1250
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6203000,
+     "estimatedWorkers": 2760
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5634700,
+     "estimatedWorkers": 3680
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6679300,
+     "estimatedWorkers": 2030
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7252600,
+     "estimatedWorkers": 1290
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5389400,
+     "estimatedWorkers": 1110
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4299300,
+     "estimatedWorkers": 570
+    }
+   ]
+  },
+  {
+   "classificationCode": "1133",
+   "classificationName": "看護師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4401400,
+     "estimatedWorkers": 99640
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5014900,
+     "estimatedWorkers": 123620
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4905200,
+     "estimatedWorkers": 87170
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5188600,
+     "estimatedWorkers": 86610
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5483800,
+     "estimatedWorkers": 94670
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5611800,
+     "estimatedWorkers": 129640
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5777000,
+     "estimatedWorkers": 123070
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5735300,
+     "estimatedWorkers": 88040
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5028700,
+     "estimatedWorkers": 53840
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4240500,
+     "estimatedWorkers": 12630
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3867100,
+     "estimatedWorkers": 4130
+    }
+   ]
+  },
+  {
+   "classificationCode": "1141",
+   "classificationName": "診療放射線技師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3690500,
+     "estimatedWorkers": 7000
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4520800,
+     "estimatedWorkers": 7970
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5181000,
+     "estimatedWorkers": 7130
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5252500,
+     "estimatedWorkers": 7530
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6062800,
+     "estimatedWorkers": 7860
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6092800,
+     "estimatedWorkers": 8660
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6545000,
+     "estimatedWorkers": 7560
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7387400,
+     "estimatedWorkers": 5500
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6141400,
+     "estimatedWorkers": 2350
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4600700,
+     "estimatedWorkers": 540
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5130800,
+     "estimatedWorkers": 440
+    }
+   ]
+  },
+  {
+   "classificationCode": "1143",
+   "classificationName": "臨床検査技師",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3338400,
+     "estimatedWorkers": 10330
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4067400,
+     "estimatedWorkers": 17270
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4745200,
+     "estimatedWorkers": 11240
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5349400,
+     "estimatedWorkers": 7120
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5076900,
+     "estimatedWorkers": 10660
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5008300,
+     "estimatedWorkers": 9390
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5744300,
+     "estimatedWorkers": 9820
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6191300,
+     "estimatedWorkers": 9190
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4755400,
+     "estimatedWorkers": 5310
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3569000,
+     "estimatedWorkers": 360
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3334800,
+     "estimatedWorkers": 10
+    }
+   ]
+  },
+  {
+   "classificationCode": "1144",
+   "classificationName": "理学療法士，作業療法士，言語聴覚士，視能訓練士",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3375200,
+     "estimatedWorkers": 40730
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3977900,
+     "estimatedWorkers": 53060
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4315300,
+     "estimatedWorkers": 45180
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4571100,
+     "estimatedWorkers": 46320
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4821300,
+     "estimatedWorkers": 32210
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5197400,
+     "estimatedWorkers": 33710
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5488000,
+     "estimatedWorkers": 18660
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5252000,
+     "estimatedWorkers": 6850
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5926000,
+     "estimatedWorkers": 2570
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3359300,
+     "estimatedWorkers": 270
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3784700,
+     "estimatedWorkers": 90
+    }
+   ]
+  },
+  {
+   "classificationCode": "1146",
+   "classificationName": "歯科衛生士",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3325400,
+     "estimatedWorkers": 13580
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3948500,
+     "estimatedWorkers": 11360
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4022500,
+     "estimatedWorkers": 4680
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4388500,
+     "estimatedWorkers": 2690
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3706800,
+     "estimatedWorkers": 5480
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4574100,
+     "estimatedWorkers": 6380
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4458800,
+     "estimatedWorkers": 5660
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4358300,
+     "estimatedWorkers": 3490
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4425000,
+     "estimatedWorkers": 1020
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4526300,
+     "estimatedWorkers": 160
+    }
+   ]
+  },
+  {
+   "classificationCode": "1147",
+   "classificationName": "歯科技工士",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3673900,
+     "estimatedWorkers": 510
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3789500,
+     "estimatedWorkers": 1230
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4163900,
+     "estimatedWorkers": 880
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3920800,
+     "estimatedWorkers": 640
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4928400,
+     "estimatedWorkers": 1500
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4661400,
+     "estimatedWorkers": 280
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5575800,
+     "estimatedWorkers": 1330
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5061000,
+     "estimatedWorkers": 800
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4539500,
+     "estimatedWorkers": 160
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4631200,
+     "estimatedWorkers": 200
+    }
+   ]
+  },
+  {
+   "classificationCode": "1151",
+   "classificationName": "栄養士",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3287300,
+     "estimatedWorkers": 11810
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3618700,
+     "estimatedWorkers": 20280
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3808000,
+     "estimatedWorkers": 14250
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4078200,
+     "estimatedWorkers": 12600
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4342800,
+     "estimatedWorkers": 12120
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4469600,
+     "estimatedWorkers": 11630
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4508500,
+     "estimatedWorkers": 11570
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5052700,
+     "estimatedWorkers": 6420
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4099800,
+     "estimatedWorkers": 3690
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3566700,
+     "estimatedWorkers": 780
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3082200,
+     "estimatedWorkers": 170
+    }
+   ]
+  },
+  {
+   "classificationCode": "1159",
+   "classificationName": "その他の保健医療従事者",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3338800,
+     "estimatedWorkers": 11320
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4048100,
+     "estimatedWorkers": 12250
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4426500,
+     "estimatedWorkers": 12590
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4980300,
+     "estimatedWorkers": 10800
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5171000,
+     "estimatedWorkers": 9310
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5430600,
+     "estimatedWorkers": 6750
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4767300,
+     "estimatedWorkers": 8920
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5538600,
+     "estimatedWorkers": 2520
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4713500,
+     "estimatedWorkers": 1690
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4279100,
+     "estimatedWorkers": 670
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2820500,
+     "estimatedWorkers": 100
+    }
+   ]
+  },
+  {
+   "classificationCode": "1163",
+   "classificationName": "保育士",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3504100,
+     "estimatedWorkers": 39740
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3995800,
+     "estimatedWorkers": 44160
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4221900,
+     "estimatedWorkers": 34700
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4308200,
+     "estimatedWorkers": 29080
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4550300,
+     "estimatedWorkers": 34040
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4759500,
+     "estimatedWorkers": 38220
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4643400,
+     "estimatedWorkers": 26440
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4407700,
+     "estimatedWorkers": 22740
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4432100,
+     "estimatedWorkers": 15570
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3982500,
+     "estimatedWorkers": 4670
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5378500,
+     "estimatedWorkers": 2180
+    }
+   ]
+  },
+  {
+   "classificationCode": "1168",
+   "classificationName": "介護支援専門員（ケアマネージャー）",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3974500,
+     "estimatedWorkers": 90
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4458300,
+     "estimatedWorkers": 540
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4022800,
+     "estimatedWorkers": 1410
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4038400,
+     "estimatedWorkers": 4470
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4525300,
+     "estimatedWorkers": 10160
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4566000,
+     "estimatedWorkers": 18790
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4639500,
+     "estimatedWorkers": 19480
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4544500,
+     "estimatedWorkers": 16010
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4129800,
+     "estimatedWorkers": 14910
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3990600,
+     "estimatedWorkers": 6830
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3632300,
+     "estimatedWorkers": 1470
+    }
+   ]
+  },
+  {
+   "classificationCode": "1169",
+   "classificationName": "その他の社会福祉専門職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2473100,
+     "estimatedWorkers": 180
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3177200,
+     "estimatedWorkers": 9890
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3612600,
+     "estimatedWorkers": 14610
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4153000,
+     "estimatedWorkers": 17760
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4338600,
+     "estimatedWorkers": 26620
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4624100,
+     "estimatedWorkers": 34490
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4699500,
+     "estimatedWorkers": 41300
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4714500,
+     "estimatedWorkers": 29640
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4810300,
+     "estimatedWorkers": 25020
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4300700,
+     "estimatedWorkers": 19880
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4010200,
+     "estimatedWorkers": 6960
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3970800,
+     "estimatedWorkers": 2800
+    }
+   ]
+  },
+  {
+   "classificationCode": "1173",
+   "classificationName": "法務従事者",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2842700,
+     "estimatedWorkers": 10
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4913400,
+     "estimatedWorkers": 450
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5738900,
+     "estimatedWorkers": 1080
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7429800,
+     "estimatedWorkers": 960
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 13910400,
+     "estimatedWorkers": 730
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8706700,
+     "estimatedWorkers": 1350
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 10167300,
+     "estimatedWorkers": 1080
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 13785400,
+     "estimatedWorkers": 500
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 16776400,
+     "estimatedWorkers": 560
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 10966500,
+     "estimatedWorkers": 250
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 13549600,
+     "estimatedWorkers": 250
+    }
+   ]
+  },
+  {
+   "classificationCode": "1181",
+   "classificationName": "公認会計士，税理士",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2520000,
+     "estimatedWorkers": 0
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4819600,
+     "estimatedWorkers": 1440
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 6029800,
+     "estimatedWorkers": 3730
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6824700,
+     "estimatedWorkers": 3000
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7672200,
+     "estimatedWorkers": 4270
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8907300,
+     "estimatedWorkers": 3670
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 9958400,
+     "estimatedWorkers": 3260
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 9089800,
+     "estimatedWorkers": 3250
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 12476600,
+     "estimatedWorkers": 2010
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6765100,
+     "estimatedWorkers": 1080
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6075400,
+     "estimatedWorkers": 450
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 7349600,
+     "estimatedWorkers": 490
+    }
+   ]
+  },
+  {
+   "classificationCode": "1189",
+   "classificationName": "その他の経営・金融・保険専門職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2415600,
+     "estimatedWorkers": 10
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 5586800,
+     "estimatedWorkers": 4980
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 6656900,
+     "estimatedWorkers": 12740
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 10144400,
+     "estimatedWorkers": 9300
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 11194400,
+     "estimatedWorkers": 8430
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 11480300,
+     "estimatedWorkers": 7750
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 20051500,
+     "estimatedWorkers": 7080
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 13925000,
+     "estimatedWorkers": 5110
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 17663200,
+     "estimatedWorkers": 4070
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 11515300,
+     "estimatedWorkers": 3380
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 7630300,
+     "estimatedWorkers": 280
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5190000,
+     "estimatedWorkers": 20
+    }
+   ]
+  },
+  {
+   "classificationCode": "1191",
+   "classificationName": "幼稚園教員，保育教諭",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3509900,
+     "estimatedWorkers": 33540
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4064600,
+     "estimatedWorkers": 31110
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4250700,
+     "estimatedWorkers": 20470
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4429300,
+     "estimatedWorkers": 18480
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4660500,
+     "estimatedWorkers": 18890
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4807100,
+     "estimatedWorkers": 18520
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5018800,
+     "estimatedWorkers": 17330
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5215900,
+     "estimatedWorkers": 11650
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5344200,
+     "estimatedWorkers": 8830
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5463800,
+     "estimatedWorkers": 3760
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5345200,
+     "estimatedWorkers": 2790
+    }
+   ]
+  },
+  {
+   "classificationCode": "1192",
+   "classificationName": "小・中学校教員",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3765500,
+     "estimatedWorkers": 1170
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4860600,
+     "estimatedWorkers": 3910
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6005000,
+     "estimatedWorkers": 3320
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7176000,
+     "estimatedWorkers": 3390
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8143000,
+     "estimatedWorkers": 2970
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8577700,
+     "estimatedWorkers": 3210
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8956300,
+     "estimatedWorkers": 2550
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 9880500,
+     "estimatedWorkers": 2690
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 8696000,
+     "estimatedWorkers": 1630
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6176000,
+     "estimatedWorkers": 290
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5055700,
+     "estimatedWorkers": 10
+    }
+   ]
+  },
+  {
+   "classificationCode": "1194",
+   "classificationName": "高等学校教員",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3615000,
+     "estimatedWorkers": 4660
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4524000,
+     "estimatedWorkers": 8440
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5422900,
+     "estimatedWorkers": 9520
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6467600,
+     "estimatedWorkers": 9950
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7076800,
+     "estimatedWorkers": 9440
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7725700,
+     "estimatedWorkers": 9820
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7999000,
+     "estimatedWorkers": 9180
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 8639600,
+     "estimatedWorkers": 8430
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7362100,
+     "estimatedWorkers": 7380
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5650300,
+     "estimatedWorkers": 1850
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4924900,
+     "estimatedWorkers": 380
+    }
+   ]
+  },
+  {
+   "classificationCode": "1196",
+   "classificationName": "大学教授（高専含む）",
+   "bands": [
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4752000,
+     "estimatedWorkers": 170
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5593700,
+     "estimatedWorkers": 260
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 8476900,
+     "estimatedWorkers": 890
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 9474100,
+     "estimatedWorkers": 2350
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 10485600,
+     "estimatedWorkers": 6750
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 11296600,
+     "estimatedWorkers": 14050
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 11206200,
+     "estimatedWorkers": 15990
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 11134800,
+     "estimatedWorkers": 19650
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 9890000,
+     "estimatedWorkers": 7800
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 9776000,
+     "estimatedWorkers": 1470
+    }
+   ]
+  },
+  {
+   "classificationCode": "1199",
+   "classificationName": "その他の教員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2301600,
+     "estimatedWorkers": 20
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3265900,
+     "estimatedWorkers": 3350
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3908500,
+     "estimatedWorkers": 6130
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4421500,
+     "estimatedWorkers": 7920
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4883800,
+     "estimatedWorkers": 7450
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5228400,
+     "estimatedWorkers": 8050
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5685900,
+     "estimatedWorkers": 10210
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5898900,
+     "estimatedWorkers": 11090
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5980800,
+     "estimatedWorkers": 8600
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4691800,
+     "estimatedWorkers": 6490
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3873400,
+     "estimatedWorkers": 3320
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3562600,
+     "estimatedWorkers": 1110
+    }
+   ]
+  },
+  {
+   "classificationCode": "1211",
+   "classificationName": "著述家，記者，編集者",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4261800,
+     "estimatedWorkers": 2290
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4504500,
+     "estimatedWorkers": 7510
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5269300,
+     "estimatedWorkers": 6460
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7029600,
+     "estimatedWorkers": 3970
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7513200,
+     "estimatedWorkers": 5260
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8404800,
+     "estimatedWorkers": 6430
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8431600,
+     "estimatedWorkers": 5380
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 9353000,
+     "estimatedWorkers": 3770
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5764000,
+     "estimatedWorkers": 2320
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4560100,
+     "estimatedWorkers": 290
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2840200,
+     "estimatedWorkers": 90
+    }
+   ]
+  },
+  {
+   "classificationCode": "1221",
+   "classificationName": "美術家，写真家，映像撮影者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2547700,
+     "estimatedWorkers": 170
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3674000,
+     "estimatedWorkers": 1640
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3976900,
+     "estimatedWorkers": 3680
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4294500,
+     "estimatedWorkers": 2030
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4831100,
+     "estimatedWorkers": 940
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5913400,
+     "estimatedWorkers": 2360
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5867500,
+     "estimatedWorkers": 1590
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6399100,
+     "estimatedWorkers": 1890
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6032300,
+     "estimatedWorkers": 1700
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3503700,
+     "estimatedWorkers": 600
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3858500,
+     "estimatedWorkers": 120
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3765600,
+     "estimatedWorkers": 220
+    }
+   ]
+  },
+  {
+   "classificationCode": "1224",
+   "classificationName": "デザイナー",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2644800,
+     "estimatedWorkers": 0
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3448900,
+     "estimatedWorkers": 8030
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4144900,
+     "estimatedWorkers": 13920
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5345900,
+     "estimatedWorkers": 12540
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5648200,
+     "estimatedWorkers": 14310
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6178700,
+     "estimatedWorkers": 14080
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6022300,
+     "estimatedWorkers": 14290
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6307100,
+     "estimatedWorkers": 7550
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6468500,
+     "estimatedWorkers": 4350
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4796100,
+     "estimatedWorkers": 2050
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4976400,
+     "estimatedWorkers": 290
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2382400,
+     "estimatedWorkers": 40
+    }
+   ]
+  },
+  {
+   "classificationCode": "1231",
+   "classificationName": "音楽家，舞台芸術家",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2574900,
+     "estimatedWorkers": 30
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3450300,
+     "estimatedWorkers": 5530
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4026400,
+     "estimatedWorkers": 5810
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4738500,
+     "estimatedWorkers": 4540
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6886600,
+     "estimatedWorkers": 3490
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6981600,
+     "estimatedWorkers": 3120
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7226900,
+     "estimatedWorkers": 3670
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7034500,
+     "estimatedWorkers": 2910
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6770600,
+     "estimatedWorkers": 1440
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4883400,
+     "estimatedWorkers": 910
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4140400,
+     "estimatedWorkers": 120
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 8346300,
+     "estimatedWorkers": 80
+    }
+   ]
+  },
+  {
+   "classificationCode": "1244",
+   "classificationName": "個人教師",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2481000,
+     "estimatedWorkers": 50
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3313600,
+     "estimatedWorkers": 4440
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4089600,
+     "estimatedWorkers": 6080
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4390800,
+     "estimatedWorkers": 4300
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4574300,
+     "estimatedWorkers": 4520
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4722500,
+     "estimatedWorkers": 4120
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5056800,
+     "estimatedWorkers": 4100
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5032000,
+     "estimatedWorkers": 2870
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5049000,
+     "estimatedWorkers": 1520
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4305500,
+     "estimatedWorkers": 1010
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4411500,
+     "estimatedWorkers": 370
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4465200,
+     "estimatedWorkers": 100
+    }
+   ]
+  },
+  {
+   "classificationCode": "1249",
+   "classificationName": "他に分類されない専門的職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2677800,
+     "estimatedWorkers": 270
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3600200,
+     "estimatedWorkers": 13970
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4663100,
+     "estimatedWorkers": 20530
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6568800,
+     "estimatedWorkers": 23210
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6178500,
+     "estimatedWorkers": 17080
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6409000,
+     "estimatedWorkers": 16360
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6317700,
+     "estimatedWorkers": 15890
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6855400,
+     "estimatedWorkers": 17650
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6939900,
+     "estimatedWorkers": 13440
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5058900,
+     "estimatedWorkers": 9800
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3892100,
+     "estimatedWorkers": 3620
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3997100,
+     "estimatedWorkers": 1300
+    }
+   ]
+  },
+  {
+   "classificationCode": "1251",
+   "classificationName": "庶務・人事事務員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2571300,
+     "estimatedWorkers": 3250
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3521500,
+     "estimatedWorkers": 37630
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4456900,
+     "estimatedWorkers": 83540
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5054000,
+     "estimatedWorkers": 80040
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5402100,
+     "estimatedWorkers": 79930
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5551900,
+     "estimatedWorkers": 85050
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5446100,
+     "estimatedWorkers": 110750
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5990000,
+     "estimatedWorkers": 119320
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6011400,
+     "estimatedWorkers": 92770
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4831400,
+     "estimatedWorkers": 72610
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4054400,
+     "estimatedWorkers": 15870
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3666800,
+     "estimatedWorkers": 7150
+    }
+   ]
+  },
+  {
+   "classificationCode": "1253",
+   "classificationName": "企画事務員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2758600,
+     "estimatedWorkers": 310
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4082600,
+     "estimatedWorkers": 21540
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5300100,
+     "estimatedWorkers": 61840
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6444400,
+     "estimatedWorkers": 72600
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7096900,
+     "estimatedWorkers": 59250
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7460700,
+     "estimatedWorkers": 59360
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7890300,
+     "estimatedWorkers": 53520
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 9224400,
+     "estimatedWorkers": 67660
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 9568500,
+     "estimatedWorkers": 59680
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7447000,
+     "estimatedWorkers": 31580
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 6094100,
+     "estimatedWorkers": 4190
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4461200,
+     "estimatedWorkers": 1410
+    }
+   ]
+  },
+  {
+   "classificationCode": "1254",
+   "classificationName": "受付・案内事務員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2420300,
+     "estimatedWorkers": 510
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3133200,
+     "estimatedWorkers": 6870
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3524900,
+     "estimatedWorkers": 13440
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3374400,
+     "estimatedWorkers": 11710
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3728200,
+     "estimatedWorkers": 8980
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3675000,
+     "estimatedWorkers": 12460
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3513100,
+     "estimatedWorkers": 17070
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3822700,
+     "estimatedWorkers": 11840
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3917700,
+     "estimatedWorkers": 9500
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3308700,
+     "estimatedWorkers": 5530
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2586400,
+     "estimatedWorkers": 2920
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2430800,
+     "estimatedWorkers": 720
+    }
+   ]
+  },
+  {
+   "classificationCode": "1255",
+   "classificationName": "秘書",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3764800,
+     "estimatedWorkers": 280
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4787600,
+     "estimatedWorkers": 2070
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5475200,
+     "estimatedWorkers": 1230
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4954100,
+     "estimatedWorkers": 2360
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5190700,
+     "estimatedWorkers": 1750
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6382900,
+     "estimatedWorkers": 2490
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7254500,
+     "estimatedWorkers": 2360
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7234700,
+     "estimatedWorkers": 1940
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6263100,
+     "estimatedWorkers": 1030
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4411500,
+     "estimatedWorkers": 140
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5922700,
+     "estimatedWorkers": 640
+    }
+   ]
+  },
+  {
+   "classificationCode": "1256",
+   "classificationName": "電話応接事務員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2488400,
+     "estimatedWorkers": 290
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3110200,
+     "estimatedWorkers": 10470
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3763900,
+     "estimatedWorkers": 21470
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3914900,
+     "estimatedWorkers": 29160
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3909100,
+     "estimatedWorkers": 23310
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4344000,
+     "estimatedWorkers": 27380
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4448000,
+     "estimatedWorkers": 25350
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4597200,
+     "estimatedWorkers": 26870
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4322900,
+     "estimatedWorkers": 21450
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3582700,
+     "estimatedWorkers": 17390
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3330200,
+     "estimatedWorkers": 2350
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3134200,
+     "estimatedWorkers": 1210
+    }
+   ]
+  },
+  {
+   "classificationCode": "1257",
+   "classificationName": "総合事務員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2587800,
+     "estimatedWorkers": 5200
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3622500,
+     "estimatedWorkers": 72870
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4583000,
+     "estimatedWorkers": 130840
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5226300,
+     "estimatedWorkers": 129150
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5684300,
+     "estimatedWorkers": 128670
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5894300,
+     "estimatedWorkers": 148140
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5847500,
+     "estimatedWorkers": 180030
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5918700,
+     "estimatedWorkers": 193190
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6151800,
+     "estimatedWorkers": 149600
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4882000,
+     "estimatedWorkers": 101820
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3894300,
+     "estimatedWorkers": 27920
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3571200,
+     "estimatedWorkers": 9590
+    }
+   ]
+  },
+  {
+   "classificationCode": "1259",
+   "classificationName": "その他の一般事務従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2737400,
+     "estimatedWorkers": 1980
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3520200,
+     "estimatedWorkers": 53900
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4499300,
+     "estimatedWorkers": 107380
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4861500,
+     "estimatedWorkers": 101300
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5607500,
+     "estimatedWorkers": 99640
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5847800,
+     "estimatedWorkers": 122720
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5584300,
+     "estimatedWorkers": 124720
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5778000,
+     "estimatedWorkers": 128300
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6064000,
+     "estimatedWorkers": 111380
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4866900,
+     "estimatedWorkers": 76560
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4194900,
+     "estimatedWorkers": 19540
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3454200,
+     "estimatedWorkers": 3240
+    }
+   ]
+  },
+  {
+   "classificationCode": "1261",
+   "classificationName": "会計事務従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2600500,
+     "estimatedWorkers": 3120
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3531600,
+     "estimatedWorkers": 34850
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4240300,
+     "estimatedWorkers": 46460
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4843700,
+     "estimatedWorkers": 48270
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5364300,
+     "estimatedWorkers": 47450
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5402100,
+     "estimatedWorkers": 51950
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5665400,
+     "estimatedWorkers": 62920
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5673000,
+     "estimatedWorkers": 68410
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5974800,
+     "estimatedWorkers": 55100
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4805500,
+     "estimatedWorkers": 32550
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4064600,
+     "estimatedWorkers": 10500
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3875600,
+     "estimatedWorkers": 4440
+    }
+   ]
+  },
+  {
+   "classificationCode": "1271",
+   "classificationName": "生産関連事務従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2817900,
+     "estimatedWorkers": 3890
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3764500,
+     "estimatedWorkers": 24440
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4314200,
+     "estimatedWorkers": 35590
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4810700,
+     "estimatedWorkers": 39300
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5528500,
+     "estimatedWorkers": 49600
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5661000,
+     "estimatedWorkers": 58320
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5946700,
+     "estimatedWorkers": 68160
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6073200,
+     "estimatedWorkers": 78560
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6306800,
+     "estimatedWorkers": 64990
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4951700,
+     "estimatedWorkers": 43130
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3773000,
+     "estimatedWorkers": 10230
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3174100,
+     "estimatedWorkers": 2620
+    }
+   ]
+  },
+  {
+   "classificationCode": "1281",
+   "classificationName": "営業・販売事務従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2751700,
+     "estimatedWorkers": 2760
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3603500,
+     "estimatedWorkers": 56540
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4387200,
+     "estimatedWorkers": 120980
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5017600,
+     "estimatedWorkers": 106720
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5395500,
+     "estimatedWorkers": 100920
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5777600,
+     "estimatedWorkers": 109250
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5567500,
+     "estimatedWorkers": 111460
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5855800,
+     "estimatedWorkers": 135230
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6201600,
+     "estimatedWorkers": 97470
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4827900,
+     "estimatedWorkers": 66970
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4506700,
+     "estimatedWorkers": 17390
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3340600,
+     "estimatedWorkers": 5330
+    }
+   ]
+  },
+  {
+   "classificationCode": "1291",
+   "classificationName": "外勤事務従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2792500,
+     "estimatedWorkers": 30
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3110700,
+     "estimatedWorkers": 440
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4771400,
+     "estimatedWorkers": 600
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6181100,
+     "estimatedWorkers": 610
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6762600,
+     "estimatedWorkers": 1120
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7216400,
+     "estimatedWorkers": 880
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6350000,
+     "estimatedWorkers": 1920
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5929900,
+     "estimatedWorkers": 2530
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4900100,
+     "estimatedWorkers": 2190
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4309100,
+     "estimatedWorkers": 2000
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3149000,
+     "estimatedWorkers": 430
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2610300,
+     "estimatedWorkers": 60
+    }
+   ]
+  },
+  {
+   "classificationCode": "1301",
+   "classificationName": "運輸・郵便事務従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3023100,
+     "estimatedWorkers": 1020
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3532200,
+     "estimatedWorkers": 9520
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4317500,
+     "estimatedWorkers": 14190
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4991400,
+     "estimatedWorkers": 13040
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5548400,
+     "estimatedWorkers": 21030
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6097300,
+     "estimatedWorkers": 20490
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5928000,
+     "estimatedWorkers": 26220
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6720400,
+     "estimatedWorkers": 43820
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6965400,
+     "estimatedWorkers": 44700
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5397900,
+     "estimatedWorkers": 25470
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3385800,
+     "estimatedWorkers": 10020
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3138900,
+     "estimatedWorkers": 2560
+    }
+   ]
+  },
+  {
+   "classificationCode": "1311",
+   "classificationName": "事務用機器操作員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2316900,
+     "estimatedWorkers": 190
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2974300,
+     "estimatedWorkers": 3490
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3385900,
+     "estimatedWorkers": 5500
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3739000,
+     "estimatedWorkers": 7170
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3824100,
+     "estimatedWorkers": 5580
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4500900,
+     "estimatedWorkers": 5950
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5123400,
+     "estimatedWorkers": 9610
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4989500,
+     "estimatedWorkers": 7380
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4440200,
+     "estimatedWorkers": 5210
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4928600,
+     "estimatedWorkers": 3990
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3014500,
+     "estimatedWorkers": 1040
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3501200,
+     "estimatedWorkers": 50
+    }
+   ]
+  },
+  {
+   "classificationCode": "1321",
+   "classificationName": "販売店員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2562400,
+     "estimatedWorkers": 9280
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3251200,
+     "estimatedWorkers": 105290
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3672400,
+     "estimatedWorkers": 138600
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3871300,
+     "estimatedWorkers": 127000
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4019200,
+     "estimatedWorkers": 122860
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4276000,
+     "estimatedWorkers": 135290
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4284100,
+     "estimatedWorkers": 144510
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4172500,
+     "estimatedWorkers": 167390
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3927600,
+     "estimatedWorkers": 130120
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3292800,
+     "estimatedWorkers": 88130
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2788900,
+     "estimatedWorkers": 40610
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2659200,
+     "estimatedWorkers": 15400
+    }
+   ]
+  },
+  {
+   "classificationCode": "1324",
+   "classificationName": "その他の商品販売従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2756200,
+     "estimatedWorkers": 130
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3843200,
+     "estimatedWorkers": 7740
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4547800,
+     "estimatedWorkers": 16950
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5473600,
+     "estimatedWorkers": 16560
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5846500,
+     "estimatedWorkers": 18720
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5913300,
+     "estimatedWorkers": 15990
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6209300,
+     "estimatedWorkers": 14900
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6499800,
+     "estimatedWorkers": 15360
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6086100,
+     "estimatedWorkers": 12000
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5121800,
+     "estimatedWorkers": 6780
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4257600,
+     "estimatedWorkers": 2300
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3522800,
+     "estimatedWorkers": 580
+    }
+   ]
+  },
+  {
+   "classificationCode": "1331",
+   "classificationName": "販売類似職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2544100,
+     "estimatedWorkers": 70
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4018300,
+     "estimatedWorkers": 9210
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5513300,
+     "estimatedWorkers": 15090
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6627700,
+     "estimatedWorkers": 13690
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7375300,
+     "estimatedWorkers": 8720
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8413800,
+     "estimatedWorkers": 9080
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7959200,
+     "estimatedWorkers": 10320
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7803200,
+     "estimatedWorkers": 8990
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7676800,
+     "estimatedWorkers": 6010
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5661100,
+     "estimatedWorkers": 4980
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4193000,
+     "estimatedWorkers": 1850
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4515100,
+     "estimatedWorkers": 630
+    }
+   ]
+  },
+  {
+   "classificationCode": "1344",
+   "classificationName": "自動車営業職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2353000,
+     "estimatedWorkers": 180
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3854500,
+     "estimatedWorkers": 13290
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4911500,
+     "estimatedWorkers": 17630
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5599900,
+     "estimatedWorkers": 12680
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6392300,
+     "estimatedWorkers": 12700
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6537000,
+     "estimatedWorkers": 14430
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7191900,
+     "estimatedWorkers": 12370
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6880000,
+     "estimatedWorkers": 12200
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6848000,
+     "estimatedWorkers": 8100
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4934100,
+     "estimatedWorkers": 4610
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4275000,
+     "estimatedWorkers": 1160
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3983600,
+     "estimatedWorkers": 180
+    }
+   ]
+  },
+  {
+   "classificationCode": "1345",
+   "classificationName": "機械器具・通信・システム営業職業従事者（自動車を除く）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2692700,
+     "estimatedWorkers": 200
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4038000,
+     "estimatedWorkers": 15970
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5088500,
+     "estimatedWorkers": 32740
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5863300,
+     "estimatedWorkers": 32370
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6670600,
+     "estimatedWorkers": 27910
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7315900,
+     "estimatedWorkers": 24920
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7815600,
+     "estimatedWorkers": 29630
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7914100,
+     "estimatedWorkers": 31540
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 8195500,
+     "estimatedWorkers": 21990
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5969700,
+     "estimatedWorkers": 14210
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4809200,
+     "estimatedWorkers": 3570
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3495700,
+     "estimatedWorkers": 1090
+    }
+   ]
+  },
+  {
+   "classificationCode": "1346",
+   "classificationName": "金融営業職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2688400,
+     "estimatedWorkers": 410
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4129200,
+     "estimatedWorkers": 22460
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5611000,
+     "estimatedWorkers": 33350
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 7019300,
+     "estimatedWorkers": 24120
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 8029300,
+     "estimatedWorkers": 17890
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8271500,
+     "estimatedWorkers": 16480
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8737500,
+     "estimatedWorkers": 10850
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8178600,
+     "estimatedWorkers": 11760
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7975200,
+     "estimatedWorkers": 10000
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5659700,
+     "estimatedWorkers": 5630
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4756100,
+     "estimatedWorkers": 570
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4607800,
+     "estimatedWorkers": 90
+    }
+   ]
+  },
+  {
+   "classificationCode": "1347",
+   "classificationName": "保険営業職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2405500,
+     "estimatedWorkers": 20
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3357900,
+     "estimatedWorkers": 10380
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3922200,
+     "estimatedWorkers": 21240
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4380800,
+     "estimatedWorkers": 22690
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5109100,
+     "estimatedWorkers": 29300
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5086600,
+     "estimatedWorkers": 27860
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6151100,
+     "estimatedWorkers": 28290
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6230600,
+     "estimatedWorkers": 31150
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6331500,
+     "estimatedWorkers": 30460
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6129000,
+     "estimatedWorkers": 26400
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5590100,
+     "estimatedWorkers": 12580
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 5026100,
+     "estimatedWorkers": 7250
+    }
+   ]
+  },
+  {
+   "classificationCode": "1349",
+   "classificationName": "その他の営業職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3116000,
+     "estimatedWorkers": 600
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3817700,
+     "estimatedWorkers": 68950
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5129900,
+     "estimatedWorkers": 131990
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5966900,
+     "estimatedWorkers": 111450
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6468000,
+     "estimatedWorkers": 102700
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7200400,
+     "estimatedWorkers": 99060
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7452300,
+     "estimatedWorkers": 97760
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8300800,
+     "estimatedWorkers": 114350
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 8718600,
+     "estimatedWorkers": 95760
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6350800,
+     "estimatedWorkers": 64210
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4340600,
+     "estimatedWorkers": 15220
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4474700,
+     "estimatedWorkers": 5360
+    }
+   ]
+  },
+  {
+   "classificationCode": "1361",
+   "classificationName": "介護職員（医療・福祉施設等）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2504800,
+     "estimatedWorkers": 6450
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3162600,
+     "estimatedWorkers": 68310
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3575900,
+     "estimatedWorkers": 101230
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3842000,
+     "estimatedWorkers": 108540
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4143500,
+     "estimatedWorkers": 120910
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4142100,
+     "estimatedWorkers": 149080
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4138700,
+     "estimatedWorkers": 160280
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4163600,
+     "estimatedWorkers": 163670
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3942900,
+     "estimatedWorkers": 123200
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3660300,
+     "estimatedWorkers": 100600
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3146000,
+     "estimatedWorkers": 40870
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2916100,
+     "estimatedWorkers": 22780
+    }
+   ]
+  },
+  {
+   "classificationCode": "1362",
+   "classificationName": "訪問介護従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2543200,
+     "estimatedWorkers": 140
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2872100,
+     "estimatedWorkers": 880
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3531300,
+     "estimatedWorkers": 2490
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3696400,
+     "estimatedWorkers": 5670
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3728200,
+     "estimatedWorkers": 4820
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4070800,
+     "estimatedWorkers": 9510
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3814900,
+     "estimatedWorkers": 12330
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3959600,
+     "estimatedWorkers": 14620
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3991400,
+     "estimatedWorkers": 12980
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3721500,
+     "estimatedWorkers": 10730
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3673700,
+     "estimatedWorkers": 7570
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3088200,
+     "estimatedWorkers": 2180
+    }
+   ]
+  },
+  {
+   "classificationCode": "1371",
+   "classificationName": "看護助手",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2311000,
+     "estimatedWorkers": 240
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2776200,
+     "estimatedWorkers": 6150
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3149200,
+     "estimatedWorkers": 6310
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3271500,
+     "estimatedWorkers": 6210
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3213200,
+     "estimatedWorkers": 7860
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3880100,
+     "estimatedWorkers": 10120
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3684500,
+     "estimatedWorkers": 16280
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3578700,
+     "estimatedWorkers": 15460
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3425700,
+     "estimatedWorkers": 17660
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3129300,
+     "estimatedWorkers": 15520
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2959800,
+     "estimatedWorkers": 4570
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2629900,
+     "estimatedWorkers": 2220
+    }
+   ]
+  },
+  {
+   "classificationCode": "1379",
+   "classificationName": "その他の保健医療サービス職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2424800,
+     "estimatedWorkers": 220
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2924500,
+     "estimatedWorkers": 4290
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3359600,
+     "estimatedWorkers": 7190
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3559900,
+     "estimatedWorkers": 4370
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3905100,
+     "estimatedWorkers": 2310
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3807000,
+     "estimatedWorkers": 3690
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3780600,
+     "estimatedWorkers": 3850
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3833800,
+     "estimatedWorkers": 3260
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3389100,
+     "estimatedWorkers": 1440
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3762900,
+     "estimatedWorkers": 1310
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2707700,
+     "estimatedWorkers": 380
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2328000,
+     "estimatedWorkers": 30
+    }
+   ]
+  },
+  {
+   "classificationCode": "1381",
+   "classificationName": "理容・美容師",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2564000,
+     "estimatedWorkers": 580
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2854400,
+     "estimatedWorkers": 21230
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4253300,
+     "estimatedWorkers": 11520
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5045600,
+     "estimatedWorkers": 3870
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5155200,
+     "estimatedWorkers": 3670
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5102600,
+     "estimatedWorkers": 2920
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5571100,
+     "estimatedWorkers": 2650
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4242500,
+     "estimatedWorkers": 1700
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4587500,
+     "estimatedWorkers": 710
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4156600,
+     "estimatedWorkers": 600
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3695800,
+     "estimatedWorkers": 110
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3700300,
+     "estimatedWorkers": 90
+    }
+   ]
+  },
+  {
+   "classificationCode": "1383",
+   "classificationName": "美容サービス・浴場従事者（美容師を除く）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3073300,
+     "estimatedWorkers": 510
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3074800,
+     "estimatedWorkers": 6680
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3442600,
+     "estimatedWorkers": 3880
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3538900,
+     "estimatedWorkers": 2100
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3920600,
+     "estimatedWorkers": 1950
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4309500,
+     "estimatedWorkers": 1550
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4000900,
+     "estimatedWorkers": 2100
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4351400,
+     "estimatedWorkers": 1940
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4187100,
+     "estimatedWorkers": 1650
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3374100,
+     "estimatedWorkers": 1710
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2225000,
+     "estimatedWorkers": 670
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2144400,
+     "estimatedWorkers": 490
+    }
+   ]
+  },
+  {
+   "classificationCode": "1385",
+   "classificationName": "クリーニング職，洗張職",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2341100,
+     "estimatedWorkers": 250
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2493200,
+     "estimatedWorkers": 2310
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 2627900,
+     "estimatedWorkers": 2270
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 2855700,
+     "estimatedWorkers": 2190
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3101700,
+     "estimatedWorkers": 2560
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3290600,
+     "estimatedWorkers": 2520
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3479300,
+     "estimatedWorkers": 3210
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3141900,
+     "estimatedWorkers": 4730
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3213000,
+     "estimatedWorkers": 3930
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 2912100,
+     "estimatedWorkers": 2840
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2526100,
+     "estimatedWorkers": 2260
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2518500,
+     "estimatedWorkers": 1510
+    }
+   ]
+  },
+  {
+   "classificationCode": "1391",
+   "classificationName": "飲食物調理従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2786000,
+     "estimatedWorkers": 4400
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3157600,
+     "estimatedWorkers": 44490
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3594200,
+     "estimatedWorkers": 44690
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3836700,
+     "estimatedWorkers": 36310
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3990700,
+     "estimatedWorkers": 38070
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4159600,
+     "estimatedWorkers": 42740
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4396200,
+     "estimatedWorkers": 48770
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4163300,
+     "estimatedWorkers": 60990
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3976700,
+     "estimatedWorkers": 46450
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3555600,
+     "estimatedWorkers": 35420
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3035100,
+     "estimatedWorkers": 21180
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2519900,
+     "estimatedWorkers": 15820
+    }
+   ]
+  },
+  {
+   "classificationCode": "1403",
+   "classificationName": "飲食物給仕従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2625800,
+     "estimatedWorkers": 4160
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3113500,
+     "estimatedWorkers": 28860
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3561400,
+     "estimatedWorkers": 26190
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3659800,
+     "estimatedWorkers": 18610
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3992600,
+     "estimatedWorkers": 17640
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4140600,
+     "estimatedWorkers": 20490
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4303500,
+     "estimatedWorkers": 22480
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4092900,
+     "estimatedWorkers": 23110
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3984000,
+     "estimatedWorkers": 16040
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3429100,
+     "estimatedWorkers": 11040
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2682200,
+     "estimatedWorkers": 5730
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2425200,
+     "estimatedWorkers": 3770
+    }
+   ]
+  },
+  {
+   "classificationCode": "1404",
+   "classificationName": "航空機客室乗務員",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3338800,
+     "estimatedWorkers": 2520
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4789700,
+     "estimatedWorkers": 3880
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5660800,
+     "estimatedWorkers": 1840
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7691100,
+     "estimatedWorkers": 750
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7792500,
+     "estimatedWorkers": 470
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8924700,
+     "estimatedWorkers": 450
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 9806700,
+     "estimatedWorkers": 950
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 10576500,
+     "estimatedWorkers": 380
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 7752900,
+     "estimatedWorkers": 40
+    }
+   ]
+  },
+  {
+   "classificationCode": "1405",
+   "classificationName": "身の回り世話従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2740800,
+     "estimatedWorkers": 2120
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3104900,
+     "estimatedWorkers": 12570
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3478700,
+     "estimatedWorkers": 11740
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3735700,
+     "estimatedWorkers": 7660
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3691600,
+     "estimatedWorkers": 7130
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4119000,
+     "estimatedWorkers": 6950
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4157900,
+     "estimatedWorkers": 8580
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4253400,
+     "estimatedWorkers": 8600
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3766100,
+     "estimatedWorkers": 7900
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3438900,
+     "estimatedWorkers": 6040
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2932600,
+     "estimatedWorkers": 3650
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2781600,
+     "estimatedWorkers": 2580
+    }
+   ]
+  },
+  {
+   "classificationCode": "1406",
+   "classificationName": "娯楽場等接客員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2656700,
+     "estimatedWorkers": 1690
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3074300,
+     "estimatedWorkers": 19490
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3457700,
+     "estimatedWorkers": 22390
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3603300,
+     "estimatedWorkers": 21990
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4148600,
+     "estimatedWorkers": 21660
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4302100,
+     "estimatedWorkers": 23480
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4548700,
+     "estimatedWorkers": 19090
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4422900,
+     "estimatedWorkers": 16190
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4479100,
+     "estimatedWorkers": 10570
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3863300,
+     "estimatedWorkers": 9080
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2923300,
+     "estimatedWorkers": 3810
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2624200,
+     "estimatedWorkers": 2430
+    }
+   ]
+  },
+  {
+   "classificationCode": "1411",
+   "classificationName": "居住施設・ビル等管理人",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3153600,
+     "estimatedWorkers": 240
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3667200,
+     "estimatedWorkers": 1000
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4806000,
+     "estimatedWorkers": 2350
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5051200,
+     "estimatedWorkers": 1900
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5838700,
+     "estimatedWorkers": 1630
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5552600,
+     "estimatedWorkers": 2360
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6008000,
+     "estimatedWorkers": 2570
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5017200,
+     "estimatedWorkers": 3430
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3962700,
+     "estimatedWorkers": 4320
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3011700,
+     "estimatedWorkers": 4970
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2739200,
+     "estimatedWorkers": 8770
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2449800,
+     "estimatedWorkers": 10060
+    }
+   ]
+  },
+  {
+   "classificationCode": "1421",
+   "classificationName": "その他のサービス職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2731000,
+     "estimatedWorkers": 2670
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3322400,
+     "estimatedWorkers": 25020
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3752700,
+     "estimatedWorkers": 25640
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4215400,
+     "estimatedWorkers": 21590
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4451600,
+     "estimatedWorkers": 18930
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4603300,
+     "estimatedWorkers": 23710
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4554600,
+     "estimatedWorkers": 22470
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4499300,
+     "estimatedWorkers": 28500
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4143000,
+     "estimatedWorkers": 22500
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3418200,
+     "estimatedWorkers": 15670
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3001800,
+     "estimatedWorkers": 9290
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2864300,
+     "estimatedWorkers": 5720
+    }
+   ]
+  },
+  {
+   "classificationCode": "1453",
+   "classificationName": "警備員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3171200,
+     "estimatedWorkers": 950
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3765100,
+     "estimatedWorkers": 8290
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4176600,
+     "estimatedWorkers": 10780
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4341400,
+     "estimatedWorkers": 12750
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4312200,
+     "estimatedWorkers": 13120
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4552300,
+     "estimatedWorkers": 19010
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4315000,
+     "estimatedWorkers": 24600
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4293900,
+     "estimatedWorkers": 29350
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4154000,
+     "estimatedWorkers": 31660
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3475800,
+     "estimatedWorkers": 36420
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2978000,
+     "estimatedWorkers": 26970
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2696000,
+     "estimatedWorkers": 32350
+    }
+   ]
+  },
+  {
+   "classificationCode": "1459",
+   "classificationName": "その他の保安職業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2516400,
+     "estimatedWorkers": 70
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3535400,
+     "estimatedWorkers": 1070
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3734000,
+     "estimatedWorkers": 1700
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4037200,
+     "estimatedWorkers": 2050
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3986700,
+     "estimatedWorkers": 2250
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3960400,
+     "estimatedWorkers": 3660
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3703800,
+     "estimatedWorkers": 4540
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3631000,
+     "estimatedWorkers": 4830
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3635800,
+     "estimatedWorkers": 6470
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3316700,
+     "estimatedWorkers": 7500
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2808000,
+     "estimatedWorkers": 6480
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2632600,
+     "estimatedWorkers": 9490
+    }
+   ]
+  },
+  {
+   "classificationCode": "1461",
+   "classificationName": "農林漁業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2753100,
+     "estimatedWorkers": 230
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2953700,
+     "estimatedWorkers": 2610
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3525500,
+     "estimatedWorkers": 3460
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3873600,
+     "estimatedWorkers": 2600
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3954400,
+     "estimatedWorkers": 2720
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4071400,
+     "estimatedWorkers": 3910
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4071700,
+     "estimatedWorkers": 5660
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3806900,
+     "estimatedWorkers": 5600
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3928200,
+     "estimatedWorkers": 4840
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3220900,
+     "estimatedWorkers": 5540
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2970800,
+     "estimatedWorkers": 3490
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2835800,
+     "estimatedWorkers": 2860
+    }
+   ]
+  },
+  {
+   "classificationCode": "1491",
+   "classificationName": "製銑・製鋼・非鉄金属製錬従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3281900,
+     "estimatedWorkers": 3320
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4297600,
+     "estimatedWorkers": 12060
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4912400,
+     "estimatedWorkers": 12950
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5536000,
+     "estimatedWorkers": 14540
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6164200,
+     "estimatedWorkers": 17020
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6491200,
+     "estimatedWorkers": 18620
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6893700,
+     "estimatedWorkers": 16540
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6795800,
+     "estimatedWorkers": 19530
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6177400,
+     "estimatedWorkers": 12290
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5410600,
+     "estimatedWorkers": 6790
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4156800,
+     "estimatedWorkers": 1900
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3369600,
+     "estimatedWorkers": 1400
+    }
+   ]
+  },
+  {
+   "classificationCode": "1492",
+   "classificationName": "鋳物製造・鍛造従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3017800,
+     "estimatedWorkers": 850
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3835800,
+     "estimatedWorkers": 4170
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4394700,
+     "estimatedWorkers": 5990
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4863700,
+     "estimatedWorkers": 6930
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5266500,
+     "estimatedWorkers": 8040
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5397900,
+     "estimatedWorkers": 6500
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5820100,
+     "estimatedWorkers": 8120
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5864000,
+     "estimatedWorkers": 7590
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5589400,
+     "estimatedWorkers": 6470
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4213400,
+     "estimatedWorkers": 5180
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3767600,
+     "estimatedWorkers": 1090
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2904300,
+     "estimatedWorkers": 310
+    }
+   ]
+  },
+  {
+   "classificationCode": "1493",
+   "classificationName": "金属工作機械作業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2733800,
+     "estimatedWorkers": 2880
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3848400,
+     "estimatedWorkers": 23610
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4182800,
+     "estimatedWorkers": 29110
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4551700,
+     "estimatedWorkers": 30600
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5169700,
+     "estimatedWorkers": 38100
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5146600,
+     "estimatedWorkers": 33310
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5248000,
+     "estimatedWorkers": 41190
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5519700,
+     "estimatedWorkers": 36920
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5305100,
+     "estimatedWorkers": 29900
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4230000,
+     "estimatedWorkers": 16250
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3611800,
+     "estimatedWorkers": 4550
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3159000,
+     "estimatedWorkers": 3610
+    }
+   ]
+  },
+  {
+   "classificationCode": "1494",
+   "classificationName": "金属プレス従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2932300,
+     "estimatedWorkers": 1330
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3369400,
+     "estimatedWorkers": 9140
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3792700,
+     "estimatedWorkers": 10870
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4117400,
+     "estimatedWorkers": 9340
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5091900,
+     "estimatedWorkers": 11190
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5138500,
+     "estimatedWorkers": 12230
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5379200,
+     "estimatedWorkers": 12930
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4971000,
+     "estimatedWorkers": 11380
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4975300,
+     "estimatedWorkers": 11600
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4102800,
+     "estimatedWorkers": 5670
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3236300,
+     "estimatedWorkers": 1980
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4148800,
+     "estimatedWorkers": 820
+    }
+   ]
+  },
+  {
+   "classificationCode": "1495",
+   "classificationName": "鉄工，製缶従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2891000,
+     "estimatedWorkers": 440
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3661800,
+     "estimatedWorkers": 4680
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4215500,
+     "estimatedWorkers": 5700
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4868100,
+     "estimatedWorkers": 6490
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5084100,
+     "estimatedWorkers": 6540
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5784000,
+     "estimatedWorkers": 7370
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5323300,
+     "estimatedWorkers": 7660
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5534600,
+     "estimatedWorkers": 7180
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5801900,
+     "estimatedWorkers": 6260
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4853400,
+     "estimatedWorkers": 2920
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5092300,
+     "estimatedWorkers": 1290
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4366400,
+     "estimatedWorkers": 1480
+    }
+   ]
+  },
+  {
+   "classificationCode": "1496",
+   "classificationName": "板金従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2756200,
+     "estimatedWorkers": 490
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3256900,
+     "estimatedWorkers": 3940
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3598700,
+     "estimatedWorkers": 4740
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3665900,
+     "estimatedWorkers": 5160
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4704100,
+     "estimatedWorkers": 4960
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5151000,
+     "estimatedWorkers": 5010
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5223600,
+     "estimatedWorkers": 6110
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5320600,
+     "estimatedWorkers": 7060
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5207700,
+     "estimatedWorkers": 4380
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4520000,
+     "estimatedWorkers": 2770
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3890900,
+     "estimatedWorkers": 1350
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2956100,
+     "estimatedWorkers": 340
+    }
+   ]
+  },
+  {
+   "classificationCode": "1497",
+   "classificationName": "金属彫刻・表面処理従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2950000,
+     "estimatedWorkers": 550
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3237800,
+     "estimatedWorkers": 5540
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3724600,
+     "estimatedWorkers": 5000
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3994800,
+     "estimatedWorkers": 4670
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5222400,
+     "estimatedWorkers": 5530
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5206700,
+     "estimatedWorkers": 5980
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5129200,
+     "estimatedWorkers": 6070
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5457500,
+     "estimatedWorkers": 6260
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4242000,
+     "estimatedWorkers": 6280
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4290000,
+     "estimatedWorkers": 2590
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3412800,
+     "estimatedWorkers": 1500
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3599200,
+     "estimatedWorkers": 1030
+    }
+   ]
+  },
+  {
+   "classificationCode": "1498",
+   "classificationName": "金属溶接・溶断従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2800300,
+     "estimatedWorkers": 1210
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3273700,
+     "estimatedWorkers": 10730
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3586500,
+     "estimatedWorkers": 10160
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4193000,
+     "estimatedWorkers": 10390
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4776900,
+     "estimatedWorkers": 10560
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5131300,
+     "estimatedWorkers": 10440
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5202300,
+     "estimatedWorkers": 12840
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5391900,
+     "estimatedWorkers": 11780
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5342000,
+     "estimatedWorkers": 7810
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4277900,
+     "estimatedWorkers": 5410
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3739900,
+     "estimatedWorkers": 1970
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3672900,
+     "estimatedWorkers": 970
+    }
+   ]
+  },
+  {
+   "classificationCode": "1499",
+   "classificationName": "その他の製品製造・加工処理従事者（金属製品）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2919200,
+     "estimatedWorkers": 3720
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3894800,
+     "estimatedWorkers": 16640
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4132000,
+     "estimatedWorkers": 20310
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4693900,
+     "estimatedWorkers": 20910
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5018700,
+     "estimatedWorkers": 25850
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5069600,
+     "estimatedWorkers": 28890
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5493500,
+     "estimatedWorkers": 31720
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4880500,
+     "estimatedWorkers": 44400
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4639000,
+     "estimatedWorkers": 34400
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3614800,
+     "estimatedWorkers": 20380
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4409600,
+     "estimatedWorkers": 5160
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2897000,
+     "estimatedWorkers": 3790
+    }
+   ]
+  },
+  {
+   "classificationCode": "1501",
+   "classificationName": "化学製品製造従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3081200,
+     "estimatedWorkers": 5080
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4088300,
+     "estimatedWorkers": 20440
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4626000,
+     "estimatedWorkers": 22690
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5266100,
+     "estimatedWorkers": 23970
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5793900,
+     "estimatedWorkers": 24780
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5849200,
+     "estimatedWorkers": 25140
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6403200,
+     "estimatedWorkers": 24120
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6340600,
+     "estimatedWorkers": 31200
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6367800,
+     "estimatedWorkers": 20220
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4751000,
+     "estimatedWorkers": 11010
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3803800,
+     "estimatedWorkers": 3340
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4330400,
+     "estimatedWorkers": 1050
+    }
+   ]
+  },
+  {
+   "classificationCode": "1502",
+   "classificationName": "窯業・土石製品製造従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2815900,
+     "estimatedWorkers": 2270
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3256200,
+     "estimatedWorkers": 9420
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4105200,
+     "estimatedWorkers": 8750
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4496700,
+     "estimatedWorkers": 9350
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4730400,
+     "estimatedWorkers": 11770
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5132800,
+     "estimatedWorkers": 11180
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5301200,
+     "estimatedWorkers": 12830
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5334500,
+     "estimatedWorkers": 15180
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5464700,
+     "estimatedWorkers": 12310
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4094400,
+     "estimatedWorkers": 8280
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3549400,
+     "estimatedWorkers": 2380
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3172900,
+     "estimatedWorkers": 1200
+    }
+   ]
+  },
+  {
+   "classificationCode": "1503",
+   "classificationName": "食料品・飲料・たばこ製造従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2790400,
+     "estimatedWorkers": 13790
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3198500,
+     "estimatedWorkers": 81510
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3563100,
+     "estimatedWorkers": 82080
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3988000,
+     "estimatedWorkers": 64650
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4228000,
+     "estimatedWorkers": 62040
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4607400,
+     "estimatedWorkers": 71600
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4694000,
+     "estimatedWorkers": 82180
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4482400,
+     "estimatedWorkers": 85600
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4115900,
+     "estimatedWorkers": 67660
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3953400,
+     "estimatedWorkers": 64730
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2764300,
+     "estimatedWorkers": 33340
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2539300,
+     "estimatedWorkers": 16980
+    }
+   ]
+  },
+  {
+   "classificationCode": "1505",
+   "classificationName": "紡織・衣服・繊維製品製造従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2344500,
+     "estimatedWorkers": 1460
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2865800,
+     "estimatedWorkers": 9630
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 2887900,
+     "estimatedWorkers": 9670
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3182800,
+     "estimatedWorkers": 9810
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3227800,
+     "estimatedWorkers": 11340
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3511500,
+     "estimatedWorkers": 10820
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3750700,
+     "estimatedWorkers": 12380
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3524200,
+     "estimatedWorkers": 13430
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3394500,
+     "estimatedWorkers": 13750
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 2973900,
+     "estimatedWorkers": 11090
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2507300,
+     "estimatedWorkers": 6580
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2329300,
+     "estimatedWorkers": 4040
+    }
+   ]
+  },
+  {
+   "classificationCode": "1506",
+   "classificationName": "木・紙製品製造従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2832300,
+     "estimatedWorkers": 2210
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3531600,
+     "estimatedWorkers": 10790
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3890300,
+     "estimatedWorkers": 13820
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4192400,
+     "estimatedWorkers": 15390
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4564000,
+     "estimatedWorkers": 17840
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4747400,
+     "estimatedWorkers": 17520
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4832500,
+     "estimatedWorkers": 23740
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4720000,
+     "estimatedWorkers": 21250
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4670000,
+     "estimatedWorkers": 17480
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3874100,
+     "estimatedWorkers": 12650
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3402600,
+     "estimatedWorkers": 6210
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2955400,
+     "estimatedWorkers": 3050
+    }
+   ]
+  },
+  {
+   "classificationCode": "1507",
+   "classificationName": "印刷・製本従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2886500,
+     "estimatedWorkers": 1110
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3362100,
+     "estimatedWorkers": 7630
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4040400,
+     "estimatedWorkers": 10510
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4299700,
+     "estimatedWorkers": 12020
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4880700,
+     "estimatedWorkers": 13490
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4733200,
+     "estimatedWorkers": 14860
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5076600,
+     "estimatedWorkers": 18310
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5167100,
+     "estimatedWorkers": 22050
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4908300,
+     "estimatedWorkers": 13500
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3801000,
+     "estimatedWorkers": 9900
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2909600,
+     "estimatedWorkers": 1530
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2896700,
+     "estimatedWorkers": 1440
+    }
+   ]
+  },
+  {
+   "classificationCode": "1508",
+   "classificationName": "ゴム・プラスチック製品製造従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2894100,
+     "estimatedWorkers": 4480
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3617900,
+     "estimatedWorkers": 22890
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3929100,
+     "estimatedWorkers": 23540
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4432900,
+     "estimatedWorkers": 24870
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4788700,
+     "estimatedWorkers": 29780
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4962800,
+     "estimatedWorkers": 29850
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5216700,
+     "estimatedWorkers": 34730
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5259000,
+     "estimatedWorkers": 34140
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4950300,
+     "estimatedWorkers": 26310
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3817000,
+     "estimatedWorkers": 17530
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3152500,
+     "estimatedWorkers": 4960
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3099900,
+     "estimatedWorkers": 2030
+    }
+   ]
+  },
+  {
+   "classificationCode": "1509",
+   "classificationName": "その他の製品製造・加工処理従事者（金属製品を除く）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2858100,
+     "estimatedWorkers": 2070
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3365300,
+     "estimatedWorkers": 10850
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3681600,
+     "estimatedWorkers": 14610
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4068700,
+     "estimatedWorkers": 16220
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4410600,
+     "estimatedWorkers": 18390
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4421500,
+     "estimatedWorkers": 18290
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4369500,
+     "estimatedWorkers": 22800
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4431900,
+     "estimatedWorkers": 27350
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4282500,
+     "estimatedWorkers": 19150
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3374600,
+     "estimatedWorkers": 9800
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3064000,
+     "estimatedWorkers": 3120
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2650200,
+     "estimatedWorkers": 1280
+    }
+   ]
+  },
+  {
+   "classificationCode": "1511",
+   "classificationName": "はん用・生産用・業務用機械器具組立従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2842400,
+     "estimatedWorkers": 3010
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3943800,
+     "estimatedWorkers": 12190
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4278300,
+     "estimatedWorkers": 13940
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4698400,
+     "estimatedWorkers": 15760
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5414500,
+     "estimatedWorkers": 15850
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5821500,
+     "estimatedWorkers": 13100
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6124800,
+     "estimatedWorkers": 13890
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6108300,
+     "estimatedWorkers": 16640
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6499900,
+     "estimatedWorkers": 14090
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4568600,
+     "estimatedWorkers": 9650
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3889200,
+     "estimatedWorkers": 2440
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3585200,
+     "estimatedWorkers": 1230
+    }
+   ]
+  },
+  {
+   "classificationCode": "1512",
+   "classificationName": "電気機械器具組立従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2926000,
+     "estimatedWorkers": 7360
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3648000,
+     "estimatedWorkers": 27200
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3981000,
+     "estimatedWorkers": 29330
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4336200,
+     "estimatedWorkers": 32360
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4535900,
+     "estimatedWorkers": 32760
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4685700,
+     "estimatedWorkers": 38670
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4846500,
+     "estimatedWorkers": 44200
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4983800,
+     "estimatedWorkers": 51240
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5001300,
+     "estimatedWorkers": 43160
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3970200,
+     "estimatedWorkers": 30480
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3019300,
+     "estimatedWorkers": 6130
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2635500,
+     "estimatedWorkers": 1750
+    }
+   ]
+  },
+  {
+   "classificationCode": "1513",
+   "classificationName": "自動車組立従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3354300,
+     "estimatedWorkers": 8820
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4323400,
+     "estimatedWorkers": 28760
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4692300,
+     "estimatedWorkers": 36680
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5403800,
+     "estimatedWorkers": 32860
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6234400,
+     "estimatedWorkers": 39380
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6393600,
+     "estimatedWorkers": 37230
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6518500,
+     "estimatedWorkers": 35270
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 7357600,
+     "estimatedWorkers": 40240
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7479200,
+     "estimatedWorkers": 28680
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4814800,
+     "estimatedWorkers": 18140
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3439200,
+     "estimatedWorkers": 1130
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3202100,
+     "estimatedWorkers": 440
+    }
+   ]
+  },
+  {
+   "classificationCode": "1514",
+   "classificationName": "その他の機械組立従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2845900,
+     "estimatedWorkers": 980
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3812700,
+     "estimatedWorkers": 4310
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4450700,
+     "estimatedWorkers": 5210
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4482000,
+     "estimatedWorkers": 6700
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4926000,
+     "estimatedWorkers": 7760
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4887800,
+     "estimatedWorkers": 9350
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4377100,
+     "estimatedWorkers": 8860
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4835000,
+     "estimatedWorkers": 9610
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5035200,
+     "estimatedWorkers": 5990
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4231400,
+     "estimatedWorkers": 3950
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3210600,
+     "estimatedWorkers": 1010
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3927900,
+     "estimatedWorkers": 240
+    }
+   ]
+  },
+  {
+   "classificationCode": "1551",
+   "classificationName": "はん用・生産用・業務用機械器具・電気機械器具整備・修理従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3096200,
+     "estimatedWorkers": 1860
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4115600,
+     "estimatedWorkers": 12470
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4846700,
+     "estimatedWorkers": 14880
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5482400,
+     "estimatedWorkers": 15410
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5778200,
+     "estimatedWorkers": 14790
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6156800,
+     "estimatedWorkers": 15060
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6631200,
+     "estimatedWorkers": 17370
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6800600,
+     "estimatedWorkers": 15430
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6948900,
+     "estimatedWorkers": 13890
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5109900,
+     "estimatedWorkers": 8510
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3739200,
+     "estimatedWorkers": 3440
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3537000,
+     "estimatedWorkers": 2080
+    }
+   ]
+  },
+  {
+   "classificationCode": "1553",
+   "classificationName": "自動車整備・修理従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2858100,
+     "estimatedWorkers": 1580
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3612300,
+     "estimatedWorkers": 24960
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4388500,
+     "estimatedWorkers": 33140
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4917800,
+     "estimatedWorkers": 24630
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5469200,
+     "estimatedWorkers": 24030
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5784000,
+     "estimatedWorkers": 20750
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5934700,
+     "estimatedWorkers": 25210
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5976900,
+     "estimatedWorkers": 23580
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5658500,
+     "estimatedWorkers": 15570
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4562200,
+     "estimatedWorkers": 9040
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3515600,
+     "estimatedWorkers": 5290
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3225200,
+     "estimatedWorkers": 2490
+    }
+   ]
+  },
+  {
+   "classificationCode": "1554",
+   "classificationName": "その他の機械整備・修理従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3039300,
+     "estimatedWorkers": 1040
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4020200,
+     "estimatedWorkers": 4000
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5043300,
+     "estimatedWorkers": 5830
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5403400,
+     "estimatedWorkers": 5580
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6258100,
+     "estimatedWorkers": 6490
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7101300,
+     "estimatedWorkers": 6010
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6855100,
+     "estimatedWorkers": 5980
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6808000,
+     "estimatedWorkers": 5270
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7232000,
+     "estimatedWorkers": 5560
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5240100,
+     "estimatedWorkers": 3870
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4319500,
+     "estimatedWorkers": 1080
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3606800,
+     "estimatedWorkers": 370
+    }
+   ]
+  },
+  {
+   "classificationCode": "1561",
+   "classificationName": "製品検査従事者（金属製品）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2716000,
+     "estimatedWorkers": 1580
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3507400,
+     "estimatedWorkers": 7120
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4056300,
+     "estimatedWorkers": 10470
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4455900,
+     "estimatedWorkers": 10220
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4781400,
+     "estimatedWorkers": 11650
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4873300,
+     "estimatedWorkers": 11860
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5294100,
+     "estimatedWorkers": 13260
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5190800,
+     "estimatedWorkers": 14630
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4972700,
+     "estimatedWorkers": 11450
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4115000,
+     "estimatedWorkers": 8750
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3217400,
+     "estimatedWorkers": 2390
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3386500,
+     "estimatedWorkers": 1260
+    }
+   ]
+  },
+  {
+   "classificationCode": "1571",
+   "classificationName": "製品検査従事者（金属製品を除く）",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2779500,
+     "estimatedWorkers": 1390
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3290000,
+     "estimatedWorkers": 8080
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3711400,
+     "estimatedWorkers": 10830
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3928700,
+     "estimatedWorkers": 10350
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4318500,
+     "estimatedWorkers": 10920
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4467400,
+     "estimatedWorkers": 11730
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4676700,
+     "estimatedWorkers": 15410
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4614600,
+     "estimatedWorkers": 12220
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4809000,
+     "estimatedWorkers": 11610
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3937100,
+     "estimatedWorkers": 6640
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3050300,
+     "estimatedWorkers": 1740
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2671500,
+     "estimatedWorkers": 1000
+    }
+   ]
+  },
+  {
+   "classificationCode": "1581",
+   "classificationName": "機械検査従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2877500,
+     "estimatedWorkers": 740
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3829400,
+     "estimatedWorkers": 5740
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4026500,
+     "estimatedWorkers": 6710
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4832900,
+     "estimatedWorkers": 7890
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5204700,
+     "estimatedWorkers": 7220
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5826500,
+     "estimatedWorkers": 8240
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5690800,
+     "estimatedWorkers": 9670
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6018100,
+     "estimatedWorkers": 11880
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6294600,
+     "estimatedWorkers": 7360
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4689400,
+     "estimatedWorkers": 4860
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4348700,
+     "estimatedWorkers": 1720
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3107500,
+     "estimatedWorkers": 650
+    }
+   ]
+  },
+  {
+   "classificationCode": "1591",
+   "classificationName": "画工，塗装・看板制作従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2913800,
+     "estimatedWorkers": 170
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3874100,
+     "estimatedWorkers": 4440
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4093600,
+     "estimatedWorkers": 10260
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5091500,
+     "estimatedWorkers": 5740
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5258300,
+     "estimatedWorkers": 5430
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5559500,
+     "estimatedWorkers": 6590
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5912500,
+     "estimatedWorkers": 5590
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5511500,
+     "estimatedWorkers": 7150
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5602400,
+     "estimatedWorkers": 5440
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4494700,
+     "estimatedWorkers": 3140
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3337200,
+     "estimatedWorkers": 870
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3346800,
+     "estimatedWorkers": 750
+    }
+   ]
+  },
+  {
+   "classificationCode": "1592",
+   "classificationName": "製図その他生産関連・生産類似作業従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2762100,
+     "estimatedWorkers": 600
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3304300,
+     "estimatedWorkers": 6940
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3678900,
+     "estimatedWorkers": 15130
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4244100,
+     "estimatedWorkers": 15240
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4740700,
+     "estimatedWorkers": 9950
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5003000,
+     "estimatedWorkers": 10770
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5774900,
+     "estimatedWorkers": 12420
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5465100,
+     "estimatedWorkers": 11940
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5526700,
+     "estimatedWorkers": 9090
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4929800,
+     "estimatedWorkers": 5610
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4405600,
+     "estimatedWorkers": 1620
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3904900,
+     "estimatedWorkers": 420
+    }
+   ]
+  },
+  {
+   "classificationCode": "1601",
+   "classificationName": "鉄道運転従事者",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4486400,
+     "estimatedWorkers": 930
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5766200,
+     "estimatedWorkers": 4490
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6217300,
+     "estimatedWorkers": 5200
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7395900,
+     "estimatedWorkers": 6760
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8042500,
+     "estimatedWorkers": 5080
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8169300,
+     "estimatedWorkers": 3770
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 8449600,
+     "estimatedWorkers": 3910
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 8214700,
+     "estimatedWorkers": 2080
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6244100,
+     "estimatedWorkers": 1540
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3618500,
+     "estimatedWorkers": 280
+    }
+   ]
+  },
+  {
+   "classificationCode": "1611",
+   "classificationName": "バス運転者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3095000,
+     "estimatedWorkers": 50
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3931000,
+     "estimatedWorkers": 610
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4679400,
+     "estimatedWorkers": 1220
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4546300,
+     "estimatedWorkers": 2060
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4660800,
+     "estimatedWorkers": 2760
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4900200,
+     "estimatedWorkers": 5140
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5067800,
+     "estimatedWorkers": 9020
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4998600,
+     "estimatedWorkers": 18660
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4874800,
+     "estimatedWorkers": 21740
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4330400,
+     "estimatedWorkers": 19740
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3460400,
+     "estimatedWorkers": 9920
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2958900,
+     "estimatedWorkers": 5380
+    }
+   ]
+  },
+  {
+   "classificationCode": "1612",
+   "classificationName": "タクシー運転者",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4833600,
+     "estimatedWorkers": 2080
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4828700,
+     "estimatedWorkers": 4780
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5179200,
+     "estimatedWorkers": 6520
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4918700,
+     "estimatedWorkers": 5480
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4985500,
+     "estimatedWorkers": 8580
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5213100,
+     "estimatedWorkers": 14780
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4943100,
+     "estimatedWorkers": 21960
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4813500,
+     "estimatedWorkers": 32850
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4401300,
+     "estimatedWorkers": 28350
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3790500,
+     "estimatedWorkers": 20400
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3475900,
+     "estimatedWorkers": 24430
+    }
+   ]
+  },
+  {
+   "classificationCode": "1614",
+   "classificationName": "営業用大型貨物自動車運転者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3538000,
+     "estimatedWorkers": 50
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4462600,
+     "estimatedWorkers": 3870
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4718600,
+     "estimatedWorkers": 14110
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5119200,
+     "estimatedWorkers": 18070
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5235300,
+     "estimatedWorkers": 26140
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5270900,
+     "estimatedWorkers": 46960
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5298000,
+     "estimatedWorkers": 71680
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5315900,
+     "estimatedWorkers": 106170
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5180000,
+     "estimatedWorkers": 91680
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4711400,
+     "estimatedWorkers": 59670
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4056800,
+     "estimatedWorkers": 25320
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3612900,
+     "estimatedWorkers": 7850
+    }
+   ]
+  },
+  {
+   "classificationCode": "1624",
+   "classificationName": "航空機操縦士",
+   "bands": [
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3593200,
+     "estimatedWorkers": 570
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 7929900,
+     "estimatedWorkers": 1770
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 12397600,
+     "estimatedWorkers": 1440
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 16765500,
+     "estimatedWorkers": 840
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 20791900,
+     "estimatedWorkers": 980
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 24133500,
+     "estimatedWorkers": 670
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 23487700,
+     "estimatedWorkers": 690
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 27247800,
+     "estimatedWorkers": 1220
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 12557400,
+     "estimatedWorkers": 120
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 13409500,
+     "estimatedWorkers": 20
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 6008000,
+     "estimatedWorkers": 10
+    }
+   ]
+  },
+  {
+   "classificationCode": "1631",
+   "classificationName": "車掌",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2974400,
+     "estimatedWorkers": 200
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4118400,
+     "estimatedWorkers": 2930
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4991600,
+     "estimatedWorkers": 3980
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5746500,
+     "estimatedWorkers": 2630
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6671600,
+     "estimatedWorkers": 3010
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7432500,
+     "estimatedWorkers": 2330
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7101400,
+     "estimatedWorkers": 2630
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6173800,
+     "estimatedWorkers": 1920
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6599000,
+     "estimatedWorkers": 1200
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5411600,
+     "estimatedWorkers": 1200
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2380400,
+     "estimatedWorkers": 340
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 1932000,
+     "estimatedWorkers": 90
+    }
+   ]
+  },
+  {
+   "classificationCode": "1639",
+   "classificationName": "他に分類されない輸送従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3027600,
+     "estimatedWorkers": 710
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3859600,
+     "estimatedWorkers": 3480
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4118000,
+     "estimatedWorkers": 3960
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4743800,
+     "estimatedWorkers": 4920
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4772500,
+     "estimatedWorkers": 6330
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5126700,
+     "estimatedWorkers": 6560
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5127200,
+     "estimatedWorkers": 8920
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5214900,
+     "estimatedWorkers": 12140
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5064100,
+     "estimatedWorkers": 8930
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3963500,
+     "estimatedWorkers": 7080
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3329100,
+     "estimatedWorkers": 2780
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3269300,
+     "estimatedWorkers": 870
+    }
+   ]
+  },
+  {
+   "classificationCode": "1641",
+   "classificationName": "発電員，変電員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3234800,
+     "estimatedWorkers": 550
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4410000,
+     "estimatedWorkers": 2350
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5300900,
+     "estimatedWorkers": 2050
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6460500,
+     "estimatedWorkers": 2500
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7650900,
+     "estimatedWorkers": 2170
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 8087200,
+     "estimatedWorkers": 1570
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 8637400,
+     "estimatedWorkers": 2670
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 9296400,
+     "estimatedWorkers": 2850
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 9221100,
+     "estimatedWorkers": 1930
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5623900,
+     "estimatedWorkers": 1850
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4817200,
+     "estimatedWorkers": 450
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3889300,
+     "estimatedWorkers": 90
+    }
+   ]
+  },
+  {
+   "classificationCode": "1643",
+   "classificationName": "クレーン・ウインチ運転従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3756500,
+     "estimatedWorkers": 70
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4380500,
+     "estimatedWorkers": 690
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5117200,
+     "estimatedWorkers": 1090
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5601400,
+     "estimatedWorkers": 1050
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5886900,
+     "estimatedWorkers": 1770
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6212000,
+     "estimatedWorkers": 1490
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6090800,
+     "estimatedWorkers": 2240
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6281300,
+     "estimatedWorkers": 2420
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6144900,
+     "estimatedWorkers": 2450
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5846500,
+     "estimatedWorkers": 2050
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5863500,
+     "estimatedWorkers": 670
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3778200,
+     "estimatedWorkers": 210
+    }
+   ]
+  },
+  {
+   "classificationCode": "1645",
+   "classificationName": "建設・さく井機械運転従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3075600,
+     "estimatedWorkers": 1070
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4364200,
+     "estimatedWorkers": 1480
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4209400,
+     "estimatedWorkers": 940
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5143600,
+     "estimatedWorkers": 3350
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5103400,
+     "estimatedWorkers": 2850
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5420800,
+     "estimatedWorkers": 3190
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5164400,
+     "estimatedWorkers": 3820
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5081200,
+     "estimatedWorkers": 6460
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5268200,
+     "estimatedWorkers": 5220
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4711700,
+     "estimatedWorkers": 3740
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4156200,
+     "estimatedWorkers": 1770
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4035600,
+     "estimatedWorkers": 2920
+    }
+   ]
+  },
+  {
+   "classificationCode": "1649",
+   "classificationName": "その他の定置・建設機械運転従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3031700,
+     "estimatedWorkers": 690
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3677500,
+     "estimatedWorkers": 7420
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4392500,
+     "estimatedWorkers": 9160
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4542100,
+     "estimatedWorkers": 9310
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5196800,
+     "estimatedWorkers": 10420
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5102300,
+     "estimatedWorkers": 12110
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5071500,
+     "estimatedWorkers": 14120
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4883800,
+     "estimatedWorkers": 15630
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4538700,
+     "estimatedWorkers": 15910
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3972700,
+     "estimatedWorkers": 12450
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 3434800,
+     "estimatedWorkers": 6300
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3208500,
+     "estimatedWorkers": 4360
+    }
+   ]
+  },
+  {
+   "classificationCode": "1651",
+   "classificationName": "建設躯体工事従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2795100,
+     "estimatedWorkers": 1500
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2855900,
+     "estimatedWorkers": 12130
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3377600,
+     "estimatedWorkers": 11960
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4052800,
+     "estimatedWorkers": 11620
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4249800,
+     "estimatedWorkers": 8980
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4957900,
+     "estimatedWorkers": 9860
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5354000,
+     "estimatedWorkers": 8870
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4760500,
+     "estimatedWorkers": 9760
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4744000,
+     "estimatedWorkers": 7050
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4095000,
+     "estimatedWorkers": 6770
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4228800,
+     "estimatedWorkers": 3770
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3354200,
+     "estimatedWorkers": 2520
+    }
+   ]
+  },
+  {
+   "classificationCode": "1661",
+   "classificationName": "大工",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2526900,
+     "estimatedWorkers": 320
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3508200,
+     "estimatedWorkers": 1310
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3841800,
+     "estimatedWorkers": 2340
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4995200,
+     "estimatedWorkers": 880
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5933200,
+     "estimatedWorkers": 1270
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5325500,
+     "estimatedWorkers": 810
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5622800,
+     "estimatedWorkers": 2330
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5859200,
+     "estimatedWorkers": 2700
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6319100,
+     "estimatedWorkers": 970
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3800000,
+     "estimatedWorkers": 1110
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4536000,
+     "estimatedWorkers": 1690
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4521400,
+     "estimatedWorkers": 3570
+    }
+   ]
+  },
+  {
+   "classificationCode": "1666",
+   "classificationName": "配管従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2888400,
+     "estimatedWorkers": 880
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3723400,
+     "estimatedWorkers": 8610
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4330100,
+     "estimatedWorkers": 10530
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4777700,
+     "estimatedWorkers": 7660
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 5632100,
+     "estimatedWorkers": 12180
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 5482500,
+     "estimatedWorkers": 12600
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5966800,
+     "estimatedWorkers": 9700
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6204300,
+     "estimatedWorkers": 12320
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 6322400,
+     "estimatedWorkers": 7710
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5051600,
+     "estimatedWorkers": 6150
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4253200,
+     "estimatedWorkers": 3060
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3017900,
+     "estimatedWorkers": 1610
+    }
+   ]
+  },
+  {
+   "classificationCode": "1669",
+   "classificationName": "その他の建設従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2918000,
+     "estimatedWorkers": 1730
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3297700,
+     "estimatedWorkers": 16450
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4267200,
+     "estimatedWorkers": 17950
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4640800,
+     "estimatedWorkers": 21880
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4472100,
+     "estimatedWorkers": 13280
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4966400,
+     "estimatedWorkers": 15180
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5453300,
+     "estimatedWorkers": 9580
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 5678200,
+     "estimatedWorkers": 12250
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 5285600,
+     "estimatedWorkers": 12300
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4916900,
+     "estimatedWorkers": 8640
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 5303100,
+     "estimatedWorkers": 2620
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 4707800,
+     "estimatedWorkers": 5990
+    }
+   ]
+  },
+  {
+   "classificationCode": "1671",
+   "classificationName": "電気工事従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3138000,
+     "estimatedWorkers": 3900
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4355700,
+     "estimatedWorkers": 21500
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 5320900,
+     "estimatedWorkers": 27070
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 6097200,
+     "estimatedWorkers": 27320
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 7276300,
+     "estimatedWorkers": 24920
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 7058800,
+     "estimatedWorkers": 26150
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 7228400,
+     "estimatedWorkers": 25470
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6990700,
+     "estimatedWorkers": 23920
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7437400,
+     "estimatedWorkers": 16240
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 6052800,
+     "estimatedWorkers": 13780
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4668800,
+     "estimatedWorkers": 6580
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3931900,
+     "estimatedWorkers": 2760
+    }
+   ]
+  },
+  {
+   "classificationCode": "1681",
+   "classificationName": "土木従事者，鉄道線路工事従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2897800,
+     "estimatedWorkers": 3750
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3290500,
+     "estimatedWorkers": 15350
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3999700,
+     "estimatedWorkers": 16840
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 4338800,
+     "estimatedWorkers": 15480
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4817800,
+     "estimatedWorkers": 11310
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4875300,
+     "estimatedWorkers": 17580
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 5018600,
+     "estimatedWorkers": 20800
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4781500,
+     "estimatedWorkers": 23050
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4542700,
+     "estimatedWorkers": 19450
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 4294600,
+     "estimatedWorkers": 18360
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4023100,
+     "estimatedWorkers": 13020
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3464800,
+     "estimatedWorkers": 9920
+    }
+   ]
+  },
+  {
+   "classificationCode": "1702",
+   "classificationName": "船内・沿岸荷役従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3146400,
+     "estimatedWorkers": 410
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 4386600,
+     "estimatedWorkers": 2970
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 4995400,
+     "estimatedWorkers": 2990
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 5690900,
+     "estimatedWorkers": 4430
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 6321400,
+     "estimatedWorkers": 3430
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 6959800,
+     "estimatedWorkers": 3390
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 6722800,
+     "estimatedWorkers": 3850
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 6833400,
+     "estimatedWorkers": 4450
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 7297200,
+     "estimatedWorkers": 2550
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 5490000,
+     "estimatedWorkers": 2360
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 4826300,
+     "estimatedWorkers": 1040
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 3908200,
+     "estimatedWorkers": 470
+    }
+   ]
+  },
+  {
+   "classificationCode": "1703",
+   "classificationName": "その他の運搬従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2772900,
+     "estimatedWorkers": 6080
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3383200,
+     "estimatedWorkers": 28810
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3774700,
+     "estimatedWorkers": 42500
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3956500,
+     "estimatedWorkers": 48450
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4478300,
+     "estimatedWorkers": 62050
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4400200,
+     "estimatedWorkers": 71150
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4392200,
+     "estimatedWorkers": 88330
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4240300,
+     "estimatedWorkers": 95730
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4240400,
+     "estimatedWorkers": 80090
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3536600,
+     "estimatedWorkers": 52690
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2910200,
+     "estimatedWorkers": 21670
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2586100,
+     "estimatedWorkers": 7590
+    }
+   ]
+  },
+  {
+   "classificationCode": "1711",
+   "classificationName": "ビル・建物清掃員",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2347600,
+     "estimatedWorkers": 500
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 2668100,
+     "estimatedWorkers": 6410
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 2641600,
+     "estimatedWorkers": 11940
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 2952500,
+     "estimatedWorkers": 7510
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3512500,
+     "estimatedWorkers": 9000
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3355300,
+     "estimatedWorkers": 8150
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3294600,
+     "estimatedWorkers": 15950
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3312100,
+     "estimatedWorkers": 17170
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3195100,
+     "estimatedWorkers": 16400
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3005000,
+     "estimatedWorkers": 18520
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2498800,
+     "estimatedWorkers": 14840
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2454400,
+     "estimatedWorkers": 18510
+    }
+   ]
+  },
+  {
+   "classificationCode": "1712",
+   "classificationName": "清掃員（ビル・建物を除く），廃棄物処理従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 3301000,
+     "estimatedWorkers": 340
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3156900,
+     "estimatedWorkers": 3770
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3796500,
+     "estimatedWorkers": 9990
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3999000,
+     "estimatedWorkers": 9180
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 4276400,
+     "estimatedWorkers": 11510
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4368300,
+     "estimatedWorkers": 13860
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4500800,
+     "estimatedWorkers": 17640
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 4290700,
+     "estimatedWorkers": 20710
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 4195600,
+     "estimatedWorkers": 16880
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3675200,
+     "estimatedWorkers": 15810
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2987600,
+     "estimatedWorkers": 10530
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2787600,
+     "estimatedWorkers": 5820
+    }
+   ]
+  },
+  {
+   "classificationCode": "1721",
+   "classificationName": "包装従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2695000,
+     "estimatedWorkers": 1400
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3189100,
+     "estimatedWorkers": 3980
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3389900,
+     "estimatedWorkers": 4930
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3346000,
+     "estimatedWorkers": 5240
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3336300,
+     "estimatedWorkers": 6280
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 3771400,
+     "estimatedWorkers": 9320
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 3721400,
+     "estimatedWorkers": 8980
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3466300,
+     "estimatedWorkers": 11430
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3326500,
+     "estimatedWorkers": 10760
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3042600,
+     "estimatedWorkers": 6910
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2702000,
+     "estimatedWorkers": 3100
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2304600,
+     "estimatedWorkers": 1450
+    }
+   ]
+  },
+  {
+   "classificationCode": "1739",
+   "classificationName": "他に分類されない運搬・清掃・包装等従事者",
+   "bands": [
+    {
+     "band": "～19歳",
+     "annualizedMeanYen": 2678700,
+     "estimatedWorkers": 1230
+    },
+    {
+     "band": "20～24歳",
+     "annualizedMeanYen": 3157000,
+     "estimatedWorkers": 7470
+    },
+    {
+     "band": "25～29歳",
+     "annualizedMeanYen": 3648700,
+     "estimatedWorkers": 7770
+    },
+    {
+     "band": "30～34歳",
+     "annualizedMeanYen": 3435400,
+     "estimatedWorkers": 8720
+    },
+    {
+     "band": "35～39歳",
+     "annualizedMeanYen": 3779300,
+     "estimatedWorkers": 10610
+    },
+    {
+     "band": "40～44歳",
+     "annualizedMeanYen": 4010300,
+     "estimatedWorkers": 12160
+    },
+    {
+     "band": "45～49歳",
+     "annualizedMeanYen": 4051500,
+     "estimatedWorkers": 15440
+    },
+    {
+     "band": "50～54歳",
+     "annualizedMeanYen": 3793100,
+     "estimatedWorkers": 20900
+    },
+    {
+     "band": "55～59歳",
+     "annualizedMeanYen": 3853000,
+     "estimatedWorkers": 20160
+    },
+    {
+     "band": "60～64歳",
+     "annualizedMeanYen": 3227400,
+     "estimatedWorkers": 18120
+    },
+    {
+     "band": "65～69歳",
+     "annualizedMeanYen": 2766200,
+     "estimatedWorkers": 13110
+    },
+    {
+     "band": "70歳～",
+     "annualizedMeanYen": 2613600,
+     "estimatedWorkers": 9100
+    }
+   ]
+  }
+ ]
+}
