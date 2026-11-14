@@ -1,3 +1,4 @@
+import "./occupation.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -237,6 +238,26 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         )}
       </div>
 
+      <section className="occupation-keypoints" aria-label={`${occupation.name}の要点`}>
+        <h2>{occupation.name}の要点</h2>
+        <dl>
+          {statistic ? (
+            <>
+              <div><dt>対応分類の平均年齢</dt><dd>{statistic.meanAge.toFixed(1)}歳</dd></div>
+              <div><dt>対応分類の推計労働者数</dt><dd>{statistic.estimatedWorkers.toLocaleString("ja-JP")}人</dd></div>
+            </>
+          ) : (
+            <div><dt>年収統計</dt><dd>対応分類なし</dd></div>
+          )}
+          <div><dt>企業例（公式確認済み）</dt><dd>{employers.length ? <a href="#employers">{employers.length}件</a> : "未掲載（関連業種の上場企業は下記）"}</dd></div>
+          <div><dt>関連資格</dt><dd>{occupation.qualifications.length ? <a href="#qualifications">{occupation.qualifications.length}件</a> : "入職に必須の資格は示されていません"}</dd></div>
+          {dossierSlug ? (
+            <div><dt>深掘り解説</dt><dd><Link href={`/career/${dossierSlug}/`}>向いている人・企業例まで読む</Link></dd></div>
+          ) : null}
+        </dl>
+        <p className="occupation-keypoints-note">平均年齢と労働者数は、年収と同じ賃金統計の対応分類の値です。職業そのものの値とは限りません。</p>
+      </section>
+
       <section className="article-section" id="income">
         <h2>収入データの読み方</h2>
         {statistic ? (
@@ -297,6 +318,12 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         {paragraphs(occupation.entry).map((part, index) => (
           <p key={index}>{part}</p>
         ))}
+        <p className="occupation-jobtag-action">
+          実際の求人・募集の状況は、厚生労働省の職業情報サイトで確認できます：
+          <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer">
+            job tagで{occupation.name}の職業詳細を見る <ArrowUpRight aria-hidden="true" />
+          </a>
+        </p>
       </section>
 
       <section className="article-section" id="conditions">

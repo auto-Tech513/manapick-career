@@ -3,6 +3,10 @@ import scopes from '@/content/career-income-scope.json';
 export type IncomeStatistic = (typeof income.statistics)[number];
 export const incomeStatistics = income.statistics;
 export const incomeStatisticByCode = new Map(income.statistics.map(item => [item.classificationCode,item]));
+export const classificationOccupationCounts = new Map<string, number>();
+for (const occupation of income.occupations) {
+  if (occupation.classificationCode) classificationOccupationCounts.set(occupation.classificationCode, (classificationOccupationCounts.get(occupation.classificationCode) ?? 0) + 1);
+}
 export const incomeOccupationByRecord = new Map(income.occupations.map(item => [item.recordNumber,item]));
 export const incomeOccupationByCatalogId = new Map(income.occupations.map(item => [item.catalogId,item]));
 export const incomeMetadata = { surveyYear: income.surveyYear, population: income.population, formula: income.formula, limitations: income.limitations, sources: income.sources, annualMedian: income.annualMedian };

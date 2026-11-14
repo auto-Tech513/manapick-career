@@ -1,0 +1,71 @@
+/* 職業個別ページ：要点ボックスと求人導線（このページ種別専用） */
+.occupation-keypoints {
+  margin: 1.2rem 0 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-2);
+  background: var(--surface);
+}
+
+.occupation-keypoints h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.occupation-keypoints dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem 1.2rem;
+  margin: 0;
+}
+
+.occupation-keypoints dl > div {
+  min-width: 0;
+}
+
+.occupation-keypoints dt {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.occupation-keypoints dd {
+  margin: 0.1rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.occupation-keypoints dd a {
+  text-decoration: underline;
+}
+
+.occupation-keypoints-note {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.6;
+}
+
+.occupation-jobtag-action {
+  margin-top: 0.9rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-2);
+  background: var(--surface);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.occupation-jobtag-action a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+@media (max-width: 540px) {
+  .occupation-keypoints dl {
+    grid-template-columns: 1fr;
+  }
+}
