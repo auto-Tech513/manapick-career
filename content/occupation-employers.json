@@ -179,6 +179,16 @@
             "url": "https://sfc.jp/information/sustainability/social/safety-health/management-system.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "有限会社建徳",
+          "role": "大工（大工経験者）",
+          "description": "群馬県沼田市の工務店で、棟梁として大工工事全般を担い、発注および段取りなど、棟梁としての現場作業を任される。現場は利根沼田地区を中心とした個人住宅等の新築及び増改築工事。",
+          "source": {
+            "title": "大工の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1007002466961",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -193,6 +203,16 @@
             "title": "一般内線工事 | 職種紹介 | 施工系採用 | 採用情報 [きんでん]",
             "url": "https://www.kinden.co.jp/recruit/highschool/occupations/extension/",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "協和電気工業株式会社",
+          "role": "電気工事士",
+          "description": "愛知県名古屋市に本社を置く電気工事会社で、民間自動車部品工場の電気設備工事や受変電設備工事、ビル・マンション等の電気設備工事を担当する。就業場所は大府市・安城市・豊田市にある工場などで、お客様の工場担当者と打ち合わせ、見積書を作成してから工事を行う。",
+          "source": {
+            "title": "電気工事士の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2301032378761",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -358,6 +378,16 @@
             "title": "臨床検査技師 | 横浜市立大学附属病院",
             "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/technologist/index.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "一般社団法人 日本健康倶楽部 横浜支部",
+          "role": "臨床検査技師",
+          "description": "企業の巡回健康診断を行う健診機関で、巡回健診及び診療所での心電図・採血業務を担当する。巡回健診の地域は神奈川・東京全域で健診先に直行する場合もあり、診療所勤務より巡回健診の方が多い。",
+          "source": {
+            "title": "臨床検査技師の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1403009150561",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -1404,6 +1434,16 @@
             "url": "https://www.kajima.co.jp/prof/recruit/new/information/index.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "有限会社建徳",
+          "role": "建築施工管理",
+          "description": "群馬県沼田市の工務店で、現場代理人及び主任技術者として建築工事の管理業務に従事する。個人住宅等の新築及び増改築工事が中心で、施工・写真管理や書類作成のほか、見積り作成、CAD図面作成なども担う。",
+          "source": {
+            "title": "建築施工管理の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1007002465861",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -1873,6 +1913,16 @@
             "title": "募集要項／選考フロー | 新卒採用サイト | ヨークベニマル採用情報サイト",
             "url": "https://www.yb-jinji.com/newgra-recruit/guideline.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社ヤオコー",
+          "role": "まるひろ上尾SC店 青果部門（正社員）",
+          "description": "埼玉県を地盤とする食品スーパーマーケットの店舗で、青果部門の正社員として旬の野菜や果物の陳列、カット、簡単な包装を行う。仕入れから地域特性やお客様の層を考慮した商品づくり、接客販売、品出しなど、店舗を運営していくための幅広い業務も任される。",
+          "source": {
+            "title": "青果部門（正社員）の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1104020555761",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
