@@ -3,14 +3,14 @@
   "items": [
     {
       "offerId": "a8-win-school",
-      "label": "Winスクールの講座情報を確認",
+      "label": "Winスクールの個人レッスンを見る",
       "provider": "Winスクール",
       "network": "A8.net",
-      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+ALMVJM+529E+5YJRM",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+ALMXUY+529E+5YJRM",
       "officialDomain": "winschool.jp",
-      "description": "IT・デザイン・DX分野の学習支援を比較するための外部ページです。対象講座、費用、給付・支援条件は公式ページで確認してください。",
+      "description": "学び直しが続かない理由は、才能より『次に何をやるか』が決まらないことです。Winスクールは個人レッスンで、目指す資格や仕事に合わせて学ぶ順序を組めるパソコン教室です。講座の範囲と費用は、公式ページで確認できます。",
       "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
-      "verifiedAt": "2026-10-29",
+      "verifiedAt": "2026-11-15",
       "placements": [
         "/guide/build-a-learning-route-from-tasks/",
         "/guide/choose-one-learning-video/",
@@ -23,6 +23,109 @@
         "/guide/training-benefit-before-application/",
         "/guide/video-ai-license-learning-route/",
         "/news/reskilling-support-2026/"
+      ]
+    },
+    {
+      "offerId": "a8-lec-online",
+      "label": "LECオンラインの講座・書籍を見る",
+      "provider": "LEC東京リーガルマインド",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+BUVVU2+1G62+691UQ",
+      "officialDomain": "lec-jp.com",
+      "description": "法律・公務員・不動産の資格は、独学だと『どこまでやれば届くか』が見えにくいものです。LECオンラインは東京リーガルマインドの講座と書籍の公式窓口です。試験に向けたカリキュラムと教材を、公式ページで確認できます。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-15",
+      "placements": [
+        "/guide/qualification-official-route/",
+        "/guide/qualification-study-before-application/"
+      ]
+    },
+    {
+      "offerId": "a8-python-winner",
+      "label": "Python Winnerの講座を見る",
+      "provider": "Winスクール",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+AO0OA2+529E+HV7V6",
+      "officialDomain": "winschool.jp",
+      "description": "未経験からエンジニアを目指すなら、最初の一歩は環境づくりでつまずかないことです。Python WinnerはWinスクールのPython講座で、マンツーマンのレッスンで学びます。転職を見据えた講座の中身を、公式ページで確認できます。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-15",
+      "placements": [
+        "/guide/software-engineer-first-small-app/",
+        "/guide/first-portfolio-without-private-data/",
+        "/guide/se-vs-programmer/"
+      ]
+    },
+    {
+      "offerId": "a8-wannabe-academy",
+      "label": "Wannabeアカデミーのプログラムを見る",
+      "provider": "Wannabeアカデミー",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+CEJ6SQ+4NJO+5YJRM",
+      "officialDomain": "shareway.jp",
+      "description": "Webマーケターは、広告運用だけの仕事ではありません。Wannabeアカデミーは未経験から3か月でWebマーケターを目指すプログラムです。学ぶ範囲と進め方は、公式ページで確認できます。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-15",
+      "placements": [
+        "/guide/web-marketer-first-measurement-plan/"
+      ]
+    },
+    {
+      "offerId": "a8-sanko-medical-college",
+      "label": "三幸医療カレッジの登録販売者講座を見る",
+      "provider": "三幸医療カレッジ",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+BVHBFU+4N9Y+5YRHE",
+      "officialDomain": "35189.jp",
+      "description": "登録販売者は、一般用医薬品の販売に必要な公的資格です。三幸医療カレッジは登録販売者の受験対策講座を開いています。学習の進め方と費用は、公式ページで確認できます。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-15",
+      "placements": [
+        "/guide/pharmacist-vs-registered-seller/"
+      ]
+    },
+    {
+      "offerId": "a8-yotsuya-gakuin-tsushin",
+      "label": "四谷学院の通信講座を見る",
+      "provider": "四谷学院",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+BPIZE2+5IEI+5YJRM",
+      "officialDomain": "yotsuyagakuin-tsushin.com",
+      "description": "保育や宅建のような資格は、仕事や家事の合間に進められる通信講座が現実的な選択肢です。四谷学院は資格取得の通信講座を開いています。対象講座と費用は、公式ページで確認できます。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-15",
+      "placements": [
+        "/guide/qualification-required-or-optional/",
+        "/guide/compare-training-total-cost/"
+      ]
+    },
+    {
+      "offerId": "a8-sat",
+      "label": "SATのeラーニング講座を見る",
+      "provider": "SAT株式会社",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4BGLS2+3QK1T6+5TRO+5YJRM",
+      "officialDomain": "sat-co.info",
+      "description": "電気工事士や電気主任技術者など現場系の資格は、計算と法規の積み上げが独学の壁になります。SATは現場系・国家資格のeラーニング講座です。学び方と費用は、公式ページで確認できます。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-15",
+      "placements": [
+        "/guide/first-class-vs-second-class-electrician/",
+        "/guide/electrician-vs-chief-electricity-engineer/"
+      ]
+    },
+    {
+      "offerId": "a8-jpc-pet",
+      "label": "愛玩動物飼養管理士の講座を見る",
+      "provider": "公益社団法人日本愛玩動物協会",
+      "network": "A8.net",
+      "url": "https://px.a8.net/svt/ejp?a8mat=4B5VOA+BRWPT6+4EDO+61C2Q",
+      "officialDomain": "jpc.or.jp",
+      "description": "動物と働く道は、獣医師や愛玩動物看護師だけではありません。愛玩動物飼養管理士はペットの適正な飼養を学ぶ資格で、日本愛玩動物協会の通信講座で取得を目指せます。内容と費用は、公式ページで確認できます。",
+      "disclosure": "PR：このリンクを経由した申込み等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-15",
+      "placements": [
+        "/guide/veterinarian-vs-animal-nurse/"
       ]
     }
   ]
