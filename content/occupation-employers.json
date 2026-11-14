@@ -404,6 +404,16 @@
             "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/xray/index.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "医療法人社団 栄宏会 栄宏会小野病院",
+          "role": "診療放射線技師",
+          "description": "兵庫県小野市の病院で、外来患者様や入院患者様のX-P撮影・CT撮影など、診療放射線技師業務を行う。同じ法人はリハビリテーション病院をはじめ、訪問看護ステーションやデイサービスなども運営している。",
+          "source": {
+            "title": "診療放射線技師の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2810006578861",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -468,6 +478,16 @@
             "title": "リハビリテーション部 | 横浜市立大学附属病院",
             "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/pt/index.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "医療法人 昌峰会 加藤病院",
+          "role": "理学療法士",
+          "description": "名古屋市千種区の病院で、法人内における理学療法士業務全般を担う。外来、病棟、訪問リハ、介護部門等での業務がある。回復期リハビリテーション病床34床を持つ療養型医療施設で、通所リハビリテーションも併設している。",
+          "source": {
+            "title": "理学療法士の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2301032509561",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -1009,6 +1029,16 @@
             "url": "https://www.pref.okayama.jp/page/935789.html",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "一般財団法人 公衆保健協会",
+          "role": "保健師",
+          "description": "名古屋市の健診機関で、健康診断に係る保健師業務を担う。特定保健指導・労災二次健診の保健指導・HIV保健指導、受診勧奨・保健指導に係る入力業務などで、企業健診がメインとなる。健診センターでの健康診断のほか、健診バスによる企業や学校での巡回健診も実施している。",
+          "source": {
+            "title": "保健師の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2302066948061",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -1023,6 +1053,16 @@
             "title": "歯科技工士・歯科衛生士 | 横浜市立大学附属病院",
             "url": "https://www.yokohama-cu.ac.jp/fukuhp/recruit/dental/index.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社 サクラ歯研",
+          "role": "歯科技工士（有床義歯部門）",
+          "description": "大阪府堺市の歯科技工所で、有床義歯部門の歯科技工作業を担当する。デンチャー作成（フルデンチャー・パーシャルデンチャー）やバイトプレート作成が仕事。歯科技工士が28名在籍しており、歯科技工業では比較的大手の企業としている。",
+          "source": {
+            "title": "歯科技工士（有床義歯部門）の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2708020210661",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -1053,6 +1093,16 @@
             "title": "老人ホーム厨房での栄養士募集 - 採用情報詳細 | イフスコヘルスケア採用サイト",
             "url": "https://www.ifscohc-job.jp/ifsco2/AD0206676246/MDkyujin_d.htm",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社 ニッコクトラスト金沢営業所",
+          "role": "栄養士業務（金沢大学附属病院内）",
+          "description": "金沢大学附属病院内の厨房で、入院患者様への食事の調理・盛付・配膳・点検業務と、食材発注・衛生事務・社内事務など、給食業務に関わる栄養士業務を全般に担う。食堂の受託運営を行う会社の地域限定正社員の募集。",
+          "source": {
+            "title": "栄養士業務の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1701026057161",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
