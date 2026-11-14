@@ -2,7 +2,7 @@ import "./occupation.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ChevronDown } from "lucide-react";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { PhraseText } from "@/components/PhraseTitle";
@@ -467,12 +467,17 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
 
       <section className="article-section" id="faq">
         <h2>よくある確認</h2>
-        {faq.map((item) => (
-          <div key={item.question}>
-            <h3>{item.question}</h3>
-            <p>{item.answer}</p>
-          </div>
-        ))}
+        <div className="occupation-faq-list">
+          {faq.map((item) => (
+            <details key={item.question} className="occupation-faq-card">
+              <summary className="occupation-faq-question">
+                <h3>{item.question}</h3>
+                <ChevronDown aria-hidden="true" className="occupation-faq-chevron" />
+              </summary>
+              <p className="occupation-faq-answer">{item.answer}</p>
+            </details>
+          ))}
+        </div>
       </section>
 
       <section className="article-section" id="network">

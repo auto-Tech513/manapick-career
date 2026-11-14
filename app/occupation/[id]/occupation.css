@@ -110,3 +110,56 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* よくある確認：カード型アコーディオン（初期状態は閉じて回答を隠す） */
+.occupation-faq-list {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.occupation-faq-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-2);
+  background: var(--surface);
+}
+
+.occupation-faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  min-height: 44px;
+  padding: 0.85rem 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.occupation-faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.occupation-faq-question h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.occupation-faq-chevron {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--muted);
+  transition: transform 0.2s ease;
+}
+
+.occupation-faq-card[open] .occupation-faq-chevron {
+  transform: rotate(180deg);
+}
+
+.occupation-faq-answer {
+  margin: 0;
+  padding: 0 1rem 1rem;
+  line-height: 1.8;
+}
