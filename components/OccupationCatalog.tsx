@@ -3,7 +3,7 @@
 import { OccupationBrief } from "@/components/OccupationBrief";
 import { IncomeFigure } from "@/components/IncomeFigure";
 import type { IncomeStatistic } from "@/lib/occupation-income";
-import { Fragment, startTransition, useEffect, useMemo, useState } from "react";
+import { Fragment, startTransition, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BadgeCheck, BookOpenCheck, Bot, ChevronLeft, ChevronRight, GraduationCap, Search } from "lucide-react";
 import type { CatalogCategory, OccupationDirectoryEntry } from "@/content/catalog";
@@ -44,6 +44,15 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
     return { total: ranked.length, items: ranked.slice(0, 8).map((entry) => entry.occupation) };
   }, [occupations, query]);
   const showSuggest = suggestOpen && query.trim().length > 0;
+  const searchSuggestRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!suggestOpen) return;
+    const onPointerDown = (event: PointerEvent) => {
+      if (searchSuggestRef.current && !searchSuggestRef.current.contains(event.target as Node)) setSuggestOpen(false);
+    };
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
+  }, [suggestOpen]);
   useEffect(() => {
     const incoming = new URLSearchParams(window.location.search).get("q")?.trim();
     if (incoming) startTransition(() => setQuery(incoming));
@@ -75,7 +84,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
       <div className="catalog-quality"><BookOpenCheck aria-hidden="true" /><span><strong>{occupations.length}職業の仕事内容を、このページで読む</strong><small>仕事内容・入職の条件・働き方・年収の目安を確認。個別ページ（{publishedIds.length}職業）と独自解説のある職業は、カードから案内します</small></span></div>
     </div>
     <div className="catalog-controls">
-      <div className="search-suggest" onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) setSuggestOpen(false); }}>
+      <div className="search-suggest" ref={searchSuggestRef} onBlur={(event) => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setSuggestOpen(false); }}>
         <label className="search-box"><Search aria-hidden="true" /><span className="sr-only">職業名録を検索</span><input value={query} onChange={(event) => { changeQuery(event.target.value); setSuggestOpen(true); }} onFocus={() => setSuggestOpen(true)} onKeyDown={(event) => { if (event.key === "Escape") setSuggestOpen(false); }} placeholder="職業名・別名で検索" /></label>
         {showSuggest ? <div className="search-suggest-panel" role="listbox" aria-label="検索候補">
           <div className="search-suggest-head"><span>{suggestions.total}件ヒット</span><button type="button" onClick={() => setSuggestOpen(false)}>閉じる</button></div>
@@ -85,7 +94,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
             const categoryLabel = categories.find((item) => item.key === occupation.categoryKey)?.label;
             const note = detail ? "career解説あり" : href ? "個別ページあり" : "このページで読めます";
             const inner = <><span className="search-suggest-name">{occupation.name}</span><span className="search-suggest-meta">{categoryLabel} ・ {note}{occupation.aliases.length ? ` ・ 別名：${occupation.aliases.slice(0, 2).join("、")}` : ""}</span></>;
-            return <li key={occupation.catalogId} role="option" aria-selected="false">{href ? <Link href={href} onClick={() => setSuggestOpen(false)}>{inner}</Link> : <button type="button" onClick={() => { setCategory("all"); setField("all"); changeQuery(occupation.name); setSuggestOpen(false); }}>{inner}</button>}</li>;
+            return <li key={occupation.catalogId} role="option" aria-selected="false">{href ? <Link href={href} onPointerDown={(event) => event.preventDefault()} onClick={() => setSuggestOpen(false)}>{inner}</Link> : <button type="button" onPointerDown={(event) => event.preventDefault()} onClick={() => { setCategory("all"); setField("all"); changeQuery(occupation.name); setSuggestOpen(false); }}>{inner}</button>}</li>;
           })}</ul> : <p className="search-suggest-empty">「{query.trim()}」に一致する職業は見つかりませんでした。別名や、かな表記でも試してみてください。</p>}
           {suggestions.total > suggestions.items.length ? <p className="search-suggest-foot">上位{suggestions.items.length}件を表示しています。残りは下の一覧で確認できます。</p> : null}
         </div> : null}
