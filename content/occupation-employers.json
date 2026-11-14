@@ -374,6 +374,16 @@
             "url": "https://tfd-saiyo.jp/special/active-female-firefighter/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "宝塚市消防本部",
+          "role": "消防職",
+          "description": "兵庫県宝塚市の消防本部が令和9年度採用で募集する消防職（3名程度、大学卒・短大卒程度）の例。採用試験は1次で能力試験と体力測定、2次・3次で面接を行い、令和9年4月1日に採用予定。東京消防庁のような大規模な組織とは異なる、市町村の消防本部で地域の消火・救急・救助を担う形。",
+          "source": {
+            "title": "消防職員募集要項（令和9年度採用・宝塚市）",
+            "url": "https://www.city.takarazuka.hyogo.jp/_res/projects/default_project/_page_/001/029/998/r9bosyuuyoukou.pdf",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -588,6 +598,16 @@
             "title": "STORY 01　小学校｜教員のリアルを知る｜東京都公立学校教員採用ポータルサイト",
             "url": "https://www.kyoinsaiyopr.metro.tokyo.lg.jp/realvoices/01.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "学校法人 城星学園（城星学園小学校）",
+          "role": "小学校教諭",
+          "description": "大阪市のカトリック系ミッションスクール、城星学園小学校の小学校教諭の例（若干名、当初は常勤講師としてスタートし専任教諭登用の機会あり）。小学校教諭の専修・1種・2種いずれかの免許状が必須。教育委員会が採用する公立小学校とは異なる、私立小学校の教員の例。",
+          "source": {
+            "title": "小学校教員募集（2026年度後期・城星学園小学校）",
+            "url": "https://www.josei.ed.jp/pdf/e-kyujin.pdf",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -1279,6 +1299,16 @@
             "url": "https://www.kokusaidenki.co.jp/kde/careers/data/Job_mechanical-design-public.pdf",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "ニューロング工業株式会社",
+          "role": "機械設計",
+          "description": "東京都葛飾区の本社で、自動包装機・製袋機・印刷機の機械設計を担う。使用CADはAdvanceCAD（2D）。設計から開発、部品製造、組み立て、納品後のアフターサービスまでを一貫して自社で行う包装機械のプラントメーカーで、創業85年・従業員360人。",
+          "source": {
+            "title": "機械設計の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1312020246061",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -1403,6 +1433,16 @@
             "title": "Tooling in support of cross-departmental integrated-ECU development｜デンソー DRIVEN BASE",
             "url": "https://www.denso.com/global/en/driven-base/tech-design/integrated-ecu_2/",
             "checkedAt": "2026-10-30"
+          }
+        },
+        {
+          "name": "日本テクニカルシステム株式会社",
+          "role": "システムエンジニア（制御系システム開発）",
+          "description": "広島市の中国営業所で、制御系システム開発を基本設計から詳細設計、プログラミング、テストまで担う。C言語・C++とLinuxを使い、開発経験5年以上が求められる。ソフト開発からハード設計まで手がける独立系のコンピュータ企業で、大手自動車部品メーカーの車載ECU開発とは異なる、組込み・制御系の受託開発の例。",
+          "source": {
+            "title": "システムエンジニアの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=3401042120161",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -3073,6 +3113,16 @@
             "title": "株式会社IVRy コーポレートエンジニア｜HERP Careers",
             "url": "https://herp.careers/careers/companies/ivry/jobs/eR5EFLxgkBjs",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "Ｇａｔｅテクノロジーズ株式会社",
+          "role": "ヘルプデスク",
+          "description": "大阪・新大阪分室で、テレメンテ運用支援業務のヘルプデスクとして機械監視と障害対応、問い合わせ対応とメール対応、報告書作成を担う。自社社員のみで対応する体制で、仕事は先輩社員が一から教える。社内ITを担うコーポレートエンジニアとは異なる、顧客システムの運用を支えるヘルプデスクの例。",
+          "source": {
+            "title": "ヘルプデスクの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2703032629361",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
