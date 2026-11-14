@@ -2945,11 +2945,11 @@ dd {
 .ad-fallback strong { font-size: .78rem; }
 .ad-fallback small { margin-top: .2rem; color: var(--muted); font-size: .75rem; line-height: 1.5; }
 .ad-fallback b { padding: .5rem .65rem; border-radius: var(--radius-1); background: var(--primary); color: var(--ink); font-size: .75rem; white-space: nowrap; }
-.learning-offer { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem; margin-bottom: 3.5rem; padding: 1rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--bg); }
+.learning-offer { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1rem; margin-bottom: 3.5rem; padding: 1rem; border: 1px solid var(--line); border-top: 3px solid var(--primary); border-radius: var(--radius-2); background: var(--surface); }
 .learning-offer > span { align-self: start; padding: .28rem .45rem; border-radius: var(--radius-1); background: var(--ink); color: #fff; font-size: .75rem; font-weight: 900; }
-.learning-offer small { color: var(--muted); font-size: .75rem; line-height: 1.55; }
+.learning-offer small { display: block; margin-top: .5rem; color: var(--muted); font-size: .75rem; line-height: 1.55; }
 .learning-offer h2 { margin: .25rem 0 .35rem; color: var(--ink); font-size: 1.05rem; }
-.learning-offer p { margin: 0; font-size: .76rem; line-height: 1.7; }
+.learning-offer > div > p { margin: 0; font-size: 1rem; line-height: 1.75; }
 .learning-offer .offer-caution { margin-top: .35rem; color: var(--muted); font-size: .75rem; }
 .learning-offer > a { display: inline-flex; min-height: 44px; align-items: center; gap: .35rem; padding: .65rem .8rem; border-radius: var(--radius-1); background: var(--primary); color: var(--ink); font-size: .75rem; font-weight: 800; white-space: nowrap; }
 .learning-offer > a svg { width: 16px; height: 16px; }
