@@ -46,6 +46,7 @@
     "income:check": "python3 scripts/import-occupation-income.py --check && node scripts/check-income.mjs",
     "card:generate": "node scripts/generate-card-images.mjs",
     "indexnow:submit": "node scripts/indexnow-submit.mjs",
+    "audit:employers": "node scripts/audit-employer-links.mjs",
     "charts:check": "node --experimental-strip-types scripts/check-article-charts.mjs",
     "news:sitemap": "node scripts/generate-news-sitemap.mjs"
   },
