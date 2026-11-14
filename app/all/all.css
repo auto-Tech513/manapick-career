@@ -1,0 +1,110 @@
+/* /all/ 検索候補ドロップダウン（このページ専用） */
+.search-suggest {
+  position: relative;
+  min-width: 0;
+}
+
+/* スマホでは検索欄が controls の全幅を使う（従来の .search-box と同じ扱い） */
+@media (max-width: 760px) {
+  .catalog-controls .search-suggest {
+    grid-column: 1 / -1;
+  }
+}
+
+.search-suggest-panel {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  right: 0;
+  z-index: 40;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-2);
+  box-shadow: 0 18px 40px rgba(16, 24, 40, 0.16);
+  overflow: hidden;
+}
+
+.search-suggest-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.55rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.search-suggest-head button {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  min-height: 32px;
+  padding: 0 0.2rem;
+  cursor: pointer;
+}
+
+.search-suggest-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 46vh;
+  overflow-y: auto;
+}
+
+.search-suggest-panel li + li {
+  border-top: 1px solid var(--line);
+}
+
+.search-suggest-panel li a,
+.search-suggest-panel li button {
+  display: grid;
+  gap: 0.15rem;
+  width: 100%;
+  min-height: 52px;
+  align-content: center;
+  padding: 0.65rem 0.9rem;
+  background: transparent;
+  border: 0;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-suggest-panel li a:hover,
+.search-suggest-panel li button:hover {
+  background: #f4f6f8;
+}
+
+.search-suggest-name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.search-suggest-meta {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.search-suggest-empty {
+  margin: 0;
+  padding: 0.8rem 0.9rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.search-suggest-foot {
+  margin: 0;
+  padding: 0.5rem 0.9rem;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.72rem;
+}
