@@ -72,6 +72,16 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 90,
     "critical": false
+   },
+   {
+    "claimId": "task-map-medical-clerk",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "jilpt-jobtag-description-7-01"
+    ],
+    "text": "医療事務の別名には病棟クラーク、病院受付係、診療報酬請求事務員、健康保険請求事務員などがあり、作業はレセプトの作成とチェック、外来受付、会計、入退院手続き、カルテの整理・保管に分解できる"
    }
   ]
  },
@@ -87,6 +97,16 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 90,
     "critical": false
+   },
+   {
+    "claimId": "three-careers-medical-stats",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-wage-structure-2025"
+    ],
+    "text": "賃金構造基本統計調査2025の対応分類では、歯科衛生士は平均年収換算396.0万円・平均年齢36.4歳・推計労働者数54,510人、臨床検査技師は482.0万円・40.2歳・90,710人、臨床工学技士の対応分類「その他の保健医療従事者」は454.1万円・37.6歳・76,920人"
    }
   ]
  },
@@ -542,6 +562,16 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 90,
     "critical": false
+   },
+   {
+    "claimId": "three-candidate-card-stats",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-wage-structure-2025"
+    ],
+    "text": "賃金構造基本統計調査2025の対応分類では、保育士は平均年収換算427.6万円・平均年齢40.3歳・推計労働者数291,510人、歯科衛生士は396.0万円・36.4歳・54,510人、臨床検査技師は482.0万円・40.2歳・90,710人で、いずれも分類はその職業のみを指す"
    }
   ]
  },
@@ -574,6 +604,16 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 365,
     "critical": false
+   },
+   {
+    "claimId": "decision-log-example-stats",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-wage-structure-2025"
+    ],
+    "text": "賃金構造基本統計調査2025の対応分類では、臨床検査技師の平均年収換算は482.0万円で分類はその職業のみを指し、臨床工学技士の対応分類「その他の保健医療従事者」は454.1万円で9職業が同じ値を使う"
    }
   ]
  },
@@ -717,6 +757,16 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 180,
     "critical": false
+   },
+   {
+    "claimId": "jobtag-childcare-two-pillars",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "jilpt-jobtag-description-7-01"
+    ],
+    "text": "job tagの保育士の説明では、子どもの保育に加えて保護者への子育て支援・助言・指導も業務に含まれ、別名として保育教諭が挙げられている"
    }
   ]
  },
