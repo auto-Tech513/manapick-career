@@ -455,6 +455,32 @@ export const articleCharts: Record<string, ArticleChart> = {
       }
     ]
   },
+  "income-ranking-how-to-read": {
+    "title": "対応分類の平均年収換算（例）",
+    "note": "賃金構造基本統計調査2025の対応分類の平均年収換算です。分類の平均であり、同じ分類に含まれる職業どうしの差は分かりません。",
+    "bars": [
+      {
+        "display": "1,631.8万円",
+        "label": "航空機操縦士",
+        "value": 1631.8
+      },
+      {
+        "display": "1,512.2万円",
+        "label": "医師",
+        "value": 1512.2
+      },
+      {
+        "display": "1,082.6万円",
+        "label": "大学教授（高専含む）",
+        "value": 1082.6
+      },
+      {
+        "display": "297.4万円",
+        "label": "ビル・建物清掃員",
+        "value": 297.4
+      }
+    ]
+  },
   "industrial-production-latest": {
     "title": "業種別の生産（前月比）",
     "note": "生産指数全体は前月比1.7％の低下で、全15業種のうち12業種が低下しています。",

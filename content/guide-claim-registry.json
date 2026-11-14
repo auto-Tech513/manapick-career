@@ -327,6 +327,18 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 30,
     "critical": true
+   },
+   {
+    "claimId": "ctc-benefit-rates",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "hellowork-education-benefit",
+     "hellowork-specific-general-benefit-leaflet",
+     "hellowork-professional-practice-benefit-leaflet"
+    ],
+    "text": "教育訓練給付金の基本の給付は、一般が教育訓練経費の20％（上限10万円）、特定一般が40％（上限20万円）、専門実践が50％（年間上限40万円）"
    }
   ]
  },
@@ -342,6 +354,26 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 31,
     "critical": true
+   },
+   {
+    "claimId": "entry-ratios-2026-09",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-job-openings-2026-09"
+    ],
+    "text": "2026年9月分の有効求人倍率は1.19倍、新規求人倍率は2.19倍、正社員有効求人倍率は1.01倍（いずれも季節調整値、厚生労働省が2026年10月30日に公表）"
+   },
+   {
+    "claimId": "entry-ratios-2026-09-region",
+    "critical": false,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-job-openings-2026-09"
+    ],
+    "text": "2026年9月分の就業地別有効求人倍率は、最高が福井県と山梨県の1.74倍、最低が大阪府の0.96倍"
    }
   ]
  },
@@ -367,6 +399,16 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 31,
     "critical": true
+   },
+   {
+    "claimId": "salary-pair-bonus-gap",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-wage-structure-2025"
+    ],
+    "text": "賃金構造基本統計調査2025では、外勤事務従事者（月の現金給与額35.26万円・年間賞与等123.91万円・平均年収換算547.0万円）とタクシー運転者（同35.92万円・19.78万円・450.8万円）のように、月給が近くても賞与で年収が大きく変わる"
    }
   ]
  },
@@ -414,6 +456,16 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 60,
     "critical": true
+   },
+   {
+    "claimId": "qualification-registered-sales-route",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-jobtag-registered-sales"
+    ],
+    "text": "登録販売者は、試験合格後に店舗が所在する自治体へ登録が必要で、正式な登録販売者となるには資格取得後24か月（月80時間以上）の実務経験が必要"
    }
   ]
  },
@@ -552,6 +604,26 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 180,
     "critical": false
+   },
+   {
+    "claimId": "income-ranking-grain-counts",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-wage-structure-2025"
+    ],
+    "text": "本サイトの対応づけでは、賃金構造基本統計調査2025の135の統計分類に544の職業が対応し、497の職業は他の職業と同じ分類の値を使う。1つの分類に対応する職業は最大35"
+   },
+   {
+    "claimId": "income-ranking-grain-range",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "mhlw-wage-structure-2025"
+    ],
+    "text": "対応分類の平均年収換算は、航空機操縦士の1,631.8万円が最も高く、ビル・建物清掃員の297.4万円が最も低い。医師は1,512.2万円、大学教授（高専含む）は1,082.6万円"
    }
   ]
  },
@@ -607,6 +679,29 @@
     "lastCheckedAt": "2026-10-29",
     "freshnessDays": 90,
     "critical": false
+   },
+   {
+    "claimId": "tba-rates-basic",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "hellowork-education-benefit",
+     "hellowork-specific-general-benefit-leaflet",
+     "hellowork-professional-practice-benefit-leaflet"
+    ],
+    "text": "教育訓練給付金の基本の給付は、一般が教育訓練経費の20％（上限10万円）、特定一般が40％（上限20万円）、専門実践が50％（年間上限40万円）。計算した額が4千円を超えない場合は支給されない"
+   },
+   {
+    "claimId": "tba-rates-max",
+    "critical": true,
+    "freshnessDays": 90,
+    "lastCheckedAt": "2026-11-14",
+    "sourceIds": [
+     "hellowork-specific-general-benefit-leaflet",
+     "hellowork-professional-practice-benefit-leaflet"
+    ],
+    "text": "追加の給付まで含めた最大は、特定一般が50％（上限25万円）、専門実践が80％（年間上限64万円）で、専門実践は最大3年間・上限192万円"
    }
   ]
  },
