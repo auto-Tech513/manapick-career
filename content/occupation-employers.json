@@ -524,6 +524,16 @@
             "url": "https://recruit.yamato-sumire.info/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "学校法人たみ学園 認定こども園ほほえみ 学びの森わかば園",
+          "role": "幼稚園教諭・保育士",
+          "description": "茨城県日立市の幼保連携型認定こども園（定員93名）で、幼児教育・保育の仕事です。子ども達に歌や絵、文字などを指導し、自園調理による完全給食となっています。幼稚園教諭免許と保育士資格の両方が求められます。",
+          "source": {
+            "title": "幼稚園教諭・保育士の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=0802004439061",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -949,6 +959,16 @@
             "url": "https://www-user.yokohama-cu.ac.jp/~nurse-mc/education/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "社会福祉法人函館厚生院 函館中央病院",
+          "role": "助産師（2交替勤務）",
+          "description": "北海道函館市の総合病院で、周産期センターで助産業務に従事する。2交替勤務で、夜勤は週1回程度。助産師経験が求められる（経験年数は問わない）。",
+          "source": {
+            "title": "助産師の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=0102011006161",
+            "checkedAt": "2026-11-14"
+          }
         }
       ]
     },
@@ -963,6 +983,16 @@
             "title": "歯科医師求人（正社員・パート・アルバイト）|名古屋市守山区大森の医療法人 とみた歯科クリニック",
             "url": "https://www.tomitadental.jp/recruit/dentist.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "医療法人社団 たんぽぽ歯科",
+          "role": "歯科医師（有期契約社員）",
+          "description": "神戸市西区の歯科医院で、外来においての歯科診療業務及びそれに伴う保険請求算定業務を担う。当院は予防診療を中心にしており、定期検診で多くの患者さんが来られる。訪問歯科や矯正歯科は専任のドクターが担当している。",
+          "source": {
+            "title": "歯科医師の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2820005579261",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -1488,6 +1518,16 @@
             "title": "【基盤技術業務（技術職）】 空間情報基盤コンサルタント 募集要項",
             "url": "https://www.kkc.co.jp/recruit/career/50.pdf",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社 奥原調査設計",
+          "role": "測量業務",
+          "description": "長野県木曽町の調査設計会社で、公共工事等での測量、調査、設計などの業務全般を担う。現場での測量に基づき、PCで図面作成（CAD）を行い、現場は主に木曽郡内。従業員9人の小規模な会社で、分業に偏ることなく業務全般を担当できるとしている。",
+          "source": {
+            "title": "測量業務の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2010001160961",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
@@ -2713,6 +2753,16 @@
             "title": "配管工の募集要項｜株式会社大川工業 採用サイト",
             "url": "https://clients.itszai.jp/4e4459784d513d3d/recruitments/62?ref=true",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "平工業株式会社",
+          "role": "配管工（熔接・切断）",
+          "description": "大阪府泉佐野市の会社で、自社工場で配管を加工して建設現場やプラント工場に設置する仕事。設計図に従って切断、曲げ、ねじ切り、溶接を行い、構造物に取り付ける。最初は切断から始め、研磨、組立、溶接とスキルアップしていく。",
+          "source": {
+            "title": "配管工（熔接・切断）の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2714006782061",
+            "checkedAt": "2026-11-14"
           }
         }
       ]
