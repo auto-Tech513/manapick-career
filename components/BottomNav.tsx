@@ -80,13 +80,14 @@ export function BottomNav() {
             className="xfer-sheet"
             role="dialog"
             aria-modal="true"
-            aria-label="manapick 5サイトへの乗り換え"
+            aria-label="manapick 6サイトへの乗り換え"
             onClick={(event) => event.stopPropagation()}
           >
             <div className="xfer-sheet-head">
               <p>
                 <span className="xfer-sheet-kicker">MANAPICK NETWORK</span>
-                学びは、5つの駅でつながっています。
+                <span className="nw">学びは、</span>
+                <span className="nw">6つの駅でつながっています。</span>
               </p>
               <button
                 type="button"

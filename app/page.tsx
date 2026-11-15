@@ -30,11 +30,11 @@ const sideNav = [
 ];
 
 const pins = [
-  { mark: "士", label: "税理士・弁護士", href: "/all/?q=税理士", style: { left: "200px", top: "300px" } },
-  { mark: "医", label: "看護師・薬剤師", href: "/all/?q=看護師", style: { left: "420px", top: "200px" } },
-  { mark: "IT", label: "エンジニア・データ", href: "/all/?q=エンジニア", style: { left: "470px", top: "410px" } },
-  { mark: "育", label: "保育士・教員", href: "/all/?q=保育士", style: { left: "120px", top: "500px" }, spHide: true },
-  { mark: "創", label: "デザイン・編集", href: "/all/?q=デザイン", style: { left: "600px", top: "300px" }, spHide: true },
+  { mark: "士", label: "税理士・弁護士", href: "/all/?q=税理士", style: { left: "22%", top: "300px" } },
+  { mark: "医", label: "看護師・薬剤師", href: "/all/?q=看護師", style: { left: "47%", top: "200px" } },
+  { mark: "IT", label: "エンジニア・データ", href: "/all/?q=エンジニア", style: { left: "52%", top: "410px" } },
+  { mark: "育", label: "保育士・教員", href: "/all/?q=保育士", style: { left: "13%", top: "500px" }, spHide: true },
+  { mark: "創", label: "デザイン・編集", href: "/all/?q=デザイン", style: { left: "64%", top: "300px" }, spHide: true },
 ];
 
 export default function Home() {
@@ -115,7 +115,11 @@ export default function Home() {
           </ul>
           <div className="town-side-box">
             <b>3つの質問</b>
-            だけで、キャリア候補の入口へ。回答は端末内にだけ保存。
+            だけで、
+            <br />
+            キャリア候補の入口へ。
+            <br />
+            回答は端末内にだけ保存。
           </div>
         </aside>
       </section>

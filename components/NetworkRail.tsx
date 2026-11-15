@@ -9,10 +9,11 @@ export function NetworkRail() {
   return (
     <div className="rail">
       <span className="rail-lbl">manapick network</span>
-      <nav className="rail-line" aria-label="manapick 5サイト">
+      <nav className="rail-line" aria-label="manapick 6サイト">
         {stations.map((station) => (
           <a
             key={station.id}
+            data-site={station.id}
             className={`rail-s${station.current ? " on" : ""}`}
             style={{ "--c": station.color } as React.CSSProperties}
             href={stationHref(station, "rail")}

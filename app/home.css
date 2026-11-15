@@ -614,6 +614,7 @@
   flex-wrap: wrap;
 }
 .filt button {
+  flex: none;
   height: 44px;
   padding: 0 16px;
   display: inline-flex;
@@ -946,11 +947,12 @@
     gap: 28px;
   }
   .ring {
-    width: 300px;
-    height: 300px;
+    width: min(300px, 100%);
+    height: auto;
+    aspect-ratio: 1;
   }
   .ring::before {
-    inset: 30px;
+    inset: 10%;
     border-width: 8px;
   }
   .ring-p {
@@ -966,7 +968,12 @@
   }
   .filt {
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+  }
+  .filt::-webkit-scrollbar {
+    display: none;
   }
   .filt-search {
     margin-left: 0;

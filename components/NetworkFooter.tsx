@@ -15,9 +15,12 @@ export default function NetworkFooter() {
       <section className="mp-newsletter-band" aria-label="manapick メルマガ登録">
         <NewsletterForm context="footer" />
       </section>
-      <footer className="route" aria-label="manapick公式5サイト">
+      <footer className="route" aria-label="manapick公式6サイト">
         <h4>MANAPICK NETWORK</h4>
-        <p className="route-lead">学びは、5つの駅でつながっています。</p>
+        <p className="route-lead">
+          <span className="nw">学びは、</span>
+          <span className="nw">6つの駅でつながっています。</span>
+        </p>
         <div className="route-map">
           {stations.map((station) => (
             <a

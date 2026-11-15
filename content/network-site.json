@@ -65,6 +65,18 @@
       "number": "05",
       "color": "#BE185D",
       "colorInk": "#831843"
+    },
+    {
+      "id": "politics",
+      "name": "manapick politics",
+      "short": "politics",
+      "role": "政治と法律",
+      "description": "政治と法律を易しく学ぶ",
+      "url": "https://politics.manapick.app/",
+      "code": "PO",
+      "number": "06",
+      "color": "#6D28D9",
+      "colorInk": "#4C1D95"
     }
   ],
   "nav": [
