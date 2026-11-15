@@ -114,6 +114,16 @@
             "url": "https://samurai-law.com/recruiting/recruit/career/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "行政書士法人 ORCA",
+          "role": "行政書士",
+          "description": "全国17か所にオフィスを構え相続を専門とする行政書士法人で、行政書士として相談業務を担当する。相続手続きや遺言書作成、書類作成、申請書類の代理業務を行い、行政書士の資格が必須の募集。",
+          "source": {
+            "title": "行政書士の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=3102013100361",
+            "checkedAt": "2026-11-15"
+          }
         }
       ]
     },
@@ -1463,6 +1473,16 @@
             "title": "コース選択 | 採用情報 | NTT DATA新卒採用サイト",
             "url": "https://nttdata-recruit.com/recruit/course.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社シグマシステム 長野事業所",
+          "role": "システムエンジニア・プログラマ",
+          "description": "長野市のソフトウェア会社で、オープン系・Web系システムの受託開発を担当する。業務系アプリ等の開発・運用保守を、要件定義・設計・製造・テスト・本番・運用保守の開発サイクルに沿って経験に応じた役割で担う。",
+          "source": {
+            "title": "システムエンジニア・プログラマの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2001014974461",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
@@ -3438,6 +3458,16 @@
             "title": "Product Designer（Open Position） / プロダクトデザイナー（オープンポジション） | 株式会社タイミー",
             "url": "https://hrmos.co/pages/timee/jobs/16822514041183191764",
             "checkedAt": "2026-10-30"
+          }
+        },
+        {
+          "name": "ダブルビーゼット株式会社",
+          "role": "webデザイナー（UI/UXデザイン）",
+          "description": "鹿児島県のマーケティング支援会社で、ウェブサイトやアプリのUI/UXデザインを担当する。自社事業とクライアントワークの両方で、企業サイトやECサイト、アプリ全体のデザインやクライアントへの提案に携わる。",
+          "source": {
+            "title": "webデザイナーの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=4601032945361",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
@@ -5693,6 +5723,16 @@
             "title": "【メディア事業部】Flutterエンジニア | サイバーエージェントグループ",
             "url": "https://hrmos.co/pages/cyberagent-group/jobs/0000515",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社 7DA",
+          "role": "スマホアプリ開発エンジニア",
+          "description": "佐賀県武雄市のIT企業で、水道分野の自社開発スマートフォンアプリの開発を担当する。顧客との打ち合わせや要望確認から、アプリの設計・プログラミング、動作確認・テスト、納品後の運用・改善・保守まで担う。",
+          "source": {
+            "title": "スマホアプリ開発エンジニアの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=4103003909561",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
