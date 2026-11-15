@@ -4,6 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { GuideExplorer, type GuideCardItem } from "@/components/GuideExplorer";
 import { guides } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
+import "../article.css";
 
 const title = "迷いを、確認できる手順に変える職業ガイド";
 const description = `職業の違い、職業情報の読み方、学ぶ順番、AIと仕事の考え方を、公式出典と確認日付きで整理した${guides.length}本のガイド一覧です。知りたいことのテーマから絞り込んで探せます。各ガイドは、要点、本文、確認に使った出典の順で読めます。職業の違いで迷う場合は、比較のガイドから入り、気になる職業の個別ページへ進めます。`;
@@ -57,15 +58,15 @@ export default function GuideIndex() {
   const url = absoluteUrl("/guide/");
   const graph = { "@context": "https://schema.org", "@graph": [
     { "@type": "CollectionPage", name: title, description, url, inLanguage: "ja-JP", mainEntity: { "@type": "ItemList", numberOfItems: guides.length, itemListElement: guides.map((guide, index) => ({ "@type": "ListItem", position: index + 1, name: guide.title, url: absoluteUrl(`/guide/${guide.slug}/`) })) } },
-    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "ホーム", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ガイド", item: url }] },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "トップ", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ガイド", item: url }] },
   ] };
 
   return <><JsonLd data={graph}/><div className="page-shell editorial-index guide-index-page">
-    <nav className="breadcrumbs" aria-label="パンくず"><Link href="/">ホーム</Link><span>/</span><span aria-current="page">ガイド</span></nav>
-    <header className="page-heading">
-      <span className="eyebrow">career guide</span>
+    <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">ガイド</span></nav>
+    <header className="phead">
+      <p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-GUIDE · ガイド</p>
       <h1>迷いを、確認できる手順に変える。</h1>
-      <p>職業名だけで決めず、仕事内容・注意点・出典を読み、次に試す学びへつなげます。すべての記事に先に結論、目次、公式出典、確認日があります。テーマを選ぶと、その場で絞り込めます。各カードには、読む・試す目安の時間と、出典の確認日と新しさを表示します。</p>
+      <p className="phead-lead">職業名だけで決めず、仕事内容・注意点・出典を読み、次に試す学びへつなげます。すべての記事に先に結論、目次、公式出典、確認日があります。テーマを選ぶと、その場で絞り込めます。各カードには、読む・試す目安の時間と、出典の確認日と新しさを表示します。</p>
     </header>
 
     <GuideExplorer items={items} topics={topics} />

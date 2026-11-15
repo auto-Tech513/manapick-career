@@ -1,0 +1,209 @@
+/* ============================================================
+   記事ページ共通（T1）：ニュース／ガイド詳細と索引
+   採用デザインパッケージの記事テンプレート値に合わせる。
+   ============================================================ */
+
+/* --- 詳細：本文 --- */
+.editorial-detail .article-cover {
+  margin: 26px 0 6px;
+  border: 1.5px solid #e3dcc6;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.editorial-detail .article-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.editorial-detail .article-toc {
+  border: 1.5px solid #e3dcc6;
+  border-radius: 16px;
+  background: #fff;
+  padding: 18px 20px;
+  margin: 26px 0;
+}
+.editorial-detail .article-toc ol {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.editorial-detail .article-toc li {
+  border-top: 1px solid var(--rule);
+}
+.editorial-detail .article-toc a {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  padding: 9px 2px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  min-height: 44px;
+}
+.editorial-detail .article-toc a span {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--ca-ink);
+}
+.editorial-detail .article-answer {
+  background: #fff8dc;
+  border: 1px solid var(--rule);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 26px 0;
+}
+.editorial-detail .article-answer > span {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ca-ink);
+}
+.editorial-detail .article-answer h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 22px;
+  margin: 6px 0 8px;
+}
+.editorial-detail .article-section {
+  margin-top: 40px;
+}
+.editorial-detail .article-section-number {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: var(--ca-ink);
+}
+.editorial-detail .article-section h2,
+.editorial-detail .related-careers h2,
+.editorial-detail .article-review h2,
+.editorial-detail .article-key-points h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 27px;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  margin: 8px 0 14px;
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+.editorial-detail .article-section p,
+.editorial-detail .article-answer p {
+  font-size: 16px;
+  line-height: 1.95;
+}
+.editorial-detail .article-key-points ul,
+.editorial-detail .article-section ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.editorial-detail .article-key-points li,
+.editorial-detail .article-section li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  border: 1.5px solid #e3dcc6;
+  border-radius: 12px;
+  background: #fff;
+  padding: 12px 14px;
+  font-size: 14.5px;
+  line-height: 1.8;
+}
+.editorial-detail .article-key-points li svg,
+.editorial-detail .article-section li svg {
+  flex: none;
+  margin-top: 3px;
+  color: var(--ca-ink);
+}
+.editorial-detail .related-careers > div {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--rule);
+}
+.editorial-detail .related-careers > div > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 2px;
+  border-bottom: 1px solid var(--rule);
+  min-height: 44px;
+}
+.editorial-detail .related-careers strong {
+  display: block;
+  font-size: 15px;
+}
+.editorial-detail .related-careers small {
+  display: block;
+  color: var(--muted);
+  font-size: 12.5px;
+  margin-top: 2px;
+  line-height: 1.7;
+}
+.editorial-detail .article-review {
+  border: 1px solid var(--ink);
+  border-radius: 16px;
+  padding: 6px 22px 20px;
+  margin-top: 44px;
+  background: #fff;
+}
+.editorial-detail .article-review h2 {
+  border-top: 0;
+}
+.editorial-detail .source-list {
+  list-style: none;
+  padding: 0;
+}
+.editorial-detail .source-list li {
+  border-top: 1px solid var(--rule);
+  padding: 10px 0;
+}
+.editorial-detail .learning-offer {
+  border: 1.5px solid #e3dcc6;
+  border-radius: 16px;
+  background: #fff;
+}
+.editorial-detail .source-freshness-notice {
+  border: 1px solid var(--ink);
+  border-radius: 16px;
+  background: #fff8dc;
+  padding: 16px 20px;
+  margin: 22px 0;
+}
+.editorial-detail .source-freshness-notice h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 19px;
+  margin: 0 0 6px;
+}
+
+/* --- 索引 --- */
+.editorial-index .article-card {
+  border: 1.5px solid #e3dcc6;
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+.editorial-index .article-card-body strong,
+.editorial-index .article-card-body .article-card-title {
+  font-family: var(--mincho);
+  font-weight: 700;
+}
+.editorial-index .news-freshness-panel {
+  border: 1.5px solid #e3dcc6;
+  border-radius: 16px;
+  background: #fff;
+}
+
+@media (max-width: 640px) {
+  .editorial-detail .article-section h2,
+  .editorial-detail .related-careers h2,
+  .editorial-detail .article-review h2,
+  .editorial-detail .article-key-points h2 {
+    font-size: 22px;
+  }
+}

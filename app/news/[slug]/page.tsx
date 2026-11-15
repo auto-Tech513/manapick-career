@@ -10,6 +10,7 @@ import { NewsletterForm } from "@/components/NewsletterForm";
 import { newsBySlug, newsItems, newsModifiedAt, newsNeedsRefresh } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
+import "../../article.css";
 import { buildNewsStaticParams, EMPTY_NEWS_ROUTE_SLUG } from "@/lib/news-static-params.mjs";
 import "@/components/article-cover.css";
 
@@ -40,12 +41,11 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   const readMinutes = Math.max(7, Math.ceil(articleText.length / 400));
   const graph = { "@context": "https://schema.org", "@graph": [
     { "@type": "NewsArticle", headline: item.title, description: item.summary, mainEntityOfPage: url, url, image: { "@type": "ImageObject", url: articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`), width: 1200, height: 675 }, datePublished: item.publishedAt, dateModified: modifiedAt, inLanguage: "ja-JP", articleSection: item.kind, isAccessibleForFree: true, author: { "@type": "Organization", name: item.author, url: absoluteUrl("/operator/") }, editor: { "@type": "Organization", name: item.editor, url: absoluteUrl("/operator/") }, publisher: { "@id": absoluteUrl("/#organization") }, citation: sources.map((source) => source.url) },
-    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "ホーム", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ニュース", item: absoluteUrl("/news/") }, { "@type": "ListItem", position: 3, name: item.title, item: url }] },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "トップ", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ニュース", item: absoluteUrl("/news/") }, { "@type": "ListItem", position: 3, name: item.title, item: url }] },
   ] };
   return <><JsonLd data={graph}/><div className="page-shell editorial-detail news-detail-page">
-    <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><Link href="/news/">ニュース</Link><span>/</span><span aria-current="page">{item.kind}</span></nav>
-    <Link className="back-link" href="/news/"><ArrowLeft aria-hidden="true" />ニュース一覧へ</Link>
-    <header className="page-heading article-heading"><span className="eyebrow">{item.kind}</span><h1 className="phrase-breaks"><PhraseText text={item.title} /></h1><p>{item.summary}</p><div className="article-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>出典台帳の記録 {item.checkedAt}</span><span>公開台帳の記録 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
+    <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><Link href="/news/">ニュース</Link><span aria-hidden="true">／</span><span aria-current="page">{item.kind}</span></nav>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-NEWS · {item.kind}</p><h1 className="phrase-breaks"><PhraseText text={item.title} /></h1><p className="phead-lead">{item.summary}</p><div className="phead-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>出典台帳の記録 {item.checkedAt}</span><span>公開台帳の記録 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
     <figure className="article-cover"><img src={articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`)} alt={item.title} width={1200} height={675} /></figure>
     {newsNeedsRefresh(item) ? <aside className="source-freshness-notice" data-news-archive="true" role="note"><h2>過去の公表資料に基づく記事です</h2><p>資料確認日の記録は{item.checkedAt}で、更新確認の期限を過ぎています。最新の発表は下記の公式出典に載っています。</p></aside> : null}
     <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources} relatedArticles={relatedArticles}/>
