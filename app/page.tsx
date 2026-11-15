@@ -186,6 +186,7 @@ export default function Home() {
           </div>
         </div>
         <TransferCards
+          labelStyle="top"
           cards={[
             { siteId: "manapick", title: "資格の学び方を動画で", description: "学習動画とロードマップ", href: "https://manapick.app/guide/certification/" },
             { siteId: "ai", title: "仕事で使われるAIを見る", description: "代表的なAIツールの使い方と比較", href: "https://ai.manapick.app/tool/chatgpt/" },
