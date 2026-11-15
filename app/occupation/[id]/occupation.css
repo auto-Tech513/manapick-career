@@ -1,23 +1,31 @@
-/* 職業個別ページ：要点ボックスと求人導線（このページ種別専用） */
+/* 職業個別ページ：要点の数値帯と求人導線（このページ種別専用） */
+/* 第3段階: 枠つきボックスを廃し、太罫で区切る全面の数値帯に。統計値は大きな数字で見せる */
 .occupation-keypoints {
-  margin: 1.2rem 0 0;
-  padding: 1rem 1.1rem;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-2);
-  background: var(--surface);
+  margin: 1.4rem 0 0;
+  padding: 1.05rem 0 1.1rem;
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--line);
 }
 
 .occupation-keypoints h2 {
-  margin: 0 0 0.7rem;
-  font-size: 1rem;
-  font-weight: 800;
+  margin: 0 0 0.8rem;
+  color: var(--primary-aa);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .occupation-keypoints dl {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.6rem 1.2rem;
+  gap: 1rem 1.6rem;
   margin: 0;
+}
+
+@media (min-width: 900px) {
+  .occupation-keypoints dl {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .occupation-keypoints dl > div {
@@ -32,10 +40,17 @@
 }
 
 .occupation-keypoints dd {
-  margin: 0.1rem 0 0;
+  margin: 0.15rem 0 0;
   font-size: 0.95rem;
   font-weight: 700;
   line-height: 1.5;
+}
+
+.occupation-keypoints-figure {
+  font-size: 1.9rem;
+  font-weight: 800;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
 }
 
 .occupation-keypoints dd a {
@@ -43,10 +58,32 @@
 }
 
 .occupation-keypoints-note {
-  margin: 0.7rem 0 0;
+  margin: 0.85rem 0 0;
   color: var(--muted);
   font-size: 0.72rem;
   line-height: 1.6;
+}
+
+/* 冒頭の答え: 年収の数字だけを大きく見せる（本文・数値は不変） */
+.occupation-article .article-answer strong {
+  font-size: 1.35em;
+  font-weight: 900;
+}
+
+/* セクション見出しに通し番号のキッカーを視覚的に付ける（DOMの見出し文は不変） */
+.occupation-article {
+  counter-reset: occupation-section;
+}
+
+.occupation-article .article-section > h2::before {
+  counter-increment: occupation-section;
+  content: "SECTION " counter(occupation-section, decimal-leading-zero);
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--primary-aa);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.09em;
 }
 
 .occupation-jobtag-action {
