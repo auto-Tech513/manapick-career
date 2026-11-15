@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight, BadgeCheck, Check, ExternalLink, ShoppingBag, Sparkles } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { careerShopPolicy, careerShopProducts, careerShopScenes } from "@/content/shop-products";
-import { NetworkSites } from "@/components/NetworkSites";
+import { TransferCards } from "@/components/TransferCards";
 import { absoluteUrl, pageOgUrl } from "@/lib/site";
 
 const title = "manapi商店｜学び直し・面接・仕事準備の道具";
@@ -41,8 +41,8 @@ const graph = {
 
 export default function ShopPage() {
   return <><JsonLd data={graph}/><div className="page-shell wide career-shop-page">
-    <nav className="article-breadcrumbs" aria-label="パンくずリスト"><Link href="/">ホーム</Link><span>/</span><span aria-current="page">manapi商店</span></nav>
-    <header className="career-shop-hero"><span className="career-shop-mark"><ShoppingBag aria-hidden="true" /></span><div><span className="eyebrow">PR / CAREER WORK TOOLS</span><h1>manapi商店</h1><p>学び直しと仕事準備の道具を、場面ごとに編集部が選ぶ小さな商店です。掲載は全{careerShopProducts.length}点。すべてメーカー公式仕様とAmazonの商品ページで実在を確認し、「買わなくてよい条件」まで正直に書きます。</p><div className="career-shop-hero-chips"><span><BadgeCheck aria-hidden="true" />全品メーカー公式で確認</span><span><BadgeCheck aria-hidden="true" />{careerShopPolicy.checkedAt} 時点の掲載内容</span><span><BadgeCheck aria-hidden="true" />報酬で掲載順を変えない</span></div></div></header>
+    <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">manapi商店</span></nav>
+    <header className="phead career-shop-hero"><p className="phead-eyebrow"><span className="career-shop-mark"><ShoppingBag aria-hidden="true" /></span> CA-SHOP · PR / CAREER WORK TOOLS</p><h1>manapi商店</h1><p className="phead-lead">学び直しと仕事準備の道具を、場面ごとに編集部が選ぶ小さな商店です。掲載は全{careerShopProducts.length}点。すべてメーカー公式仕様とAmazonの商品ページで実在を確認し、「買わなくてよい条件」まで正直に書きます。</p><div className="phead-meta"><span><BadgeCheck aria-hidden="true" />全品メーカー公式で確認</span><span><BadgeCheck aria-hidden="true" />{careerShopPolicy.checkedAt} 時点の掲載内容</span><span><BadgeCheck aria-hidden="true" />報酬で掲載順を変えない</span></div></header>
 
     <section className="career-shop-pr" aria-label="広告表示"><strong>PR</strong><p>{careerShopPolicy.disclosure}</p><Link href="/affiliate/">広告・掲載基準を確認</Link></section>
 
@@ -63,6 +63,14 @@ export default function ShopPage() {
     })}
 
     <section className="career-shop-method"><h2>選定方法と限界</h2><p>{careerShopPolicy.independence}</p><p>カードの画像は実際の商品写真で、Amazonの画像配信サーバーから直接表示しています。外観や販売条件、仕様の最新情報はAmazonとメーカー公式ページに載っています。必要な道具は仕事、職場、体格、すでに持っている機器で変わります。</p><div className="career-shop-principles"><span><Check aria-hidden="true" />必要な人だけに勧める</span><span><Check aria-hidden="true" />価格・在庫はAmazonで表示</span><span><Check aria-hidden="true" />メーカー公式仕様も同時に確認</span><span><Check aria-hidden="true" />掲載順は編集部が決定</span></div><div><a href="https://affiliate.amazon.co.jp/help/node/topic/GKT6X2R3NGW5V23K" target="_blank" rel="noopener noreferrer">Amazon画像利用の公式注意事項 <ArrowUpRight aria-hidden="true" /></a><Link href="/affiliate/">本サイトの広告方針</Link><Link href="/contact/">訂正窓口</Link></div><small>掲載内容確認日：{careerShopPolicy.checkedAt}</small></section>
-    <NetworkSites />
+    <section className="transfer-sec" aria-label="ほかの駅へ">
+      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2>ほかの駅へ進む</h2></div></div>
+      <TransferCards cards={[
+        { siteId: "license", title: "ITパスポート", description: "仕事につながる資格", href: "https://license.manapick.app/license/it-passport/" },
+        { siteId: "manapick", title: "資格の学び方ガイド", description: "無料動画で学ぶ", href: "https://manapick.app/guide/certification/" },
+        { siteId: "ai", title: "ChatGPT", description: "仕事で使うAI", href: "https://ai.manapick.app/tool/chatgpt/" },
+        { siteId: "company", title: "上場企業ランキング", description: "業界の企業を読む", href: "https://company.manapick.app/ranking/" },
+      ]} />
+    </section>
   </div></>;
 }

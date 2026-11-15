@@ -1,0 +1,112 @@
+/* ============================================================
+   固定ページ共通（T5）：InfoPage の本文・FAQ・用語集
+   ============================================================ */
+.info-page .prose {
+  padding: 34px 0 70px;
+  max-width: 820px;
+}
+.info-page .prose h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  margin: 40px 0 14px;
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+.info-page .prose h2:first-child {
+  margin-top: 0;
+}
+.info-page .prose p,
+.info-page .prose li {
+  font-size: 16px;
+  line-height: 1.95;
+}
+.info-page .prose a {
+  color: var(--ca-ink);
+  font-weight: 700;
+}
+/* FAQ（T5 .faq） */
+.info-page .faq-list {
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--rule);
+  margin-bottom: 12px;
+}
+.info-page .faq-list details {
+  border-bottom: 1px solid var(--rule);
+  background: #fff;
+}
+.info-page .faq-list summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 6px;
+  font-size: 15.5px;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  min-height: 44px;
+}
+.info-page .faq-list summary::-webkit-details-marker {
+  display: none;
+}
+.info-page .faq-list summary::after {
+  content: "+";
+  margin-left: auto;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--num);
+  font-size: 17px;
+  line-height: 1;
+}
+.info-page .faq-list details[open ] summary::after {
+  content: "−";
+  background: var(--ca);
+}
+.info-page .faq-list details p {
+  padding: 0 6px 16px;
+  color: #333d52;
+  margin: 0;
+}
+/* 用語集（T5 .dl） */
+.info-page .glossary-list {
+  border: 1px solid var(--ink);
+  border-radius: 16px;
+  background: #fff;
+  padding: 6px 22px;
+  margin-bottom: 12px;
+}
+.info-page .glossary-list > div {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 6px 20px;
+  padding: 13px 0;
+  border-top: 1px solid var(--rule);
+}
+.info-page .glossary-list > div:first-child {
+  border-top: 0;
+}
+.info-page .glossary-list dt {
+  font-weight: 700;
+  font-size: 15px;
+}
+.info-page .glossary-list dd {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.85;
+  color: #333d52;
+}
+@media (max-width: 640px) {
+  .info-page .glossary-list > div {
+    grid-template-columns: 1fr;
+  }
+  .info-page .prose h2 {
+    font-size: 21px;
+  }
+}

@@ -479,3 +479,45 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
     font-size: 22px;
   }
 }
+
+/* 404（T5 .e404） */
+.e404 {
+  text-align: center;
+  padding: 90px 0 110px;
+}
+.e404-code {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 120px;
+  line-height: 1;
+  color: var(--ca);
+  -webkit-text-stroke: 2px var(--ink);
+  margin: 0;
+}
+.e404 h1 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 30px;
+  margin: 22px 0 12px;
+}
+.e404-lead {
+  color: #4a5468;
+  line-height: 1.9;
+  max-width: 560px;
+  margin: 0 auto;
+}
+.e404-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 26px;
+}
+@media (max-width: 640px) {
+  .e404-code {
+    font-size: 84px;
+  }
+  .e404 h1 {
+    font-size: 24px;
+  }
+}
