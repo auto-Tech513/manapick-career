@@ -3116,8 +3116,8 @@ dd {
 .employers-group { margin-top: 2.2rem; }
 .employers-group > h2 { display: flex; align-items: baseline; gap: .6rem; font-size: 1.15rem; font-weight: 800; margin: 0 0 .8rem; }
 .employers-group > h2 small { color: var(--muted); font-size: .75rem; font-weight: 700; }
-.employers-list { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
-.employers-list li { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .8rem 1rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
+.employers-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.employers-list li { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .9rem .2rem; border-bottom: 1px solid var(--line); }
 .employers-list h3 { margin: 0; font-size: .95rem; font-weight: 700; }
 .employers-list p { margin: .2rem 0 0; color: var(--muted); font-size: .78rem; line-height: 1.6; }
 .employers-list a { display: inline-flex; align-items: center; min-height: 44px; gap: .3rem; flex: none; color: var(--primary-aa); font-size: .75rem; font-weight: 800; }
@@ -3128,8 +3128,8 @@ dd {
 .income-rank-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
 .income-rank-group { min-width: 0; }
 .income-rank-group > h3 { margin: 0 0 .7rem; font-size: 1rem; font-weight: 800; color: var(--primary-aa); }
-.income-rank-list li { grid-template-columns: 64px minmax(0, 1fr) auto; grid-template-rows: auto auto; row-gap: .2rem; min-height: 0; padding: .8rem .9rem; }
-.income-rank-list .ranking-number { min-height: 52px; font-size: 1.2rem; grid-row: 1 / 3; }
+.income-rank-list li { grid-template-columns: 64px minmax(0, 1fr) auto; grid-template-rows: auto auto; row-gap: .2rem; min-height: 0; padding: .8rem .2rem; }
+.income-rank-list .ranking-number { font-size: 1.55rem; grid-row: 1 / 3; }
 .income-rank-list .ranking-copy { min-width: 0; }
 .income-rank-value { font-size: 1.05rem; font-weight: 800; color: var(--ink); white-space: nowrap; }
 .income-rank-list li > a { grid-column: 2 / 4; justify-self: end; min-height: 44px; }
@@ -3140,10 +3140,10 @@ dd {
 .ranking-method p { margin: .3rem 0 0; color: var(--muted); font-size: .75rem; line-height: 1.7; }
 .ranking-method > a { display: inline-flex; min-height: 44px; align-items: center; gap: .3rem; color: var(--primary-aa); font-size: .76rem; font-weight: 800; }
 .ranking-method > small { align-self: center; justify-self: end; color: var(--muted); font-size: .75rem; }
-.ranking-list ol { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
-.ranking-list li { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: 96px; padding: .9rem 1rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
-.ranking-number { display: grid; place-items: center; min-height: 62px; border-radius: var(--radius-2); background: var(--ink); color: var(--primary); font-family: var(--font-sans); font-size: 1.45rem; font-weight: 800; }
-.ranking-number small { color: #fff; font-size: .75rem; letter-spacing: .08em; }
+.ranking-list ol { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.ranking-list li { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: 96px; padding: 1rem .2rem; border-bottom: 1px solid var(--line); }
+.ranking-number { display: grid; justify-items: start; align-content: center; gap: .15rem; color: var(--ink); font-size: 2rem; font-weight: 800; line-height: 1; }
+.ranking-number small { color: var(--primary-aa); font-size: .68rem; font-weight: 800; letter-spacing: .08em; }
 .ranking-copy > small { color: var(--muted); font-size: .75rem; font-weight: 800; }
 .ranking-copy h3 { margin: .1rem 0 .3rem; color: var(--ink); font-size: 1rem; font-weight: 700; }
 .ranking-connections { display: flex; flex-wrap: wrap; gap: .3rem; }
@@ -3262,8 +3262,8 @@ dd {
   .ranking-method,
   .skill-group-grid { grid-template-columns: 1fr; }
   .ranking-method > small { justify-self: start; }
-  .ranking-list li { grid-template-columns: 58px minmax(0, 1fr); gap: .7rem; min-height: 0; padding: .75rem; }
-  .ranking-number { min-height: 54px; font-size: 1.2rem; }
+  .ranking-list li { grid-template-columns: 58px minmax(0, 1fr); gap: .7rem; min-height: 0; padding: .8rem .2rem; }
+  .ranking-number { font-size: 1.55rem; }
   .ranking-list li > a { grid-column: 2; justify-self: start; min-height: 44px; }
   .skill-learning { align-items: stretch; flex-direction: column; }
   .news-freshness-panel { grid-template-columns: 1fr; gap: .45rem; padding: .55rem; border-radius: var(--radius-2); }
