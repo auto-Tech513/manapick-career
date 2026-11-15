@@ -530,6 +530,7 @@
   place-items: center;
   align-content: center;
   text-align: center;
+  overflow: hidden;
 }
 .ring-p em {
   font-style: normal;
@@ -958,6 +959,9 @@
   .ring-p {
     width: 84px;
     height: 84px;
+  }
+  .ring-p em {
+    font-size: 17px;
   }
   .ring-c b {
     font-size: 21px;
