@@ -80,7 +80,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
 
   return <section className="catalog" aria-labelledby="catalog-title">
     <div className="catalog-intro">
-      <div><span className="eyebrow">job tag 解説系データ ver.7.01</span><h2 id="catalog-title">{occupations.length}職業の出典付き名録</h2><p>仕事内容の要約を読み、気になる仕事の入職条件・労働条件・関連資格をこのページで開けます。公式配布データの説明と、career独自の個別ページ・解説を区別して案内します。</p></div>
+      <div><p className="sh-k">CATALOG — job tag 解説系データ ver.7.01</p><h2 id="catalog-title">{occupations.length}職業の出典付き名録</h2><p>仕事内容の要約を読み、気になる仕事の入職条件・労働条件・関連資格をこのページで開けます。公式配布データの説明と、career独自の個別ページ・解説を区別して案内します。</p></div>
       <div className="catalog-quality"><BookOpenCheck aria-hidden="true" /><span><strong>{occupations.length}職業の仕事内容を、このページで読む</strong><small>仕事内容・入職の条件・働き方・年収の目安を確認。個別ページ（{publishedIds.length}職業）と独自解説のある職業は、カードから案内します</small></span></div>
     </div>
     <div className="catalog-controls">

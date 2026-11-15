@@ -108,3 +108,42 @@
   color: var(--muted);
   font-size: 0.72rem;
 }
+
+/* T2 寄せ：名録の見出し・絞り込み・パネル */
+.occupation-directory .catalog-intro h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 26px;
+  margin: 4px 0 0;
+}
+.occupation-directory .catalog-fields button[aria-pressed="true"],
+.occupation-directory .catalog-categories button[aria-pressed="true"] {
+  background: var(--ca);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.occupation-directory .income-method-panel {
+  border: 1px solid var(--ink);
+  border-radius: 16px;
+  background: #fff;
+  padding: 20px 22px;
+}
+.occupation-directory .income-method-panel h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 22px;
+}
+.occupation-directory .published-occupation-group {
+  border: 1.5px solid #e3dcc6;
+  border-radius: 14px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.occupation-directory .published-occupation-group summary {
+  font-weight: 700;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  cursor: pointer;
+}

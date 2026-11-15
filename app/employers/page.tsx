@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { NetworkSites } from "@/components/NetworkSites";
+import { TransferCards, type TransferCard } from "@/components/TransferCards";
 import { employerCategories, employerDossiers, employerTotal, occupationById } from "@/lib/employers";
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
@@ -17,14 +17,15 @@ export const metadata: Metadata = {
 export default function EmployersPage() {
   const graph = { "@context": "https://schema.org", "@graph": [
     { "@type": "CollectionPage", "@id": absoluteUrl("/employers/#page"), url: absoluteUrl("/employers/"), name: "企業・法人・公的機関の例がある職業一覧", inLanguage: "ja-JP", isPartOf: { "@id": absoluteUrl("/#website") }, mainEntity: { "@type": "ItemList", numberOfItems: employerCategories.length, itemListElement: employerCategories.map((category, index) => ({ "@type": "ListItem", position: index + 1, name: `${category.label}の企業例`, url: absoluteUrl(`/employers/${category.key}/`) })) } },
-    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "ホーム", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "企業例のある職業", item: absoluteUrl("/employers/") }] },
+    { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "トップ", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "企業例のある職業", item: absoluteUrl("/employers/") }] },
   ] };
   return <><JsonLd data={graph} /><div className="page-shell employers-page">
-    <nav className="breadcrumbs" aria-label="パンくず"><Link href="/">ホーム</Link><span>/</span><span aria-current="page">企業例のある職業</span></nav>
-    <header className="page-heading"><span className="eyebrow">公式ページで確認した職場の例</span><h1>企業・法人・公的機関の例がある職業</h1>
-      <p>556職業のうち、現在 {employerTotal} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。確認が取れていない職業は載せていません。載せていない職業は、公式ページで確認できた例がまだ見つかっていないためで、その職業で働く場が存在しないという意味ではありません。</p></header>
+    <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">企業例のある職業</span></nav>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 企業例のある職業</p><h1>企業・法人・公的機関の例がある職業</h1>
+      <p className="phead-lead">556職業のうち、現在 {employerTotal} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。確認が取れていない職業は載せていません。載せていない職業は、公式ページで確認できた例がまだ見つかっていないためで、その職業で働く場が存在しないという意味ではありません。</p>
+      <div className="phead-meta"><span><b>公式ページで確認した職場の例</b>{employerTotal}職業</span><span><b>分野</b>{employerCategories.length}</span></div></header>
     <section aria-labelledby="employers-howto-title" className="employers-howto">
-      <h2 id="employers-howto-title">探し方</h2>
+      <div className="sh"><div><p className="sh-k">HOW TO — 探し方</p><h2 id="employers-howto-title">探し方</h2></div></div>
       <ol>
         <li><strong>分野から開く</strong><span>働く対象や作業のイメージに近い分野を、下の一覧から選びます。分野ごとに、その分野の職業と職場の例だけをまとめたページへ進みます。</span></li>
         <li><strong>職業と職場の例を見る</strong><span>各職業には、公式ページで確認した企業・法人・公的機関の例を載せています。企業名からは、その組織の公式情報へ進めます。</span></li>
@@ -32,7 +33,7 @@ export default function EmployersPage() {
       </ol>
     </section>
     <section aria-label="分野別の企業例" className="employers-group">
-      <h2>分野から探す<small>{employerCategories.length}分野・{employerCategories.reduce((sum, category) => sum + category.items.length, 0)}職業</small></h2>
+      <div className="sh"><div><p className="sh-k">FIELDS — 分野</p><h2>分野から探す<small>{employerCategories.length}分野・{employerCategories.reduce((sum, category) => sum + category.items.length, 0)}職業</small></h2></div></div>
       <ul className="employers-list">{employerCategories.map(category => {
         const examples = category.items.slice(0, 3).map(item => occupationById.get(item.catalogId)?.name).filter(Boolean).join("・");
         return <li key={category.key}>
@@ -42,13 +43,21 @@ export default function EmployersPage() {
       })}</ul>
     </section>
     <section aria-label="詳しい企業例ページがある職業" className="employers-group">
-      <h2>詳しい企業例ページがある職業<small>{employerDossiers.length}職業</small></h2>
+      <div className="sh"><div><p className="sh-k">DOSSIERS — 専用ページ</p><h2>詳しい企業例ページがある職業<small>{employerDossiers.length}職業</small></h2></div></div>
       <ul className="employers-list">{employerDossiers.map(({ entry, profile }) => <li key={entry.catalogId}>
         <div><h3>{profile!.name}</h3><p>仕事内容・資格・年収・企業例を出典付きで整理した専用ページ</p></div>
         <Link href={`/career/${entry.slug}/`}>詳しく読む <ArrowUpRight aria-hidden="true" /></Link>
       </li>)}</ul>
     </section>
     <p className="employers-note">企業例の確認方法：各組織の公式ページ（採用・職種紹介・業務紹介など）を開き、職種名と業務内容が本文にあることを確認しています。確認日は各職業の解説内に記載しています。</p>
-    <NetworkSites />
+    <section className="transfer-sec" aria-label="ほかの駅へ">
+      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2>ほかの駅へ進む</h2></div></div>
+      <TransferCards cards={[
+        { siteId: "license", title: "ITパスポート", description: "仕事につながる資格", href: "https://license.manapick.app/license/it-passport/" },
+        { siteId: "manapick", title: "資格の学び方ガイド", description: "無料動画で学ぶ", href: "https://manapick.app/guide/certification/" },
+        { siteId: "ai", title: "ChatGPT", description: "仕事で使うAI", href: "https://ai.manapick.app/tool/chatgpt/" },
+        { siteId: "company", title: "上場企業ランキング", description: "業界の企業を読む", href: "https://company.manapick.app/ranking/" },
+      ]} />
+    </section>
   </div></>;
 }

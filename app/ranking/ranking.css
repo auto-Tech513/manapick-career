@@ -35,3 +35,13 @@
   .extra-rank-groups { grid-template-columns: 1fr; }
   .extra-rank-list li { grid-template-columns: 56px minmax(0, 1fr) auto; gap: .6rem; padding: .75rem .2rem; }
 }
+
+/* T2 寄せ：順位数字と金額を Barlow に、行とチップの形を共通テンプレートへ */
+.ranking-number { font-family: var(--num); font-weight: 600; }
+.ranking-number small { font-family: var(--num); letter-spacing: .14em; color: var(--ca-ink); }
+.income-rank-value { font-family: var(--num); font-weight: 600; font-size: 1.15rem; }
+.ranking-filters button { border: 1.5px solid var(--rule); background: #fff; }
+.ranking-filters button.active { background: var(--ca); border-color: var(--ink); color: var(--ink); }
+.ranking-anchor-nav a { border: 1.5px solid var(--rule); background: #fff; }
+.income-rank-section { margin-top: 8px; }
+.extra-rank-group > h3 { font-family: var(--mincho); font-weight: 700; }
