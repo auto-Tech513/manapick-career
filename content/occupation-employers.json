@@ -354,6 +354,16 @@
             "url": "https://www.keishicho.metro.tokyo.lg.jp/saiyo/type/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "神奈川県警察",
+          "role": "警察官",
+          "description": "神奈川県警察の警察官採用試験による採用例。警察官A・Bのほか、職務経験者を対象とするキャリア区分や柔道・剣道の術科区分があり、採用後は全寮制の神奈川県警察学校で基礎的教養研修を受けた後、県内各警察署に配属される。",
+          "source": {
+            "title": "令和8年度警察官採用試験（神奈川県警察）",
+            "url": "https://www.police.pref.kanagawa.jp/saiyo/saiyo_annai/mesb0001.html",
+            "checkedAt": "2026-11-15"
+          }
         }
       ]
     },
@@ -1038,6 +1048,16 @@
             "title": "令和8年度茨城県職員採用大学卒業程度試験案内【早期日程】",
             "url": "https://www.pref.ibaraki.jp/somu/hodo/hodo/pressrelease/hodohappyoushiryou/2203/documents/260302jinjiiinkai.pdf",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "愛知県（愛知県人事委員会）",
+          "role": "県職員採用試験（行政）",
+          "description": "愛知県人事委員会が実施する県職員採用試験による採用例。大卒程度の行政I・IIや専門職などの第1回試験に加え、高卒程度の第2回試験、社会人や民間企業等の職務経験者を対象とした試験など、複数の入口が用意されている。",
+          "source": {
+            "title": "2026年度実施 愛知県職員採用試験等 日程案内",
+            "url": "https://www.pref.aichi.jp/uploaded/attachment/596853.pdf",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
@@ -1988,6 +2008,16 @@
             "title": "日本気象協会からのお知らせ：気象キャスター募集のお知らせ",
             "url": "https://www.jwa.or.jp/wp-content/uploads/2017/11/69d3a08f33677fa853627e4973030ffb.pdf",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社 ウェザーニューズ",
+          "role": "気象キャスター・気象デスク",
+          "description": "民間気象会社ウェザーニューズのキャスター採用による例。気象予報士の資格が必須で、提携するキャスター専門事務所に所属し、国内の放送局へ派遣されて気象キャスターや気象デスクとして番組で気象解説を担う。",
+          "source": {
+            "title": "キャスター採用（ウェザーニューズ）",
+            "url": "https://jp.weathernews.com/recruit/caster/",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
@@ -5353,6 +5383,16 @@
             "title": "Recruitment Notice: Professor (Graduate School of Information Sciences) | Tohoku University",
             "url": "https://www.tohoku.ac.jp/en/news/careers/professor_graduate_school_of_information_sciences.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "名古屋大学",
+          "role": "大学教員（教授・准教授・助教等の公募）",
+          "description": "国立大学の教員公募による採用例。名古屋大学では医学・工学・人文学など各研究科で教授・准教授・助教などの公募が随時行われ、研究分野ごとに博士の学位や研究業績を要件として、教育と研究を担う教員を募集している。",
+          "source": {
+            "title": "教員等 - 教職員公募（名古屋大学）",
+            "url": "https://www.aip.nagoya-u.ac.jp/information/28291.html",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
