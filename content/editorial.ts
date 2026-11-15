@@ -26,7 +26,7 @@ export type EditorialClaim = {
 };
 
 export type EditorialNetworkLinkReference = {
-  siteId: "learning" | "ai" | "license";
+  siteId: "learning" | "ai" | "license" | "company";
   itemId: string;
   label: string;
   description: string;
@@ -148,7 +148,7 @@ function resolveNetworkLinks(links: EditorialNetworkLinkReference[]): EditorialN
   return links.map((link) => ({ ...link, href: networkUrl(link.itemId) }));
 }
 
-function newsNetworkLinks(item: Pick<NewsContent, "slug" | "kind">): EditorialNetworkLink[] {
+function newsNetworkLinksBase(item: Pick<NewsContent, "slug" | "kind">): EditorialNetworkLink[] {
   // 介護資格への深い導線は、介護職が関連記事の一つに含まれるだけでは出さない。
   // 試験公告そのものを扱う記事に限定し、ニュース本文の検索意図とリンク先を一致させる。
   if (item.slug === "care-worker-exam-39") return resolveNetworkLinks([
@@ -171,6 +171,22 @@ function newsNetworkLinks(item: Pick<NewsContent, "slug" | "kind">): EditorialNe
     { siteId: "ai", itemId: "ai:notebooklm", label: "manapick AIで調査資料を整理", description: "平均と個人条件を混ぜず、引用箇所と注記へ戻れる形で比較します。" },
     { siteId: "license", itemId: "license:mos", label: "manapick licenseで業務基礎を照合", description: "資格の有無を採用可能性へ置き換えず、表計算・文書作成の学習範囲を確認します。" },
   ]);
+}
+
+// 企業情報との接続が本文そのものにある記事に限り、既定の3枠へ company を
+// 4枠目として足す（オーナー決定 2026-11-15）。対象は人的資本＝企業開示を
+// 扱う記事、春闘＝企業側の賃上げ回答を扱う記事、中小企業白書の記事。
+const companySlotSlugs = new Set(["human-investment-panel-2026", "spring-wage-settlement-2026", "sme-whitepaper-latest"]);
+
+function newsNetworkLinks(item: Pick<NewsContent, "slug" | "kind">): EditorialNetworkLink[] {
+  const base = newsNetworkLinksBase(item);
+  if (!companySlotSlugs.has(item.slug)) return base;
+  return [
+    ...base,
+    ...resolveNetworkLinks([
+      { siteId: "company", itemId: "company:home", label: "manapick companyで企業情報を見る", description: "上場企業の業績・開示情報から、業界や企業の実際の姿を確認します。" },
+    ]),
+  ];
 }
 
 function newsClaims(item: Pick<NewsContent, "slug" | "kind" | "keyPoints" | "checkedAt">, primarySourceId: string): EditorialClaim[] {
@@ -196,9 +212,11 @@ function claimIsFresh(claim: EditorialClaim) {
 }
 
 function networkLinksArePublishable(links: EditorialNetworkLink[]) {
-  if (links.length !== 3 || new Set(links.map((link) => link.itemId)).size !== links.length) return false;
+  if (links.length < 3 || links.length > 4 || new Set(links.map((link) => link.itemId)).size !== links.length) return false;
   const siteIds = new Set<string>(links.map((link) => link.siteId));
   if (!["learning", "ai", "license"].every((siteId) => siteIds.has(siteId))) return false;
+  // 4件目は company 枠のみ許可する（オーナー決定 2026-11-15）。既定の3枠は不変。
+  if (links.length === 4 && links.filter((link) => link.siteId === "company").length !== 1) return false;
   try {
     return links.every((link) => link.href === networkUrl(link.itemId));
   } catch {
