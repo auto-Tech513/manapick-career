@@ -1,0 +1,624 @@
+/* ============================================================
+   深掘り解説（dossier）専用：共通テンプレート T1 への寄せ。
+   既存マークアップ（detail-* / depth-*）を wrapper 配下で上書きする。
+   裁定は職業ページと同じ（本文16px、ラベル12px以上、44pxタップ）。
+   ============================================================ */
+.dossier-article {
+  --dos-tint: #fff1a8;
+  --dos-ink2: #4a5468;
+  --dos-card-border: #e3dcc6;
+  max-width: 1440px;
+  padding: 0 40px 0;
+}
+.dos-crumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 16px 0 4px;
+  flex-wrap: wrap;
+}
+.dos-crumb a {
+  color: var(--muted);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+}
+.dos-crumb a::after {
+  content: "";
+  position: absolute;
+  inset: -10px -4px;
+}
+.dos-crumb [aria-current] {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+/* ---------- ヘッダー（T1 .phead） ---------- */
+.dossier-article .dos-head {
+  padding: 24px 0 34px;
+  border-bottom: 2px solid var(--ink);
+}
+.dos-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: var(--ca-ink);
+  margin: 0;
+}
+.dossier-article .dos-head h1 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 42px;
+  letter-spacing: 0.04em;
+  line-height: 1.35;
+  margin: 16px 0 14px;
+}
+.dossier-article .dos-head h1 small {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  margin-top: 8px;
+}
+.dossier-article .dos-head h1 mark {
+  /* 旧リセット（h1 mark{background:none!important}）を top と同じ流儀で上書き */
+  background: linear-gradient(transparent 60%, var(--ca) 60% 92%, transparent 92%) !important;
+  color: inherit !important;
+  text-shadow: none !important;
+  padding: 0 0.05em;
+}
+.dos-conclusion {
+  max-width: 760px;
+}
+.dos-conclusion strong {
+  font-family: var(--mincho);
+  font-size: 15px;
+  display: block;
+  margin-bottom: 6px;
+}
+.dos-conclusion p,
+.dos-lead {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--dos-ink2);
+  margin: 0 0 8px;
+  max-width: 760px;
+}
+.dos-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+.dos-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 5px 14px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 12.5px;
+}
+.dos-meta b {
+  color: var(--ca-ink);
+  font-weight: 700;
+}
+
+/* ---------- レイアウト ---------- */
+.dossier-article .detail-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr) 300px;
+  gap: 44px;
+  padding: 36px 0 8px;
+  align-items: start;
+}
+.dos-toc {
+  position: sticky;
+  top: 20px;
+  display: grid;
+}
+.dos-toc-h {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  margin: 0 0 6px;
+}
+.dos-toc a {
+  position: relative;
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 8px;
+  align-items: baseline;
+  padding: 8px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 13.5px;
+  color: var(--ink);
+}
+.dos-toc a::after {
+  content: "";
+  position: absolute;
+  inset: -3px 0;
+}
+.dos-toc a i {
+  font-family: var(--num);
+  font-style: normal;
+  font-weight: 600;
+  color: var(--dos-ink2);
+}
+.dossier-article .detail-aside {
+  position: sticky;
+  top: 20px;
+}
+
+/* ---------- 本文 ---------- */
+.dossier-article .detail-content > section {
+  padding: 0 0 8px;
+}
+.dossier-article .detail-content h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.4;
+  margin: 52px 0 18px;
+  padding-top: 18px;
+  border-top: 2px solid var(--ink);
+}
+.dossier-article .detail-content section:first-child h2 {
+  margin-top: 0;
+}
+.dossier-article .detail-content h2 i {
+  font-family: var(--num);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--ca-ink);
+}
+.dossier-article .detail-content h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin: 30px 0 8px;
+}
+.dossier-article .section-lead {
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* 作業の流れ（steps 型） */
+.dossier-article .work-stages > li {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  background: #fff;
+  padding: 16px 18px;
+}
+.dossier-article .depth-step {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 34px;
+  color: var(--ca-ink);
+  line-height: 1;
+}
+.dossier-article .work-stages h4 {
+  font-family: var(--mincho);
+  font-size: 16px;
+}
+
+/* 相性・資格・企業例カード */
+.dossier-article .fit-points {
+  grid-template-columns: 1fr 1fr;
+}
+.dossier-article .fit-points > div {
+  background: #fff;
+  border: 1.5px solid var(--dos-card-border);
+  border-radius: 16px;
+  padding: 14px 16px;
+}
+.dossier-article .depth-qualifications > article,
+.dossier-article .depth-employers > article {
+  border: 1.5px solid var(--dos-card-border);
+  border-radius: 16px;
+  background: #fff;
+}
+.dossier-article .depth-label {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: var(--ca-ink);
+}
+.dossier-article .depth-exercise,
+.dossier-article .claim-comparison-notice,
+.dossier-article .caution-box {
+  border: 1.5px solid var(--ink);
+  border-radius: 12px;
+  background: var(--bg);
+  padding: 16px 18px;
+  margin: 18px 0;
+}
+.dossier-article .depth-evidence {
+  font-size: 12.5px;
+}
+.dossier-article .depth-record {
+  font-size: 12.5px;
+  color: var(--dos-ink2);
+}
+
+/* 年収（wage 型） */
+.dossier-article .income-figure {
+  background: var(--ink);
+  color: #fff;
+  border-radius: 22px;
+  padding: 24px 28px;
+  border: 0;
+  margin: 14px 0;
+}
+.dossier-article .income-label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+}
+.dossier-article .income-classification,
+.dossier-article .income-note,
+.dossier-article .income-population {
+  color: #fff;
+  opacity: 0.85;
+  font-size: 13.5px;
+  line-height: 1.85;
+}
+.dossier-article .income-amount {
+  display: block;
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.1;
+  color: var(--ca);
+  margin: 8px 0;
+}
+.dossier-article .income-amount span {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 6px;
+}
+.dossier-article .income-unavailable {
+  display: block;
+  font-family: var(--mincho);
+  font-size: 24px;
+  color: #fff;
+  margin: 8px 0;
+}
+.dossier-article .income-basis {
+  display: grid;
+  gap: 0;
+  margin: 14px 0;
+}
+.dossier-article .income-basis > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+.dossier-article .income-basis dt {
+  font-size: 13px;
+  opacity: 0.85;
+}
+.dossier-article .income-basis dd {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0;
+}
+.dossier-article .income-source {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 13px;
+  margin: 6px 8px 0 0;
+}
+.dossier-article .income-method {
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 12px 16px;
+  background: #fff;
+}
+.dossier-article .income-method summary {
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+/* 比較・転職・活用のグリッド */
+.dossier-article .adjacent-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.dossier-article .adjacent-grid > a {
+  background: #fff;
+  border: 1.5px solid var(--dos-card-border);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: var(--ink);
+}
+.dossier-article .decision-grid,
+.dossier-article .application-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.dossier-article .decision-grid > div,
+.dossier-article .application-grid > div {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.dossier-article .insight-lead,
+.dossier-article .current-signal,
+.dossier-article .time-note {
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 12px 0;
+}
+
+/* 学習 */
+.dossier-article .chips.large {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.dossier-article .chips.large span {
+  border: 1.5px solid var(--rule);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  background: #fff;
+}
+.dossier-article .learning-steps {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.dossier-article .learning-steps li {
+  display: grid;
+  grid-template-columns: 56px 1fr;
+  gap: 14px;
+  align-items: baseline;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
+  padding: 16px 18px;
+}
+.dossier-article .learning-steps li span {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--ca-ink);
+}
+.dossier-article .learning-steps li p {
+  margin: 0;
+}
+
+/* リソース・ニュース */
+.dossier-article .resource-groups {
+  display: grid;
+  gap: 12px;
+}
+.dossier-article .resource-card {
+  border: 1.5px solid var(--dos-card-border);
+  border-radius: 16px;
+  background: #fff;
+  padding: 16px 18px;
+}
+.dossier-article .resource-card > strong {
+  font-family: var(--mincho);
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+}
+.dossier-article .career-news-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.dossier-article .career-news-grid > a {
+  background: #fff;
+  border: 1.5px solid var(--dos-card-border);
+  border-radius: 16px;
+  padding: 14px 16px;
+  color: var(--ink);
+}
+.dossier-article .qualification-uses dl,
+.dossier-article #sources dl {
+  display: grid;
+  gap: 0;
+}
+.dossier-article #sources dl > div {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 14px;
+  padding: 8px 0;
+  border-top: 1px solid var(--rule);
+}
+.dossier-article #sources dl dt {
+  font-weight: 700;
+  font-size: 13.5px;
+}
+.dossier-article #sources dl dd {
+  margin: 0;
+  font-size: 14px;
+}
+.dossier-article .source-list {
+  list-style: none;
+  padding: 0;
+}
+.dossier-article .source-list li {
+  padding: 7px 0;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+}
+.dossier-article #sources {
+  border: 1px solid var(--ink);
+  background: #fff;
+  padding: 4px 18px 16px;
+  margin-top: 52px;
+}
+.dossier-article #sources h2 {
+  border-top: 0;
+  margin-top: 18px;
+  padding-top: 0;
+}
+
+/* サイドバー：今日の一手（黄色ボックス） */
+.dossier-article .daily-action-card {
+  background: var(--ca);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  padding: 18px;
+}
+.dossier-article .daily-action-card > span {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+}
+.dossier-article .daily-action-card > strong {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  margin: 6px 0 8px;
+}
+.dossier-article .daily-action-card ol {
+  margin: 0 0 12px;
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.dossier-article .daily-action-card p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--ink);
+}
+.dossier-article .daily-action-card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 14px;
+}
+
+/* 乗り換え */
+.dos-transfer {
+  padding: 40px 0 80px;
+}
+.dos-sh {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+.dos-sh-k {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--ca-ink);
+  margin: 0;
+}
+.dos-sh h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 26px;
+  margin: 4px 0 0;
+}
+
+/* ---------- レスポンシブ ---------- */
+@media (max-width: 1024px) {
+  .dossier-article .detail-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .dos-toc {
+    position: static;
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 12px 14px;
+    background: #fff;
+    margin-bottom: 8px;
+  }
+  .dos-toc a {
+    border-top: 0;
+    padding: 6px 0;
+  }
+  .dossier-article .detail-aside {
+    position: static;
+  }
+}
+@media (max-width: 640px) {
+  .dossier-article {
+    padding: 0 16px 0;
+  }
+  .dossier-article .dos-head h1 {
+    font-size: 30px;
+  }
+  .dossier-article .dos-head h1 small {
+    font-size: 16px;
+  }
+  .dos-toc a.sp-x {
+    display: none;
+  }
+  .dossier-article .detail-content h2 {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  .dossier-article .fit-points,
+  .dossier-article .adjacent-grid,
+  .dossier-article .decision-grid,
+  .dossier-article .application-grid,
+  .dossier-article .career-news-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .dossier-article .income-figure {
+    padding: 20px;
+  }
+  .dossier-article .income-amount {
+    font-size: 48px;
+  }
+  .dossier-article #sources dl > div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2px;
+  }
+}
