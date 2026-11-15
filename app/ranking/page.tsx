@@ -25,6 +25,14 @@ function incomeEntries(): IncomeRankEntry[] {
   return entries.sort((a, b) => b.annualizedMeanYen - a.annualizedMeanYen || a.name.localeCompare(b.name, "ja"));
 }
 
+function takeWithTies(entries: IncomeRankEntry[], limit: number): IncomeRankEntry[] {
+  if (entries.length <= limit) return entries;
+  const cutValue = entries[limit - 1].annualizedMeanYen;
+  let end = limit;
+  while (end < entries.length && entries[end].annualizedMeanYen === cutValue) end += 1;
+  return entries.slice(0, end);
+}
+
 function groupByCategory(all: IncomeRankEntry[], limit: number): IncomeRankGroup[] {
   const byCategory = new Map<string, IncomeRankEntry[]>();
   const catalogById = new Map(catalog.occupations.map(item => [item.catalogId, item]));
@@ -32,11 +40,11 @@ function groupByCategory(all: IncomeRankEntry[], limit: number): IncomeRankGroup
     const key = catalogById.get(entry.catalogId)?.categoryKey;
     if (!key) continue;
     const list = byCategory.get(key) ?? [];
-    if (list.length < limit) list.push(entry);
+    list.push(entry);
     byCategory.set(key, list);
   }
   return catalog.categories
-    .map(category => ({ key: category.key, label: category.label, entries: byCategory.get(category.key) ?? [] }))
+    .map(category => ({ key: category.key, label: category.label, entries: takeWithTies(byCategory.get(category.key) ?? [], limit) }))
     .filter(group => group.entries.length > 0);
 }
 
@@ -96,7 +104,7 @@ function extraRankings(): ExtraRanking[] {
 
 export default function RankingPage() {
   const all = incomeEntries();
-  const overall = all.slice(0, 10);
+  const overall = takeWithTies(all, 10);
   const groups = groupByCategory(all, 5);
   const genreTopLists = groupByCategory(all, 10);
   return <div className="page-shell ranking-page">

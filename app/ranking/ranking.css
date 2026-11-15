@@ -17,6 +17,9 @@
 .ranking-live { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .ranking-empty { margin: 1rem 0; color: var(--muted); font-size: .9rem; }
 
+/* 同額グループの職業名一覧（年収ランキング） */
+.income-rank-names { margin: .35rem 0 0; color: var(--ink); font-size: .85rem; line-height: 1.8; overflow-wrap: anywhere; }
+
 /* いろいろランキング */
 .extra-rank-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.6rem 1.2rem; margin-top: 1.2rem; }
 .extra-rank-group { min-width: 0; }
