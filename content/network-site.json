@@ -12,7 +12,11 @@
       "short": "manapick",
       "role": "学ぶ",
       "description": "動画で作業の基礎を学ぶ",
-      "url": "https://manapick.app/"
+      "url": "https://manapick.app/",
+      "code": "MP",
+      "number": "01",
+      "color": "#1F3A8A",
+      "colorInk": "#1F3A8A"
     },
     {
       "id": "ai",
@@ -20,7 +24,11 @@
       "short": "AI",
       "role": "道具を選ぶ",
       "description": "AIツールと目的別の使い方を選ぶ",
-      "url": "https://ai.manapick.app/"
+      "url": "https://ai.manapick.app/",
+      "code": "AI",
+      "number": "02",
+      "color": "#FF4438",
+      "colorInk": "#B92118"
     },
     {
       "id": "license",
@@ -28,7 +36,11 @@
       "short": "license",
       "role": "証明する",
       "description": "資格の要件と学習範囲を確認する",
-      "url": "https://license.manapick.app/"
+      "url": "https://license.manapick.app/",
+      "code": "LI",
+      "number": "03",
+      "color": "#15803D",
+      "colorInk": "#0F5F2D"
     },
     {
       "id": "career",
@@ -36,7 +48,11 @@
       "short": "career",
       "role": "仕事につなぐ",
       "description": "仕事内容から、次の学びを決める",
-      "url": "https://career.manapick.app/"
+      "url": "https://career.manapick.app/",
+      "code": "CA",
+      "number": "04",
+      "color": "#FFD700",
+      "colorInk": "#665500"
     },
     {
       "id": "company",
@@ -44,7 +60,23 @@
       "short": "company",
       "role": "企業を読む",
       "description": "企業を物語と数字で読む",
-      "url": "https://company.manapick.app/"
+      "url": "https://company.manapick.app/",
+      "code": "CO",
+      "number": "05",
+      "color": "#BE185D",
+      "colorInk": "#831843"
+    },
+    {
+      "id": "politics",
+      "name": "manapick politics",
+      "short": "politics",
+      "role": "政治と法律",
+      "description": "政治と法律を易しく学ぶ",
+      "url": "https://politics.manapick.app/",
+      "code": "PO",
+      "number": "06",
+      "color": "#6D28D9",
+      "colorInk": "#4C1D95"
     }
   ],
   "nav": [
@@ -104,5 +136,9 @@
       "href": "/contact/",
       "label": "お問い合わせ"
     }
-  ]
+  ],
+  "code": "CA",
+  "number": "04",
+  "color": "#FFD700",
+  "colorInk": "#665500"
 }

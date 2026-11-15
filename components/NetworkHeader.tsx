@@ -52,11 +52,12 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
     const Icon = meta.icon;
     return <a key={href} href={href} className="mp-menu-row"><span className="mp-menu-row-icon"><Icon size={18} strokeWidth={2.2} aria-hidden="true" /></span><span className="mp-menu-row-text"><strong>{item.label}</strong><small>{meta.description}</small></span><ArrowUpRight size={16} aria-hidden="true" className="mp-menu-row-arrow" /></a>;
   };
+  const mainNavHrefs = ["/all/", "/employers/", "/compare/", "/guide/", "/research/"];
   return <header className="mp-header"><div className="mp-header-inner">
-    <Link href="/" aria-label={`${config.name} トップへ`} prefetch={false}><NetworkBrand /></Link>
+    <Link href="/" prefetch={false}><NetworkBrand /><span className="sr-only"> トップへ</span></Link>
     {children ? <div className="mp-header-search">{children}</div> : null}
-    <nav className="mp-main-nav" aria-label="主要ナビゲーション">{config.nav.slice(0, 5).map(item => <a key={item.href} href={item.href}>{item.label}</a>)}</nav>
-    <nav className="mp-switch" aria-label="manapick 5サイト切替">{config.sites.map(site => <a key={site.id} className={`mp-badge mp-badge--${site.id}`} aria-current={site.id === config.id ? "page" : undefined} href={site.id === config.id ? "/" : networkUrl(site.url, config.id, "header")}>{site.short}<small>{site.role}</small></a>)}</nav>
+    <nav className="mp-main-nav" aria-label="主要ナビゲーション">{mainNavHrefs.map(href => { const item = navItem(href); return item ? <a key={href} href={href}>{item.label}</a> : null; })}</nav>
+    <div className="mp-header-actions"><a className="hd-btn" href="/tools/net-income/">手取りシミュレーター</a><a className="hd-btn y" href="/route/">迷ったら入口案内</a></div>
     <details ref={menu} className="mp-menu"><summary aria-label="サイトメニュー"><Menu size={20} strokeWidth={2.4} aria-hidden="true" className="mp-menu-open-icon" /><X size={20} strokeWidth={2.4} aria-hidden="true" className="mp-menu-close-icon" /><span>メニュー</span></summary><nav aria-label="サイトメニュー" onClick={() => { if (menu.current) menu.current.open = false; }}>
       <Link href="/" prefetch={false} className="mp-menu-home"><Home size={18} strokeWidth={2.2} aria-hidden="true" /><span><strong>トップ</strong><small>manapick career の入口</small></span></Link>
       <p className="mp-menu-label" id="mp-menu-search-label">職業を調べる</p>

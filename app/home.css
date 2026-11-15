@@ -1,51 +1,238 @@
-/* トップ: ヒーロー直下の実数の帯（このページ専用） */
-.home-evidence {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1.5rem clamp(1rem, 3vw, 2.5rem) 1.7rem;
-  border-top: 3px solid var(--ink);
-  border-bottom: 1px solid var(--line);
+/* ============================================================
+   トップページ専用（採用デザインパッケージ「しごとの街」）
+   値の正はパッケージの参照モック。裁定により本文16px・
+   入力欄16px・日本語ラベル12px以上へ調整した箇所がある。
+   ============================================================ */
+:root {
+  --yp: #fff6c7;
+  --yk: #665500;
 }
 
-.home-evidence dl {
+/* ---------- ヒーロー：しごとの街 ---------- */
+.town-hero {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.1rem 2rem;
-  margin: 0;
-}
-
-@media (min-width: 900px) {
-  .home-evidence dl {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-.home-evidence dt {
-  color: var(--muted);
-  font-size: 0.72rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-.home-evidence dd {
-  margin: 0.2rem 0 0;
-  font-size: 1.45rem;
-  font-weight: 800;
-  line-height: 1.1;
-  font-variant-numeric: tabular-nums;
-}
-
-.home-evidence dd span {
-  margin-left: 0.3rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-}
-
-/* トップページのヒーロー検索：候補ドロップダウン（このページ専用） */
-.home-search-wrap {
+  grid-template-columns: 560px minmax(0, 1fr) 190px;
+  padding: 20px 0 0 36px;
+  min-height: 760px;
   position: relative;
 }
+.town-txt {
+  padding-top: 40px;
+  position: relative;
+  z-index: 2;
+}
+.town-kick {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.town-hero h1 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 1.36;
+  letter-spacing: 0.04em;
+  margin: 22px 0 18px;
+  text-wrap: auto;
+}
+.town-hero h1 mark.marker {
+  background: linear-gradient(transparent 58%, var(--ca) 58% 92%, transparent 92%) !important;
+  color: inherit !important;
+  text-shadow: none !important;
+  padding: 0 0.04em;
+}
+.town-lead {
+  font-size: 16px;
+  line-height: 1.95;
+  color: #4a5468;
+  max-width: 470px;
+  margin: 0;
+}
+.town-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+  max-width: 520px;
+}
+.town-quick a {
+  min-height: 44px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  background: #fff;
+  border: 1.5px solid #d9d3c3;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.town-quick a.k {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #fff;
+}
+.town-map {
+  position: relative;
+  min-width: 0;
+}
+.town-map > svg {
+  position: absolute;
+  left: -30px;
+  top: -10px;
+  width: calc(100% + 10px);
+  height: 740px;
+}
+.town-pic {
+  position: absolute;
+  background: #fff;
+  padding: 6px 6px 24px;
+  box-shadow: 0 10px 24px rgba(23, 32, 51, 0.14);
+  z-index: 2;
+}
+.town-pic svg {
+  width: 100%;
+  height: 100%;
+}
+.town-pic span {
+  position: absolute;
+  left: 8px;
+  bottom: 4px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.town-pin {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px 5px 6px;
+  border-radius: 999px;
+  white-space: nowrap;
+  min-height: 44px;
+}
+.town-pin i {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--ca);
+  display: grid;
+  place-items: center;
+  font-style: normal;
+  color: var(--ink);
+  font-family: var(--num);
+  font-size: 11px;
+  flex: none;
+}
+.town-side {
+  padding: 44px 26px 0 0;
+  position: relative;
+  z-index: 2;
+}
+.town-side ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+.town-side li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
+  min-height: 44px;
+  color: var(--ink);
+}
+.town-side li a::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ca);
+  border: 2px solid var(--ink);
+  flex: none;
+}
+.town-side li.on a::before {
+  background: var(--ink);
+}
+.town-side-box {
+  margin-top: 22px;
+  padding: 14px;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: var(--ca);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--ink);
+}
+.town-side-box b {
+  display: block;
+  font-family: var(--mincho);
+  font-size: 18px;
+  margin-bottom: 4px;
+}
 
+/* ---------- ヒーロー検索（候補つき） ---------- */
+.home-search-wrap {
+  position: relative;
+  margin-top: 28px;
+  max-width: 500px;
+  z-index: 5;
+}
+.home-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 64px;
+  padding: 0 8px 0 22px;
+  border: 2px solid var(--ink);
+  border-radius: 16px;
+  background: #fff;
+}
+.home-search > svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  color: var(--ink);
+}
+.home-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-size: 16px;
+  color: var(--ink);
+}
+.home-search button {
+  height: 46px;
+  padding: 0 22px;
+  border-radius: 11px;
+  background: var(--ca);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font-weight: 700;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  flex: none;
+  white-space: nowrap;
+}
+.home-search button svg {
+  width: 15px;
+  height: 15px;
+}
 .home-suggest-panel {
   position: absolute;
   top: calc(100% + 0.45rem);
@@ -59,7 +246,6 @@
   overflow: hidden;
   text-align: left;
 }
-
 .home-suggest-head {
   display: flex;
   align-items: center;
@@ -70,7 +256,6 @@
   font-size: 0.85rem;
   font-weight: 800;
 }
-
 .home-suggest-head button {
   border: 0;
   background: transparent;
@@ -82,7 +267,6 @@
   padding: 0 0.2rem;
   cursor: pointer;
 }
-
 .home-suggest-panel ul {
   list-style: none;
   margin: 0;
@@ -90,11 +274,9 @@
   max-height: 46vh;
   overflow-y: auto;
 }
-
 .home-suggest-panel li + li {
   border-top: 1px solid var(--line);
 }
-
 .home-suggest-panel li a {
   display: grid;
   gap: 0.15rem;
@@ -105,23 +287,19 @@
   color: var(--ink);
   text-decoration: none;
 }
-
 .home-suggest-panel li a:hover {
   background: #f4f6f8;
 }
-
 .home-suggest-name {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.4;
 }
-
 .home-suggest-meta {
   color: var(--muted);
   font-size: 0.72rem;
   line-height: 1.5;
 }
-
 .home-suggest-empty {
   margin: 0;
   padding: 0.8rem 0.9rem;
@@ -129,11 +307,706 @@
   font-size: 0.85rem;
   line-height: 1.6;
 }
-
 .home-suggest-foot {
   margin: 0;
   padding: 0.5rem 0.9rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.72rem;
+}
+
+/* ---------- 数字の帯 ---------- */
+.town-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 36px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.town-stats > div {
+  padding: 24px 28px;
+  border-right: 1px solid rgba(255, 255, 255, 0.14);
+}
+.town-stats > div:last-child {
+  border-right: 0;
+}
+.town-stats b {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 1;
+  color: var(--ca);
+}
+.town-stats b small {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 4px;
+  font-family: var(--font-sans);
+}
+.town-stats span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.75;
+  margin-top: 4px;
+}
+
+/* ---------- セクション共通 ---------- */
+.sec {
+  padding: 96px 36px 0;
+}
+.sec-tight {
+  padding-top: 72px;
+}
+.sec:last-child {
+  padding-bottom: 96px;
+}
+.eh {
+  display: flex;
+  align-items: flex-end;
+  gap: 22px;
+  margin-bottom: 32px;
+}
+.eh .code,
+.code {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--num);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  background: var(--ca);
+  color: var(--ink);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.eh h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.35;
+  margin-top: 8px;
+}
+.eh p {
+  font-size: 13.5px;
+  color: #4a5468;
+  max-width: 460px;
+}
+.eh .more {
+  margin-left: auto;
+}
+
+/* ---------- 職業カード ---------- */
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.job {
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.job-top {
+  height: 150px;
+  background: var(--yp);
+  position: relative;
+  border-bottom: 2px solid var(--ink);
+}
+.job-top > svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -46%);
+  width: 130px;
+  height: 120px;
+}
+.job-tag {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  background: #fff;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 1px 9px;
+  z-index: 1;
+}
+.job-bd {
+  padding: 16px 18px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.job-bd h3 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 24px;
+}
+.job-bd h3 a {
+  color: var(--ink);
+}
+.job-bd p {
+  font-size: 12.5px;
+  color: #4a5468;
+  line-height: 1.75;
+  margin: 4px 0 12px;
+}
+.job-lk {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1.5px solid var(--ink);
+}
+.job-lk a {
+  text-align: center;
+  padding: 9px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+  min-height: 44px;
+}
+.job-lk a + a {
+  border-left: 1px dashed #c9c2b0;
+}
+
+/* ---------- DAILY CAREER LOOP ---------- */
+.loop {
+  display: grid;
+  grid-template-columns: 440px minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+  background: var(--yp);
+  border-radius: 36px;
+  padding: 56px 60px;
+}
+.ring {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  flex: none;
+}
+.ring::before {
+  content: "";
+  position: absolute;
+  inset: 40px;
+  border: 10px solid var(--ink);
+  border-radius: 50%;
+}
+.ring-c {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.ring-c b {
+  display: block;
+  font-family: var(--mincho);
+  font-size: 28px;
+  line-height: 1.4;
+}
+.ring-c span {
+  font-family: var(--num);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+}
+.ring-p {
+  position: absolute;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: #fff;
+  border: 4px solid var(--ink);
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.ring-p em {
+  font-style: normal;
+  font-family: var(--num);
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.06em;
+}
+.ring-p small {
+  font-size: 11px;
+  font-weight: 700;
+}
+.ring-p.on {
+  background: var(--ca);
+}
+.ring-p-t {
+  left: 50%;
+  top: -4px;
+  transform: translateX(-50%);
+}
+.ring-p-r {
+  right: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ring-p-b {
+  left: 50%;
+  bottom: -4px;
+  transform: translateX(-50%);
+}
+.ring-p-l {
+  left: -4px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.eh-loop {
+  margin-bottom: 20px;
+}
+.steps4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+.step4 {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px 20px;
+  border: 1.5px solid #e3dcc6;
+  color: var(--ink);
+  display: block;
+}
+.step4 em {
+  font-style: normal;
+  font-family: var(--num);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  font-size: 13px;
+  color: var(--yk);
+}
+.step4 b {
+  display: block;
+  font-size: 16px;
+  margin: 2px 0 4px;
+}
+.step4 span {
+  font-size: 12.5px;
+  color: #4a5468;
+  line-height: 1.7;
+}
+
+/* ---------- 職業リスト（explorer） ---------- */
+.filt-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.filt {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filt button {
+  flex: none;
+  height: 44px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  font-size: 13px;
+  font-weight: 700;
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+}
+.filt button.on {
+  background: var(--ca);
+}
+.filt-search {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid #d9d3c3;
+  border-radius: 999px;
+  background: #fff;
+  padding: 0 16px;
+  height: 44px;
+  margin-left: auto;
+}
+.filt-search svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+.filt-search input {
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  background: transparent;
+  color: var(--ink);
+  width: 210px;
+}
+.result-count {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 4px 0 8px;
+}
+.job-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 2px solid var(--ink);
+}
+.jr {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 16px 4px;
+  border-bottom: 1px solid #d9d3c3;
+  color: var(--ink);
+  min-height: 44px;
+}
+.jr:nth-child(3n + 1),
+.jr:nth-child(3n + 2) {
+  border-right: 1px solid #d9d3c3;
+  padding-right: 18px;
+}
+.jr:nth-child(3n + 2),
+.jr:nth-child(3n) {
+  padding-left: 18px;
+}
+.jr-ic {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--yp);
+  display: grid;
+  place-items: center;
+}
+.jr-ic svg {
+  width: 40px;
+  height: 40px;
+}
+.jr-main b {
+  display: block;
+  font-size: 16px;
+}
+.jr-main span {
+  font-size: 12px;
+  color: #4a5468;
+}
+.jr-ar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  display: grid;
+  place-items: center;
+}
+.jr-ar svg {
+  width: 14px;
+  height: 14px;
+}
+.empty {
+  font-size: 13px;
+  color: var(--muted);
+  padding: 16px 0;
+}
+
+/* ---------- 入口案内 ---------- */
+.entry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid var(--ink);
+  border-radius: 28px;
+  overflow: hidden;
+  background: #fff;
+}
+.entry-a {
+  background: var(--ink);
+  color: #fff;
+  padding: 44px 48px;
+}
+.entry-a h2 {
+  font-family: var(--mincho);
+  font-size: 38px;
+  line-height: 1.35;
+  margin: 10px 0 12px;
+  color: #fff;
+}
+.entry-a p {
+  font-size: 13.5px;
+  opacity: 0.8;
+}
+.entry-go {
+  display: inline-flex;
+  margin-top: 26px;
+  height: 56px;
+  padding: 0 28px;
+  align-items: center;
+  border-radius: 999px;
+  background: var(--ca);
+  color: var(--ink);
+  font-weight: 900;
+}
+.entry-b {
+  padding: 36px 40px;
+}
+.entry-qn {
+  font-family: var(--num);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  color: var(--yk);
+}
+.entry-qt {
+  font-weight: 900;
+  font-size: 20px;
+  margin: 4px 0 16px;
+}
+.entry-op {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.entry-op a {
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+}
+.entry-lock {
+  font-size: 12px;
+  color: #4a5468;
+  margin-top: 16px;
+}
+
+/* ---------- 既存セクションの軽い追従（白カード・角丸18px） ---------- */
+.career-briefing,
+.editorial-preview {
+  max-width: none;
+  margin: 0;
+  padding: 72px 36px 0;
+}
+.briefing-lead,
+.briefing-hubs a,
+.featured-guide,
+.news-preview-list a {
+  border-radius: 18px;
+}
+.xrow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+/* ---------- レスポンシブ ---------- */
+@media (max-width: 1100px) {
+  .town-hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 0;
+    min-height: 0;
+  }
+  .town-txt {
+    padding: 22px 16px 0;
+    order: 1;
+  }
+  .town-map {
+    order: 2;
+    height: 430px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+  .town-map > svg {
+    left: -120px;
+    top: -60px;
+    width: 640px;
+    height: 560px;
+  }
+  .town-pic.sp-x,
+  .town-pin.sp-x {
+    display: none;
+  }
+  .town-side {
+    display: none;
+  }
+  .loop {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+@media (max-width: 640px) {
+  .town-hero h1 {
+    font-size: 38px;
+    margin: 14px 0 10px;
+  }
+  .town-lead {
+    font-size: 16px;
+  }
+  .home-search {
+    height: 56px;
+    margin-top: 0;
+    padding-left: 14px;
+  }
+  .home-search-wrap {
+    margin-top: 18px;
+  }
+  .home-search button {
+    height: 40px;
+    padding: 0 14px;
+  }
+  .town-quick {
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin-right: -16px;
+  }
+  .town-quick a {
+    flex: none;
+  }
+  .town-stats {
+    grid-template-columns: 1fr 1fr;
+    margin: 0 14px;
+    border-radius: 18px;
+  }
+  .town-stats > div {
+    padding: 16px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .town-stats b {
+    font-size: 40px;
+  }
+  .sec {
+    padding: 60px 14px 0;
+  }
+  .sec:last-child {
+    padding-bottom: 60px;
+  }
+  .career-briefing,
+  .editorial-preview {
+    padding: 60px 14px 0;
+  }
+  .eh {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .eh h2 {
+    font-size: 27px;
+  }
+  .eh .more {
+    margin-left: 0;
+  }
+  .jobs {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .job {
+    border-radius: 16px;
+  }
+  .job-top {
+    height: 110px;
+  }
+  .job-top > svg {
+    width: 96px;
+    height: 96px;
+  }
+  .job-bd h3 {
+    font-size: 19px;
+  }
+  .job-bd p {
+    display: none;
+  }
+  .job-lk {
+    grid-template-columns: 1fr;
+  }
+  .job-lk a {
+    padding: 7px 0;
+    border-left: 0 !important;
+    border-top: 1px dashed #c9c2b0;
+    min-height: 40px;
+  }
+  .job-lk a:first-child {
+    border-top: 0;
+  }
+  .loop {
+    padding: 32px 18px;
+    border-radius: 24px;
+    gap: 28px;
+  }
+  .ring {
+    width: min(300px, 100%);
+    height: auto;
+    aspect-ratio: 1;
+  }
+  .ring::before {
+    inset: 10%;
+    border-width: 8px;
+  }
+  .ring-p {
+    width: 84px;
+    height: 84px;
+  }
+  .ring-p em {
+    font-size: 17px;
+  }
+  .ring-c b {
+    font-size: 21px;
+  }
+  .steps4 {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .filt {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    max-width: 100%;
+  }
+  .filt::-webkit-scrollbar {
+    display: none;
+  }
+  .filt-search {
+    margin-left: 0;
+    width: 100%;
+  }
+  .filt-search input {
+    width: 100%;
+  }
+  .job-list {
+    grid-template-columns: 1fr;
+  }
+  .jr {
+    padding: 14px 0 !important;
+    border-right: 0 !important;
+  }
+  .entry {
+    grid-template-columns: 1fr;
+    border-radius: 22px;
+  }
+  .entry-a {
+    padding: 30px 22px;
+  }
+  .entry-a h2 {
+    font-size: 28px;
+  }
+  .entry-b {
+    padding: 24px 18px;
+  }
+  .xrow {
+    grid-template-columns: 1fr;
+  }
 }
