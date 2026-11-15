@@ -25,13 +25,13 @@
 .extra-rank-group { min-width: 0; }
 .extra-rank-group > h3 { margin: 0 0 .35rem; font-size: 1.05rem; font-weight: 800; color: var(--ink); }
 .extra-rank-note { margin: 0 0 .7rem; color: var(--muted); font-size: .82rem; line-height: 1.7; }
-.extra-rank-list { display: grid; gap: .55rem; margin: 0; padding: 0; list-style: none; }
-.extra-rank-list li { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; align-items: center; gap: .8rem; padding: .8rem .9rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
-.extra-rank-list .ranking-number { min-height: 52px; font-size: 1.2rem; }
+.extra-rank-list { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.extra-rank-list li { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; align-items: center; gap: .8rem; padding: .85rem .2rem; border-bottom: 1px solid var(--line); }
+.extra-rank-list .ranking-number { font-size: 1.55rem; }
 .extra-rank-list .ranking-copy { min-width: 0; }
 .extra-rank-list .ranking-copy h4 { margin: .1rem 0 .25rem; color: var(--ink); font-size: .95rem; font-weight: 700; line-height: 1.5; }
 .extra-rank-list .ranking-copy small { color: var(--muted); font-size: .75rem; line-height: 1.6; overflow-wrap: anywhere; }
 @media (max-width: 760px) {
   .extra-rank-groups { grid-template-columns: 1fr; }
-  .extra-rank-list li { grid-template-columns: 56px minmax(0, 1fr) auto; gap: .6rem; padding: .7rem; }
+  .extra-rank-list li { grid-template-columns: 56px minmax(0, 1fr) auto; gap: .6rem; padding: .75rem .2rem; }
 }
