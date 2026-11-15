@@ -247,8 +247,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
         <dl>
           {statistic ? (
             <>
-              <div><dt>対応分類の平均年齢</dt><dd>{statistic.meanAge.toFixed(1)}歳</dd></div>
-              <div><dt>対応分類の推計労働者数</dt><dd>{statistic.estimatedWorkers.toLocaleString("ja-JP")}人</dd></div>
+              <div><dt>対応分類の平均年齢</dt><dd className="occupation-keypoints-figure">{statistic.meanAge.toFixed(1)}歳</dd></div>
+              <div><dt>対応分類の推計労働者数</dt><dd className="occupation-keypoints-figure">{statistic.estimatedWorkers.toLocaleString("ja-JP")}人</dd></div>
             </>
           ) : (
             <div><dt>年収統計</dt><dd>対応分類なし</dd></div>
