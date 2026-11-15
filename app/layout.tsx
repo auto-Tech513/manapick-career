@@ -1,6 +1,7 @@
 import { analyticsBootstrap, measurementId } from "@/lib/analytics-config";
 import NetworkAnalytics from "../components/NetworkAnalytics";
 import NetworkFooter from "../components/NetworkFooter";
+import { NetworkRail } from "../components/NetworkRail";
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/Analytics";
 import { BottomNav } from "@/components/BottomNav";
@@ -45,6 +46,6 @@ const graph={"@context":"https://schema.org","@graph":[
   ]}
 ]};
 
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><head><script id="ga4-queue" dangerouslySetInnerHTML={{__html:analyticsBootstrap(measurementId)}} /></head><body>
-  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/><BackToTop/>
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><head><script id="ga4-queue" dangerouslySetInnerHTML={{__html:analyticsBootstrap(measurementId)}} /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Old+Mincho:wght@500;700;900&display=swap" rel="stylesheet" /></head><body>
+  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><NetworkRail/><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/><BackToTop/>
 <NetworkAnalytics /><NetworkFooter /></body></html>}
