@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { NetIncomeSimulator } from "@/components/NetIncomeSimulator";
+import "./net-income.css";
 
 export const metadata: Metadata = {
   title: "手取りシミュレーター｜年収から手取りの目安を試算",
@@ -12,15 +13,16 @@ export const metadata: Metadata = {
 export default function NetIncomePage() {
   return (
     <div className="page-shell narrow">
-      <div className="page-heading">
-        <span className="eyebrow">ツール</span>
+      <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">手取りシミュレーター</span></nav>
+      <header className="phead">
+        <p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-TOOL · ツール</p>
         <h1>手取りシミュレーター</h1>
-        <p>
+        <p className="phead-lead">
           職業ページの平均年収は、税金と社会保険料を差し引く前の「額面」です。このページでは、額面年収を入れると
           手取りの目安を試算できます。あくまで前提条件つきの簡易試算で、実際の手取りは勤務先の保険制度や
           控除の状況で変わります。
         </p>
-      </div>
+      </header>
 
       <NetIncomeSimulator />
 

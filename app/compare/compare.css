@@ -22,3 +22,11 @@
   color: var(--ink);
   font-size: 1rem;
 }
+
+/* T3 寄せ：比較表の形（項目列は淡黄、見出しは Mincho、罫は共通色） */
+.compare-scroll table { border-collapse: collapse; width: 100%; }
+.compare-scroll th, .compare-scroll td { border: 1px solid var(--rule); padding: 12px 14px; font-size: 14px; line-height: 1.8; text-align: left; vertical-align: top; }
+.compare-scroll thead th { font-family: var(--mincho); font-weight: 700; font-size: 16px; background: #fff; }
+.compare-scroll tbody th { background: #fbf7e8; font-weight: 700; white-space: nowrap; }
+.compare-picker .compare-options button, .compare-picker .compare-selected button { border-radius: 999px; }
+.compare-picker .compare-selected button.selected, .compare-picker .compare-options button[aria-pressed="true"] { background: var(--ca); border-color: var(--ink); color: var(--ink); }
