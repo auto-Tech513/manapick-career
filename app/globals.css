@@ -2913,9 +2913,9 @@ dd {
 .article-key-points { padding: 1.1rem 0 0.25rem; border-top: 3px solid var(--ink); }
 .article-key-points h2 { color: var(--primary-aa); font-size: 0.8rem; font-weight: 900; letter-spacing: 0.1em; }
 .article-key-points ul { counter-reset: keypoint; margin: 0.6rem 0 0; padding: 0; list-style: none; }
-.article-key-points li { counter-increment: keypoint; display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: 0.4rem 1rem; align-items: baseline; padding: 0.85rem 0; border-top: 1px solid var(--line); }
+.article-key-points li { counter-increment: keypoint; display: grid; grid-template-columns: 2.2rem minmax(0, 1fr); gap: 0.4rem 1rem; align-items: baseline; padding: 0.85rem 0; border-top: 1px solid var(--line); }
 .article-key-points li:first-child { border-top: 0; }
-.article-key-points li::before { content: counter(keypoint, decimal-leading-zero); color: var(--ink); font-size: 1.7rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.article-key-points li::before { content: counter(keypoint, decimal-leading-zero); color: var(--ink); font-size: 1.05rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
 .article-key-points li svg { display: none; }
 .editorial-article .article-section h2 { margin: .35rem 0 1rem; font-size: clamp(1.45rem, 2.35vw, 1.85rem); font-weight: 700; line-height: 1.5; }
 .editorial-article p { color: var(--ink); font-size: .96rem; font-weight: 400; line-height: 2.05; }
@@ -3134,7 +3134,7 @@ dd {
 .income-rank-group { min-width: 0; }
 .income-rank-group > h3 { margin: 0 0 .7rem; font-size: 1rem; font-weight: 800; color: var(--primary-aa); }
 .income-rank-list li { grid-template-columns: 64px minmax(0, 1fr) auto; grid-template-rows: auto auto; row-gap: .2rem; min-height: 0; padding: .8rem .2rem; }
-.income-rank-list .ranking-number { font-size: 1.55rem; grid-row: 1 / 3; }
+.income-rank-list .ranking-number { font-size: 1.2rem; grid-row: 1 / 3; }
 .income-rank-list .ranking-copy { min-width: 0; }
 .income-rank-value { font-size: 1.05rem; font-weight: 800; color: var(--ink); white-space: nowrap; }
 .income-rank-list li > a { grid-column: 2 / 4; justify-self: end; min-height: 44px; }
@@ -3147,7 +3147,7 @@ dd {
 .ranking-method > small { align-self: center; justify-self: end; color: var(--muted); font-size: .75rem; }
 .ranking-list ol { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .ranking-list li { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: 96px; padding: 1rem .2rem; border-bottom: 1px solid var(--line); }
-.ranking-number { display: grid; justify-items: start; align-content: center; gap: .15rem; color: var(--ink); font-size: 2rem; font-weight: 800; line-height: 1; }
+.ranking-number { display: grid; justify-items: start; align-content: center; gap: .15rem; color: var(--ink); font-size: 1.45rem; font-weight: 800; line-height: 1; }
 .ranking-number small { color: var(--primary-aa); font-size: .68rem; font-weight: 800; letter-spacing: .08em; }
 .ranking-copy > small { color: var(--muted); font-size: .75rem; font-weight: 800; }
 .ranking-copy h3 { margin: .1rem 0 .3rem; color: var(--ink); font-size: 1rem; font-weight: 700; }
@@ -3268,7 +3268,7 @@ dd {
   .skill-group-grid { grid-template-columns: 1fr; }
   .ranking-method > small { justify-self: start; }
   .ranking-list li { grid-template-columns: 58px minmax(0, 1fr); gap: .7rem; min-height: 0; padding: .8rem .2rem; }
-  .ranking-number { font-size: 1.55rem; }
+  .ranking-number { font-size: 1.2rem; }
   .ranking-list li > a { grid-column: 2; justify-self: start; min-height: 44px; }
   .skill-learning { align-items: stretch; flex-direction: column; }
   .news-freshness-panel { grid-template-columns: 1fr; gap: .45rem; padding: .55rem; border-radius: var(--radius-2); }
