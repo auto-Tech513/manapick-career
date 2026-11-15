@@ -1034,6 +1034,16 @@
             "url": "https://www.jinji.go.jp/content/900036111.pdf",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "経済産業省",
+          "role": "国家公務員（選考採用・係長級）",
+          "description": "各府省の経験者採用の例として、経済産業省の選考採用試験。大学卒業後2年以上の職務経験のある人を対象に、総合職相当の係長級職員として採用し、産業・通商・資源エネルギーなどの政策の企画・立案や調査・研究を担う。",
+          "source": {
+            "title": "2026年度 経済産業省 選考採用試験（係長級（総合職相当））受験案内",
+            "url": "https://www.meti.go.jp/information/recruit/career/pdf/fy2026_senkosaiyo_annai_sogo_kakarityo.pdf",
+            "checkedAt": "2026-11-15"
+          }
         }
       ]
     },
@@ -1648,6 +1658,16 @@
             "title": "財務省税関の業務紹介（一般職入省案内2026）",
             "url": "https://www.customs.go.jp/saiyou/pdf/2024/ippan/P3-10.pdf",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "財務省・税関（選考採用）",
+          "role": "税関職員（一般職・係長級）",
+          "description": "税関の経験者向け選考採用による例。民間企業や官公庁等で7年以上の勤務経験のある人を対象に、国家公務員採用一般職試験合格者相当（係長相当職）として任用し、空港・海港での密輸取締や輸出入通関、貨物の分析・鑑定などの業務を担う。",
+          "source": {
+            "title": "職員の募集について（選考採用試験（一般職・係長級））（税関）",
+            "url": "https://www.customs.go.jp/saiyou/kakarityou/2026/2026yoko.html",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
@@ -2978,6 +2998,16 @@
             "title": "労働基準監督官採用試験｜厚生労働省",
             "url": "https://www.mhlw.go.jp/general/saiyo/kantokukan.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "千葉労働局",
+          "role": "労働基準監督官",
+          "description": "都道府県労働局での採用例。労働基準監督官採用試験の最終合格後、勤務を希望する労働局で採用面接が行われ、管内の労働基準監督署で立入調査・指導や労働者の相談対応、労災補償業務などに携わる。千葉労働局の採用実績は2025年度5人。",
+          "source": {
+            "title": "職員採用案内（労働基準監督官）（千葉労働局）",
+            "url": "https://jsite.mhlw.go.jp/chiba-roudoukyoku/saiyou_kantoku.html",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
