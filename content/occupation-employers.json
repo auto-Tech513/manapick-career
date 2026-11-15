@@ -744,6 +744,16 @@
             "url": "https://www.ana.co.jp/group/recruit/ana-recruit/newgrads/pilot/career/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "日本航空株式会社（JAL）",
+          "role": "運航乗務職（自社養成パイロット）",
+          "description": "入社後は地上業務の実習で運航を支える仕事を学び、国内と米国アリゾナ州フェニックスでの訓練を経て副操縦士を目指す例。副操縦士として国内・国際線に乗務し、機長昇格後は教官や部門のリーダーも担う。",
+          "source": {
+            "title": "職種紹介（自社養成パイロット）｜仕事・人｜新卒既卒採用サイト｜JAL",
+            "url": "https://www.job-jal.com/work-people/jobtype2/",
+            "checkedAt": "2026-11-16"
+          }
         }
       ]
     },
@@ -809,6 +819,16 @@
             "url": "https://www.ana.co.jp/group/recruit/ana-recruit/career/ca/career/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "日本航空株式会社（JAL）",
+          "role": "客室乗務職",
+          "description": "乗務前に運航乗務員と緊急時の対応や保安情報を確認し、機内の保安点検とサービス準備を行う例。飛行中は食事や飲み物のサービスとともに客室の安全に目を配り、入社後の約3か月の初期訓練で保安要員とサービス要員の両面を学ぶ。",
+          "source": {
+            "title": "職種紹介（客室乗務職）｜仕事・人｜新卒キャリア採用サイト｜JAL",
+            "url": "https://www.job-jal.com/work-people/jobtype3/",
+            "checkedAt": "2026-11-16"
+          }
         }
       ]
     },
@@ -848,6 +868,16 @@
             "title": "立本 信吾 ｜ アナウンサー密着 - 仕事紹介 ｜ FUJI TELEVISION RECRUIT - フジテレビ",
             "url": "https://www.fujitv.co.jp/recruit/works/announce/03.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "日本テレビ放送網株式会社",
+          "role": "アナウンサー",
+          "description": "情報番組の進行や『24時間テレビ』の総合司会などを担うアナウンサーの例。話すことだけでなく、インタビューやリポートで相手の話を引き出すことと、進行のためにスタジオの会話を聞き取ることが仕事の中心にある。",
+          "source": {
+            "title": "水ト 麻美 | 日テレ 採用サイト",
+            "url": "https://www.ntv.co.jp/jinji/people/miura.html",
+            "checkedAt": "2026-11-16"
           }
         }
       ]
@@ -1333,6 +1363,16 @@
             "title": "正規職員（動物）募集案内（公益財団法人 横浜市緑の協会）",
             "url": "https://www.hama-midorinokyokai.or.jp/kyokai/author200ce/2024/10/993c5c74357475c5880ee179da6a3a03a398e8b1.pdf",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "名古屋市（東山動植物園）",
+          "role": "飼育員（飼料室）",
+          "description": "約460種類の動物の飼料（えさ）全体の調達と管理を担う、飼料室の飼育員の例。個体ごとのレシピに沿って必要な量を集計して発注し、冷凍の肉や魚の保管と解凍、ゆで卵や蒸かし芋などの下準備まで行う。",
+          "source": {
+            "title": "飼育の日2021〜コロナに負けるな！飼料室のお仕事紹介〜｜オフィシャルブログ｜東山動植物園",
+            "url": "http://www.higashiyama.city.nagoya.jp/blog/2021/04/2021.html",
+            "checkedAt": "2026-11-16"
           }
         }
       ]
@@ -1948,6 +1988,16 @@
             "title": "翻訳会社 株式会社サン・フレア（パートナー募集ページ：インタビュー／お仕事紹介）",
             "url": "https://recruit.sunflare.com/?m=pj",
             "checkedAt": "2026-10-30"
+          }
+        },
+        {
+          "name": "株式会社翻訳センター",
+          "role": "登録翻訳者",
+          "description": "医薬・特許・工業・金融など専門分野の産業翻訳を担う登録翻訳者の例。専門分野の高度な知識と語学力が求められ、トライアルを経て登録し、分野や実績に応じて仕事の依頼を受ける。",
+          "source": {
+            "title": "登録者募集｜株式会社翻訳センター",
+            "url": "https://www.honyakuctr.com/recruit/regist/",
+            "checkedAt": "2026-11-16"
           }
         }
       ]
@@ -3488,6 +3538,16 @@
             "title": "株式会社IVRy データエンジニア（リードクラス）｜HERP Careers",
             "url": "https://herp.careers/careers/companies/ivry/jobs/muSDeaGqLw6R",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社マネーフォワード",
+          "role": "データエンジニア",
+          "description": "マーケティングデータの基盤と開発体制を設計・運用するデータエンジニアの例。dbtによるモデリングの規約やレビュー基準、データ品質を機械的に検知する仕組みを整え、人とAIが同じ定義で使えるデータ環境を保つ。",
+          "source": {
+            "title": "〖データエンジニア（dbt開発基盤・データ品質・CI/CD）〗マーケティングテクノロジー部＿横断マーケティング本部＿東京 | 株式会社マネーフォワード",
+            "url": "https://hrmos.co/pages/moneyforward/jobs/2313161636023238703",
+            "checkedAt": "2026-11-16"
           }
         }
       ]
@@ -5283,6 +5343,16 @@
             "title": "Recruit Interview | Crowe Watanabe Consulting",
             "url": "https://www.crowe.com/jp/en-us/about-us/our-office/advisory/recruit/interview1",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社経営共創基盤（IGPI）",
+          "role": "経営コンサルタント",
+          "description": "企業の経営課題を多面的に見極め、戦略の立案だけでなく実行まで一気通貫で担うコンサルタントの例。事業再生や成長戦略、新規事業の創出などのプロジェクトで、現場に入り込むハンズオン型の支援を行う。",
+          "source": {
+            "title": "経営共創基盤（IGPI）",
+            "url": "https://www.igpi.co.jp/",
+            "checkedAt": "2026-11-16"
           }
         }
       ]
@@ -7728,6 +7798,16 @@
             "title": "イラストレーター／原画／東京 | Cygamesグループ",
             "url": "https://hrmos.co/pages/cygames/jobs/0000048",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社サイバーエージェント",
+          "role": "ゲームイラストレーター",
+          "description": "スマートフォンゲームのキャラクターや背景、武器のデザインと、スチルなどのイラスト制作を担う例。キャラクター設定のビジュアル化やコンセプト設定まで求められ、アートディレクションを担う場合もある。",
+          "source": {
+            "title": "選考情報｜クリエイター・デザイナーコース 新卒採用｜サイバーエージェント",
+            "url": "https://creators.cyberagent.co.jp/information/",
+            "checkedAt": "2026-11-16"
           }
         }
       ]
