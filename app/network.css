@@ -222,6 +222,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 
 /* Wordmark */
 .wm{display:inline-flex;align-items:center;gap:6px;line-height:1;color:var(--ink)}
+.site-footer .wm{color:#fff}
 .wm-m{font-family:var(--font-sans);font-weight:900;font-size:26px;letter-spacing:-.04em}
 .wm-sub{font-family:var(--num);font-weight:600;font-size:15px;letter-spacing:.16em;text-transform:uppercase;padding:3px 7px 2px;border-radius:4px;color:var(--ink);background:var(--ca)}
 
@@ -257,7 +258,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 
 /* Footer route map */
 .route{background:var(--night);color:#fff;padding:56px 48px 40px;margin-top:48px}
-.route h4{font-family:var(--num);font-weight:600;letter-spacing:.2em;font-size:12px;opacity:.6;margin:0 0 6px}
+.route .route-kick{font-family:var(--num);font-weight:600;letter-spacing:.2em;font-size:12px;opacity:.6;margin:0 0 6px}
 .route-lead{font-family:var(--mincho);font-weight:700;font-size:26px;line-height:1.5;margin:0 0 34px;color:#fff}
 .route-lead .nw,.xfer-sheet-head .nw{white-space:nowrap}
 .rail-s[data-site="politics"].on b{color:#fff}
@@ -298,7 +299,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
   .rail{height:34px;padding:0 12px;gap:10px;overflow:hidden}
   .rail-lbl{display:none}
   .rail-line{pointer-events:none}
-  .rail-s{margin-right:2px;padding-right:6px;gap:0;min-height:34px}
+  .rail-s{margin-right:2px;padding-right:6px;gap:0;min-height:34px;min-width:44px;justify-content:center}
   .rail-s i{width:11px;height:11px}
   .rail-s-name{display:none}
   .rail-s.on{gap:6px}

@@ -54,7 +54,7 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
   };
   const mainNavHrefs = ["/all/", "/employers/", "/compare/", "/guide/", "/research/"];
   return <header className="mp-header"><div className="mp-header-inner">
-    <Link href="/" aria-label={`${config.name} トップへ`} prefetch={false}><NetworkBrand /></Link>
+    <Link href="/" prefetch={false}><NetworkBrand /><span className="sr-only"> トップへ</span></Link>
     {children ? <div className="mp-header-search">{children}</div> : null}
     <nav className="mp-main-nav" aria-label="主要ナビゲーション">{mainNavHrefs.map(href => { const item = navItem(href); return item ? <a key={href} href={href}>{item.label}</a> : null; })}</nav>
     <div className="mp-header-actions"><a className="hd-btn" href="/tools/net-income/">手取りシミュレーター</a><a className="hd-btn y" href="/route/">迷ったら入口案内</a></div>

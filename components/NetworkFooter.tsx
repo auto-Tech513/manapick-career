@@ -16,7 +16,7 @@ export default function NetworkFooter() {
         <NewsletterForm context="footer" />
       </section>
       <footer className="route" aria-label="manapick公式6サイト">
-        <h4>MANAPICK NETWORK</h4>
+        <p className="route-kick">MANAPICK NETWORK</p>
         <p className="route-lead">
           <span className="nw">学びは、</span>
           <span className="nw">6つの駅でつながっています。</span>

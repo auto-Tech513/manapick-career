@@ -5,9 +5,7 @@ import { NetworkRail } from "../components/NetworkRail";
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/Analytics";
 import { BottomNav } from "@/components/BottomNav";
-import { BackToTop } from "@/components/BackToTop";
 import { JsonLd } from "@/components/JsonLd";
-import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { absoluteUrl, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
 import "./globals.css";
@@ -42,10 +40,11 @@ const graph={"@context":"https://schema.org","@graph":[
     {"@type":"SiteNavigationElement",position:2,name:"AIを選ぶ",url:"https://ai.manapick.app/"},
     {"@type":"SiteNavigationElement",position:3,name:"資格で証明",url:"https://license.manapick.app/"},
     {"@type":"SiteNavigationElement",position:4,name:"仕事につなぐ",url:SITE_URL},
-    {"@type":"SiteNavigationElement",position:5,name:"企業を読む",url:"https://company.manapick.app/"}
+    {"@type":"SiteNavigationElement",position:5,name:"企業を読む",url:"https://company.manapick.app/"},
+    {"@type":"SiteNavigationElement",position:6,name:"政治と法律",url:"https://politics.manapick.app/"}
   ]}
 ]};
 
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><head><script id="ga4-queue" dangerouslySetInnerHTML={{__html:analyticsBootstrap(measurementId)}} /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Old+Mincho:wght@500;700;900&display=swap" rel="stylesheet" /></head><body>
-  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><NetworkRail/><SiteHeader/><main id="main">{children}</main><SiteFooter/><BottomNav/><BackToTop/>
+  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><NetworkRail/><SiteHeader/><main id="main">{children}</main><BottomNav/>
 <NetworkAnalytics /><NetworkFooter /></body></html>}
