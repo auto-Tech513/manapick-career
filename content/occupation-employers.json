@@ -1489,6 +1489,16 @@
             "url": "https://nttdata-recruit.com/book/pdf/2026_mihiraki.pdf",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "和歌山太陽誘電株式会社",
+          "role": "データサイエンティスト",
+          "description": "和歌山県日高郡印南町の電子部品メーカーで、生産工程や設備から集まるビッグデータを活用し、品質・生産性向上に向けた改善を担う。蓄積データによる生産のばらつきの見える化・低減や、過去の生産実績データからの不良発生原因の分析のほか、デジタル人材の育成を通じた間接部門の業務課題解決にも取り組む。",
+          "source": {
+            "title": "データサイエンティストの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=3004001733361",
+            "checkedAt": "2026-11-15"
+          }
         }
       ]
     },
@@ -1804,6 +1814,16 @@
             "url": "https://ut-chosa.jp/%e4%b8%bb%e3%81%aa%e6%a5%ad%e5%8b%99/",
             "checkedAt": "2026-10-29"
           }
+        },
+        {
+          "name": "ＪＦＤ土地家屋調査士法人",
+          "role": "測量・表示登記（上級職）",
+          "description": "大阪・神戸・京都・東京などに事務所を持つ土地家屋調査士法人で、土地家屋調査士業務全般を担当する。主に土地の境界確定業務の案件管理（受注、調査、測量、境界査定、立会、役所・法務局対応、登記申請）を担い、分業制ではなく受注相談から全てのプロセスに関わる。",
+          "source": {
+            "title": "測量・表示登記の求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2703033972261",
+            "checkedAt": "2026-11-15"
+          }
         }
       ]
     },
@@ -1863,6 +1883,16 @@
             "title": "土地・不動産・建設業：任期付職員（不動産鑑定士）の募集について - 国土交通省",
             "url": "https://www.mlit.go.jp/totikensangyo/totikensangyo_fr4_000028.html",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社三和不動産鑑定所",
+          "role": "補償コンサルタント・不動産鑑定",
+          "description": "熊本市の不動産鑑定所で、公共事業における補償額の算定と土地評価額の算定を担当する。建物の現地調査（寸法の計測や撮影）、CADによる図面作成、調書の作成、依頼者との打合せなどを行い、依頼のほとんどは国土交通省・熊本県・県内市町村などの官公庁からとされている。",
+          "source": {
+            "title": "補償コンサルタントの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=4301027068661",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
@@ -3198,6 +3228,16 @@
             "title": "先端技術業務（技術職） AI開発のIT系技術者（募集要項57）｜国際航業",
             "url": "https://www.kkc.co.jp/recruit/career/57.pdf",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "株式会社イデアルアーキテクツ",
+          "role": "機械学習エンジニア",
+          "description": "ソフトウェア開発会社の機械学習エンジニアとして、機械学習モデルの検証と改善、LLM連携機能の設計と実装、顧客要件の整理と分析結果の報告、自社サービス向けのデータ処理開発を担当する。就業場所は島根県出雲市のサテライトオフィスで、在宅勤務も可とされている。",
+          "source": {
+            "title": "機械学習エンジニアの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=130800216962",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
@@ -5773,6 +5813,16 @@
             "title": "FP採用 | ファイナンシャルプランナーの転職・求人、あなたらしく働くならマネードクター（マネドク）",
             "url": "https://fp-moneydoctor.com/lp/recruit_fp/",
             "checkedAt": "2026-10-29"
+          }
+        },
+        {
+          "name": "マイコミュニケーション株式会社",
+          "role": "ファイナンシャルプランナー（来店型保険ショップスタッフ）",
+          "description": "来店型保険ショップ「保険ほっとライン」を全国で展開する会社で、店舗スタッフとして保険の相談対応から、給付金請求などの手続き対応まで、利用者が保険金を受け取るまでのフォローを担当する。",
+          "source": {
+            "title": "ファイナンシャルプランナーの求人票（ハローワーク）",
+            "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2301034766161",
+            "checkedAt": "2026-11-15"
           }
         }
       ]
