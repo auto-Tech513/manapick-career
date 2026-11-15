@@ -47,9 +47,6 @@
 }
 
 .occupation-keypoints-figure {
-  font-size: 1.9rem;
-  font-weight: 800;
-  line-height: 1.2;
   font-variant-numeric: tabular-nums;
 }
 
@@ -62,12 +59,6 @@
   color: var(--muted);
   font-size: 0.72rem;
   line-height: 1.6;
-}
-
-/* 冒頭の答え: 年収の数字だけを大きく見せる（本文・数値は不変） */
-.occupation-article .article-answer strong {
-  font-size: 1.35em;
-  font-weight: 900;
 }
 
 /* セクション見出しに通し番号のキッカーを視覚的に付ける（DOMの見出し文は不変） */
