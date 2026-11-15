@@ -33,6 +33,14 @@ export default function Home(){
     <HomeSearch items={homeSearchItems} />
     <nav className="home-discovery" aria-label="職業情報の探し方"><Link href="/all/">556職業から探す <ArrowRight aria-hidden="true"/></Link><Link href="/career/tax-accountant/">税理士</Link><Link href="/career/lawyer/">弁護士</Link><Link href="/career/nurse/">看護師</Link><Link href="/career/childcare-worker/">保育士</Link><Link href="/compare/">仕事を比べる</Link><Link href="/tools/net-income/">手取りを試算する</Link><Link href="/route/#workstyle">働き方から探す</Link></nav>
   </div></div></section>
+  <section className="home-evidence" aria-label="manapick careerの収録数">
+    <dl>
+      <div><dt>職業を収録</dt><dd>{occupationCatalog.length}<span>職業</span></dd></div>
+      <div><dt>厚く書いた個別ページ</dt><dd>{publishedOccupationCatalog.length}<span>ページ</span></dd></div>
+      <div><dt>職業比較ガイド</dt><dd>{guides.length}<span>本</span></dd></div>
+      <div><dt>労働ニュース</dt><dd>{publishedNews.length}<span>本</span></dd></div>
+    </dl>
+  </section>
   <div className="home-profession-wrap"><ProfessionalEntries/></div>
   <CareerBriefing />
   <DailyCareerLoop latestNews={publishedNews[0]} />
