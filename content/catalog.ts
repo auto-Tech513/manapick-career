@@ -4,6 +4,7 @@ import corrections from "./occupation-corrections.json";
 import evidence from "./career-evidence.json";
 import publication from "./occupation-publication.json";
 import employerRegistry from "./occupation-employers.json";
+import aptitudeRegistry from "./occupation-aptitude.json";
 import dossiers from "./career-dossiers.json";
 import professionalCareers from "./professional-careers.json";
 import { createHash } from "node:crypto";
@@ -132,6 +133,18 @@ export function occupationEmployers(catalogId: string): OccupationEmployerEntry[
 
 export function occupationDossierSlug(catalogId: string): string | null {
   return employerRegistry.existingDossiers.find((item) => item.catalogId === catalogId)?.slug ?? null;
+}
+
+export type OccupationAptitudeEntry = {
+  paragraphs: string[];
+  checkedAt: string;
+};
+
+export const occupationAptitudeDisclosure = aptitudeRegistry.disclosure;
+
+export function occupationAptitude(catalogId: string): OccupationAptitudeEntry | null {
+  const item = aptitudeRegistry.items.find((entry) => entry.catalogId === catalogId);
+  return item ? { paragraphs: item.paragraphs, checkedAt: item.checkedAt } : null;
 }
 
 export function careerSlugCatalogId(slug: string): string | null {

@@ -10,6 +10,8 @@ import { AdSlot } from "@/components/AdSlot";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import {
   catalogCategory,
+  occupationAptitude,
+  occupationAptitudeDisclosure,
   occupationDossierSlug,
   occupationEmployers,
   occupationJobTagUrl,
@@ -120,6 +122,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
   const category = catalogCategory(occupation.categoryKey);
   const statistic = occupationIncome(id);
   const employers = occupationEmployers(id);
+  const aptitude = occupationAptitude(id);
   const dossierSlug = occupationDossierSlug(id);
   const sources = record.officialSourceIds.flatMap((sourceId) => {
     const entry = sourceRegistry.find((item) => item.sourceId === sourceId);
@@ -251,6 +254,9 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           )}
           <div><dt>企業例（公式確認済み）</dt><dd>{employers.length ? <a href="#employers">{employers.length}件</a> : "未掲載（関連業種の上場企業は下記）"}</dd></div>
           <div><dt>関連資格</dt><dd>{occupation.qualifications.length ? <a href="#qualifications">{occupation.qualifications.length}件</a> : "入職に必須の資格は示されていません"}</dd></div>
+          {aptitude ? (
+            <div><dt>向いている人</dt><dd><a href="#aptitude">求められる力を見る</a></dd></div>
+          ) : null}
           {dossierSlug ? (
             <div><dt>深掘り解説</dt><dd><Link href={`/career/${dossierSlug}/`}>向いている人・企業例まで読む</Link></dd></div>
           ) : null}
@@ -338,6 +344,16 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
       </section>
 
       <AdSlot unit="career" placement="occupation-after-work" />
+
+      {aptitude ? (
+        <section className="article-section" id="aptitude">
+          <h2>向いている人・求められる力</h2>
+          {aptitude.paragraphs.map((part, index) => (
+            <p key={index}>{part}</p>
+          ))}
+          <p className="occupation-aptitude-note">{occupationAptitudeDisclosure}</p>
+        </section>
+      ) : null}
 
       <section className="article-section" id="entry">
         <h2>就くには</h2>
