@@ -64,6 +64,21 @@
   text-decoration: underline;
 }
 
+.occupation-hellowork-action {
+  margin-top: 0.6rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-2);
+  background: var(--surface);
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+.occupation-hellowork-action a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
 .occupation-agebands {
   margin-top: 1.2rem;
 }

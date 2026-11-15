@@ -109,6 +109,11 @@ export function occupationJobTagUrl(recordNumber: string) {
   return `https://shigoto.mhlw.go.jp/Occupation/Detail?occupationId=${encodeURIComponent(recordNumber)}`;
 }
 
+// ハローワークの求人検索はセッション方式で、条件付きの検索結果URLは存在しない
+// （2026-11-15 実ブラウザで確認）。検索の入口URLのみを定数にする。
+export const helloworkSearchUrl =
+  "https://www.hellowork.mhlw.go.jp/kensaku/GECA110010.do?action=initDisp&screenId=GECA110010";
+
 export type OccupationEmployerEntry = {
   name: string;
   role: string;
