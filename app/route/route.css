@@ -47,3 +47,14 @@
     gap: 1rem;
   }
 }
+
+/* T4 寄せ：入口の選び方カード */
+.route-chooser a {
+  border: 1.5px solid #e3dcc6;
+  border-radius: 16px;
+  background: #fff;
+}
+.route-chooser .rc-title {
+  font-family: var(--mincho);
+  font-weight: 700;
+}

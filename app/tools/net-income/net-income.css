@@ -1,0 +1,38 @@
+/* 手取りシミュレーター：結果を T4 の .result 形（紺ボックス＋Barlow 金額）へ */
+.sim-result {
+  background: var(--ink);
+  color: #fff;
+  border-radius: 22px;
+  padding: 24px 26px;
+}
+.sim-result-label {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: var(--ca);
+  margin: 0;
+}
+.sim-result-value {
+  font-family: var(--num);
+  font-weight: 600;
+  font-size: 52px;
+  color: var(--ca);
+  line-height: 1.1;
+  margin: 8px 0 4px;
+}
+.sim-result-value span {
+  font-size: 16px;
+  color: #fff;
+  margin-left: 8px;
+}
+.sim-result-sub {
+  color: #e8e4d4;
+  font-size: 13.5px;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .sim-result-value {
+    font-size: 40px;
+  }
+}
