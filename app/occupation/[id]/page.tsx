@@ -10,6 +10,7 @@ import { AdSlot } from "@/components/AdSlot";
 import { AdSenseScript } from "@/components/AdSenseScript";
 import {
   catalogCategory,
+  helloworkSearchUrl,
   occupationAptitude,
   occupationAptitudeDisclosure,
   occupationDossierSlug,
@@ -364,6 +365,12 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           実際の求人・募集の状況は、厚生労働省の職業情報サイトで確認できます：
           <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer">
             job tagで{occupation.name}の職業詳細を見る <ArrowUpRight aria-hidden="true" />
+          </a>
+        </p>
+        <p className="occupation-hellowork-action">
+          現在募集中の求人は、ハローワークの求人検索でも確認できます。リンク先は検索の入口です（ハローワークの検索は条件をURLで共有できないため、開いた先でフリーワードに「{occupation.name}」と入力して検索してください）：
+          <a href={helloworkSearchUrl} target="_blank" rel="noopener noreferrer">
+            ハローワーク求人検索を開く <ArrowUpRight aria-hidden="true" />
           </a>
         </p>
       </section>
