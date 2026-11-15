@@ -2910,8 +2910,13 @@ dd {
 .article-answer > span, .article-section-number { color: var(--primary-aa); font-family: var(--font-sans); font-size: .75rem; font-weight: 900; letter-spacing: .09em; }
 .article-answer h2 { margin: .25rem 0 .55rem; font-size: 1.3rem; }
 .article-answer p { margin: 0; color: var(--ink); font-size: .96rem; line-height: 1.95; }
-.article-key-points { padding: 1.25rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); }
-.article-key-points h2 { font-size: 1.15rem; }
+.article-key-points { padding: 1.1rem 0 0.25rem; border-top: 3px solid var(--ink); }
+.article-key-points h2 { color: var(--primary-aa); font-size: 0.8rem; font-weight: 900; letter-spacing: 0.1em; }
+.article-key-points ul { counter-reset: keypoint; margin: 0.6rem 0 0; padding: 0; list-style: none; }
+.article-key-points li { counter-increment: keypoint; display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: 0.4rem 1rem; align-items: baseline; padding: 0.85rem 0; border-top: 1px solid var(--line); }
+.article-key-points li:first-child { border-top: 0; }
+.article-key-points li::before { content: counter(keypoint, decimal-leading-zero); color: var(--ink); font-size: 1.7rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+.article-key-points li svg { display: none; }
 .editorial-article .article-section h2 { margin: .35rem 0 1rem; font-size: clamp(1.45rem, 2.35vw, 1.85rem); font-weight: 700; line-height: 1.5; }
 .editorial-article p { color: var(--ink); font-size: .96rem; font-weight: 400; line-height: 2.05; }
 .editorial-article .article-section > p + p { margin-top: 1.25rem; }
