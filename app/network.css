@@ -304,12 +304,12 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
   .rail-s i{width:11px;height:11px}
   .rail-s-name{display:none}
   .rail-s.on{gap:6px}
-  .rail-s.on .rail-s-name{display:inline;font-size:11px}
+  .rail-s.on .rail-s-name{display:inline;font-size:12px}
   .rail-s.on b{display:none}
   .mp-header{height:58px}
   .mp-header-inner{height:58px;padding:0 14px;gap:8px}
   .wm-m{font-size:21px}
-  .wm-sub{font-size:11px}
+  .wm-sub{font-size:12px}
   .mp-header-actions .hd-btn:not(.y){display:none}
   .mp-header-actions .hd-btn.y{height:38px;font-size:12px;padding:0 12px}
   /* SP ではヘッダーのメニューボタンだけを隠し、details 本体は残す。下部タブバーの「メニュー」が mp-open-menu でこの details を開くため、本体ごと display:none にするとメニューが表示できない */
@@ -323,7 +323,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
   .route{scroll-margin-top:66px}
   .route-st i{width:42px;height:42px;margin:0 auto;border-width:5px;grid-row:span 3}
   .spbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));height:62px;border-radius:18px;background:var(--night);color:#fff;z-index:300;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-  .spbar a,.spbar button{display:grid;place-items:center;align-content:center;gap:3px;font-size:10px;font-weight:700;opacity:.7;color:#fff;background:none;border:0;cursor:pointer;font-family:inherit;padding:0}
+  .spbar a,.spbar button{display:grid;place-items:center;align-content:center;gap:3px;font-size:12px;font-weight:700;opacity:.7;color:#fff;background:none;border:0;cursor:pointer;font-family:inherit;padding:0}
   .spbar a.on,.spbar button.on{opacity:1}
   .spbar svg{width:22px;height:22px}
   .spbar .spbar-star{color:var(--ca);fill:var(--ca)}
@@ -525,3 +525,6 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
     font-size: 24px;
   }
 }
+
+/* 本番監査（2026-11-16）：和文 12px 未満をなくす（数字用の書体の枠に入っていた「現在地」） */
+.rail-s.on b, .xfer-sheet-current { font-size: 12px; }

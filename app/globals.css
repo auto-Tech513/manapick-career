@@ -3148,7 +3148,7 @@ dd {
 .ranking-list ol { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .ranking-list li { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: 96px; padding: 1rem .2rem; border-bottom: 1px solid var(--line); }
 .ranking-number { display: grid; justify-items: start; align-content: center; gap: .15rem; color: var(--ink); font-size: 1.45rem; font-weight: 800; line-height: 1; }
-.ranking-number small { color: var(--primary-aa); font-size: .68rem; font-weight: 800; letter-spacing: .08em; }
+.ranking-number small { color: var(--primary-aa); font-size: 12px; font-weight: 800; letter-spacing: .08em; }
 .ranking-copy > small { color: var(--muted); font-size: .75rem; font-weight: 800; }
 .ranking-copy h3 { margin: .1rem 0 .3rem; color: var(--ink); font-size: 1rem; font-weight: 700; }
 .ranking-connections { display: flex; flex-wrap: wrap; gap: .3rem; }
@@ -4082,3 +4082,12 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .employers-list li > :first-child { min-width: 0; }
 .article-key-points li,
 .source-list small { overflow-wrap: anywhere; }
+
+/* 本番監査（2026-11-16）：商店の黒いヒーロー内で、確認バッジ（.phead-meta）が白地に白文字で読めなかった → 暗い地に合わせる */
+.career-shop-hero .phead-meta span { background: rgb(255 255 255 / .08); border-color: rgb(255 255 255 / .38); color: #fff; }
+.career-shop-hero .phead-meta svg { color: var(--ca, #FFD700); }
+/* 本番監査（2026-11-16）：12px 未満の和文（比較表の補足 11.2px、地図ピンの頭文字 11px）→ 12px */
+.compare-scroll td small { font-size: 12px; }
+.town-pin i { font-size: 12px; }
+/* トップのテーマ（転職市場など）の説明が1行で「…」に切れていた → 2行まで表示 */
+.briefing-hubs small { white-space: normal; text-overflow: clip; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }

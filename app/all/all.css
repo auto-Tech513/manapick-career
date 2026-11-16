@@ -89,7 +89,7 @@
 
 .search-suggest-meta {
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 12px;
   line-height: 1.5;
 }
 
@@ -106,7 +106,7 @@
   padding: 0.5rem 0.9rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 12px;
 }
 
 /* T2 寄せ：名録の見出し・絞り込み・パネル */

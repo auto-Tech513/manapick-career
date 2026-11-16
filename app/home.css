@@ -100,7 +100,7 @@
   position: absolute;
   left: 8px;
   bottom: 4px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
 }
 .town-pin {
@@ -128,7 +128,7 @@
   font-style: normal;
   color: var(--ink);
   font-family: var(--num);
-  font-size: 11px;
+  font-size: 12px;
   flex: none;
 }
 .town-side {
@@ -301,7 +301,7 @@
 }
 .home-suggest-meta {
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 12px;
   line-height: 1.5;
 }
 .home-suggest-empty {
@@ -316,7 +316,7 @@
   padding: 0.5rem 0.9rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 12px;
 }
 
 /* ---------- 数字の帯 ---------- */
@@ -436,7 +436,7 @@
   position: absolute;
   left: 12px;
   top: 12px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   background: #fff;
   border: 1.5px solid var(--ink);
@@ -544,7 +544,7 @@
   letter-spacing: 0.06em;
 }
 .ring-p small {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
 }
 .ring-p.on {
