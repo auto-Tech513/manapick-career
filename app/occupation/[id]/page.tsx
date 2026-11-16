@@ -347,11 +347,11 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                   <table className="occ-table">
                     <tbody>
                       <tr>
-                        <th scope="row">月の現金給与額</th>
+                        <th scope="row" className="phrase-breaks">月の<wbr />現金給与額</th>
                         <td className="n">{statistic.monthlyCashThousandYen}千円</td>
                       </tr>
                       <tr>
-                        <th scope="row">年間賞与・特別給与</th>
+                        <th scope="row" className="phrase-breaks">年間賞与・<wbr />特別給与</th>
                         <td className="n">{statistic.annualBonusThousandYen}千円</td>
                       </tr>
                       <tr>
@@ -359,7 +359,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                         <td className="n">{statistic.meanAge}歳</td>
                       </tr>
                       <tr>
-                        <th scope="row">推計労働者数</th>
+                        <th scope="row" className="phrase-breaks">推計<wbr />労働者数</th>
                         <td className="n">{statistic.estimatedWorkers.toLocaleString("ja-JP")}人</td>
                       </tr>
                     </tbody>
@@ -386,8 +386,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                         <thead>
                           <tr>
                             <th scope="col">年齢階級</th>
-                            <th scope="col">平均年収換算</th>
-                            <th scope="col">推計労働者数</th>
+                            <th scope="col" className="phrase-breaks">平均<wbr />年収換算</th>
+                            <th scope="col" className="phrase-breaks">推計<wbr />労働者数</th>
                           </tr>
                         </thead>
                         <tbody>

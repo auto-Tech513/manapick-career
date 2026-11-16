@@ -19,7 +19,15 @@
 .town-txt {
   padding-top: 40px;
   position: relative;
-  z-index: 2;
+  /* Owner real-device fix 2026-11-17: the map's photo cards (z 2) and pins
+     (z 3) are later siblings in the same stacking context and were painted
+     over the search suggestions on iPhone. Keep the text column above them,
+     and lift it above the stats band / later sections while the list is open. */
+  z-index: 4;
+}
+.town-txt:has(.home-suggest-panel),
+.town-txt:focus-within {
+  z-index: 60;
 }
 .town-kick {
   display: flex;
@@ -254,7 +262,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.55rem 0.9rem;
+  padding: 0 0.5rem 0 0.9rem;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
   font-size: 0.85rem;
@@ -267,8 +275,8 @@
   font: inherit;
   font-size: 0.78rem;
   font-weight: 700;
-  min-height: 32px;
-  padding: 0 0.2rem;
+  min-height: 44px;
+  padding: 0 0.4rem;
   cursor: pointer;
 }
 .home-suggest-panel ul {
@@ -277,6 +285,8 @@
   padding: 0;
   max-height: 46vh;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .home-suggest-panel li + li {
   border-top: 1px solid var(--line);
@@ -538,10 +548,16 @@
 }
 .ring-p em {
   font-style: normal;
-  font-family: var(--num);
+  /* Owner real-device fix 2026-11-17: when Barlow Condensed is not loaded
+     the fallback is far wider and COMPARE / RECORD touched or overflowed
+     the circle. Fall back to the condensed faces iOS / macOS ship with. */
+  font-family: "Barlow Condensed", "Avenir Next Condensed", "Arial Narrow", "Zen Kaku Gothic New", sans-serif;
+  font-stretch: condensed;
   font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.06em;
+  font-size: 19px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  max-width: calc(100% - 16px);
 }
 .ring-p small {
   font-size: 12px;
@@ -813,6 +829,19 @@
 .news-preview-list a {
   border-radius: 18px;
 }
+/* Owner real-device fix 2026-11-17: the lead is a white rounded card here,
+   so the editorial "rule only" padding (0 on the sides) put the text on the
+   card edge. Give it card padding and a full hairline frame. */
+.career-briefing .briefing-lead {
+  padding: 24px 24px 22px;
+  border: 1.5px solid #e3dcc6;
+  border-top: 3px solid var(--ink);
+}
+@media (max-width: 640px) {
+  .career-briefing .briefing-lead {
+    padding: 20px 18px 18px;
+  }
+}
 .xrow {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -975,14 +1004,14 @@
     border-width: 8px;
   }
   .ring-p {
-    width: 84px;
-    height: 84px;
+    width: 88px;
+    height: 88px;
   }
   .ring-p em {
-    /* Owner real-device fix 2026-11-16: at 17px the wide fallback rendering
-       on a real iPhone overflowed the 84px circles (RECORD/COMPARE clipped).
-       15px + tighter tracking fits even without Barlow Condensed. */
-    font-size: 15px;
+    /* Owner real-device fix 2026-11-17: 15px still touched/clipped on a real
+       iPhone. 14px on an 88px circle leaves >= 10px inside the ring border
+       for all four codes, with or without Barlow Condensed. */
+    font-size: 14px;
     letter-spacing: 0.02em;
   }
   .ring-c b {

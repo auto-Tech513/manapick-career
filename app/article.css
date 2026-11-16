@@ -119,19 +119,35 @@
   margin-top: 3px;
   color: var(--ca-ink);
 }
+/* Owner real-device fix 2026-11-17: in the flex row the "01" counter shrank
+   to one digit wide and stacked as 0 / 1. Keep it on one line. */
+.editorial-detail .article-key-points li::before {
+  flex: none;
+  min-width: 1.7em;
+  white-space: nowrap;
+  font-family: var(--num);
+  letter-spacing: 0.02em;
+}
+/* Owner real-device fix 2026-11-17: the link cards inside the navy
+   MORE READING / NEXT STEP / OCCUPATION / NETWORK panels are white boxes,
+   so the old 2px side padding put the text against the card edge. */
 .editorial-detail .related-careers > div {
   display: grid;
-  gap: 0;
-  border-top: 1px solid var(--rule);
+  gap: 8px;
 }
 .editorial-detail .related-careers > div > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 14px;
-  padding: 13px 2px;
-  border-bottom: 1px solid var(--rule);
+  gap: 12px;
+  padding: 14px 16px 14px 18px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
   min-height: 44px;
+}
+.editorial-detail .related-careers > div > a > span {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .editorial-detail .related-careers strong {
   display: block;
