@@ -4094,3 +4094,12 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 /* iPhone の Safari（WebKit）で入力欄・選択欄が既定の幅より縮まず、フッターのメール欄・手取りシミュレーターの入力行が画面から少しはみ出していた → 縮められるように */
 input, select, textarea { min-width: 0; max-width: 100%; }
 .sim-input-row { min-width: 0; max-width: 100%; }
+
+/* Owner real-device fix 2026-11-17: on iPhone the current station label
+   "career 仕事につなぐ" wrapped inside the 34px rail and its last
+   character was cut off. The SP rail is decorative (pointer-events: none),
+   so the other stations can be narrower and the label stays on one line. */
+@media (max-width: 640px) {
+  .rail-s { min-width: 30px; }
+  .rail-s.on .rail-s-name { white-space: nowrap; }
+}

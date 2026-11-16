@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Search } from "lucide-react";
 import type { CareerCard } from "@/lib/career-card";
+import { PhraseText } from "./PhraseTitle";
 
 type Category = { key: string; label: string; description: string };
 
@@ -120,7 +121,7 @@ export function CareerExplorer({ jobs, categories }: { jobs: CareerCard[]; categ
               <CategoryIcon category={job.category} />
             </span>
             <span className="jr-main">
-              <b>{job.name}</b>
+              <b className="phrase-breaks"><PhraseText text={job.name} /></b>
               <span>
                 {labelFor(job.category)}
                 {job.qualifications.length ? ` ／ 関連資格 ${job.qualifications.length}` : ""}
