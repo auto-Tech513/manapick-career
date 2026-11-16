@@ -1,7 +1,9 @@
 /* 商店（CE-04・career design-extra）
    価格データは持たないため、価格欄は「—」＋Amazonでの確認案内（デザインの未確認時の形）。
    商品と関係する職業のデータが無いため、カード末尾の「この仕事に関係」行は未実装。
-   SP で説明文を隠すモックの規則は、購入前確認などの本文が必須情報のため適用しない。 */
+   詳細本文（向いている人・選ぶ理由・購入前確認）はカード内の開閉部に収め、既定では閉じる
+   （モックのカード高さに合わせるため。再確認 2026-11-16 の指摘による）。
+   SP はモックどおり説明を省き、画像・分類・名前・価格・購入ボタンのみ表示する。 */
 .ce-shopmark {
   display: inline-grid;
   width: 30px;
@@ -25,10 +27,11 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 16px;
+  /* モックどおり画面幅いっぱい（角丸なし・シェルの余白を打ち消す） */
+  margin-inline: calc(-1 * clamp(1rem, 3vw, 2.5rem));
+  padding: 10px calc(16px + clamp(1rem, 3vw, 2.5rem));
   background: #fff;
-  border: 1px solid var(--ink);
-  border-radius: 12px;
+  border-block: 1px solid var(--ink);
   font-size: 13.5px;
 }
 .ce-prbar b {
@@ -49,6 +52,9 @@
 .ce-prbar a {
   margin-left: auto;
   flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: var(--ca-ink);
   font-weight: 800;
   text-decoration: underline;
@@ -235,6 +241,30 @@
   margin-top: 3px;
   color: var(--ca-ink);
 }
+.ce-prod .ce-more {
+  margin-bottom: 4px;
+}
+.ce-prod .ce-more > summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ca-ink);
+  cursor: pointer;
+  list-style: none;
+}
+.ce-prod .ce-more > summary::-webkit-details-marker {
+  display: none;
+}
+.ce-prod .ce-more > summary::after {
+  content: "＋";
+  margin-left: auto;
+  font-size: 14px;
+}
+.ce-prod .ce-more[open] > summary::after {
+  content: "－";
+}
 .ce-prod .pz {
   margin: auto 0 12px;
   padding-top: 8px;
@@ -273,6 +303,9 @@
   height: 16px;
   flex: none;
 }
+.ce-prod .buy .buy-short {
+  display: none;
+}
 .ce-prod .official {
   display: inline-flex;
   align-items: center;
@@ -296,12 +329,32 @@
 @media (max-width: 640px) {
   .ce-prbar {
     top: 58px;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    font-size: 12.5px;
+    flex-wrap: nowrap;
+    gap: 8px;
+    padding-block: 4px;
+    font-size: 12px;
+  }
+  .ce-prbar p {
+    line-height: 1.5;
   }
   .ce-prbar a {
-    margin-left: 0;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+  /* SP はモックどおり説明を省く */
+  .ce-prod .hook,
+  .ce-prod .points,
+  .ce-prod .ce-more {
+    display: none;
+  }
+  .ce-prod .buy {
+    white-space: nowrap;
+  }
+  .ce-prod .buy .buy-long {
+    display: none;
+  }
+  .ce-prod .buy .buy-short {
+    display: inline;
   }
   .ce-pgrid {
     grid-template-columns: 1fr 1fr;
