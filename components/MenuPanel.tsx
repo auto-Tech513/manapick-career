@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { Menu, Search, X } from "lucide-react";
 import { stations, stationHref } from "../lib/stations";
 
@@ -100,7 +101,7 @@ export function MenuPanel({ occupationCount }: { occupationCount: number }) {
         <Menu size={20} strokeWidth={2.4} aria-hidden="true" />
         <span>メニュー</span>
       </button>
-      {open ? (
+      {open ? createPortal(
         <>
           <div className="ce-scrim" onClick={() => setOpen(false)} />
           <aside className="ce-panel" role="dialog" aria-modal="true" aria-label="メニュー">
@@ -171,7 +172,8 @@ export function MenuPanel({ occupationCount }: { occupationCount: number }) {
               ))}
             </div>
           </aside>
-        </>
+        </>,
+        document.body,
       ) : null}
     </>
   );

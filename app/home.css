@@ -185,8 +185,8 @@
 .home-search-wrap {
   position: relative;
   margin-top: 28px;
-  max-width: 500px;
-  z-index: 5;
+  max-width: 480px;
+  z-index: 90;
   text-align: left;
 }
 .home-search-field.open {
