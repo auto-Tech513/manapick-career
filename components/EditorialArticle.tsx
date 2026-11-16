@@ -17,6 +17,24 @@ import prLinks from "@/content/pr-links.json";
 
 type Source = { sourceId: string; provider: string; url: string; checkedAt: string; notes: string };
 
+/**
+ * 結論ボックスの長さの目安（2026-11-16 オーナー指摘で制定）:
+ * 最大160字・文の切れ目まで。最低1文は必ず出す（全記事の第1文は139字以下）。
+ * データ側の answer は全文のまま保持し、表示だけをこの規則で整える。
+ */
+const CONCLUSION_MAX_CHARS = 160;
+
+function conclusionText(answer: string) {
+  const sentences = answer.split(/(?<=。)/).filter(Boolean);
+  let out = "";
+  for (const sentence of sentences) {
+    if (out && out.length + sentence.length > CONCLUSION_MAX_CHARS) break;
+    out += sentence;
+    if (out.length >= CONCLUSION_MAX_CHARS) break;
+  }
+  return out || answer;
+}
+
 export function EditorialArticle({
   answer,
   keyPoints,
@@ -61,7 +79,7 @@ export function EditorialArticle({
       <aside className="article-toc" aria-label="この記事の目次"><p><ListTree aria-hidden="true" />目次</p>{toc}<small><Clock3 aria-hidden="true" />{estimateLabel} {readMinutes}分</small></aside>
       <article className="editorial-article">
         {offers.length > 0 && <p className="article-pr-notice"><strong>PRを含みます</strong> 記事の結論・掲載順・比較結果は、広告と切り分けて編集しています。</p>}
-        <section className="article-answer" aria-labelledby="article-answer-title"><span>先に結論</span><h2 id="article-answer-title">この記事の答え</h2><p>{answer}</p></section>
+        <section className="article-answer" aria-labelledby="article-answer-title"><span>先に結論</span><h2 id="article-answer-title">この記事の答え</h2><p>{conclusionText(answer)}</p></section>
         <section className="article-key-points"><h2>この記事の要点</h2><ul>{keyPoints.map((point) => <li key={point}><CheckCircle2 aria-hidden="true" />{point}</li>)}</ul></section>
         {chart && <ArticleChart chart={chart} />}
         {figures && <ArticleFigures data={figures} />}
