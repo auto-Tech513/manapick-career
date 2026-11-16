@@ -11,4 +11,4 @@
 .employers-siblings > h2 { font-size: 1.15rem; font-weight: 800; margin: 0 0 .8rem; }
 .employers-siblings ul { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
 .employers-siblings a { display: inline-flex; align-items: baseline; gap: .45rem; min-height: 44px; align-items: center; padding: .45rem .8rem; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--surface); color: var(--ink); font-size: .82rem; font-weight: 700; text-decoration: none; }
-.employers-siblings a small { color: var(--muted); font-size: .72rem; font-weight: 700; }
+.employers-siblings a small { color: var(--muted); font-size: 12px; font-weight: 700; }
