@@ -24,6 +24,7 @@ import sourceRegistry from "@/content/source-registry.json";
 import companyLinks from "@/content/company-links.json";
 import industryLinks from "@/content/company-industry-links.json";
 import licenseLinks from "@/content/license-links.json";
+import politicsLinks from "@/content/politics-links.json";
 import { ageBandsByCode, ageIncomeNote, formatManYen1dp, incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
@@ -137,6 +138,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
   );
   const industryEntry = (industryLinks.occupations as unknown as Record<string, { industries: Array<{ name: string; total: number; directoryUrl?: string }>; companies: Array<{ name: string; code: string; slug: string }> }>)[id];
   const licenseEntries = ((licenseLinks.occupations as unknown as Record<string, Array<{ name: string; slug: string }>>)[id] ?? []);
+  const politicsEntries = ((politicsLinks.occupations as unknown as Record<string, Array<{ itemId: string; label: string; lead: string; section: string }>>)[id] ?? []);
+  const politicsFor = (section: string) => politicsEntries.filter((entry) => entry.section === section);
   const faq = [
     {
       question: `${occupation.name}の年収はどのくらいですか`,
@@ -314,6 +317,14 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               {paragraphs(occupation.work).map((part, index) => (
                 <p key={index}>{part}</p>
               ))}
+              {politicsFor("work").map((entry) => (
+                <p className="occ-action" key={entry.itemId}>
+                  {entry.lead}：
+                  <a href={networkUrl(entry.itemId)}>
+                    {entry.label} <ArrowUpRight aria-hidden="true" />
+                  </a>
+                </p>
+              ))}
             </section>
 
             <AdSlot unit="career" placement="occupation-after-work" />
@@ -444,6 +455,14 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               <h2><i>{num("conditions")}</i>労働条件の特徴</h2>
               {paragraphs(occupation.conditions).map((part, index) => (
                 <p key={index}>{part}</p>
+              ))}
+              {politicsFor("conditions").map((entry) => (
+                <p className="occ-action" key={entry.itemId}>
+                  {entry.lead}：
+                  <a href={networkUrl(entry.itemId)}>
+                    {entry.label} <ArrowUpRight aria-hidden="true" />
+                  </a>
+                </p>
               ))}
             </section>
 
