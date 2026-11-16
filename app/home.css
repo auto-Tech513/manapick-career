@@ -198,6 +198,10 @@
   border-radius: 16px;
   background: #fff;
 }
+.home-search:focus-within {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}
 .home-search > svg {
   width: 18px;
   height: 18px;
