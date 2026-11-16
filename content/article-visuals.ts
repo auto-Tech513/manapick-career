@@ -15,6 +15,69 @@ export type ArticleFigures = {
 };
 
 export const articleFigures: Record<string, ArticleFigures> = {
+  "minimum-wage-monthly-pay-check": {
+    "title": "計算の目安になる数字",
+    "items": [
+      {
+        "label": "1か月平均の所定労働時間（1日8時間・年間休日120日）",
+        "display": "約163.3時間"
+      },
+      {
+        "label": "東京都で必要な月給（同じ条件）",
+        "display": "209,067円以上"
+      },
+      {
+        "label": "大阪府で必要な月給（同じ条件）",
+        "display": "201,064円以上"
+      },
+      {
+        "label": "地域別最低賃金に違反したときの罰金",
+        "display": "50万円以下"
+      }
+    ]
+  },
+  "paid-leave-days-guide": {
+    "title": "有給休暇の数字",
+    "items": [
+      {
+        "label": "平均付与日数（令和7年就労条件総合調査）",
+        "display": "18.1日"
+      },
+      {
+        "label": "平均取得日数（同）",
+        "display": "12.1日"
+      },
+      {
+        "label": "平均取得率（同）",
+        "display": "66.9％"
+      },
+      {
+        "label": "会社が取らせる義務がある日数",
+        "display": "年5日"
+      }
+    ]
+  },
+  "overtime-premium-rate-guide": {
+    "title": "割増率の基本",
+    "items": [
+      {
+        "label": "時間外労働",
+        "display": "25％以上"
+      },
+      {
+        "label": "法定休日の労働",
+        "display": "35％以上"
+      },
+      {
+        "label": "深夜（午後10時〜午前5時）",
+        "display": "25％以上"
+      },
+      {
+        "label": "月60時間を超える時間外労働",
+        "display": "50％以上"
+      }
+    ]
+  },
   "anma-hari-kyu-vs-judo-seifuku": {
     "title": "両資格に共通する仕組みの数字",
     "items": [
