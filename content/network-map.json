@@ -3,7 +3,8 @@
     "learning":{"baseUrl":"https://manapick.app"},
     "ai":{"baseUrl":"https://ai.manapick.app"},
     "license":{"baseUrl":"https://license.manapick.app"},
-    "company":{"baseUrl":"https://company.manapick.app"}
+    "company":{"baseUrl":"https://company.manapick.app"},
+    "politics":{"baseUrl":"https://politics.manapick.app"}
   },
   "items": {
     "learning:home":{"siteId":"learning","path":"/"},
@@ -32,6 +33,11 @@
     "license:webdesign-3":{"siteId":"license","path":"/license/webdesign-3/"},
     "license:touroku-hanbai":{"siteId":"license","path":"/license/touroku-hanbai/"},
     "license:kaigo-fukushi":{"siteId":"license","path":"/license/kaigo-fukushi/"},
-    "company:home":{"siteId":"company","path":"/"}
+    "company:home":{"siteId":"company","path":"/"},
+    "politics:home":{"siteId":"politics","path":"/"},
+    "politics:labor-standards-vs-labor-contract":{"siteId":"politics","path":"/law/labor-standards-vs-labor-contract/"},
+    "politics:consumer-contracts":{"siteId":"politics","path":"/law/consumer-contracts/"},
+    "politics:cooling-off":{"siteId":"politics","path":"/law/cooling-off/"},
+    "politics:rent-deposit-renewal":{"siteId":"politics","path":"/law/rent-deposit-renewal/"}
   }
 }
