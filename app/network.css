@@ -311,7 +311,9 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
   .wm-sub{font-size:11px}
   .mp-header-actions .hd-btn:not(.y){display:none}
   .mp-header-actions .hd-btn.y{height:38px;font-size:12px;padding:0 12px}
-  .mp-menu{display:none}
+  /* SP ではヘッダーのメニューボタンだけを隠し、details 本体は残す。下部タブバーの「メニュー」が mp-open-menu でこの details を開くため、本体ごと display:none にするとメニューが表示できない */
+  .mp-menu>summary{display:none}
+  .mp-menu>nav{top:30px}
   .route{padding:40px 20px 110px}
   .route-lead{font-size:20px}
   .route-map{grid-template-columns:1fr}
