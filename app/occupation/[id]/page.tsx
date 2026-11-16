@@ -66,7 +66,9 @@ const networkLabels: Record<string, string> = {
 function paragraphs(text: string) {
   return text
     .split(/\n+/)
-    .map((part) => part.replace(/^\s+|\s+$/g, ""))
+    // 出典データにある「句読点の直前の空白」（例: "Python 、Scala"）を取り除く。
+    // 空白位置で改行すると行頭に句読点が来てしまうため、表示側で整える。
+    .map((part) => part.replace(/^\s+|\s+$/g, "").replace(/[ 　]+([、。」』）】])/g, "$1"))
     .filter(Boolean);
 }
 
