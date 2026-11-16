@@ -3880,5 +3880,165 @@
   "updateFrequency": "90d",
   "republication": "利用規約第9条に基づく二次利用（加工して作成）。出典表示は規定書式による。",
   "notes": "独立行政法人労働政策研究・研修機構（JILPT）作成『職業情報データベース 簡易版数値系ダウンロードデータ ver.7.00』、職業情報提供サイト（job tag）より2026年11月15日にダウンロード（https://shigoto.mhlw.go.jp/User/download）を加工して作成。2026-03-17公開のCSVを取得。適性欄は向き・不向きの断定には使わない。"
+ },
+ {
+  "sourceId": "mhlw-minimum-wage-check-method",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/chingin/newpage_43899.html",
+  "isPrimary": true,
+  "claims": [
+   "月給制は月給÷1か月平均所定労働時間で時間額に換算し最低賃金額と比べる",
+   "日給・出来高払い・組み合わせの場合の換算方法"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金額以上かどうかを確認する方法。計算式のみを要約。"
+ },
+ {
+  "sourceId": "mhlw-minimum-wage-overview",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/chingin/newpage_43875.html",
+  "isPrimary": true,
+  "claims": [
+   "最低賃金の対象は毎月支払われる基本的な賃金で、割増賃金・精皆勤手当・通勤手当・家族手当などを除く",
+   "派遣労働者には派遣先の最低賃金が適用される"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金制度の概要。"
+ },
+ {
+  "sourceId": "mhlw-minimum-wage-list-2026",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/",
+  "isPrimary": true,
+  "claims": [
+   "令和8年度地域別最低賃金の全国一覧（全国加重平均1,177円、東京都1,280円、神奈川県1,279円、大阪府1,231円、埼玉県1,196円、愛知県1,195円）",
+   "発効日は令和8年10月1日から12月2日まで都道府県ごとに異なる（岩手県・熊本県12月1日、沖縄県12月2日）"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "全国一覧PDF（https://www.mhlw.go.jp/content/11200000/001753404.pdf）で金額と発効日を確認。"
+ },
+ {
+  "sourceId": "egov-minimum-wage-act",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/334AC0000000137",
+  "isPrimary": true,
+  "claims": [
+   "第4条：最低賃金額以上の支払義務、下回る契約部分の無効、算入しない賃金",
+   "第40条：地域別最低賃金違反は50万円以下の罰金"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金法（昭和34年法律第137号）。"
+ },
+ {
+  "sourceId": "egov-minimum-wage-act-rule",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/334M50002000016",
+  "isPrimary": true,
+  "claims": [
+   "第1条：臨時の賃金、1か月を超える期間ごとの賃金、時間外・休日・深夜割増部分を算入しない",
+   "第2条：月給は月の所定労働時間数（異なる場合は1年間の1月平均）で除して時間額に換算"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金法施行規則（昭和34年労働省令第16号）。"
+ },
+ {
+  "sourceId": "egov-labor-standards-act",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/322AC0000000049",
+  "isPrimary": true,
+  "claims": [
+   "第32条：1週40時間・1日8時間",
+   "第37条：時間外・休日・深夜の割増賃金、月60時間超は5割以上、代替休暇、基礎から除く賃金",
+   "第39条：年次有給休暇の付与日数、比例付与、時間単位、時季指定義務",
+   "第115条・第143条：賃金請求権は当分の間3年、その他の請求権は2年",
+   "第119条・第120条：罰則",
+   "第136条：有給休暇取得者への不利益取扱いの禁止"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "労働基準法（昭和22年法律第49号）。"
+ },
+ {
+  "sourceId": "egov-labor-standards-act-rule",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/322M40000100023",
+  "isPrimary": true,
+  "claims": [
+   "第19条：割増賃金の基礎となる1時間あたり賃金の計算",
+   "第20条：時間外かつ深夜5割以上、月60時間超かつ深夜7割5分以上、休日かつ深夜6割以上",
+   "第21条：別居手当・子女教育手当・住宅手当・臨時の賃金・1か月を超える期間ごとの賃金を基礎から除く",
+   "第24条の3：比例付与の日数表と週30時間・5.2日",
+   "第24条の6・第24条の7：時季指定時の意見聴取、年次有給休暇管理簿"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "労働基準法施行規則（昭和22年厚生省令第23号）。"
+ },
+ {
+  "sourceId": "egov-overtime-premium-order",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/406CO0000000005",
+  "isPrimary": true,
+  "claims": [
+   "時間外労働の割増率は2割5分、休日労働は3割5分"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "労働基準法第三十七条第一項の時間外及び休日の割増賃金に係る率の最低限度を定める政令（平成6年政令第5号）。"
+ },
+ {
+  "sourceId": "mhlw-overtime-60h-sme-leaflet",
+  "provider": "厚生労働省・中小企業庁",
+  "url": "https://jsite.mhlw.go.jp/hokkaido-roudoukyoku/content/contents/001412110.pdf",
+  "isPrimary": true,
+  "claims": [
+   "2023年4月1日から中小企業も月60時間超の時間外労働の割増賃金率が50％（大企業は2010年4月から適用）",
+   "月60時間超の時間外労働が深夜に及ぶ場合は75％",
+   "月60時間の算定に法定休日の労働時間は含まれないが、それ以外の休日の労働時間は含まれる"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "リーフレット「月60時間を超える時間外労働の割増賃金率が引き上げられます」（北海道労働局掲載）。"
+ },
+ {
+  "sourceId": "mhlw-paid-leave-five-days",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/content/11911000/000548629.pdf",
+  "isPrimary": true,
+  "claims": [
+   "2019年（平成31年）4月から、年10日以上の年次有給休暇が付与される労働者に年5日を確実に取得させることが使用者の義務になった"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "年次有給休暇の取得促進に関する厚生労働省の資料。"
+ },
+ {
+  "sourceId": "mhlw-working-conditions-survey-2025",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/jikan/syurou/25/dl/houdou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "令和7年就労条件総合調査：年次有給休暇の労働者1人平均付与日数18.1日、取得日数12.1日、取得率66.9％（前年調査16.9日・11.0日・65.3％）",
+   "取得率は昭和59年以降過去最高"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "令和7年12月19日公表の報道発表資料。"
  }
 ]

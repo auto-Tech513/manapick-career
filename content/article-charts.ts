@@ -14,6 +14,99 @@ export type ArticleChart = {
 // 値だけを使う。表示文字列（display）が本文に逐語で存在することを
 // scripts/check-article-charts.mjs で機械照合する。
 export const articleCharts: Record<string, ArticleChart> = {
+  "minimum-wage-monthly-pay-check": {
+    "title": "月給20万円の時給換算と2026年度の最低賃金",
+    "note": "1日8時間・年間休日120日の会社の例です。最低賃金は都道府県ごとの時間額です。",
+    "bars": [
+      {
+        "label": "東京都",
+        "value": 1280,
+        "display": "1,280円"
+      },
+      {
+        "label": "大阪府",
+        "value": 1231,
+        "display": "1,231円"
+      },
+      {
+        "label": "月給20万円の時給換算",
+        "value": 1224.5,
+        "display": "約1,224.5円"
+      },
+      {
+        "label": "埼玉県",
+        "value": 1196,
+        "display": "1,196円"
+      },
+      {
+        "label": "全国加重平均",
+        "value": 1177,
+        "display": "1,177円"
+      }
+    ]
+  },
+  "paid-leave-days-guide": {
+    "title": "勤続年数ごとの年次有給休暇の日数",
+    "note": "週30時間以上、または週5日以上働く人の日数です。出勤率8割以上が条件で、2年6か月は12日、4年6か月は16日です。",
+    "bars": [
+      {
+        "label": "6か月",
+        "value": 10,
+        "display": "10日"
+      },
+      {
+        "label": "1年6か月",
+        "value": 11,
+        "display": "11日"
+      },
+      {
+        "label": "3年6か月",
+        "value": 14,
+        "display": "14日"
+      },
+      {
+        "label": "5年6か月",
+        "value": 18,
+        "display": "18日"
+      },
+      {
+        "label": "6年6か月以上",
+        "value": 20,
+        "display": "20日"
+      }
+    ]
+  },
+  "overtime-premium-rate-guide": {
+    "title": "月給25万円の人の1時間あたりの割増賃金",
+    "note": "1か月平均の所定労働時間を約163.3時間とした例です。法律が定める最低の率で計算しています。",
+    "bars": [
+      {
+        "label": "時間外（25％）",
+        "value": 1913.3,
+        "display": "約1,913.3円"
+      },
+      {
+        "label": "法定休日（35％）",
+        "value": 2066.3,
+        "display": "約2,066.3円"
+      },
+      {
+        "label": "月60時間超（50％）",
+        "value": 2295.9,
+        "display": "約2,295.9円"
+      },
+      {
+        "label": "休日かつ深夜（60％）",
+        "value": 2449.0,
+        "display": "約2,449.0円"
+      },
+      {
+        "label": "60時間超＋深夜（75％）",
+        "value": 2678.6,
+        "display": "約2,678.6円"
+      }
+    ]
+  },
   "aging-whitepaper-2026": {
     "title": "年齢階級別の労働力人口比率（令和7年）",
     "note": "各年齢層の人口のうち、就業者と完全失業者を合わせた労働力人口の割合です。",
