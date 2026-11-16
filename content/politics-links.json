@@ -1,0 +1,99 @@
+{
+  "source": "manapick politics 公開ページ（2026-11-16 に全件 HTTP 200 を実測）への文脈リンク。リンク先は content/network-map.json の itemId で参照し、QA台帳（docs/qa-network.json）で生存確認済みのものだけを登録する",
+  "note": "職業ページ専用。対応づけは各職業の定義上の役割に基づく。根拠の弱い職業（学習塾教師・土地家屋調査士など）は登録しない。保険営業のクーリング・オフは保険業法の制度であり、特定商取引法を扱うリンク先との法域のずれがあるため登録しない",
+  "generatedAt": "2026-11-16",
+  "occupations": {
+    "21": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "現場の労務管理では、労働基準法などの労働ルールの理解が求められます。労働契約法との違いは姉妹サイトで整理しています",
+        "section": "conditions"
+      }
+    ],
+    "81": [
+      {
+        "itemId": "politics:consumer-contracts",
+        "label": "消費者契約の基本を manapick politics で読む",
+        "lead": "保険や投資などの契約商品を消費者に助言する仕事では、消費者契約の基本ルールが土台になります。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "82": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "労働社会保険の手続きと労務相談では、労働基準法と労働契約法の違いを押さえることが欠かせません。姉妹サイトで整理しています",
+        "section": "conditions"
+      }
+    ],
+    "83": [
+      {
+        "itemId": "politics:consumer-contracts",
+        "label": "消費者契約の基本を manapick politics で読む",
+        "lead": "消費者からの契約トラブルの相談では、消費者契約法の基本が関わります。姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:rent-deposit-renewal",
+        "label": "借地借家と敷金のルールを manapick politics で読む",
+        "lead": "敷金返還など不動産トラブルの書類も、この仕事の扱う範囲です。賃貸借のルールは姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "88": [
+      {
+        "itemId": "politics:consumer-contracts",
+        "label": "消費者契約の基本を manapick politics で読む",
+        "lead": "消費者契約をめぐる紛争は、民事の相談で扱う代表的な分野です。消費者契約法の基本は姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:rent-deposit-renewal",
+        "label": "借地借家と敷金のルールを manapick politics で読む",
+        "lead": "敷金返還の請求は、民事で扱う身近な案件の一つです。賃貸借のルールは姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "92": [
+      {
+        "itemId": "politics:rent-deposit-renewal",
+        "label": "借地借家と敷金のルールを manapick politics で読む",
+        "lead": "賃貸不動産の評価では、賃貸借契約や敷金をめぐるルールも関係します。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "116": [
+      {
+        "itemId": "politics:cooling-off",
+        "label": "クーリング・オフの仕組みを manapick politics で読む",
+        "lead": "エステのような継続サービスの契約には、クーリング・オフという解約の仕組みがあります。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "407": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "雇用契約や就業規則の運用では、労働基準法と労働契約法の違いが土台になります。姉妹サイトで整理しています",
+        "section": "conditions"
+      }
+    ],
+    "449": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "労働時間の規制は、この仕事の働き方を直接左右します。労働基準法と労働契約法の違いは姉妹サイトで整理しています",
+        "section": "conditions"
+      }
+    ],
+    "491": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "労働基準法は、この仕事が監督・指導の対象とする法律そのものです。労働契約法との違いは姉妹サイトで整理しています",
+        "section": "conditions"
+      }
+    ]
+  }
+}
