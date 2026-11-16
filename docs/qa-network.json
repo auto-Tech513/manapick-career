@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-02T07:02:31.290Z",
+  "checkedAt": "2026-11-16T11:31:32.000Z",
   "report": [
     {
       "itemId": "learning:home",
@@ -160,6 +160,36 @@
     {
       "itemId": "company:home",
       "url": "https://company.manapick.app/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:home",
+      "url": "https://politics.manapick.app/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:labor-standards-vs-labor-contract",
+      "url": "https://politics.manapick.app/law/labor-standards-vs-labor-contract/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:consumer-contracts",
+      "url": "https://politics.manapick.app/law/consumer-contracts/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:cooling-off",
+      "url": "https://politics.manapick.app/law/cooling-off/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:rent-deposit-renewal",
+      "url": "https://politics.manapick.app/law/rent-deposit-renewal/",
       "status": 200,
       "state": "ok"
     }
