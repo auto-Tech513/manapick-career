@@ -66,7 +66,13 @@ export default function Home() {
           <p className="town-lead">
             {occupationCatalog.length}職業の名録から、仕事内容・必要な資格・年収の目安まで。地図を歩くように、近い仕事へ寄り道しながら探せます。
           </p>
-          <HomeSearch items={homeSearchItems} />
+          <HomeSearch
+            items={homeSearchItems}
+            guides={[
+              ...guides.map((guide) => ({ title: guide.title, href: `/guide/${guide.slug}/`, kind: "guide" as const })),
+              { title: "キャリアデータ室", href: "/research/", kind: "research" as const },
+            ]}
+          />
           <nav className="town-quick" aria-label="職業情報の探し方">
             <Link className="k" href="/all/">{occupationCatalog.length}職業から探す</Link>
             <Link href="/career/tax-accountant/">税理士</Link>

@@ -1,2 +1,6 @@
 import NetworkHeader from "./NetworkHeader";
-export function SiteHeader() { return <NetworkHeader />; }
+import { occupationDirectory } from "../content/catalog";
+
+export function SiteHeader() {
+  return <NetworkHeader occupationCount={occupationDirectory.length} />;
+}
