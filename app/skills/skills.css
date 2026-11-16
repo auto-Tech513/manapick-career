@@ -1,0 +1,78 @@
+/* スキルカード（CE-06・career design-extra）
+   「身につけやすさ」のデータは無いため、その行は出さない（デザイン側の決まりどおり）。
+   カード下部のリンク帯（スキルの説明／manapick で学ぶ）は、リンク先のデータが無いため未実装。 */
+.ce-skgrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.ce-skill {
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  padding: 18px 20px 6px;
+  display: flex;
+  flex-direction: column;
+}
+.ce-skill .hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.ce-skill .cat {
+  font-size: 12px;
+  font-weight: 700;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 0 10px;
+  background: #fff6c7;
+}
+.ce-skill .cnt {
+  font-size: 12.5px;
+  color: #4a5468;
+}
+.ce-skill .cnt b {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-right: 3px;
+  font-family: var(--num);
+}
+.ce-skill h3 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 1.4;
+  margin: 10px 0 8px;
+}
+.ce-skill .jobs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0 14px;
+}
+.ce-skill .jobs .k {
+  font-size: 12.5px;
+  color: #4a5468;
+  margin-right: 4px;
+}
+.ce-skill .jobs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 1.5px solid #d9d3c3;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+}
+@media (max-width: 640px) {
+  .ce-skgrid {
+    grid-template-columns: 1fr;
+  }
+}
