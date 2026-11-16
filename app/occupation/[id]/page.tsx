@@ -230,6 +230,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           datePublished: record.publishedAt,
           dateModified: record.checkedAt,
           author: { "@type": "Organization", name: record.author },
+          image: [occupationOgUrl(id, `${occupation.name}|${record.publishedAt}`)],
           mainEntityOfPage: pageUrl,
         }}
       />
