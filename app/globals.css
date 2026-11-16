@@ -4091,3 +4091,6 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .town-pin i { font-size: 12px; }
 /* トップのテーマ（転職市場など）の説明が1行で「…」に切れていた → 2行まで表示 */
 .briefing-hubs small { white-space: normal; text-overflow: clip; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+/* iPhone の Safari（WebKit）で入力欄・選択欄が既定の幅より縮まず、フッターのメール欄・手取りシミュレーターの入力行が画面から少しはみ出していた → 縮められるように */
+input, select, textarea { min-width: 0; max-width: 100%; }
+.sim-input-row { min-width: 0; max-width: 100%; }
