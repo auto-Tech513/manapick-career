@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import Link from "next/link";
 import { ArrowRight, X } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
@@ -52,19 +52,18 @@ export function OccupationCompareTool({ items }: { items: OccupationCompareItem[
   return (
     <div className="compare-tool">
       <div className="compare-picker">
-        <div className="compare-picker-head">
-          <strong>比較する職業（最大3つ）</strong>
-          <span className="compare-count" aria-live="polite">{selected.length}/3 選択中</span>
+        <div className="bar">
+          <p className="cnt"><b>{selected.length}</b>件選択中（最大3つまで）</p>
+          <div className="act" aria-label="選択中の職業">
+            {chosen.map((item) => (
+              <button key={item.catalogId} onClick={() => toggle(item.catalogId)} aria-pressed="true" aria-label={`${item.name}を比較から外す`}>
+                {item.name}
+                <X aria-hidden="true" />
+              </button>
+            ))}
+          </div>
         </div>
-        <div className="compare-selected" aria-label="選択中の職業">
-          {chosen.map((item) => (
-            <button key={item.catalogId} className="selected" onClick={() => toggle(item.catalogId)} aria-pressed="true">
-              {item.name}
-              <X aria-hidden="true" />
-            </button>
-          ))}
-          {!chosen.length ? <p className="compare-none">まだ選ばれていません。下の候補から選んでください。</p> : null}
-        </div>
+        {!chosen.length ? <p className="compare-none">まだ選ばれていません。下の候補から選んでください。</p> : null}
         <label className="compare-filter">
           <span>職業名で絞り込む</span>
           <input
@@ -89,71 +88,85 @@ export function OccupationCompareTool({ items }: { items: OccupationCompareItem[
         {selected.length >= 3 ? <p className="compare-limit">最大3つまでです。外すには上のチップをタップしてください。</p> : null}
       </div>
       {chosen.length ? (
-        <div className="compare-scroll" tabIndex={0} aria-label="職業の統計比較表">
-          <table>
-            <caption className="sr-only">選択した職業の公式統計による比較</caption>
-            <thead>
-              <tr>
-                <th scope="col">比較項目</th>
+        <>
+          <div className={chosen.length >= 3 ? "cmp2-scroll is-scroll" : "cmp2-scroll"}>
+            <div className="cmp2" role="table" aria-label="選択した職業の公式統計による比較" style={{ "--n": chosen.length } as CSSProperties}>
+              <div className="hdr" role="row">
+                <div role="columnheader">STATISTICS</div>
                 {chosen.map((item) => (
-                  <th scope="col" key={item.catalogId}>{item.name}</th>
+                  <div role="columnheader" key={item.catalogId}>
+                    <p className="nm">{item.name}</p>
+                    {item.aliases.length ? <p className="tg">別名：{item.aliases.join("・")}</p> : null}
+                  </div>
                 ))}
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">仕事内容</th>
-                {chosen.map((item) => <td data-job={item.name} key={item.catalogId}>{item.summary}</td>)}
-              </tr>
-              <tr>
-                <th scope="row">年収の目安（平均年収換算）</th>
+              </div>
+              <p className="sec2">仕事と統計</p>
+              <div className="grp" role="row">
+                <div role="rowheader">仕事内容</div>
+                {chosen.map((item) => <div role="cell" key={item.catalogId}>{item.summary}</div>)}
+              </div>
+              <div className="grp" role="row">
+                <div role="rowheader">年収の目安（平均年収換算）</div>
                 {chosen.map((item) => (
-                  <td data-job={item.name} key={item.catalogId}>
-                    {item.income ? <strong>{item.income.annual}</strong> : "対応する年収統計なし"}
-                  </td>
+                  <div role="cell" key={item.catalogId}>
+                    {item.income ? <span className="n">{item.income.annual}</span> : "対応する年収統計なし"}
+                  </div>
                 ))}
-              </tr>
-              <tr>
-                <th scope="row">統計分類</th>
+              </div>
+              <div className="grp" role="row">
+                <div role="rowheader">統計分類</div>
                 {chosen.map((item) => (
-                  <td data-job={item.name} key={item.catalogId}>
+                  <div role="cell" key={item.catalogId}>
                     {item.income
                       ? `${item.income.classificationName}${item.income.sharedCount >= 2 ? `（${item.income.sharedCount}職業で同じ値）` : ""}`
                       : "—"}
-                  </td>
+                  </div>
                 ))}
-              </tr>
-              <tr>
-                <th scope="row">対応分類の平均年齢</th>
-                {chosen.map((item) => <td data-job={item.name} key={item.catalogId}>{item.income ? `${item.income.meanAge}歳` : "—"}</td>)}
-              </tr>
-              <tr>
-                <th scope="row">対応分類の推計労働者数</th>
-                {chosen.map((item) => <td data-job={item.name} key={item.catalogId}>{item.income ? `${item.income.workers}人` : "—"}</td>)}
-              </tr>
-              <tr>
-                <th scope="row">関連資格</th>
+              </div>
+              <div className="grp" role="row">
+                <div role="rowheader">対応分類の平均年齢</div>
+                {chosen.map((item) => <div role="cell" key={item.catalogId}>{item.income ? <span className="n">{item.income.meanAge}歳</span> : "—"}</div>)}
+              </div>
+              <div className="grp" role="row">
+                <div role="rowheader">対応分類の推計労働者数</div>
+                {chosen.map((item) => <div role="cell" key={item.catalogId}>{item.income ? <span className="n">{item.income.workers}人</span> : "—"}</div>)}
+              </div>
+              <p className="sec2">資格と企業例</p>
+              <div className="grp" role="row">
+                <div role="rowheader">関連資格</div>
                 {chosen.map((item) => (
-                  <td data-job={item.name} key={item.catalogId}>
+                  <div role="cell" key={item.catalogId}>
                     {item.qualifications.length ? item.qualifications.join("、") : "入職に必須の資格は示されていません"}
-                  </td>
+                  </div>
                 ))}
-              </tr>
-              <tr>
-                <th scope="row">企業例（公式確認済み）</th>
-                {chosen.map((item) => <td data-job={item.name} key={item.catalogId}>{item.employerCount ? `${item.employerCount}件` : "未掲載"}</td>)}
-              </tr>
-              <tr>
-                <th scope="row">詳しく見る</th>
+              </div>
+              <div className="grp" role="row">
+                <div role="rowheader">企業例（公式確認済み）</div>
+                {chosen.map((item) => <div role="cell" key={item.catalogId}>{item.employerCount ? `${item.employerCount}件` : "未掲載"}</div>)}
+              </div>
+              <div className="grp" role="row">
+                <div role="rowheader">詳しく見る</div>
                 {chosen.map((item) => (
-                  <td data-job={item.name} key={item.catalogId}>
+                  <div role="cell" key={item.catalogId}>
                     <Link href={`/occupation/${item.catalogId}/`}>個別ページ <ArrowRight /></Link>
-                  </td>
+                  </div>
                 ))}
-              </tr>
-            </tbody>
-          </table>
-        </div>
+              </div>
+            </div>
+          </div>
+          <div className="verdict" style={{ "--n": chosen.length } as CSSProperties}>
+            {chosen.map((item) => (
+              <div key={item.catalogId}>
+                <b>{item.name}</b>
+                <p>
+                  {item.income
+                    ? `年収の目安 ${item.income.annual}、平均年齢 ${item.income.meanAge}歳、推計労働者数 ${item.income.workers}人。いずれも統計分類「${item.income.classificationName}」の値です。`
+                    : item.summary}
+                </p>
+              </div>
+            ))}
+          </div>
+        </>
       ) : (
         <p className="empty">比較する職業を1つ以上選んでください。</p>
       )}
