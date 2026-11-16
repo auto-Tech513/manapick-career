@@ -66,7 +66,9 @@ const networkLabels: Record<string, string> = {
 function paragraphs(text: string) {
   return text
     .split(/\n+/)
-    .map((part) => part.replace(/^\s+|\s+$/g, ""))
+    // 出典データにある「句読点の直前の空白」（例: "Python 、Scala"）を取り除く。
+    // 空白位置で改行すると行頭に句読点が来てしまうため、表示側で整える。
+    .map((part) => part.replace(/^\s+|\s+$/g, "").replace(/[ 　]+([、。」』）】])/g, "$1"))
     .filter(Boolean);
 }
 
@@ -410,11 +412,20 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               </section>
             ) : null}
 
-            <section className="occ-sec" id="entry">
+            <section className="occ-sec ce-how" id="entry">
               <h2><i>{num("entry")}</i>就くには</h2>
-              {paragraphs(occupation.entry).map((part, index) => (
-                <p key={index}>{part}</p>
-              ))}
+              <div className="lead2">
+                <span className="tag">文章データ</span>
+                <span>この職業の「就くには」は、データの文章をそのまま表示します（段落の区切りもデータどおり）。</span>
+              </div>
+              <div className="hrail">
+                {paragraphs(occupation.entry).map((part, index, parts) => (
+                  <div className={`p${index === parts.length - 1 ? " last" : ""}`} key={index}>
+                    <i aria-hidden="true" />
+                    <p>{part}</p>
+                  </div>
+                ))}
+              </div>
               <p className="occ-action">
                 実際の求人・募集の状況は、厚生労働省の職業情報サイトで確認できます：
                 <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer">
@@ -465,31 +476,46 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
             <section className="occ-sec" id="employers">
               <h2><i>{num("employers")}</i>企業例</h2>
               {employers.length ? (
-                <>
-                  <p>次の組織は、公式ページで{occupation.name}に関わる職種や採用の案内を確認した例です。最新の募集状況は各公式ページに載っています。</p>
-                  <div className="occ-co2">
-                    {employers.map((employer) => {
-                      const company = (companyLinks.links as unknown as Record<string, { companyName: string; code: string; url: string }>)[employer.name];
-                      return (
-                        <div className="occ-co" key={`${employer.name}-${employer.role}`}>
-                          <b>{employer.name}（{employer.role}）</b>
-                          <p>{employer.description}</p>
-                          <span className="occ-co-links">
-                            <a href={employer.source.url} target="_blank" rel="noopener noreferrer">
-                              公式ページ：{employer.source.title}（確認日 {employer.source.checkedAt}） <ArrowUpRight aria-hidden="true" />
-                            </a>
+                <div className="ce-coex">
+                  <span className="disc" role="note">
+                    <b>企業例について</b>
+                    この仕事を説明するための例です。<strong>順位や、採用の可能性を示すものではありません。</strong>並びは五十音順です。
+                  </span>
+                  <ul>
+                    {[...employers]
+                      .sort((a, b) => a.name.localeCompare(b.name, "ja"))
+                      .map((employer) => {
+                        const company = (companyLinks.links as unknown as Record<string, { companyName: string; code: string; url: string }>)[employer.name];
+                        return (
+                          <li key={`${employer.name}-${employer.role}`}>
+                            <div className="nm">
+                              <b>{employer.name}</b>
+                              <span className="kind">{employer.role}</span>
+                            </div>
+                            <p>{employer.description}</p>
                             {company ? (
-                              <a href={company.url} target="_blank" rel="noopener noreferrer">
-                                企業情報：{company.companyName}（証券コード {company.code}） <ArrowUpRight aria-hidden="true" />
+                              <a className="co" href={company.url} target="_blank" rel="noopener noreferrer">
+                                manapick company で読む<span aria-hidden="true">↗</span>
                               </a>
-                            ) : null}
-                          </span>
-                          <span className="occ-co-note">業務説明の例であり、順位や採用可能性を示すものではない</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </>
+                            ) : (
+                              <span className="nolink">企業ページなし</span>
+                            )}
+                          </li>
+                        );
+                      })}
+                  </ul>
+                  <p className="src3">
+                    出典：
+                    {employers.map((employer, index) => (
+                      <span key={`${employer.name}-${employer.role}`}>
+                        {index > 0 ? "、" : ""}
+                        {employer.name}「
+                        <a href={employer.source.url} target="_blank" rel="noopener noreferrer">{employer.source.title}</a>
+                        」（確認日 {employer.source.checkedAt}）
+                      </span>
+                    ))}
+                  </p>
+                </div>
               ) : (
                 <>
                   <p>この職業については、公式ページで職種名と仕事内容を確認できた企業例がまだ見つかっていないため、掲載していません。企業例は、各組織の公式ページ（採用・職種紹介・業務紹介など）で確認できたものだけを、出典と確認日つきで載せています。確認できたものから追加します。</p>
