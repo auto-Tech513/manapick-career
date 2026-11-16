@@ -139,6 +139,7 @@
   gap: 8px;
   align-items: baseline;
   padding: 8px 0;
+  min-height: 44px;
   border-top: 1px solid var(--rule);
   font-size: 13.5px;
   color: var(--ink);
