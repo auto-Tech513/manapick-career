@@ -842,6 +842,20 @@
   .town-pin.sp-x {
     display: none;
   }
+  /* Owner real-device fix 2026-11-16: the IT pin (3rd pin, top:410px on the
+     desktop map) is bottom-clipped by the 430px SP map window and reads as a
+     broken chip above the stats band. Move it fully inside the window. */
+  .town-map a.town-pin:nth-of-type(3) {
+    top: 372px !important;
+  }
+  /* Owner real-device fix 2026-11-16: shrink/shift the first photo card on SP
+     so it covers less of the map buildings (mock deviation, owner-directed). */
+  .town-map div.town-pic:nth-of-type(1) {
+    width: 148px !important;
+    height: 122px !important;
+    left: 18px !important;
+    top: 52px !important;
+  }
   .town-side {
     display: none;
   }
@@ -961,7 +975,11 @@
     height: 84px;
   }
   .ring-p em {
-    font-size: 17px;
+    /* Owner real-device fix 2026-11-16: at 17px the wide fallback rendering
+       on a real iPhone overflowed the 84px circles (RECORD/COMPARE clipped).
+       15px + tighter tracking fits even without Barlow Condensed. */
+    font-size: 15px;
+    letter-spacing: 0.02em;
   }
   .ring-c b {
     font-size: 21px;
