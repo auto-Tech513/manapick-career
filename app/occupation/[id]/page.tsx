@@ -1,5 +1,6 @@
 import "./occupation.css";
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
@@ -563,7 +564,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                   {industryEntry.companies.map((company) => (
                     <li key={company.code}>
                       <a href={`https://company.manapick.app/company/${company.slug}/`} target="_blank" rel="noopener noreferrer">
-                        {company.name}<span className="nb-paren">（証券コード {company.code}）</span> <ArrowUpRight aria-hidden="true" />
+                        {/* 長い社名は「・」の後でだけ折る（語中で割れて「ー」が行頭に来ないように） */}
+                        {company.name.split("・").map((part, i) => <Fragment key={i}>{i ? <>・<wbr /></> : null}{part}</Fragment>)}<span className="nb-paren">（証券コード {company.code}） <ArrowUpRight aria-hidden="true" /></span>
                       </a>
                     </li>
                   ))}
