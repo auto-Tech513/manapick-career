@@ -45,3 +45,24 @@
 .ranking-anchor-nav a { border: 1.5px solid var(--rule); background: #fff; }
 .income-rank-section { margin-top: 8px; }
 .extra-rank-group > h3 { font-family: var(--mincho); font-weight: 700; }
+
+/* 全ページ監査 2026-11-17：スマホで3つ目だけが2段目に落ちていたため、2列のそろったグリッドにする */
+@media (max-width: 640px) {
+  .ranking-anchor-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ranking-anchor-nav a { justify-content: center; text-align: center; }
+  .ranking-anchor-nav a:last-child { grid-column: 1 / -1; }
+}
+/* 幅360pxでは職業名の列が177pxしかなく「システムコンサルタント・」が収まらず「・」が行頭に落ちていた。順位の列を詰めて名前の列を広げる */
+@media (max-width: 400px) {
+  .extra-rank-list li { grid-template-columns: 42px minmax(0, 1fr) auto; gap: .5rem; }
+}
+/* 「順位の根拠と、示さないこと」：狭い画面で文言と日付が右端で切れていた。折り返し可にし、開閉できることが分かる印を付ける */
+.ranking-method-fold > summary { flex-wrap: wrap; row-gap: 2px; align-items: center; list-style: none; }
+.ranking-method-fold > summary::-webkit-details-marker { display: none; }
+.ranking-method-fold > summary::after { content: ""; flex: none; width: 9px; height: 9px; margin: 0 6px 0 auto; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); transform: rotate(45deg); transition: transform .15s; }
+.ranking-method-fold[open] > summary::after { transform: rotate(-135deg); }
+@media (max-width: 640px) {
+  .ranking-method-fold > summary span { flex: 1 1 100%; order: 0; }
+  .ranking-method-fold > summary small { order: 1; }
+  .ranking-method-fold > summary::after { order: 2; }
+}

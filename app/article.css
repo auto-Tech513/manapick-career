@@ -56,7 +56,7 @@
 .editorial-detail .article-answer > span {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.16em;
   color: var(--ca-ink);
 }
@@ -222,4 +222,10 @@
   .editorial-detail .article-key-points h2 {
     font-size: 22px;
   }
+}
+
+/* 全ページ監査 2026-11-17：幅360pxでは「25%増しだけじゃない。」のような1文節が行幅を
+   わずかに超え、句点が行頭に落ちていた。記事見出しだけ狭い画面で少し詰める */
+@media (max-width: 374px) {
+  .editorial-detail .phead h1 { font-size: 28px; }
 }

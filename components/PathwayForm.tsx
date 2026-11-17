@@ -2,6 +2,7 @@
 import { Compass } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import "./newsletter-form.css";
+import { PhraseText } from "./PhraseTitle";
 
 /**
  * 資格×職業×企業パスウェイ（開発中）の事前登録フォーム。
@@ -14,9 +15,9 @@ import "./newsletter-form.css";
 export function PathwayForm() {
   return (
     <div className="newsletter-form newsletter-form--article">
-      <p className="newsletter-form-title">
+      <p className="newsletter-form-title phrase-breaks">
         <Compass aria-hidden="true" />
-        資格×職業×企業の入口（開発中）事前登録
+        <span><PhraseText text="資格×職業×企業の入口（開発中）事前登録" /></span>
       </p>
       <p className="newsletter-form-text">
         資格を起点に「その資格で目指せる職業」と「その職業に関わる上場企業」を一度にたどれる入口を開発中です。開始時期は未定です。公開が決まったら、登録いただいた方にメールでお知らせします。登録は無料で、費用はかかりません。

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play, Sparkles } from "lucide-react";
 import type { CareerCard } from "@/lib/career-card";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export function HeroCareerSlider({ jobs }: { jobs: CareerCard[] }) {
   const rail = useRef<HTMLDivElement>(null);
@@ -46,7 +47,7 @@ export function HeroCareerSlider({ jobs }: { jobs: CareerCard[] }) {
       {jobs.map((job, jobIndex) => <article className={`hero-career-slide cat-bg-${job.category}`} key={job.slug} aria-label={`${jobIndex + 1} / ${jobs.length}: ${job.name}`}>
         <div className="hero-slide-orbit" aria-hidden="true"><Sparkles /></div>
         <span className="hero-slide-kicker">仕事の入口を見る</span>
-        <h2>{job.name}</h2>
+        <h2 className="phrase-breaks"><PhraseText text={job.name} /></h2>
         <p>{job.conclusion[0]}</p>
         <div className="hero-slide-skills" aria-label="入口スキル">{job.entrySkills.slice(0, 2).map(skill => <span key={skill}>{skill}</span>)}</div>
         <Link href={`/career/${job.slug}/`}>仕事内容と学び方 <ArrowRight aria-hidden="true" /></Link>

@@ -857,6 +857,7 @@ main {
 .source-list small {
   display: block;
   color: var(--muted);
+  font-size: 12px;
 }
 .detail-aside {
   position: sticky;

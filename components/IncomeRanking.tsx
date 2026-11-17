@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export type IncomeRankEntry = {
   catalogId: string;
@@ -50,10 +51,10 @@ function RankList({ entries, start = 1 }: { entries: IncomeRankEntry[]; start?: 
     return <li key={`${group.rank}-${group.value}`}>
       <span className="ranking-number"><small>RANK</small>{group.rank}</span>
       {tied ? <div className="ranking-copy">
-        <h3>{classifications.join("・")}</h3>
+        <h3 className="phrase-breaks"><PhraseText text={classifications.join("・")} /></h3>
         <small>この統計分類に結ばれた{group.entries.length}職業が同額</small>
         <p className="income-rank-names">{group.entries.map((entry) => entry.name).join("、")}</p>
-      </div> : <div className="ranking-copy"><h3>{first.name}</h3><small>統計分類：{first.classificationName}</small></div>}
+      </div> : <div className="ranking-copy"><h3 className="phrase-breaks"><PhraseText text={first.name} /></h3><small>統計分類：{first.classificationName}</small></div>}
       <strong className="income-rank-value">{yen(group.value)}</strong>
       <Link href="/all/">名録で見る <ArrowUpRight aria-hidden="true" /></Link>
     </li>;
@@ -66,7 +67,7 @@ export function IncomeRanking({ overall, groups, genreTopLists }: { overall: Inc
   const headlineEntries = selected ? selected.entries : overall;
   return <>
     <section aria-labelledby="income-rank-title" className="income-rank-section" id="income">
-      <header className="sh"><div><p className="sh-k">INCOME — 賃金構造基本統計調査 2025年 × 公式対応表</p><h2 id="income-rank-title">年収ランキング（統計分類の平均年収換算）</h2>
+      <header className="sh"><div><p className="sh-k">INCOME — 賃金構造基本統計調査 2025年 × 公式対応表</p><h2 id="income-rank-title" className="phrase-breaks"><PhraseText text="年収ランキング（統計分類の平均年収換算）" /></h2>
         <p>各職業に公式対応表（job tag 職業分類対応表）で結ばれた職種分類の「平均年収換算」を並べたものです。職業そのものの年収ではなく、同じ分類に結ばれた職業は同額になります。同額の職業は同じ順位にまとめ、順位の区切りで同額が続く場合は全件を表示しています。換算式は 2025年6月の「きまって支給する現金給与額」×12＋年間賞与その他特別給与額です。税・社会保険料控除前の金額で、手取りや初任給、求人の提示額ではありません。手取りの目安は<Link href="/tools/net-income/">手取りシミュレーター</Link>で試算できます。</p></div></header>
       <div className="ranking-filters" role="group" aria-label="年収ランキングのジャンル絞り込み">
         <button type="button" aria-pressed={genre === "all"} className={genre === "all" ? "active" : undefined} onClick={() => setGenre("all")}>全体</button>
@@ -77,10 +78,10 @@ export function IncomeRanking({ overall, groups, genreTopLists }: { overall: Inc
       {selected ? <p className="ranking-note">「{selected.label}」のジャンルで絞り込んで表示しています（年収が確認できる職業が10件未満のジャンルは、全件が表示されます）。下の「ジャンル別 年収ランキング」は各ジャンルの上位5件の一覧です。</p> : null}
     </section>
     <section aria-labelledby="income-rank-genre-title" className="income-rank-section">
-      <header className="sh"><div><p className="sh-k">BY GENRE — ジャンル別</p><h2 id="income-rank-genre-title">ジャンル別 年収ランキング</h2>
+      <header className="sh"><div><p className="sh-k">BY GENRE — ジャンル別</p><h2 id="income-rank-genre-title" className="phrase-breaks"><PhraseText text="ジャンル別 年収ランキング" /></h2>
         <p>ジャンル（職業カテゴリ）ごとに、統計分類の平均年収換算が高い順に5件まで表示します。年収が確認できない職業は含みません。同額の職業は同じ順位にまとめています。</p></div></header>
       <div className="income-rank-groups">{groups.map(group => <section key={group.key} aria-label={`${group.label}の年収ランキング`} className="income-rank-group">
-        <h3>{group.label}</h3>
+        <h3 className="phrase-breaks"><PhraseText text={group.label} /></h3>
         <div className="ranking-list"><RankList entries={group.entries} /></div>
       </section>)}</div>
     </section>

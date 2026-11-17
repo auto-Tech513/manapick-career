@@ -1,4 +1,5 @@
 import type { Metadata } from "next";import { InfoPage } from "@/components/InfoPage";
+import { PhraseText } from "@/components/PhraseTitle";
 export const metadata:Metadata={title:"キャリア用語集",description:"職業情報や公的統計、雇用制度を読むときに迷いやすい用語105語を、統計の読み方・賃金・労働統計・雇用制度・働き方・資格の分野別に短く整理した用語集です。各用語には短い説明と関連する分野を示し、分野別の見出しから調べたい言葉を探せます。",alternates:{canonical:"/glossary/", types: { "application/rss+xml": "/feed.xml" }}};
 const groups:{title:string;terms:{t:string;d:string}[]}[]=[
 {title:"はじめに押さえる言葉",terms:[
@@ -119,4 +120,4 @@ const groups:{title:string;terms:{t:string;d:string}[]}[]=[
 {t:"助成金",d:"事業主が従業員の教育訓練などを行った際に、国から支給される支援金。人材開発支援助成金などがあり、個人が受け取る給付金とは区別される。"},
 ]},
 ];
-export default function Page(){return <InfoPage eyebrow="Glossary" title="キャリア用語集" lead="職業情報を読むときに迷いやすい言葉を、分野別に短く整理します。">{groups.map(g=><div key={g.title}><h2>{g.title}</h2><dl className="glossary-list">{g.terms.map(x=><div key={x.t}><dt>{x.t}</dt><dd>{x.d}</dd></div>)}</dl></div>)}</InfoPage>}
+export default function Page(){return <InfoPage eyebrow="Glossary" title="キャリア用語集" lead="職業情報を読むときに迷いやすい言葉を、分野別に短く整理します。">{groups.map(g=><div key={g.title}><h2 className="phrase-breaks"><PhraseText text={g.title} /></h2><dl className="glossary-list">{g.terms.map(x=><div key={x.t}><dt>{x.t}</dt><dd>{x.d}</dd></div>)}</dl></div>)}</InfoPage>}

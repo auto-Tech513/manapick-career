@@ -28,6 +28,7 @@ import politicsLinks from "@/content/politics-links.json";
 import { ageBandsByCode, ageIncomeNote, formatManYen1dp, incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export const dynamicParams = false;
 
@@ -282,8 +283,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               <span className="stn lg" aria-hidden="true">CA</span>
               <span>CA-JOB · {category?.label}</span>
             </p>
-            <h1>
-              <mark>{occupation.name}</mark>の仕事
+            <h1 className="phrase-breaks">
+              <mark><PhraseText text={occupation.name} /></mark>の<wbr />仕事
             </h1>
             <p className="occ-lead">{occupation.summary}</p>
             <p className="occ-meta">
@@ -381,7 +382,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                   </details>
                   {(ageBandsByCode.get(statistic.classificationCode) ?? []).length >= 3 ? (
                     <div className="occ-agebands">
-                      <h3>年代別の平均年収換算（対応分類「{statistic.classificationName}」）</h3>
+                      <h3 className="phrase-breaks"><PhraseText text={`年代別の平均年収換算（対応分類「${statistic.classificationName}」）`} /></h3>
                       <table className="occ-table">
                         <thead>
                           <tr>
@@ -630,12 +631,12 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           </div>
           <aside className="occ-side">
             <div className="occ-box2 occ-box2-y">
-              <h3>近い仕事と比べる</h3>
+              <h3 className="phrase-breaks"><PhraseText text="近い仕事と比べる" /></h3>
               <p>{related.length ? `${related.slice(0, 2).map((item) => item.name).join("・")}と並べて読む` : "職業を並べて比べる"}</p>
               <Link className="occ-pill" href="/compare/">比較を始める →</Link>
             </div>
             <div className="occ-box2">
-              <h3>手取りを試算</h3>
+              <h3 className="phrase-breaks"><PhraseText text="手取りを試算" /></h3>
               <Link className="occ-simrow" href={statistic ? `/tools/net-income/?yen=${statistic.annualizedMeanYen}` : "/tools/net-income/"}>
                 <span className="occ-yen" aria-hidden="true">¥</span>
                 手取りシミュレーター
@@ -643,14 +644,14 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
             </div>
             {dossierSlug ? (
               <div className="occ-box2">
-                <h3>深掘り解説</h3>
+                <h3 className="phrase-breaks"><PhraseText text="深掘り解説" /></h3>
                 <p>{occupation.name}の向いている人・企業例まで読む</p>
                 <Link className="occ-pill occ-pill-w" href={`/career/${dossierSlug}/`}>解説を読む →</Link>
               </div>
             ) : null}
             {related.length ? (
               <div className="occ-box2">
-                <h3>同じ分野の職業</h3>
+                <h3 className="phrase-breaks"><PhraseText text="同じ分野の職業" /></h3>
                 {related.slice(0, 6).map((item) => (
                   <Link key={item.catalogId} className="occ-row" href={`/occupation/${item.catalogId}/`}>
                     {item.name}
@@ -665,7 +666,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           <div className="occ-sh">
             <div>
               <span className="occ-sh-k">TRANSFER</span>
-              <h2 id="occ-transfer-title">乗り換えて、次へ。</h2>
+              <h2 id="occ-transfer-title" className="phrase-breaks"><PhraseText text="乗り換えて、次へ。" /></h2>
             </div>
           </div>
           <TransferCards cards={transferCards} />

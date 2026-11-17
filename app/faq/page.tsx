@@ -1,6 +1,7 @@
 import type { Metadata } from "next";import { InfoPage } from "@/components/InfoPage";
 import { JsonLd } from "@/components/JsonLd";
 import { absoluteUrl } from "@/lib/site";
+import { PhraseText } from "@/components/PhraseTitle";
 export const metadata:Metadata={title:"よくある質問",description:"manapick careerの使い方、出典の確認方法、年収や企業例の読み方、情報の鮮度、訂正依頼の方法など、よくある質問への回答をまとめます。サイトができること・しないことも明記します。載っていない疑問は、訂正・お問い合わせのページから送れます。",alternates:{canonical:"/faq/", types: { "application/rss+xml": "/feed.xml" }}};
 const groups:{title:string;items:{q:string;a:string}[]}[]=[
 {title:"サイトの基本",items:[
@@ -36,4 +37,4 @@ const groups:{title:string;items:{q:string;a:string}[]}[]=[
 {q:"広告はどのように掲載されていますか？",a:"承認済みの手動の広告枠だけを使っており、自動広告は有効にしていません。広告の有無で、職業や企業例の掲載内容や順序が変わることはありません。"},
 {q:"入口案内や診断で答えた内容は、運営に送られますか？",a:"送られません。回答は利用している端末の中（localStorage）にだけ保存され、サーバーへもアクセス解析（GA4）へも送信しません。端末やブラウザを変えると、回答は引き継がれません。"}]}];
 const faqs=groups.flatMap(g=>g.items);
-export default function Page(){return <><JsonLd data={{"@context":"https://schema.org","@type":"FAQPage",url:absoluteUrl("/faq/"),inLanguage:"ja-JP",mainEntity:faqs.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))}}/><InfoPage eyebrow="FAQ" title="よくある質問" lead="サイトの使い方と、できること・しないことを整理します。">{groups.map(g=><div key={g.title}><h2>{g.title}</h2><div className="faq-list">{g.items.map(x=><details key={x.q}><summary>{x.q}</summary><p>{x.a}</p></details>)}</div></div>)}</InfoPage></>}
+export default function Page(){return <><JsonLd data={{"@context":"https://schema.org","@type":"FAQPage",url:absoluteUrl("/faq/"),inLanguage:"ja-JP",mainEntity:faqs.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))}}/><InfoPage eyebrow="FAQ" title="よくある質問" lead="サイトの使い方と、できること・しないことを整理します。">{groups.map(g=><div key={g.title}><h2 className="phrase-breaks"><PhraseText text={g.title} /></h2><div className="faq-list">{g.items.map(x=><details key={x.q}><summary>{x.q}</summary><p>{x.a}</p></details>)}</div></div>)}</InfoPage></>}

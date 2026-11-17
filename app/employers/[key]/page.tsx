@@ -8,6 +8,7 @@ import { TransferCards } from "@/components/TransferCards";
 import { employerCategories, occupationById } from "@/lib/employers";
 import { absoluteUrl } from "@/lib/site";
 import "../employers.css";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return employerCategories.map(category => ({ key: category.key })); }
@@ -38,7 +39,7 @@ export default async function EmployerCategoryPage({ params }: { params: Promise
   const siblings = employerCategories.filter(item => item.key !== key);
   return <><JsonLd data={graph} /><div className="page-shell employers-page">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><Link href="/employers/">企業例のある職業</Link><span aria-hidden="true">／</span><span aria-current="page">{category.label}</span></nav>
-    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 企業例のある職業</p><h1>{category.label}の企業例がある職業</h1>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 企業例のある職業</p><h1 className="phrase-breaks"><PhraseText text={`${category.label}の企業例がある職業`} /></h1>
       <p className="phead-lead">{category.description}。この分野では{category.items.length}職業について、その仕事を行っている具体的な企業・法人・公的機関を各組織の公式ページで確認し、出典付きで載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。</p>
       <div className="phead-meta"><span><b>公式ページで確認した職場の例</b>{category.items.length}職業</span></div></header>
     <section aria-label={`${category.label}の企業例`} className="employers-group">
@@ -46,12 +47,12 @@ export default async function EmployerCategoryPage({ params }: { params: Promise
     </section>
     <p className="employers-note">企業例の確認方法：各組織の公式ページ（採用・職種紹介・業務紹介など）を開き、職種名と業務内容が本文にあることを確認しています。確認日は各職業の解説内に記載しています。</p>
     <nav aria-label="他の分野の企業例" className="employers-siblings">
-      <div className="sh"><div><p className="sh-k">FIELDS — 分野</p><h2>他の分野の企業例</h2></div></div>
+      <div className="sh"><div><p className="sh-k">FIELDS — 分野</p><h2 className="phrase-breaks"><PhraseText text="他の分野の企業例" /></h2></div></div>
       <ul>{siblings.map(item => <li key={item.key}><Link href={`/employers/${item.key}/`}>{item.label}<small>{item.items.length}職業</small></Link></li>)}</ul>
     </nav>
     <p><Link className="text-link" href="/employers/"><ArrowLeft aria-hidden="true" /> 企業例のある職業の一覧へ戻る</Link></p>
     <section className="transfer-sec" aria-label="ほかの駅へ">
-      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2>ほかの駅へ進む</h2></div></div>
+      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2 className="phrase-breaks"><PhraseText text="ほかの駅へ進む" /></h2></div></div>
       <TransferCards cards={[
         { siteId: "license", title: "ITパスポート", description: "仕事につながる資格", href: "https://license.manapick.app/license/it-passport/" },
         { siteId: "manapick", title: "資格の学び方ガイド", description: "無料動画で学ぶ", href: "https://manapick.app/guide/certification/" },
