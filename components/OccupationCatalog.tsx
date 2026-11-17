@@ -8,6 +8,8 @@ import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BadgeCheck, BookOpenCheck, Bot, ChevronLeft, ChevronRight, GraduationCap, Search } from "lucide-react";
 import type { CatalogCategory, OccupationDirectoryEntry } from "@/content/catalog";
 import discovery from "@/content/occupation-discovery.json";
+import { rankMatches, SuggestPanel } from "@/components/SuggestPanel";
+import { PhraseText } from "@/components/PhraseTitle";
 
 const perPage = 24;
 const occupationJobTagUrl = (recordNumber: string) => `https://shigoto.mhlw.go.jp/Occupation/Detail?occupationId=${encodeURIComponent(recordNumber)}`;
@@ -28,21 +30,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [query, setQuery] = useState("");
   const [suggestOpen, setSuggestOpen] = useState(false);
-  const suggestions = useMemo(() => {
-    const needle = query.trim().toLocaleLowerCase("ja");
-    if (!needle) return { total: 0, items: [] as OccupationDirectoryEntry[] };
-    const ranked: { occupation: OccupationDirectoryEntry; rank: number }[] = [];
-    for (const occupation of occupations) {
-      const name = occupation.name.toLocaleLowerCase("ja");
-      let rank = -1;
-      if (name.startsWith(needle)) rank = 0;
-      else if (name.includes(needle)) rank = 1;
-      else if (occupation.aliases.some((alias) => alias.toLocaleLowerCase("ja").includes(needle))) rank = 2;
-      if (rank >= 0) ranked.push({ occupation, rank });
-    }
-    ranked.sort((a, b) => a.rank - b.rank || a.occupation.name.localeCompare(b.occupation.name, "ja"));
-    return { total: ranked.length, items: ranked.slice(0, 8).map((entry) => entry.occupation) };
-  }, [occupations, query]);
+  const suggestions = useMemo(() => rankMatches(occupations, query, (occupation) => occupation.name, (occupation) => occupation.aliases), [occupations, query]);
   const showSuggest = suggestOpen && query.trim().length > 0;
   const searchSuggestRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -84,20 +72,22 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
       <div className="catalog-quality"><BookOpenCheck aria-hidden="true" /><span><strong>{occupations.length}職業の仕事内容を、このページで読む</strong><small>仕事内容・入職の条件・働き方・年収の目安を確認。個別ページ（{publishedIds.length}職業）と独自解説のある職業は、カードから案内します</small></span></div>
     </div>
     <div className="catalog-controls">
-      <div className="search-suggest" ref={searchSuggestRef} onBlur={(event) => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setSuggestOpen(false); }}>
-        <label className="search-box"><Search aria-hidden="true" /><span className="sr-only">職業名録を検索</span><input value={query} onChange={(event) => { changeQuery(event.target.value); setSuggestOpen(true); }} onFocus={() => setSuggestOpen(true)} onKeyDown={(event) => { if (event.key === "Escape") setSuggestOpen(false); }} placeholder="職業名・別名で検索" /></label>
-        {showSuggest ? <div className="search-suggest-panel" role="listbox" aria-label="検索候補">
-          <div className="search-suggest-head"><span>{suggestions.total}件ヒット</span><button type="button" onClick={() => setSuggestOpen(false)}>閉じる</button></div>
-          {suggestions.items.length ? <ul>{suggestions.items.map((occupation) => {
+      <div className="search-suggest sg-wrap" ref={searchSuggestRef} onBlur={(event) => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setSuggestOpen(false); }}>
+        <label className="search-box"><Search aria-hidden="true" /><span className="sr-only">職業名録を検索</span><input enterKeyHint="search" autoComplete="off" value={query} onChange={(event) => { changeQuery(event.target.value); setSuggestOpen(true); }} onFocus={() => setSuggestOpen(true)} onKeyDown={(event) => { if (event.key === "Escape") setSuggestOpen(false); }} placeholder="職業名・別名で検索" /></label>
+        {showSuggest ? <SuggestPanel
+          query={query}
+          total={suggestions.total}
+          onClose={() => setSuggestOpen(false)}
+          items={suggestions.items.map((occupation) => {
             const detail = detailedLinks[occupation.name];
-            const href = detail ? `/career/${detail}/` : publishedIdSet.has(occupation.catalogId) ? `/occupation/${occupation.catalogId}/` : null;
+            const href = detail ? `/career/${detail}/` : publishedIdSet.has(occupation.catalogId) ? `/occupation/${occupation.catalogId}/` : undefined;
             const categoryLabel = categories.find((item) => item.key === occupation.categoryKey)?.label;
             const note = detail ? "career解説あり" : href ? "個別ページあり" : "このページで読めます";
-            const inner = <><span className="search-suggest-name">{occupation.name}</span><span className="search-suggest-meta">{categoryLabel} ・ {note}{occupation.aliases.length ? ` ・ 別名：${occupation.aliases.slice(0, 2).join("、")}` : ""}</span></>;
-            return <li key={occupation.catalogId} role="option" aria-selected="false">{href ? <Link href={href} onPointerDown={(event) => event.preventDefault()} onClick={() => setSuggestOpen(false)}>{inner}</Link> : <button type="button" onPointerDown={(event) => event.preventDefault()} onClick={() => { setCategory("all"); setField("all"); changeQuery(occupation.name); setSuggestOpen(false); }}>{inner}</button>}</li>;
-          })}</ul> : <p className="search-suggest-empty">「{query.trim()}」に一致する職業は見つかりませんでした。別名や、かな表記でも試してみてください。</p>}
-          {suggestions.total > suggestions.items.length ? <p className="search-suggest-foot">上位{suggestions.items.length}件を表示しています。残りは下の一覧で確認できます。</p> : null}
-        </div> : null}
+            return { key: occupation.catalogId, name: occupation.name, href, meta: `${categoryLabel} ・ ${note}${occupation.aliases.length ? ` ・ 別名：${occupation.aliases.slice(0, 2).join("、")}` : ""}`, onSelect: href ? undefined : () => { setCategory("all"); setField("all"); changeQuery(occupation.name); } };
+          })}
+          emptyText={`「${query.trim()}」に一致する職業は見つかりませんでした。別名や、かな表記でも試してみてください。`}
+          footText={`上位${suggestions.items.length}件を表示しています。残りは下の一覧で確認できます。`}
+        /> : null}
       </div>
       <label><span>大分類</span><select value={category} onChange={(event) => changeCategory(event.target.value)}><option value="all">すべて（{occupations.length}）</option>{categories.map((item) => <option value={item.key} key={item.key}>{item.label}（{occupations.filter(occupation => occupation.categoryKey === item.key).length}）</option>)}</select></label>
       <label><span>並び順</span><select value={order} onChange={event => { setOrder(event.target.value); setPage(1); setExpandedId(null); }} aria-label="並び順（人気・年収順ではありません）"><option value="name">職業名順</option><option value="source">公式データの収録順</option></select></label>
@@ -111,7 +101,7 @@ export function OccupationCatalog({ occupations, categories, detailedLinks, brie
       const occupationPageHref = publishedIdSet.has(occupation.catalogId) ? `/occupation/${occupation.catalogId}/` : null;
       return <article className={`catalog-card${expandedId === occupation.catalogId ? " is-expanded" : ""}`} key={occupation.catalogId}>
         <small>{categoryInfo?.label} <span>職業分類 {occupation.classificationCode}</span></small>
-        <h3>{occupation.name}</h3><p className="catalog-work-summary">{occupation.summary}</p>
+        <h3 className="phrase-breaks"><PhraseText text={occupation.name} /></h3><p className="catalog-work-summary">{occupation.summary}</p>
         <p className="catalog-vintage">公式の解説更新年：{occupation.updatedYears.description ? `${occupation.updatedYears.description}年` : "記載なし"}。制度や資格の現行条件は別途確認してください。</p>
         <IncomeFigure compact={expandedId !== occupation.catalogId} name={occupation.name} statistic={occupation.incomeCode ? statisticsByCode.get(occupation.incomeCode) : undefined} />
         {occupation.aliases.length ? <p><span>別名</span>{occupation.aliases.slice(0, 3).join("、")}</p> : <p className="catalog-no-alias">job tag掲載名で確認できます</p>}

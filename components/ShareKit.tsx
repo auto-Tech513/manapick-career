@@ -54,7 +54,8 @@ export function ShareKit({ title, summary, url, kind }: { title: string; summary
       <a href={lineHref} target="_blank" rel="noopener noreferrer" aria-label="LINEで共有"><MessagesSquare aria-hidden="true" /><span>LINE</span></a>
       <a href={hatenaHref} target="_blank" rel="noopener noreferrer" aria-label="はてなブックマークへ保存"><BookmarkPlus aria-hidden="true" /><span>はてブ</span></a>
       <a href={linkedinHref} target="_blank" rel="noopener noreferrer" aria-label="LinkedInで共有"><BriefcaseBusiness aria-hidden="true" /><span>LinkedIn</span></a>
-      <a href={mailHref} aria-label="メールで共有"><Mail aria-hidden="true" /><span>メール</span></a>
+      {/* mailto: を静的な href に置くと Cloudflare のメール難読化で /cdn-cgi/l/email-protection に書き換わるため、押したときに開く */}
+      <button type="button" aria-label="メールで共有" onClick={() => { window.location.href = mailHref; }}><Mail aria-hidden="true" /><span>メール</span></button>
       <button type="button" onClick={copy}><Copy aria-hidden="true" /><span>{copied ? "コピー済み" : "コピー"}</span></button>
       <button className="career-share-native" type="button" onClick={nativeShare}><Share2 aria-hidden="true" /><span>スマホ共有</span></button>
     </div>

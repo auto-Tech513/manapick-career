@@ -25,7 +25,7 @@
      and lift it above the stats band / later sections while the list is open. */
   z-index: 4;
 }
-.town-txt:has(.home-suggest-panel),
+.town-txt:has(.sg-panel),
 .town-txt:focus-within {
   z-index: 60;
 }
@@ -840,6 +840,24 @@
 @media (max-width: 640px) {
   .career-briefing .briefing-lead {
     padding: 20px 18px 18px;
+  }
+  /* 全ページ監査 2026-11-17：2列ではテーマ名と説明が語の途中で折れていた
+     （「公的支援の選｜び方」）。スマホは1列の行リストにする。 */
+  .career-briefing .briefing-hubs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-inline: 0;
+    padding: 0;
+    overflow: visible;
+  }
+  .career-briefing .briefing-hubs > a {
+    min-height: 64px;
+    border: 1.5px solid #e3dcc6;
+    border-radius: 16px;
+  }
+  .career-briefing .briefing-hubs small {
+    white-space: normal;
   }
 }
 .xrow {

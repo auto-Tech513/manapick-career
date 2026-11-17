@@ -8,6 +8,7 @@ import { WorkstyleDiagnosis } from "@/components/WorkstyleDiagnosis";
 import { PathwayForm } from "@/components/PathwayForm";
 import { buildWorkstyleCards } from "@/lib/workstyle-cards";
 import { publishedJobs, categories } from "@/content/jobs";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export const metadata: Metadata = {
   title: "キャリア候補の入口案内",
@@ -23,7 +24,7 @@ export default function RoutePage() {
       <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">入口案内</span></nav>
       <header className="phead">
         <p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-START · 入口案内</p>
-        <h1>キャリア候補の入口案内</h1>
+        <h1 className="phrase-breaks"><PhraseText text="キャリア候補の入口案内" /></h1>
         <p className="phead-lead">探し方は2つあります。いまの関心から入る3問の案内と、働き方の好みから入る12問の診断です。どちらも調べ始める候補を出すための入口で、適性や向き不向きの判定ではありません。</p>
       </header>
       <nav className="route-chooser" aria-label="入口の選び方">
@@ -41,19 +42,19 @@ export default function RoutePage() {
         </a>
       </nav>
       <section id="interest" aria-labelledby="interest-title" style={{ marginTop: "3rem", scrollMarginTop: "110px" }}>
-        <div className="sh"><div><p className="sh-k">Q1–Q3 — 関心から</p><h2 id="interest-title">いまの関心から探す</h2>
+        <div className="sh"><div><p className="sh-k">Q1–Q3 — 関心から</p><h2 id="interest-title" className="phrase-breaks"><PhraseText text="いまの関心から探す" /></h2>
         <p>興味、取り組みたい作業、使える学習時間だけを使い、調べ始める候補を3つ提示します。</p></div></div>
         <div style={{ maxWidth: 920, margin: "0 auto" }}>
           <RouteGuide jobs={candidates} />
         </div>
       </section>
       <section id="workstyle" aria-labelledby="workstyle-title" style={{ marginTop: "4.5rem", scrollMarginTop: "110px" }}>
-        <div className="sh"><div><p className="sh-k">Q1–Q12 — 働き方から</p><h2 id="workstyle-title">働き方から探す（16タイプ働き方診断）</h2>
+        <div className="sh"><div><p className="sh-k">Q1–Q12 — 働き方から</p><h2 id="workstyle-title" className="phrase-breaks"><PhraseText text="働き方から探す（16タイプ働き方診断）" /></h2>
         <p>働き方の好みから、知らない職業に出会うための入口です。</p></div></div>
         <WorkstyleDiagnosis cardsByType={cardsByType} />
       </section>
       <section id="pathway" aria-labelledby="pathway-title" style={{ marginTop: "4.5rem", scrollMarginTop: "110px" }}>
-        <div className="sh"><div><p className="sh-k">SOON — 資格から</p><h2 id="pathway-title">資格から探す（開発中）</h2>
+        <div className="sh"><div><p className="sh-k">SOON — 資格から</p><h2 id="pathway-title" className="phrase-breaks"><PhraseText text="資格から探す（開発中）" /></h2>
         <p>資格を起点に、その資格で目指せる職業と、その職業に関わる上場企業までを一度にたどれる入口を開発しています。いまは需要を確認している段階で、開始時期は未定です。関心のある資格があれば、事前登録で教えていただけると、開発の優先順位づけに役立ちます。</p></div></div>
         <div style={{ maxWidth: 920, margin: "0 auto" }}>
           <PathwayForm />

@@ -128,7 +128,7 @@
 .dos-toc-h {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.18em;
   margin: 0 0 6px;
 }
@@ -233,7 +233,7 @@
 .dossier-article .depth-label {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   color: var(--ca-ink);
 }
@@ -505,7 +505,7 @@
 .dossier-article .daily-action-card > span {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.18em;
 }
 .dossier-article .daily-action-card > strong {
@@ -554,7 +554,7 @@
 .dos-sh-k {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.18em;
   color: var(--ca-ink);
   margin: 0;

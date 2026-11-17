@@ -11,6 +11,7 @@ import incomeData from "@/content/occupation-income.json";
 import { formatManYen1dp, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { absoluteUrl } from "@/lib/site";
 import "./ranking.css";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export const metadata: Metadata = { title: "人気職業アクセスランキング・年収ランキング", description: "厚生労働省job tagのアクセス履歴に基づく人気職業ランキングと、賃金構造基本統計調査2025年の統計分類で見る年収・ボーナス・平均年齢・働く人数のランキング。ジャンル絞り込み付き。各ランキングには、数字が示す範囲と示さないことも注記しています。ジャンルで絞ると、分野ごとの上位10件も確認できます。", alternates: { canonical: "/ranking/", types: { "application/rss+xml": "/feed.xml" } } };
 
@@ -111,20 +112,21 @@ export default function RankingPage() {
   return <div className="page-shell ranking-page">
     <JsonLd data={{ "@context": "https://schema.org", "@type": "ItemList", name: "人気職業アクセスランキング", numberOfItems: popularityRanking.length, itemListElement: popularityRanking.map((item) => ({ "@type": "ListItem", position: item.rank, name: item.name, url: item.careerSlug ? absoluteUrl(`/career/${item.careerSlug}/`) : absoluteUrl("/all/") })) }} />
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">ランキング</span></nav>
-    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-RANK · ランキング</p><h1>人気職業アクセスランキング</h1><p className="phead-lead">人気の順序はjob tagのアクセス履歴だけを使います。manapickの動画・AI・資格表示は、次に確認できる情報の有無であり、順位には一切加えていません。</p><div className="phead-meta"><span><b>根拠</b>公式アクセス履歴 × manapick連携</span></div></header>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-RANK · ランキング</p><h1 className="phrase-breaks"><PhraseText text="人気職業アクセスランキング" /></h1><p className="phead-lead">人気の順序はjob tagのアクセス履歴だけを使います。manapickの動画・AI・資格表示は、次に確認できる情報の有無であり、順位には一切加えていません。</p><div className="phead-meta"><span><b>根拠</b>公式アクセス履歴 × manapick連携</span></div></header>
     <nav className="ranking-anchor-nav" aria-label="ランキング内メニュー">
       <a href="#popularity">人気ランキング</a>
       <a href="#income">年収ランキング</a>
       <a href="#extra">ボーナス・年齢・人数ランキング</a>
     </nav>
     <details className="ranking-method-fold"><summary><span>順位の根拠と、示さないこと</span><small>最終確認 {popularityMethod.checkedAt}</small></summary><div className="ranking-method"><div><strong>順位の根拠</strong><p>{popularityMethod.description}</p></div><div><strong>この順位が示さないこと</strong><p>{popularityMethod.limitation}</p></div><a href={popularityMethod.sourceUrl} target="_blank" rel="noopener noreferrer">公式ランキングを確認 <ArrowUpRightIcon /></a></div></details>
-    <section id="popularity" aria-label="人気職業アクセスランキング">
+    <section id="popularity" aria-labelledby="popularity-title">
+      <header className="sh"><div><p className="sh-k">POPULAR — job tag アクセス履歴</p><h2 id="popularity-title" className="phrase-breaks"><PhraseText text="人気ランキング" /></h2></div></header>
       <PopularityRanking entries={popularityRanking} filterable />
     </section>
     <IncomeRanking overall={overall} groups={groups} genreTopLists={genreTopLists} />
     <ExtraRankings rankings={extraRankings()} />
     <section className="transfer-sec" aria-label="ほかの駅へ">
-      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2>ほかの駅へ進む</h2></div></div>
+      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2 className="phrase-breaks"><PhraseText text="ほかの駅へ進む" /></h2></div></div>
       <TransferCards cards={[
         { siteId: "license", title: "ITパスポート", description: "仕事につながる資格", href: "https://license.manapick.app/license/it-passport/" },
         { siteId: "manapick", title: "資格の学び方ガイド", description: "無料動画で学ぶ", href: "https://manapick.app/guide/certification/" },

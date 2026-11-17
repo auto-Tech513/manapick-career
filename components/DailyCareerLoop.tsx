@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { NewsItem } from "@/content/editorial";
+import { PhraseText } from "@/components/PhraseTitle";
 
 const steps = [
   { code: "KNOW", label: "知る" },
@@ -44,7 +45,7 @@ export function DailyCareerLoop({ latestNews }: { latestNews?: NewsItem }) {
           <div className="eh eh-loop">
             <div>
               <span className="code">CA-02 · LOOP</span>
-              <h2 id="daily-career-title">知る → 比べる → 試す → 記録する</h2>
+              <h2 id="daily-career-title" className="phrase-breaks"><PhraseText text="知る → 比べる → 試す → 記録する" /></h2>
             </div>
           </div>
           <div className="steps4">

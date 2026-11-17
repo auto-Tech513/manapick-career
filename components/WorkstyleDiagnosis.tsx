@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, RotateCcw } from "lucide-react";
 import { axisStrength, typeCodeFromScores, workstyleAxes, workstyleQuestions, workstyleTypes, type WorkstyleAxisKey } from "@/content/workstyle-diagnosis";
 import { trackEvent } from "@/lib/analytics";
 import "./workstyle.css";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export interface WorkstyleCard {
   catalogId: string;
@@ -117,7 +118,7 @@ export function WorkstyleDiagnosis({ cardsByType }: { cardsByType: Record<string
         <span>{step + 1} / {workstyleQuestions.length}</span>
         <div className="wsd-progress-track"><div className="wsd-progress-fill" style={{ width: `${((step + 1) / workstyleQuestions.length) * 100}%` }} /></div>
       </div>
-      <h2 className="wsd-question">{question.text}</h2>
+      <h2 className="wsd-question phrase-breaks"><PhraseText text={question.text} /></h2>
       <div className="wsd-options">
         {question.options.map((option) => <button key={option.label} type="button" className="wsd-option" onClick={() => choose(option.side)}>{option.label}</button>)}
       </div>
@@ -129,7 +130,7 @@ export function WorkstyleDiagnosis({ cardsByType }: { cardsByType: Record<string
     <div className="wsd-result-grid">
       <section className="wsd-type-panel" aria-labelledby="wsd-type-name">
         <span className="eyebrow">あなたの働き方タイプ</span>
-        <h2 id="wsd-type-name">{type.name}</h2>
+        <h2 id="wsd-type-name" className="phrase-breaks"><PhraseText text={type.name} /></h2>
         <p>{type.summary}</p>
         <div className="wsd-axes">
           {workstyleAxes.map((axis) => {
@@ -141,19 +142,19 @@ export function WorkstyleDiagnosis({ cardsByType }: { cardsByType: Record<string
             </div>;
           })}
         </div>
-        <h3>力が入りやすい働き方</h3>
+        <h3 className="phrase-breaks"><PhraseText text="力が入りやすい働き方" /></h3>
         <ul>{type.strengths.map((item) => <li key={item}>{item}</li>)}</ul>
-        <h3>続くと負担になりやすい作業</h3>
+        <h3 className="phrase-breaks"><PhraseText text="続くと負担になりやすい作業" /></h3>
         <ul>{type.burdens.map((item) => <li key={item}>{item}</li>)}</ul>
         <button type="button" className="wsd-subtle-button" onClick={start}><RotateCcw aria-hidden="true" />もう一度診断する</button>
       </section>
       <section className="wsd-jobs" aria-labelledby="wsd-jobs-title">
-        <h2 id="wsd-jobs-title">働き方が近い入口</h2>
+        <h2 id="wsd-jobs-title" className="phrase-breaks"><PhraseText text="働き方が近い入口" /></h2>
         <div className="wsd-cards">
           {cards.close.map((card) => <WorkstyleJobCard key={card.catalogId} card={card} />)}
         </div>
         {cards.stretch.length ? <>
-          <h2 className="wsd-stretch-title">少し違う働き方の入口</h2>
+          <h2 className="wsd-stretch-title phrase-breaks"><PhraseText text="少し違う働き方の入口" /></h2>
           <p className="wsd-stretch-note">主な傾向は近いものの、対象や進め方が少し異なる職業です。選択肢を広げるために表示しています。</p>
           <div className="wsd-cards">
             {cards.stretch.map((card) => <WorkstyleJobCard key={card.catalogId} card={card} />)}
@@ -176,10 +177,10 @@ export function WorkstyleDiagnosis({ cardsByType }: { cardsByType: Record<string
 
 function WorkstyleJobCard({ card }: { card: WorkstyleCard }) {
   return <article className="wsd-card">
-    <h3>{card.name}</h3>
+    <h3 className="phrase-breaks"><PhraseText text={card.name} /></h3>
     <p className="wsd-card-summary">{card.summary}</p>
     {card.traits.length ? <ul className="wsd-chips">{card.traits.map((trait) => <li key={trait}>{trait}</li>)}</ul> : null}
-    {card.reasons.length ? <div className="wsd-reasons"><h4>この職業が入口になる理由</h4><ul>{card.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul></div> : null}
+    {card.reasons.length ? <div className="wsd-reasons"><h4 className="phrase-breaks"><PhraseText text="この職業が入口になる理由" /></h4><ul>{card.reasons.map((reason) => <li key={reason}>{reason}</li>)}</ul></div> : null}
     <Link className="wsd-card-link" href={`/occupation/${card.catalogId}/`} onClick={() => trackEvent("workstyle_action", { action: "occupation_click", occupation_id: card.catalogId })}>仕事内容を見る<ArrowRight aria-hidden="true" /></Link>
   </article>;
 }

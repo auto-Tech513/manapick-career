@@ -14,6 +14,7 @@ import profiles from "@/content/professional-careers.json";
 import { ProfessionalEntries } from "@/components/ProfessionalEntries";
 import { TownMap, TownScene } from "@/components/TownMap";
 import { TransferCards } from "@/components/TransferCards";
+import { PhraseText } from "@/components/PhraseTitle";
 
 const sideNav = [
   { label: "トップ", href: "/", current: true },
@@ -153,10 +154,10 @@ export default function Home() {
         <div className="entry">
           <div className="entry-a">
             <span className="code code-on-dark">CA-04 · ENTRANCE</span>
-            <h2 id="entry-title">
-              3つの質問だけで、
+            <h2 id="entry-title" className="phrase-breaks">
+              <PhraseText text="3つの質問だけで、" />
               <br />
-              キャリア候補の入口へ。
+              <PhraseText text="キャリア候補の入口へ。" />
             </h2>
             <p>好きなこと・得意なこと・働き方の希望から、最初に読む職業を3つ選びます。</p>
             <Link className="entry-go" href="/route/">
@@ -182,7 +183,7 @@ export default function Home() {
         <div className="eh">
           <div>
             <span className="code">TRANSFER</span>
-            <h2 id="transfer-title">仕事が見えたら、乗り換える。</h2>
+            <h2 id="transfer-title" className="phrase-breaks"><PhraseText text="仕事が見えたら、乗り換える。" /></h2>
           </div>
         </div>
         <TransferCards

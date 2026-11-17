@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, BadgeCheck, Bot, ChevronLeft, ChevronRight, GraduationCap } from "lucide-react";
 import type { PopularityEntry } from "@/content/popularity-ranking";
+import { PhraseText } from "@/components/PhraseTitle";
 
 type PopularityFilter = "all" | "動画" | "AI" | "資格" | "詳細";
 
@@ -31,7 +32,7 @@ export function PopularityRanking({ entries, compact = false, filterable = false
     {filterable ? <p className="ranking-live" aria-live="polite">{active.label}で絞り込み中：{filtered.length}件</p> : null}
     <ol start={visible.length ? visible[0].rank : 1}>{visible.map((entry) => <li key={entry.rank}>
       <span className="ranking-number"><small>ACCESS</small>{entry.rank}</span>
-      <div className="ranking-copy"><small>{entry.category}</small><h3>{entry.name}</h3><div className="ranking-connections" aria-label="manapick連携情報">{entry.connections.includes("動画") ? <span><GraduationCap aria-hidden="true" />動画</span> : null}{entry.connections.includes("AI") ? <span><Bot aria-hidden="true" />AI</span> : null}{entry.connections.includes("資格") ? <span><BadgeCheck aria-hidden="true" />資格</span> : null}</div></div>
+      <div className="ranking-copy"><small>{entry.category}</small><h3 className="phrase-breaks"><PhraseText text={entry.name} /></h3><div className="ranking-connections" aria-label="manapick連携情報">{entry.connections.includes("動画") ? <span><GraduationCap aria-hidden="true" />動画</span> : null}{entry.connections.includes("AI") ? <span><Bot aria-hidden="true" />AI</span> : null}{entry.connections.includes("資格") ? <span><BadgeCheck aria-hidden="true" />資格</span> : null}</div></div>
       {entry.careerSlug ? <Link href={`/career/${entry.careerSlug}/`}>確認済み詳細 <ArrowUpRight aria-hidden="true" /></Link> : <Link href="/all/">名録で検索 <ArrowUpRight aria-hidden="true" /></Link>}
     </li>)}</ol>
     {filtered.length === 0 ? <p className="ranking-empty">この条件に合う職業はランキング内にありません。</p> : null}
