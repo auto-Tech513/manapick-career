@@ -935,10 +935,19 @@
     height: 40px;
     padding: 0 14px;
   }
+  /* 以前は overflow:hidden で、右の「保育士」「仕事を比べる」「働き方から探す」が見切れたまま押せなかった。
+     横にスクロールできるようにする（スクロールバーは隠す） */
   .town-quick {
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     margin-right: -16px;
+    padding-right: 16px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .town-quick::-webkit-scrollbar {
+    display: none;
   }
   .town-quick a {
     flex: none;

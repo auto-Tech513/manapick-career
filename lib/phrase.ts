@@ -61,6 +61,7 @@ export function joinSegments(segments: string[]): string[] {
   // 漢字とカタカナの境目・開き括弧の前・区切り記号の後でだけ折れるようにする
   const KATA = /[ァ-ヺ]/;
   const KAN = /[一-鿿々]/;
+  const HIRA = /[ぁ-ゖ]/;
   const expanded: string[] = [];
   for (const segment of joined) {
     const chars = [...segment];
@@ -71,7 +72,12 @@ export function joinSegments(segments: string[]): string[] {
       const after = /[・、，／/]/.test(x) && i - start >= 3 && chars.length - i >= 3;
       const beforeParen = /[（(]/.test(y) && i - start >= 3 && chars.length - i >= 4;
       const script = ((KAN.test(x) && KATA.test(y)) || (KATA.test(x) && KAN.test(y))) && i - start >= 2 && chars.length - i >= 2;
-      if (after || beforeParen || script) { expanded.push(chars.slice(start, i).join("")); start = i; }
+      // レイアウト監査 2026-11-17：長い文節が行幅を超えて任意位置で割れていた
+      // （「『採用の約束』じゃない｜。」「保健指導を｜掌る」「実態調査を読｜む」）。
+      // 「：」・閉じ括弧の後、ひらがな→漢字・カタカナの境目（助詞・送り仮名の後）でも折れるようにする。
+      const afterColonOrClose = /[：:』」）)]/.test(x) && i - start >= 3 && chars.length - i >= 3 && !/^[、。，．・：:；;！？）」』]/.test(y);
+      const hiraToWord = HIRA.test(x) && (KAN.test(y) || KATA.test(y)) && !/[おご]/.test(x) && !(x === "か" && /[0-9０-９]/.test(chars[i - 2] ?? "")) && i - start >= 3 && chars.length - i >= 3 && openParenLength(chars.slice(start, i).join("")) < 0;
+      if (after || beforeParen || script || afterColonOrClose || hiraToWord) { expanded.push(chars.slice(start, i).join("")); start = i; }
     }
     expanded.push(chars.slice(start).join(""));
   }

@@ -1,5 +1,6 @@
 import "./occupation.css";
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
@@ -284,7 +285,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               <span>CA-JOB · {category?.label}</span>
             </p>
             <h1 className="phrase-breaks">
-              <mark><PhraseText text={occupation.name} /></mark>の<wbr />仕事
+              {/* 「の｜仕事」と2字だけ落ちないよう「の仕事」は1かたまりにし、職業名との間で折る（職業名が1文節で長いときに「仕｜事」と割れないように） */}
+              <mark><PhraseText text={occupation.name} /></mark><wbr /><span className="occ-jh-tail">の仕事</span>
             </h1>
             <p className="occ-lead">{occupation.summary}</p>
             <p className="occ-meta">
@@ -562,7 +564,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                   {industryEntry.companies.map((company) => (
                     <li key={company.code}>
                       <a href={`https://company.manapick.app/company/${company.slug}/`} target="_blank" rel="noopener noreferrer">
-                        {company.name}（証券コード {company.code}） <ArrowUpRight aria-hidden="true" />
+                        {/* 長い社名は「・」の後でだけ折る（語中で割れて「ー」が行頭に来ないように） */}
+                        {company.name.split("・").map((part, i) => <Fragment key={i}>{i ? <>・<wbr /></> : null}{part}</Fragment>)}<span className="nb-paren">（証券コード {company.code}） <ArrowUpRight aria-hidden="true" /></span>
                       </a>
                     </li>
                   ))}
@@ -592,7 +595,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                     <summary>
                       <span className="occ-faq-q">
                         <i>Q{index + 1}</i>
-                        {item.question}
+                        <span className="phrase-breaks"><PhraseText text={item.question} /></span>
                       </span>
                       <span className="occ-faq-tg" aria-hidden="true" />
                     </summary>

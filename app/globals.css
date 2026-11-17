@@ -40,6 +40,11 @@ p {
   word-break: normal;
   line-break: strict;
 }
+/* 行頭禁則（、。）」・ー 小書き仮名）を h1〜p だけでなく li・dd・td・span などにも効かせる
+   （「ハローワ｜ークに」「ペ｜ージ」のように長音が行頭に来ていた） */
+html {
+  line-break: strict;
+}
 h1,
 h2,
 h3 {
@@ -3744,6 +3749,8 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .income-basis { margin:18px 0; font-size:14px; }
 .income-basis > div { display:flex; justify-content:space-between; gap:16px; padding:9px 0; border-bottom:1px solid var(--line); }
 .income-basis dd { margin:0; flex-shrink:0; font-weight:700; }
+/* 項目名の括弧書き（月額・残業代等含む 等）は項目名の下に小さく（「…等含｜む）」の折れ対策） */
+.income-basis dt small { display:block; font-size:12px; line-height:1.5; opacity:.85; }
 .income-figure.is-compact { padding:14px; margin:14px 0; }
 .is-compact .income-amount { font-size:26px; }
 .income-unavailable { display:block; margin:10px 0; font-size:18px; }
@@ -4035,6 +4042,9 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .article-figure-card { border: 2px solid var(--ink); border-radius: var(--radius-2); background: var(--bg); padding: .8rem .95rem; box-shadow: 4px 4px 0 var(--primary); }
 .article-figure-card span { display: block; color: var(--muted); font-size: .76rem; font-weight: 700; line-height: 1.5; }
 .article-figure-card strong { display: block; margin-top: .25rem; color: var(--ink); font-size: 1.72rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+/* 括弧書きの注記は数字の下に小さく。文章の値は文字を抑えて文節で折る（「500平方メ｜ートル」「建｜築物」の折れ対策） */
+.article-figure-card small { display: block; margin-top: .3rem; color: var(--muted); font-size: .82rem; font-weight: 700; line-height: 1.5; }
+.article-figure-card.is-text strong { font-size: 1.2rem; line-height: 1.45; }
 .article-items-list { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .55rem; }
 .article-items-list li { display: flex; gap: .55rem; align-items: flex-start; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--bg); padding: .65rem .8rem; }
 .article-items-list svg { width: 19px; height: 19px; flex: none; margin-top: .15rem; color: var(--primary-aa); }
@@ -4071,6 +4081,8 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 }
 .sim-table th, .sim-table td { padding: .45rem .2rem; border-bottom: 1px solid var(--line); text-align: left; }
 .sim-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* 項目名の注記（本人負担・復興特別所得税を含む 等）は本体の下に小さく出す（「…を含｜む）」の折れ対策） */
+.sim-table th small { display: block; margin-top: .1rem; color: inherit; opacity: .78; font-size: .8rem; font-weight: 500; line-height: 1.5; }
 .sim-table .sim-total th, .sim-table .sim-total td { border-bottom: none; font-weight: 800; }
 
 /* CAR-U03: 1 列グリッドの暗黙列が中身の最小幅まで広がり、375px で横にはみ出すのを防ぐ */

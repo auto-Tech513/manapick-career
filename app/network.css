@@ -129,7 +129,9 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .fit-points{display:grid;gap:18px;margin:24px 0}
 .fit-points>div{padding:0 0 18px;border-bottom:1px solid var(--line)}
 .fit-points h3{font-size:18px;line-height:1.65;margin:0 0 8px}
-.depth-list,.depth-exercise ul{padding-left:1.4em;line-height:1.95}
+.depth-list,.depth-exercise ul{padding-left:1.4em;line-height:1.95;list-style:disc}
+/* 字下げだけあって印（・）が無く、段落のずれに見えていた（リセットで list-style:none になっていた） */
+.depth-list li::marker,.depth-exercise li::marker{color:var(--ca-ink, var(--primary-aa))}
 .depth-list li,.depth-exercise li{margin:10px 0}
 .depth-exercise{margin:24px 0;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--primary-soft)}
 .depth-exercise h3{margin-top:0}.depth-exercise small{display:block;font-size:12px;line-height:1.8;color:var(--primary-ink)}
@@ -299,8 +301,10 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 @media(max-width:640px){
   .rail{height:34px;padding:0 12px;gap:10px;overflow:hidden}
   .rail-lbl{display:none}
-  .rail-line{pointer-events:none}
-  .rail-s{margin-right:2px;padding-right:6px;gap:0;min-height:34px;min-width:44px;justify-content:center}
+  /* SP の路線帯は飾り（押せない）。駅の最小幅 44px だと 375px 以下で右端の駅が見切れていたので、
+     最小幅を 30px にして帯の幅いっぱいに均等に並べる（レイアウト監査 2026-11-17） */
+  .rail-line{pointer-events:none;flex:1;min-width:0;justify-content:space-between}
+  .rail-s{margin-right:2px;padding-right:6px;gap:0;min-height:34px;min-width:30px;justify-content:center}
   .rail-s i{width:11px;height:11px}
   .rail-s-name{display:none}
   .rail-s.on{gap:6px}
