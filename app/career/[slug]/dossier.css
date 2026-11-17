@@ -96,7 +96,7 @@
   flex-wrap: wrap;
   margin-top: 14px;
 }
-.dos-meta span {
+.dos-meta > span {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -110,6 +110,12 @@
 .dos-meta b {
   color: var(--ca-ink);
   font-weight: 700;
+  /* 狭い画面で見出し語が縮んで「…を知｜る」「内｜容」と割れていた。見出し語は縮めず、後ろの文で折る */
+  flex: none;
+}
+/* 後ろの文は文節で折る（「…紹｜介」「整｜理」の割れ対策）。内側の span は丸い枠にしない */
+.dos-meta > span > span {
+  min-width: 0;
 }
 
 /* ---------- レイアウト ---------- */
@@ -223,6 +229,10 @@
   border: 1.5px solid var(--dos-card-border);
   border-radius: 16px;
   padding: 14px 16px;
+}
+/* カード内の題に本文見出し用の上余白（30px）が付き、カードの上が空いて見えていた */
+.dossier-article .fit-points > div > h3:first-child {
+  margin-top: 0;
 }
 .dossier-article .depth-qualifications > article,
 .dossier-article .depth-employers > article {

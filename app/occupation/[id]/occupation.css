@@ -812,3 +812,21 @@
     letter-spacing: 0.04em;
   }
 }
+
+/* レイアウト監査 2026-11-17：
+   - 上場企業の一覧で「（証券コ｜ード141A）」のように短い注記の途中で折れていた。注記は短い（12字以下）ので1かたまりにする
+   - 年代別の表で、見出しは左寄せ・数値は右寄せで列がずれて見えた。数値列の見出しも右に揃える */
+.occ-colist a {
+  /* 社名（カタカナの長い語）の途中では折らず、注記の「（」の前で折る。収まらない長さのときだけ任意位置で折る */
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+.occ-colist .nb-paren {
+  white-space: nowrap;
+}
+.occ-jh h1 .occ-jh-tail {
+  white-space: nowrap;
+}
+.occ-table thead th:not(:first-child) {
+  text-align: right;
+}
