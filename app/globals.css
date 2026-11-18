@@ -4207,7 +4207,7 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 @media (min-width: 1025px) {
   /* M6 ガイド・ニュースの絞り込みチップ：flex の折り返しで最後の1つだけ次の行に落ちていた。
      件数から段数を決め、各段がほぼ同じ数になる列数（--chip-cols、最大6）の格子に並べる */
-  .article-tabs { display: grid; grid-template-columns: repeat(var(--chip-cols, 6), minmax(0, 1fr)); gap: 8px; }
+  .article-tabs { --chip-cols: 6; display: grid; grid-template-columns: repeat(var(--chip-cols, 6), minmax(0, 1fr)); gap: 8px; }
   .article-tabs button { width: 100%; min-width: 0; justify-content: space-between; }
   /* M8 名録の「556職業の年収」：出典リンクが本文と同じ見た目で押せると分からず、パネルの右 440px が空いていた → 2段組・リンクらしく */
   .income-method-panel { columns: 2; column-gap: 48px; padding: 28px 32px; }
