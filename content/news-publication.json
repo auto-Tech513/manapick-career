@@ -1021,6 +1021,71 @@
       "reviewedByHumanAt": "2026-11-10",
       "reviewEvidence": "git:ece983b726c352f50f17af9caf6031158219cdb2",
       "contentSha256": "a495f2abebd8eeaf9cd1e51ec7540f2dfec69d1eb0d9e9469fa5e89554f51ac3"
+    },
+    {
+      "slug": "labor-force-detailed-q3-2026",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "stat-lfs-detailed-2026-q3",
+      "sourcePublishedAt": "2026-11-10",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "83266697dd9d53767d8a2363c75ff039b193ace81402087eedcae31c793f8324"
+    },
+    {
+      "slug": "economy-watchers-october-2026",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "cao-economy-watchers-2026-10",
+      "sourcePublishedAt": "2026-11-10",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "0e8193fdc45ec4ff72a3337344e7eff43fe8fb7ea2af1307da5b1c53c5240a12"
+    },
+    {
+      "slug": "gdp-q3-2026-prelim",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "cao-gdp-2026-q3-prelim",
+      "sourcePublishedAt": "2026-11-16",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "8571791aae8de36b5100d466b40c2bb899615ee6e3d25986a23dfb9f8fd53e38"
+    },
+    {
+      "slug": "industrial-production-september-2026-final",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "meti-iip-2026-09-final",
+      "sourcePublishedAt": "2026-11-16",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "9cd8d62489f8a9b43bbdcf6ebf8b093e1b88389bc7bd95aadd187844f74a91b2"
+    },
+    {
+      "slug": "tertiary-industry-september-2026",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "meti-ita-monthly",
+      "sourcePublishedAt": "2026-11-17",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "e608ec6b5f34d0cccda679086e74f5bf5f883e7b35876dd537912e60a7b95ad0"
     }
   ]
 }
