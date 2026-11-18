@@ -71,7 +71,7 @@ export function EditorialArticle({
   const relatedJobs = publishedJobs.filter((job) => relatedCareerSlugs.includes(job.slug));
   const relatedOccupations = relatedPublishedOccupationsForCareers(relatedCareerSlugs).slice(0, 6);
   const offers = prLinks.enabled ? prLinks.items.filter((offer) => offer.placements.includes(pathname)) : [];
-  const toc = <ol>{sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`}><span>{String(index + 1).padStart(2, "0")}</span>{section.heading.replace(/^\d+\.\s*/, "")}</a></li>)}</ol>;
+  const toc = <ol>{sections.map((section, index) => <li key={section.id}><a href={`#${section.id}`}><span>{String(index + 1).padStart(2, "0")}</span><em className="phrase-breaks"><PhraseText text={section.heading.replace(/^\d+\.\s*/, "")} /></em></a></li>)}</ol>;
   return <>
     <AdSenseScript />
     <details className="mobile-article-toc"><summary><ListTree aria-hidden="true" />目次を開く</summary>{toc}</details>

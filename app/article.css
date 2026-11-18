@@ -229,3 +229,41 @@
 @media (max-width: 374px) {
   .editorial-detail .phead h1 { font-size: 28px; }
 }
+
+/* 目次の見出しは文節で折る（PhraseText）。em は斜体にしない */
+.article-toc a em,
+.mobile-article-toc a em {
+  font-style: normal;
+}
+
+/* ============================================================
+   PC デザイン改善 2026-11-18（PC のみ。SP・タブレットは変えない）
+   - 記事カバー画像が全幅 1100×620 で1画面を占めていた → 本文と同じ 760px 幅に
+   - 本文の1行が 48〜52字と長かった → 本文欄を 660px にして全角45字以内に（目次欄は少し広げて語の途中で折れにくく）
+   - 記事下のメルマガ・PR 表記の文が横に長く伸びていた → 1行の長さを抑える
+   ============================================================ */
+@media (min-width: 1025px) {
+  .editorial-detail .article-cover {
+    max-width: 760px;
+  }
+  .editorial-detail .article-layout {
+    grid-template-columns: 280px minmax(0, 660px);
+    column-gap: 80px;
+  }
+  .editorial-detail .editorial-article {
+    max-width: 660px;
+  }
+  .editorial-detail > .newsletter-form--article {
+    max-width: 760px;
+  }
+  /* 出典の一覧：白地の角丸の箱なのに左右の余白が0で、文字が箱の縁に接していた */
+  .editorial-detail .article-review .source-list li {
+    padding: 12px 16px;
+  }
+  .editorial-detail > .newsletter-form--article p,
+  .editorial-detail .article-pr-notice,
+  .editorial-detail .correction-note,
+  .editorial-detail .related-careers > p {
+    max-width: 45em;
+  }
+}
