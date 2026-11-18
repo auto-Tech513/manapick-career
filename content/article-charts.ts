@@ -1485,6 +1485,126 @@ export const articleCharts: Record<string, ArticleChart> = {
         "value": 24.8
       }
     ]
+  },
+  "labor-force-detailed-q3-2026": {
+    "title": "正規・非正規の職員・従業員と転職者（2026年7〜9月期平均）",
+    "note": "役員を除く雇用者の内訳です。転職者は就業者全体の人数で、前年同月比ではなく前年同期（2025年7〜9月期平均）との比較が公表されています。",
+    "bars": [
+      {
+        "display": "3,744万人",
+        "label": "正規の職員・従業員",
+        "value": 3744
+      },
+      {
+        "display": "2,136万人",
+        "label": "非正規の職員・従業員",
+        "value": 2136
+      },
+      {
+        "display": "339万人",
+        "label": "転職者",
+        "value": 339
+      },
+      {
+        "display": "192万人",
+        "label": "失業者",
+        "value": 192
+      }
+    ]
+  },
+  "economy-watchers-october-2026": {
+    "title": "景気の現状判断DI（2026年10月・季節調整値）",
+    "note": "50が景気の変化を感じない水準です。合計は家計・企業・雇用の3分野から構成されます。",
+    "bars": [
+      {
+        "display": "46.1",
+        "label": "合計",
+        "value": 46.1
+      },
+      {
+        "display": "45.5",
+        "label": "家計動向関連",
+        "value": 45.5
+      },
+      {
+        "display": "47.6",
+        "label": "企業動向関連",
+        "value": 47.6
+      },
+      {
+        "display": "47.4",
+        "label": "雇用関連",
+        "value": 47.4
+      }
+    ]
+  },
+  "gdp-q3-2026-prelim": {
+    "title": "2026年7〜9月期の主な需要項目（実質・前期比）",
+    "note": "1次速報値です。実質GDP全体は前期比0.0%（年率換算0.1%減）でした。",
+    "bars": [
+      {
+        "display": "2.5%",
+        "label": "輸入",
+        "value": 2.5
+      },
+      {
+        "display": "1.6%",
+        "label": "設備投資",
+        "value": 1.6
+      },
+      {
+        "display": "0.4%",
+        "label": "名目GDP",
+        "value": 0.4
+      }
+    ]
+  },
+  "industrial-production-september-2026-final": {
+    "title": "鉱工業指数（2026年9月確報・季節調整済み）",
+    "note": "2020年平均=100の指数です。在庫率指数は在庫指数÷出荷指数×100で計算されます。",
+    "bars": [
+      {
+        "display": "108.9",
+        "label": "在庫率指数",
+        "value": 108.9
+      },
+      {
+        "display": "103.9",
+        "label": "生産指数",
+        "value": 103.9
+      },
+      {
+        "display": "100.9",
+        "label": "出荷指数",
+        "value": 100.9
+      },
+      {
+        "display": "100.2",
+        "label": "在庫指数",
+        "value": 100.2
+      }
+    ]
+  },
+  "tertiary-industry-september-2026": {
+    "title": "第3次産業活動指数（2026年9月・季節調整済み）",
+    "note": "サービス産業全体の活動水準を示す指数です。広義対個人は家計向け、広義対事業所は企業向けのサービス活動です。",
+    "bars": [
+      {
+        "display": "106.4",
+        "label": "広義対個人サービス",
+        "value": 106.4
+      },
+      {
+        "display": "105.7",
+        "label": "第3次産業総合",
+        "value": 105.7
+      },
+      {
+        "display": "105.4",
+        "label": "広義対事業所サービス",
+        "value": 105.4
+      }
+    ]
   }
 };
 
