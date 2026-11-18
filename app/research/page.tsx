@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { ArrowRight, BarChart3, BookOpenCheck, Building2, CircleAlert, Database, SearchCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
@@ -30,7 +31,7 @@ export default function ResearchPage() {
   ] };
   return <><JsonLd data={graph} /><div className="page-shell research-page">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">データ室</span></nav>
-    <header className="phead research-hero"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-DATA · データ室</p><h1 className="phrase-breaks"><PhraseText text="数字を、焦らせる材料にしない。" /></h1><p className="phead-lead">雇用、賃金、学び、AI・DXの一次資料を、意味・限界・次の確認へ分けます。市場の数字を職業順位やあなたの成功確率には変換しません。</p><div className="phead-meta"><span>{newsItems.length ? <><b>{newsItems.length}</b>公開中の出典付き解説</> : <><b>確認中</b>出典付き解説</>}</span><span><b>公式出典</b>対象期間を分けて読む</span><span><b>学びへ</b>動画・AI・資格につなぐ</span></div></header>
+    <header className="phead research-hero"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-DATA · データ室</p><h1 className="phrase-breaks"><PhraseText text="数字を、焦らせる材料にしない。" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>雇用、賃金、学び、AI・DXの一次資料を、意味・限界・次の確認へ分けます。市場の数字を職業順位やあなたの成功確率には変換しません。</PhraseChildren></p><div className="phead-meta"><span>{newsItems.length ? <><b>{newsItems.length}</b>公開中の出典付き解説</> : <><b>確認中</b>出典付き解説</>}</span><span><b>公式出典</b>対象期間を分けて読む</span><span><b>学びへ</b>動画・AI・資格につなぐ</span></div></header>
     <details className="research-method research-method-fold"><summary><span className="eyebrow">reading protocol</span><span className="research-method-fold-title">一つの数字を、三つに分ける</span><span className="research-method-fold-hint">示すこと・示さないこと・次に確認すること</span></summary><div className="research-method-grid">{method.map(({ icon: Icon, title, copy }) => <article key={title}><Icon aria-hidden="true" /><h3 className="phrase-breaks"><PhraseText text={title} /></h3><p>{copy}</p></article>)}</div></details>
     <section className="research-latest" aria-labelledby="research-latest-title"><div className="sh"><div><p className="sh-k">BRIEFINGS — 一次資料から読む</p><h2 id="research-latest-title">{hasPublishedBriefings ? `一次資料から読む${picked.length}つの入口` : "一次資料解説は公開前確認中です"}</h2><p>{hasPublishedBriefings ? "公表日の新しさではなく、いま確認したい質問から選べます。" : "出典と掲載条件の記録がある記事を案内します。自動取得日時は内容確認日へ転用しません。"}</p></div></div><div className="research-card-grid">{hasPublishedBriefings
       ? picked.map((item) => <Link href={`/news/${item.slug}/`} key={item.slug}><small>{item.kind}・確認 {item.checkedAt}</small><h3 className="phrase-breaks"><PhraseText text={item.title} /></h3><p>{item.answer}</p><span>意味と限界を読む <ArrowRight aria-hidden="true" /></span></Link>)

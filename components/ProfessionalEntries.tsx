@@ -68,7 +68,7 @@ export function ProfessionalEntries() {
           <span className="code">CA-01 · CLOSE TO YOU</span>
           <h2 id="professional-title" className="phrase-breaks"><PhraseText text="身近な仕事を、具体的に知る" /></h2>
         </div>
-        <p>実際の働き方・資格・日本企業と公的機関の例・統計の数値を整理しています。</p>
+        <p className="phrase-breaks"><PhraseText text="実際の働き方・資格・日本企業と公的機関の例・統計の数値を整理しています。" /></p>
       </div>
       <div className="jobs">
         {profiles.items.map((item) => {

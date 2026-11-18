@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import { JsonLd } from "@/components/JsonLd";
 import { PopularityRanking } from "@/components/PopularityRanking";
 import { IncomeRanking, type IncomeRankEntry, type IncomeRankGroup } from "@/components/IncomeRanking";
@@ -112,7 +113,7 @@ export default function RankingPage() {
   return <div className="page-shell ranking-page">
     <JsonLd data={{ "@context": "https://schema.org", "@type": "ItemList", name: "人気職業アクセスランキング", numberOfItems: popularityRanking.length, itemListElement: popularityRanking.map((item) => ({ "@type": "ListItem", position: item.rank, name: item.name, url: item.careerSlug ? absoluteUrl(`/career/${item.careerSlug}/`) : absoluteUrl("/all/") })) }} />
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">ランキング</span></nav>
-    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-RANK · ランキング</p><h1 className="phrase-breaks"><PhraseText text="人気職業アクセスランキング" /></h1><p className="phead-lead">人気の順序はjob tagのアクセス履歴だけを使います。manapickの動画・AI・資格表示は、次に確認できる情報の有無であり、順位には一切加えていません。</p><div className="phead-meta"><span><b>根拠</b>公式アクセス履歴 × manapick連携</span></div></header>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-RANK · ランキング</p><h1 className="phrase-breaks"><PhraseText text="人気職業アクセスランキング" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>人気の順序はjob tagのアクセス履歴だけを使います。manapickの動画・AI・資格表示は、次に確認できる情報の有無であり、順位には一切加えていません。</PhraseChildren></p><div className="phead-meta"><span><b>根拠</b>公式アクセス履歴 × manapick連携</span></div></header>
     <nav className="ranking-anchor-nav" aria-label="ランキング内メニュー">
       <a href="#popularity">人気ランキング</a>
       <a href="#income">年収ランキング</a>

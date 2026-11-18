@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { NetIncomeSimulator } from "@/components/NetIncomeSimulator";
 import "./net-income.css";
@@ -18,11 +19,11 @@ export default function NetIncomePage() {
       <header className="phead">
         <p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-TOOL · ツール</p>
         <h1 className="phrase-breaks"><PhraseText text="手取りシミュレーター" /></h1>
-        <p className="phead-lead">
+        <p className="phead-lead phrase-breaks"><PhraseChildren>
           職業ページの平均年収は、税金と社会保険料を差し引く前の「額面」です。このページでは、額面年収を入れると
           手取りの目安を試算できます。あくまで前提条件つきの簡易試算で、実際の手取りは勤務先の保険制度や
           控除の状況で変わります。
-        </p>
+        </PhraseChildren></p>
       </header>
 
       <NetIncomeSimulator />

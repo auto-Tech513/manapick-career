@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import { PhraseText } from "@/components/PhraseTitle";
 import { stations } from "../lib/stations";
 
 export type TransferCard = {
@@ -58,7 +59,7 @@ export function TransferCards({
             </span>
             <span>
               <span className="k">TRANSFER → {kickerName}</span>
-              <span className="t">{card.title}</span>
+              <span className="t phrase-breaks" title={card.title}><PhraseText text={card.title} /></span>
               <span className="d">{card.description}</span>
             </span>
             <span className="go" aria-hidden="true">

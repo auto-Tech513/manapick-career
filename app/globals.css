@@ -4200,3 +4200,31 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 .income-label .nw { white-space: nowrap; }
 /* 年収ランキングの職業名の列（短い名前の羅列）も、最終行が「作業」など2字だけにならないよう pretty を残す */
 .income-rank-names { text-wrap: pretty; }
+
+/* ============================================================
+   独立監査 2026-11-18 PC の指摘（globals 側）
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* M6 ガイド・ニュースの絞り込みチップ：flex の折り返しで最後の1つだけ次の行に落ちていた。
+     件数から段数を決め、各段がほぼ同じ数になる列数（--chip-cols、最大6）の格子に並べる */
+  .article-tabs { display: grid; grid-template-columns: repeat(var(--chip-cols, 6), minmax(0, 1fr)); gap: 8px; }
+  .article-tabs button { width: 100%; min-width: 0; justify-content: space-between; }
+  /* M8 名録の「556職業の年収」：出典リンクが本文と同じ見た目で押せると分からず、パネルの右 440px が空いていた → 2段組・リンクらしく */
+  .income-method-panel { columns: 2; column-gap: 48px; padding: 28px 32px; }
+  .income-method-panel > h2 { column-span: all; margin-bottom: 12px; }
+  .income-method-panel > * { break-inside: avoid; }
+  .income-method-panel p { max-width: none; }
+  /* L1 商店：商品写真の箱が 570×610〜655px と大きかった → 写真の列を 320px に */
+  .career-shop-card { grid-template-columns: 320px minmax(0, 1fr); }
+  .career-shop-image > img { min-height: 0; max-height: 320px; }
+  /* L9 スキル：「使う職業」のリンクの段の間が約 50px 空いていた（44px の当たり判定＋段の間隔） → 段の間隔を 0 に */
+  .skill-jobs { row-gap: 0; }
+  /* 写真の列を狭くした分、本文の1行が62字に伸びた → 45字以内に */
+  .career-shop-card-body > .career-shop-reason, .career-shop-points, .career-shop-method > p, .info-page .prose li, .income-rank-names { max-width: 45em; }
+  /* ニュース一覧の先頭カードの画像（幅が広がって 416px の高さ）を 360px までに */
+  .article-card-lead .article-card-media img { max-height: 360px; object-fit: cover; }
+}
+.income-method-panel ul { margin: 6px 0 0; padding-left: 1.1em; }
+.income-method-panel ul a { display: inline-flex; align-items: center; min-height: 44px; color: var(--primary-aa); font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+/* L6 年収ランキングの同額の職業名の列挙：職業名の途中で折れていた → 名前ごとに折る */
+.income-rank-names .nm { display: inline-block; }

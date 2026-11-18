@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { TransferCards, type TransferCard } from "@/components/TransferCards";
@@ -23,8 +24,10 @@ export default function EmployersPage() {
   return <><JsonLd data={graph} /><div className="page-shell employers-page">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">企業例のある職業</span></nav>
     <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 企業例のある職業</p><h1 className="phrase-breaks"><PhraseText text="企業・法人・公的機関の例がある職業" /></h1>
-      <p className="phead-lead">556職業のうち、現在 {employerTotal} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。確認が取れていない職業は載せていません。載せていない職業は、公式ページで確認できた例がまだ見つかっていないためで、その職業で働く場が存在しないという意味ではありません。</p>
-      <div className="phead-meta"><span><b>公式ページで確認した職場の例</b>{employerTotal}職業</span><span><b>分野</b>{employerCategories.length}</span></div></header>
+      <p className="phead-lead phrase-breaks"><PhraseChildren>556職業のうち、現在 {employerTotal} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。</PhraseChildren></p>
+      {/* 前提の注意書きは折りたたむ（独立監査 2026-11-18 PC L3） */}
+      <details className="phead-fold"><summary>載せていない職業について</summary><p className="phrase-breaks"><PhraseText text="確認が取れていない職業は載せていません。載せていない職業は、公式ページで確認できた例がまだ見つかっていないためで、その職業で働く場が存在しないという意味ではありません。" /></p></details>
+      <div className="phead-meta"><span><b>公式ページで確認した職場の例</b>{employerTotal}職業</span><span><b>内訳</b>分野別{employerTotal - employerDossiers.length}・専用ページ{employerDossiers.length}</span><span><b>分野</b>{employerCategories.length}</span></div></header>
     <section aria-labelledby="employers-howto-title" className="employers-howto">
       <div className="sh"><div><p className="sh-k">HOW TO — 探し方</p><h2 id="employers-howto-title">探し方</h2></div></div>
       <ol>

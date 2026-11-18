@@ -50,6 +50,7 @@ export function joinSegments(segments: string[]): string[] {
         (endsWithDigit(previous) && startsWithDigit(segment)) ||
         (endsWithNumberish(previous) && startsWithNumberish(segment)) ||
         (/[0-9０-９]か$/.test(previous) && segment.startsWith("月")) ||
+        (/(令和|平成|昭和|西暦)$/.test(previous) && startsWithDigit(segment)) ||
         (parenOpen > 0 && parenOpen + [...segment].length <= 12) ||
         (endsWithLatin(previous) && startsWithLatin(segment)) ||
         startsWithClosing(segment) ||

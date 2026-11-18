@@ -1,4 +1,5 @@
 import { PhraseText } from "@/components/PhraseTitle";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import "../../article.css";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -32,7 +33,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   ] };
   return <><JsonLd data={graph}/><div className="page-shell editorial-detail">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><Link href="/guide/">ガイド</Link><span aria-hidden="true">／</span><span aria-current="page">{guide.category}</span></nav>
-    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-GUIDE · {guide.category}</p><h1 className="phrase-breaks"><PhraseText text={guide.title} /></h1><p className="phead-lead">{guide.summary}</p><div className="phead-meta"><span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-GUIDE · {guide.category}</p><h1 className="phrase-breaks"><PhraseText text={guide.title} /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>{guide.summary}</PhraseChildren></p><div className="phead-meta"><span><Clock3 aria-hidden="true" />読む・試す目安 {guide.readMinutes}分</span><span><CalendarDays aria-hidden="true" />公開 {guide.publishedAt}</span><span>確認 {guide.checkedAt}</span></div></header>
     <figure className="article-cover"><img src={articleOgUrl("guide", slug, `${guide.title}|${guide.checkedAt}`)} alt={guide.title} width={1200} height={675} /></figure>
     <EditorialArticle {...guide} pathname={`/guide/${slug}/`} sources={sources} networkLinks={guide.sections.some((section) => section.paragraphs.some((paragraph) => paragraph.includes("manapick AI") || paragraph.includes("manapick license"))) ? [] : guide.networkLinks} relatedArticles={relatedArticles} estimateLabel="読む・試す目安"/>
     <ShareKit title={guide.title} summary={guide.summary} url={url} kind="guide" />

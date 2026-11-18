@@ -293,7 +293,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               {/* 「の｜仕事」と2字だけ落ちないよう「の仕事」は1かたまりにし、職業名との間で折る（職業名が1文節で長いときに「仕｜事」と割れないように） */}
               <mark><PhraseText text={occupation.name} /></mark><wbr /><span className="occ-jh-tail">の仕事</span>
             </h1>
-            <p className="occ-lead">{occupation.summary}</p>
+            <p className="occ-lead phrase-breaks"><PhraseText text={occupation.summary} /></p>
             <p className="occ-meta">
               出典確認日：{record.checkedAt}／公開日：{record.publishedAt}
               {occupation.aliases.length ? `／別名：${occupation.aliases.join("、")}` : ""}

@@ -64,7 +64,7 @@ export function NewsExplorer({ items, kinds }: { items: NewsCardItem[]; kinds: s
 
   return (
     <section className="article-explorer" aria-label="ニュース一覧">
-      <div className="category-tabs article-tabs" role="group" aria-label="テーマで絞り込む">
+      <div className="category-tabs article-tabs" role="group" aria-label="テーマで絞り込む" style={{ "--chip-cols": Math.ceil((kinds.length + 1) / Math.ceil((kinds.length + 1) / 6)) } as React.CSSProperties}>
         <button type="button" className={kind === "all" ? "active" : ""} onClick={() => setKind("all")}>
           すべて<small>{items.length}</small>
         </button>
