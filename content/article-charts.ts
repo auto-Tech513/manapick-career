@@ -1485,7 +1485,7 @@ export const articleCharts: Record<string, ArticleChart> = {
         "value": 24.8
       }
     ]
-  }
+  },
   "labor-force-detailed-q3-2026": {
     "title": "正規・非正規の職員・従業員と転職者（2026年7〜9月期平均）",
     "note": "役員を除く雇用者の内訳です。転職者は就業者全体の人数で、前年同月比ではなく前年同期（2025年7〜9月期平均）との比較が公表されています。",
