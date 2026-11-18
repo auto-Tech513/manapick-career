@@ -66,8 +66,10 @@ for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googl
 const unexpectedAdImports = [...walk("app"), ...walk("components")]
   .filter((file) => /\.(?:tsx|ts)$/.test(file))
   .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx") && !file.endsWith("app/occupation/[id]/page.tsx"))
-  .filter((file) => /(?:AdSenseScript|AdSlot)/.test(fs.readFileSync(file, "utf8")));
+  // AdSense 自動広告のスクリプトは全ページ（app/layout.tsx）で読み込む（オーナー決定 2026-11-18 22:32）。手動の広告枠 AdSlot は従来の3か所だけ
+  .filter((file) => file.endsWith("app/layout.tsx") ? /AdSlot/.test(fs.readFileSync(file, "utf8")) : /(?:AdSenseScript|AdSlot)/.test(fs.readFileSync(file, "utf8")));
+if (!layout.includes("<AdSenseScript/>") && !layout.includes("<AdSenseScript />")) failures.push("全ページ用のAdSense script（layout）がない");
 if (unexpectedAdImports.length) failures.push(`広告が承認外ページへ混入: ${unexpectedAdImports.join(", ")}`);
 
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
-console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} is articles+career+occupation only`);
+console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} slots are articles+career+occupation only; auto ads script on all pages`);
