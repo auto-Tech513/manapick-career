@@ -2,6 +2,7 @@ import { PhraseText } from "./PhraseTitle";
 import Link from "next/link";
 import { ArrowRight, BookOpenText, CalendarDays, Newspaper } from "lucide-react";
 import { guides, newsItems } from "@/content/editorial";
+import { newsTopic } from "@/lib/news-topics";
 
 export function EditorialPreview() {
   return <section className="editorial-preview" aria-labelledby="editorial-preview-title">
@@ -9,7 +10,7 @@ export function EditorialPreview() {
     <div className="editorial-preview-grid">
       <Link className="featured-guide" href={`/guide/${guides[0].slug}/`}><span className="editorial-card-icon"><BookOpenText aria-hidden="true" /></span><span className="editorial-card-kicker">{guides[0].category}・読む/試す {guides[0].readMinutes}分</span><strong className="phrase-breaks"><PhraseText text={guides[0].title} /></strong><p>{guides[0].answer}</p><em>ガイドを読む <ArrowRight aria-hidden="true" /></em></Link>
       <div className="news-preview-list">{newsItems.length
-        ? newsItems.slice(0, 3).map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span className="editorial-card-icon"><Newspaper aria-hidden="true" /></span><span><small>{item.kind}</small><strong className="phrase-breaks"><PhraseText text={item.title} /></strong><em><CalendarDays aria-hidden="true" />{item.publishedAt}</em></span><ArrowRight aria-hidden="true" /></Link>)
+        ? newsItems.slice(0, 3).map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span className="editorial-card-icon"><Newspaper aria-hidden="true" /></span><span><small>{newsTopic(item)}</small><strong className="phrase-breaks"><PhraseText text={item.title} /></strong><em><CalendarDays aria-hidden="true" />{item.publishedAt}</em></span><ArrowRight aria-hidden="true" /></Link>)
         : <Link href="/news/"><span className="editorial-card-icon"><Newspaper aria-hidden="true" /></span><span><small>公開前確認中</small><strong>公開条件を満たす記事を案内します。</strong><em><CalendarDays aria-hidden="true" />自動公開なし</em></span><ArrowRight aria-hidden="true" /></Link>}</div>
     </div>
   </section>;

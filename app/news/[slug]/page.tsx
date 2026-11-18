@@ -10,6 +10,7 @@ import { ShareKit } from "@/components/ShareKit";
 import { newsBySlug, newsItems, newsModifiedAt, newsNeedsRefresh } from "@/content/editorial";
 import sourceRegistry from "@/content/source-registry.json";
 import { absoluteUrl, articleOgUrl, metaDescription } from "@/lib/site";
+import { newsTopic } from "@/lib/news-topics";
 import "../../article.css";
 import { buildNewsStaticParams, EMPTY_NEWS_ROUTE_SLUG } from "@/lib/news-static-params.mjs";
 import "@/components/article-cover.css";
@@ -33,7 +34,7 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   sharedSourceNews.forEach((n) => chosenSlugs.add(n.slug));
   const sharedCareerNews = newsItems.filter((n) => !chosenSlugs.has(n.slug) && n.relatedCareerSlugs.some((careerSlug) => item.relatedCareerSlugs.includes(careerSlug))).sort(byPublishedDesc);
   const relatedNews = [...sameKindNews, ...sharedSourceNews, ...sharedCareerNews].slice(0, 3);
-  const relatedHeading = relatedNews.every((n) => n.kind === item.kind) ? `ほかの「${item.kind}」の解説を読む` : "関連する解説を読む";
+  const relatedHeading = relatedNews.every((n) => n.kind === item.kind) ? `ほかの「${newsTopic(item)}」の解説を読む` : "関連する解説を読む";
   const relatedArticles = { heading: relatedHeading, links: relatedNews.map((n) => ({ href: `/news/${n.slug}/`, title: n.title, meta: `資料公表 ${n.sourcePublishedAt}` })) };
   const url = absoluteUrl(`/news/${slug}/`);
   const modifiedAt = newsModifiedAt(item);
@@ -44,8 +45,8 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "トップ", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ニュース", item: absoluteUrl("/news/") }, { "@type": "ListItem", position: 3, name: item.title, item: url }] },
   ] };
   return <><JsonLd data={graph}/><div className="page-shell editorial-detail news-detail-page">
-    <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><Link href="/news/">ニュース</Link><span aria-hidden="true">／</span><span aria-current="page">{item.kind}</span></nav>
-    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-NEWS · {item.kind}</p><h1 className="phrase-breaks"><PhraseText text={item.title} /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>{item.summary}</PhraseChildren></p><div className="phead-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>出典台帳の記録 {item.checkedAt}</span><span>公開台帳の記録 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
+    <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><Link href="/news/">ニュース</Link><span aria-hidden="true">／</span><span aria-current="page">{newsTopic(item)}</span></nav>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-NEWS · {newsTopic(item)}</p><h1 className="phrase-breaks"><PhraseText text={item.title} /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>{item.summary}</PhraseChildren></p><div className="phead-meta"><span><Clock3 aria-hidden="true" />{readMinutes}分</span><span><CalendarDays aria-hidden="true" />資料公表 {item.sourcePublishedAt}</span><span>出典台帳の記録 {item.checkedAt}</span><span>公開台帳の記録 {item.reviewedAt}</span><span>サイト公開 {item.publishedAt}</span></div></header>
     <figure className="article-cover"><img src={articleOgUrl("news", slug, `${item.title}|${item.publishedAt}|${item.reviewedAt}|${item.checkedAt}`)} alt={item.title} width={1200} height={675} /></figure>
     {newsNeedsRefresh(item) ? <aside className="source-freshness-notice" data-news-archive="true" role="note"><h2 className="phrase-breaks"><PhraseText text="過去の公表資料に基づく記事です" /></h2><p>資料確認日の記録は{item.checkedAt}で、更新確認の期限を過ぎています。最新の発表は下記の公式出典に載っています。</p></aside> : null}
     <EditorialArticle {...item} pathname={`/news/${slug}/`} readMinutes={readMinutes} sources={sources} relatedArticles={relatedArticles}/>

@@ -2,6 +2,7 @@ import { guides, publishedNews } from "@/content/editorial";
 import { humanReviewedSlugByOccupation, occupationCatalogCategories, occupationDirectory, publishedOccupationCatalog } from "@/content/catalog";
 import profiles from "@/content/professional-careers.json";
 import { menuSections } from "@/lib/menu";
+import { newsTopic } from "@/lib/news-topics";
 
 /**
  * メニューの検索欄が使う索引（ビルド時に静的ファイルとして書き出す）。
@@ -26,6 +27,6 @@ export function GET() {
   });
   const pages = menuSections.flatMap((section) => section.items.map((item) => ({ n: item.label, a: [item.description], h: item.href, m: `ページ ・ ${item.description}` })));
   const guideItems = guides.map((guide) => ({ n: guide.title, a: [guide.category], h: `/guide/${guide.slug}/`, m: `ガイド ・ ${guide.category}` }));
-  const newsList = publishedNews.map((item) => ({ n: item.title, a: [item.kind], h: `/news/${item.slug}/`, m: `ニュース ・ ${item.kind} ・ ${item.publishedAt}` }));
+  const newsList = publishedNews.map((item) => ({ n: item.title, a: [item.kind, newsTopic(item)], h: `/news/${item.slug}/`, m: `ニュース ・ ${newsTopic(item)} ・ ${item.publishedAt}` }));
   return Response.json({ items: [...pages, ...occupations, ...guideItems, ...newsList] });
 }

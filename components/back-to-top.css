@@ -21,3 +21,8 @@
 @media (max-width: 1100px) {
   .back-to-top { bottom: calc(64px + env(safe-area-inset-bottom) + 12px); }
 }
+/* AdSense のアンカー広告が下に出ているときは、その高さの分だけ上へ（--ad-anchor-bottom は network.css の :root で 0px を定義） */
+.back-to-top { bottom: calc(24px + var(--ad-anchor-bottom, 0px)); }
+@media (max-width: 1100px) {
+  .back-to-top { bottom: calc(64px + env(safe-area-inset-bottom) + 12px + var(--ad-anchor-bottom, 0px)); }
+}

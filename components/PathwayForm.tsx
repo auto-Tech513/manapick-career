@@ -5,7 +5,7 @@ import "./newsletter-form.css";
 import { PhraseText } from "./PhraseTitle";
 
 /**
- * 資格×職業×企業パスウェイ（開発中）の事前登録フォーム。
+ * 資格×職業×企業パスウェイの事前登録フォーム（表示に「（開発中）」「開始時期は未定」は出さない：オーナー決定 2026-11-18）。
  * 専用の Kit フォーム（ID 10153174、ダブルオプトイン有効）へ直接 POST する。
  * 項目名は Kit の埋め込みコードで確認したもの。資格名はカスタム項目
  * pathway_qualification として送信される（任意）。
@@ -17,10 +17,10 @@ export function PathwayForm() {
     <div className="newsletter-form newsletter-form--article">
       <p className="newsletter-form-title phrase-breaks">
         <Compass aria-hidden="true" />
-        <span><PhraseText text="資格×職業×企業の入口（開発中）事前登録" /></span>
+        <span><PhraseText text="資格×職業×企業の入口 事前登録" /></span>
       </p>
       <p className="newsletter-form-text">
-        資格を起点に「その資格で目指せる職業」と「その職業に関わる上場企業」を一度にたどれる入口を開発中です。開始時期は未定です。公開が決まったら、登録いただいた方にメールでお知らせします。登録は無料で、費用はかかりません。
+        資格を起点に「その資格で目指せる職業」と「その職業に関わる上場企業」を一度にたどれる入口の事前登録です。公開が決まったら、登録いただいた方にメールでお知らせします。登録は無料で、費用はかかりません。
       </p>
       <form
         action="https://app.kit.com/forms/10153174/subscriptions"

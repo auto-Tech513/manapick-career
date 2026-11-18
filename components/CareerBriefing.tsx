@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, BarChart3, BookOpenCheck, Bot, BriefcaseBusiness, GraduationCap, Newspaper, UsersRound } from "lucide-react";
 import { newsItems } from "@/content/editorial";
 import { PhraseText } from "./PhraseTitle";
+import { newsTopic } from "@/lib/news-topics";
 
 const hubs = [
   { newsSlug: "job-openings-may-2026", href: "/news/job-openings-may-2026/", label: "転職市場", description: "求人倍率の意味を読む", icon: BarChart3 },
@@ -21,7 +22,7 @@ export function CareerBriefing() {
     <div className="briefing-head"><div><span className="eyebrow">career intelligence</span><h2 id="career-briefing-title" className="phrase-breaks"><PhraseText text="働く・学ぶを、一次情報から考える。" /></h2><p>大きな見出しだけで判断せず、数字の意味と限界、次に確認する条件まで編集部が整理します。</p></div><Link href="/news/">{lead ? "ニュースをすべて見る" : "公開準備状況を見る"} <ArrowRight aria-hidden="true" /></Link></div>
     <div className="briefing-grid">
       {lead
-        ? <Link className="briefing-lead" href={`/news/${lead.slug}/`}><span><Newspaper aria-hidden="true" />注目の公式発表</span><small>{lead.kind}・{lead.publishedAt}</small><h3 className="phrase-breaks"><PhraseText text={lead.title} /></h3><p>{lead.answer}</p><em>解説を読む <ArrowRight aria-hidden="true" /></em></Link>
+        ? <Link className="briefing-lead" href={`/news/${lead.slug}/`}><span><Newspaper aria-hidden="true" />注目の公式発表</span><small>{newsTopic(lead)}・{lead.publishedAt}</small><h3 className="phrase-breaks"><PhraseText text={lead.title} /></h3><p>{lead.answer}</p><em>解説を読む <ArrowRight aria-hidden="true" /></em></Link>
         : <Link className="briefing-lead" href="/news/"><span><Newspaper aria-hidden="true" />公開前確認中</span><small>自動公開はしません</small><h3 className="phrase-breaks"><PhraseText text="公開条件を満たす記事を案内します。" /></h3><p>出典と掲載条件が記録された記事を案内します。準備中は、データ室で数字の読み方と限界を確認できます。</p><em>公開基準を見る <ArrowRight aria-hidden="true" /></em></Link>}
       <nav className="briefing-hubs" aria-label="キャリア情報のテーマ">{availableHubs.map((hub) => { const Icon = hub.icon; return <Link href={hub.href} key={hub.href}><Icon aria-hidden="true" /><span><strong>{hub.label}</strong><small>{hub.description}</small></span><ArrowRight aria-hidden="true" /></Link>; })}</nav>
     </div>
