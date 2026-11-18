@@ -30,6 +30,7 @@ import { ageBandsByCode, ageIncomeNote, formatManYen1dp, incomeMetadata, incomeO
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
 import { PhraseText } from "@/components/PhraseTitle";
+import { phraseSegments } from "@/lib/phrase";
 
 export const dynamicParams = false;
 
@@ -135,6 +136,10 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
     return entry ? [{ sourceId, title: entry.notes?.split("。")[0] ?? sourceId, url: entry.url, provider: entry.provider }] : [];
   });
   const networkIds = [...record.relatedVideoIds, ...record.relatedQualificationIds, ...record.relatedAiIds];
+  // 職業名の最も長い文節の字数。長いカタカナ1語（「データサイエンティスト」）が見出しの幅に入らず語の途中で折れないよう、
+  // SP では見出しの字の大きさをこの字数に合わせて決める（独立監査 2026-11-18 M1）
+  // 12字以下の職業名は名前全体が1行に入る大きさに（「空港｜グランドスタッフ」のように前半だけが1行に残らないように）
+  const h1Fit = [...occupation.name].length <= 12 ? Math.max(5, [...occupation.name].length) : Math.max(5, ...phraseSegments(occupation.name).map((segment) => [...segment].length));
   const related = publishedOccupationCatalog.filter(
     (item) => item.categoryKey === occupation.categoryKey && item.catalogId !== id,
   );
@@ -284,7 +289,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               <span className="stn lg" aria-hidden="true">CA</span>
               <span>CA-JOB · {category?.label}</span>
             </p>
-            <h1 className="phrase-breaks">
+            <h1 className="phrase-breaks" style={{ "--occ-h1-fit": h1Fit } as React.CSSProperties}>
               {/* 「の｜仕事」と2字だけ落ちないよう「の仕事」は1かたまりにし、職業名との間で折る（職業名が1文節で長いときに「仕｜事」と割れないように） */}
               <mark><PhraseText text={occupation.name} /></mark><wbr /><span className="occ-jh-tail">の仕事</span>
             </h1>
@@ -429,10 +434,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
 
             <section className="occ-sec ce-how" id="entry">
               <h2><i>{num("entry")}</i>就くには</h2>
-              <div className="lead2">
-                <span className="tag">文章データ</span>
-                <span>この職業の「就くには」は、データの文章をそのまま表示します（段落の区切りもデータどおり）。</span>
-              </div>
+              {/* 制作上の注記（「データの文章をそのまま表示します」）は読者向けでないため表示しない（独立監査 2026-11-18 M5） */}
               <div className="hrail">
                 {paragraphs(occupation.entry).map((part, index, parts) => (
                   <div className={`p${index === parts.length - 1 ? " last" : ""}`} key={index}>
@@ -480,7 +482,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                       <li key={name}>
                         {slug ? (
                           <a href={`https://license.manapick.app/license/${slug}/`} target="_blank" rel="noopener noreferrer">
-                            {name} <ArrowUpRight aria-hidden="true" />
+                            <span className="phrase-breaks"><PhraseText text={name} /></span> <ArrowUpRight aria-hidden="true" />
                           </a>
                         ) : (
                           name
@@ -512,7 +514,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                         return (
                           <li key={`${employer.name}-${employer.role}`}>
                             <div className="nm">
-                              <b>{employer.name}</b>
+                              <b className="phrase-breaks"><PhraseText text={employer.name} /></b>
                               <span className="kind">{employer.role}</span>
                             </div>
                             <p>{employer.description}</p>

@@ -640,3 +640,15 @@
     min-height: 38px;
   }
 }
+
+/* 独立監査 2026-11-18 M9：360px で長いカタカナの社名（「ジャパネットメディアエージェンシー」）が入らず、長音「ー」1字が次の行頭に落ちていた。
+   企業例の社名は、最も長い文節（--name-fit 字）が1行に入る大きさまで字を下げる */
+.depth-employers > article { container-type: inline-size; }
+@media (max-width: 640px) {
+  .dossier-article .depth-employers h3, .depth-employers h3 { font-size: min(18px, calc(100cqw / (var(--name-fit, 8) * 1.04))); }
+}
+
+/* 独立監査 2026-11-18 M4：SP の目次リンクが 35px だった → 44px */
+@media (max-width: 1024px) {
+  .dos-toc a { min-height: 44px; align-items: center; }
+}

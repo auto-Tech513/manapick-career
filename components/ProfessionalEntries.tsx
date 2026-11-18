@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "./professional-entries.css";
 import profiles from "@/content/professional-careers.json";
 import { PhraseText } from "@/components/PhraseTitle";
 
@@ -61,7 +62,7 @@ function BuildingIcon({ slug }: { slug: string }) {
  */
 export function ProfessionalEntries() {
   return (
-    <section className="sec" id="professional" aria-labelledby="professional-title">
+    <section className="sec pro-entries" id="professional" aria-labelledby="professional-title">
       <div className="eh">
         <div>
           <span className="code">CA-01 · CLOSE TO YOU</span>

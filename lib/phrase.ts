@@ -27,6 +27,18 @@ const openParenLength = (value: string) => {
   return /[）)」』]/.test(tail) ? -1 : [...tail].length;
 };
 
+// 漢字・カタカナの連なりの長さ（末尾／先頭）。BudouX が熟語の途中（「空｜港」「男女共同｜参画」「法定｜外労働」）で
+// 区切るのを防ぐため、短い連なり同士の区切りはつなぐ（独立監査 2026-11-18 H5・M1）
+const KANJI_RUN = /[一-鿿々〆ヶ]+$/u;
+const KANJI_HEAD = /^[一-鿿々〆ヶ]+/u;
+const KATA_RUN = /[ァ-ヺー]+$/u;
+const KATA_HEAD = /^[ァ-ヺー]+/u;
+const runJoin = (previous: string, segment: string, tail: RegExp, head: RegExp, max: number) => {
+  const a = previous.match(tail)?.[0];
+  const b = segment.match(head)?.[0];
+  return Boolean(a && b && [...a].length + [...b].length <= max);
+};
+
 export function joinSegments(segments: string[]): string[] {
   const joined: string[] = [];
   for (const segment of segments) {
@@ -41,6 +53,8 @@ export function joinSegments(segments: string[]): string[] {
         (parenOpen > 0 && parenOpen + [...segment].length <= 12) ||
         (endsWithLatin(previous) && startsWithLatin(segment)) ||
         startsWithClosing(segment) ||
+        runJoin(previous, segment, KANJI_RUN, KANJI_HEAD, 12) ||
+        runJoin(previous, segment, KATA_RUN, KATA_HEAD, 14) ||
         endsWithOpening(previous) ||
         PROTECTED_WORDS.some(
           (word) => combined.includes(word) && !previous.includes(word) && !segment.includes(word),
@@ -70,14 +84,16 @@ export function joinSegments(segments: string[]): string[] {
     for (let i = 2; i < chars.length - 2; i++) {
       const x = chars[i - 1], y = chars[i];
       const after = /[・、，／/]/.test(x) && i - start >= 3 && chars.length - i >= 3;
-      const beforeParen = /[（(]/.test(y) && i - start >= 3 && chars.length - i >= 4;
+      const beforeParen = /[（(「『]/.test(y) && i - start >= 3 && chars.length - i >= 4;
       const script = ((KAN.test(x) && KATA.test(y)) || (KATA.test(x) && KAN.test(y))) && i - start >= 2 && chars.length - i >= 2;
       // レイアウト監査 2026-11-17：長い文節が行幅を超えて任意位置で割れていた
       // （「『採用の約束』じゃない｜。」「保健指導を｜掌る」「実態調査を読｜む」）。
       // 「：」・閉じ括弧の後、ひらがな→漢字・カタカナの境目（助詞・送り仮名の後）でも折れるようにする。
       const afterColonOrClose = /[：:』」）)]/.test(x) && i - start >= 3 && chars.length - i >= 3 && !/^[、。，．・：:；;！？）」』]/.test(y);
-      const hiraToWord = HIRA.test(x) && (KAN.test(y) || KATA.test(y)) && !/[おご]/.test(x) && !(x === "か" && /[0-9０-９]/.test(chars[i - 2] ?? "")) && i - start >= 3 && chars.length - i >= 3 && openParenLength(chars.slice(start, i).join("")) < 0;
-      if (after || beforeParen || script || afterColonOrClose || hiraToWord) { expanded.push(chars.slice(start, i).join("")); start = i; }
+      const hiraToWord = HIRA.test(x) && !(x === "の" && y === "他") && (KAN.test(y) || KATA.test(y)) && !/[おご]/.test(x) && !(x === "か" && /[0-9０-９]/.test(chars[i - 2] ?? "")) && i - start >= 3 && chars.length - i >= 3 && (openParenLength(chars.slice(start, i).join("")) < 0 || chars.length > 12);
+      // 「8年版｜男女共同参画白書」「令和7年分｜民間給与…」「第39回｜介護…」：数字＋助数詞の後で、続く熟語の前に折れ目を置く
+      const counterBreak = KAN.test(y) && !/[度目間前後以未超末頭代版生分]/.test(y) && ((/[年回号版分]/.test(x) && /[0-9０-９]/.test(chars[i - 2] ?? "")) || (/[版分]/.test(x) && chars[i - 2] === "年" && /[0-9０-９]/.test(chars[i - 3] ?? ""))) && i - start >= 2 && chars.length - i >= 3;
+      if (after || beforeParen || script || afterColonOrClose || hiraToWord || counterBreak) { expanded.push(chars.slice(start, i).join("")); start = i; }
     }
     expanded.push(chars.slice(start).join(""));
   }

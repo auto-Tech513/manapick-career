@@ -14,7 +14,7 @@ export function ArticleChart({ chart }: { chart: ArticleChartData }) {
       <div className="article-chart-bars">
         {chart.bars.map((bar) => (
           <div className="article-chart-row" key={bar.label}>
-            <span className="article-chart-label">{bar.label}</span>
+            <span className="article-chart-label phrase-breaks"><PhraseText text={bar.label} /></span>
             <span className="article-chart-track" aria-hidden="true">
               <span
                 className="article-chart-fill"

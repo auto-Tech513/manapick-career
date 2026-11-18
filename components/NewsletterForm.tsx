@@ -16,11 +16,11 @@ export function NewsletterForm({ context }: { context: "footer" | "article" }) {
         <Mail aria-hidden="true" />
         manapick メルマガ
       </p>
-      {/* フッターでは説明を2行以内に収める（FOOTER_SPEC）。意味は記事内の文と同じ */}
+      {/* フッターでは説明を2行以内に収める（FOOTER_SPEC）。「配信準備中」の文はオーナー決定（11-18）で表示しない */}
       <p className="newsletter-form-text">
         {context === "footer"
-          ? "仕事と学びの新着を週に一度まとめてお届けする予定です（配信準備中）。登録は無料で、確認メールのリンクを開くと完了します。"
-          : "仕事と学びの新着を、週に一度まとめてお届けする予定です（現在、配信開始に向けて準備中です）。登録は無料です。登録すると確認メールが届くので、メール内のリンクを開くと登録が完了します。"}
+          ? "仕事と学びの新着を、週に一度まとめてメールでお届けします。登録は無料で、確認メールのリンクを開くと完了します。"
+          : "仕事と学びの新着を、週に一度まとめてメールでお届けします。登録は無料です。登録すると確認メールが届くので、メール内のリンクを開くと登録が完了します。"}
       </p>
       <form action="https://app.kit.com/forms/10147210/subscriptions" method="post">
         <label className="newsletter-form-label" htmlFor={`newsletter-email-${context}`}>

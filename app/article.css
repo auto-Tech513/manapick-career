@@ -267,3 +267,6 @@
     max-width: 45em;
   }
 }
+
+/* 独立監査 2026-11-18 M4：記事の目次（SP の開閉式）のリンクが 35px だった → 44px */
+.mobile-article-toc a { min-height: 44px; align-items: center; }

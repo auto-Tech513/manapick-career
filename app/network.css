@@ -354,7 +354,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
   .wm-m{font-size:21px}
   .wm-sub{font-size:12px}
   .mp-header-actions .hd-btn:not(.y){display:none}
-  .mp-header-actions .hd-btn.y{height:38px;font-size:12px;padding:0 12px}
+  .mp-header-actions .hd-btn.y{height:44px;font-size:12px;padding:0 12px}
   /* SP ではヘッダーのメニューボタンだけを隠し、details 本体は残す。下部タブバーの「メニュー」が mp-open-menu でこの details を開くため、本体ごと display:none にするとメニューが表示できない */
   .mp-menu>summary{display:none}
   .mp-menu>nav{top:30px}
@@ -703,4 +703,13 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
    ほかのページでは 1100px 幅のカードが縦に4枚積まれて横に間延びしていた → 幅に応じて横に並べる（狭い欄では1列のまま） */
 @media(min-width:1025px){
   .xrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+}
+
+/* 独立監査 2026-11-18 M3：SP では body の下余白（下部固定ナビ分 68px）が墨色のフッターの下に明るい帯として出ていた。
+   フッターの帯自体が下部ナビ分の余白（110px）を持つので、フッターのあるページでは body の下余白を0にし、帯の色を画面の下端まで続ける */
+@media(max-width:760px){
+  body:has(> footer.foot){padding-bottom:0}
+}
+@media(max-width:640px){
+  .foot.route{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 }
