@@ -34,7 +34,7 @@ const groups:{title:string;items:{q:string;a:string}[]}[]=[
 {q:"掲載内容に誤りを見つけたら、どうすればいいですか？",a:"/contact/ のお問い合わせフォーム（Google フォーム）からお知らせください。種別で「修正・削除の依頼」を選び、対象ページのURLと、正しいとする公式情報の出典（一次情報のURL）を添えていただけると確認が早くなります。"},
 {q:"訂正を依頼したら、すぐに内容は直りますか？",a:"いいえ。ご指摘だけで即時に変更はせず、対象ページを確認中または一時非公開に切り替えて公式情報を再確認し、人のレビューを経てから再公開します。そのため、対応まで数日いただく場合があります。"}]},
 {title:"広告とプライバシー",items:[
-{q:"広告はどのように掲載されていますか？",a:"記事内の手動の広告枠と、Google AdSenseの自動広告（画面の上端・下端に固定して表示される広告など）を使っています。自動広告がメニューや下部のナビを覆わないよう、表示位置に合わせてサイト側の部品をずらしています。広告の有無で、職業や企業例の掲載内容や順序が変わることはありません。"},
+{q:"広告はどのように掲載されていますか？",a:"記事ページと職業詳細ページの手動の広告枠と、すべてのページで表示するGoogle AdSenseの自動広告（画面の上端・下端に固定して表示される広告など）を使っています。自動広告がメニューや下部のナビを覆わないよう、表示位置に合わせてサイト側の部品をずらしています。広告の有無で、職業や企業例の掲載内容や順序が変わることはありません。"},
 {q:"入口案内や診断で答えた内容は、運営に送られますか？",a:"送られません。回答は利用している端末の中（localStorage）にだけ保存され、サーバーへもアクセス解析（GA4）へも送信しません。端末やブラウザを変えると、回答は引き継がれません。"}]}];
 const faqs=groups.flatMap(g=>g.items);
 export default function Page(){return <><JsonLd data={{"@context":"https://schema.org","@type":"FAQPage",url:absoluteUrl("/faq/"),inLanguage:"ja-JP",mainEntity:faqs.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))}}/><InfoPage eyebrow="FAQ" title="よくある質問" lead="サイトの使い方と、できること・しないことを整理します。">{groups.map(g=><div key={g.title}><h2 className="phrase-breaks"><PhraseText text={g.title} /></h2><div className="faq-list">{g.items.map(x=><details key={x.q}><summary>{x.q}</summary><p>{x.a}</p></details>)}</div></div>)}</InfoPage></>}
