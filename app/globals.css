@@ -4191,3 +4191,12 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 /* 独立監査 2026-11-18 M6：データ室の先頭の枠（.phead.research-hero）は、共通の .phead（左右の余白0、network.css で後から読み込まれる）に
    余白が上書きされ、文字が枠線に接していた → 枠の内側に余白を戻す */
 .phead.research-hero { padding: clamp(1.25rem, 4vw, 3rem); }
+
+/* 本文は text-wrap:wrap（H4）にしたが、ページ冒頭の短いリード文は最終行が「ん。」など1〜2字だけにならないよう pretty を残す */
+.phead-lead { text-wrap: pretty; }
+/* 360px で手取り額の括弧書き「（4,927,400円）」の「円）」だけが次の行に落ちていた → 括弧書きは1かたまり */
+.sim-result-value span { display: inline-block; white-space: nowrap; }
+/* 年収の目安ラベルの「2025年統計」を割らない */
+.income-label .nw { white-space: nowrap; }
+/* 年収ランキングの職業名の列（短い名前の羅列）も、最終行が「作業」など2字だけにならないよう pretty を残す */
+.income-rank-names { text-wrap: pretty; }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { stations, stationHref } from "../lib/stations";
 import { menuSections } from "../lib/menu";
 import { NewsletterForm } from "./NewsletterForm";
+import { PhraseText } from "./PhraseTitle";
 
 /**
  * manapick 7サイト共通のフッター骨格（FOOTER_SPEC 2026-11-18）。1枚の墨色の帯に、上から
@@ -47,7 +48,7 @@ export default function NetworkFooter() {
               <p className="foot-col-title">{section.title}</p>
               <ul>
                 {section.items.map((item) => (
-                  <li key={item.href}><Link href={item.href}>{item.label}</Link></li>
+                  <li key={item.href}><Link href={item.href} className="phrase-breaks"><PhraseText text={item.label} /></Link></li>
                 ))}
               </ul>
             </div>

@@ -482,7 +482,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                       <li key={name}>
                         {slug ? (
                           <a href={`https://license.manapick.app/license/${slug}/`} target="_blank" rel="noopener noreferrer">
-                            {name} <ArrowUpRight aria-hidden="true" />
+                            <span className="phrase-breaks"><PhraseText text={name} /></span> <ArrowUpRight aria-hidden="true" />
                           </a>
                         ) : (
                           name
