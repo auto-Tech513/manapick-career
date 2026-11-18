@@ -713,3 +713,48 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
 @media(max-width:640px){
   .foot.route{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
 }
+
+/* ============================================================
+   独立監査 2026-11-18 PC の指摘
+   ============================================================ */
+/* M9 フッター：案内リンクを 44px に、メルマガ注記のリンクも 44px の当たり判定に。
+   ブロックの間は 44px 前後、帯の下 56px に寄せつつ、main の後ろ 900px 以内に収める */
+.foot .newsletter-form-note a{display:inline-block;padding:13px 2px;margin:-13px -2px;line-height:1}
+@media(min-width:1025px){
+  .foot.route{margin-top:20px}
+  .foot{padding:40px 40px 52px}
+  .foot-news{padding-bottom:22px}
+  .foot-guide{padding:22px 0}
+  .foot-col-title{margin-bottom:0}
+  .foot-col a{min-height:44px}
+  .foot-net{padding-top:22px}
+  .foot .route-lead{margin-bottom:20px}
+  .foot-note{margin-top:36px}
+  .foot .route-legal{margin-top:4px;padding-top:0}
+}
+
+/* M5 乗り換えカード：小見出しがサイト名の途中で折れ、題の長さでカードの高さ・行頭が不揃いだった。
+   小見出しは1行（入らない分は…）、題は2行・説明は2行まで、中身は上そろえ */
+.xfer{align-items:start}
+.xfer > span:nth-child(2){min-width:0}
+.xfer .k{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.08em}
+.xfer .t,.xfer .d{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.xfer .stn,.xfer .go{margin-top:2px}
+
+/* L3 ページ冒頭の前提文の折りたたみ */
+.phead-fold{margin:10px 0 0;max-width:760px}
+.phead-fold>summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;cursor:pointer;font-size:14px;font-weight:700;color:var(--ca-ink)}
+.phead-fold>p{margin:0 0 6px;font-size:14px;line-height:1.85;color:#4a5468}
+
+/* L2 内容の幅と左端：テンプレートごとに 1004〜1360px・左端 38〜138px とばらばらだった。
+   PC は本文の箱を幅 1200px（左右 40px）で中央にそろえ、ヘッダーも同じ左端に */
+@media(min-width:1025px){
+  main > .page-shell,
+  main > .detail-shell,
+  main .occ-wrap{max-width:1280px!important;width:100%;box-sizing:border-box;margin-left:auto!important;margin-right:auto!important;padding-left:40px!important;padding-right:40px!important}
+  .mp-header-inner{max-width:1280px;margin:0 auto;padding:0 40px}
+}
+.phead-fold>summary{list-style:none}
+.phead-fold>summary::-webkit-details-marker{display:none}
+.phead-fold>summary::before{content:"+";display:inline-grid;place-items:center;width:20px;height:20px;border:1.5px solid currentColor;border-radius:50%;font-size:14px;line-height:1}
+.phead-fold[open]>summary::before{content:"−"}

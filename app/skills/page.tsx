@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, BarChart3, Blocks, FileText, MessageCircle, Palette, ShieldCheck } from "lucide-react";
 import { publishedJobs } from "@/content/jobs";
@@ -24,7 +25,7 @@ export default function SkillsPage() {
     return { ...group, skills };
   });
   const foundation = allSkills.filter((skill) => !assigned.has(skill));
-  return <div className="page-shell skills-page"><nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">スキル</span></nav><header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-SKILL · スキル</p><h1 className="phrase-breaks"><PhraseText text="スキルを、使う場面で整理する" /></h1><p className="phead-lead">似た言葉を一列に並べず、仕事で果たす役割ごとにまとめました。点数や優劣ではなく、どの職業のどの作業で使うかを確認できます。</p></header>
+  return <div className="page-shell skills-page"><nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">スキル</span></nav><header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-SKILL · スキル</p><h1 className="phrase-breaks"><PhraseText text="スキルを、使う場面で整理する" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>似た言葉を一列に並べず、仕事で果たす役割ごとにまとめました。点数や優劣ではなく、どの職業のどの作業で使うかを確認できます。</PhraseChildren></p></header>
     <nav className="skill-group-nav" aria-label="スキル分類">{sections.map((section) => <a key={section.key} href={`#${section.key}`}>{section.label}<small>{section.skills.length}</small></a>)}<a href="#foundation">基礎・その他<small>{foundation.length}</small></a></nav>
     <div className="skill-group-grid">{sections.map((section) => { const Icon = section.icon; return <section id={section.key} className="skill-group" key={section.key}><header><span><Icon aria-hidden="true" /></span><div><h2 className="phrase-breaks"><PhraseText text={section.label} /></h2><p>{section.description}</p></div></header><div className="skill-tags">{section.skills.map((skill) => <span key={skill}>{skill}</span>)}</div><div className="skill-jobs"><strong>使う職業</strong>{publishedJobs.filter((job) => job.skills.some((skill) => section.skills.includes(skill))).slice(0, 5).map((job) => <Link href={`/career/${job.slug}/`} key={job.slug}>{job.name}</Link>)}</div></section>; })}
       <section id="foundation" className="skill-group"><header><span><BadgeCheck aria-hidden="true" /></span><div><h2 className="phrase-breaks"><PhraseText text="基礎・その他" /></h2><p>複数の仕事を支える、分野固有または横断的な力</p></div></header><div className="skill-tags">{foundation.map((skill) => <span key={skill}>{skill}</span>)}</div></section>

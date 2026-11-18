@@ -53,7 +53,7 @@ function RankList({ entries, start = 1 }: { entries: IncomeRankEntry[]; start?: 
       {tied ? <div className="ranking-copy">
         <h3 className="phrase-breaks"><PhraseText text={classifications.join("・")} /></h3>
         <small>この統計分類に結ばれた{group.entries.length}職業が同額</small>
-        <p className="income-rank-names">{group.entries.map((entry) => entry.name).join("、")}</p>
+        <p className="income-rank-names">{group.entries.map((entry, index) => <span className="nm" key={entry.name}>{entry.name}{index < group.entries.length - 1 ? "、" : ""}</span>)}</p>
       </div> : <div className="ranking-copy"><h3 className="phrase-breaks"><PhraseText text={first.name} /></h3><small>統計分類：{first.classificationName}</small></div>}
       <strong className="income-rank-value">{yen(group.value)}</strong>
       <Link href="/all/">名録で見る <ArrowUpRight aria-hidden="true" /></Link>

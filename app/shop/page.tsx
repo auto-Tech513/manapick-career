@@ -1,4 +1,5 @@
 import { amazonUrl } from "@/lib/network-shared";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,7 +44,7 @@ const graph = {
 export default function ShopPage() {
   return <><JsonLd data={graph}/><div className="page-shell wide career-shop-page">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">manapi商店</span></nav>
-    <header className="phead career-shop-hero"><p className="phead-eyebrow"><span className="career-shop-mark"><ShoppingBag aria-hidden="true" /></span> CA-SHOP · PR / CAREER WORK TOOLS</p><h1 className="phrase-breaks"><PhraseText text="manapi商店" /></h1><p className="phead-lead">学び直しと仕事準備の道具を、場面ごとに編集部が選ぶ小さな商店です。掲載は全{careerShopProducts.length}点。すべてメーカー公式仕様とAmazonの商品ページで実在を確認し、「買わなくてよい条件」まで正直に書きます。</p><div className="phead-meta"><span><BadgeCheck aria-hidden="true" />全品メーカー公式で確認</span><span><BadgeCheck aria-hidden="true" />{careerShopPolicy.checkedAt} 時点の掲載内容</span><span><BadgeCheck aria-hidden="true" />報酬で掲載順を変えない</span></div></header>
+    <header className="phead career-shop-hero"><p className="phead-eyebrow"><span className="career-shop-mark"><ShoppingBag aria-hidden="true" /></span> CA-SHOP · PR / CAREER WORK TOOLS</p><h1 className="phrase-breaks"><PhraseText text="manapi商店" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>学び直しと仕事準備の道具を、場面ごとに編集部が選ぶ小さな商店です。掲載は全{careerShopProducts.length}点。すべてメーカー公式仕様とAmazonの商品ページで実在を確認し、「買わなくてよい条件」まで正直に書きます。</PhraseChildren></p><div className="phead-meta"><span><BadgeCheck aria-hidden="true" />全品メーカー公式で確認</span><span><BadgeCheck aria-hidden="true" />{careerShopPolicy.checkedAt} 時点の掲載内容</span><span><BadgeCheck aria-hidden="true" />報酬で掲載順を変えない</span></div></header>
 
     <section className="career-shop-pr" aria-label="広告表示"><strong>PR</strong><p>{careerShopPolicy.disclosure}</p><Link href="/affiliate/">広告・掲載基準を確認</Link></section>
 

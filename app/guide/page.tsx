@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { PhraseText } from "@/components/PhraseTitle";
@@ -67,7 +68,7 @@ export default function GuideIndex() {
     <header className="phead">
       <p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-GUIDE · ガイド</p>
       <h1 className="phrase-breaks"><PhraseText text="迷いを、確認できる手順に変える。" /></h1>
-      <p className="phead-lead">職業名だけで決めず、仕事内容・注意点・出典を読み、次に試す学びへつなげます。すべての記事に先に結論、目次、公式出典、確認日があります。テーマを選ぶと、その場で絞り込めます。各カードには、読む・試す目安の時間と、出典の確認日と新しさを表示します。</p>
+      <p className="phead-lead phrase-breaks"><PhraseChildren>職業名だけで決めず、仕事内容・注意点・出典を読み、次に試す学びへつなげます。すべての記事に先に結論、目次、公式出典、確認日があります。テーマを選ぶと、その場で絞り込めます。各カードには、読む・試す目安の時間と、出典の確認日と新しさを表示します。</PhraseChildren></p>
     </header>
 
     <GuideExplorer items={items} topics={topics} />

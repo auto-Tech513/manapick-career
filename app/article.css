@@ -243,29 +243,59 @@
    - 記事下のメルマガ・PR 表記の文が横に長く伸びていた → 1行の長さを抑える
    ============================================================ */
 @media (min-width: 1025px) {
-  .editorial-detail .article-cover {
-    max-width: 760px;
+  /* 独立監査 2026-11-18 PC M2：カバー画像（h1 の再掲）が本文の上で最初の画面の半分を占め、左寄せで右に 340px 空いていた。
+     見出しの右に 400px のサムネイルとして並べ、本文は2画面目ではなく最初の画面から始める。
+     左端は「パンくず・見出し・目次」と「本文列」の2つ、右端はカバーと本文列でそろえる（全体 1066px） */
+  .editorial-detail {
+    display: grid;
+    grid-template-columns: minmax(0, 610px) 400px;
+    column-gap: 56px;
+    align-items: start;
+  }
+  .editorial-detail > * {
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+  .editorial-detail > .phead {
+    grid-column: 1;
+  }
+  .editorial-detail > .article-cover {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    max-width: none;
+    margin: 0;
   }
   .editorial-detail .article-layout {
-    grid-template-columns: 280px minmax(0, 660px);
-    column-gap: 80px;
+    grid-template-columns: 280px minmax(0, 690px);
+    column-gap: 96px;
   }
   .editorial-detail .editorial-article {
-    max-width: 660px;
+    max-width: 690px;
   }
-  .editorial-detail > .newsletter-form--article {
-    max-width: 760px;
+  /* 本文の後ろの共有・注記も本文列にそろえる */
+  .editorial-detail > .career-share-kit,
+  .editorial-detail > .article-method-note,
+  .editorial-detail > .source-freshness-notice {
+    margin-left: 376px;
+    max-width: 690px;
   }
-  /* 出典の一覧：白地の角丸の箱なのに左右の余白が0で、文字が箱の縁に接していた */
-  .editorial-detail .article-review .source-list li {
-    padding: 12px 16px;
+  .editorial-detail > .career-share-kit {
+    grid-template-columns: 1fr;
   }
-  .editorial-detail > .newsletter-form--article p,
   .editorial-detail .article-pr-notice,
   .editorial-detail .correction-note,
   .editorial-detail .related-careers > p {
     max-width: 45em;
   }
+  /* 出典の一覧：白地の角丸の箱なのに左右の余白が0で、文字が箱の縁に接していた */
+  .editorial-detail .article-review .source-list li {
+    padding: 12px 16px;
+  }
+}
+/* 独立監査 2026-11-18 PC M1：共有ボックスの上の余白が -16px で、直前の「この記事の内容確認日」に枠線が重なっていた */
+.editorial-detail > .career-share-kit {
+  margin-top: 24px;
 }
 
 /* 独立監査 2026-11-18 M4：記事の目次（SP の開閉式）のリンクが 35px だった → 44px */

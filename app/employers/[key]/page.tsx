@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
@@ -40,7 +41,7 @@ export default async function EmployerCategoryPage({ params }: { params: Promise
   return <><JsonLd data={graph} /><div className="page-shell employers-page">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><Link href="/employers/">企業例のある職業</Link><span aria-hidden="true">／</span><span aria-current="page">{category.label}</span></nav>
     <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 企業例のある職業</p><h1 className="phrase-breaks"><PhraseText text={`${category.label}の企業例がある職業`} /></h1>
-      <p className="phead-lead">{category.description}。この分野では{category.items.length}職業について、その仕事を行っている具体的な企業・法人・公的機関を各組織の公式ページで確認し、出典付きで載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。</p>
+      <p className="phead-lead phrase-breaks"><PhraseChildren>{category.description}。この分野では{category.items.length}職業について、その仕事を行っている具体的な企業・法人・公的機関を各組織の公式ページで確認し、出典付きで載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。</PhraseChildren></p>
       <div className="phead-meta"><span><b>公式ページで確認した職場の例</b>{category.items.length}職業</span></div></header>
     <section aria-label={`${category.label}の企業例`} className="employers-group">
       <EmployerList items={category.items} />

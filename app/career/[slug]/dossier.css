@@ -652,3 +652,14 @@
 @media (max-width: 1024px) {
   .dos-toc a { min-height: 44px; align-items: center; }
 }
+
+/* 独立監査 2026-11-18 PC L5：解説ページの本文がほぼ全部 灰色（#667085）で、職業ページ（墨色）より薄く読みにくかった。
+   本文は墨色寄り、節の導入文は少し濃い灰色に */
+.dossier-article .detail-content p:not(.depth-evidence):not(.depth-record):not(.employer-scope):not(.section-lead),
+.dossier-article .detail-content li,
+.dossier-article .detail-content dd {
+  color: #2b3448;
+}
+.dossier-article .detail-content .section-lead {
+  color: #4a5468 !important;
+}

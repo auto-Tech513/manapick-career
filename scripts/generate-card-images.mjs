@@ -33,6 +33,13 @@ const publishedNewsSlugs = new Set(
   (publication.records ?? []).filter((r) => r.status === "published").map((r) => r.slug),
 );
 const newsAnswerBySlug = new Map(expandedNews.map((n) => [n.slug, n.answer ?? ""]));
+// スタンプ型カードの右側に、記事ごとの要点（keyPoints の逐語・先頭3件）を並べる。
+// 以前は全記事同じ抽象的な線で、同じ分類の記事が同じ絵になっていた（独立監査 2026-11-18 PC L7）
+const keyPointsBySlug = new Map([...expandedGuides, ...expandedNews].map((x) => [x.slug, (x.keyPoints ?? []).filter((t) => typeof t === "string")]));
+// content/editorial.ts の基本記事（slug と keyPoints が同じ記事の中にあるものだけ）
+for (const m of editorial.matchAll(/slug:\s*"([^"]+)"((?:(?!slug:)[\s\S])*?)keyPoints:\s*\[([^\]]*)\]/g)) {
+  if (!keyPointsBySlug.has(m[1])) keyPointsBySlug.set(m[1], [...m[3].matchAll(/"([^"]+)"/g)].map((x) => x[1]));
+}
 
 // グラフデータ（TypeScriptファイル）を正規表現で読み取る。バーの label/value/display だけを使う。
 const chartsText = fs.readFileSync(path.join(root, "content/article-charts.ts"), "utf8");
@@ -171,7 +178,8 @@ function renderChartSvg(label, bars) {
 }
 
 function renderFigureSvg(label, { figure, caption }) {
-  const figSize = figure.length > 9 ? 92 : figure.length > 7 ? 108 : 128;
+  // カード枠で左右が少し切れても数字が縁に寄らない大きさに（独立監査 2026-11-18 PC L8：「25,834円」が右端 3px）
+  const figSize = figure.length > 9 ? 80 : figure.length > 7 ? 92 : figure.length > 5 ? 104 : 120;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420">
   ${frame()}
   ${chip(label)}
@@ -181,19 +189,37 @@ function renderFigureSvg(label, { figure, caption }) {
 </svg>`;
 }
 
-function renderStampSvg(label, glyph) {
+// 1行に収まる字数で切る（全角1・半角0.55で数える）
+function clip(text, max) {
+  let width = 0;
+  let out = "";
+  for (const ch of text) {
+    width += ch.charCodeAt(0) > 255 ? 1 : 0.55;
+    if (width > max) return `${out}…`;
+    out += ch;
+  }
+  return out;
+}
+
+function renderStampSvg(label, glyph, points = []) {
   const isLatin = glyph.length > 1;
   const glyphSize = isLatin ? 92 : 128;
+  const lines = points.slice(0, 3).map((point, i) => {
+    const y = 158 + i * 64;
+    return `<rect x="304" y="${y - 22}" width="10" height="28" fill="${i === 0 ? YELLOW : INK}"/>
+  <text x="328" y="${y}" fill="${INK}" font-family="${fontFamily}" font-size="25" font-weight="700">${escapeXml(clip(point, 15))}</text>`;
+  }).join("\n");
+  const decor = `<rect x="330" y="150" width="330" height="16" fill="${INK}"/>
+  <rect x="330" y="196" width="264" height="16" fill="${INK}" opacity="0.55"/>
+  <rect x="330" y="242" width="300" height="16" fill="${INK}" opacity="0.3"/>
+  <rect x="330" y="288" width="180" height="16" fill="${YELLOW}"/>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420">
   ${frame()}
   ${chip(label)}
   <rect x="76" y="126" width="196" height="196" fill="${YELLOW}"/>
   <rect x="62" y="112" width="196" height="196" fill="${PAPER}" stroke="${INK}" stroke-width="5"/>
   <text x="160" y="${isLatin ? 238 : 262}" text-anchor="middle" fill="${INK}" font-family="${fontFamily}" font-size="${glyphSize}" font-weight="700">${escapeXml(glyph)}</text>
-  <rect x="330" y="150" width="330" height="16" fill="${INK}"/>
-  <rect x="330" y="196" width="264" height="16" fill="${INK}" opacity="0.55"/>
-  <rect x="330" y="242" width="300" height="16" fill="${INK}" opacity="0.3"/>
-  <rect x="330" y="288" width="180" height="16" fill="${YELLOW}"/>
+  ${lines || decor}
 </svg>`;
 }
 
@@ -204,9 +230,9 @@ function render(item) {
     svg = renderChartSvg(item.label, bars);
   } else if (item.kind === "news") {
     const figure = extractFigure(newsAnswerBySlug.get(item.slug) ?? "", item.slug);
-    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label));
+    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
   } else {
-    svg = renderStampSvg(item.label, glyphFor(item.kind, item.label));
+    svg = renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
   }
   const resvg = new Resvg(svg, {
     font: { fontFiles: fontFiles.map((f) => f.file), loadSystemFonts: false, defaultFontFamily: fontFamily },

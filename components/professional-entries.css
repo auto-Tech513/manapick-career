@@ -29,7 +29,9 @@
 .pro-entries .eh p {
   font-size: 13.5px;
   color: #4a5468;
+  /* 独立監査 2026-11-18 PC M7：「…整理していま｜す。」の2字落ち → 行の長さをそろえ、文節で折る */
   max-width: 460px;
+  text-wrap: balance;
 }
 .page-shell .pro-entries {
   margin: 64px 0 0;

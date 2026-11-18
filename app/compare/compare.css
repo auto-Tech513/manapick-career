@@ -37,3 +37,16 @@
   .compare-scroll tbody th { display: block; width: auto !important; white-space: normal; border-width: 0 0 1px; }
   .compare-scroll td small { color: #4a5468; }
 }
+
+/* 独立監査 2026-11-18 PC H1：表の見出し行（職業名）が白地に白文字で見えなかった（共通 CSS の墨色地＋白字に、T3 寄せの白地が後から重なった）。
+   白地のまま、文字を墨色にして下に太い罫を引く */
+.compare-scroll thead th { color: var(--ink); background: #fff; border-bottom: 2px solid var(--ink); }
+/* PC M3：行見出しが nowrap で「転職準備を左右する条件」がセルからはみ出していた → 折り返し可・列を少し広く
+   L9：表内の箇条は印付きにし、字下げを他のセルの行頭とそろえる。説明の小さな灰色文字は少し濃く */
+@media (min-width: 761px) {
+  .compare-scroll tbody th { white-space: normal; word-break: keep-all; overflow-wrap: anywhere; }
+  .compare-scroll th:first-child { width: 196px; }
+  .compare-scroll td ul { margin: 0; padding-left: 1.15em; list-style: disc; }
+  .compare-scroll td li::marker { color: var(--ca-ink, #665500); }
+  .compare-scroll td small { color: #4a5468; font-size: 13px; }
+}

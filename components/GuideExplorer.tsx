@@ -79,7 +79,7 @@ export function GuideExplorer({ items, topics }: { items: GuideCardItem[]; topic
 
   return (
     <section className="article-explorer" aria-label="ガイド一覧">
-      <div className="category-tabs article-tabs" role="group" aria-label="テーマで絞り込む">
+      <div className="category-tabs article-tabs" role="group" aria-label="テーマで絞り込む" style={{ "--chip-cols": Math.ceil((topics.length + 1) / Math.ceil((topics.length + 1) / 6)) } as React.CSSProperties}>
         <button type="button" className={topic === "all" ? "active" : ""} onClick={() => setTopic("all")}>
           すべて<small>{items.length}</small>
         </button>

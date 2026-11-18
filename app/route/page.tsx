@@ -1,4 +1,5 @@
 import { routeCandidate } from "@/lib/career-card";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowDown } from "lucide-react";
@@ -24,7 +25,7 @@ export default function RoutePage() {
       <header className="phead">
         <p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-START · 入口案内</p>
         <h1 className="phrase-breaks"><PhraseText text="キャリア候補の入口案内" /></h1>
-        <p className="phead-lead">探し方は2つあります。いまの関心から入る3問の案内と、働き方の好みから入る12問の診断です。どちらも調べ始める候補を出すための入口で、適性や向き不向きの判定ではありません。</p>
+        <p className="phead-lead phrase-breaks"><PhraseChildren>探し方は2つあります。いまの関心から入る3問の案内と、働き方の好みから入る12問の診断です。どちらも調べ始める候補を出すための入口で、適性や向き不向きの判定ではありません。</PhraseChildren></p>
       </header>
       <nav className="route-chooser" aria-label="入口の選び方">
         <a href="#interest">

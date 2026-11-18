@@ -60,3 +60,19 @@
 }
 
 /* 入口カードは2枚（「資格から探す（開発中）」は表示しない）。PC でも2列のまま */
+
+/* 独立監査 2026-11-18 PC L4：「働き方から探す」区画がボタン1つだけで横に間延びしていた → PC は見出しとボタンを1枚の枠に横並び */
+@media (min-width: 1025px) {
+  #workstyle:has(> .wsd-intro) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 40px;
+    padding: 28px 32px;
+    border: 1.5px solid #e3dcc6;
+    border-radius: 16px;
+    background: #fff;
+  }
+  #workstyle:has(> .wsd-intro) > .sh { margin: 0; }
+  #workstyle:has(> .wsd-intro) > .wsd-intro { margin: 0; }
+}

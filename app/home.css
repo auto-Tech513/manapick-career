@@ -990,3 +990,14 @@
   .ring-c b { font-size: min(21px, calc((100cqw - 184px) / 7.2)); }
   .ring-c span { font-size: 11px; letter-spacing: 0.14em; }
 }
+
+/* 独立監査 2026-11-18 PC L2：ほかのページと同じく、PC はトップも内容の幅 1200px（左右 40px）で中央にそろえる
+   （1920px ではヘッダーだけ中央、本文は画面いっぱいに広がっていた） */
+@media (min-width: 1025px) {
+  main:has(> .town-hero) > * { max-width: 1280px; margin-left: auto; margin-right: auto; box-sizing: border-box; }
+  main:has(> .town-hero) > .sec,
+  main:has(> .town-hero) > .career-briefing,
+  main:has(> .town-hero) > .editorial-preview { padding-left: 40px; padding-right: 40px; }
+  main:has(> .town-hero) > .town-stats { max-width: 1200px; }
+  main:has(> .town-hero) > .town-hero { padding-left: 40px; }
+}
