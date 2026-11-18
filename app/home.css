@@ -181,6 +181,8 @@
   font-weight: 700;
   line-height: 1.6;
   color: var(--ink);
+  /* 語の途中で折らない（「保｜存。」の1字落ち対策）。折る位置は <wbr> で指定 */
+  word-break: keep-all;
 }
 .town-side-box b {
   display: block;

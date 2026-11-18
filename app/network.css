@@ -277,6 +277,45 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .route-legal a{color:rgba(255,255,255,.75);display:inline-flex;align-items:center;min-height:44px;padding:0 4px;margin:0 -4px}
 .route-legal span{color:rgba(255,255,255,.6);display:inline-flex;align-items:center}
 
+/* フッター骨格（FOOTER_SPEC 2026-11-18）：1枚の墨色の帯に メルマガ → サイトの案内 → 駅 → 注記・最下段 */
+.foot{padding:56px 40px 24px}
+.foot-inner{max-width:1200px;margin:0 auto}
+.foot-news{padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot .newsletter-form--footer{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"kick form" "title form" "text note";column-gap:56px;align-items:start;margin:0;padding:0;border:0;border-radius:0;background:none;color:#fff}
+.foot .newsletter-form-kick{grid-area:kick;font-family:var(--num);font-weight:600;letter-spacing:.2em;font-size:12px;color:rgba(255,255,255,.6);margin:0 0 6px}
+.foot .newsletter-form-title{grid-area:title;color:#fff;font-family:var(--mincho);font-size:22px;margin:0 0 8px}
+.foot .newsletter-form-title svg{color:var(--ca)}
+.foot .newsletter-form-text{grid-area:text;color:rgba(255,255,255,.8);font-size:15px;line-height:1.8;margin:0}
+.foot .newsletter-form--footer form{grid-area:form;align-self:end}
+.foot .newsletter-form-label{color:rgba(255,255,255,.85)}
+.foot .newsletter-form-row input{background:#fff;color:var(--ink);border-color:transparent}
+.foot .newsletter-form-row button{background:var(--ca);color:#111318;border-color:var(--ca)}
+.foot .newsletter-form-note{grid-area:note;color:rgba(255,255,255,.65);font-size:13px;margin:10px 0 0}
+.foot .newsletter-form-note a{color:#fff}
+.foot-guide{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding:36px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot-logo{display:inline-flex;min-height:44px;align-items:center}
+.foot-brand .wm{color:#fff}
+.foot-brand p{margin:10px 0 0;color:rgba(255,255,255,.75);font-size:14px;line-height:1.8}
+.foot-col-title{font-size:13px;font-weight:800;color:var(--ca);margin:0 0 6px;letter-spacing:.06em}
+.foot-col ul{list-style:none;margin:0;padding:0}
+.foot-col a{display:flex;align-items:center;min-height:32px;color:rgba(255,255,255,.85);font-size:14px}
+.foot-col a:hover{color:#fff;text-decoration:underline;text-underline-offset:.2em}
+.foot-net{padding:36px 0 0}
+.foot .route-lead{margin:0 0 24px}
+.foot-note{margin:24px 0 0;color:rgba(255,255,255,.6);font-size:13px;line-height:1.7}
+.foot .route-legal{margin-top:10px;padding-top:6px;border-top:0}
+@media(min-width:1025px){
+  .foot.route{margin-top:32px}
+  /* PC は駅の説明文を1行に */
+  .foot .route-st{padding:0}
+  .foot .route-st span{white-space:nowrap;letter-spacing:-.01em}
+}
+@media(max-width:1024px){
+  .foot{padding:56px 28px 28px}
+  .foot-guide{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot-brand{grid-column:1/-1}
+}
+
 /* SP bottom tab bar + transfer sheet */
 .spbar{display:none}
 .xfer-sheet-backdrop{position:fixed;inset:0;background:rgba(17,19,24,.55);z-index:400;display:flex;align-items:flex-end}
@@ -332,6 +371,21 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
   .spbar svg{width:22px;height:22px}
   .spbar .spbar-star{color:var(--ca);fill:var(--ca)}
   .mp-newsletter-band{padding:32px 16px 0}
+  /* フッター骨格の SP：メルマガは縦積み、サイトの案内は2列のリンク格子 */
+  /* SP のフッター全体を 1,900px 以下に（FOOTER_SPEC）：ロゴはヘッダーにあるので案内のロゴ欄は省き、駅の行間を詰める */
+  .foot.route{margin-top:32px}
+  .foot-news{padding-bottom:32px}
+  .foot .newsletter-form--footer{display:block}
+  .foot .newsletter-form-title{font-size:20px}
+  .foot .newsletter-form-text{margin-bottom:14px}
+  .foot-brand{display:none}
+  .foot .route-st{padding:2px 0}
+  .foot-guide{grid-template-columns:minmax(0,1fr);gap:18px;padding:28px 0}
+  .foot-col ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}
+  .foot-col-title{font-size:12px;margin-bottom:2px}
+  .foot-col a{min-height:44px;font-size:14px}
+  .foot-net{padding-top:28px}
+  .foot-note{margin-top:20px}
 }
 
 /* ============================================================
@@ -639,3 +693,14 @@ body.cm-lock{overflow:hidden}
 main section[id],main .occ-sec[id]{scroll-margin-top:84px}
 /* 入力欄は16px（PCの職業名録の「大分類」「並び順」が13px台だった） */
 .catalog-controls select{font-size:16px}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：ページ見出しの小さな丸チップで、文字が枠の上下に寄っていた → 少しゆとりを持たせる */
+@media(min-width:1025px){
+  .phead-meta span{padding:7px 16px;min-height:38px}
+  .info-page .prose p{max-width:45em}
+}
+/* PC デザイン改善 2026-11-18（PC のみ）：乗り換えカードの並び（.xrow）はトップの CSS にしか無く、
+   ほかのページでは 1100px 幅のカードが縦に4枚積まれて横に間延びしていた → 幅に応じて横に並べる（狭い欄では1列のまま） */
+@media(min-width:1025px){
+  .xrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+}

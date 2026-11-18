@@ -120,7 +120,7 @@ export default function Home() {
             <br />
             キャリア候補の入口へ。
             <br />
-            回答は端末内にだけ保存。
+            回答は端末内に<wbr />だけ保存。
           </div>
         </aside>
       </section>

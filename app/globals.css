@@ -4116,3 +4116,32 @@ input, select, textarea { min-width: 0; max-width: 100%; }
   .rail-s { min-width: 30px; }
   .rail-s.on .rail-s-name { white-space: nowrap; }
 }
+
+/* PC デザイン改善 2026-11-18（PC のみ）：人気ランキングの行が 1100px 幅いっぱいに伸び、
+   職業名と右端のリンクの間が大きく空いていた → 2列（左に1〜5位、右に6〜10位）に */
+@media (min-width: 1025px) {
+  /* 人気ランキング（ol に class なし）だけ。年収ランキングは同額で件数が増え、名前の列も長いので1列のまま */
+  .ranking-list > ol:not([class]) { display: block; columns: 2; column-gap: 48px; }
+  .ranking-list > ol:not([class]) > li { break-inside: avoid; }
+}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：データ室の「一つの数字を、三つに分ける」は折りたたみだが、
+   開けることが見た目で分からず、見出しだけが浮いて見えていた → 枠と開閉の印を付ける */
+@media (min-width: 1025px) {
+  .research-method-fold > summary { position: relative; list-style: none; padding: 18px 64px 18px 22px; border: 1.5px solid #e3dcc6; border-radius: 16px; background: #fff; }
+  .research-method-fold > summary::-webkit-details-marker { display: none; }
+  .research-method-fold > summary::after { content: "+"; position: absolute; right: 20px; top: 50%; display: grid; place-items: center; width: 30px; height: 30px; margin-top: -15px; border: 2px solid var(--ink); border-radius: 50%; color: var(--ink); font-size: 18px; font-weight: 700; line-height: 1; }
+  .research-method-fold[open] > summary::after { content: "−"; }
+}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：スキルの7群のうち最後の1枚だけが左半分に取り残されていた → 最後が奇数番目なら横幅いっぱいに */
+@media (min-width: 1025px) {
+  .skill-group-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：職業名録・手取りシミュレーター・各セクションの説明文・ニュースの先頭カード等が 1100px 幅で1行50〜90字に伸びていた → 1行を全角45字以内に */
+@media (min-width: 1025px) {
+  .catalog-intro p, .catalog-income-note p, .published-occupation-index .sh p, .income-method-panel p, .page-shell.narrow .editorial-block p,
+  .sh > div > p, .news-freshness-panel > p, .newsletter-form--article p, .route-card .privacy-note p, .compare-tool > p.empty,
+  .article-card-lead .article-card-body p, .depth-evidence, .depth-record, .detail-content .section-lead { max-width: 45em; }
+}

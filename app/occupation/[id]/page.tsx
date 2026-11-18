@@ -635,7 +635,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           <aside className="occ-side">
             <div className="occ-box2 occ-box2-y">
               <h3 className="phrase-breaks"><PhraseText text="近い仕事と比べる" /></h3>
-              <p>{related.length ? `${related.slice(0, 2).map((item) => item.name).join("・")}と並べて読む` : "職業を並べて比べる"}</p>
+              <p className="phrase-breaks"><PhraseText text={related.length ? `${related.slice(0, 2).map((item) => item.name).join("・")}と並べて読む` : "職業を並べて比べる"} /></p>
               <Link className="occ-pill" href="/compare/">比較を始める →</Link>
             </div>
             <div className="occ-box2">

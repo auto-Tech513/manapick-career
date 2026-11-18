@@ -632,3 +632,11 @@
     gap: 2px;
   }
 }
+
+/* PC デザイン改善 2026-11-18（PC のみ）：冒頭の丸チップで文字が枠の上下に寄っていた → 少しゆとりを持たせる */
+@media (min-width: 1025px) {
+  .dos-meta > span {
+    padding: 7px 16px;
+    min-height: 38px;
+  }
+}

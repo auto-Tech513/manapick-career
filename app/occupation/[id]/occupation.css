@@ -830,3 +830,27 @@
 .occ-table thead th:not(:first-child) {
   text-align: right;
 }
+
+/* PC デザイン改善 2026-11-18（PC のみ）
+   - 関連資格のチップで文字が枠の上端・左端に寄り、矢印だけが2行目に落ちていた → 縦中央に揃え、矢印を語とひとかたまりに
+   - 職業ヘッダーの出典・別名の行が横に長く伸びていた → 1行の長さを抑える */
+@media (min-width: 1025px) {
+  .occ-qlist li {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 8px 16px;
+  }
+  .occ-qlist a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+  }
+  .occ-meta,
+  .occ-note,
+  .ce-coex .src3 {
+    /* 1440px 以上では本文欄が広がり、小さな注記が1行50字を超えていた */
+    max-width: 45em;
+  }
+}
