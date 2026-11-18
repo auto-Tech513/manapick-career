@@ -416,84 +416,6 @@
   margin-left: auto;
 }
 
-/* ---------- 職業カード ---------- */
-.jobs {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-.job {
-  background: #fff;
-  border: 2px solid var(--ink);
-  border-radius: 22px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.job-top {
-  height: 150px;
-  background: var(--yp);
-  position: relative;
-  border-bottom: 2px solid var(--ink);
-}
-.job-top > svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -46%);
-  width: 130px;
-  height: 120px;
-}
-.job-tag {
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  font-size: 12px;
-  font-weight: 700;
-  background: #fff;
-  border: 1.5px solid var(--ink);
-  border-radius: 999px;
-  padding: 1px 9px;
-  z-index: 1;
-}
-.job-bd {
-  padding: 16px 18px 18px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.job-bd h3 {
-  font-family: var(--mincho);
-  font-weight: 700;
-  font-size: 24px;
-}
-.job-bd h3 a {
-  color: var(--ink);
-}
-.job-bd p {
-  font-size: 12.5px;
-  color: #4a5468;
-  line-height: 1.75;
-  margin: 4px 0 12px;
-}
-.job-lk {
-  margin-top: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1.5px solid var(--ink);
-}
-.job-lk a {
-  text-align: center;
-  padding: 9px 0 0;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--ink);
-  min-height: 44px;
-}
-.job-lk a + a {
-  border-left: 1px dashed #c9c2b0;
-}
-
 /* ---------- DAILY CAREER LOOP ---------- */
 .loop {
   display: grid;
@@ -986,38 +908,6 @@
   .eh .more {
     margin-left: 0;
   }
-  .jobs {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .job {
-    border-radius: 16px;
-  }
-  .job-top {
-    height: 110px;
-  }
-  .job-top > svg {
-    width: 96px;
-    height: 96px;
-  }
-  .job-bd h3 {
-    font-size: 19px;
-  }
-  .job-bd p {
-    display: none;
-  }
-  .job-lk {
-    grid-template-columns: 1fr;
-  }
-  .job-lk a {
-    padding: 7px 0;
-    border-left: 0 !important;
-    border-top: 1px dashed #c9c2b0;
-    min-height: 40px;
-  }
-  .job-lk a:first-child {
-    border-top: 0;
-  }
   .loop {
     padding: 32px 18px;
     border-radius: 24px;
@@ -1089,4 +979,14 @@
   .xrow {
     grid-template-columns: 1fr;
   }
+}
+
+/* 独立監査 2026-11-18 H2：円図の中央の文（「終わらせない、」7字）が左右の丸（RECORD・COMPARE）に食い込んでいた。
+   中央の文字の大きさを、左右の丸の間の幅（円図の幅−丸2つ分）に収まるように決める。SP は円図を欄の幅いっぱいまで広げる */
+.ring { container-type: inline-size; }
+.ring-c b { font-size: min(28px, calc((100cqw - 216px) / 7.4)); }
+@media (max-width: 640px) {
+  .ring { width: min(340px, 100%); }
+  .ring-c b { font-size: min(21px, calc((100cqw - 184px) / 7.2)); }
+  .ring-c span { font-size: 11px; letter-spacing: 0.14em; }
 }

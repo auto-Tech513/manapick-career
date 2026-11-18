@@ -834,6 +834,18 @@
 /* PC デザイン改善 2026-11-18（PC のみ）
    - 関連資格のチップで文字が枠の上端・左端に寄り、矢印だけが2行目に落ちていた → 縦中央に揃え、矢印を語とひとかたまりに
    - 職業ヘッダーの出典・別名の行が横に長く伸びていた → 1行の長さを抑える */
+/* 資格チップの余白・矢印のひとかたまりは SP でも同じにする（独立監査 2026-11-18 L2：SP で文字が枠端から 7px だった） */
+.occ-qlist li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 16px;
+}
+.occ-qlist a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
 @media (min-width: 1025px) {
   .occ-qlist li {
     display: inline-flex;
@@ -854,3 +866,15 @@
     max-width: 45em;
   }
 }
+
+/* 独立監査 2026-11-18 M1：長いカタカナの職業名（「データサイエンティスト」「コンビニエンスストア店員」）が SP の見出し幅に入らず
+   語の途中で折れていた。見出しの字の大きさを、職業名の最も長い文節（--occ-h1-fit 字）が1行に入る大きさまで下げる */
+.occ-jh > div { container-type: inline-size; }
+@media (max-width: 640px) {
+  .occ-jh h1 {
+    font-size: min(38px, 8.4vw, calc(100cqw / (var(--occ-h1-fit, 5) * 1.1)));
+  }
+}
+
+/* 独立監査 2026-11-18 M4：「計算方法と統計の対象」の開閉が 32px だった → 44px */
+.occ-method summary { min-height: 44px; }

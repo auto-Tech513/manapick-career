@@ -59,12 +59,4 @@
   font-weight: 700;
 }
 
-/* PC デザイン改善 2026-11-18（PC のみ）：入口カード3枚のうち1枚だけが2段目に落ちていた → 3列で横に並べる */
-@media (min-width: 1025px) {
-  .route-chooser {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .route-chooser a {
-    align-items: flex-start;
-  }
-}
+/* 入口カードは2枚（「資格から探す（開発中）」は表示しない）。PC でも2列のまま */

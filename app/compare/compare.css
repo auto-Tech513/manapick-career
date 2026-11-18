@@ -30,3 +30,10 @@
 .compare-scroll tbody th { background: #fbf7e8; font-weight: 700; white-space: nowrap; }
 .compare-picker .compare-options button, .compare-picker .compare-selected button { border-radius: 999px; }
 .compare-picker .compare-selected button.selected, .compare-picker .compare-options button[aria-pressed="true"] { background: var(--ca); border-color: var(--ink); color: var(--ink); }
+
+/* 独立監査 2026-11-18 L3：SP で項目見出しの帯（「仕事内容」等）の地色が文字の右で途切れていた → 帯を行の幅いっぱいに。
+   説明の灰色の小さな文字は少し濃くして読みやすく */
+@media (max-width: 760px) {
+  .compare-scroll tbody th { display: block; width: auto !important; white-space: normal; border-width: 0 0 1px; }
+  .compare-scroll td small { color: #4a5468; }
+}
