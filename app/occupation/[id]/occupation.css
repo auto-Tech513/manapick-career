@@ -847,7 +847,10 @@
     gap: 4px;
     white-space: nowrap;
   }
-  .occ-meta {
+  .occ-meta,
+  .occ-note,
+  .ce-coex .src3 {
+    /* 1440px 以上では本文欄が広がり、小さな注記が1行50字を超えていた */
     max-width: 45em;
   }
 }

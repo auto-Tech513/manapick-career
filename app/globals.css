@@ -4143,5 +4143,5 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 @media (min-width: 1025px) {
   .catalog-intro p, .catalog-income-note p, .published-occupation-index .sh p, .income-method-panel p, .page-shell.narrow .editorial-block p,
   .sh > div > p, .news-freshness-panel > p, .newsletter-form--article p, .route-card .privacy-note p, .compare-tool > p.empty,
-  .article-card-lead .article-card-body p, .depth-evidence, .depth-record { max-width: 45em; }
+  .article-card-lead .article-card-body p, .depth-evidence, .depth-record, .detail-content .section-lead { max-width: 45em; }
 }
