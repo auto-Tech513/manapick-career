@@ -6,6 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { NewsExplorer, type NewsCardItem } from "@/components/NewsExplorer";
 import { newsModifiedAt, newsNeedsRefresh, publishedNews } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
+import { newsTopic, orderedNewsTopics } from "@/lib/news-topics";
 import "../article.css";
 import { PhraseText } from "@/components/PhraseTitle";
 
@@ -38,7 +39,8 @@ export const metadata: Metadata = {
 export default function NewsIndex() {
   const [lead] = publishedNews;
   const archiveCount = publishedNews.filter(newsNeedsRefresh).length;
-  const kinds = [...new Set(publishedNews.map((item) => item.kind))];
+  // 絞り込みは記事データの kind ではなく、少数にまとめた表示用の分類で行う（lib/news-topics.ts）
+  const kinds = orderedNewsTopics(publishedNews);
   const latestSourceDate = publishedNews.reduce((latest, item) => item.sourcePublishedAt > latest ? item.sourcePublishedAt : latest, "");
   const latestReviewedAt = publishedNews.reduce((latest, item) => newsModifiedAt(item) > latest ? newsModifiedAt(item) : latest, "");
   const graph = { "@context": "https://schema.org", "@graph": [
@@ -55,6 +57,6 @@ export default function NewsIndex() {
       <div><CalendarCheck2 aria-hidden="true"/><span><small>掲載データの最終記録日</small><strong>{latestReviewedAt}</strong></span></div>
       <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、出典の記録日を分けて表示します。確認期限を超えた過去資料の記事が{archiveCount}件あります。現在の状況は公式出典をご覧ください。</p>
     </section>
-    <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: item.kind, summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: `/card/news/${item.slug}.png` }))} kinds={kinds} />
+    <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: newsTopic(item), summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: `/card/news/${item.slug}.png` }))} kinds={kinds} />
   </div></>;
 }

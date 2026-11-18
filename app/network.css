@@ -758,3 +758,14 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
 .phead-fold>summary::-webkit-details-marker{display:none}
 .phead-fold>summary::before{content:"+";display:inline-grid;place-items:center;width:20px;height:20px;border:1.5px solid currentColor;border-radius:50%;font-size:14px;line-height:1}
 .phead-fold[open]>summary::before{content:"−"}
+
+/* AdSense 自動広告のアンカー広告（オーナー決定 2026-11-18 21:44：自動広告は消さずに表示する）。
+   アンカー広告は最前面（z-index 最大）に固定されるため、SP で上に出るとヘッダー・メニュー、下に出ると下部ナビ・乗り換えシートを覆って操作できなくなる。
+   AdSenseScript がアンカー広告の上端・下端の高さを --ad-anchor-top / --ad-anchor-bottom に入れるので、固定・追従する自サイトの部品をその分だけずらす（広告そのものは動かさない） */
+:root{--ad-anchor-top:0px;--ad-anchor-bottom:0px}
+.mp-header{top:var(--ad-anchor-top)}
+.cm-drawer{top:var(--ad-anchor-top);bottom:var(--ad-anchor-bottom)}
+.xfer-sheet-backdrop{padding-top:var(--ad-anchor-top);padding-bottom:var(--ad-anchor-bottom)}
+@media(max-width:640px){
+  .spbar{bottom:calc(10px + env(safe-area-inset-bottom) + var(--ad-anchor-bottom))}
+}

@@ -26,6 +26,7 @@ import { CareerIncome } from '@/components/CareerIncome';
 import { relatedPublishedOccupationsForCareer } from "@/content/catalog";
 import "./dossier.css";
 import { PhraseText } from "@/components/PhraseTitle";
+import { newsTopic } from "@/lib/news-topics";
 
 export const dynamicParams = false;
 
@@ -235,7 +236,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
           <section id="news">
             <h2 className="phrase-breaks"><i>12</i><PhraseText text="この職業に関連する公開済みニュース" /></h2>
             <p className="section-lead">市場全体の数字を個人の採用可能性へ置き換えず、一次資料の範囲と確認日を読んで、次に確かめる条件を決めます。</p>
-            {relatedNews.length ? <div className="career-news-grid">{relatedNews.map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span><Newspaper aria-hidden="true" />{item.kind}</span><strong className="phrase-breaks"><PhraseText text={item.title} /></strong><p>{item.summary}</p><small>公開 {item.publishedAt}／確認 {item.checkedAt}</small></Link>)}</div> : <div className="news-empty"><p>この職業へ直接結び付けた公開済みニュースは現在ありません。下書きの記事は表示しません。</p><Link className="button secondary" href="/news/">公開済みニュースを見る</Link></div>}
+            {relatedNews.length ? <div className="career-news-grid">{relatedNews.map((item) => <Link key={item.slug} href={`/news/${item.slug}/`}><span><Newspaper aria-hidden="true" />{newsTopic(item)}</span><strong className="phrase-breaks"><PhraseText text={item.title} /></strong><p>{item.summary}</p><small>公開 {item.publishedAt}／確認 {item.checkedAt}</small></Link>)}</div> : <div className="news-empty"><p>この職業へ直接結び付けた公開済みニュースは現在ありません。下書きの記事は表示しません。</p><Link className="button secondary" href="/news/">公開済みニュースを見る</Link></div>}
           </section>
 
           {relatedOccupations.length ? <section className="editorial-block" id="related-occupations"><h2 className="phrase-breaks"><PhraseText text="同じ分野の職業ページ" /></h2><p className="section-lead">同じ分類で個別ページを公開している職業です。年収の目安は、各ページで統計の範囲とあわせて確認できます。</p><ul>{relatedOccupations.map((item) => <li key={item.catalogId}><Link href={`/occupation/${item.catalogId}/`}>{item.name}の個別ページ</Link></li>)}</ul></section> : null}

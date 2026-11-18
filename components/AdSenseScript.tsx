@@ -4,10 +4,63 @@ import { useEffect } from "react";
 
 const DEFAULT_CLIENT = "ca-pub-4108900975353940";
 
+type AnchorWindow = Window & { __mpAdAnchorWatch?: boolean };
+
+/**
+ * AdSense 自動広告のアンカー広告（ins.adsbygoogle[data-anchor-status="displayed"]、position:fixed）の
+ * 上端・下端の高さを CSS 変数 --ad-anchor-top / --ad-anchor-bottom に入れる。
+ * network.css がこの値でヘッダー・メニュー・下部ナビ・乗り換えシートをずらし、広告に覆われて操作できなくなるのを防ぐ。
+ * 広告の位置・大きさ・表示には手を加えない（オーナー決定 2026-11-18 21:44）。
+ * アンカー広告はページ移動後も残るため、監視は一度だけ始めて止めない。
+ */
+function watchAdAnchors() {
+  const w = window as AnchorWindow;
+  if (w.__mpAdAnchorWatch) return;
+  w.__mpAdAnchorWatch = true;
+  const root = document.documentElement;
+  const watched = new WeakSet<Element>();
+  let frame = 0;
+  const schedule = () => {
+    if (!frame) frame = window.requestAnimationFrame(update);
+  };
+  const resize = typeof ResizeObserver === "function" ? new ResizeObserver(schedule) : null;
+  const attrs = new MutationObserver(schedule);
+
+  function update() {
+    frame = 0;
+    let top = 0;
+    let bottom = 0;
+    const viewport = window.innerHeight;
+    for (const element of document.querySelectorAll<HTMLElement>("ins.adsbygoogle[data-anchor-status]")) {
+      if (!watched.has(element)) {
+        watched.add(element);
+        resize?.observe(element);
+        attrs.observe(element, { attributes: true, attributeFilter: ["data-anchor-status", "style"] });
+        element.addEventListener("transitionend", schedule);
+      }
+      if (element.getAttribute("data-anchor-status") !== "displayed") continue;
+      const style = getComputedStyle(element);
+      if (style.position !== "fixed" || style.display === "none" || style.visibility === "hidden") continue;
+      const rect = element.getBoundingClientRect();
+      if (rect.height <= 0 || rect.bottom <= 0 || rect.top >= viewport) continue;
+      if (rect.top <= 1) top = Math.max(top, Math.round(rect.bottom));
+      else if (rect.bottom >= viewport - 1) bottom = Math.max(bottom, Math.round(viewport - rect.top));
+    }
+    root.style.setProperty("--ad-anchor-top", `${top}px`);
+    root.style.setProperty("--ad-anchor-bottom", `${bottom}px`);
+  }
+
+  new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
+  window.addEventListener("resize", schedule);
+  schedule();
+}
+
 export function AdSenseScript() {
   const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || DEFAULT_CLIENT;
 
   useEffect(() => {
+    // アンカー広告の監視は広告を読み込まない環境でも無害（広告が無ければ 0px のまま）
+    watchAdAnchors();
     // 本番（manapick.app とそのサブドメイン）以外では広告を読み込まない（プレビュー・ローカル閲覧の計上防止）
     if (!/(^|\.)manapick\.app$/.test(window.location.hostname)) return;
     if (document.getElementById("manapick-career-adsense")) return;
