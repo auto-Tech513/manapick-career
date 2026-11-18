@@ -2,7 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://career.manapick.app/news/household-spending-september-2026/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <loc>https://career.manapick.app/news/gdp-q3-2026-prelim/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19</news:publication_date>
+      <news:title>GDPは4期ぶりマイナス、個人消費は2期連続減。なのに設備投資は1.6%増えた、ねじれた2026年7〜9月期GDP速報を読む</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/tertiary-industry-september-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19</news:publication_date>
+      <news:title>サービス産業が2か月連続で後退、経産省は判断を引き下げた。第3次産業活動指数2026年9月、沈んだのは金融と不動産だった</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/economy-watchers-october-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19</news:publication_date>
+      <news:title>街角景気にブレーキ。現状DI46.1で6か月ぶり低下、雇用の先行きは46.2まで沈んだ景気ウォッチャー調査2026年10月</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/labor-force-detailed-q3-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19</news:publication_date>
+      <news:title>正規も非正規も増えたのに、失業1年以上は59万人に急増。雇用の明と暗が真っ二つに割れた労働力調査2026年7〜9月期</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/industrial-production-september-2026-final/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-19</news:publication_date>
+      <news:title>速報から下方修正、それでも3か月ぶり増産。在庫が20か月ぶりに前年超えした鉱工業生産2026年9月確報を読む</news:title>
+    </news:news>
   </url>
 </urlset>
