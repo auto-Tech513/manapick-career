@@ -870,6 +870,10 @@
 /* 独立監査 2026-11-18 M1：長いカタカナの職業名（「データサイエンティスト」「コンビニエンスストア店員」）が SP の見出し幅に入らず
    語の途中で折れていた。見出しの字の大きさを、職業名の最も長い文節（--occ-h1-fit 字）が1行に入る大きさまで下げる */
 .occ-jh > div { container-type: inline-size; }
+.occ-jh h1 {
+  /* PC でも長い職業名（「コンビニエンスストア店員」）が見出し欄に入るように */
+  font-size: min(56px, calc(100cqw / (var(--occ-h1-fit, 5) * 1.12)));
+}
 @media (max-width: 640px) {
   .occ-jh h1 {
     font-size: min(38px, 8.4vw, calc(100cqw / (var(--occ-h1-fit, 5) * 1.1)));

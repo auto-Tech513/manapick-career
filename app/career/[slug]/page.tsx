@@ -198,7 +198,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
           <section id="differences">
             <h2 className="phrase-breaks"><i>07</i><PhraseText text="似た職業との違い" /></h2>
             <p className="section-lead">職業名ではなく、主に担う成果物と責任範囲を比べます。会社によって担当範囲は変わるため、応募先の求人票でも再確認してください。</p>
-            <div className="adjacent-grid">{adjacentJobs.map(({ job: adjacent, difference }) => adjacent && <Link key={adjacent.slug} href={`/career/${adjacent.slug}/`}><span>{job.name} と比較</span><strong>{adjacent.name}</strong><p>{difference}</p><em>詳細を見る <ArrowRight aria-hidden="true" /></em></Link>)}</div>
+            <div className="adjacent-grid">{adjacentJobs.map(({ job: adjacent, difference }) => adjacent && <Link key={adjacent.slug} href={`/career/${adjacent.slug}/`}><span>{job.name} と比較</span><strong className="phrase-breaks"><PhraseText text={adjacent.name} /></strong><p>{difference}</p><em>詳細を見る <ArrowRight aria-hidden="true" /></em></Link>)}</div>
           </section>
 
           <section id="transition">
