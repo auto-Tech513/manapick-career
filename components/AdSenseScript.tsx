@@ -46,11 +46,19 @@ function watchAdAnchors() {
       if (rect.top <= 1) top = Math.max(top, Math.round(rect.bottom));
       else if (rect.bottom >= viewport - 1) bottom = Math.max(bottom, Math.round(viewport - rect.top));
     }
+    // 下端のアンカー広告のうち、AdSense が body に付ける下余白（padding-bottom）では足りずにページの末尾を覆う分。
+    // network.css がこの分だけフッター最下段の下に足す（PC：広告 275px に対し body の余白 154px 等。本家 PR #31・company PR #21 と同じ求め方）。
+    // 広告が無ければ 0
+    const bodyPad = bottom ? parseFloat(getComputedStyle(document.body).paddingBottom) || 0 : 0;
+    const cover = Math.max(0, Math.round(bottom - bodyPad));
     root.style.setProperty("--ad-anchor-top", `${top}px`);
     root.style.setProperty("--ad-anchor-bottom", `${bottom}px`);
+    root.style.setProperty("--ad-anchor-bottom-cover", `${cover}px`);
   }
 
   new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
+  // AdSense は body の下余白を inline の style で付け外しするので、その変化でも測り直す
+  new MutationObserver(schedule).observe(document.body, { attributes: true, attributeFilter: ["style"] });
   window.addEventListener("resize", schedule);
   schedule();
 }

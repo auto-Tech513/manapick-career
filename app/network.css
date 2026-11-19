@@ -769,6 +769,12 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
 @media(max-width:640px){
   .spbar{bottom:calc(10px + env(safe-area-inset-bottom) + var(--ad-anchor-bottom))}
 }
+/* ページの末尾：AdSense は下端のアンカー広告を出すと body に下余白を inline で付けるが、広告の高さより小さいことがある
+   （PC：広告 275px に対し余白 154px）。そのためフッター最下段（作成方法〜お問い合わせ）が広告の下になって押せなかった。
+   足りない分（--ad-anchor-bottom-cover。AdSenseScript が「下端の広告の高さ − body の下余白」で求める。広告が無ければ 0）だけ
+   最下段の下に足し、暗いフッターの中で広告の上に出す（本家 PR #31・politics PR #23・company PR #21 と同じ求め方） */
+:root{--ad-anchor-bottom-cover:0px}
+.foot .route-legal{margin-bottom:var(--ad-anchor-bottom-cover)}
 
 /* ============================================================
    独立監査2 2026-11-19（career）M5：44px 未満の押せる部品（見た目は変えず、当たり判定を広げる）
