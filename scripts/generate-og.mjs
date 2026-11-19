@@ -215,8 +215,12 @@ function renderSvg({ title, label, date, type, chart }) {
   </svg>`;
 }
 
+// 手で作って管理している画像。生成処理からは書き込まない（上書き防止）。
+const HAND_MADE_IMAGES = new Set([path.join(root, "public/og.png")]);
+
 async function render(item, type, directory, outputPath) {
-  const output = outputPath ?? path.join(outputRoot, directory, `${item.slug}.png`);
+  const output = path.resolve(outputPath ?? path.join(outputRoot, directory, `${item.slug}.png`));
+  if (HAND_MADE_IMAGES.has(output)) throw new Error(`手作りの画像は生成処理で上書きしません: ${path.relative(root, output)}`);
   fs.mkdirSync(path.dirname(output), { recursive: true });
   const renderer = new Resvg(renderSvg({ title: item.title, label: item.label, date: item.date, type, chart: articleCharts.get(item.slug) }), {
     font: {
@@ -380,12 +384,7 @@ for (const item of newsWithPublication) await render(item, "NEWS", "news");
 await render(newsIndexOg, "NEWS", "news");
 for (const career of careers) await render(career, "CAREER", "career");
 for (const page of staticPages) await render(page, page.type, "page");
-if (usesPublicOutput) {
-  await render(
-    { slug: "site-default", title: "なりたい仕事まで、迷わせない。", label: "職業情報サイト", date: "" },
-    "CAREER",
-    "page",
-    path.join(root, "public/og.png"),
-  );
-}
+// サイト共通の OG 画像 public/og.png は手で作った画像（1e493af で6駅の型にそろえたもの）をそのまま使う。
+// 以前はここで生成画像を public/og.png に書き込んでおり、og:generate（prebuild・qa）のたびに上書きされていた。
+// 生成しないうえで、万一ほかの処理から書き込もうとした場合も render() で止める。
 console.log(`OG generated with BIZ UDPGothic font files: newsArticles=${newsWithPublication.length} newsIndex=1 guides=${guides.length} guideIndex=1 careers=${careers.length}`);
