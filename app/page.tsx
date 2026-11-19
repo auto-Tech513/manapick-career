@@ -88,7 +88,7 @@ export default function Home() {
             <TownScene variant="care" />
             <span>保育の現場</span>
           </div>
-          <div className="town-pic sp-x" style={{ width: "180px", height: "130px", left: "330px", top: "520px", transform: "rotate(3deg)" }}>
+          <div className="town-pic sp-x" style={{ width: "180px", height: "130px", right: "14px", top: "520px", transform: "rotate(3deg)" }}>
             <TownScene variant="it" />
             <span>ITの現場</span>
           </div>

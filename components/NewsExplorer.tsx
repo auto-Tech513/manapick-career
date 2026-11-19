@@ -21,15 +21,20 @@ function NewsCard({ item, lead = false }: { item: NewsCardItem; lead?: boolean }
       <span className="article-card-media">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={item.image} alt="" loading="lazy" width={800} height={420} />
-        {lead ? (
-          <span className="article-card-lead-badge">
-            <Newspaper aria-hidden="true" />
-            注目解説
-          </span>
-        ) : null}
       </span>
       <span className="article-card-body">
-        <span className="article-card-tag">{item.kind}</span>
+        {/* 「注目解説」の札は画像の上に重ねると、画像内の分類の札に重なっていた（独立監査2 2026-11-19 M2）→ 本文側の分類の札の隣に置く */}
+        {lead ? (
+          <span className="article-card-tags">
+            <span className="article-card-lead-badge">
+              <Newspaper aria-hidden="true" />
+              注目解説
+            </span>
+            <span className="article-card-tag">{item.kind}</span>
+          </span>
+        ) : (
+          <span className="article-card-tag">{item.kind}</span>
+        )}
         {item.needsRefresh ? <span className="archive-badge">過去資料・更新確認期限超過</span> : null}
         <h3 className="phrase-breaks">
           <PhraseText text={item.title} />

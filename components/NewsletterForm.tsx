@@ -40,11 +40,11 @@ export function NewsletterForm({ context }: { context: "footer" | "article" }) {
       </form>
       {context === "footer" ? (
         <p className="newsletter-form-note">
-          配信停止はメールのリンクからいつでもできます。アドレスは Kit（Kit, Inc.）で管理し、配信以外には使いません（<a href="/privacy/">プライバシーポリシー</a>）。
+          配信停止はメールのリンクからいつでもできます。アドレスは Kit<span className="nw">（Kit, Inc.）</span>で管理し、配信以外には使いません<span className="nw">（<a href="/privacy/">プライバシーポリシー</a>）。</span>
         </p>
       ) : (
         <p className="newsletter-form-note">
-          配信停止は、各メールのリンクからいつでもできます。メールアドレスの管理は Kit（Kit, Inc.）のシステムで行い、配信以外の目的には使いません。詳しくは
+          配信停止は、各メールのリンクからいつでもできます。メールアドレスの管理は Kit<span className="nw">（Kit, Inc.）</span>のシステムで行い、配信以外の目的には使いません。詳しくは
           <a href="/privacy/">プライバシーポリシー</a>
           をご覧ください。
         </p>

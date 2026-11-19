@@ -11,6 +11,7 @@ import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Resvg } from "@resvg/resvg-js";
+import { newsTopicFor } from "./lib/news-topic-map.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputRoot = path.join(root, "public/card");
@@ -73,12 +74,10 @@ const GUIDE_STYLE = [
   { test: (c) => ["職業を試す", "成果物づくり", "経験の棚卸し", "経験の伝え方"].includes(c), glyph: "試" },
   { test: () => true, glyph: "確" },
 ];
+// ニュースの札・グリフは表示用の7分類（lib/news-topics.ts）で描く（独立監査2 2026-11-19 M1：旧21分類の名前が画像に残っていた）
 const NEWS_GLYPH = {
-  "雇用統計": "統", "賃金・労働時間": "賃", "賃金・制度": "制", "雇用・制度": "制",
-  "両立・制度": "両", "AI・DX": "AI", "デジタル人材": "デ", "人材育成": "育",
-  "働き方": "働", "働き方・白書": "書", "キャリア形成": "進", "新卒採用": "卒",
-  "教育・採用": "教", "医療・資格": "医", "雇用・労働": "労", "産業・白書": "書",
-  "産業・統計": "産", "家計・統計": "家", "労働統計": "労", "労働安全": "安",
+  "雇用・求人": "雇", "賃金・物価": "賃", "働き方・制度": "働", "学び直し・資格": "学",
+  "AI・デジタル": "AI", "新卒・就職": "卒", "白書・産業動向": "書",
 };
 
 function glyphFor(kind, label) {
@@ -248,8 +247,8 @@ fs.rmSync(outputRoot, { recursive: true, force: true });
 const items = [];
 for (const g of pickBase("const baseGuides", "guide")) items.push(g);
 for (const g of expandedGuides) if (g.status === "published") items.push({ slug: g.slug, label: g.category, kind: "guide" });
-for (const n of pickBase("const newsItemsData", "news")) if (publishedNewsSlugs.has(n.slug)) items.push(n);
-for (const n of expandedNews) if (publishedNewsSlugs.has(n.slug)) items.push({ slug: n.slug, label: n.kind, kind: "news" });
+for (const n of pickBase("const newsItemsData", "news")) if (publishedNewsSlugs.has(n.slug)) items.push({ ...n, label: newsTopicFor(n.slug, n.label) });
+for (const n of expandedNews) if (publishedNewsSlugs.has(n.slug)) items.push({ slug: n.slug, label: newsTopicFor(n.slug, n.kind), kind: "news" });
 
 const seen = new Set();
 let count = 0;

@@ -663,3 +663,17 @@
 .dossier-article .detail-content .section-lead {
   color: #4a5468 !important;
 }
+
+/* ============================================================
+   独立監査2 2026-11-19（career）
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* H1 PC：目次と右欄が top:20px で追従し、固定ヘッダー（70px）の下に 50px 潜っていた → ガイドと同じ位置（--sticky-under-header） */
+  .dos-toc,
+  .dossier-article .detail-aside { top: var(--sticky-under-header, 96px); }
+  /* M5 PC の目次の各行が 40px だった（隣の行と接しているので広げで重ねられない）→ 行の上下の余白を 10px にして 44px に */
+  .dos-toc a { padding: 10px 0; }
+  .dos-toc a::after { inset: 0; }
+}
+/* M5 パンくず：上下 10px の広げで 43〜44px ちょうどだった → 11px */
+.dos-crumb a::after { inset: -11px -5px; }

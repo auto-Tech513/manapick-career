@@ -38,7 +38,7 @@ export default function RoutePage() {
           <ArrowDown aria-hidden="true" />
         </a>
         <a href="#pathway">
-          <span className="rc-body"><span className="rc-title">資格から探す（事前登録）</span><span className="rc-desc">資格→職業→企業をたどる入口の事前登録です。公開時にメールでお知らせします</span></span>
+          <span className="rc-body"><span className="rc-title">資格から探す（事前登録）</span><span className="rc-desc">資格→職業→企業をたどる入口。公開時にメールでお知らせします</span></span>
           <ArrowDown aria-hidden="true" />
         </a>
       </nav>
@@ -51,13 +51,15 @@ export default function RoutePage() {
       </section>
       <section id="workstyle" aria-labelledby="workstyle-title" style={{ marginTop: "4.5rem", scrollMarginTop: "110px" }}>
         <div className="sh"><div><p className="sh-k">Q1–Q12 — 働き方から</p><h2 id="workstyle-title" className="phrase-breaks"><PhraseText text="働き方から探す（16タイプ働き方診断）" /></h2>
-        <p>働き方の好みから、知らない職業に出会うための入口です。</p></div></div>
+        <p className="phrase-breaks"><PhraseChildren>働き方の好みから、知らない職業に出会うための入口です。</PhraseChildren></p></div></div>
         <WorkstyleDiagnosis cardsByType={cardsByType} />
       </section>
       {/* 資格からの入口の事前登録欄。Kit フォーム 10153174 が登録を受け付けることを確認して再表示（オーナー決定 2026-11-18 21:44。「（開発中）」「開始時期は未定」の文言は出さない） */}
       <section id="pathway" aria-labelledby="pathway-title" style={{ marginTop: "4.5rem", scrollMarginTop: "110px" }}>
         <div className="sh"><div><p className="sh-k">PRE-REGISTRATION — 資格から</p><h2 id="pathway-title" className="phrase-breaks"><PhraseText text="資格から探す（事前登録）" /></h2>
-        <p>資格を起点に、その資格で目指せる職業と、その職業に関わる上場企業までを一度にたどれる入口の事前登録です。関心のある資格を教えていただけると、どの資格から用意するかの優先順位づけに役立ちます。</p></div></div>
+        {/* 独立監査2 2026-11-19 M6：同じ説明が入口カード・節のリード・フォームの本文で3回繰り返されていた → 説明はこのリードの1回だけにする。
+            PC で「役｜立ちます」と語の途中で折れていた → 文節で折る */}
+        <p className="phrase-breaks"><PhraseChildren>資格を起点に、その資格で目指せる職業と、その職業に関わる上場企業までを一度にたどれる入口の事前登録です。関心のある資格を教えていただけると、どの資格から用意するかの優先順位づけに役立ちます。</PhraseChildren></p></div></div>
         <div style={{ maxWidth: 920, margin: "0 auto" }}>
           <PathwayForm />
         </div>

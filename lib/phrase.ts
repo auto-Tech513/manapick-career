@@ -87,6 +87,9 @@ export function joinSegments(segments: string[]): string[] {
       const after = /[・、，／/]/.test(x) && i - start >= 3 && chars.length - i >= 3;
       const beforeParen = /[（(「『]/.test(y) && i - start >= 3 && chars.length - i >= 4;
       const script = ((KAN.test(x) && KATA.test(y)) || (KATA.test(x) && KAN.test(y))) && i - start >= 2 && chars.length - i >= 2;
+      // 独立監査2 2026-11-19 M3：「2026年7〜9月期GDP速報を」が1文節のまま行幅を超え「GDP速｜報」と割れていた。
+      // 漢字→英字の境目（「…月期｜GDP…」）でも折れるようにする（英字→漢字の「GDP｜速報」では折らない）
+      const toLatin = KAN.test(x) && /[A-Za-z]/.test(y) && i - start >= 2 && chars.length - i >= 3;
       // レイアウト監査 2026-11-17：長い文節が行幅を超えて任意位置で割れていた
       // （「『採用の約束』じゃない｜。」「保健指導を｜掌る」「実態調査を読｜む」）。
       // 「：」・閉じ括弧の後、ひらがな→漢字・カタカナの境目（助詞・送り仮名の後）でも折れるようにする。
@@ -94,14 +97,24 @@ export function joinSegments(segments: string[]): string[] {
       const hiraToWord = HIRA.test(x) && !(x === "の" && y === "他") && (KAN.test(y) || KATA.test(y)) && !/[おご]/.test(x) && !(x === "か" && /[0-9０-９]/.test(chars[i - 2] ?? "")) && i - start >= 3 && chars.length - i >= 3 && (openParenLength(chars.slice(start, i).join("")) < 0 || chars.length > 12);
       // 「8年版｜男女共同参画白書」「令和7年分｜民間給与…」「第39回｜介護…」：数字＋助数詞の後で、続く熟語の前に折れ目を置く
       const counterBreak = KAN.test(y) && !/[度目間前後以未超末頭代版生分]/.test(y) && ((/[年回号版分]/.test(x) && /[0-9０-９]/.test(chars[i - 2] ?? "")) || (/[版分]/.test(x) && chars[i - 2] === "年" && /[0-9０-９]/.test(chars[i - 3] ?? ""))) && i - start >= 2 && chars.length - i >= 3;
-      if (after || beforeParen || script || afterColonOrClose || hiraToWord || counterBreak) { expanded.push(chars.slice(start, i).join("")); start = i; }
+      if (after || beforeParen || script || toLatin || afterColonOrClose || hiraToWord || counterBreak) { expanded.push(chars.slice(start, i).join("")); start = i; }
     }
     expanded.push(chars.slice(start).join(""));
   }
   joined.splice(0, joined.length, ...expanded);
   for (const segment of joined) {
     const match = [...segment].length > 9 ? segment.match(/^([^0-9０-９]*[^0-9０-９,.，．%％\s(（「『])([0-9０-９].*)$/) : null;
-    if (match && [...match[1]].length >= 2 && [...match[2]].length >= 3 && openParenLength(match[1]) < 0) split.push(match[1], match[2]);
+    if (match && [...match[1]].length >= 2 && [...match[2]].length >= 3 && openParenLength(match[1]) < 0) { split.push(match[1], match[2]); continue; }
+    // 独立監査2 2026-11-19 M3：前半にも数字がある長い文節（「第3次産業活動指数2026年9月、」）は上の規則で割れず、
+    // 行幅を超えて「9｜月」「月｜、」のように任意位置で割れていた。年の4桁の直前（漢字・かなの後）で折れ目を置く
+    const chars = [...segment];
+    let cut = -1;
+    if (chars.length > 9) {
+      for (let i = 2; i < chars.length - 3; i++) {
+        if (/[一-鿿々ぁ-ゖァ-ヺー]/.test(chars[i - 1]) && /^[0-9０-９]{4}年/.test(chars.slice(i, i + 5).join("")) && openParenLength(chars.slice(0, i).join("")) < 0) { cut = i; break; }
+      }
+    }
+    if (cut > 0) split.push(chars.slice(0, cut).join(""), chars.slice(cut).join(""));
     else split.push(segment);
   }
   // 最後の文節が1〜2文字だけ次の行へ落ちないよう、直前の短い文節とつなぐ（「…を｜読む」対策）

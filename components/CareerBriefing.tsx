@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ArrowRight, BarChart3, BookOpenCheck, Bot, BriefcaseBusiness, GraduationCap, Newspaper, UsersRound } from "lucide-react";
 import { newsItems } from "@/content/editorial";
 import { PhraseText } from "./PhraseTitle";
+import { PhraseChildren } from "./PhraseChildren";
 import { newsTopic } from "@/lib/news-topics";
 
 const hubs = [
@@ -19,7 +20,7 @@ export function CareerBriefing() {
   const availableNewsSlugs = new Set(newsItems.map((item) => item.slug));
   const availableHubs = hubs.filter((hub) => !hub.newsSlug || availableNewsSlugs.has(hub.newsSlug));
   return <section className="career-briefing" aria-labelledby="career-briefing-title">
-    <div className="briefing-head"><div><span className="eyebrow">career intelligence</span><h2 id="career-briefing-title" className="phrase-breaks"><PhraseText text="働く・学ぶを、一次情報から考える。" /></h2><p>大きな見出しだけで判断せず、数字の意味と限界、次に確認する条件まで編集部が整理します。</p></div><Link href="/news/">{lead ? "ニュースをすべて見る" : "公開準備状況を見る"} <ArrowRight aria-hidden="true" /></Link></div>
+    <div className="briefing-head"><div><span className="eyebrow">career intelligence</span><h2 id="career-briefing-title" className="phrase-breaks"><PhraseText text="働く・学ぶを、一次情報から考える。" /></h2><p className="phrase-breaks"><PhraseChildren>大きな見出しだけで判断せず、数字の意味と限界、次に確認する条件まで編集部が整理します。</PhraseChildren></p></div><Link href="/news/">{lead ? "ニュースをすべて見る" : "公開準備状況を見る"} <ArrowRight aria-hidden="true" /></Link></div>
     <div className="briefing-grid">
       {lead
         ? <Link className="briefing-lead" href={`/news/${lead.slug}/`}><span><Newspaper aria-hidden="true" />注目の公式発表</span><small>{newsTopic(lead)}・{lead.publishedAt}</small><h3 className="phrase-breaks"><PhraseText text={lead.title} /></h3><p>{lead.answer}</p><em>解説を読む <ArrowRight aria-hidden="true" /></em></Link>
