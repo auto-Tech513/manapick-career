@@ -4284,3 +4284,8 @@ input, select, textarea { min-width: 0; max-width: 100%; }
    最後の項目（05）が広告の下に入って押せなかった（仮の広告で確認、2026-11-19）。目次の箱を広告の上 16px までに収め、
    入りきらないときだけ箱の中でスクロールする（広告が無いときは従来と同じ高さで収まる） */
 .article-toc { max-height: calc(100vh - var(--sticky-under-header, 96px) - var(--ad-anchor-bottom, 0px) - 16px); overflow-y: auto; overscroll-behavior: contain; }
+
+/* 手動広告枠の配信待ち（2026-11-19）：どの枠も、data-ad-status が付くまでは高さ・余白・線を取らずに待つ（CLS を出さない）。
+   以前は既存の枠が配信待ちの間 112px の空の枠を取り、12秒で自社案内に替えていた。広告そのものは隠さない */
+.ad-shell.is-pending { min-height: 0; margin: 0; border: 0; background: none; }
+.ad-shell.is-pending .ad-slot { min-height: 0; margin-top: 0; }
