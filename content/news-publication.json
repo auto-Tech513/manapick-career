@@ -1086,6 +1086,45 @@
       "reviewedByHumanAt": "2026-11-19",
       "reviewEvidence": "git:a613dce475d77a7a9bce824ac3145492075a85a8",
       "contentSha256": "e608ec6b5f34d0cccda679086e74f5bf5f883e7b35876dd537912e60a7b95ad0"
+    },
+    {
+      "slug": "machinery-orders-september-2026",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "cao-machinery-orders-2026-09",
+      "sourcePublishedAt": "2026-11-19",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "ff373858b2d51cddcd9bc7691465aa30edcba3212101093ede54d601f1cd8469"
+    },
+    {
+      "slug": "domestic-travel-consumption-q3-2026",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "jta-travel-consumption-2026-q3",
+      "sourcePublishedAt": "2026-11-18",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "38ac650fe41c8689b774cae98ac4d47e71d8a6d3deab87ebe86c1447af1fed46"
+    },
+    {
+      "slug": "online-shopping-september-2026",
+      "createdAt": "2026-11-19",
+      "status": "published",
+      "primarySourceId": "stat-online-shopping-2026-09",
+      "sourcePublishedAt": "2026-11-10",
+      "publishedAt": "2026-11-19",
+      "reviewedAt": "2026-11-19",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-19",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "7e5b8d2da9ff5415b5a1ca1f7b9b1f3a745e9212274301294374d9ea095ecfd0"
     }
   ]
 }

@@ -4112,5 +4112,61 @@
   "updateFrequency": "30d",
   "republication": "統計の独自要約と出典リンクのみ",
   "notes": "数値は経済産業省の結果概要（確報）で確認した。業種別の速報段階の内訳（自動車工業・生産用機械工業の上昇）は経済産業省の速報公表資料に基づく。"
+ },
+ {
+  "sourceId": "cao-machinery-orders-2026-09",
+  "provider": "内閣府経済社会総合研究所",
+  "url": "https://www.esri.cao.go.jp/jp/stat/juchu/2026/2609juchu.html",
+  "isPrimary": true,
+  "claims": [
+   "機械受注統計調査2026年9月実績で、船舶・電力を除く民需は1兆662億円、前月比0.3%減（2か月ぶり減少）。基調判断は「持ち直しの動きがみられる」に据え置き",
+   "7〜9月期は3兆1,528億円で前期比1.2%増（4四半期連続プラス）。10〜12月期見通しは3兆2,870億円で4.3%増"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月19日公表。結果の概要PDFと統計表CSV（2609juchu-1.csv）で数値を確認。見通しは2026年9月末時点の調査による。"
+ },
+ {
+  "sourceId": "stat-online-shopping-2026-09",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/joukyou/pdf/n_joukyou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "家計消費状況調査2026年9月分（二人以上の世帯）で、ネットショッピングの支出額は1世帯当たり26,303円、名目0.6%増。利用世帯の割合は54.6%で1.9ポイント低下",
+   "ネットショッピング利用1世帯当たりの支出額は48,213円で4.3%増。旅行関係費が名目8.0%増で支出額の増加に最も寄与"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月10日公表の「ネットショッピングの状況について（2026年9月分結果）」PDFで確認。対象は二人以上の世帯。"
+ },
+ {
+  "sourceId": "jta-travel-consumption-2026-q3",
+  "provider": "観光庁",
+  "url": "https://www.mlit.go.jp/kankocho/news02_00106.html",
+  "isPrimary": true,
+  "claims": [
+   "旅行・観光消費動向調査2026年7-9月期（1次速報）で、日本人の国内旅行消費額は8兆4,354億円、前年同期比4.3%増で過去最高。延べ旅行者数は1億6,046万人で0.5%減",
+   "旅行単価は52,569円で4.9%増。宿泊旅行の消費額は7兆716億円で4.6%増、日帰り旅行は1兆3,639億円で3.1%増"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "quarterly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月18日公表の1次速報。報道発表資料PDFで全数値を確認。2次速報で改定され得る。"
+ },
+ {
+  "sourceId": "jnto-visitors-2026-10",
+  "provider": "日本政府観光局（JNTO）",
+  "url": "https://www.jnto.go.jp/news/press/20261118_monthly.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年10月の訪日外客数（推計値）は3,912,500人で前年同月比0.4%増、単月として過去最高",
+   "韓国は1,035,800人で19.4%増、台湾は634,600人で6.5%増。中国は379,500人で47.0%減と11か月連続の減少"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月18日公表の推計値。法務省の出入国管理統計に基づく算出で、後に暫定値・確定値へ置き換わる。"
  }
 ]

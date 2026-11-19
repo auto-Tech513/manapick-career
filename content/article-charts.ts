@@ -1605,6 +1605,64 @@ export const articleCharts: Record<string, ArticleChart> = {
         "value": 105.4
       }
     ]
+  },
+  "machinery-orders-september-2026": {
+    "title": "機械受注（船舶・電力を除く民需、2026年9月・季節調整済み）",
+    "note": "民間設備投資の先行指標です。内訳は系列ごとに季節調整するため、単純合計は全体と一致しません。",
+    "bars": [
+      {
+        "display": "1兆662億円",
+        "label": "民需（船舶・電力を除く）",
+        "value": 10662
+      },
+      {
+        "display": "5,476億円",
+        "label": "製造業",
+        "value": 5476
+      },
+      {
+        "display": "5,472億円",
+        "label": "非製造業（船舶・電力を除く）",
+        "value": 5472
+      }
+    ]
+  },
+  "online-shopping-september-2026": {
+    "title": "ネットショッピング支出額（2026年9月・二人以上の世帯）",
+    "note": "総務省統計局「家計消費状況調査」による1世帯当たりの月額です。全世帯平均には利用しない世帯も含みます。",
+    "bars": [
+      {
+        "display": "48,213円",
+        "label": "利用世帯の平均",
+        "value": 48213
+      },
+      {
+        "display": "26,303円",
+        "label": "全世帯の平均",
+        "value": 26303
+      }
+    ]
+  },
+  "domestic-travel-consumption-q3-2026": {
+    "title": "国内旅行消費額（2026年7〜9月期）",
+    "note": "観光庁「旅行・観光消費動向調査」1次速報による日本人の国内旅行消費額です。",
+    "bars": [
+      {
+        "display": "8兆4,354億円",
+        "label": "国内旅行消費額",
+        "value": 84354
+      },
+      {
+        "display": "7兆716億円",
+        "label": "宿泊旅行",
+        "value": 70716
+      },
+      {
+        "display": "1兆3,639億円",
+        "label": "日帰り旅行",
+        "value": 13639
+      }
+    ]
   }
 };
 

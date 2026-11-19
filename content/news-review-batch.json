@@ -1,13 +1,13 @@
 {
- "batchId": "news-2026-11-19-expansion-81",
+ "batchId": "news-2026-11-19-expansion-84",
  "preparedAt": "2026-11-19",
- "targetCount": 81,
+ "targetCount": 84,
  "status": "published",
  "publishedAt": "2026-11-19",
  "approvedAt": "2026-11-19",
  "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
- "authorizationNote": "2026-11-19のオーナー指示（評価チーム経由）に基づき、最新の公的統計5件をニュースへ追加する。総務省統計局「労働力調査（詳細集計）2026年7〜9月期平均」（2026年11月10日公表）、内閣府「景気ウォッチャー調査2026年10月調査」（2026年11月10日公表）、内閣府経済社会総合研究所「四半期別GDP速報2026年7〜9月期1次速報値」（2026年11月16日公表）、経済産業省「鉱工業指数2026年9月分確報」（2026年11月16日公表）、経済産業省「第3次産業活動指数2026年9月分」（2026年11月17日公表）について、主要数値を各公表資料の原文（結果の概要PDF・記者公表資料・結果概要ページ）と照合した。出典は官公庁の一次資料のみ。タイトルは読者の関心を引く表現を用いるが、本文の数値と事実は公表値のとおりとする。",
- "reviewDecision": "オーナー指示と既存の運用方針に基づき新規5件を公開し、公開済みは全81件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+ "authorizationNote": "2026-11-19のオーナー指示（評価チーム経由）に基づき、最新の公的統計3件をニュースへ追加する。内閣府経済社会総合研究所「機械受注統計調査2026年9月実績」（2026年11月19日公表）、観光庁「旅行・観光消費動向調査2026年7-9月期1次速報」・日本政府観光局「訪日外客数2026年10月推計値」（いずれも2026年11月18日公表）、総務省統計局「家計消費状況調査 ネットショッピングの状況2026年9月分」（2026年11月10日公表）。",
+ "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全84件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
  "reviewedScope": [
   "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
   "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -36,6 +36,7 @@
   "job-openings-may-2026",
   "digital-skills-standard-v2-2026",
   "manufacturing-midcareer-hiring-2026",
+  "reskilling-support-2026",
   "labor-force-may-2026",
   "labor-market-three-indicators-2026",
   "monthly-earnings-may-2026",
@@ -63,6 +64,7 @@
   "overwork-compensation-2025",
   "ipa-dx-trends-2026",
   "care-worker-exam-39",
+  "labor-force-june-2026",
   "labor-force-august-2026",
   "job-openings-august-2026",
   "monthly-earnings-august-2026",
@@ -87,7 +89,6 @@
   "social-insurance-part-timers-2026",
   "childcare-flexible-work-2026",
   "private-salary-survey-2025",
-  "reskilling-support-2026",
   "income-tax-threshold-2026",
   "labor-force-september-2026",
   "job-openings-september-2026",
@@ -95,7 +96,6 @@
   "monthly-earnings-september-2026",
   "monthly-earnings-june-2026",
   "monthly-earnings-july-2026",
-  "labor-force-june-2026",
   "labor-force-july-2026",
   "job-openings-june-2026",
   "job-openings-july-2026",
@@ -113,18 +113,21 @@
   "economy-watchers-october-2026",
   "gdp-q3-2026-prelim",
   "industrial-production-september-2026-final",
-  "tertiary-industry-september-2026"
+  "tertiary-industry-september-2026",
+  "machinery-orders-september-2026",
+  "domestic-travel-consumption-q3-2026",
+  "online-shopping-september-2026"
  ],
  "previousBatch": {
-  "batchId": "news-2026-11-10-expansion-76",
-  "preparedAt": "2026-11-10",
-  "targetCount": 76,
+  "batchId": "news-2026-11-19-expansion-81",
+  "preparedAt": "2026-11-19",
+  "targetCount": 81,
   "status": "published",
-  "publishedAt": "2026-11-10",
-  "approvedAt": "2026-11-10",
+  "publishedAt": "2026-11-19",
+  "approvedAt": "2026-11-19",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-  "authorizationNote": "2026-11-10に総務省統計局が公表した家計調査報告（2026年9月分）を、速報PDFで主要数値（消費支出289,536円・実質6.8%減、10費目別内訳と寄与度、勤労者世帯の実収入528,074円・実質0.9%増、消費支出の実質10.0%減、平均消費性向72.7%）を原文と照合できたため、ニュース1件を追加で公開する。出典は統計局の一次資料のみ。",
-  "reviewDecision": "運営者の包括指示と既存の運用方針に基づき新規1件を公開し、公開済みは全76件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+  "authorizationNote": "2026-11-19のオーナー指示（評価チーム経由）に基づき、最新の公的統計5件をニュースへ追加する。総務省統計局「労働力調査（詳細集計）2026年7〜9月期平均」（2026年11月10日公表）、内閣府「景気ウォッチャー調査2026年10月調査」（2026年11月10日公表）、内閣府経済社会総合研究所「四半期別GDP速報2026年7〜9月期1次速報値」（2026年11月16日公表）、経済産業省「鉱工業指数2026年9月分確報」（2026年11月16日公表）、経済産業省「第3次産業活動指数2026年9月分」（2026年11月17日公表）について、主要数値を各公表資料の原文（結果の概要PDF・記者公表資料・結果概要ページ）と照合した。出典は官公庁の一次資料のみ。タイトルは読者の関心を引く表現を用いるが、本文の数値と事実は公表値のとおりとする。",
+  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規5件を公開し、公開済みは全81件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
   "reviewedScope": [
    "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
    "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -225,7 +228,12 @@
    "labor-force-detailed-q2-2026",
    "job-changer-survey-2025",
    "manufacturing-workforce-survey-2026",
-   "household-spending-september-2026"
+   "household-spending-september-2026",
+   "labor-force-detailed-q3-2026",
+   "economy-watchers-october-2026",
+   "gdp-q3-2026-prelim",
+   "industrial-production-september-2026-final",
+   "tertiary-industry-september-2026"
   ]
  }
 }
