@@ -110,7 +110,8 @@
   border-radius: 12px;
   background: #fff;
   padding: 12px 14px;
-  font-size: 14.5px;
+  /* 独立監査2 2026-11-19 M7：要点・本文の箇条は本文なので 16px（14.5px だった） */
+  font-size: 16px;
   line-height: 1.8;
 }
 .editorial-detail .article-key-points li svg,
@@ -300,3 +301,8 @@
 
 /* 独立監査 2026-11-18 M4：記事の目次（SP の開閉式）のリンクが 35px だった → 44px */
 .mobile-article-toc a { min-height: 44px; align-items: center; }
+
+/* 独立監査2 2026-11-19 L5：記事末の紺地の枠（MANAPICK NETWORK など）の小見出しが、記事本文用の暗い黄土色（--ca-ink）に上書きされて
+   紺地でほぼ読めなかった → 紺地の枠ではテーマの黄色に戻す。各リンクの説明は1行で「…」省略されていた → 2行まで見せる */
+.editorial-detail .related-careers .article-section-number { color: var(--primary); }
+.editorial-detail .related-careers > div > a small { overflow: hidden; white-space: normal; text-overflow: clip; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }

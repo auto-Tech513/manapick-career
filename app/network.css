@@ -769,3 +769,31 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
 @media(max-width:640px){
   .spbar{bottom:calc(10px + env(safe-area-inset-bottom) + var(--ad-anchor-bottom))}
 }
+
+/* ============================================================
+   独立監査2 2026-11-19（career）M5：44px 未満の押せる部品（見た目は変えず、当たり判定を広げる）
+   ============================================================ */
+/* フッターのメルマガ注記「プライバシーポリシー」：行の高さ1（13px）＋上下 13px で 39px だった（#252 の 44px は未達）→ 上下 16px で 45px。
+   前後の文字の上に当たり判定が来るよう重なり順を上げる */
+.foot .newsletter-form-note a{position:relative;z-index:1;padding:16px 2px;margin:-16px -2px}
+.foot .newsletter-form-note a::after{content:none}
+/* PC ヘッダーのボタン（42px） */
+.hd-btn{height:44px}
+/* PC の駅レール（高さ 40px の帯）：帯の高さは変えず、各駅の当たり判定を下へ 6px 広げて 46px に（帯はヘッダーより手前の重なり順） */
+@media(min-width:641px){
+  .rail-s::after{content:"";position:absolute;left:0;right:0;top:0;bottom:-6px}
+}
+
+/* L10 PC：駅レールが画面の左端（24px）から始まり、中央にそろえた本文・ヘッダー（1920px で 360px）とずれていた → ヘッダーと同じ左端に */
+@media(min-width:1025px){
+  .rail{padding-left:max(24px,calc(50% - 600px));padding-right:max(24px,calc(50% - 600px))}
+}
+/* L6 SP フッター：注記の「（」が行末に残り「プライバシーポリシー）」が次の行へ → 括弧ごと1かたまり（NewsletterForm の .nw）。
+   最下段のリンクは flex の折り返しで「お問い合わせ」だけが2行目に落ちていた → SP は3列にそろえ、© は次の行に */
+.newsletter-form-note .nw{white-space:nowrap}
+@media(max-width:640px){
+  .foot .route-legal{display:grid;grid-template-columns:repeat(3,max-content);justify-content:start;column-gap:22px;row-gap:0}
+  .foot .route-legal span{grid-column:1/-1}
+}
+/* M5 パンくず：見た目 24px＋上下 10px の広げで当たり判定が 43〜44px ちょうどだった → 上下 11px（46px）、幅の短い「トップ」も左右 5px 広げる */
+.crumb a::after{inset:-11px -5px}

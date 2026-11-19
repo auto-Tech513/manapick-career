@@ -10,6 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Resvg } from "@resvg/resvg-js";
 import { layoutOgTitle } from "./lib/og-title-layout.mjs";
+import { newsTopicFor } from "./lib/news-topic-map.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputRoot = process.env.OG_OUTPUT_DIR
@@ -284,7 +285,8 @@ const newsWithPublication = [...baseNews, ...expanded]
     return {
       slug: item.slug,
       title: item.title,
-      label: item.label ?? item.kind,
+      // 記事カバー（OG）の札も表示用の7分類で描く（独立監査2 2026-11-19 M1）。記事データの kind は変えない
+      label: newsTopicFor(item.slug, item.label ?? item.kind),
       date: publication.publishedAt ?? publication.createdAt,
     };
   });

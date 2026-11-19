@@ -1001,3 +1001,22 @@
   main:has(> .town-hero) > .town-stats { max-width: 1200px; }
   main:has(> .town-hero) > .town-hero { padding-left: 40px; }
 }
+
+/* ============================================================
+   独立監査2 2026-11-19（career）
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* L3 ヒーローの右欄（190px）が内容の右端（左右 40px）を越えて画面の端まで伸び、黄色の「3つの質問」箱が右端より 14px 外に出て、
+     地図の「ITの現場」カード（地図の幅を越えて右欄へはみ出していた）に重なっていた。
+     右欄を内容の右端（40px 内側）で止め、カードは地図の右端から位置を決める（app/page.tsx） */
+  .town-hero { grid-template-columns: 560px minmax(0, 1fr) 204px; }
+  .town-side { padding-right: 40px; }
+  /* L2「働く・学ぶを、一次情報から考える。」の7つの入口：2列の格子で最後の段が1枚だけになり、各カード（高さ約158px）に空きが多かった → 1列の一覧に */
+  .career-briefing .briefing-hubs { grid-template-columns: minmax(0, 1fr); }
+  .career-briefing .briefing-hubs > a { min-height: 64px; }
+}
+
+/* M5 SP トップの検索ボタン（40px）→ 44px（検索欄の外枠 56px の中に収まる） */
+@media (max-width: 640px) {
+  .town-hero .home-search button { height: 44px; }
+}

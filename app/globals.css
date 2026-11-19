@@ -4221,10 +4221,49 @@ input, select, textarea { min-width: 0; max-width: 100%; }
   .skill-jobs { row-gap: 0; }
   /* 写真の列を狭くした分、本文の1行が62字に伸びた → 45字以内に */
   .career-shop-card-body > .career-shop-reason, .career-shop-points, .career-shop-method > p, .info-page .prose li, .income-rank-names { max-width: 45em; }
-  /* ニュース一覧の先頭カードの画像（幅が広がって 416px の高さ）を 360px までに */
-  .article-card-lead .article-card-media img { max-height: 360px; object-fit: cover; }
+  /* ニュース一覧の先頭カードの画像：以前は高さを 360px までにしていたが、枠（1200:630）より画像が低くなって上端が切れ、
+     下に約55pxの空きが出ていた（独立監査2 2026-11-19 M2）→ 画像は枠と同じ比率のまま全体を見せる */
+  .article-card-lead .article-card-media img { max-height: none; object-fit: cover; }
 }
 .income-method-panel ul { margin: 6px 0 0; padding-left: 1.1em; }
 .income-method-panel ul a { display: inline-flex; align-items: center; min-height: 44px; color: var(--primary-aa); font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
 /* L6 年収ランキングの同額の職業名の列挙：職業名の途中で折れていた → 名前ごとに折る */
 .income-rank-names .nm { display: inline-block; }
+
+/* ============================================================
+   独立監査2 2026-11-19（career）
+   ============================================================ */
+/* H1 追従（sticky）する目次・右欄の上端：固定ヘッダー（70px）の下に潜らない位置を1つの変数にまとめる。
+   SP で上端のアンカー広告が出ているときはヘッダーがその高さだけ下がる（--ad-anchor-top、network.css）ので、同じだけ下げる */
+:root { --sticky-under-header: calc(96px + var(--ad-anchor-top, 0px)); }
+.article-toc,
+.occupation-detail-side { top: var(--sticky-under-header); }
+.detail-aside { top: calc(110px + var(--ad-anchor-top, 0px)); }
+@media (min-width: 900px) {
+  .sim-result { top: calc(84px + var(--ad-anchor-top, 0px)); }
+}
+
+/* M2 ニュース一覧の先頭カード：「注目解説」の札を本文側へ移し、分類の札と横に並べる */
+.article-card-tags { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.article-card-tags .article-card-lead-badge { position: static; }
+
+/* M4 手動の広告枠で広告が届かなかったとき：空の広告の高さ（90px）を畳み、自社案内だけを空白なしで出す。
+   広告の枠（ins）・数・位置・読み込み処理は変えない（広告が届けば is-filled になり、元の高さに戻る） */
+.ad-shell.is-unfilled,
+.ad-shell.is-optimized { min-height: 0; }
+.ad-shell.is-unfilled .ad-slot,
+.ad-shell.is-optimized .ad-slot { min-height: 0; margin-top: 0; }
+.ad-shell.is-unfilled .ad-fallback,
+.ad-shell.is-optimized .ad-fallback { min-height: 0; padding: 2.1rem 1rem 1rem; background: transparent; }
+/* ↑ 地色は枠（.ad-shell）の白に任せる。SP は枠が overflow:visible のため、自社案内の四角い白地が枠の角丸の外に出ていた */
+.ad-fallback strong { font-size: .875rem; line-height: 1.6; }
+.ad-fallback b { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 1rem; }
+
+/* M5 44px 未満の押せる部品：見た目の大きさは変えず、押せる範囲（当たり判定）を 44px 以上に広げる */
+/* （フッター・ヘッダー・駅レールの分は network.css の末尾。network.css が後から読み込まれるため） */
+/* 記事内・/route/ のフォームの注記の文中リンク（高さ 18px） */
+.newsletter-form-note a { position: relative; }
+.newsletter-form-note a::after { content: ""; position: absolute; inset: -14px -2px; }
+/* 記事末の共有ボタン（40px） */
+.career-share-actions a,
+.career-share-actions button { min-height: 44px; }

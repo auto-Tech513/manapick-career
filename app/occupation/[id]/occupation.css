@@ -611,7 +611,8 @@
   font-size: 13px;
 }
 .occ-faq-a p {
-  font-size: 14.5px;
+  /* 独立監査2 2026-11-19 M7：「よくある確認」の答えは本文なので 16px（14.5px だった） */
+  font-size: 16px;
   line-height: 1.9;
   color: var(--occ-ink2);
   margin: 0;
@@ -882,3 +883,31 @@
 
 /* 独立監査 2026-11-18 M4：「計算方法と統計の対象」の開閉が 32px だった → 44px */
 .occ-method summary { min-height: 44px; }
+
+/* ============================================================
+   独立監査2 2026-11-19（career）
+   ============================================================ */
+/* H1 PC：目次と右欄が top:20px で追従し、固定ヘッダー（70px）の下に 50px 潜っていた → ガイドと同じ位置（--sticky-under-header：96px＋上端のアンカー広告の高さ） */
+@media (min-width: 1025px) {
+  .occ-toc,
+  .occ-side { top: var(--sticky-under-header, 96px); }
+}
+
+/* M5 押せる範囲を 44px 以上に（見た目の大きさは変えない） */
+/* 章内リンク（仕事内容・必要な資格…）：見た目 34px。広げ（::after）は枠線 2px の内側から測られるため、上下 5px の指定では実際は 3px ずつで 39px だった → 上下 8px（実質 6px ずつで 46px） */
+.occ-chips a::after { inset: -8px -2px; }
+/* SP で2段に折り返すと段の間が 8px（34＋8＝42px 間隔）で、下の段の当たり判定が上の段に重なり 41px になっていた → 段の間を 12px に */
+.occ-chips { row-gap: 12px; }
+/* 関連資格のチップ：押せるのは中の文字（27px）だけだった → チップ（40px）全体＋上下 2px を押せる範囲に */
+.occ-qlist li { position: relative; }
+.occ-qlist a::after { content: ""; position: absolute; inset: -2px 0; }
+/* 「企業例のある職業の一覧」などの一覧リンク（26px）：上下 10px 広げて 46px に */
+.occ-more-links a { position: relative; }
+.occ-more-links a::after { content: ""; position: absolute; inset: -10px -4px; }
+
+/* L4 PC：職業ページだけ外側の枠（.occupation-article）にも左右 3vw の余白があり、本文の左端が 78px（ヘッダー・他のテンプレートは 40px）だった → PC は外側の余白を0にして 40px にそろえる */
+@media (min-width: 1025px) {
+  div.occupation-article { padding-left: 0; padding-right: 0; }
+}
+/* M5 パンくず：上下 10px の広げで 43〜44px ちょうどだった → 11px */
+.occ-crumb a::after { inset: -11px -5px; }

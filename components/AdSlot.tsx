@@ -55,6 +55,8 @@ export function AdSlot({ label = "広告", placement = "editorial-after-section-
   return <aside className={`ad-shell is-${state}`} aria-label={label} data-ad-placement={placement} data-ad-state={state}>
     <small className="ad-label">{label}</small>
     <ins ref={slotRef} className="adsbygoogle ad-slot" style={{ display: "block" }} data-ad-client={client} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true" />
-    {(state === "unfilled" || state === "optimized") && <Link className="ad-fallback" href="/shop/"><ShoppingBag aria-hidden="true" /><span><strong>学習・仕事の道具を用途から確認</strong><small>広告が未配信のため、manapi商店の自社案内を表示しています</small></span><b>商店へ</b></Link>}
+    {/* 独立監査2 2026-11-19 M4：未配信時の制作向けの説明文（「広告が未配信のため…表示しています」）は表示しない（オーナー指示）。
+        空の枠の高さは globals.css で畳み、自社案内だけを出す */}
+    {(state === "unfilled" || state === "optimized") && <Link className="ad-fallback" href="/shop/"><ShoppingBag aria-hidden="true" /><span><strong>学習・仕事の道具を用途から確認</strong></span><b>商店へ</b></Link>}
   </aside>;
 }
