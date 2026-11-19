@@ -80,7 +80,7 @@ export default function NetworkFooter() {
         </div>
 
         <p className="foot-note">職業理解と学びの入口のための一般的な情報です。適性・採用可能性・収入・合格は保証せず、求人や職業紹介は行いません。一部に広告・PRを含みます。</p>
-        <div className="route-legal">
+        <div className="route-legal google-anno-skip">
           <Link href="/about-method/">作成方法</Link>
           <Link href="/operator/">運営者</Link>
           <Link href="/privacy/">プライバシー</Link>

@@ -1540,7 +1540,7 @@ export const articleCharts: Record<string, ArticleChart> = {
   },
   "gdp-q3-2026-prelim": {
     "title": "2026年7〜9月期の主な需要項目（実質・前期比）",
-    "note": "1次速報値です。実質GDP全体は前期比0.0%（年率換算0.1%減）でした。",
+    "note": "1次速報値です。実質GDP全体は前期比0.0%減（年率換算0.1%減）でした。",
     "bars": [
       {
         "display": "2.5%",

@@ -149,26 +149,15 @@ function renderFigureSvg(label, { figure, caption }) {
 </svg>`;
 }
 
-// 1行に収まる字数で切る（全角1・半角0.55で数える）
-function clip(text, max) {
-  let width = 0;
-  let out = "";
-  for (const ch of text) {
-    width += ch.charCodeAt(0) > 255 ? 1 : 0.55;
-    if (width > max) return `${out}…`;
-    out += ch;
-  }
-  return out;
-}
-
-// ニュースの要点行は scripts/lib/card-figure.mjs の clipLine で切る（数値・増減語の途中では切らない）。
-function renderStampSvg(label, glyph, points = [], clipText = clip) {
+// 要点行は scripts/lib/card-figure.mjs の clipLine で切る（数値・増減語の途中では切らない）。
+// 以前はガイドだけ単純な字数切りで、「平成27…」「3年または4…」「離職票（－…」のように数値の途中で切れていた（2026-11-19）。
+function renderStampSvg(label, glyph, points = []) {
   const isLatin = glyph.length > 1;
   const glyphSize = isLatin ? 92 : 128;
   const lines = points.slice(0, 3).map((point, i) => {
     const y = 158 + i * 64;
     return `<rect x="304" y="${y - 22}" width="10" height="28" fill="${i === 0 ? YELLOW : INK}"/>
-  <text x="328" y="${y}" fill="${INK}" font-family="${fontFamily}" font-size="25" font-weight="700">${escapeXml(clipText(point, 15))}</text>`;
+  <text x="328" y="${y}" fill="${INK}" font-family="${fontFamily}" font-size="25" font-weight="700">${escapeXml(clipLine(point, 15))}</text>`;
   }).join("\n");
   const decor = `<rect x="330" y="150" width="330" height="16" fill="${INK}"/>
   <rect x="330" y="196" width="264" height="16" fill="${INK}" opacity="0.55"/>
@@ -191,7 +180,7 @@ function render(item) {
     svg = renderChartSvg(item.label, bars);
   } else if (item.kind === "news") {
     const figure = extractFigure(newsAnswerBySlug.get(item.slug) ?? "", item.slug);
-    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug), clipLine);
+    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
   } else {
     svg = renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
   }

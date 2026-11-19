@@ -28,7 +28,7 @@ export function HomeSearch({ items }: { items: HomeSearchItem[] }) {
   }, [open ]);
 
   return (
-    <div className="home-search-wrap sg-wrap" ref={wrapRef} onBlur={(event) => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setOpen(false); }}>
+    <div className="home-search-wrap sg-wrap google-anno-skip" ref={wrapRef} onBlur={(event) => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setOpen(false); }}>
       <form className="home-search" action="/all/#catalog-title" method="get" role="search">
         <label className="sr-only" htmlFor="home-job-search">職業名・別名で検索</label>
         <Search aria-hidden="true" />

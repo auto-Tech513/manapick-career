@@ -775,6 +775,15 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
    最下段の下に足し、暗いフッターの中で広告の上に出す（本家 PR #31・politics PR #23・company PR #21 と同じ求め方） */
 :root{--ad-anchor-bottom-cover:0px}
 .foot .route-legal{margin-bottom:var(--ad-anchor-bottom-cover)}
+/* フッターの下の明るい帯（2026-11-19）：AdSense が body に付ける下余白（PC 154px）は body の地の色のままで、
+   暗いフッターの下、広告の左右に明るい帯として見えていた。余白と同じ太さの暗い下線をフッターに付け、同じ分だけ負の下余白で
+   引き戻す（ページの長さと最下段の位置は変わらない。politics PR #23 と同じく、フッターの暗い地を AdSense の余白の上まで伸ばす）。
+   値は AdSenseScript が入れる --ad-anchor-bottom-pad（下端のアンカー広告があるときの body の下余白。無ければ 0） */
+:root{--ad-anchor-bottom-pad:0px}
+.foot.route{border-bottom:var(--ad-anchor-bottom-pad) solid var(--night);margin-bottom:calc(-1 * var(--ad-anchor-bottom-pad))}
+/* SP の乗り換えシート：高さ 82dvh のまま下端に置くと、上端のアンカー広告（390px 幅で 427px）があるときに
+   見出しと「閉じる」が広告の下に入っていた（仮の広告で確認、2026-11-19）。上下の広告の分を除いた高さに収め、中身はシートの中でスクロール */
+.xfer-sheet{max-height:min(82dvh,calc(100dvh - var(--ad-anchor-top) - var(--ad-anchor-bottom) - 16px))}
 
 /* ============================================================
    独立監査2 2026-11-19（career）M5：44px 未満の押せる部品（見た目は変えず、当たり判定を広げる）

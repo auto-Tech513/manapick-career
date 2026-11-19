@@ -3,6 +3,7 @@ import { careerCard } from "@/lib/career-card";
 import Link from "next/link";
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
+import { AdSlot } from "@/components/AdSlot";
 import { CareerBriefing } from "@/components/CareerBriefing";
 import { DailyCareerLoop } from "@/components/DailyCareerLoop";
 import { EditorialPreview } from "@/components/EditorialPreview";
@@ -146,6 +147,9 @@ export default function Home() {
 
       <ProfessionalEntries />
       <CareerBriefing />
+      {/* 追加の手動広告枠（オーナー判断 2026-11-19 14:38：ヘッダー等から外した広告の分を補う）。
+          CareerBriefing（7つの入口）と DailyCareerLoop の間。配信されるまで高さを取らず、未配信なら畳む */}
+      <div className="home-ad"><AdSlot slot="1438236565" fold placement="home-after-briefing" /></div>
       <DailyCareerLoop latestNews={publishedNews[0]} />
       <div id="jobs" className="scroll-anchor" />
       <CareerExplorer jobs={publishedJobs.map(careerCard)} categories={categories.map(x => ({ ...x }))} />
