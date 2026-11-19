@@ -1023,7 +1023,8 @@
 
 /* 追加の手動広告枠（トップ。AdSlot の fold：配信されるまで高さ 0、未配信なら畳む） */
 .home-ad { padding: 0 36px; }
-.home-ad .ad-shell.is-filled { margin: 24px 0 0; }
+.home-ad .ad-shell.is-filled,
+.home-ad .ad-shell.is-optimized { margin: 24px 0 0; }
 @media (max-width: 640px) {
   .home-ad { padding: 0 14px; }
 }

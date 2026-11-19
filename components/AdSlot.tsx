@@ -17,6 +17,10 @@ type AdState = "pending" | "filled" | "optimized" | "unfilled";
  * - 追加の枠（fold あり。オーナー判断 2026-11-19 14:38：外した広告の分を手動枠で補う）：
  *   本家の汎用レスポンシブユニット（slot="1438236565"）などを指定して使う。配信されるまでは高さを取らず（CLS を出さない）、
  *   filled になってから「広告」の札と余白を付ける。未配信のときは枠ごと畳み、空白も自社案内も残さない。
+ * - AdSense が最適化した未配信枠（data-ad-status="unfill-optimized"、state は optimized）：どの枠も filled と同じ枠・「広告」の札で
+ *   ins を表示し、自社案内に替えない・畳まない。この状態は AdSense が「空のページ内広告を埋める」設定で、ページに関連する候補
+ *   （「詳細を見る」など）を出して未配信枠の収益を確保しようとしているもの（公式ヘルプ answer/10762946・16302564。本家 PR #33 と同じ扱い、
+ *   2026-11-19）。中身に広告の印が付かず本文のリンクと見分けにくいため、札は必ず出す。畳む（自社案内に替える）のは unfilled のときだけ。
  */
 export function AdSlot({ label = "広告", placement = "editorial-after-section-2", unit = "article", slot: fixedSlot, fold = false }: { label?: string; placement?: string; unit?: "article" | "career"; slot?: string; fold?: boolean }) {
   const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT?.trim() || DEFAULT_CLIENT;
@@ -65,10 +69,10 @@ export function AdSlot({ label = "広告", placement = "editorial-after-section-
   }, [placement, slot]);
 
   return <aside className={`ad-shell is-${state}${fold ? " ad-shell--fold" : ""}`} aria-label={label} data-ad-placement={placement} data-ad-state={state}>
-    {state !== "pending" && (!fold || state === "filled") && <small className="ad-label">{label}</small>}
+    {state !== "pending" && (!fold || state === "filled" || state === "optimized") && <small className="ad-label">{label}</small>}
     <ins ref={slotRef} className="adsbygoogle ad-slot" style={{ display: "block" }} data-ad-client={client} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true" />
     {/* 独立監査2 2026-11-19 M4：未配信時の制作向けの説明文（「広告が未配信のため…表示しています」）は表示しない（オーナー指示）。
         空の枠の高さは globals.css で畳み、自社案内だけを出す */}
-    {!fold && (state === "unfilled" || state === "optimized") && <Link className="ad-fallback" href="/shop/"><ShoppingBag aria-hidden="true" /><span><strong>学習・仕事の道具を用途から確認</strong></span><b>商店へ</b></Link>}
+    {!fold && state === "unfilled" && <Link className="ad-fallback" href="/shop/"><ShoppingBag aria-hidden="true" /><span><strong>学習・仕事の道具を用途から確認</strong></span><b>商店へ</b></Link>}
   </aside>;
 }
