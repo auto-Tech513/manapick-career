@@ -12,6 +12,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Resvg } from "@resvg/resvg-js";
 import { newsTopicFor } from "./lib/news-topic-map.mjs";
+import { clipLine, extractFigure } from "./lib/card-figure.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputRoot = path.join(root, "public/card");
@@ -95,47 +96,7 @@ function escapeXml(text) {
   return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-// 答えの文から見出し数値と、その直前の句（キャプション）を抜く。
-// キャプションは本文の逐語部分文字列でなければならない（言い換えをしない）。
-// 途中で切れて語句が壊れる場合は数値カードにせず、スタンプ型に落とす。
-const FIGURE_OVERRIDES = {
-  // 答えの冒頭に「事業所規模5人以上」が来て自動抽出がずれるため、見出し数値を手で指定（どちらも本文の逐語）
-  "monthly-earnings-august-2026": { figure: "311,364円", caption: "現金給与総額" },
-  // 最初の％が前年比の増減で見出しに不向きなため、死亡者数を指定（どちらも本文の逐語）
-  "workplace-accidents-latest": { figure: "700人", caption: "死亡者数" },
-};
-// 自動抽出の数値が見出しとして弱い記事はスタンプ型にする
-const FIGURE_SKIP = new Set(["employment-whitepaper-2026"]);
-
-function captionSegment(answer, index) {
-  const before = answer.slice(0, index);
-  const start = Math.max(before.lastIndexOf("。"), before.lastIndexOf("、")) + 1;
-  return before
-    .slice(start)
-    .replace(/^(結論として|つまり|なお|また|一方|具体的には)/, "")
-    .trim()
-    .replace(/(は|が|の|を|に|へ|と|で|も)$/, "");
-}
-
-function extractFigure(answer, slug) {
-  if (!answer) return null;
-  if (FIGURE_SKIP.has(slug)) return null;
-  if (FIGURE_OVERRIDES[slug]) return FIGURE_OVERRIDES[slug];
-  // 第一優先: 円・％・倍（金額と割合は見出しとして意味が立つ）
-  const primary = answer.match(/[0-9][0-9,]*\.?[0-9]*\s*(?:円|％|%|倍)/);
-  if (primary) {
-    const caption = captionSegment(answer, primary.index);
-    if (caption.length >= 3 && caption.length <= 20) return { figure: primary[0].replace(/\s+/g, ""), caption };
-    return null;
-  }
-  // 第二優先: 人・件・時間・ポイント（キャプションが十分ある場合だけ）
-  const secondary = answer.match(/[0-9][0-9,]*\.?[0-9]*\s*(?:人|件|時間|ポイント)/);
-  if (secondary) {
-    const caption = captionSegment(answer, secondary.index);
-    if (caption.length >= 4 && caption.length <= 20) return { figure: secondary[0].replace(/\s+/g, ""), caption };
-  }
-  return null;
-}
+// 答えの文から見出し数値とキャプションを抜く規則は scripts/lib/card-figure.mjs（増減語・符号も数値の一部として抜く）。
 
 function chip(label) {
   const width = 44 + [...label].length * 24;
@@ -200,13 +161,14 @@ function clip(text, max) {
   return out;
 }
 
-function renderStampSvg(label, glyph, points = []) {
+// ニュースの要点行は scripts/lib/card-figure.mjs の clipLine で切る（数値・増減語の途中では切らない）。
+function renderStampSvg(label, glyph, points = [], clipText = clip) {
   const isLatin = glyph.length > 1;
   const glyphSize = isLatin ? 92 : 128;
   const lines = points.slice(0, 3).map((point, i) => {
     const y = 158 + i * 64;
     return `<rect x="304" y="${y - 22}" width="10" height="28" fill="${i === 0 ? YELLOW : INK}"/>
-  <text x="328" y="${y}" fill="${INK}" font-family="${fontFamily}" font-size="25" font-weight="700">${escapeXml(clip(point, 15))}</text>`;
+  <text x="328" y="${y}" fill="${INK}" font-family="${fontFamily}" font-size="25" font-weight="700">${escapeXml(clipText(point, 15))}</text>`;
   }).join("\n");
   const decor = `<rect x="330" y="150" width="330" height="16" fill="${INK}"/>
   <rect x="330" y="196" width="264" height="16" fill="${INK}" opacity="0.55"/>
@@ -229,7 +191,7 @@ function render(item) {
     svg = renderChartSvg(item.label, bars);
   } else if (item.kind === "news") {
     const figure = extractFigure(newsAnswerBySlug.get(item.slug) ?? "", item.slug);
-    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
+    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug), clipLine);
   } else {
     svg = renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
   }
