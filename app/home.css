@@ -1020,3 +1020,13 @@
 @media (max-width: 640px) {
   .town-hero .home-search button { height: 44px; }
 }
+
+/* 追加の手動広告枠（トップ。AdSlot の fold：配信されるまで高さ 0、未配信なら畳む） */
+.home-ad { padding: 0 36px; }
+.home-ad .ad-shell.is-filled { margin: 24px 0 0; }
+@media (max-width: 640px) {
+  .home-ad { padding: 0 14px; }
+}
+@media (min-width: 1025px) {
+  main:has(> .town-hero) > .home-ad { padding-left: 40px; padding-right: 40px; }
+}

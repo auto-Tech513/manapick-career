@@ -4274,3 +4274,13 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 /* 記事末の共有ボタン（40px） */
 .career-share-actions a,
 .career-share-actions button { min-height: 44px; }
+
+/* 追加の手動広告枠（AdSlot の fold。オーナー判断 2026-11-19 14:38：外した広告の分を手動枠で補う）。
+   配信されるまでは枠の高さ・余白・線を取らず（CLS を出さない）、filled になってから既存の枠と同じ見た目になる。
+   未配信（unfilled・unfill-optimized）のときも同じく高さ 0 のまま畳み、空白を残さない。広告そのものは隠さない */
+.ad-shell--fold:not(.is-filled) { min-height: 0; margin: 0; border: 0; background: none; }
+.ad-shell--fold:not(.is-filled) .ad-slot { min-height: 0; margin-top: 0; }
+/* PC 記事の追従する目次：目次の高さ（約560px）が「画面 − ヘッダー − 下端のアンカー広告（275px）」より高く、
+   最後の項目（05）が広告の下に入って押せなかった（仮の広告で確認、2026-11-19）。目次の箱を広告の上 16px までに収め、
+   入りきらないときだけ箱の中でスクロールする（広告が無いときは従来と同じ高さで収まる） */
+.article-toc { max-height: calc(100vh - var(--sticky-under-header, 96px) - var(--ad-anchor-bottom, 0px) - 16px); overflow-y: auto; overscroll-behavior: contain; }

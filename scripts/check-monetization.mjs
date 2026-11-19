@@ -10,6 +10,7 @@ const editorialArticle = fs.readFileSync("components/EditorialArticle.tsx", "utf
 const careerPage = fs.readFileSync("app/career/[slug]/page.tsx", "utf8");
 const professionalCareerPage = fs.readFileSync("components/ProfessionalCareerPage.tsx", "utf8");
 const occupationPage = fs.readFileSync("app/occupation/[id]/page.tsx", "utf8");
+const homePage = fs.readFileSync("app/page.tsx", "utf8");
 const layout = fs.readFileSync("app/layout.tsx", "utf8");
 const globalCss = fs.readFileSync("app/globals.css", "utf8");
 const headers = fs.readFileSync("public/_headers", "utf8");
@@ -46,6 +47,16 @@ if (!adSlot.includes('data-ad-status') || !adSlot.includes('state === "unfilled"
 if (/\.ad-slot\[data-ad-status=[^\]]+\][^{]*\{[^}]*display\s*:\s*none/is.test(globalCss)) failures.push("未充填広告を独自CSSで非表示にしている");
 if (!editorialArticle.includes("index === 1 && <AdSlot")) failures.push("広告枠が本文2番目のセクション後に限定されていない");
 if (!editorialArticle.includes("<AdSenseScript />")) failures.push("長文記事にAdSense scriptがない");
+// 追加の手動枠（オーナー判断 2026-11-19 14:38：デザインを壊す広告を外した分を手動枠で補う）。
+// 本家の汎用レスポンシブユニット 1438236565 を fold（配信まで高さ 0・未配信なら畳む）で、記事の最後の節の後（5節以上）とトップの1か所だけに置く
+const EXTRA_SLOT = "1438236565";
+if (!/index === sections\.length - 1 && sections\.length >= 5 && <AdSlot slot="1438236565" fold /.test(editorialArticle)) failures.push("記事の追加広告枠が最後の節の後（5節以上の記事だけ）でない");
+if ((editorialArticle.match(/<AdSlot\b/g) ?? []).length !== 2) failures.push("記事の広告枠が2つでない");
+{
+  const slots = (homePage.match(/<AdSlot\b/g) ?? []).length;
+  if (slots !== 1) failures.push(`トップの広告枠が1つでない: ${slots}`);
+  if (!homePage.includes(`<AdSlot slot="${EXTRA_SLOT}" fold placement="home-after-briefing" />`)) failures.push("トップの広告枠が指定位置・指定ユニットでない");
+}
 for (const [label, source] of [["職業ページ", careerPage], ["専門職ページ", professionalCareerPage]]) {
   const slots = (source.match(/<AdSlot\b/g) ?? []).length;
   if (slots !== 1) failures.push(`${label}の広告枠が1つでない: ${slots}`);
@@ -65,11 +76,12 @@ for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googl
 
 const unexpectedAdImports = [...walk("app"), ...walk("components")]
   .filter((file) => /\.(?:tsx|ts)$/.test(file))
-  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx") && !file.endsWith("app/occupation/[id]/page.tsx"))
-  // AdSense 自動広告のスクリプトは全ページ（app/layout.tsx）で読み込む（オーナー決定 2026-11-18 22:32）。手動の広告枠 AdSlot は従来の3か所だけ
+  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx") && !file.endsWith("app/occupation/[id]/page.tsx") && file !== path.join("app", "page.tsx"))
+  // AdSense 自動広告のスクリプトは全ページ（app/layout.tsx）で読み込む（オーナー決定 2026-11-18 22:32）。手動の広告枠 AdSlot は従来の3か所と、
+  // 2026-11-19 14:38 のオーナー判断で足したトップ（app/page.tsx）・記事の最後の節の後だけ
   .filter((file) => file.endsWith("app/layout.tsx") ? /AdSlot/.test(fs.readFileSync(file, "utf8")) : /(?:AdSenseScript|AdSlot)/.test(fs.readFileSync(file, "utf8")));
 if (!layout.includes("<AdSenseScript/>") && !layout.includes("<AdSenseScript />")) failures.push("全ページ用のAdSense script（layout）がない");
 if (unexpectedAdImports.length) failures.push(`広告が承認外ページへ混入: ${unexpectedAdImports.join(", ")}`);
 
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
-console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} slots are articles+career+occupation only; auto ads script on all pages`);
+console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} slots are articles(+${EXTRA_SLOT} after last section)+career+occupation+home(${EXTRA_SLOT}) only; auto ads script on all pages`);

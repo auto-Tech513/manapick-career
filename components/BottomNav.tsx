@@ -33,7 +33,7 @@ export function BottomNav() {
 
   return (
     <>
-      <nav className="spbar" aria-label="スマホ主要ナビゲーション">
+      <nav className="spbar google-anno-skip" aria-label="スマホ主要ナビゲーション">
         {links.map((item) => {
           const Icon = item.icon;
           const active =
@@ -73,7 +73,7 @@ export function BottomNav() {
       </nav>
       {sheetOpen ? (
         <div
-          className="xfer-sheet-backdrop"
+          className="xfer-sheet-backdrop google-anno-skip"
           onClick={() => setSheetOpen(false)}
         >
           <div

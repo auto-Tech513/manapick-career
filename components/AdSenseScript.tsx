@@ -54,6 +54,9 @@ function watchAdAnchors() {
     root.style.setProperty("--ad-anchor-top", `${top}px`);
     root.style.setProperty("--ad-anchor-bottom", `${bottom}px`);
     root.style.setProperty("--ad-anchor-bottom-cover", `${cover}px`);
+    // AdSense が body に付けた下余白そのもの（下端のアンカー広告があるときだけ。無ければ 0）。
+    // network.css がこの分だけフッターの暗い地を下へ伸ばし、余白の地の色（明るい帯）が見えないようにする（politics PR #23 と同じ考え方）
+    root.style.setProperty("--ad-anchor-bottom-pad", `${Math.round(bodyPad)}px`);
   }
 
   new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
@@ -76,6 +79,9 @@ export function AdSenseScript() {
     script.id = "manapick-career-adsense";
     script.async = true;
     script.crossOrigin = "anonymous";
+    // アンカー広告は画面の下端だけに出す（AdSense 公式ヘルプ answer/7478225 の data-overlays="bottom"。オーナー判断 2026-11-19 14:38）。
+    // SP で上端のアンカー（427px）がヘッダーと画面の約半分を覆っていたため。アンカー広告そのものは残す
+    script.setAttribute("data-overlays", "bottom");
     script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(client)}`;
     document.head.append(script);
   }, [client]);

@@ -54,7 +54,7 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
   const navItem = (href: string) => config.nav.find((item) => item.href === href);
   const isCurrent = (href: string) => here?.href === href;
   return <>
-    <header className="mp-header"><div className="mp-header-inner">
+    <header className="mp-header google-anno-skip"><div className="mp-header-inner">
       <Link href="/" prefetch={false}><NetworkBrand /><span className="sr-only"> トップへ</span></Link>
       {children ? <div className="mp-header-search">{children}</div> : null}
       <nav className="mp-main-nav" aria-label="主要ナビゲーション">{mainNavHrefs.map((href) => { const item = navItem(href); return item ? <a key={href} href={href} aria-current={isCurrent(href) ? "page" : undefined}>{item.label}</a> : null; })}</nav>
@@ -65,7 +65,7 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
     </div></header>
     {open ? <>
       <div className="cm-scrim" aria-hidden="true" onClick={() => close()} />
-      <aside ref={panel} id="site-menu" className="cm-drawer" role="dialog" aria-modal="true" aria-labelledby="cm-title" tabIndex={-1}>
+      <aside ref={panel} id="site-menu" className="cm-drawer google-anno-skip" role="dialog" aria-modal="true" aria-labelledby="cm-title" tabIndex={-1}>
         <div className="cm-top">
           <p id="cm-title"><span className="code">MENU</span><b>メニュー</b></p>
           <button type="button" className="cm-close" onClick={() => close()} aria-label="メニューを閉じる"><X aria-hidden="true" /></button>
