@@ -25,6 +25,14 @@ function watchAdAnchors() {
   };
   const resize = typeof ResizeObserver === "function" ? new ResizeObserver(schedule) : null;
   const attrs = new MutationObserver(schedule);
+  // 本文（main）の画面上の位置とスクロール位置の記録。スクロールのたび（ブラウザ・AdSense による補正のスクロールも含む）と測り直しのたびに更新する
+  let lastPadTop: number | null = null;
+  let mark: { top: number; y: number } | null = null;
+  const record = () => {
+    const main = document.querySelector("main");
+    mark = main ? { top: main.getBoundingClientRect().top, y: window.scrollY } : null;
+  };
+  window.addEventListener("scroll", record, { passive: true });
 
   function update() {
     frame = 0;
@@ -57,6 +65,21 @@ function watchAdAnchors() {
     // AdSense が body に付けた下余白そのもの（下端のアンカー広告があるときだけ。無ければ 0）。
     // network.css がこの分だけフッターの暗い地を下へ伸ばし、余白の地の色（明るい帯）が見えないようにする（politics PR #23 と同じ考え方）
     root.style.setProperty("--ad-anchor-bottom-pad", `${Math.round(bodyPad)}px`);
+
+    // 読んでいる途中で本文がずれないようにする（2026-11-19）。data-overlays="bottom" でも SP の上端アンカーは出ており、
+    // スクロール後は余白なしで重なって出るが、上へ戻ったときなどに AdSense が body に上余白（390px 幅で 452px）を付け、
+    // iPhone の Safari 相当では本文が一度に 452px 下へずれていた（本物の広告で測定）。
+    // 上余白が変わったとき、最後の記録から本文が画面の中で実際に動いた分（スクロールによる分を除く）だけスクロール位置を足し引きして戻す。
+    // ブラウザの自動補正（scroll anchoring）や AdSense 自身がスクロールで補正した場合は、そのスクロールで記録が更新されるので動いた分は 0 になり、二重には補正しない。
+    // ページの先頭（スクロール 0）にいるときは補正しない（広告の下にヘッダーから並ぶ AdSense の本来の出方）。広告そのものには触らない
+    const padTop = parseFloat(getComputedStyle(document.body).paddingTop) || 0;
+    const main = document.querySelector("main");
+    if (main && mark && lastPadTop !== null && padTop !== lastPadTop && mark.y > 0) {
+      const moved = Math.round(main.getBoundingClientRect().top - mark.top + (window.scrollY - mark.y));
+      if (moved) window.scrollBy({ top: moved, behavior: "instant" as ScrollBehavior });
+    }
+    lastPadTop = padTop;
+    record();
   }
 
   new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
