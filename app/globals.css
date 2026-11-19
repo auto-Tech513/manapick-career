@@ -4246,6 +4246,13 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 /* M2 ニュース一覧の先頭カード：「注目解説」の札を本文側へ移し、分類の札と横に並べる */
 .article-card-tags { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
 .article-card-tags .article-card-lead-badge { position: static; }
+/* PC：2列分の幅のままでは画像（1200:630）が高さ 416px になる（以前は 360px で切っていたため上端が切れ下が空いた）。
+   先頭カードは横1行いっぱいに使い、画像（左半分・高さ約310px）と本文（右半分）を横に並べる */
+@media (min-width: 1025px) {
+  .news-index-page .article-grid > .article-card-lead { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .news-index-page .article-grid > .article-card-lead .article-card-media { align-self: start; }
+  .news-index-page .article-grid > .article-card-lead .article-card-body { justify-content: center; padding: 1.4rem 1.6rem; }
+}
 
 /* M4 手動の広告枠で広告が届かなかったとき：空の広告の高さ（90px）を畳み、自社案内だけを空白なしで出す。
    広告の枠（ins）・数・位置・読み込み処理は変えない（広告が届けば is-filled になり、元の高さに戻る） */
