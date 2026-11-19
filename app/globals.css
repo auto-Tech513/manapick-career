@@ -4153,7 +4153,8 @@ input, select, textarea { min-width: 0; max-width: 100%; }
    配信された広告は画面幅で表示されるので、枠線・地色は消して「広告」の表示だけ残す */
 @media (max-width: 640px) {
   .ad-shell { overflow: visible; }
-  .ad-shell.is-filled { border-color: transparent; background: transparent; }
+  .ad-shell.is-filled,
+  .ad-shell.is-optimized { border-color: transparent; background: transparent; }
 }
 
 /* 独立監査 2026-11-18 M4：タップ領域 44px 未満の部品
@@ -4256,12 +4257,11 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 
 /* M4 手動の広告枠で広告が届かなかったとき：空の広告の高さ（90px）を畳み、自社案内だけを空白なしで出す。
    広告の枠（ins）・数・位置・読み込み処理は変えない（広告が届けば is-filled になり、元の高さに戻る） */
-.ad-shell.is-unfilled,
-.ad-shell.is-optimized { min-height: 0; }
-.ad-shell.is-unfilled .ad-slot,
-.ad-shell.is-optimized .ad-slot { min-height: 0; margin-top: 0; }
-.ad-shell.is-unfilled .ad-fallback,
-.ad-shell.is-optimized .ad-fallback { min-height: 0; padding: 2.1rem 1rem 1rem; background: transparent; }
+/* AdSense が最適化した未配信枠（unfill-optimized → is-optimized）は畳まず、filled と同じ枠・「広告」の札で中身を見せる
+   （本家 PR #33 と同じ扱い、2026-11-19。AdSlot.tsx の説明を参照）。以前はここで is-optimized も畳み、自社案内を重ねて出していた */
+.ad-shell.is-unfilled { min-height: 0; }
+.ad-shell.is-unfilled .ad-slot { min-height: 0; margin-top: 0; }
+.ad-shell.is-unfilled .ad-fallback { min-height: 0; padding: 2.1rem 1rem 1rem; background: transparent; }
 /* ↑ 地色は枠（.ad-shell）の白に任せる。SP は枠が overflow:visible のため、自社案内の四角い白地が枠の角丸の外に出ていた */
 .ad-fallback strong { font-size: .875rem; line-height: 1.6; }
 .ad-fallback b { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 1rem; }
@@ -4277,9 +4277,10 @@ input, select, textarea { min-width: 0; max-width: 100%; }
 
 /* 追加の手動広告枠（AdSlot の fold。オーナー判断 2026-11-19 14:38：外した広告の分を手動枠で補う）。
    配信されるまでは枠の高さ・余白・線を取らず（CLS を出さない）、filled になってから既存の枠と同じ見た目になる。
-   未配信（unfilled・unfill-optimized）のときも同じく高さ 0 のまま畳み、空白を残さない。広告そのものは隠さない */
-.ad-shell--fold:not(.is-filled) { min-height: 0; margin: 0; border: 0; background: none; }
-.ad-shell--fold:not(.is-filled) .ad-slot { min-height: 0; margin-top: 0; }
+   未配信（unfilled）のときも同じく高さ 0 のまま畳み、空白を残さない。広告そのものは隠さない。
+   AdSense が最適化した未配信枠（is-optimized）は畳まず、filled と同じ見た目と「広告」の札で表示する（本家 PR #33 と同じ、2026-11-19） */
+.ad-shell--fold:not(.is-filled):not(.is-optimized) { min-height: 0; margin: 0; border: 0; background: none; }
+.ad-shell--fold:not(.is-filled):not(.is-optimized) .ad-slot { min-height: 0; margin-top: 0; }
 /* PC 記事の追従する目次：目次の高さ（約560px）が「画面 − ヘッダー − 下端のアンカー広告（275px）」より高く、
    最後の項目（05）が広告の下に入って押せなかった（仮の広告で確認、2026-11-19）。目次の箱を広告の上 16px までに収め、
    入りきらないときだけ箱の中でスクロールする（広告が無いときは従来と同じ高さで収まる） */
