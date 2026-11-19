@@ -51,8 +51,13 @@ function watchAdAnchors() {
       if (style.position !== "fixed" || style.display === "none" || style.visibility === "hidden") continue;
       const rect = element.getBoundingClientRect();
       if (rect.height <= 0 || rect.bottom <= 0 || rect.top >= viewport) continue;
-      if (rect.top <= 1) top = Math.max(top, Math.round(rect.bottom));
-      else if (rect.bottom >= viewport - 1) bottom = Math.max(bottom, Math.round(viewport - rect.top));
+      // 上か下かは、画面の上端・下端のどちらに接しているかで決める（高さが画面の半分を超えるアンカーもあるため、位置の上下だけでは決めない）。
+      // 両方に接している（画面いっぱいの）ときは、AdSense が付ける固定位置（bottom: 0）で決める
+      const touchesTop = rect.top <= 1;
+      const touchesBottom = rect.bottom >= viewport - 1;
+      const isBottom = touchesBottom && (!touchesTop || style.bottom === "0px");
+      if (isBottom) bottom = Math.max(bottom, Math.round(viewport - Math.max(0, rect.top)));
+      else if (touchesTop) top = Math.max(top, Math.round(Math.min(viewport, rect.bottom)));
     }
     // 下端のアンカー広告のうち、AdSense が body に付ける下余白（padding-bottom）では足りずにページの末尾を覆う分。
     // network.css がこの分だけフッター最下段の下に足す（PC：広告 275px に対し body の余白 154px 等。本家 PR #31・company PR #21 と同じ求め方）。
