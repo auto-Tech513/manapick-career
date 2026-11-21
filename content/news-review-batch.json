@@ -1,13 +1,13 @@
 {
- "batchId": "news-2026-11-21-expansion-89",
- "preparedAt": "2026-11-21",
- "targetCount": 89,
+ "batchId": "news-2026-11-22-expansion-94",
+ "preparedAt": "2026-11-22",
+ "targetCount": 94,
  "status": "published",
- "publishedAt": "2026-11-21",
- "approvedAt": "2026-11-21",
+ "publishedAt": "2026-11-22",
+ "approvedAt": "2026-11-22",
  "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
- "authorizationNote": "2026-11-21のオーナー指示に基づき、最新の公的統計5件をニュースへ追加する。総務省統計局「消費者物価指数2026年10月分」・「人口推計2026年11月報」（いずれも2026年11月20日公表）、財務省「貿易統計2026年10月分速報」（2026年11月18日公表）、日本銀行「企業物価指数2026年10月速報」（2026年11月12日公表）、国土交通省「建設工事受注動態統計調査2026年9月分」（2026年11月10日公表）。",
- "reviewDecision": "オーナー指示と既存の運用方針に基づき新規5件を公開し、公開済みは全89件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+ "authorizationNote": "2026-11-22のオーナー指示に基づき、最新の公的統計5件をニュースへ追加する。内閣府「消費動向調査2026年10月実施分」（2026年10月29日公表）・「景気動向指数2026年9月分速報」（2026年11月9日公表）、観光庁「宿泊旅行統計調査2026年9月分第1次速報」（2026年10月30日公表）、日本銀行「生活意識に関するアンケート調査2026年9月調査」（2026年10月13日公表）、経済産業省「商業動態統計速報2026年9月分」（2026年10月30日公表）。",
+ "reviewDecision": "オーナー指示と既存の運用方針に基づき新規5件を公開し、公開済みは全94件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
  "reviewedScope": [
   "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
   "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -121,18 +121,23 @@
   "trade-statistics-october-2026",
   "population-estimates-november-2026",
   "corporate-goods-prices-october-2026",
-  "construction-orders-september-2026"
+  "construction-orders-september-2026",
+  "consumer-confidence-october-2026",
+  "business-conditions-september-2026",
+  "lodging-travel-september-2026",
+  "boj-household-survey-september-2026",
+  "commerce-sales-september-2026"
  ],
  "previousBatch": {
-  "batchId": "news-2026-11-19-expansion-84",
-  "preparedAt": "2026-11-19",
-  "targetCount": 84,
+  "batchId": "news-2026-11-21-expansion-89",
+  "preparedAt": "2026-11-21",
+  "targetCount": 89,
   "status": "published",
-  "publishedAt": "2026-11-19",
-  "approvedAt": "2026-11-19",
+  "publishedAt": "2026-11-21",
+  "approvedAt": "2026-11-21",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-  "authorizationNote": "2026-11-19のオーナー指示（評価チーム経由）に基づき、最新の公的統計3件をニュースへ追加する。内閣府経済社会総合研究所「機械受注統計調査2026年9月実績」（2026年11月19日公表）、観光庁「旅行・観光消費動向調査2026年7-9月期1次速報」・日本政府観光局「訪日外客数2026年10月推計値」（いずれも2026年11月18日公表）、総務省統計局「家計消費状況調査 ネットショッピングの状況2026年9月分」（2026年11月10日公表）。",
-  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全84件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+  "authorizationNote": "2026-11-21のオーナー指示に基づき、最新の公的統計5件をニュースへ追加する。総務省統計局「消費者物価指数2026年10月分」・「人口推計2026年11月報」（いずれも2026年11月20日公表）、財務省「貿易統計2026年10月分速報」（2026年11月18日公表）、日本銀行「企業物価指数2026年10月速報」（2026年11月12日公表）、国土交通省「建設工事受注動態統計調査2026年9月分」（2026年11月10日公表）。",
+  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規5件を公開し、公開済みは全89件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
   "reviewedScope": [
    "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
    "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -241,7 +246,12 @@
    "tertiary-industry-september-2026",
    "machinery-orders-september-2026",
    "domestic-travel-consumption-q3-2026",
-   "online-shopping-september-2026"
+   "online-shopping-september-2026",
+   "consumer-prices-october-2026",
+   "trade-statistics-october-2026",
+   "population-estimates-november-2026",
+   "corporate-goods-prices-october-2026",
+   "construction-orders-september-2026"
   ]
  }
 }
