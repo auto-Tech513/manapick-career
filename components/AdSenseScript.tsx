@@ -102,6 +102,8 @@ export function AdSenseScript() {
     watchAdAnchors();
     // 本番（manapick.app とそのサブドメイン）以外では広告を読み込まない（プレビュー・ローカル閲覧の計上防止）
     if (!/(^|\.)manapick\.app$/.test(window.location.hostname)) return;
+    // 自動操作のブラウザ（navigator.webdriver === true。Playwright・Selenium 等）では読み込まない（無効トラフィック対策。2026-11-21）
+    if (navigator.webdriver === true) return;
     if (document.getElementById("manapick-career-adsense")) return;
     const script = document.createElement("script");
     script.id = "manapick-career-adsense";
