@@ -360,9 +360,9 @@
           "role": "警察官",
           "description": "神奈川県警察の警察官採用試験による採用例。警察官A・Bのほか、職務経験者を対象とするキャリア区分や柔道・剣道の術科区分があり、採用後は全寮制の神奈川県警察学校で基礎的教養研修を受けた後、県内各警察署に配属される。",
           "source": {
-            "title": "令和8年度警察官採用試験（神奈川県警察）",
-            "url": "https://www.police.pref.kanagawa.jp/saiyo/saiyo_annai/mesb0001.html",
-            "checkedAt": "2026-11-15"
+            "title": "採用案内/神奈川県警察",
+            "url": "https://www.police.pref.kanagawa.jp/saiyo/saiyo_annai/",
+            "checkedAt": "2026-11-22"
           }
         }
       ]
@@ -1386,8 +1386,8 @@
           "description": "全国の動物病院（ペテモ動物病院など）で小動物臨床を担う獣医師の例。同社採用サイトでは、獣医師の仕事として診察、処置、検査、手術や院内症例検討会が挙げられている。",
           "source": {
             "title": "インターンシップ｜採用情報｜獣医師採用｜イオンペット株式会社 採用情報サイト",
-            "url": "https://recruit.aeonpet.com/event/intern/hospital/",
-            "checkedAt": "2026-10-29"
+            "url": "https://recruit.aeonpet.com/hospital/recruit-info/internship/",
+            "checkedAt": "2026-11-22"
           }
         },
         {
@@ -1751,8 +1751,8 @@
           "description": "牛乳・乳飲料などの製造ラインで、機械操作、原料投入、検品、衛生管理などを行う。牛乳・乳飲料・その他製品の製造工程（配合・殺菌・充填・包装・出荷）に従事し、機械オペレーション・メンテナンス等を担当する。",
           "source": {
             "title": "中途採用募集情報 - 森乳業株式会社",
-            "url": "https://www.morimilk.co.jp/recruit/career",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.morimilk.co.jp/recruit/career/",
+            "checkedAt": "2026-11-22"
           }
         }
       ]
@@ -1811,8 +1811,8 @@
           "description": "ワイナリーでワインやジュースの製造から品質管理までを行う。自社ぶどう畑の栽培管理やワインイベントへの参加も担う。",
           "source": {
             "title": "サンクゼールの働き方 | St.Cousair",
-            "url": "https://www.stcousair.co.jp/site/company/work-style?id=occupation",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.stcousair.co.jp/company/recruit/work-style-2?id=occupation",
+            "checkedAt": "2026-11-22"
           }
         }
       ]
@@ -1917,12 +1917,12 @@
       "employers": [
         {
           "name": "株式会社ベルシステム24",
-          "role": "電話対応スタッフ",
-          "description": "病院内の予約センターで、電話による受付業務を担当する。患者さまからの診察予約や人間ドックの予約受付、日程変更、キャンセル受付を行う（同社公式求人サイトの掲載職種は「コールセンター」）。",
+          "role": "予約受付コールセンター（プレミアム会員向けデスク）",
+          "description": "クレジットカードのプレミアム会員向けデスクで、国内航空券・JR券・ホテル・レストラン・全国のゴルフ場などの予約受付や手配を行い、観劇・プロ野球などのチケット予約にも対応する。",
           "source": {
-            "title": "予約受付センターでの電話対応スタッフ｜ベルシステム24のコールセンター求人情報（Bellbiz）",
-            "url": "https://biz.bell24.co.jp/kyujin/24491",
-            "checkedAt": "2026-10-29"
+            "title": "プレミアム会員様向け予約受付コールセンター｜東京都豊島区の求人｜Bellbiz(ベルビズ)|ベルシステム24のコールセンター求人情報",
+            "url": "https://biz.bell24.co.jp/kyujin/24903",
+            "checkedAt": "2026-11-22"
           }
         }
       ]
@@ -2843,21 +2843,6 @@
       ]
     },
     {
-      "catalogId": "240",
-      "employers": [
-        {
-          "name": "国立大学法人三重大学（三重大学医学部附属病院）",
-          "role": "学童保育指導員（非常勤職員）",
-          "description": "小学生の外遊びや宿題の指導・見守りを行い、メール返信や出席簿入力などの事務作業、遊び場の草抜きや清掃などの環境整備も担当する。",
-          "source": {
-            "title": "学童保育指導員 ｜ 三重大学医学部附属病院",
-            "url": "https://www.hosp.mie-u.ac.jp/recruit/data/gakudohoikushidou/",
-            "checkedAt": "2026-10-30"
-          }
-        }
-      ]
-    },
-    {
       "catalogId": "331",
       "employers": [
         {
@@ -2943,21 +2928,6 @@
       ]
     },
     {
-      "catalogId": "454",
-      "employers": [
-        {
-          "name": "マグチランドトランス株式会社",
-          "role": "大型ルート配送ドライバー",
-          "description": "大型トラック（冷蔵車メイン）で1日3～4便、和泉市を拠点に大阪府下の生協センター間を輸送する。カゴ台車・ドーリー台車使用で手積み作業はほぼない。",
-          "source": {
-            "title": "マグチランドトランス株式会社 テクノステージ出張所求人情報｜マグチグループ公式採用サイト",
-            "url": "https://www.maguchi-job.jp/maguchigr2/AE1026545100/MDkyujin_d.htm",
-            "checkedAt": "2026-10-29"
-          }
-        }
-      ]
-    },
-    {
       "catalogId": "455",
       "employers": [
         {
@@ -2993,21 +2963,6 @@
             "title": "倉庫内作業・管理の求人票（ハローワーク）",
             "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=2302070648061",
             "checkedAt": "2026-11-15"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "466",
-      "employers": [
-        {
-          "name": "名古屋市（環境局）",
-          "role": "時給制ごみ・し尿等収集作業員（会計年度任用職員）",
-          "description": "環境局環境事業所に勤務し、名古屋市内のごみ・資源等の収集業務を行う（年末年始の収集に対応する募集）。",
-          "source": {
-            "title": "ごみ・資源を収集する会計年度時給制ごみ・し尿等収集作業員を募集します｜名古屋市公式ウェブサイト",
-            "url": "https://www.city.nagoya.jp/shisei/saiyou/1004301/1004376/1032340/1054791.html",
-            "checkedAt": "2026-10-29"
           }
         }
       ]
@@ -3396,16 +3351,6 @@
       "catalogId": "316",
       "employers": [
         {
-          "name": "株式会社IVRy",
-          "role": "コーポレートエンジニア",
-          "description": "社内IT基盤の運用・自動化やSaaS管理に加え、従業員からのIT関連問い合わせへの対応と解決（ヘルプデスク業務）、ISMSに基づく情報セキュリティ運用を担う。",
-          "source": {
-            "title": "株式会社IVRy コーポレートエンジニア｜HERP Careers",
-            "url": "https://herp.careers/careers/companies/ivry/jobs/eR5EFLxgkBjs",
-            "checkedAt": "2026-10-29"
-          }
-        },
-        {
           "name": "Ｇａｔｅテクノロジーズ株式会社",
           "role": "ヘルプデスク",
           "description": "大阪・新大阪分室で、テレメンテ運用支援業務のヘルプデスクとして機械監視と障害対応、問い合わせ対応とメール対応、報告書作成を担う。自社社員のみで対応する体制で、仕事は先輩社員が一から教える。社内ITを担うコーポレートエンジニアとは異なる、顧客システムの運用を支えるヘルプデスクの例。",
@@ -3530,16 +3475,6 @@
     {
       "catalogId": "495",
       "employers": [
-        {
-          "name": "株式会社IVRy",
-          "role": "データエンジニア（リードクラス）",
-          "description": "LLMOpsまで含めたデータ基盤・データプロダクトの設計・開発・運用をリードし、非構造化データの収集・正規化・統合やデータパイプラインの設計・開発・運用を担う。",
-          "source": {
-            "title": "株式会社IVRy データエンジニア（リードクラス）｜HERP Careers",
-            "url": "https://herp.careers/careers/companies/ivry/jobs/muSDeaGqLw6R",
-            "checkedAt": "2026-10-29"
-          }
-        },
         {
           "name": "株式会社マネーフォワード",
           "role": "データエンジニア",
@@ -3973,21 +3908,6 @@
             "title": "理容師スタイリストの求人票（ハローワーク）",
             "url": "https://www.hellowork.mhlw.go.jp/kensaku/GECA110020.do?screenId=GECA110020&action=kyujinhyoBtn&kjhyoKjNo=1002017202361",
             "checkedAt": "2026-11-14"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "118",
-      "employers": [
-        {
-          "name": "公益財団法人山梨厚生会",
-          "role": "クリーニング師（職業指導員）",
-          "description": "就労支援事業所「ひらしな」における作業・訓練の指導員として、白衣・雑巾・タオルの洗濯作業や、院内の清掃、床のワックス作業などの指導・見守りを行う。",
-          "source": {
-            "title": "クリーニング師（職業指導員）募集要項｜山梨厚生会",
-            "url": "https://www.kosei.jp/koseikai/adoption/others/cleaning/",
-            "checkedAt": "2026-10-29"
           }
         }
       ]
@@ -4432,21 +4352,6 @@
           "source": {
             "title": "職種紹介｜Noritake 高校生向け採用サイト",
             "url": "https://www.noritake.co.jp/recruit-highschool/job/",
-            "checkedAt": "2026-10-29"
-          }
-        }
-      ]
-    },
-    {
-      "catalogId": "18",
-      "employers": [
-        {
-          "name": "石塚硝子株式会社",
-          "role": "生産オペレーター（製品製造に関する業務）",
-          "description": "本社岩倉工場で、ガラスびんやガラス食器等の製造工程を担当。オートメーション化された生産ラインで成形・検査・包装・加工などの業務に携わる。",
-          "source": {
-            "title": "募集要項｜石塚硝子株式会社 採用情報",
-            "url": "https://www.ishizuka.co.jp/recruitment/mid-career/requirements/",
             "checkedAt": "2026-10-29"
           }
         }
@@ -6516,8 +6421,8 @@
           "description": "小型人工衛星打上げロケット「ZERO」の打上げや量産化に向け、設計・生産技術・試験・品質管理など開発の全プロセスに取り組む開発部を募集している。",
           "source": {
             "title": "CAREERS | インターステラテクノロジズ株式会社 – Interstellar Technologies",
-            "url": "https://www.istellartech.com/careers/",
-            "checkedAt": "2026-10-29"
+            "url": "https://www.istellartech.com/careers",
+            "checkedAt": "2026-11-22"
           }
         }
       ]
