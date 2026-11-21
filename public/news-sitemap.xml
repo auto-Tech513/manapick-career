@@ -2,91 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://career.manapick.app/news/gdp-q3-2026-prelim/</loc>
+    <loc>https://career.manapick.app/news/corporate-goods-prices-october-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>GDPは4期ぶりマイナス、個人消費は2期連続減。なのに設備投資は1.6%増えた、ねじれた2026年7〜9月期GDP速報を読む</news:title>
+      <news:publication_date>2026-11-21</news:publication_date>
+      <news:title>企業物価7.1%上昇、輸入物価は24.8%の急騰。値上げの波は川上から、まだ押し寄せている</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/tertiary-industry-september-2026/</loc>
+    <loc>https://career.manapick.app/news/construction-orders-september-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>サービス産業が2か月連続で後退、経産省は判断を引き下げた。第3次産業活動指数2026年9月、沈んだのは金融と不動産だった</news:title>
+      <news:publication_date>2026-11-21</news:publication_date>
+      <news:title>建設受注12.1兆円、6か月連続増。でも元請は3.5%減、設備工事だけ25か月連続増という異変</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/online-shopping-september-2026/</loc>
+    <loc>https://career.manapick.app/news/population-estimates-november-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>ネットショッピング、使う世帯は減ったのに使う額は増えた。月26,303円が示す「使う人はもっと使う」二極化</news:title>
+      <news:publication_date>2026-11-21</news:publication_date>
+      <news:title>総人口1億2,243万人、1年で53万人減。働く世代7,332万人という数字の重み</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/economy-watchers-october-2026/</loc>
+    <loc>https://career.manapick.app/news/consumer-prices-october-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>街角景気にブレーキ。現状DI46.1で6か月ぶり低下、雇用の先行きは46.2まで沈んだ景気ウォッチャー調査2026年10月</news:title>
+      <news:publication_date>2026-11-21</news:publication_date>
+      <news:title>物価2.2%上昇、電気・ガス代が押し上げ、うるち米は29.8%下落。値上がりの主役が入れ替わった</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/machinery-orders-september-2026/</loc>
+    <loc>https://career.manapick.app/news/trade-statistics-october-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>機械受注、9月は0.3%減の小休止。でも10〜12月は4.3%増の見通し、設備投資の火は消えていない</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/domestic-travel-consumption-q3-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>国内旅行消費が過去最高8.4兆円、訪日客も単月最高391万人。観光の秋が示した「人数より単価」の時代</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/labor-force-detailed-q3-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>正規も非正規も増えたのに、失業1年以上は59万人に急増。雇用の明と暗が真っ二つに割れた労働力調査2026年7〜9月期</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/industrial-production-september-2026-final/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-19</news:publication_date>
-      <news:title>速報から下方修正、それでも3か月ぶり増産。在庫が20か月ぶりに前年超えした鉱工業生産2026年9月確報を読む</news:title>
+      <news:publication_date>2026-11-21</news:publication_date>
+      <news:title>輸出も輸入も過去最大、それでも貿易赤字4,765億円。原油の値段が日本の稼ぎを食いつぶす構図</news:title>
     </news:news>
   </url>
 </urlset>
