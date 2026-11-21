@@ -2,6 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://career.manapick.app/news/boj-household-survey-september-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>「5年後も物価は上がる」が86.5%、19年ぶりの高水準。なのに収入の実感は過去いちばん良い。日銀調査のねじれを読む</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/lodging-travel-september-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>9月の宿泊者は5,282万人泊で2.6%減。外国人は9.2%減、日本人も微減。ホテル・旅館の現場は秋口に一服した</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/commerce-sales-september-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>9月の商業販売額55.9兆円、前年比5.4%増 小売は自動車が15.6%増でけん引、家電は2.7%減</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/business-conditions-september-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>景気の足元は改善、先行きは17か月ぶりの低下。一致指数119.5と先行指数116.4が逆を向いた9月</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/consumer-confidence-october-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-22</news:publication_date>
+      <news:title>消費者マインドが2か月連続で冷えた。それでも「1年後は物価が上がる」が90.8%。家計の本音は割れている</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/corporate-goods-prices-october-2026/</loc>
     <news:news>
       <news:publication>
