@@ -1663,6 +1663,111 @@ export const articleCharts: Record<string, ArticleChart> = {
         "value": 13639
       }
     ]
+  },
+  "consumer-prices-october-2026": {
+    "title": "消費者物価指数の前年同月比（2026年10月・全国）",
+    "note": "総務省統計局「消費者物価指数」による上昇率です。基準は2025年=100です。",
+    "bars": [
+      {
+        "display": "6.3%",
+        "label": "生鮮食品",
+        "value": 6.3
+      },
+      {
+        "display": "5.3%",
+        "label": "都市ガス代",
+        "value": 5.3
+      },
+      {
+        "display": "2.3%",
+        "label": "総合",
+        "value": 2.3
+      },
+      {
+        "display": "2.2%",
+        "label": "生鮮食品を除く総合",
+        "value": 2.2
+      }
+    ]
+  },
+  "trade-statistics-october-2026": {
+    "title": "輸出額と輸入額（2026年10月・速報）",
+    "note": "財務省「貿易統計（速報）」による金額です。差引額は4,765億円の赤字でした。",
+    "bars": [
+      {
+        "display": "12兆2,453億円",
+        "label": "輸入額",
+        "value": 122453
+      },
+      {
+        "display": "11兆7,688億円",
+        "label": "輸出額",
+        "value": 117688
+      }
+    ]
+  },
+  "population-estimates-november-2026": {
+    "title": "年齢3区分人口（2026年6月1日現在・確定値）",
+    "note": "総務省統計局「人口推計」による確定値です。総人口は1億2,259万8千人でした。",
+    "bars": [
+      {
+        "display": "7,332万1千人",
+        "label": "15〜64歳",
+        "value": 7332
+      },
+      {
+        "display": "3,615万5千人",
+        "label": "65歳以上",
+        "value": 3615
+      },
+      {
+        "display": "1,312万2千人",
+        "label": "15歳未満",
+        "value": 1312
+      }
+    ]
+  },
+  "corporate-goods-prices-october-2026": {
+    "title": "企業物価指数の前年同月比（2026年10月速報）",
+    "note": "日本銀行「企業物価指数」による上昇率です。輸入・輸出は円ベースの値です。",
+    "bars": [
+      {
+        "display": "24.8%",
+        "label": "輸入物価指数（円ベース）",
+        "value": 24.8
+      },
+      {
+        "display": "16.7%",
+        "label": "輸出物価指数（円ベース）",
+        "value": 16.7
+      },
+      {
+        "display": "7.1%",
+        "label": "国内企業物価指数",
+        "value": 7.1
+      }
+    ]
+  },
+  "construction-orders-september-2026": {
+    "title": "建設工事受注高（2026年9月）",
+    "note": "国土交通省「建設工事受注動態統計調査」による受注額です。下請受注高は2次下請以下を含みます。",
+    "bars": [
+      {
+        "display": "12兆1,013億円",
+        "label": "受注高（合計）",
+        "value": 121013
+      },
+      {
+        "display": "8兆824億円",
+        "label": "元請受注高",
+        "value": 80824
+      },
+      {
+        "display": "4兆189億円",
+        "label": "下請受注高",
+        "value": 40189
+      }
+    ]
   }
 };
 
