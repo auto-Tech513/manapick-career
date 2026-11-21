@@ -5070,5 +5070,131 @@
     "text": "賃金の請求権の時効は当分の間3年で、割増賃金の不払いには6か月以下の拘禁刑又は30万円以下の罰金が定められている"
    }
   ]
+ },
+ {
+  "guideSlug": "elderly-employment-continuation-benefit",
+  "claims": [
+   {
+    "claimId": "elderly-benefit-eligibility",
+    "text": "高年齢雇用継続給付は、被保険者であった期間が通算5年以上ある60歳以上65歳未満の一般被保険者で、60歳時点の賃金月額に比べて賃金が75%未満に低下した人に支給される。",
+    "sourceIds": [
+     "mhlw-elderly-continuation-benefit-2025"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "elderly-benefit-rate-2025",
+    "text": "支給率の上限は、2025年4月1日以降に60歳に達した人は各月の賃金の10%（低下率64%以下）、2025年3月31日以前に60歳に達した人は15%（低下率61%以下）である。",
+    "sourceIds": [
+     "mhlw-elderly-continuation-benefit-2025"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "sickness-allowance-guide",
+  "claims": [
+   {
+    "claimId": "sickness-allowance-conditions",
+    "text": "傷病手当金の支給条件は、業務外の病気・ケガの療養であること、労務不能であること、連続した3日間（待期）を含む4日以上休むこと、休業期間中に給与が支払われていないことの4つである。",
+    "sourceIds": [
+     "kyoukaikenpo-sickness-allowance"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "sickness-allowance-amount-period",
+    "text": "傷病手当金は1日あたり、支給開始日の以前12か月間の標準報酬月額の平均額を30で割った額の3分の2で、支給期間は支給開始日から通算して1年6か月分が限度である。",
+    "sourceIds": [
+     "kyoukaikenpo-sickness-allowance"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "fixed-overtime-pay-reading",
+  "claims": [
+   {
+    "claimId": "fixed-overtime-display",
+    "text": "固定残業代を含む求人では、固定残業代を除いた基本給の額、固定残業代の時間数と金額、固定時間を超えた分の割増賃金を追加で支払うことの3つを示す必要がある。",
+    "sourceIds": [
+     "mhlw-fixed-overtime-leaflet"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": false
+   },
+   {
+    "claimId": "fixed-overtime-difference",
+    "text": "実際の時間外労働などに応じた割増賃金の額が固定残業代を上回る場合は、その差額を追加して支払う必要がある（労働基準法第37条）。",
+    "sourceIds": [
+     "egov-labor-standards-act"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "article-36-overtime-cap",
+  "claims": [
+   {
+    "claimId": "overtime-cap-principle",
+    "text": "時間外労働の上限は原則として月45時間・年360時間で、36協定を結んでもこの限度が協定の上限になる（1年単位の変形労働時間制は月42時間・年320時間）。",
+    "sourceIds": [
+     "mhlw-overtime-cap-guide",
+     "egov-labor-standards-act"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "overtime-cap-special",
+    "text": "特別条項でも、時間外労働は年720時間以内、時間外労働と休日労働の合計は月100時間未満、2〜6か月平均はすべて月80時間以内、月45時間を超えるのは年6か月までという上限を超えることはできない。",
+    "sourceIds": [
+     "mhlw-overtime-cap-guide"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "data-engineer-vs-data-analyst",
+  "claims": [
+   {
+    "claimId": "dss-data-roles",
+    "text": "デジタルスキル標準（DX推進スキル標準）のデータサイエンティスト類型には、データサイエンスプロフェッショナルとデータエンジニアのロールが分かれて定義されている。",
+    "sourceIds": [
+     "ipa-digital-skills-standard"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": false
+   },
+   {
+    "claimId": "dss-data-engineer-definition",
+    "text": "データエンジニアは、効果的なデータ分析環境の設計・実装・運用を通じて業務変革やビジネス創出を実現するロールであり、バックエンド開発やクラウドインフラでソフトウェアエンジニアと同等の実践力が求められる。",
+    "sourceIds": [
+     "ipa-digital-skills-standard"
+    ],
+    "lastCheckedAt": "2026-11-22",
+    "freshnessDays": 180,
+    "critical": false
+   }
+  ]
  }
 ]
