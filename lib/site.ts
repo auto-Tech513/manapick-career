@@ -5,6 +5,20 @@ export const ARTICLE_OG_BASE = "/og/biz-udp-v1";
 export const ARTICLE_OG_REVISION = "career-paper-v3";
 export const absoluteUrl = (path = "/") => new URL(path, `${SITE_URL}/`).toString();
 
+export const SITE_DESCRIPTION = "仕事内容、必要スキル、学ぶ順番、資格、AI活用を公式情報から整理。職業を順位付けせず、次に調べる入口を見つけるサイトです。職業ごとの詳しい解説、統計から読む年収の目安、公式ページで確認した企業例、公的統計のニュースとガイド、16タイプの働き方診断まで、出典を確認しながらたどれます。職業の比較ページも用意しています。";
+
+export function siteOpenGraph(url = SITE_URL) {
+  return {
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url,
+    siteName: SITE_NAME,
+    locale: "ja_JP",
+    type: "website" as const,
+    images: [{ url: absoluteUrl("/og.png"), width: 1200, height: 675, alt: `${SITE_NAME} - ${TAGLINE}` }]
+  };
+}
+
 function stableRevision(value: string) {
   let hash = 0x811c9dc5;
   for (let index = 0; index < value.length; index += 1) {

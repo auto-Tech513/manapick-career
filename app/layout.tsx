@@ -8,17 +8,17 @@ import { AdSenseScript } from "@/components/AdSenseScript";
 import { BottomNav } from "@/components/BottomNav";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteHeader } from "@/components/SiteHeader";
-import { absoluteUrl, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
+import { absoluteUrl, siteOpenGraph, SITE_DESCRIPTION, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
 import "./globals.css";
 import "./network.css";
 
-const description="仕事内容、必要スキル、学ぶ順番、資格、AI活用を公式情報から整理。職業を順位付けせず、次に調べる入口を見つけるサイトです。職業ごとの詳しい解説、統計から読む年収の目安、公式ページで確認した企業例、公的統計のニュースとガイド、16タイプの働き方診断まで、出典を確認しながらたどれます。職業の比較ページも用意しています。";
+const description = SITE_DESCRIPTION;
 
 export const metadata: Metadata={
   metadataBase:new URL(SITE_URL), title:{default:`${SITE_NAME} | ${TAGLINE}`,template:`%s | ${SITE_NAME}`},description,
   alternates:{canonical:"/",types:{"application/rss+xml":"/feed.xml"}},
   robots:{index:true,follow:true,googleBot:{index:true,follow:true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1}},
-  openGraph:{title:SITE_NAME,description,url:SITE_URL,siteName:SITE_NAME,locale:"ja_JP",type:"website",images:[{url:absoluteUrl("/og.png"),width:1200,height:675,alt:`${SITE_NAME} - ${TAGLINE}`}]},
+  openGraph:siteOpenGraph(),
   twitter:{card:"summary_large_image",title:SITE_NAME,description,images:[absoluteUrl("/og.png")]},
   icons:{
     icon:[
