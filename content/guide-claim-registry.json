@@ -5196,5 +5196,130 @@
     "critical": false
    }
   ]
+ },
+ {
+  "guideSlug": "withholding-slip-guide",
+  "claims": [
+   {
+    "claimId": "withholding-slip-four-amounts",
+    "text": "源泉徴収票の「給与所得控除後の金額」と「所得控除の額の合計額」は年末調整をした場合に記入される欄であり、年の途中で退職して年末調整を受けていない人の票では空欄になる。",
+    "sourceIds": [
+     "nta-withholding-slip-tebiki-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "withholding-slip-new-column-2025",
+    "text": "令和7年度税制改正に伴い、令和7年分から源泉徴収票の様式が改正され「特定親族特別控除の額」の欄が新設された。",
+    "sourceIds": [
+     "nta-withholding-slip-tebiki-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 365,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "social-insurance-dependent-guide",
+  "claims": [
+   {
+    "claimId": "dependent-income-130",
+    "text": "健康保険の被扶養者の年間収入要件は原則130万円未満（60歳以上または障害がある場合は180万円未満）で、認定日以降の見込み額により判定する。",
+    "sourceIds": [
+     "nenkin-dependent-family-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "dependent-150-age19-22",
+    "text": "19歳以上23歳未満（配偶者を除く）の被扶養者については、扶養認定日が令和7年10月1日以降の場合、年間収入要件が150万円未満に変わった。",
+    "sourceIds": [
+     "nenkin-dependent-family-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "job-seeker-support-system-guide",
+  "claims": [
+   {
+    "claimId": "job-seeker-support-amounts",
+    "text": "求職者支援制度の職業訓練受講手当は月10万円、通所手当は月上限42,500円、寄宿手当は月10,700円である。",
+    "sourceIds": [
+     "mhlw-job-seeker-support-2026"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "job-seeker-support-requirements",
+    "text": "職業訓練受講給付金の支給要件には、本人収入が月8万円以下、世帯全体の収入が月30万円以下、世帯全体の金融資産が300万円以下がある。",
+    "sourceIds": [
+     "mhlw-job-seeker-support-2026"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "separation-notice-guide",
+  "claims": [
+   {
+    "claimId": "separation-notice-delivery",
+    "text": "離職票（-1、2）は離職後に会社を通じて交付され、会社から交付されない場合や事業主が行方不明の場合は、住居地を管轄するハローワークに問い合わせる。",
+    "sourceIds": [
+     "hellowork-insurance-procedure-2026"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "separation-reason-judgment",
+    "text": "離職理由は、受給資格の決定の際にハローワークが事実関係を調査のうえ判定し、基本手当を受けられる期間は原則として離職の翌日から1年間である。",
+    "sourceIds": [
+     "hellowork-insurance-procedure-2026"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "postpartum-papa-leave-guide",
+  "claims": [
+   {
+    "claimId": "papa-leave-split-28",
+    "text": "出生時育児休業は子の出生後8週間以内に合計28日まで取得でき、2回まで分割できる。通常の育児休業も原則2回まで分割取得できる。",
+    "sourceIds": [
+     "aichi-roudoukyoku-childcare-shiori-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "postpartum-support-13",
+    "text": "出生後休業支援給付金は令和7年4月1日に創設され、被保険者と配偶者の両方が14日以上の育児休業等を取得した場合に13%が支給され、本体の67%と合わせて80%相当になる。上限額は58,640円（令和7年8月1日現在）。",
+    "sourceIds": [
+     "aichi-roudoukyoku-childcare-shiori-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
  }
 ]
