@@ -27,11 +27,16 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  /* モックどおり画面幅いっぱい（角丸なし・シェルの余白を打ち消す） */
-  margin-inline: calc(-1 * clamp(1rem, 3vw, 2.5rem));
-  padding: 10px calc(16px + clamp(1rem, 3vw, 2.5rem));
+  /* モックどおり画面幅いっぱい・角丸なし・中身の左端は本文と同じ（再検証 2026-11-23 の指摘）。
+     負のマージンでシェルの余白を打ち消す方法は、シェルの最大幅（1920px で左右に余白）と
+     SP の余白の差（帯が画面端を 1.6px ずつ越える）に弱かったので、箱は本文の幅のまま、
+     地の白と上下の線だけを border-image の外側への張り出しで画面の端まで描く（張り出しはレイアウトの幅・横スクロールに数えられない） */
+  margin-inline: 0;
+  padding: 10px 0;
   background: #fff;
   border-block: 1px solid var(--ink);
+  border-radius: 0;
+  border-image: linear-gradient(to bottom, var(--ink) 0 1px, #fff 1px calc(100% - 1px), var(--ink) calc(100% - 1px)) 0 fill / 0 / 0 100vmax;
   font-size: 13.5px;
 }
 .ce-prbar b {
@@ -321,31 +326,54 @@
   width: 14px;
   height: 14px;
 }
+/* PC：閉じた状態のカードをモック（1440px で 648px）の高さに収めるため、要点とメーカー公式仕様のリンクは開閉部の中へ（再検証 2026-11-23）。
+   SP は開閉部ごと省くので、開閉部の外にある SP 用のリンクを出す */
+.ce-prod .official-sp {
+  display: none;
+}
+.ce-prod .ce-more .points {
+  margin-top: 2px;
+}
 @media (max-width: 1024px) {
   .ce-pgrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 640px) {
+  /* SP の PR帯：PR札・開示文・リンクを1つの段落として流す。右端にリンクの列を取ると本文が細くなり、
+     幅で高さが 64〜136px と大きく変わっていた（再検証 2026-11-23）。2〜3行に収める */
   .ce-prbar {
     top: 58px;
-    flex-wrap: nowrap;
-    gap: 8px;
+    display: block;
+    min-height: 46px;
     padding-block: 4px;
     font-size: 12px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+  .ce-prbar b {
+    display: inline-block;
+    margin-right: 6px;
+    line-height: 18px;
   }
   .ce-prbar p {
-    line-height: 1.5;
+    display: inline;
   }
+  /* リンクは文の続きに置き、当たり判定だけを上下に広げて帯の高さいっぱい（44px 以上）にする（帯の外へは出さない） */
   .ce-prbar a {
-    margin-left: auto;
+    display: inline;
+    min-height: 0;
+    margin-left: 6px;
+    padding-block: 40px;
     white-space: nowrap;
   }
-  /* SP はモックどおり説明を省く */
+  /* SP はモックどおり説明を省く（メーカー公式仕様のリンクは開閉部の外の SP 用を出す） */
   .ce-prod .hook,
-  .ce-prod .points,
   .ce-prod .ce-more {
     display: none;
+  }
+  .ce-prod .official-sp {
+    display: inline-flex;
   }
   .ce-prod .buy {
     white-space: nowrap;

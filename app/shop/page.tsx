@@ -66,16 +66,17 @@ export default function ShopPage() {
               <div className="cat">{product.category} ・ {product.maker}</div>
               <h3 className="phrase-breaks"><PhraseText text={product.name} /></h3>
               <p className="hook">{product.hook}</p>
-              <ul className="points">{product.points.map((point) => <li key={point}><Sparkles aria-hidden="true" />{point}</li>)}</ul>
               <details className="ce-more">
                 <summary>選ぶ理由・購入前の確認</summary>
+                <ul className="points">{product.points.map((point) => <li key={point}><Sparkles aria-hidden="true" />{point}</li>)}</ul>
                 <div className="fit"><strong>こんな人・場面に</strong><p>{product.fit}</p></div>
                 <p className="reason">{product.reason}</p>
                 <div className="checks"><strong>購入前に確認</strong><ul>{product.checks.map((check) => <li key={check}><BadgeCheck aria-hidden="true" />{check}</li>)}</ul></div>
+                {product.officialUrl ? <a className="official" href={product.officialUrl} target="_blank" rel="noopener noreferrer">メーカー公式仕様 <ArrowUpRight aria-hidden="true" /></a> : null}
               </details>
               <div className="pz"><b className="num">—</b><small>価格・在庫はAmazonで確認（掲載内容確認日 {careerShopPolicy.checkedAt}）</small></div>
               <a className="buy" href={amazonUrl(product.amazonUrl)} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`${product.name}の価格・在庫をAmazonで見る（PR）`}><span className="buy-long">Amazonで価格・在庫を見る</span><span className="buy-short">Amazonで見る</span><ExternalLink aria-hidden="true" /></a>
-              {product.officialUrl ? <a className="official" href={product.officialUrl} target="_blank" rel="noopener noreferrer">メーカー公式仕様 <ArrowUpRight aria-hidden="true" /></a> : null}
+              {product.officialUrl ? <a className="official official-sp" href={product.officialUrl} target="_blank" rel="noopener noreferrer">メーカー公式仕様 <ArrowUpRight aria-hidden="true" /></a> : null}
             </div>
           </article>)}
         </div>
