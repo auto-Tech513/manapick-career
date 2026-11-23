@@ -5,6 +5,7 @@ import { occupationCatalogSource, publishedOccupationCatalog, publishedOccupatio
 import { employerCategories } from "@/lib/employers";
 import { absoluteUrl } from "@/lib/site";
 import profiles from '@/content/professional-careers.json';
+import { publishedDataArticles } from "@/lib/data-room";
 export const dynamic="force-static";
 
 const latest = (...dates: string[]) => dates.filter(Boolean).sort().at(-1);
@@ -55,5 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...publishedJobs.map((job) => ({ url: absoluteUrl(`/career/${job.slug}/`), lastModified: new Date(latest(job.checkedAt, ...profiles.items.map(item=>item.researchedAt))!) })),
     ...guides.map((guide) => ({ url: absoluteUrl(`/guide/${guide.slug}/`), lastModified: new Date(guide.checkedAt) })),
     ...newsItems.map((x) => ({ url: absoluteUrl(`/news/${x.slug}/`), lastModified: new Date(newsModifiedAt(x)) })),
+    // データ室の記事は status が "published" のものだけ載せる（下書き・見本は載せない）
+    ...publishedDataArticles.map((article) => ({ url: absoluteUrl(`/data/${article.slug}/`), lastModified: new Date(article.checkedAt) })),
   ];
 }
