@@ -1255,6 +1255,58 @@
       "reviewedByHumanAt": "2026-11-22",
       "reviewEvidence": "git:6ecab33a41e052260227e9326d9c87d6ced57eaa",
       "contentSha256": "9dfe0d62c3468a1f82242b3957821626666320e2df2003a0af1c468240298167"
+    },
+    {
+      "slug": "university-job-offer-rate-october-2026",
+      "createdAt": "2026-11-24",
+      "status": "published",
+      "primarySourceId": "mhlw-mext-job-offer-2026-10",
+      "sourcePublishedAt": "2026-11-20",
+      "publishedAt": "2026-11-24",
+      "reviewedAt": "2026-11-24",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-24",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "56944824c496a2586f4cedf49cd4850b56efae8f0b5882ebf741e423284179ab"
+    },
+    {
+      "slug": "high-school-job-offer-september-2026",
+      "createdAt": "2026-11-24",
+      "status": "published",
+      "primarySourceId": "mhlw-highschool-job-2026-09",
+      "sourcePublishedAt": "2026-11-20",
+      "publishedAt": "2026-11-24",
+      "reviewedAt": "2026-11-24",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-24",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "9525d67fc1b4338e25b581922ebc8278c5e56ed1212ee4fa68737442e4be6979"
+    },
+    {
+      "slug": "service-industry-sales-september-2026",
+      "createdAt": "2026-11-24",
+      "status": "published",
+      "primarySourceId": "stat-service-industry-2026-09",
+      "sourcePublishedAt": "2026-11-24",
+      "publishedAt": "2026-11-24",
+      "reviewedAt": "2026-11-24",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-24",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "ec00218aaf42c6e8ac0344cabd8f4a5182ab29026b69721841a7dfb81b15c8eb"
+    },
+    {
+      "slug": "ethical-consumption-awareness-survey-2026",
+      "createdAt": "2026-11-24",
+      "status": "published",
+      "primarySourceId": "caa-ethical-consumption-2026",
+      "sourcePublishedAt": "2026-11-12",
+      "publishedAt": "2026-11-24",
+      "reviewedAt": "2026-11-24",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-24",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "16c4a3714d8fb6fb695d241ba78a52a14a6ef61f2b5fb6f6e8a1a6921f7e01f3"
     }
   ]
 }
