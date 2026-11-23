@@ -121,9 +121,6 @@ export function HomeSearch({
 
   const show = open && query.trim().length > 0;
   useEffect(() => {
-    setActive(0);
-  }, [query]);
-  useEffect(() => {
     if (!open) return;
     const onPointerDown = (event: PointerEvent) => {
       if (wrapRef.current && !wrapRef.current.contains(event.target as Node)) setOpen(false);
@@ -221,7 +218,9 @@ export function HomeSearch({
           aria-expanded={show}
           aria-controls="home-suggest-panel"
           onChange={(event) => {
+            // 入力が変わったら選択を先頭に戻す（effect の中で setState しない：react-hooks/set-state-in-effect。Cloudflare の npm run qa の lint で落ちていた）
             setQuery(event.target.value);
+            setActive(0);
             setOpen(true);
           }}
           onFocus={() => setOpen(true)}

@@ -21,6 +21,13 @@
   position: relative;
   z-index: 2;
 }
+/* 検索候補が開いている間だけ、文字の列ごと地図の写真（z 2）・職業ピン（z 3）・数字の帯（z 3）より手前へ。
+   候補パネル（.home-search-wrap z 90）は .town-txt（z 2）の重なり順の中に閉じ込められていたため、
+   後ろに並ぶ写真・ピン・数字の帯が候補の上に描かれていた（再検証 2026-11-23：「エンジニア」で再現）。
+   ヘッダー（z 200）・下部タブより下のまま */
+.town-txt:has(.home-search-field.open) {
+  z-index: 30;
+}
 .town-kick {
   display: flex;
   align-items: center;

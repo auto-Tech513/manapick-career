@@ -55,19 +55,18 @@ const netlDotColor: Record<string, string> = { politics: "#A78BFA" };
  * station list. Design: career design-extra CE-01.
  */
 export function MenuPanel({ occupationCount }: { occupationCount: number }) {
-  const [open, setOpen] = useState(false);
+  // 開いたときのページを覚え、ページが変わったら閉じた扱いにする（effect の中で setState しない：react-hooks/set-state-in-effect）
   const pathname = usePathname();
+  const [openPath, setOpenPath] = useState<string | null>(null);
+  const open = openPath !== null && openPath === pathname;
+  const setOpen = (next: boolean) => setOpenPath(next ? pathname : null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    const onOpen = () => setOpen(true);
+    const onOpen = () => setOpenPath(pathname);
     window.addEventListener("mp-open-menu", onOpen);
     return () => window.removeEventListener("mp-open-menu", onOpen);
-  }, []);
-
-  useEffect(() => {
-    setOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -75,7 +74,7 @@ export function MenuPanel({ occupationCount }: { occupationCount: number }) {
     closeRef.current?.focus();
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        setOpen(false);
+        setOpenPath(null);
         buttonRef.current?.focus();
       }
     };
