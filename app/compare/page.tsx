@@ -10,7 +10,8 @@ import Link from "next/link";
 import { PopularityRanking } from "@/components/PopularityRanking";
 import { popularityMethod, popularityRanking } from "@/content/popularity-ranking";
 import { PhraseText } from "@/components/PhraseTitle";
-export const metadata:Metadata={title:"職業を比較",description:"最大3つの職種を、仕事内容、学習負荷、資格、AI活用、入口スキルで並べて比較します。気になる職業同士の違いと共通点を一画面で確かめられます。比較に使うのは各職業ページで出典を確認した情報で、優劣の順位付けは行いません。気になる職業は、そのまま個別ページで詳しく確認できます。",alternates:{canonical:"/compare/", types: { "application/rss+xml": "/feed.xml" }}};
+import { siteOpenGraph } from "@/lib/site";
+export const metadata:Metadata={title:"職業を比較",description:"最大3つの職種を、仕事内容、学習負荷、資格、AI活用、入口スキルで並べて比較します。気になる職業同士の違いと共通点を一画面で確かめられます。比較に使うのは各職業ページで出典を確認した情報で、優劣の順位付けは行いません。気になる職業は、そのまま個別ページで詳しく確認できます。",alternates:{canonical:"/compare/", types: { "application/rss+xml": "/feed.xml" }}, openGraph: siteOpenGraph("/compare/")};
 const occupationCompareItems: OccupationCompareItem[] = publishedOccupationCatalog.map((occupation) => {
   const entry = incomeOccupationByCatalogId.get(occupation.catalogId);
   const statistic = entry && entry.status === "available" && entry.classificationCode ? incomeStatisticByCode.get(entry.classificationCode) : undefined;

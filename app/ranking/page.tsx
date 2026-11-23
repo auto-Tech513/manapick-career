@@ -10,11 +10,11 @@ import { popularityMethod, popularityRanking } from "@/content/popularity-rankin
 import catalog from "@/content/job-catalog.json";
 import incomeData from "@/content/occupation-income.json";
 import { formatManYen1dp, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
-import { absoluteUrl } from "@/lib/site";
+import { absoluteUrl, siteOpenGraph } from "@/lib/site";
 import "./ranking.css";
 import { PhraseText } from "@/components/PhraseTitle";
 
-export const metadata: Metadata = { title: "人気職業アクセスランキング・年収ランキング", description: "厚生労働省job tagのアクセス履歴に基づく人気職業ランキングと、賃金構造基本統計調査2025年の統計分類で見る年収・ボーナス・平均年齢・働く人数のランキング。ジャンル絞り込み付き。各ランキングには、数字が示す範囲と示さないことも注記しています。ジャンルで絞ると、分野ごとの上位10件も確認できます。", alternates: { canonical: "/ranking/", types: { "application/rss+xml": "/feed.xml" } } };
+export const metadata: Metadata = { title: "人気職業アクセスランキング・年収ランキング", description: "厚生労働省job tagのアクセス履歴に基づく人気職業ランキングと、賃金構造基本統計調査2025年の統計分類で見る年収・ボーナス・平均年齢・働く人数のランキング。ジャンル絞り込み付き。各ランキングには、数字が示す範囲と示さないことも注記しています。ジャンルで絞ると、分野ごとの上位10件も確認できます。", alternates: { canonical: "/ranking/", types: { "application/rss+xml": "/feed.xml" } }, openGraph: siteOpenGraph("/ranking/") };
 
 function incomeEntries(): IncomeRankEntry[] {
   const entries: IncomeRankEntry[] = [];

@@ -124,7 +124,8 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
       {
         "@type": "Article",
         "@id": `${url}#article`,
-        headline: `${job.name}になるには`,
+        // 表示している h1（<mark>職業名</mark><small>仕事内容・向いている人・資格・企業例</small>）と同じ見出しにする。
+        headline: `${job.name} 仕事内容・向いている人・資格・企業例`,
         description: job.conclusion.join(" "),
         url,
         image: articleOgUrl("career", job.slug, `${job.name}|${job.checkedAt}|career-depth-v2`),
