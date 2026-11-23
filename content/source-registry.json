@@ -4379,5 +4379,75 @@
   "updateFrequency": "180d",
   "republication": "独自要約と出典リンクのみ",
   "notes": "デジタルスキル標準の概要資料とDX推進スキル標準のロール定義で確認。"
+ },
+ {
+  "sourceId": "nta-withholding-slip-tebiki-2025",
+  "provider": "国税庁",
+  "url": "https://www.nta.go.jp/publication/pamph/hotei/tebiki2025/PDF/all.pdf",
+  "isPrimary": true,
+  "claims": [
+   "給与所得の源泉徴収票の「支払金額」は、その年中に支払の確定した給与等の総額であり、「給与所得控除後の金額」と「所得控除の額の合計額」は年末調整をした場合に記入される",
+   "令和7年度税制改正により令和7年分から源泉徴収票の様式が改正され、「特定親族特別控除の額」の欄が新設された"
+  ],
+  "checkedAt": "2026-11-24",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "国税庁「令和7年分 給与所得の源泉徴収票等の法定調書の作成と提出の手引」で様式と記載要領を確認。手続 F1-1 の注意書き（受給者交付用の様式でないとカメラ読取ができない場合がある）も同庁ページで確認。"
+ },
+ {
+  "sourceId": "nenkin-dependent-family-2025",
+  "provider": "日本年金機構",
+  "url": "https://www.nenkin.go.jp/service/kounen/tekiyo/hihokensha1/20141202.html",
+  "isPrimary": true,
+  "claims": [
+   "健康保険の被扶養者の年間収入要件は130万円未満（60歳以上または障害がある場合は180万円未満）で、認定時点以降の見込み額で判断する",
+   "19歳以上23歳未満（配偶者を除く）は、扶養認定日が令和7年10月1日以降の場合、年間収入要件が150万円未満に変わった"
+  ],
+  "checkedAt": "2026-11-24",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "日本年金機構の被扶養者手続きページで要件・届出期限・削除の手続きを確認。令和8年4月1日からの労働契約内容による見込み判定は同機構のお知らせで確認。"
+ },
+ {
+  "sourceId": "mhlw-job-seeker-support-2026",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/kyushokusha_shien/index.html",
+  "isPrimary": true,
+  "claims": [
+   "求職者支援制度では、一定の要件を満たす人に職業訓練受講手当（月10万円）、通所手当（月上限42,500円）、寄宿手当（月10,700円）が支給される",
+   "給付金の支給要件には、本人収入が月8万円以下、世帯全体の収入が月30万円以下、世帯全体の金融資産が300万円以下などがある"
+  ],
+  "checkedAt": "2026-11-24",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "厚生労働省「求職者支援制度のご案内」で対象者・給付額・支給要件・訓練期間を確認。旧資料の世帯収入要件（月25万円以下）は現行ページでは月30万円以下に緩和されている。"
+ },
+ {
+  "sourceId": "hellowork-insurance-procedure-2026",
+  "provider": "厚生労働省（ハローワークインターネットサービス）",
+  "url": "https://www.hellowork.mhlw.go.jp/insurance/insurance_procedure.html",
+  "isPrimary": true,
+  "claims": [
+   "離職後は雇用保険被保険者離職票（-1、2）が会社を通じて交付され、受給資格の決定は住居地を管轄するハローワークで離職票を提出して行われる",
+   "離職理由はハローワークが事実関係を調査のうえ判定し、基本手当を受けられる期間は原則として離職の翌日から1年間である"
+  ],
+  "checkedAt": "2026-11-24",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "ハローワークインターネットサービス「雇用保険の具体的な手続き」で、離職票の交付・持参物・受付時間・離職理由の判定を確認。"
+ },
+ {
+  "sourceId": "aichi-roudoukyoku-childcare-shiori-2025",
+  "provider": "厚生労働省（愛知労働局）",
+  "url": "https://jsite.mhlw.go.jp/aichi-roudoukyoku/content/contents/001973706.pdf",
+  "isPrimary": true,
+  "claims": [
+   "出生時育児休業は子の出生後8週間以内に合計28日まで取得でき、2回まで分割できる。出生時育児休業給付金の支給率は67%で、休業開始時賃金日額の上限額は16,110円（令和7年8月1日現在）",
+   "令和7年4月1日に創設された出生後休業支援給付金は、被保険者と配偶者の両方が14日以上の育児休業等を取得した場合に13%が支給され、本体と合わせて80%相当になる。上限額は58,640円（令和7年8月1日現在）"
+  ],
+  "checkedAt": "2026-11-24",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "愛知労働局「雇用保険のしおり 第10章 育児休業等給付について」で、分割取得の回数、給付率、上限額、出生後休業支援給付金の要件を確認。金額は毎年8月1日に見直される場合がある。"
  }
 ]
