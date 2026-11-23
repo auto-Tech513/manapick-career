@@ -10,11 +10,12 @@ import { PathwayForm } from "@/components/PathwayForm";
 import { buildWorkstyleCards } from "@/lib/workstyle-cards";
 import { publishedJobs, categories } from "@/content/jobs";
 import { PhraseText } from "@/components/PhraseTitle";
+import { siteOpenGraph } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "キャリア候補の入口案内",
   description: "興味・取り組みたい作業・学習時間の3問から候補を提示する入口案内と、仕事場面での好みの12問から働き方の傾向と職業への入口を示す16タイプ働き方診断。どちらも適性や向き不向きの判定ではありません。回答は端末内にのみ保存され、外部へ送信されません。提示された候補は、職業ページで仕事内容と出典を確認してから判断できます。",
-  alternates: { canonical: "/route/", types: { "application/rss+xml": "/feed.xml" } },
+  alternates: { canonical: "/route/", types: { "application/rss+xml": "/feed.xml" } }, openGraph: siteOpenGraph("/route/")
 };
 
 export default function RoutePage() {
