@@ -1,0 +1,172 @@
+/* 「身近な仕事を、具体的に知る」の職業カード（ProfessionalEntries）。
+   トップと /all/ の両方で使うため、部品側に置く（以前は home.css にしかなく、/all/ では素の文字列で表示されていた）。 */
+.pro-entries .eh {
+  display: flex;
+  align-items: flex-end;
+  gap: 22px;
+  margin-bottom: 32px;
+}
+.pro-entries .code {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--num);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  background: var(--ca);
+  color: var(--ink);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+.pro-entries .eh h2 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.35;
+  margin-top: 8px;
+}
+.pro-entries .eh p {
+  font-size: 13.5px;
+  color: #4a5468;
+  /* 独立監査 2026-11-18 PC M7：「…整理していま｜す。」の2字落ち → 行の長さをそろえ、文節で折る */
+  max-width: 460px;
+  text-wrap: balance;
+}
+.page-shell .pro-entries {
+  margin: 64px 0 0;
+  padding: 0;
+}
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.job {
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.job-top {
+  height: 150px;
+  background: var(--yp);
+  position: relative;
+  border-bottom: 2px solid var(--ink);
+}
+.job-top > svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -46%);
+  width: 130px;
+  height: 120px;
+}
+.job-tag {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #fff;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  padding: 1px 9px;
+  z-index: 1;
+}
+.job-bd {
+  padding: 16px 18px 18px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.job-bd h3 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 24px;
+}
+.job-bd h3 a {
+  color: var(--ink);
+}
+.job-bd p {
+  font-size: 12.5px;
+  color: #4a5468;
+  line-height: 1.75;
+  margin: 4px 0 12px;
+}
+.job-lk {
+  margin-top: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1.5px solid var(--ink);
+}
+.job-lk a {
+  text-align: center;
+  padding: 9px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink);
+  min-height: 44px;
+}
+.job-lk a + a {
+  border-left: 1px dashed #c9c2b0;
+}
+
+
+.job-bd h3 a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.job-lk a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+@media (max-width: 640px) {
+  .pro-entries .eh {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pro-entries .eh h2 {
+    font-size: 27px;
+  }
+  .page-shell .pro-entries {
+    margin-top: 48px;
+  }
+  .jobs {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .job {
+    border-radius: 16px;
+  }
+  .job-top {
+    height: 110px;
+  }
+  .job-top > svg {
+    width: 96px;
+    height: 96px;
+  }
+  .job-bd h3 {
+    font-size: 19px;
+  }
+  .job-bd p {
+    display: none;
+  }
+  .job-lk {
+    grid-template-columns: 1fr;
+  }
+  .job-lk a {
+    padding: 7px 0;
+    border-left: 0 !important;
+    border-top: 1px dashed #c9c2b0;
+    min-height: 44px;
+  }
+  .job-lk a:first-child {
+    border-top: 0;
+  }
+}

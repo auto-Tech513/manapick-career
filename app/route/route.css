@@ -58,3 +58,35 @@
   font-family: var(--mincho);
   font-weight: 700;
 }
+
+/* 入口カードは3枚（関心・働き方・資格の事前登録）。PC は3列で横に並べ、1枚だけ2段目に落ちないようにする。
+   720〜1024px の2列では3枚目を横いっぱいにする */
+@media (min-width: 720px) and (max-width: 1024px) {
+  .route-chooser a:nth-child(3):last-child {
+    grid-column: 1 / -1;
+  }
+}
+@media (min-width: 1025px) {
+  .route-chooser {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .route-chooser a {
+    align-items: flex-start;
+  }
+}
+
+/* 独立監査 2026-11-18 PC L4：「働き方から探す」区画がボタン1つだけで横に間延びしていた → PC は見出しとボタンを1枚の枠に横並び */
+@media (min-width: 1025px) {
+  #workstyle:has(> .wsd-intro) {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 40px;
+    padding: 28px 32px;
+    border: 1.5px solid #e3dcc6;
+    border-radius: 16px;
+    background: #fff;
+  }
+  #workstyle:has(> .wsd-intro) > .sh { margin: 0; }
+  #workstyle:has(> .wsd-intro) > .wsd-intro { margin: 0; }
+}

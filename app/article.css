@@ -56,7 +56,7 @@
 .editorial-detail .article-answer > span {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.16em;
   color: var(--ca-ink);
 }
@@ -110,7 +110,8 @@
   border-radius: 12px;
   background: #fff;
   padding: 12px 14px;
-  font-size: 14.5px;
+  /* 独立監査2 2026-11-19 M7：要点・本文の箇条は本文なので 16px（14.5px だった） */
+  font-size: 16px;
   line-height: 1.8;
 }
 .editorial-detail .article-key-points li svg,
@@ -119,19 +120,35 @@
   margin-top: 3px;
   color: var(--ca-ink);
 }
+/* Owner real-device fix 2026-11-17: in the flex row the "01" counter shrank
+   to one digit wide and stacked as 0 / 1. Keep it on one line. */
+.editorial-detail .article-key-points li::before {
+  flex: none;
+  min-width: 1.7em;
+  white-space: nowrap;
+  font-family: var(--num);
+  letter-spacing: 0.02em;
+}
+/* Owner real-device fix 2026-11-17: the link cards inside the navy
+   MORE READING / NEXT STEP / OCCUPATION / NETWORK panels are white boxes,
+   so the old 2px side padding put the text against the card edge. */
 .editorial-detail .related-careers > div {
   display: grid;
-  gap: 0;
-  border-top: 1px solid var(--rule);
+  gap: 8px;
 }
 .editorial-detail .related-careers > div > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 14px;
-  padding: 13px 2px;
-  border-bottom: 1px solid var(--rule);
+  gap: 12px;
+  padding: 14px 16px 14px 18px;
+  border: 1px solid var(--rule);
+  border-radius: 12px;
   min-height: 44px;
+}
+.editorial-detail .related-careers > div > a > span {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 .editorial-detail .related-careers strong {
   display: block;
@@ -207,3 +224,85 @@
     font-size: 22px;
   }
 }
+
+/* 全ページ監査 2026-11-17：幅360pxでは「25%増しだけじゃない。」のような1文節が行幅を
+   わずかに超え、句点が行頭に落ちていた。記事見出しだけ狭い画面で少し詰める */
+@media (max-width: 374px) {
+  .editorial-detail .phead h1 { font-size: 28px; }
+}
+
+/* 目次の見出しは文節で折る（PhraseText）。em は斜体にしない */
+.article-toc a em,
+.mobile-article-toc a em {
+  font-style: normal;
+}
+
+/* ============================================================
+   PC デザイン改善 2026-11-18（PC のみ。SP・タブレットは変えない）
+   - 記事カバー画像が全幅 1100×620 で1画面を占めていた → 本文と同じ 760px 幅に
+   - 本文の1行が 48〜52字と長かった → 本文欄を 660px にして全角45字以内に（目次欄は少し広げて語の途中で折れにくく）
+   - 記事下のメルマガ・PR 表記の文が横に長く伸びていた → 1行の長さを抑える
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* 独立監査 2026-11-18 PC M2：カバー画像（h1 の再掲）が本文の上で最初の画面の半分を占め、左寄せで右に 340px 空いていた。
+     見出しの右に 400px のサムネイルとして並べ、本文は2画面目ではなく最初の画面から始める。
+     左端は「パンくず・見出し・目次」と「本文列」の2つ、右端はカバーと本文列でそろえる（全体 1066px） */
+  .editorial-detail {
+    display: grid;
+    grid-template-columns: minmax(0, 610px) 400px;
+    column-gap: 56px;
+    align-items: start;
+  }
+  .editorial-detail > * {
+    grid-column: 1 / -1;
+    min-width: 0;
+  }
+  .editorial-detail > .phead {
+    grid-column: 1;
+  }
+  .editorial-detail > .article-cover {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    max-width: none;
+    margin: 0;
+  }
+  .editorial-detail .article-layout {
+    grid-template-columns: 280px minmax(0, 690px);
+    column-gap: 96px;
+  }
+  .editorial-detail .editorial-article {
+    max-width: 690px;
+  }
+  /* 本文の後ろの共有・注記も本文列にそろえる */
+  .editorial-detail > .career-share-kit,
+  .editorial-detail > .article-method-note,
+  .editorial-detail > .source-freshness-notice {
+    margin-left: 376px;
+    max-width: 690px;
+  }
+  .editorial-detail > .career-share-kit {
+    grid-template-columns: 1fr;
+  }
+  .editorial-detail .article-pr-notice,
+  .editorial-detail .correction-note,
+  .editorial-detail .related-careers > p {
+    max-width: 45em;
+  }
+  /* 出典の一覧：白地の角丸の箱なのに左右の余白が0で、文字が箱の縁に接していた */
+  .editorial-detail .article-review .source-list li {
+    padding: 12px 16px;
+  }
+}
+/* 独立監査 2026-11-18 PC M1：共有ボックスの上の余白が -16px で、直前の「この記事の内容確認日」に枠線が重なっていた */
+.editorial-detail > .career-share-kit {
+  margin-top: 24px;
+}
+
+/* 独立監査 2026-11-18 M4：記事の目次（SP の開閉式）のリンクが 35px だった → 44px */
+.mobile-article-toc a { min-height: 44px; align-items: center; }
+
+/* 独立監査2 2026-11-19 L5：記事末の紺地の枠（MANAPICK NETWORK など）の小見出しが、記事本文用の暗い黄土色（--ca-ink）に上書きされて
+   紺地でほぼ読めなかった → 紺地の枠ではテーマの黄色に戻す。各リンクの説明は1行で「…」省略されていた → 2行まで見せる */
+.editorial-detail .related-careers .article-section-number { color: var(--primary); }
+.editorial-detail .related-careers > div > a small { overflow: hidden; white-space: normal; text-overflow: clip; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }

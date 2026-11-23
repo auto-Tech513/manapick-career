@@ -96,7 +96,7 @@
   flex-wrap: wrap;
   margin-top: 14px;
 }
-.dos-meta span {
+.dos-meta > span {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -110,6 +110,12 @@
 .dos-meta b {
   color: var(--ca-ink);
   font-weight: 700;
+  /* 狭い画面で見出し語が縮んで「…を知｜る」「内｜容」と割れていた。見出し語は縮めず、後ろの文で折る */
+  flex: none;
+}
+/* 後ろの文は文節で折る（「…紹｜介」「整｜理」の割れ対策）。内側の span は丸い枠にしない */
+.dos-meta > span > span {
+  min-width: 0;
 }
 
 /* ---------- レイアウト ---------- */
@@ -128,7 +134,7 @@
 .dos-toc-h {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.18em;
   margin: 0 0 6px;
 }
@@ -224,6 +230,10 @@
   border-radius: 16px;
   padding: 14px 16px;
 }
+/* カード内の題に本文見出し用の上余白（30px）が付き、カードの上が空いて見えていた */
+.dossier-article .fit-points > div > h3:first-child {
+  margin-top: 0;
+}
 .dossier-article .depth-qualifications > article,
 .dossier-article .depth-employers > article {
   border: 1.5px solid var(--dos-card-border);
@@ -233,7 +243,7 @@
 .dossier-article .depth-label {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.14em;
   color: var(--ca-ink);
 }
@@ -505,7 +515,7 @@
 .dossier-article .daily-action-card > span {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.18em;
 }
 .dossier-article .daily-action-card > strong {
@@ -554,7 +564,7 @@
 .dos-sh-k {
   font-family: var(--num);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 0.18em;
   color: var(--ca-ink);
   margin: 0;
@@ -622,3 +632,48 @@
     gap: 2px;
   }
 }
+
+/* PC デザイン改善 2026-11-18（PC のみ）：冒頭の丸チップで文字が枠の上下に寄っていた → 少しゆとりを持たせる */
+@media (min-width: 1025px) {
+  .dos-meta > span {
+    padding: 7px 16px;
+    min-height: 38px;
+  }
+}
+
+/* 独立監査 2026-11-18 M9：360px で長いカタカナの社名（「ジャパネットメディアエージェンシー」）が入らず、長音「ー」1字が次の行頭に落ちていた。
+   企業例の社名は、最も長い文節（--name-fit 字）が1行に入る大きさまで字を下げる */
+.depth-employers > article { container-type: inline-size; }
+@media (max-width: 640px) {
+  .dossier-article .depth-employers h3, .depth-employers h3 { font-size: min(18px, calc(100cqw / (var(--name-fit, 8) * 1.04))); }
+}
+
+/* 独立監査 2026-11-18 M4：SP の目次リンクが 35px だった → 44px */
+@media (max-width: 1024px) {
+  .dos-toc a { min-height: 44px; align-items: center; }
+}
+
+/* 独立監査 2026-11-18 PC L5：解説ページの本文がほぼ全部 灰色（#667085）で、職業ページ（墨色）より薄く読みにくかった。
+   本文は墨色寄り、節の導入文は少し濃い灰色に */
+.dossier-article .detail-content p:not(.depth-evidence):not(.depth-record):not(.employer-scope):not(.section-lead),
+.dossier-article .detail-content li,
+.dossier-article .detail-content dd {
+  color: #2b3448;
+}
+.dossier-article .detail-content .section-lead {
+  color: #4a5468 !important;
+}
+
+/* ============================================================
+   独立監査2 2026-11-19（career）
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* H1 PC：目次と右欄が top:20px で追従し、固定ヘッダー（70px）の下に 50px 潜っていた → ガイドと同じ位置（--sticky-under-header） */
+  .dos-toc,
+  .dossier-article .detail-aside { top: var(--sticky-under-header, 96px); }
+  /* M5 PC の目次の各行が 40px だった（隣の行と接しているので広げで重ねられない）→ 行の上下の余白を 10px にして 44px に */
+  .dos-toc a { padding: 10px 0; }
+  .dos-toc a::after { inset: 0; }
+}
+/* M5 パンくず：上下 10px の広げで 43〜44px ちょうどだった → 11px */
+.dos-crumb a::after { inset: -11px -5px; }

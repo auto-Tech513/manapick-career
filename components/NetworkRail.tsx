@@ -7,7 +7,7 @@ import { stations, stationHref } from "../lib/stations";
  */
 export function NetworkRail() {
   return (
-    <div className="rail">
+    <div className="rail google-anno-skip">
       <span className="rail-lbl">manapick network</span>
       <nav className="rail-line" aria-label="manapick 6サイト">
         {stations.map((station) => (

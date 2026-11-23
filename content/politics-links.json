@@ -1,0 +1,221 @@
+{
+  "source": "manapick politics 公開ページ（2026-11-16 に全件 HTTP 200 を実測）への文脈リンク。リンク先は content/network-map.json の itemId で参照し、QA台帳（docs/qa-network.json）で生存確認済みのものだけを登録する",
+  "note": "職業ページ専用。対応づけは各職業の定義上の役割に基づく。根拠の弱い職業（学習塾教師・土地家屋調査士など）は登録しない。保険営業のクーリング・オフは保険業法の制度であり、特定商取引法を扱うリンク先との法域のずれがあるため登録しない",
+  "generatedAt": "2026-11-16",
+  "occupations": {
+    "21": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "現場の労務管理では、労働基準法などの労働ルールの理解が求められます。労働契約法との違いは姉妹サイトで整理しています",
+        "section": "conditions"
+      },
+      {
+        "itemId": "politics:industrial-safety-health-act",
+        "label": "労働安全衛生法を manapick politics で読む",
+        "lead": "労働災害を防ぐための安全管理は、労働安全衛生法が事業者に求める義務と重なります。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "81": [
+      {
+        "itemId": "politics:consumer-contracts",
+        "label": "消費者契約の基本を manapick politics で読む",
+        "lead": "保険や投資などの契約商品を消費者に助言する仕事では、消費者契約の基本ルールが土台になります。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "82": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "労働社会保険の手続きと労務相談では、労働基準法と労働契約法の違いを押さえることが欠かせません。姉妹サイトで整理しています",
+        "section": "conditions"
+      },
+      {
+        "itemId": "politics:pension-basics",
+        "label": "国民年金法と厚生年金保険法を manapick politics で読む",
+        "lead": "年金事務所への届出など年金の手続もこの仕事の範囲です。国民年金と厚生年金の違いは姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:employment-insurance-act",
+        "label": "雇用保険法のキホンを manapick politics で読む",
+        "lead": "公共職業安定所への雇用保険の手続も代行します。雇用保険法の仕組みは姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "83": [
+      {
+        "itemId": "politics:consumer-contracts",
+        "label": "消費者契約の基本を manapick politics で読む",
+        "lead": "消費者からの契約トラブルの相談では、消費者契約法の基本が関わります。姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:rent-deposit-renewal",
+        "label": "借地借家と敷金のルールを manapick politics で読む",
+        "lead": "敷金返還など不動産トラブルの書類も、この仕事の扱う範囲です。賃貸借のルールは姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:inheritance-registration",
+        "label": "相続登記の義務化を manapick politics で読む",
+        "lead": "相続した土地・建物の登記の代理はこの仕事の代表例です。2024年からの相続登記の義務化は姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "88": [
+      {
+        "itemId": "politics:consumer-contracts",
+        "label": "消費者契約の基本を manapick politics で読む",
+        "lead": "消費者契約をめぐる紛争は、民事の相談で扱う代表的な分野です。消費者契約法の基本は姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:rent-deposit-renewal",
+        "label": "借地借家と敷金のルールを manapick politics で読む",
+        "lead": "敷金返還の請求は、民事で扱う身近な案件の一つです。賃貸借のルールは姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:civil-code-overview",
+        "label": "民法の全体像を manapick politics で読む",
+        "lead": "金銭の貸し借り・売買・相続など民事事件の多くは民法が土台です。民法の全体像は姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "92": [
+      {
+        "itemId": "politics:rent-deposit-renewal",
+        "label": "借地借家と敷金のルールを manapick politics で読む",
+        "lead": "賃貸不動産の評価では、賃貸借契約や敷金をめぐるルールも関係します。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "116": [
+      {
+        "itemId": "politics:cooling-off",
+        "label": "クーリング・オフの仕組みを manapick politics で読む",
+        "lead": "エステのような継続サービスの契約には、クーリング・オフという解約の仕組みがあります。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "407": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "雇用契約や就業規則の運用では、労働基準法と労働契約法の違いが土台になります。姉妹サイトで整理しています",
+        "section": "conditions"
+      },
+      {
+        "itemId": "politics:year-end-adjustment",
+        "label": "年末調整と確定申告を manapick politics で読む",
+        "lead": "給与に関わる事務では年末調整も扱います。年末調整と確定申告の関係は姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "449": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "労働時間の規制は、この仕事の働き方を直接左右します。労働基準法と労働契約法の違いは姉妹サイトで整理しています",
+        "section": "conditions"
+      }
+    ],
+    "491": [
+      {
+        "itemId": "politics:labor-standards-vs-labor-contract",
+        "label": "労働基準法と労働契約法の違いを manapick politics で読む",
+        "lead": "労働基準法は、この仕事が監督・指導の対象とする法律そのものです。労働契約法との違いは姉妹サイトで整理しています",
+        "section": "conditions"
+      }
+    ],
+    "91": [
+      {
+        "itemId": "politics:income-tax-act",
+        "label": "所得税法を manapick politics で読む",
+        "lead": "所得税の申告書の作成はこの仕事の中心です。超過累進税率の仕組みは姉妹サイトで図解しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:corporate-tax-act",
+        "label": "法人税法を manapick politics で読む",
+        "lead": "法人の申告では法人税法の益金・損金の考え方が土台になります。姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:consumption-tax-act",
+        "label": "消費税法を manapick politics で読む",
+        "lead": "消費税の申告も代理します。税率と納税義務の仕組みは姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "89": [
+      {
+        "itemId": "politics:companies-act-overview",
+        "label": "会社法の全体像を manapick politics で読む",
+        "lead": "監査する計算書類は会社法に基づいて作られます。会社法の全体像は姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "84": [
+      {
+        "itemId": "politics:civil-code-overview",
+        "label": "民法の全体像を manapick politics で読む",
+        "lead": "契約書など権利義務に関する書類の作成では民法の理解が欠かせません。民法の全体像は姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "139": [
+      {
+        "itemId": "politics:arrest-to-indictment",
+        "label": "逮捕から起訴までの時間制限を manapick politics で読む",
+        "lead": "被疑者の逮捕後は、法律で決まった時間制限の中で手続が進みます。逮捕から起訴までの流れは姉妹サイトで図解しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:bicycle-blue-ticket",
+        "label": "自転車の青切符を manapick politics で読む",
+        "lead": "交通の取締りも職務の一つです。2026年4月に始まった自転車の青切符は姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "405": [
+      {
+        "itemId": "politics:invoice-system",
+        "label": "インボイス制度を manapick politics で読む",
+        "lead": "取引の入出金の処理では、受け取った請求書がインボイスかどうかで消費税の扱いが変わります。姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:withholding-tax",
+        "label": "源泉徴収を manapick politics で読む",
+        "lead": "給料の支払では所得税の源泉徴収も行います。源泉徴収の仕組みは姉妹サイトで整理しています",
+        "section": "work"
+      },
+      {
+        "itemId": "politics:electronic-books-act",
+        "label": "電子帳簿保存法を manapick politics で読む",
+        "lead": "帳簿や証憑をデータで保存するときのルールは電子帳簿保存法で決まっています。姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "408": [
+      {
+        "itemId": "politics:shareholders-meeting",
+        "label": "株主総会の決議の種類を manapick politics で読む",
+        "lead": "株主総会の招集・運営はこの仕事の担当範囲です。普通・特別決議の違いは姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ],
+    "138": [
+      {
+        "itemId": "politics:local-direct-demand",
+        "label": "地方自治法の直接請求を manapick politics で読む",
+        "lead": "住民による条例の制定・改廃の請求などは地方自治法で決まっています。直接請求の仕組みは姉妹サイトで整理しています",
+        "section": "work"
+      }
+    ]
+  }
+}

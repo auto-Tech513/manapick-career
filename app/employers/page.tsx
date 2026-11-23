@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { TransferCards, type TransferCard } from "@/components/TransferCards";
@@ -6,6 +7,7 @@ import { employerCategories, employerDossiers, employerTotal, occupationById } f
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import "./employers.css";
+import { PhraseText } from "@/components/PhraseTitle";
 
 export const metadata: Metadata = {
   title: "企業・法人・公的機関の例がある職業一覧",
@@ -21,9 +23,11 @@ export default function EmployersPage() {
   ] };
   return <><JsonLd data={graph} /><div className="page-shell employers-page">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">企業例のある職業</span></nav>
-    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 企業例のある職業</p><h1>企業・法人・公的機関の例がある職業</h1>
-      <p className="phead-lead">556職業のうち、現在 {employerTotal} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。確認が取れていない職業は載せていません。載せていない職業は、公式ページで確認できた例がまだ見つかっていないためで、その職業で働く場が存在しないという意味ではありません。</p>
-      <div className="phead-meta"><span><b>公式ページで確認した職場の例</b>{employerTotal}職業</span><span><b>分野</b>{employerCategories.length}</span></div></header>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 企業例のある職業</p><h1 className="phrase-breaks"><PhraseText text="企業・法人・公的機関の例がある職業" /></h1>
+      <p className="phead-lead phrase-breaks"><PhraseChildren>556職業のうち、現在 {employerTotal} 職業について「その仕事を行っている具体的な企業・法人・公的機関」を各組織の公式ページで確認し、出典付きで職業解説に載せています。この一覧は職場の例の提示であり、募集の継続・採用可能性・推薦を示すものではありません。</PhraseChildren></p>
+      {/* 前提の注意書きは折りたたむ（独立監査 2026-11-18 PC L3） */}
+      <details className="phead-fold"><summary>載せていない職業について</summary><p className="phrase-breaks"><PhraseText text="確認が取れていない職業は載せていません。載せていない職業は、公式ページで確認できた例がまだ見つかっていないためで、その職業で働く場が存在しないという意味ではありません。" /></p></details>
+      <div className="phead-meta"><span><b>公式ページで確認した職場の例</b>{employerTotal}職業</span><span><b>内訳</b>分野別{employerTotal - employerDossiers.length}・専用ページ{employerDossiers.length}</span><span><b>分野</b>{employerCategories.length}</span></div></header>
     <section aria-labelledby="employers-howto-title" className="employers-howto">
       <div className="sh"><div><p className="sh-k">HOW TO — 探し方</p><h2 id="employers-howto-title">探し方</h2></div></div>
       <ol>
@@ -33,25 +37,25 @@ export default function EmployersPage() {
       </ol>
     </section>
     <section aria-label="分野別の企業例" className="employers-group">
-      <div className="sh"><div><p className="sh-k">FIELDS — 分野</p><h2>分野から探す<small>{employerCategories.length}分野・{employerCategories.reduce((sum, category) => sum + category.items.length, 0)}職業</small></h2></div></div>
+      <div className="sh"><div><p className="sh-k">FIELDS — 分野</p><h2 className="phrase-breaks"><PhraseText text="分野から探す" /><small>{employerCategories.length}分野・{employerCategories.reduce((sum, category) => sum + category.items.length, 0)}職業</small></h2></div></div>
       <ul className="employers-list">{employerCategories.map(category => {
         const examples = category.items.slice(0, 3).map(item => occupationById.get(item.catalogId)?.name).filter(Boolean).join("・");
         return <li key={category.key}>
-          <div><h3>{category.label}</h3><p>{category.description}。例：{examples}など</p></div>
+          <div><h3 className="phrase-breaks"><PhraseText text={category.label} /></h3><p>{category.description}。例：{examples}など</p></div>
           <Link href={`/employers/${category.key}/`}>{category.items.length}職業の例を見る <ArrowUpRight aria-hidden="true" /></Link>
         </li>;
       })}</ul>
     </section>
     <section aria-label="詳しい企業例ページがある職業" className="employers-group">
-      <div className="sh"><div><p className="sh-k">DOSSIERS — 専用ページ</p><h2>詳しい企業例ページがある職業<small>{employerDossiers.length}職業</small></h2></div></div>
+      <div className="sh"><div><p className="sh-k">DOSSIERS — 専用ページ</p><h2 className="phrase-breaks"><PhraseText text="詳しい企業例ページがある職業" /><small>{employerDossiers.length}職業</small></h2></div></div>
       <ul className="employers-list">{employerDossiers.map(({ entry, profile }) => <li key={entry.catalogId}>
-        <div><h3>{profile!.name}</h3><p>仕事内容・資格・年収・企業例を出典付きで整理した専用ページ</p></div>
+        <div><h3 className="phrase-breaks"><PhraseText text={profile!.name} /></h3><p>仕事内容・資格・年収・企業例を出典付きで整理した専用ページ</p></div>
         <Link href={`/career/${entry.slug}/`}>詳しく読む <ArrowUpRight aria-hidden="true" /></Link>
       </li>)}</ul>
     </section>
     <p className="employers-note">企業例の確認方法：各組織の公式ページ（採用・職種紹介・業務紹介など）を開き、職種名と業務内容が本文にあることを確認しています。確認日は各職業の解説内に記載しています。</p>
     <section className="transfer-sec" aria-label="ほかの駅へ">
-      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2>ほかの駅へ進む</h2></div></div>
+      <div className="sh"><div><p className="sh-k">TRANSFER — 乗り換え</p><h2 className="phrase-breaks"><PhraseText text="ほかの駅へ進む" /></h2></div></div>
       <TransferCards cards={[
         { siteId: "license", title: "ITパスポート", description: "仕事につながる資格", href: "https://license.manapick.app/license/it-passport/" },
         { siteId: "manapick", title: "資格の学び方ガイド", description: "無料動画で学ぶ", href: "https://manapick.app/guide/certification/" },

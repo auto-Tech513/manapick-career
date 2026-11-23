@@ -3880,5 +3880,504 @@
   "updateFrequency": "90d",
   "republication": "利用規約第9条に基づく二次利用（加工して作成）。出典表示は規定書式による。",
   "notes": "独立行政法人労働政策研究・研修機構（JILPT）作成『職業情報データベース 簡易版数値系ダウンロードデータ ver.7.00』、職業情報提供サイト（job tag）より2026年11月15日にダウンロード（https://shigoto.mhlw.go.jp/User/download）を加工して作成。2026-03-17公開のCSVを取得。適性欄は向き・不向きの断定には使わない。"
+ },
+ {
+  "sourceId": "mhlw-minimum-wage-check-method",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/chingin/newpage_43899.html",
+  "isPrimary": true,
+  "claims": [
+   "月給制は月給÷1か月平均所定労働時間で時間額に換算し最低賃金額と比べる",
+   "日給・出来高払い・組み合わせの場合の換算方法"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金額以上かどうかを確認する方法。計算式のみを要約。"
+ },
+ {
+  "sourceId": "mhlw-minimum-wage-overview",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/chingin/newpage_43875.html",
+  "isPrimary": true,
+  "claims": [
+   "最低賃金の対象は毎月支払われる基本的な賃金で、割増賃金・精皆勤手当・通勤手当・家族手当などを除く",
+   "派遣労働者には派遣先の最低賃金が適用される"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金制度の概要。"
+ },
+ {
+  "sourceId": "mhlw-minimum-wage-list-2026",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/minimumichiran/",
+  "isPrimary": true,
+  "claims": [
+   "令和8年度地域別最低賃金の全国一覧（全国加重平均1,177円、東京都1,280円、神奈川県1,279円、大阪府1,231円、埼玉県1,196円、愛知県1,195円）",
+   "発効日は令和8年10月1日から12月2日まで都道府県ごとに異なる（岩手県・熊本県12月1日、沖縄県12月2日）"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "全国一覧PDF（https://www.mhlw.go.jp/content/11200000/001753404.pdf）で金額と発効日を確認。"
+ },
+ {
+  "sourceId": "egov-minimum-wage-act",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/334AC0000000137",
+  "isPrimary": true,
+  "claims": [
+   "第4条：最低賃金額以上の支払義務、下回る契約部分の無効、算入しない賃金",
+   "第40条：地域別最低賃金違反は50万円以下の罰金"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金法（昭和34年法律第137号）。"
+ },
+ {
+  "sourceId": "egov-minimum-wage-act-rule",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/334M50002000016",
+  "isPrimary": true,
+  "claims": [
+   "第1条：臨時の賃金、1か月を超える期間ごとの賃金、時間外・休日・深夜割増部分を算入しない",
+   "第2条：月給は月の所定労働時間数（異なる場合は1年間の1月平均）で除して時間額に換算"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "最低賃金法施行規則（昭和34年労働省令第16号）。"
+ },
+ {
+  "sourceId": "egov-labor-standards-act",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/322AC0000000049",
+  "isPrimary": true,
+  "claims": [
+   "第32条：1週40時間・1日8時間",
+   "第37条：時間外・休日・深夜の割増賃金、月60時間超は5割以上、代替休暇、基礎から除く賃金",
+   "第39条：年次有給休暇の付与日数、比例付与、時間単位、時季指定義務",
+   "第115条・第143条：賃金請求権は当分の間3年、その他の請求権は2年",
+   "第119条・第120条：罰則",
+   "第136条：有給休暇取得者への不利益取扱いの禁止"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "労働基準法（昭和22年法律第49号）。"
+ },
+ {
+  "sourceId": "egov-labor-standards-act-rule",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/322M40000100023",
+  "isPrimary": true,
+  "claims": [
+   "第19条：割増賃金の基礎となる1時間あたり賃金の計算",
+   "第20条：時間外かつ深夜5割以上、月60時間超かつ深夜7割5分以上、休日かつ深夜6割以上",
+   "第21条：別居手当・子女教育手当・住宅手当・臨時の賃金・1か月を超える期間ごとの賃金を基礎から除く",
+   "第24条の3：比例付与の日数表と週30時間・5.2日",
+   "第24条の6・第24条の7：時季指定時の意見聴取、年次有給休暇管理簿"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "労働基準法施行規則（昭和22年厚生省令第23号）。"
+ },
+ {
+  "sourceId": "egov-overtime-premium-order",
+  "provider": "e-Gov法令検索（デジタル庁）",
+  "url": "https://laws.e-gov.go.jp/law/406CO0000000005",
+  "isPrimary": true,
+  "claims": [
+   "時間外労働の割増率は2割5分、休日労働は3割5分"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "労働基準法第三十七条第一項の時間外及び休日の割増賃金に係る率の最低限度を定める政令（平成6年政令第5号）。"
+ },
+ {
+  "sourceId": "mhlw-overtime-60h-sme-leaflet",
+  "provider": "厚生労働省・中小企業庁",
+  "url": "https://jsite.mhlw.go.jp/hokkaido-roudoukyoku/content/contents/001412110.pdf",
+  "isPrimary": true,
+  "claims": [
+   "2023年4月1日から中小企業も月60時間超の時間外労働の割増賃金率が50％（大企業は2010年4月から適用）",
+   "月60時間超の時間外労働が深夜に及ぶ場合は75％",
+   "月60時間の算定に法定休日の労働時間は含まれないが、それ以外の休日の労働時間は含まれる"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "リーフレット「月60時間を超える時間外労働の割増賃金率が引き上げられます」（北海道労働局掲載）。"
+ },
+ {
+  "sourceId": "mhlw-paid-leave-five-days",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/content/11911000/000548629.pdf",
+  "isPrimary": true,
+  "claims": [
+   "2019年（平成31年）4月から、年10日以上の年次有給休暇が付与される労働者に年5日を確実に取得させることが使用者の義務になった"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "年次有給休暇の取得促進に関する厚生労働省の資料。"
+ },
+ {
+  "sourceId": "mhlw-working-conditions-survey-2025",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/jikan/syurou/25/dl/houdou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "令和7年就労条件総合調査：年次有給休暇の労働者1人平均付与日数18.1日、取得日数12.1日、取得率66.9％（前年調査16.9日・11.0日・65.3％）",
+   "取得率は昭和59年以降過去最高"
+  ],
+  "checkedAt": "2026-11-17",
+  "updateFrequency": "365d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "令和7年12月19日公表の報道発表資料。"
+ },
+ {
+  "sourceId": "stat-lfs-detailed-2026-q3",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/roudou/sokuhou/4hanki/dt/pdf/gaiyou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "労働力調査（詳細集計）2026年7〜9月期平均の正規・非正規の職員・従業員数と割合（正規3,744万人、非正規2,136万人、非正規割合36.3%）",
+   "非正規の職員・従業員が現職の雇用形態についた主な理由、失業期間別失業者数（1年以上59万人）、転職者数（339万人）と転職等希望者数（984万人）"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "quarterly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月10日公表の結果の概要PDFで確認。リンク先PDFは四半期ごとに入れ替わるため、確認時点では2026年7〜9月期平均版だった。"
+ },
+ {
+  "sourceId": "cao-economy-watchers-2026-10",
+  "provider": "内閣府",
+  "url": "https://www5.cao.go.jp/keizai3/2026/1110watcher/watcher1.pdf",
+  "isPrimary": true,
+  "claims": [
+   "景気ウォッチャー調査2026年10月調査の現状判断DIは46.1（季節調整値、前月差0.9ポイント低下）、先行き判断DIは46.5（同0.9ポイント低下）",
+   "雇用関連DIは現状47.4（1.6ポイント低下）、先行き46.2（2.2ポイント低下）。内閣府の総括は「景気は、持ち直しの動きがみられる」に据え置き"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "30d",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月10日公表の調査結果（全体版）PDFで確認。調査期間は2026年10月25日〜31日、有効回答1,801人（87.9%）。"
+ },
+ {
+  "sourceId": "cao-gdp-2026-q3-prelim",
+  "provider": "内閣府経済社会総合研究所",
+  "url": "https://www.esri.cao.go.jp/jp/sna/menu.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年7〜9月期四半期別GDP速報（1次速報値）の実質GDPは前期比0.0%減・年率0.1%減で4四半期ぶりのマイナス、名目GDPは前期比0.4%増",
+   "個人消費は実質0.3%減と2四半期連続の減少、設備投資は実質1.6%増、雇用者報酬は名目前期比1.1%増・実質0.3%増"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "quarterly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月16日8時50分公表の1次速報値。記者公表資料と統計表で確認。2次速報は2026年12月8日公表予定で、数値は改定され得る。"
+ },
+ {
+  "sourceId": "meti-ita-monthly",
+  "provider": "経済産業省",
+  "url": "https://www.meti.go.jp/statistics/tyo/sanzi/index.html",
+  "isPrimary": true,
+  "claims": [
+   "第3次産業活動指数2026年9月分の総合指数は105.7（季節調整済み）で前月比0.5%低下、2か月連続の低下。基調判断は「足踏みがみられる」に下方修正",
+   "広義対個人サービスは106.4（0.5%低下）、広義対事業所サービスは105.4（0.3%低下）。卸売業・情報通信業が上昇し、金融業、保険業・不動産業が低下"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "30d",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月17日公表。経済産業省の結果概要で確認し、e-Statの掲載情報で照合した。"
+ },
+ {
+  "sourceId": "meti-iip-2026-09-final",
+  "provider": "経済産業省",
+  "url": "https://www.meti.go.jp/statistics/tyo/iip/kako_press.html",
+  "isPrimary": true,
+  "claims": [
+   "鉱工業生産指数2026年9月分確報（2026年11月16日公表）は生産指数103.9（2020年＝100、季節調整済）、前月比2.0％上昇と3か月ぶりのプラス。速報104.1から下方修正",
+   "出荷指数は100.9（0.5％上昇）、在庫指数は100.2（2.8％上昇）で、在庫の原指数は前年同月比0.4％増と20か月ぶりに前年を上回った。在庫率指数は108.9（2.4％上昇）",
+   "製造工業稼働率指数は104.8（1.6％上昇）、生産能力指数は94.4（0.2％上昇、前年同月比1.4％低下）",
+   "速報時点（2026年10月30日）で基調判断は「生産は一進一退」に据え置き。製造工業生産予測調査では10月5.1％増・11月0.8％増の計画（10月の補正値は3.9％増）"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "30d",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "数値は経済産業省の結果概要（確報）で確認した。業種別の速報段階の内訳（自動車工業・生産用機械工業の上昇）は経済産業省の速報公表資料に基づく。"
+ },
+ {
+  "sourceId": "cao-machinery-orders-2026-09",
+  "provider": "内閣府経済社会総合研究所",
+  "url": "https://www.esri.cao.go.jp/jp/stat/juchu/2026/2609juchu.html",
+  "isPrimary": true,
+  "claims": [
+   "機械受注統計調査2026年9月実績で、船舶・電力を除く民需は1兆662億円、前月比0.3%減（2か月ぶり減少）。基調判断は「持ち直しの動きがみられる」に据え置き",
+   "7〜9月期は3兆1,528億円で前期比1.2%増（4四半期連続プラス）。10〜12月期見通しは3兆2,870億円で4.3%増"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月19日公表。結果の概要PDFと統計表CSV（2609juchu-1.csv）で数値を確認。見通しは2026年9月末時点の調査による。"
+ },
+ {
+  "sourceId": "stat-online-shopping-2026-09",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/joukyou/pdf/n_joukyou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "家計消費状況調査2026年9月分（二人以上の世帯）で、ネットショッピングの支出額は1世帯当たり26,303円、名目0.6%増。利用世帯の割合は54.6%で1.9ポイント低下",
+   "ネットショッピング利用1世帯当たりの支出額は48,213円で4.3%増。旅行関係費が名目8.0%増で支出額の増加に最も寄与"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月10日公表の「ネットショッピングの状況について（2026年9月分結果）」PDFで確認。対象は二人以上の世帯。"
+ },
+ {
+  "sourceId": "jta-travel-consumption-2026-q3",
+  "provider": "観光庁",
+  "url": "https://www.mlit.go.jp/kankocho/news02_00106.html",
+  "isPrimary": true,
+  "claims": [
+   "旅行・観光消費動向調査2026年7-9月期（1次速報）で、日本人の国内旅行消費額は8兆4,354億円、前年同期比4.3%増で過去最高。延べ旅行者数は1億6,046万人で0.5%減",
+   "旅行単価は52,569円で4.9%増。宿泊旅行の消費額は7兆716億円で4.6%増、日帰り旅行は1兆3,639億円で3.1%増"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "quarterly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月18日公表の1次速報。報道発表資料PDFで全数値を確認。2次速報で改定され得る。"
+ },
+ {
+  "sourceId": "jnto-visitors-2026-10",
+  "provider": "日本政府観光局（JNTO）",
+  "url": "https://www.jnto.go.jp/news/press/20261118_monthly.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年10月の訪日外客数（推計値）は3,912,500人で前年同月比0.4%増、単月として過去最高",
+   "韓国は1,035,800人で19.4%増、台湾は634,600人で6.5%増。中国は379,500人で47.0%減と11か月連続の減少"
+  ],
+  "checkedAt": "2026-11-19",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月18日公表の推計値。法務省の出入国管理統計に基づく算出で、後に暫定値・確定値へ置き換わる。"
+ },
+ {
+  "sourceId": "stat-consumer-prices-2026-10",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
+  "isPrimary": true,
+  "claims": [
+   "2026年10月分の消費者物価指数（全国、2025年基準）は、総合103.1で前年同月比2.3%上昇、生鮮食品を除く総合102.9で2.2%上昇、生鮮食品及びエネルギーを除く総合103.3で2.2%上昇",
+   "エネルギーは前年同月比2.2%上昇（9月は0.6%下落）。うるち米（コシヒカリを除く）は29.8%下落し、寄与度はマイナス0.22"
+  ],
+  "checkedAt": "2026-11-21",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月20日公表。報道資料「2025年基準 消費者物価指数 全国 2026年10月分」（zenkoku.pdf）で指数・費目別・品目別の数値を確認。基準は2025年=100。"
+ },
+ {
+  "sourceId": "mof-trade-2026-10",
+  "provider": "財務省",
+  "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/gaiyo2026_10.pdf",
+  "isPrimary": true,
+  "claims": [
+   "令和8年10月分貿易統計（速報）で、輸出額は11兆7,688億円（前年同月比20.5%増）、輸入額は12兆2,453億円（21.6%増）、差引額は4,765億円の赤字（6か月連続の赤字）",
+   "原粗油の輸入額は1兆2,745億円で60.5%増、数量は11,273千キロリットルで0.7%減。半導体等電子部品の輸出額は9,296億円で49.7%増"
+  ],
+  "checkedAt": "2026-11-21",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月18日公表。「令和8年10月分貿易統計（速報）の概要」PDFで数値を確認。輸出入額の過去最大は同公表資料の順位付けによる。速報値は確報で改定されることがある。"
+ },
+ {
+  "sourceId": "stat-population-2026-11",
+  "provider": "総務省統計局",
+  "url": "https://www.stat.go.jp/data/jinsui/pdf/202611.pdf",
+  "isPrimary": true,
+  "claims": [
+   "人口推計2026年11月報で、2026年11月1日現在の総人口（概算値）は1億2,243万人、前年同月比53万人減（0.43%減）",
+   "2026年6月1日現在の確定値は、総人口1億2,259万8千人、15〜64歳人口7,332万1千人（59.8%）、65歳以上人口3,615万5千人（29.5%）、外国人人口406万4千人"
+  ],
+  "checkedAt": "2026-11-21",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月20日公表の11月報PDFで確認。2026年11月報から基準人口は令和7年（2025年）国勢調査確定人口。前年同月は2020年国勢調査基準のため、確定値の比較は補間補正まで不可（公表資料の注記）。"
+ },
+ {
+  "sourceId": "boj-cgpi-2026-10",
+  "provider": "日本銀行",
+  "url": "https://www.boj.or.jp/statistics/pi/cgpi_release/cgpi2610.pdf",
+  "isPrimary": true,
+  "claims": [
+   "企業物価指数2026年10月速報で、国内企業物価指数は136.8（2020年平均=100）、前月比0.7%上昇、前年同月比7.1%上昇",
+   "輸入物価指数は円ベースで前年同月比24.8%上昇（契約通貨ベース19.2%上昇）、輸出物価指数は円ベースで前年同月比16.7%上昇"
+  ],
+  "checkedAt": "2026-11-21",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月12日公表の速報PDFで確認。前月比の寄与度（石油・石炭製品0.20ポイント等）と類別指数も同PDFによる。次回公表は12月10日。"
+ },
+ {
+  "sourceId": "mlit-construction-orders-2026-09",
+  "provider": "国土交通省",
+  "url": "https://www.mlit.go.jp/report/press/content/002045028.pdf",
+  "isPrimary": true,
+  "claims": [
+   "建設工事受注動態統計調査2026年9月分で、受注高は12兆1,013億円（前年同月比1.3%増、6か月連続の増加）、元請受注高は8兆824億円（3.5%減）、下請受注高は4兆189億円（12.2%増）",
+   "業種別（受注高）では設備工事業が3兆5,462億円で16.9%増（25か月連続の増加）、総合工事業は6兆8,496億円で9.4%減"
+  ],
+  "checkedAt": "2026-11-21",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月10日公表の記者発表資料PDFで確認。令和3年4月分から新しい推計方法による値。10月分は12月10日公表予定。"
+ },
+ {
+  "sourceId": "cao-consumer-confidence-2026-10",
+  "provider": "内閣府",
+  "url": "https://www.esri.cao.go.jp/jp/stat/shouhi/gaiyou.pdf",
+  "isPrimary": true,
+  "claims": [
+   "消費動向調査2026年10月実施分で、消費者態度指数（二人以上の世帯、季節調整値）は35.0、前月差0.4ポイント低下で2か月連続の低下。基調判断は「持ち直しの動きがみられる」に据置き",
+   "構成4指標は暮らし向き33.2、収入の増え方40.4、雇用環境39.4、耐久消費財の買い時判断26.8で全て低下。1年後の物価見通しで「上昇する」は90.8%、「5%以上上昇する」は48.1%"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "30d",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年10月29日公表。結果の概要（gaiyou）PDFと本編（honbun）PDFで全数値と調査概要を確認。調査基準日2026年10月15日、有効回答6,685世帯（79.6%）、うち二人以上の世帯4,331世帯。"
+ },
+ {
+  "sourceId": "cao-di-2026-09-prelim",
+  "provider": "内閣府",
+  "url": "https://www.esri.cao.go.jp/jp/stat/di/202609psummary.pdf",
+  "isPrimary": true,
+  "claims": [
+   "景気動向指数2026年9月分速報（2020年=100）で、一致指数は119.5（前月差0.7ポイント上昇、2か月ぶり上昇）、先行指数は116.4（1.6ポイント低下、17か月ぶり低下）、遅行指数は116.0（3.6ポイント上昇）",
+   "一致指数の基調判断は「改善を示している」に据置き。一致指数の上昇には生産指数（鉱工業）や鉱工業用生産財出荷指数などがプラスに寄与"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "30d",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年11月9日公表の速報「結果の概要」PDFで確認。9月分の改訂は2026年11月26日、10月分速報は12月7日公表予定（内閣府の公表予定一覧で確認）。"
+ },
+ {
+  "sourceId": "jta-lodging-2026-09-prelim",
+  "provider": "観光庁",
+  "url": "https://www.mlit.go.jp/kankocho/news02_00105.html",
+  "isPrimary": true,
+  "claims": [
+   "宿泊旅行統計調査2026年9月分（第1次速報）で、延べ宿泊者数は5,282万人泊（前年同月比2.6%減）。日本人4,117万人泊（0.6%減）、外国人1,165万人泊（9.2%減）。客室稼働率は全体で62.6%",
+   "2026年8月分（第2次速報）の延べ宿泊者数は6,240万人泊（前年同月比7.2%減）、客室稼働率は64.6%。2026年1月分から層化基準が従業者数から客室数へ変更され、前年同月比には見直しの影響が含まれている可能性がある"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "30d",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年10月30日公表の報道発表ページで確認。第1次速報のため値は第2次速報で変わり得る。"
+ },
+ {
+  "sourceId": "boj-household-survey-2026-09",
+  "provider": "日本銀行",
+  "url": "https://www.boj.or.jp/research/o_survey/data/ishiki2610.pdf",
+  "isPrimary": true,
+  "claims": [
+   "「生活意識に関するアンケート調査」（第107回＜2026年9月調査＞）で、5年後の物価が上がると答えた割合は86.5%と2007年12月以来の高水準。1年後は88.6%（かなり上がる34.5%、少し上がる54.1%）、予想物価上昇率は平均11.8%、中央値10.0%",
+   "景況感DIはマイナス53.0（前回比3.7ポイント改善）、収入DIはマイナス5.4で比較できる2006年9月以降で最も良い値。暮らし向きで「ゆとりがなくなってきた」は54.4%で、理由の9割超が物価上昇"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "quarterly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年10月13日公表。結果PDFで調査概要（調査期間2026年8月3日〜9月4日、標本4,000人、有効回答1,972人・49.3%）と要旨を確認し、主要数値は時事通信・朝日新聞の報道とも一致を確認。"
+ },
+ {
+  "sourceId": "meti-commerce-2026-09-prelim",
+  "provider": "経済産業省",
+  "url": "https://www.meti.go.jp/statistics/tyo/syoudou/result/pdf/202609S.pdf",
+  "isPrimary": true,
+  "claims": [
+   "商業動態統計速報（2026年9月分）で、商業販売額は55兆9,130億円（前年同月比5.4%増）、卸売業は43兆410億円（同6.4%増）、小売業は12兆8,730億円（同2.3%増）。季節調整済前月比は商業計0.2%上昇、卸売業0.0%、小売業0.7%低下",
+   "小売業の業種別では自動車が15.6%増と最も大きく、各種商品2.7%増、その他2.6%増、飲食料品1.4%増の一方、機械器具5.7%減、燃料3.0%減。百貨店・スーパー販売額は1兆8,377億円（2.1%増）で、百貨店3.4%増、スーパー1.7%増",
+   "専門量販店ではドラッグストアが7,837億円（2.7%増、調剤医薬品9.1%増）、コンビニエンスストアの商品販売額及びサービス売上高が1兆1,057億円（0.5%増）、家電大型専門店は3,866億円（2.7%減、情報家電24.9%減）"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "monthly",
+  "republication": "統計の独自要約と出典リンクのみ",
+  "notes": "2026年10月30日公表の速報PDF全14ページを確認。前年同月比はリンク係数でギャップを調整した数値で計算されている旨の注記あり。速報に基調判断の文言は含まれない。"
+ },
+ {
+  "sourceId": "mhlw-elderly-continuation-benefit-2025",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000160564_00043.html",
+  "isPrimary": true,
+  "claims": [
+   "高年齢雇用継続給付は、60歳到達等時点に比べて賃金が75%未満に低下した状態で働き続ける60歳以上65歳未満の一定の雇用保険一般被保険者に支給される",
+   "令和7年4月1日から支給率が変更され、60歳到達日が令和7年3月31日以前の方は各月の賃金の15%が限度、令和7年4月1日以降の方は10%が限度"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "厚生労働省の公式告知ページで確認。受給資格（被保険者期間通算5年以上、60歳到達時賃金月額の算定、支給対象期間）は雇用保険の手引（厚生労働省・労働局）でも確認。"
+ },
+ {
+  "sourceId": "kyoukaikenpo-sickness-allowance",
+  "provider": "全国健康保険協会（協会けんぽ）",
+  "url": "https://www.kyoukaikenpo.or.jp/g3/sb3040/r139/",
+  "isPrimary": true,
+  "claims": [
+   "傷病手当金の支給条件は、業務外の病気・ケガで療養のため休むこと、労務不能であること、連続した3日間（待期）を含む4日以上休むこと、休業期間中に給与が支払われていないことの4つ",
+   "1日あたりの支給額は、支給開始日の以前12か月間の各標準報酬月額を平均した額を30で割り、その3分の2。支給期間は支給開始日から通算して1年6か月が限度"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "協会けんぽ公式の傷病手当金の案内で確認。健康保険組合に加入している場合は組合ごとに扱いを確認すること。"
+ },
+ {
+  "sourceId": "mhlw-overtime-cap-guide",
+  "provider": "厚生労働省",
+  "url": "https://www.check-roudou.mhlw.go.jp/study/roudousya_jikangai.html",
+  "isPrimary": true,
+  "claims": [
+   "時間外労働の上限は原則として月45時間以内、年360時間以内（1年単位の変形労働時間制は月42時間、年320時間）",
+   "特別条項でも、時間外労働は年720時間以内、時間外労働と休日労働の合計は月100時間未満、2〜6か月平均のすべてが月80時間以内、月45時間を超えるのは年6か月まで。違反には6か月以下の懲役または30万円以下の罰金"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "厚生労働省「確かめよう労働条件」の時間外・休日労働の解説と、「時間外労働の上限規制 わかりやすい解説」で確認。大企業は2019年4月、中小企業は2020年4月から適用。"
+ },
+ {
+  "sourceId": "mhlw-fixed-overtime-leaflet",
+  "provider": "厚生労働省",
+  "url": "https://www.mhlw.go.jp/content/11600000/000498453.pdf",
+  "isPrimary": true,
+  "claims": [
+   "固定残業代制を採用する場合は、募集要項や求人票に、固定残業代を除いた基本給の額、固定残業代に関する労働時間数と金額等の計算方法、固定残業時間を超える時間外・休日・深夜労働に対して割増賃金を追加で支払う旨の3つすべてを明示する",
+   "固定残業代とは、その名称にかかわらず、一定時間分の時間外労働、休日労働および深夜労働に対して定額で支払われる割増賃金のことであり、深夜労働や休日労働について採用する場合も同様の記載が必要"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "厚生労働省・都道府県労働局・ハローワークのリーフレット「固定残業代を賃金に含める場合は、適切な表示をお願いします」（令和4年9月）で確認。根拠は若者雇用促進法・職業安定法に基づく各指針。"
+ },
+ {
+  "sourceId": "ipa-digital-skills-standard",
+  "provider": "経済産業省・独立行政法人情報処理推進機構（IPA）",
+  "url": "https://www.ipa.go.jp/files/000106872.pdf",
+  "isPrimary": true,
+  "claims": [
+   "デジタルスキル標準（DX推進スキル標準）のデータサイエンティスト類型には、データビジネスストラテジスト、データサイエンスプロフェッショナル、データエンジニアの3つのロールがある",
+   "データサイエンスプロフェッショナルは「データの処理や解析を通じて、有意義な知見を導出する」ロール、データエンジニアは「効果的なデータ分析環境の設計・実装・運用を通じて業務変革やビジネス創出を実現する」ロールと定義される"
+  ],
+  "checkedAt": "2026-11-22",
+  "updateFrequency": "180d",
+  "republication": "独自要約と出典リンクのみ",
+  "notes": "デジタルスキル標準の概要資料とDX推進スキル標準のロール定義で確認。"
  }
 ]

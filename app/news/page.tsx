@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { ArrowRight, CalendarCheck2, CalendarDays, Newspaper, ShieldCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { NewsExplorer, type NewsCardItem } from "@/components/NewsExplorer";
 import { newsModifiedAt, newsNeedsRefresh, publishedNews } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
+import { newsTopic, orderedNewsTopics } from "@/lib/news-topics";
 import "../article.css";
+import { PhraseText } from "@/components/PhraseTitle";
 
 const newsTitle = "働く人のための、キャリアニュース";
 const newsDescription = `雇用統計、賃金、制度、学び直しの一次資料を、数字が示すこと・示さないことまで分けて読み解く${publishedNews.length}本の解説一覧です。出典と記録日、情報の期限を分けて案内します。新着は公開日順に並び、各記事では一次資料の数字が示すことと示さないことを分けて解説します。雇用や賃金の動きを、職業選びの判断材料として読める形に整えています。`;
@@ -36,23 +39,24 @@ export const metadata: Metadata = {
 export default function NewsIndex() {
   const [lead] = publishedNews;
   const archiveCount = publishedNews.filter(newsNeedsRefresh).length;
-  const kinds = [...new Set(publishedNews.map((item) => item.kind))];
+  // 絞り込みは記事データの kind ではなく、少数にまとめた表示用の分類で行う（lib/news-topics.ts）
+  const kinds = orderedNewsTopics(publishedNews);
   const latestSourceDate = publishedNews.reduce((latest, item) => item.sourcePublishedAt > latest ? item.sourcePublishedAt : latest, "");
   const latestReviewedAt = publishedNews.reduce((latest, item) => newsModifiedAt(item) > latest ? newsModifiedAt(item) : latest, "");
   const graph = { "@context": "https://schema.org", "@graph": [
     { "@type": "CollectionPage", name: "キャリアニュース", description: newsDescription, url: absoluteUrl("/news/"), inLanguage: "ja-JP", ...(publishedNews.length ? { mainEntity: { "@type": "ItemList", numberOfItems: publishedNews.length, itemListElement: publishedNews.map((item, index) => ({ "@type": "ListItem", position: index + 1, name: item.title, url: absoluteUrl(`/news/${item.slug}/`) })) } } : {}) },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "トップ", item: absoluteUrl("/") }, { "@type": "ListItem", position: 2, name: "ニュース", item: absoluteUrl("/news/") }] },
   ] };
-  if (!lead) return <><JsonLd data={graph}/><div className="page-shell editorial-index news-index-page"><nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">ニュース</span></nav><header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-NEWS · ニュース</p><h1>キャリアニュース</h1><p className="phead-lead">公開条件を満たす記事は現在ありません。出典と記録日、掲載条件に基づいて案内します。</p></header><section className="news-freshness-panel" aria-label="ニュースの公開・確認状況"><div><Newspaper aria-hidden="true"/><span><small>公開中</small><strong>0記事</strong></span></div><div><CalendarDays aria-hidden="true"/><span><small>自動公開</small><strong>行いません</strong></span></div><div><CalendarCheck2 aria-hidden="true"/><span><small>公開条件</small><strong>出典と掲載条件の記録</strong></span></div><p><ShieldCheck aria-hidden="true"/>一次資料、公表日、数字の対象範囲、関連リンクを確認し、条件を満たした記事だけを公開します。</p></section><section className="news-featured" aria-labelledby="news-empty-title"><span className="news-featured-badge"><Newspaper aria-hidden="true"/>公開前確認中</span><h2 id="news-empty-title">公開条件を満たす記事を、ここに掲載します。</h2><p>準備中は、ガイドで職業情報の読み方を、データ室で市場の数字が示すこと・示さないことを確認できます。</p><div className="hero-actions"><Link className="button primary" href="/guide/">読み方ガイドへ <ArrowRight aria-hidden="true"/></Link><Link className="button secondary" href="/research/">キャリアデータ室へ</Link></div></section></div></>;
+  if (!lead) return <><JsonLd data={graph}/><div className="page-shell editorial-index news-index-page"><nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">ニュース</span></nav><header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-NEWS · ニュース</p><h1 className="phrase-breaks"><PhraseText text="キャリアニュース" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>公開条件を満たす記事は現在ありません。出典と記録日、掲載条件に基づいて案内します。</PhraseChildren></p></header><section className="news-freshness-panel" aria-label="ニュースの公開・確認状況"><div><Newspaper aria-hidden="true"/><span><small>公開中</small><strong>0記事</strong></span></div><div><CalendarDays aria-hidden="true"/><span><small>自動公開</small><strong>行いません</strong></span></div><div><CalendarCheck2 aria-hidden="true"/><span><small>公開条件</small><strong>出典と掲載条件の記録</strong></span></div><p><ShieldCheck aria-hidden="true"/>一次資料、公表日、数字の対象範囲、関連リンクを確認し、条件を満たした記事だけを公開します。</p></section><section className="news-featured" aria-labelledby="news-empty-title"><span className="news-featured-badge"><Newspaper aria-hidden="true"/>公開前確認中</span><h2 id="news-empty-title" className="phrase-breaks"><PhraseText text="公開条件を満たす記事を、ここに掲載します。" /></h2><p>準備中は、ガイドで職業情報の読み方を、データ室で市場の数字が示すこと・示さないことを確認できます。</p><div className="hero-actions"><Link className="button primary" href="/guide/">読み方ガイドへ <ArrowRight aria-hidden="true"/></Link><Link className="button secondary" href="/research/">キャリアデータ室へ</Link></div></section></div></>;
   return <><JsonLd data={graph}/><div className="page-shell editorial-index news-index-page">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">ニュース</span></nav>
-    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-NEWS · ニュース</p><h1>働く人のための、キャリアニュース</h1><p className="phead-lead">公的機関の統計・制度・調査を、そのまま転載せず独自に読み解きます。数字が示すこと、示さないこと、次に確認する条件まで整理します。</p></header>
+    <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-NEWS · ニュース</p><h1 className="phrase-breaks"><PhraseText text="働く人のための、キャリアニュース" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>公的機関の統計・制度・調査を、そのまま転載せず独自に読み解きます。数字が示すこと、示さないこと、次に確認する条件まで整理します。</PhraseChildren></p></header>
     <section className="news-freshness-panel" aria-label="ニュースの公開・確認状況">
       <div><Newspaper aria-hidden="true"/><span><small>公開中</small><strong>{publishedNews.length}記事</strong></span></div>
       <div><CalendarDays aria-hidden="true"/><span><small>一次資料の最新公表日</small><strong>{latestSourceDate}</strong></span></div>
       <div><CalendarCheck2 aria-hidden="true"/><span><small>掲載データの最終記録日</small><strong>{latestReviewedAt}</strong></span></div>
       <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、出典の記録日を分けて表示します。確認期限を超えた過去資料の記事が{archiveCount}件あります。現在の状況は公式出典をご覧ください。</p>
     </section>
-    <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: item.kind, summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: `/card/news/${item.slug}.png` }))} kinds={kinds} />
+    <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: newsTopic(item), summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: `/card/news/${item.slug}.png` }))} kinds={kinds} />
   </div></>;
 }

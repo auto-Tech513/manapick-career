@@ -4,20 +4,21 @@ import NetworkFooter from "../components/NetworkFooter";
 import { NetworkRail } from "../components/NetworkRail";
 import type { Metadata, Viewport } from "next";
 import { Analytics } from "@/components/Analytics";
+import { AdSenseScript } from "@/components/AdSenseScript";
 import { BottomNav } from "@/components/BottomNav";
 import { JsonLd } from "@/components/JsonLd";
 import { SiteHeader } from "@/components/SiteHeader";
-import { absoluteUrl, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
+import { absoluteUrl, siteOpenGraph, SITE_DESCRIPTION, SITE_NAME, SITE_URL, TAGLINE } from "@/lib/site";
 import "./globals.css";
 import "./network.css";
 
-const description="仕事内容、必要スキル、学ぶ順番、資格、AI活用を公式情報から整理。職業を順位付けせず、次に調べる入口を見つけるサイトです。職業ごとの詳しい解説、統計から読む年収の目安、公式ページで確認した企業例、公的統計のニュースとガイド、16タイプの働き方診断まで、出典を確認しながらたどれます。職業の比較ページも用意しています。";
+const description = SITE_DESCRIPTION;
 
 export const metadata: Metadata={
   metadataBase:new URL(SITE_URL), title:{default:`${SITE_NAME} | ${TAGLINE}`,template:`%s | ${SITE_NAME}`},description,
   alternates:{canonical:"/",types:{"application/rss+xml":"/feed.xml"}},
   robots:{index:true,follow:true,googleBot:{index:true,follow:true,"max-image-preview":"large","max-snippet":-1,"max-video-preview":-1}},
-  openGraph:{title:SITE_NAME,description,url:SITE_URL,siteName:SITE_NAME,locale:"ja_JP",type:"website",images:[{url:absoluteUrl("/og.png"),width:1200,height:675,alt:`${SITE_NAME} - ${TAGLINE}`}]},
+  openGraph:siteOpenGraph(),
   twitter:{card:"summary_large_image",title:SITE_NAME,description,images:[absoluteUrl("/og.png")]},
   icons:{
     icon:[
@@ -46,5 +47,5 @@ const graph={"@context":"https://schema.org","@graph":[
 ]};
 
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="ja"><head><script id="ga4-queue" dangerouslySetInnerHTML={{__html:analyticsBootstrap(measurementId)}} /><link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" /><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Zen+Old+Mincho:wght@500;700;900&display=swap" rel="stylesheet" /></head><body>
-  <JsonLd data={graph}/><Analytics/><a className="skip-link" href="#main">本文へ移動</a><NetworkRail/><SiteHeader/><main id="main">{children}</main><BottomNav/>
+  <JsonLd data={graph}/><Analytics/>{/* AdSense 自動広告は全ページで読み込む（オーナー決定 2026-11-18 22:32。他の manapick と同じ）。手動の広告枠はここでは置かない */}<AdSenseScript/><a className="skip-link" href="#main">本文へ移動</a><NetworkRail/><SiteHeader/><main id="main">{children}</main><BottomNav/>
 <NetworkAnalytics /><NetworkFooter /></body></html>}

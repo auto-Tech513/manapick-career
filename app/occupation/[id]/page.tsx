@@ -1,5 +1,6 @@
 import "./occupation.css";
 import type { Metadata } from "next";
+import { Fragment } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowUpRight } from "lucide-react";
@@ -24,9 +25,12 @@ import sourceRegistry from "@/content/source-registry.json";
 import companyLinks from "@/content/company-links.json";
 import industryLinks from "@/content/company-industry-links.json";
 import licenseLinks from "@/content/license-links.json";
+import politicsLinks from "@/content/politics-links.json";
 import { ageBandsByCode, ageIncomeNote, formatManYen1dp, incomeMetadata, incomeOccupationByCatalogId, incomeStatisticByCode } from "@/lib/occupation-income";
 import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
+import { PhraseText } from "@/components/PhraseTitle";
+import { phraseSegments } from "@/lib/phrase";
 
 export const dynamicParams = false;
 
@@ -66,7 +70,9 @@ const networkLabels: Record<string, string> = {
 function paragraphs(text: string) {
   return text
     .split(/\n+/)
-    .map((part) => part.replace(/^\s+|\s+$/g, ""))
+    // 出典データにある「句読点の直前の空白」（例: "Python 、Scala"）を取り除く。
+    // 空白位置で改行すると行頭に句読点が来てしまうため、表示側で整える。
+    .map((part) => part.replace(/^\s+|\s+$/g, "").replace(/[ 　]+([、。」』）】])/g, "$1"))
     .filter(Boolean);
 }
 
@@ -130,11 +136,17 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
     return entry ? [{ sourceId, title: entry.notes?.split("。")[0] ?? sourceId, url: entry.url, provider: entry.provider }] : [];
   });
   const networkIds = [...record.relatedVideoIds, ...record.relatedQualificationIds, ...record.relatedAiIds];
+  // 職業名の最も長い文節の字数。長いカタカナ1語（「データサイエンティスト」）が見出しの幅に入らず語の途中で折れないよう、
+  // SP では見出しの字の大きさをこの字数に合わせて決める（独立監査 2026-11-18 M1）
+  // 12字以下の職業名は名前全体が1行に入る大きさに（「空港｜グランドスタッフ」のように前半だけが1行に残らないように）
+  const h1Fit = [...occupation.name].length <= 12 ? Math.max(5, [...occupation.name].length) : Math.max(5, ...phraseSegments(occupation.name).map((segment) => [...segment].length));
   const related = publishedOccupationCatalog.filter(
     (item) => item.categoryKey === occupation.categoryKey && item.catalogId !== id,
   );
   const industryEntry = (industryLinks.occupations as unknown as Record<string, { industries: Array<{ name: string; total: number; directoryUrl?: string }>; companies: Array<{ name: string; code: string; slug: string }> }>)[id];
   const licenseEntries = ((licenseLinks.occupations as unknown as Record<string, Array<{ name: string; slug: string }>>)[id] ?? []);
+  const politicsEntries = ((politicsLinks.occupations as unknown as Record<string, Array<{ itemId: string; label: string; lead: string; section: string }>>)[id] ?? []);
+  const politicsFor = (section: string) => politicsEntries.filter((entry) => entry.section === section);
   const faq = [
     {
       question: `${occupation.name}の年収はどのくらいですか`,
@@ -225,6 +237,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           datePublished: record.publishedAt,
           dateModified: record.checkedAt,
           author: { "@type": "Organization", name: record.author },
+          image: [occupationOgUrl(id, `${occupation.name}|${record.publishedAt}`)],
           mainEntityOfPage: pageUrl,
         }}
       />
@@ -276,10 +289,11 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               <span className="stn lg" aria-hidden="true">CA</span>
               <span>CA-JOB · {category?.label}</span>
             </p>
-            <h1>
-              <mark>{occupation.name}</mark>の仕事
+            <h1 className="phrase-breaks" style={{ "--occ-h1-fit": h1Fit } as React.CSSProperties}>
+              {/* 「の｜仕事」と2字だけ落ちないよう「の仕事」は1かたまりにし、職業名との間で折る（職業名が1文節で長いときに「仕｜事」と割れないように） */}
+              <mark><PhraseText text={occupation.name} /></mark><wbr /><span className="occ-jh-tail">の仕事</span>
             </h1>
-            <p className="occ-lead">{occupation.summary}</p>
+            <p className="occ-lead phrase-breaks"><PhraseText text={occupation.summary} /></p>
             <p className="occ-meta">
               出典確認日：{record.checkedAt}／公開日：{record.publishedAt}
               {occupation.aliases.length ? `／別名：${occupation.aliases.join("、")}` : ""}
@@ -312,6 +326,14 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               {paragraphs(occupation.work).map((part, index) => (
                 <p key={index}>{part}</p>
               ))}
+              {politicsFor("work").map((entry) => (
+                <p className="occ-action" key={entry.itemId}>
+                  {entry.lead}：
+                  <a href={networkUrl(entry.itemId)}>
+                    {entry.label} <ArrowUpRight aria-hidden="true" />
+                  </a>
+                </p>
+              ))}
             </section>
 
             <AdSlot unit="career" placement="occupation-after-work" />
@@ -333,11 +355,11 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                   <table className="occ-table">
                     <tbody>
                       <tr>
-                        <th scope="row">月の現金給与額</th>
+                        <th scope="row" className="phrase-breaks">月の<wbr />現金給与額</th>
                         <td className="n">{statistic.monthlyCashThousandYen}千円</td>
                       </tr>
                       <tr>
-                        <th scope="row">年間賞与・特別給与</th>
+                        <th scope="row" className="phrase-breaks">年間賞与・<wbr />特別給与</th>
                         <td className="n">{statistic.annualBonusThousandYen}千円</td>
                       </tr>
                       <tr>
@@ -345,7 +367,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                         <td className="n">{statistic.meanAge}歳</td>
                       </tr>
                       <tr>
-                        <th scope="row">推計労働者数</th>
+                        <th scope="row" className="phrase-breaks">推計<wbr />労働者数</th>
                         <td className="n">{statistic.estimatedWorkers.toLocaleString("ja-JP")}人</td>
                       </tr>
                     </tbody>
@@ -367,13 +389,13 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                   </details>
                   {(ageBandsByCode.get(statistic.classificationCode) ?? []).length >= 3 ? (
                     <div className="occ-agebands">
-                      <h3>年代別の平均年収換算（対応分類「{statistic.classificationName}」）</h3>
+                      <h3 className="phrase-breaks"><PhraseText text={`年代別の平均年収換算（対応分類「${statistic.classificationName}」）`} /></h3>
                       <table className="occ-table">
                         <thead>
                           <tr>
                             <th scope="col">年齢階級</th>
-                            <th scope="col">平均年収換算</th>
-                            <th scope="col">推計労働者数</th>
+                            <th scope="col" className="phrase-breaks">平均<wbr />年収換算</th>
+                            <th scope="col" className="phrase-breaks">推計<wbr />労働者数</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -410,11 +432,17 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               </section>
             ) : null}
 
-            <section className="occ-sec" id="entry">
+            <section className="occ-sec ce-how" id="entry">
               <h2><i>{num("entry")}</i>就くには</h2>
-              {paragraphs(occupation.entry).map((part, index) => (
-                <p key={index}>{part}</p>
-              ))}
+              {/* 制作上の注記（「データの文章をそのまま表示します」）は読者向けでないため表示しない（独立監査 2026-11-18 M5） */}
+              <div className="hrail">
+                {paragraphs(occupation.entry).map((part, index, parts) => (
+                  <div className={`p${index === parts.length - 1 ? " last" : ""}`} key={index}>
+                    <i aria-hidden="true" />
+                    <p>{part}</p>
+                  </div>
+                ))}
+              </div>
               <p className="occ-action">
                 実際の求人・募集の状況は、厚生労働省の職業情報サイトで確認できます：
                 <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer">
@@ -434,6 +462,14 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               {paragraphs(occupation.conditions).map((part, index) => (
                 <p key={index}>{part}</p>
               ))}
+              {politicsFor("conditions").map((entry) => (
+                <p className="occ-action" key={entry.itemId}>
+                  {entry.lead}：
+                  <a href={networkUrl(entry.itemId)}>
+                    {entry.label} <ArrowUpRight aria-hidden="true" />
+                  </a>
+                </p>
+              ))}
             </section>
 
             {occupation.qualifications.length ? (
@@ -446,7 +482,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                       <li key={name}>
                         {slug ? (
                           <a href={`https://license.manapick.app/license/${slug}/`} target="_blank" rel="noopener noreferrer">
-                            {name} <ArrowUpRight aria-hidden="true" />
+                            <span className="phrase-breaks"><PhraseText text={name} /></span> <ArrowUpRight aria-hidden="true" />
                           </a>
                         ) : (
                           name
@@ -465,31 +501,46 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
             <section className="occ-sec" id="employers">
               <h2><i>{num("employers")}</i>企業例</h2>
               {employers.length ? (
-                <>
-                  <p>次の組織は、公式ページで{occupation.name}に関わる職種や採用の案内を確認した例です。最新の募集状況は各公式ページに載っています。</p>
-                  <div className="occ-co2">
-                    {employers.map((employer) => {
-                      const company = (companyLinks.links as unknown as Record<string, { companyName: string; code: string; url: string }>)[employer.name];
-                      return (
-                        <div className="occ-co" key={`${employer.name}-${employer.role}`}>
-                          <b>{employer.name}（{employer.role}）</b>
-                          <p>{employer.description}</p>
-                          <span className="occ-co-links">
-                            <a href={employer.source.url} target="_blank" rel="noopener noreferrer">
-                              公式ページ：{employer.source.title}（確認日 {employer.source.checkedAt}） <ArrowUpRight aria-hidden="true" />
-                            </a>
+                <div className="ce-coex">
+                  <span className="disc" role="note">
+                    <b>企業例について</b>
+                    この仕事を説明するための例です。<strong>順位や、採用の可能性を示すものではありません。</strong>並びは五十音順です。
+                  </span>
+                  <ul>
+                    {[...employers]
+                      .sort((a, b) => a.name.localeCompare(b.name, "ja"))
+                      .map((employer) => {
+                        const company = (companyLinks.links as unknown as Record<string, { companyName: string; code: string; url: string }>)[employer.name];
+                        return (
+                          <li key={`${employer.name}-${employer.role}`}>
+                            <div className="nm">
+                              <b className="phrase-breaks"><PhraseText text={employer.name} /></b>
+                              <span className="kind">{employer.role}</span>
+                            </div>
+                            <p>{employer.description}</p>
                             {company ? (
-                              <a href={company.url} target="_blank" rel="noopener noreferrer">
-                                企業情報：{company.companyName}（証券コード {company.code}） <ArrowUpRight aria-hidden="true" />
+                              <a className="co" href={company.url} target="_blank" rel="noopener noreferrer">
+                                manapick company で読む<span aria-hidden="true">↗</span>
                               </a>
-                            ) : null}
-                          </span>
-                          <span className="occ-co-note">業務説明の例であり、順位や採用可能性を示すものではない</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </>
+                            ) : (
+                              <span className="nolink">企業ページなし</span>
+                            )}
+                          </li>
+                        );
+                      })}
+                  </ul>
+                  <p className="src3">
+                    出典：
+                    {employers.map((employer, index) => (
+                      <span key={`${employer.name}-${employer.role}`}>
+                        {index > 0 ? "、" : ""}
+                        {employer.name}「
+                        <a href={employer.source.url} target="_blank" rel="noopener noreferrer">{employer.source.title}</a>
+                        」（確認日 {employer.source.checkedAt}）
+                      </span>
+                    ))}
+                  </p>
+                </div>
               ) : (
                 <>
                   <p>この職業については、公式ページで職種名と仕事内容を確認できた企業例がまだ見つかっていないため、掲載していません。企業例は、各組織の公式ページ（採用・職種紹介・業務紹介など）で確認できたものだけを、出典と確認日つきで載せています。確認できたものから追加します。</p>
@@ -515,7 +566,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                   {industryEntry.companies.map((company) => (
                     <li key={company.code}>
                       <a href={`https://company.manapick.app/company/${company.slug}/`} target="_blank" rel="noopener noreferrer">
-                        {company.name}（証券コード {company.code}） <ArrowUpRight aria-hidden="true" />
+                        {/* 長い社名は「・」の後でだけ折る（語中で割れて「ー」が行頭に来ないように） */}
+                        {company.name.split("・").map((part, i) => <Fragment key={i}>{i ? <>・<wbr /></> : null}{part}</Fragment>)}<span className="nb-paren">（証券コード {company.code}） <ArrowUpRight aria-hidden="true" /></span>
                       </a>
                     </li>
                   ))}
@@ -545,7 +597,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                     <summary>
                       <span className="occ-faq-q">
                         <i>Q{index + 1}</i>
-                        {item.question}
+                        <span className="phrase-breaks"><PhraseText text={item.question} /></span>
                       </span>
                       <span className="occ-faq-tg" aria-hidden="true" />
                     </summary>
@@ -584,12 +636,12 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           </div>
           <aside className="occ-side">
             <div className="occ-box2 occ-box2-y">
-              <h3>近い仕事と比べる</h3>
-              <p>{related.length ? `${related.slice(0, 2).map((item) => item.name).join("・")}と並べて読む` : "職業を並べて比べる"}</p>
+              <h3 className="phrase-breaks"><PhraseText text="近い仕事と比べる" /></h3>
+              <p className="phrase-breaks"><PhraseText text={related.length ? `${related.slice(0, 2).map((item) => item.name).join("・")}と並べて読む` : "職業を並べて比べる"} /></p>
               <Link className="occ-pill" href="/compare/">比較を始める →</Link>
             </div>
             <div className="occ-box2">
-              <h3>手取りを試算</h3>
+              <h3 className="phrase-breaks"><PhraseText text="手取りを試算" /></h3>
               <Link className="occ-simrow" href={statistic ? `/tools/net-income/?yen=${statistic.annualizedMeanYen}` : "/tools/net-income/"}>
                 <span className="occ-yen" aria-hidden="true">¥</span>
                 手取りシミュレーター
@@ -597,14 +649,14 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
             </div>
             {dossierSlug ? (
               <div className="occ-box2">
-                <h3>深掘り解説</h3>
+                <h3 className="phrase-breaks"><PhraseText text="深掘り解説" /></h3>
                 <p>{occupation.name}の向いている人・企業例まで読む</p>
                 <Link className="occ-pill occ-pill-w" href={`/career/${dossierSlug}/`}>解説を読む →</Link>
               </div>
             ) : null}
             {related.length ? (
               <div className="occ-box2">
-                <h3>同じ分野の職業</h3>
+                <h3 className="phrase-breaks"><PhraseText text="同じ分野の職業" /></h3>
                 {related.slice(0, 6).map((item) => (
                   <Link key={item.catalogId} className="occ-row" href={`/occupation/${item.catalogId}/`}>
                     {item.name}
@@ -619,7 +671,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
           <div className="occ-sh">
             <div>
               <span className="occ-sh-k">TRANSFER</span>
-              <h2 id="occ-transfer-title">乗り換えて、次へ。</h2>
+              <h2 id="occ-transfer-title" className="phrase-breaks"><PhraseText text="乗り換えて、次へ。" /></h2>
             </div>
           </div>
           <TransferCards cards={transferCards} />

@@ -11,6 +11,8 @@ import { createRequire } from "node:module";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Resvg } from "@resvg/resvg-js";
+import { newsTopicFor } from "./lib/news-topic-map.mjs";
+import { clipLine, extractFigure } from "./lib/card-figure.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputRoot = path.join(root, "public/card");
@@ -33,6 +35,13 @@ const publishedNewsSlugs = new Set(
   (publication.records ?? []).filter((r) => r.status === "published").map((r) => r.slug),
 );
 const newsAnswerBySlug = new Map(expandedNews.map((n) => [n.slug, n.answer ?? ""]));
+// スタンプ型カードの右側に、記事ごとの要点（keyPoints の逐語・先頭3件）を並べる。
+// 以前は全記事同じ抽象的な線で、同じ分類の記事が同じ絵になっていた（独立監査 2026-11-18 PC L7）
+const keyPointsBySlug = new Map([...expandedGuides, ...expandedNews].map((x) => [x.slug, (x.keyPoints ?? []).filter((t) => typeof t === "string")]));
+// content/editorial.ts の基本記事（slug と keyPoints が同じ記事の中にあるものだけ）
+for (const m of editorial.matchAll(/slug:\s*"([^"]+)"((?:(?!slug:)[\s\S])*?)keyPoints:\s*\[([^\]]*)\]/g)) {
+  if (!keyPointsBySlug.has(m[1])) keyPointsBySlug.set(m[1], [...m[3].matchAll(/"([^"]+)"/g)].map((x) => x[1]));
+}
 
 // グラフデータ（TypeScriptファイル）を正規表現で読み取る。バーの label/value/display だけを使う。
 const chartsText = fs.readFileSync(path.join(root, "content/article-charts.ts"), "utf8");
@@ -66,12 +75,10 @@ const GUIDE_STYLE = [
   { test: (c) => ["職業を試す", "成果物づくり", "経験の棚卸し", "経験の伝え方"].includes(c), glyph: "試" },
   { test: () => true, glyph: "確" },
 ];
+// ニュースの札・グリフは表示用の7分類（lib/news-topics.ts）で描く（独立監査2 2026-11-19 M1：旧21分類の名前が画像に残っていた）
 const NEWS_GLYPH = {
-  "雇用統計": "統", "賃金・労働時間": "賃", "賃金・制度": "制", "雇用・制度": "制",
-  "両立・制度": "両", "AI・DX": "AI", "デジタル人材": "デ", "人材育成": "育",
-  "働き方": "働", "働き方・白書": "書", "キャリア形成": "進", "新卒採用": "卒",
-  "教育・採用": "教", "医療・資格": "医", "雇用・労働": "労", "産業・白書": "書",
-  "産業・統計": "産", "家計・統計": "家", "労働統計": "労", "労働安全": "安",
+  "雇用・求人": "雇", "賃金・物価": "賃", "働き方・制度": "働", "学び直し・資格": "学",
+  "AI・デジタル": "AI", "新卒・就職": "卒", "白書・産業動向": "書",
 };
 
 function glyphFor(kind, label) {
@@ -89,47 +96,7 @@ function escapeXml(text) {
   return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
-// 答えの文から見出し数値と、その直前の句（キャプション）を抜く。
-// キャプションは本文の逐語部分文字列でなければならない（言い換えをしない）。
-// 途中で切れて語句が壊れる場合は数値カードにせず、スタンプ型に落とす。
-const FIGURE_OVERRIDES = {
-  // 答えの冒頭に「事業所規模5人以上」が来て自動抽出がずれるため、見出し数値を手で指定（どちらも本文の逐語）
-  "monthly-earnings-august-2026": { figure: "311,364円", caption: "現金給与総額" },
-  // 最初の％が前年比の増減で見出しに不向きなため、死亡者数を指定（どちらも本文の逐語）
-  "workplace-accidents-latest": { figure: "700人", caption: "死亡者数" },
-};
-// 自動抽出の数値が見出しとして弱い記事はスタンプ型にする
-const FIGURE_SKIP = new Set(["employment-whitepaper-2026"]);
-
-function captionSegment(answer, index) {
-  const before = answer.slice(0, index);
-  const start = Math.max(before.lastIndexOf("。"), before.lastIndexOf("、")) + 1;
-  return before
-    .slice(start)
-    .replace(/^(結論として|つまり|なお|また|一方|具体的には)/, "")
-    .trim()
-    .replace(/(は|が|の|を|に|へ|と|で|も)$/, "");
-}
-
-function extractFigure(answer, slug) {
-  if (!answer) return null;
-  if (FIGURE_SKIP.has(slug)) return null;
-  if (FIGURE_OVERRIDES[slug]) return FIGURE_OVERRIDES[slug];
-  // 第一優先: 円・％・倍（金額と割合は見出しとして意味が立つ）
-  const primary = answer.match(/[0-9][0-9,]*\.?[0-9]*\s*(?:円|％|%|倍)/);
-  if (primary) {
-    const caption = captionSegment(answer, primary.index);
-    if (caption.length >= 3 && caption.length <= 20) return { figure: primary[0].replace(/\s+/g, ""), caption };
-    return null;
-  }
-  // 第二優先: 人・件・時間・ポイント（キャプションが十分ある場合だけ）
-  const secondary = answer.match(/[0-9][0-9,]*\.?[0-9]*\s*(?:人|件|時間|ポイント)/);
-  if (secondary) {
-    const caption = captionSegment(answer, secondary.index);
-    if (caption.length >= 4 && caption.length <= 20) return { figure: secondary[0].replace(/\s+/g, ""), caption };
-  }
-  return null;
-}
+// 答えの文から見出し数値とキャプションを抜く規則は scripts/lib/card-figure.mjs（増減語・符号も数値の一部として抜く）。
 
 function chip(label) {
   const width = 44 + [...label].length * 24;
@@ -171,7 +138,8 @@ function renderChartSvg(label, bars) {
 }
 
 function renderFigureSvg(label, { figure, caption }) {
-  const figSize = figure.length > 9 ? 92 : figure.length > 7 ? 108 : 128;
+  // カード枠で左右が少し切れても数字が縁に寄らない大きさに（独立監査 2026-11-18 PC L8：「25,834円」が右端 3px）
+  const figSize = figure.length > 9 ? 80 : figure.length > 7 ? 92 : figure.length > 5 ? 104 : 120;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420">
   ${frame()}
   ${chip(label)}
@@ -181,19 +149,27 @@ function renderFigureSvg(label, { figure, caption }) {
 </svg>`;
 }
 
-function renderStampSvg(label, glyph) {
+// 要点行は scripts/lib/card-figure.mjs の clipLine で切る（数値・増減語の途中では切らない）。
+// 以前はガイドだけ単純な字数切りで、「平成27…」「3年または4…」「離職票（－…」のように数値の途中で切れていた（2026-11-19）。
+function renderStampSvg(label, glyph, points = []) {
   const isLatin = glyph.length > 1;
   const glyphSize = isLatin ? 92 : 128;
+  const lines = points.slice(0, 3).map((point, i) => {
+    const y = 158 + i * 64;
+    return `<rect x="304" y="${y - 22}" width="10" height="28" fill="${i === 0 ? YELLOW : INK}"/>
+  <text x="328" y="${y}" fill="${INK}" font-family="${fontFamily}" font-size="25" font-weight="700">${escapeXml(clipLine(point, 15))}</text>`;
+  }).join("\n");
+  const decor = `<rect x="330" y="150" width="330" height="16" fill="${INK}"/>
+  <rect x="330" y="196" width="264" height="16" fill="${INK}" opacity="0.55"/>
+  <rect x="330" y="242" width="300" height="16" fill="${INK}" opacity="0.3"/>
+  <rect x="330" y="288" width="180" height="16" fill="${YELLOW}"/>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420">
   ${frame()}
   ${chip(label)}
   <rect x="76" y="126" width="196" height="196" fill="${YELLOW}"/>
   <rect x="62" y="112" width="196" height="196" fill="${PAPER}" stroke="${INK}" stroke-width="5"/>
   <text x="160" y="${isLatin ? 238 : 262}" text-anchor="middle" fill="${INK}" font-family="${fontFamily}" font-size="${glyphSize}" font-weight="700">${escapeXml(glyph)}</text>
-  <rect x="330" y="150" width="330" height="16" fill="${INK}"/>
-  <rect x="330" y="196" width="264" height="16" fill="${INK}" opacity="0.55"/>
-  <rect x="330" y="242" width="300" height="16" fill="${INK}" opacity="0.3"/>
-  <rect x="330" y="288" width="180" height="16" fill="${YELLOW}"/>
+  ${lines || decor}
 </svg>`;
 }
 
@@ -204,9 +180,9 @@ function render(item) {
     svg = renderChartSvg(item.label, bars);
   } else if (item.kind === "news") {
     const figure = extractFigure(newsAnswerBySlug.get(item.slug) ?? "", item.slug);
-    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label));
+    svg = figure ? renderFigureSvg(item.label, figure) : renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
   } else {
-    svg = renderStampSvg(item.label, glyphFor(item.kind, item.label));
+    svg = renderStampSvg(item.label, glyphFor(item.kind, item.label), keyPointsBySlug.get(item.slug));
   }
   const resvg = new Resvg(svg, {
     font: { fontFiles: fontFiles.map((f) => f.file), loadSystemFonts: false, defaultFontFamily: fontFamily },
@@ -222,8 +198,8 @@ fs.rmSync(outputRoot, { recursive: true, force: true });
 const items = [];
 for (const g of pickBase("const baseGuides", "guide")) items.push(g);
 for (const g of expandedGuides) if (g.status === "published") items.push({ slug: g.slug, label: g.category, kind: "guide" });
-for (const n of pickBase("const newsItemsData", "news")) if (publishedNewsSlugs.has(n.slug)) items.push(n);
-for (const n of expandedNews) if (publishedNewsSlugs.has(n.slug)) items.push({ slug: n.slug, label: n.kind, kind: "news" });
+for (const n of pickBase("const newsItemsData", "news")) if (publishedNewsSlugs.has(n.slug)) items.push({ ...n, label: newsTopicFor(n.slug, n.label) });
+for (const n of expandedNews) if (publishedNewsSlugs.has(n.slug)) items.push({ slug: n.slug, label: newsTopicFor(n.slug, n.kind), kind: "news" });
 
 const seen = new Set();
 let count = 0;

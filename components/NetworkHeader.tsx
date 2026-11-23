@@ -1,73 +1,111 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import NetworkBrand from "./NetworkBrand";
-
-
-import { useEffect, useRef, type ReactNode } from "react";
-import { ArrowUpRight, BarChart3, BookA, Calculator, BookOpen, BriefcaseBusiness, CircleHelp, Compass, FileText, GitCompareArrows, Home, Mail, Menu, Newspaper, Search, ShoppingBag, Sparkles, Trophy, X, type LucideIcon } from "lucide-react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+import { ArrowRight, ArrowUpRight, Menu, X } from "lucide-react";
 import config from "../content/network-site.json";
-import { networkUrl } from "../lib/network-shared";
+import { currentMenuItem, menuSections } from "../lib/menu";
+import { stations, stationHref } from "../lib/stations";
+import { MenuSearch } from "./MenuSearch";
+import { PhraseText } from "./PhraseTitle";
 
-/** Short, page-grounded descriptions for the menu. Wording follows each page's own title. */
-const navMeta: Record<string, { icon: LucideIcon; description: string }> = {
-  "/all/": { icon: Search, description: "556職業の名録。仕事内容・関連資格・年収の目安を出典つきで" },
-  "/employers/": { icon: BriefcaseBusiness, description: "企業・法人・公的機関の例を確認できた職業の一覧" },
-  "/route/": { icon: Compass, description: "キャリア候補の入口案内" },
-  "/compare/": { icon: GitCompareArrows, description: "職業を並べて比べる" },
-  "/guide/": { icon: BookOpen, description: "職業ガイド" },
-  "/news/": { icon: Newspaper, description: "キャリアニュース" },
-  "/research/": { icon: BarChart3, description: "キャリアデータ室" },
-  "/skills/": { icon: Sparkles, description: "仕事から見るスキル" },
-  "/ranking/": { icon: Trophy, description: "人気職業アクセスランキング" },
-  "/tools/net-income/": { icon: Calculator, description: "年収から手取りの目安を試算する" },
-  "/shop/": { icon: ShoppingBag, description: "学び直し・面接・仕事準備の道具" },
-  "/about-method/": { icon: FileText, description: "作成方法・編集方針" },
-  "/faq/": { icon: CircleHelp, description: "よくある質問" },
-  "/glossary/": { icon: BookA, description: "キャリア用語集" },
-  "/contact/": { icon: Mail, description: "訂正・お問い合わせ" },
-};
-const featureHrefs = ["/all/", "/route/", "/compare/", "/skills/"];
-const readHrefs = ["/employers/", "/guide/", "/news/", "/research/", "/ranking/", "/tools/net-income/"];
-const otherHrefs = ["/shop/", "/about-method/", "/faq/", "/glossary/", "/contact/"];
-
-/** AI SiteHeader: header-inner, brand-mark, main-nav and menu layout, adapted for career without changing the reference repository. */
+/**
+ * career のヘッダーとサイトメニュー。メニューは career のデザイン言語
+ * （クリーム地・黄色・濃紺の太い線・角丸）で、番号付きの区分、各項目の短い説明、
+ * 現在地、検索（候補つき）、姉妹サイトへの乗り換えをまとめる。
+ */
 export default function NetworkHeader({ children }: { children?: ReactNode }) {
-  const menu = useRef<HTMLDetailsElement>(null);
+  const pathname = usePathname() ?? "/";
+  // 開いたときのパスを持ち、ページを移ったら自動で閉じた扱いにする
+  const [openedAt, setOpenedAt] = useState<string | null>(null);
+  const open = openedAt === pathname;
+  const setOpen = useCallback((value: boolean) => setOpenedAt(value ? pathname : null), [pathname]);
+  const here = currentMenuItem(pathname);
+  const button = useRef<HTMLButtonElement>(null);
+  const panel = useRef<HTMLElement>(null);
+  const close = useCallback((restoreFocus = true) => { setOpenedAt(null); if (restoreFocus) requestAnimationFrame(() => button.current?.focus()); }, []);
   useEffect(() => {
-    const open = () => { if (menu.current) { menu.current.open = true; menu.current.querySelector<HTMLAnchorElement>("nav a")?.focus(); } };
-    const close = (event: KeyboardEvent) => { if (event.key === "Escape" && menu.current?.open) { menu.current.open = false; menu.current.querySelector<HTMLElement>("summary")?.focus(); } };
-    window.addEventListener("mp-open-menu", open); document.addEventListener("keydown", close);
-    return () => { window.removeEventListener("mp-open-menu", open); document.removeEventListener("keydown", close); };
-  }, []);
-  const navItem = (href: string) => config.nav.find(item => item.href === href) ?? (href === "/tools/net-income/" ? { href, label: "手取りシミュレーター" } : undefined);
-  const renderCard = (href: string) => {
-    const item = navItem(href); const meta = navMeta[href];
-    if (!item || !meta) return null;
-    const Icon = meta.icon;
-    return <a key={href} href={href} className="mp-menu-card"><span className="mp-menu-card-icon"><Icon size={20} strokeWidth={2.2} aria-hidden="true" /></span><span className="mp-menu-card-text"><strong>{item.label}</strong><small>{meta.description}</small></span></a>;
-  };
-  const renderRow = (href: string) => {
-    const item = navItem(href); const meta = navMeta[href];
-    if (!item || !meta) return null;
-    const Icon = meta.icon;
-    return <a key={href} href={href} className="mp-menu-row"><span className="mp-menu-row-icon"><Icon size={18} strokeWidth={2.2} aria-hidden="true" /></span><span className="mp-menu-row-text"><strong>{item.label}</strong><small>{meta.description}</small></span><ArrowUpRight size={16} aria-hidden="true" className="mp-menu-row-arrow" /></a>;
-  };
+    const openMenu = () => setOpen(true);
+    window.addEventListener("mp-open-menu", openMenu);
+    return () => window.removeEventListener("mp-open-menu", openMenu);
+  }, [setOpen]);
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") close();
+      if (event.key === "Tab" && panel.current) {
+        const focusable = [...panel.current.querySelectorAll<HTMLElement>("a[href],button,input")].filter((el) => !el.hasAttribute("disabled"));
+        const first = focusable[0]; const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    const html = document.documentElement;
+    const previous = html.style.overflow;
+    html.style.overflow = "hidden";
+    document.body.classList.add("cm-lock");
+    panel.current?.focus();
+    return () => { document.removeEventListener("keydown", onKey); html.style.overflow = previous; document.body.classList.remove("cm-lock"); };
+  }, [open, close]);
+
   const mainNavHrefs = ["/all/", "/employers/", "/compare/", "/guide/", "/research/"];
-  return <header className="mp-header"><div className="mp-header-inner">
-    <Link href="/" prefetch={false}><NetworkBrand /><span className="sr-only"> トップへ</span></Link>
-    {children ? <div className="mp-header-search">{children}</div> : null}
-    <nav className="mp-main-nav" aria-label="主要ナビゲーション">{mainNavHrefs.map(href => { const item = navItem(href); return item ? <a key={href} href={href}>{item.label}</a> : null; })}</nav>
-    <div className="mp-header-actions"><a className="hd-btn" href="/tools/net-income/">手取りシミュレーター</a><a className="hd-btn y" href="/route/">迷ったら入口案内</a></div>
-    <details ref={menu} className="mp-menu"><summary aria-label="サイトメニュー"><Menu size={20} strokeWidth={2.4} aria-hidden="true" className="mp-menu-open-icon" /><X size={20} strokeWidth={2.4} aria-hidden="true" className="mp-menu-close-icon" /><span>メニュー</span></summary><nav aria-label="サイトメニュー" onClick={() => { if (menu.current) menu.current.open = false; }}>
-      <Link href="/" prefetch={false} className="mp-menu-home"><Home size={18} strokeWidth={2.2} aria-hidden="true" /><span><strong>トップ</strong><small>manapick career の入口</small></span></Link>
-      <p className="mp-menu-label" id="mp-menu-search-label">職業を調べる</p>
-      <div className="mp-menu-cards" role="group" aria-labelledby="mp-menu-search-label">{featureHrefs.map(renderCard)}</div>
-      <p className="mp-menu-label" id="mp-menu-read-label">読む・知る</p>
-      <div className="mp-menu-rows" role="group" aria-labelledby="mp-menu-read-label">{readHrefs.map(renderRow)}</div>
-      <p className="mp-menu-label" id="mp-menu-other-label">その他</p>
-      <div className="mp-menu-rows" role="group" aria-labelledby="mp-menu-other-label">{otherHrefs.map(renderRow)}</div>
-      <p className="mp-menu-label" id="mp-menu-sites-label">学ぶ・選ぶ・証明する・仕事につなぐ・企業を読む</p>
-      <div className="mp-menu-sites" role="group" aria-labelledby="mp-menu-sites-label">{config.sites.map(site => <a key={site.id} href={site.id === config.id ? "/" : networkUrl(site.url, config.id, "menu")} className="mp-menu-site" aria-current={site.id === config.id ? "page" : undefined}><span className={`mp-badge mp-badge--${site.id}`}>{site.short}</span><span className="mp-menu-site-text"><strong>{site.name}</strong><small>{site.role} — {site.description}</small></span>{site.id === config.id ? null : <ArrowUpRight size={16} aria-hidden="true" className="mp-menu-row-arrow" />}</a>)}</div>
-    </nav></details>
-  </div></header>;
+  const navItem = (href: string) => config.nav.find((item) => item.href === href);
+  const isCurrent = (href: string) => here?.href === href;
+  return <>
+    <header className="mp-header google-anno-skip"><div className="mp-header-inner">
+      <Link href="/" prefetch={false}><NetworkBrand /><span className="sr-only"> トップへ</span></Link>
+      {children ? <div className="mp-header-search">{children}</div> : null}
+      <nav className="mp-main-nav" aria-label="主要ナビゲーション">{mainNavHrefs.map((href) => { const item = navItem(href); return item ? <a key={href} href={href} aria-current={isCurrent(href) ? "page" : undefined}>{item.label}</a> : null; })}</nav>
+      <div className="mp-header-actions"><a className="hd-btn" href="/tools/net-income/">手取りシミュレーター</a><a className="hd-btn y" href="/route/">迷ったら入口案内</a></div>
+      <button ref={button} type="button" className={`mp-menu-btn${open ? " on" : ""}`} aria-expanded={open} aria-controls="site-menu" aria-haspopup="dialog" onClick={() => (open ? close() : setOpen(true))}>
+        {open ? <X size={20} strokeWidth={2.4} aria-hidden="true" /> : <Menu size={20} strokeWidth={2.4} aria-hidden="true" />}<span>メニュー</span>
+      </button>
+    </div></header>
+    {open ? <>
+      <div className="cm-scrim" aria-hidden="true" onClick={() => close()} />
+      <aside ref={panel} id="site-menu" className="cm-drawer google-anno-skip" role="dialog" aria-modal="true" aria-labelledby="cm-title" tabIndex={-1}>
+        <div className="cm-top">
+          <p id="cm-title"><span className="code">MENU</span><b>メニュー</b></p>
+          <button type="button" className="cm-close" onClick={() => close()} aria-label="メニューを閉じる"><X aria-hidden="true" /></button>
+        </div>
+        <div className="cm-body">
+          <p className="cm-here"><span className="stn" aria-hidden="true">CA</span><span><small>現在地</small><b>{here ? `${here.section.title} ／ ${here.label}` : "manapick career"}</b></span></p>
+          <MenuSearch onNavigate={() => close(false)} />
+          {menuSections.map((section) => (
+            <section key={section.key} className={`cm-sec cm-sec--${section.key}`} aria-labelledby={`cm-sec-${section.key}`}>
+              <h2 id={`cm-sec-${section.key}`}><span className="cm-no num">{section.no}</span>{section.title}</h2>
+              <ul>
+                {section.items.map((item) => {
+                  const current = isCurrent(item.href);
+                  return <li key={item.href}>
+                    <Link href={item.href} prefetch={false} aria-current={current ? "page" : undefined} onClick={() => close(false)}>
+                      <span className="cm-t"><b>{item.label}</b><small className="phrase-breaks"><PhraseText text={item.description} /></small></span>
+                      {current ? <em className="cm-cur">現在地</em> : <span className="cm-go" aria-hidden="true"><ArrowRight /></span>}
+                    </Link>
+                  </li>;
+                })}
+              </ul>
+            </section>
+          ))}
+          <section className="cm-net" aria-labelledby="cm-net-title">
+            <h2 id="cm-net-title"><span className="cm-no num">05</span>姉妹サイトへ乗り換える</h2>
+            <p className="cm-net-lead phrase-breaks"><PhraseText text={`${stations.map((station) => station.role).join("・")}の${stations.length}サイトがつながっています。`} /></p>
+            <ul>
+              {stations.map((station) => (
+                <li key={station.id}>
+                  <a href={stationHref(station, "menu")} aria-current={station.current ? "page" : undefined} onClick={() => close(false)}>
+                    <i aria-hidden="true" style={{ "--c": station.color } as React.CSSProperties} />
+                    <span className="cm-t"><b>{station.name}</b><small className="phrase-breaks"><PhraseText text={`${station.role} — ${station.description}`} /></small></span>
+                    {station.current ? <em className="cm-cur">現在地</em> : <span className="cm-go" aria-hidden="true"><ArrowUpRight /></span>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </div>
+      </aside>
+    </> : null}
+  </>;
 }

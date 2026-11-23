@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-02T07:02:31.290Z",
+  "checkedAt": "2026-11-16T11:31:32.000Z",
   "report": [
     {
       "itemId": "learning:home",
@@ -160,6 +160,138 @@
     {
       "itemId": "company:home",
       "url": "https://company.manapick.app/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:home",
+      "url": "https://politics.manapick.app/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:labor-standards-vs-labor-contract",
+      "url": "https://politics.manapick.app/law/labor-standards-vs-labor-contract/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:consumer-contracts",
+      "url": "https://politics.manapick.app/law/consumer-contracts/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:cooling-off",
+      "url": "https://politics.manapick.app/law/cooling-off/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:rent-deposit-renewal",
+      "url": "https://politics.manapick.app/law/rent-deposit-renewal/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:arrest-to-indictment",
+      "url": "https://politics.manapick.app/law/arrest-to-indictment/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:bicycle-blue-ticket",
+      "url": "https://politics.manapick.app/law/bicycle-blue-ticket/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:civil-code-overview",
+      "url": "https://politics.manapick.app/law/civil-code-overview/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:companies-act-overview",
+      "url": "https://politics.manapick.app/law/companies-act-overview/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:consumption-tax-act",
+      "url": "https://politics.manapick.app/law/consumption-tax-act/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:corporate-tax-act",
+      "url": "https://politics.manapick.app/law/corporate-tax-act/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:electronic-books-act",
+      "url": "https://politics.manapick.app/law/electronic-books-act/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:employment-insurance-act",
+      "url": "https://politics.manapick.app/law/employment-insurance-act/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:income-tax-act",
+      "url": "https://politics.manapick.app/law/income-tax-act/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:industrial-safety-health-act",
+      "url": "https://politics.manapick.app/law/industrial-safety-health-act/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:inheritance-registration",
+      "url": "https://politics.manapick.app/law/inheritance-registration/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:invoice-system",
+      "url": "https://politics.manapick.app/law/invoice-system/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:local-direct-demand",
+      "url": "https://politics.manapick.app/law/local-direct-demand/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:pension-basics",
+      "url": "https://politics.manapick.app/law/pension-basics/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:shareholders-meeting",
+      "url": "https://politics.manapick.app/law/shareholders-meeting/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:withholding-tax",
+      "url": "https://politics.manapick.app/law/withholding-tax/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:year-end-adjustment",
+      "url": "https://politics.manapick.app/law/year-end-adjustment/",
       "status": 200,
       "state": "ok"
     }

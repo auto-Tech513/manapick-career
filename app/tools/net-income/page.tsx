@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
+import { PhraseChildren } from "@/components/PhraseChildren";
 import Link from "next/link";
 import { NetIncomeSimulator } from "@/components/NetIncomeSimulator";
 import "./net-income.css";
+import { PhraseText } from "@/components/PhraseTitle";
+import { siteOpenGraph } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "手取りシミュレーター｜年収から手取りの目安を試算",
   description:
     "額面年収から、社会保険料・所得税・住民税を差し引いた手取りの目安を試算します。計算の前提と根拠（国税庁の控除表など）をすべて明示した簡易試算です。年収を変えながら、職業ページで見る年収の目安と並べて確認できます。結果は目安として、働き方を考えるときの材料にできます。",
-  alternates: { canonical: "/tools/net-income/", types: { "application/rss+xml": "/feed.xml" } },
+  alternates: { canonical: "/tools/net-income/", types: { "application/rss+xml": "/feed.xml" } }, openGraph: siteOpenGraph("/tools/net-income/")
 };
 
 export default function NetIncomePage() {
@@ -16,12 +19,12 @@ export default function NetIncomePage() {
       <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">手取りシミュレーター</span></nav>
       <header className="phead">
         <p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-TOOL · ツール</p>
-        <h1>手取りシミュレーター</h1>
-        <p className="phead-lead">
+        <h1 className="phrase-breaks"><PhraseText text="手取りシミュレーター" /></h1>
+        <p className="phead-lead phrase-breaks"><PhraseChildren>
           職業ページの平均年収は、税金と社会保険料を差し引く前の「額面」です。このページでは、額面年収を入れると
           手取りの目安を試算できます。あくまで前提条件つきの簡易試算で、実際の手取りは勤務先の保険制度や
           控除の状況で変わります。
-        </p>
+        </PhraseChildren></p>
       </header>
 
       <NetIncomeSimulator />
@@ -29,7 +32,7 @@ export default function NetIncomePage() {
       <section className="editorial-block">
         <details className="sim-notes">
         <summary>計算の前提と根拠を確認する</summary>
-        <h2>計算の前提</h2>
+        <h2 className="phrase-breaks"><PhraseText text="計算の前提" /></h2>
         <ul>
           <li>給与所得控除は国税庁 No.1410 の令和8年分の表、基礎控除は No.1199 の令和8年分の額（合計所得金額に応じて最大104万円）を使います。</li>
           <li>所得税は速算表の税率で計算し、復興特別所得税（2.1%）を加えます。扶養控除は一般扶養親族1人につき38万円として計算します（特定扶養・配偶者控除・生命保険料控除などは含みません）。</li>
@@ -37,7 +40,7 @@ export default function NetIncomePage() {
           <li>社会保険料は年収総額に料率を掛ける簡易計算です。標準報酬月額の等級・上限、賞与の扱いは考慮しません。厚生年金は18.3%（本人半分）、健康保険・介護保険は本人半分、雇用保険は本人負担分のみです。</li>
           <li>65歳以上の介護保険料は給与から引かれる前提ではないため0円にしています（実際は年金などから納付します）。</li>
         </ul>
-        <h2>根拠の確認先</h2>
+        <h2 className="phrase-breaks"><PhraseText text="根拠の確認先" /></h2>
         <ul className="source-list">
           <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm" target="_blank" rel="noopener noreferrer">国税庁 No.1410 給与所得控除</a></li>
           <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm" target="_blank" rel="noopener noreferrer">国税庁 No.1199 基礎控除</a></li>

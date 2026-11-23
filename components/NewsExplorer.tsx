@@ -21,15 +21,20 @@ function NewsCard({ item, lead = false }: { item: NewsCardItem; lead?: boolean }
       <span className="article-card-media">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={item.image} alt="" loading="lazy" width={800} height={420} />
-        {lead ? (
-          <span className="article-card-lead-badge">
-            <Newspaper aria-hidden="true" />
-            注目解説
-          </span>
-        ) : null}
       </span>
       <span className="article-card-body">
-        <span className="article-card-tag">{item.kind}</span>
+        {/* 「注目解説」の札は画像の上に重ねると、画像内の分類の札に重なっていた（独立監査2 2026-11-19 M2）→ 本文側の分類の札の隣に置く */}
+        {lead ? (
+          <span className="article-card-tags">
+            <span className="article-card-lead-badge">
+              <Newspaper aria-hidden="true" />
+              注目解説
+            </span>
+            <span className="article-card-tag">{item.kind}</span>
+          </span>
+        ) : (
+          <span className="article-card-tag">{item.kind}</span>
+        )}
         {item.needsRefresh ? <span className="archive-badge">過去資料・更新確認期限超過</span> : null}
         <h3 className="phrase-breaks">
           <PhraseText text={item.title} />
@@ -64,7 +69,7 @@ export function NewsExplorer({ items, kinds }: { items: NewsCardItem[]; kinds: s
 
   return (
     <section className="article-explorer" aria-label="ニュース一覧">
-      <div className="category-tabs article-tabs" role="group" aria-label="テーマで絞り込む">
+      <div className="category-tabs article-tabs" role="group" aria-label="テーマで絞り込む" style={{ "--chip-cols": Math.ceil((kinds.length + 1) / Math.ceil((kinds.length + 1) / 6)) } as React.CSSProperties}>
         <button type="button" className={kind === "all" ? "active" : ""} onClick={() => setKind("all")}>
           すべて<small>{items.length}</small>
         </button>
@@ -77,8 +82,8 @@ export function NewsExplorer({ items, kinds }: { items: NewsCardItem[]; kinds: s
       </div>
       <p className="article-topic-note" aria-live="polite">
         {filtered.length}記事を表示しています。
-        {kind === "賃金・労働時間" ? " 毎月公表される賃金統計の読み解きです。前の月と並べて読むと、変化の向きが見えます。" : null}
-        {kind === "雇用統計" ? " 毎月公表される雇用統計の読み解きです。前の月と並べて読むと、変化の向きが見えます。" : null}
+        {kind === "賃金・物価" ? " 毎月公表される賃金・物価・家計の統計の読み解きが中心です。前の月と並べて読むと、変化の向きが見えます。" : null}
+        {kind === "雇用・求人" ? " 毎月公表される雇用統計（失業率・求人倍率）の読み解きが中心です。前の月と並べて読むと、変化の向きが見えます。" : null}
       </p>
       {lead ? (
         <div className="article-grid">

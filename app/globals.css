@@ -40,6 +40,11 @@ p {
   word-break: normal;
   line-break: strict;
 }
+/* 行頭禁則（、。）」・ー 小書き仮名）を h1〜p だけでなく li・dd・td・span などにも効かせる
+   （「ハローワ｜ークに」「ペ｜ージ」のように長音が行頭に来ていた） */
+html {
+  line-break: strict;
+}
 h1,
 h2,
 h3 {
@@ -857,6 +862,7 @@ main {
 .source-list small {
   display: block;
   color: var(--muted);
+  font-size: 12px;
 }
 .detail-aside {
   position: sticky;
@@ -1467,10 +1473,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* 独立監査 2026-11-18 H4：本文に text-wrap:pretty を当てていたが、iPhone の Safari（WebKit）は段落全体で行長をそろえるため
+   行が右端の 54〜72px 手前で折れ、本文の右が大きく空いていた。本文は通常の折り返しに戻す */
 p,
 li,
 dd {
-  text-wrap: pretty;
+  text-wrap: wrap;
 }
 
 .site-header {
@@ -2885,7 +2893,7 @@ dd {
   font-size: clamp(2rem, 3.7vw, 3.05rem);
   font-weight: 700;
   line-height: 1.3;
-  text-wrap: pretty;
+  text-wrap: balance;
 }
 .article-heading > p { max-width: 48rem; font-size: 1rem; line-height: 1.85; }
 .article-meta { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-top: 1rem; color: var(--muted); font-size: .75rem; }
@@ -3148,7 +3156,7 @@ dd {
 .ranking-list ol { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
 .ranking-list li { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; align-items: center; gap: 1rem; min-height: 96px; padding: 1rem .2rem; border-bottom: 1px solid var(--line); }
 .ranking-number { display: grid; justify-items: start; align-content: center; gap: .15rem; color: var(--ink); font-size: 1.45rem; font-weight: 800; line-height: 1; }
-.ranking-number small { color: var(--primary-aa); font-size: .68rem; font-weight: 800; letter-spacing: .08em; }
+.ranking-number small { color: var(--primary-aa); font-size: 12px; font-weight: 800; letter-spacing: .08em; }
 .ranking-copy > small { color: var(--muted); font-size: .75rem; font-weight: 800; }
 .ranking-copy h3 { margin: .1rem 0 .3rem; color: var(--ink); font-size: 1rem; font-weight: 700; }
 .ranking-connections { display: flex; flex-wrap: wrap; gap: .3rem; }
@@ -3675,6 +3683,8 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .income-basis { margin:18px 0; font-size:14px; }
 .income-basis > div { display:flex; justify-content:space-between; gap:16px; padding:9px 0; border-bottom:1px solid var(--line); }
 .income-basis dd { margin:0; flex-shrink:0; font-weight:700; }
+/* 項目名の括弧書き（月額・残業代等含む 等）は項目名の下に小さく（「…等含｜む）」の折れ対策） */
+.income-basis dt small { display:block; font-size:12px; line-height:1.5; opacity:.85; }
 .income-figure.is-compact { padding:14px; margin:14px 0; }
 .is-compact .income-amount { font-size:26px; }
 .income-unavailable { display:block; margin:10px 0; font-size:18px; }
@@ -3722,11 +3732,6 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .home-heading-break {display:none;}
 .career-search-intro p {margin:8px 0 0;color:var(--muted);font-size:15px;}
 .home-route-link {display:inline-flex;align-items:center;min-height:44px;gap:8px;color:var(--primary-aa);font-size:14px;font-weight:800;white-space:nowrap;}
-.home-search {display:flex;align-items:center;gap:12px;margin-top:24px;border:1px solid var(--line);border-radius:var(--radius-1);background:var(--surface);overflow:hidden;}
-.home-search > svg {flex:none;margin-left:16px;color:var(--primary-aa);}
-.home-search input {width:100%;min-width:0;min-height:56px;border:0;outline:none;background:transparent;font-size:16px;}
-.home-search:focus-within {outline:3px solid var(--primary-aa);outline-offset:2px;}
-.home-search button {align-self:stretch;display:flex;align-items:center;gap:8px;padding:0 22px;border:0;background:var(--primary);color:var(--ink);font-weight:800;cursor:pointer;}
 .home-discovery {display:flex;align-items:center;gap:0;margin-top:18px;overflow-x:auto;scrollbar-width:thin;}
 .home-discovery a {display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 20px;border-right:1px solid var(--line);font-size:14px;font-weight:700;white-space:nowrap;}
 .home-discovery a:first-child {padding-left:0;color:var(--primary-aa);}
@@ -3751,7 +3756,7 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .career-briefing,.editorial-preview,.explorer,.daily-career-loop {border-top:1px solid var(--line);}
 .briefing-head h2,.editorial-preview-head h2,.explorer h2 {font-weight:800;}
 @media(max-width:900px){.professional-grid > a:nth-child(2){border-right:0;}.professional-grid > a:nth-child(n+3){border-top:1px solid var(--line);}.professional-grid > a:nth-child(3){padding-left:0;}.home-career-feature{grid-template-columns:1fr;gap:20px;}}
-@media(max-width:540px){.home-hero-inner{padding:26px 16px 20px;}.career-search-intro{display:block;}.career-search-intro p{font-size:14px;}.home-route-link{margin-top:12px;}.home-hero .career-search-intro h1{font-size:28px;}.home-search{margin-top:18px;}.home-search button{padding:0 14px;}.home-search button svg{display:none;}.home-discovery{margin-right:-16px;}.home-discovery a{padding:0 14px;font-size:13px;}.professional-entries{margin:28px 0 34px;}.professional-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.professional-grid > a,.professional-grid > a:nth-child(3){padding:16px 12px;border-right:1px solid var(--line);}.professional-grid > a:nth-child(odd){padding-left:0;}.professional-grid > a:nth-child(even){border-right:0;}.professional-grid h3{font-size:18px;}.professional-grid p{font-size:13px;line-height:1.7;}.professional-grid strong{font-size:12px;}.home-career-feature{padding:36px 16px;}.home-career-feature .hero-visual{min-width:0;}}
+@media(max-width:540px){.home-hero-inner{padding:26px 16px 20px;}.career-search-intro{display:block;}.career-search-intro p{font-size:14px;}.home-route-link{margin-top:12px;}.home-hero .career-search-intro h1{font-size:28px;}.home-discovery{margin-right:-16px;}.home-discovery a{padding:0 14px;font-size:13px;}.professional-entries{margin:28px 0 34px;}.professional-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.professional-grid > a,.professional-grid > a:nth-child(3){padding:16px 12px;border-right:1px solid var(--line);}.professional-grid > a:nth-child(odd){padding-left:0;}.professional-grid > a:nth-child(even){border-right:0;}.professional-grid h3{font-size:18px;}.professional-grid p{font-size:13px;line-height:1.7;}.professional-grid strong{font-size:12px;}.home-career-feature{padding:36px 16px;}.home-career-feature .hero-visual{min-width:0;}}
 /* Editorial rhythm: stronger headings and quiet separators in lists and long reads. */
 .briefing-lead {border:0;border-top:3px solid var(--ink);border-radius:0;padding:24px 8px 24px 0;}
 .briefing-lead h3 {font-size:clamp(24px,2.5vw,34px);font-weight:800;line-height:1.45;}
@@ -3772,7 +3777,6 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 @media(max-width:540px){.briefing-lead{min-height:0;padding:18px 0;}.briefing-lead h3{font-size:22px;}.briefing-hubs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0;overflow:visible;padding:0;}.briefing-hubs > a{min-width:0;}.news-index-list > a{padding:18px 0;}.article-toc a,.mobile-article-toc a{font-size:14px;}}
 
 .home-profession-wrap {max-width:1280px;margin:0 auto;padding:0 24px;}
-.home-search button {flex:0 0 auto;white-space:nowrap;}
 @media(max-width:540px){.home-profession-wrap{padding:0 16px;}}
 #catalog-title {scroll-margin-top:85px;}
 @media(max-width:540px){
@@ -3908,6 +3912,9 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .article-figure-card { border: 2px solid var(--ink); border-radius: var(--radius-2); background: var(--bg); padding: .8rem .95rem; box-shadow: 4px 4px 0 var(--primary); }
 .article-figure-card span { display: block; color: var(--muted); font-size: .76rem; font-weight: 700; line-height: 1.5; }
 .article-figure-card strong { display: block; margin-top: .25rem; color: var(--ink); font-size: 1.72rem; font-weight: 800; line-height: 1.15; font-variant-numeric: tabular-nums; }
+/* 括弧書きの注記は数字の下に小さく。文章の値は文字を抑えて文節で折る（「500平方メ｜ートル」「建｜築物」の折れ対策） */
+.article-figure-card small { display: block; margin-top: .3rem; color: var(--muted); font-size: .82rem; font-weight: 700; line-height: 1.5; }
+.article-figure-card.is-text strong { font-size: 1.2rem; line-height: 1.45; }
 .article-items-list { list-style: none; margin: 1rem 0 0; padding: 0; display: grid; gap: .55rem; }
 .article-items-list li { display: flex; gap: .55rem; align-items: flex-start; border: 1px solid var(--line); border-radius: var(--radius-2); background: var(--bg); padding: .65rem .8rem; }
 .article-items-list svg { width: 19px; height: 19px; flex: none; margin-top: .15rem; color: var(--primary-aa); }
@@ -3944,6 +3951,8 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 }
 .sim-table th, .sim-table td { padding: .45rem .2rem; border-bottom: 1px solid var(--line); text-align: left; }
 .sim-table td { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* 項目名の注記（本人負担・復興特別所得税を含む 等）は本体の下に小さく出す（「…を含｜む）」の折れ対策） */
+.sim-table th small { display: block; margin-top: .1rem; color: inherit; opacity: .78; font-size: .8rem; font-weight: 500; line-height: 1.5; }
 .sim-table .sim-total th, .sim-table .sim-total td { border-bottom: none; font-weight: 800; }
 
 /* CAR-U03: 1 列グリッドの暗黙列が中身の最小幅まで広がり、375px で横にはみ出すのを防ぐ */
@@ -3956,3 +3965,196 @@ h1,.home-intro h1,.home-intro h1 span{font-size:28px;font-weight:800;color:var(-
 .employers-list li > :first-child { min-width: 0; }
 .article-key-points li,
 .source-list small { overflow-wrap: anywhere; }
+
+/* 本番監査（2026-11-16）：商店の黒いヒーロー内で、確認バッジ（.phead-meta）が白地に白文字で読めなかった → 暗い地に合わせる */
+.career-shop-hero .phead-meta span { background: rgb(255 255 255 / .08); border-color: rgb(255 255 255 / .38); color: #fff; }
+.career-shop-hero .phead-meta svg { color: var(--ca, #FFD700); }
+/* 本番監査（2026-11-16）：12px 未満の和文（比較表の補足 11.2px、地図ピンの頭文字 11px）→ 12px */
+.compare-scroll td small { font-size: 12px; }
+.town-pin i { font-size: 12px; }
+/* トップのテーマ（転職市場など）の説明が1行で「…」に切れていた → 2行まで表示 */
+.briefing-hubs small { white-space: normal; text-overflow: clip; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+/* iPhone の Safari（WebKit）で入力欄・選択欄が既定の幅より縮まず、フッターのメール欄・手取りシミュレーターの入力行が画面から少しはみ出していた → 縮められるように */
+input, select, textarea { min-width: 0; max-width: 100%; }
+.sim-input-row { min-width: 0; max-width: 100%; }
+
+/* Owner real-device fix 2026-11-17: on iPhone the current station label
+   "career 仕事につなぐ" wrapped inside the 34px rail and its last
+   character was cut off. The SP rail is decorative (pointer-events: none),
+   so the other stations can be narrower and the label stays on one line. */
+@media (max-width: 640px) {
+  .rail-s { min-width: 30px; }
+  .rail-s.on .rail-s-name { white-space: nowrap; }
+}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：人気ランキングの行が 1100px 幅いっぱいに伸び、
+   職業名と右端のリンクの間が大きく空いていた → 2列（左に1〜5位、右に6〜10位）に */
+@media (min-width: 1025px) {
+  /* 人気ランキング（ol に class なし）だけ。年収ランキングは同額で件数が増え、名前の列も長いので1列のまま */
+  .ranking-list > ol:not([class]) { display: block; columns: 2; column-gap: 48px; }
+  .ranking-list > ol:not([class]) > li { break-inside: avoid; }
+}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：データ室の「一つの数字を、三つに分ける」は折りたたみだが、
+   開けることが見た目で分からず、見出しだけが浮いて見えていた → 枠と開閉の印を付ける */
+@media (min-width: 1025px) {
+  .research-method-fold > summary { position: relative; list-style: none; padding: 18px 64px 18px 22px; border: 1.5px solid #e3dcc6; border-radius: 16px; background: #fff; }
+  .research-method-fold > summary::-webkit-details-marker { display: none; }
+  .research-method-fold > summary::after { content: "+"; position: absolute; right: 20px; top: 50%; display: grid; place-items: center; width: 30px; height: 30px; margin-top: -15px; border: 2px solid var(--ink); border-radius: 50%; color: var(--ink); font-size: 18px; font-weight: 700; line-height: 1; }
+  .research-method-fold[open] > summary::after { content: "−"; }
+}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：スキルの7群のうち最後の1枚だけが左半分に取り残されていた → 最後が奇数番目なら横幅いっぱいに */
+@media (min-width: 1025px) {
+  .skill-group-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：職業名録・手取りシミュレーター・各セクションの説明文・ニュースの先頭カード等が 1100px 幅で1行50〜90字に伸びていた → 1行を全角45字以内に */
+@media (min-width: 1025px) {
+  .catalog-intro p, .catalog-income-note p, .published-occupation-index .sh p, .income-method-panel p, .page-shell.narrow .editorial-block p,
+  .sh > div > p, .news-freshness-panel > p, .newsletter-form--article p, .route-card .privacy-note p, .compare-tool > p.empty,
+  .article-card-lead .article-card-body p, .depth-evidence, .depth-record, .detail-content .section-lead { max-width: 45em; }
+}
+
+/* 独立監査 2026-11-18 H3：SP では広告（data-full-width-responsive）が画面幅いっぱいに広がるが、枠（.ad-shell）の
+   overflow:clip で左右 14〜32px が切れていた。広告の設定・数・位置は変えず、SP では枠で切らない。
+   配信された広告は画面幅で表示されるので、枠線・地色は消して「広告」の表示だけ残す */
+@media (max-width: 640px) {
+  .ad-shell { overflow: visible; }
+  .ad-shell.is-filled,
+  .ad-shell.is-optimized { border-color: transparent; background: transparent; }
+}
+
+/* 独立監査 2026-11-18 M4：タップ領域 44px 未満の部品
+   - 手取りシミュレーターの選択欄：iPhone の Safari は標準の見た目の select に min-height が効かず 29px だった → 標準の見た目を外して 44px に
+   - 検索欄：外枠は 56px だが入力欄そのものは 28px だった → 入力欄を 44px に */
+.sim-form select {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 44px;
+  padding-right: 2.2rem;
+  background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23172033' stroke-width='2'/%3E%3C/svg%3E") no-repeat right .8rem center;
+}
+.search-box input,
+.home-search input { min-height: 44px; }
+
+/* 独立監査 2026-11-18 M8：SP の横スクロールが長すぎた（/compare/ の候補 7,134px、/all/ の分野 2,933px・名前から探す 2,141px）、
+   共有ボタン9個は右端が途中で切れていた。
+   - 分野チップ：折り返して全部を見せる
+   - 名前から探す・比較の候補：3〜4段の横スクロールにして長さを 1/3〜1/4 に（右端のぼかしで続きを示す）
+   - 共有ボタン：3列の格子にして横スクロールをやめる */
+@media (max-width: 760px) {
+  .catalog-fields > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); overflow-x: visible; }
+  .catalog-fields > div > button { min-width: 0; text-align: left; line-height: 1.4; }
+  .catalog-quick-search { display: grid; grid-auto-flow: column; grid-template-rows: repeat(3, auto); grid-auto-columns: max-content; align-items: stretch; overflow-x: auto; mask-image: linear-gradient(to right, #000 90%, transparent); }
+  .catalog-quick-search > span { grid-row: 1 / -1; align-self: center; width: 4.6em; white-space: normal; line-height: 1.5; }
+  .compare-picker .compare-options,
+  .compare-options { display: grid; grid-auto-flow: column; grid-template-rows: repeat(4, auto); grid-auto-columns: max-content; gap: 8px; overflow-x: auto; scrollbar-width: none; mask-image: linear-gradient(to right, #000 90%, transparent); }
+  .compare-options::-webkit-scrollbar { display: none; }
+  .compare-options > .compare-none { grid-row: 1 / -1; }
+  .career-share-actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-inline: 0; padding: 0; overflow: visible; scroll-snap-type: none; }
+  .career-share-actions a,
+  .career-share-actions button { min-width: 0; }
+}
+
+/* 独立監査 2026-11-18 M6：データ室の先頭の枠（.phead.research-hero）は、共通の .phead（左右の余白0、network.css で後から読み込まれる）に
+   余白が上書きされ、文字が枠線に接していた → 枠の内側に余白を戻す */
+.phead.research-hero { padding: clamp(1.25rem, 4vw, 3rem); }
+
+/* 本文は text-wrap:wrap（H4）にしたが、ページ冒頭の短いリード文は最終行が「ん。」など1〜2字だけにならないよう pretty を残す */
+.phead-lead { text-wrap: pretty; }
+/* 360px で手取り額の括弧書き「（4,927,400円）」の「円）」だけが次の行に落ちていた → 括弧書きは1かたまり */
+.sim-result-value span { display: inline-block; white-space: nowrap; }
+/* 年収の目安ラベルの「2025年統計」を割らない */
+.income-label .nw { white-space: nowrap; }
+/* 年収ランキングの職業名の列（短い名前の羅列）も、最終行が「作業」など2字だけにならないよう pretty を残す */
+.income-rank-names { text-wrap: pretty; }
+
+/* ============================================================
+   独立監査 2026-11-18 PC の指摘（globals 側）
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* M6 ガイド・ニュースの絞り込みチップ：flex の折り返しで最後の1つだけ次の行に落ちていた。
+     件数から段数を決め、各段がほぼ同じ数になる列数（--chip-cols、最大6）の格子に並べる */
+  .article-tabs { --chip-cols: 6; display: grid; grid-template-columns: repeat(var(--chip-cols, 6), minmax(0, 1fr)); gap: 8px; }
+  .article-tabs button { width: 100%; min-width: 0; justify-content: space-between; }
+  /* M8 名録の「556職業の年収」：出典リンクが本文と同じ見た目で押せると分からず、パネルの右 440px が空いていた → 2段組・リンクらしく */
+  .income-method-panel { columns: 2; column-gap: 48px; padding: 28px 32px; }
+  .income-method-panel > h2 { column-span: all; margin-bottom: 12px; }
+  .income-method-panel > * { break-inside: avoid; }
+  .income-method-panel p { max-width: none; }
+  /* L1 商店：商品写真の箱が 570×610〜655px と大きかった → 写真の列を 320px に */
+  .career-shop-card { grid-template-columns: 320px minmax(0, 1fr); }
+  .career-shop-image > img { min-height: 0; max-height: 320px; }
+  /* L9 スキル：「使う職業」のリンクの段の間が約 50px 空いていた（44px の当たり判定＋段の間隔） → 段の間隔を 0 に */
+  .skill-jobs { row-gap: 0; }
+  /* 写真の列を狭くした分、本文の1行が62字に伸びた → 45字以内に */
+  .career-shop-card-body > .career-shop-reason, .career-shop-points, .career-shop-method > p, .info-page .prose li, .income-rank-names { max-width: 45em; }
+  /* ニュース一覧の先頭カードの画像：以前は高さを 360px までにしていたが、枠（1200:630）より画像が低くなって上端が切れ、
+     下に約55pxの空きが出ていた（独立監査2 2026-11-19 M2）→ 画像は枠と同じ比率のまま全体を見せる */
+  .article-card-lead .article-card-media img { max-height: none; object-fit: cover; }
+}
+.income-method-panel ul { margin: 6px 0 0; padding-left: 1.1em; }
+.income-method-panel ul a { display: inline-flex; align-items: center; min-height: 44px; color: var(--primary-aa); font-weight: 700; text-decoration: underline; text-underline-offset: .2em; }
+/* L6 年収ランキングの同額の職業名の列挙：職業名の途中で折れていた → 名前ごとに折る */
+.income-rank-names .nm { display: inline-block; }
+
+/* ============================================================
+   独立監査2 2026-11-19（career）
+   ============================================================ */
+/* H1 追従（sticky）する目次・右欄の上端：固定ヘッダー（70px）の下に潜らない位置を1つの変数にまとめる。
+   SP で上端のアンカー広告が出ているときはヘッダーがその高さだけ下がる（--ad-anchor-top、network.css）ので、同じだけ下げる */
+:root { --sticky-under-header: calc(96px + var(--ad-anchor-top, 0px)); }
+.article-toc,
+.occupation-detail-side { top: var(--sticky-under-header); }
+.detail-aside { top: calc(110px + var(--ad-anchor-top, 0px)); }
+@media (min-width: 900px) {
+  .sim-result { top: calc(84px + var(--ad-anchor-top, 0px)); }
+}
+
+/* M2 ニュース一覧の先頭カード：「注目解説」の札を本文側へ移し、分類の札と横に並べる */
+.article-card-tags { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.article-card-tags .article-card-lead-badge { position: static; }
+/* PC：2列分の幅のままでは画像（1200:630）が高さ 416px になる（以前は 360px で切っていたため上端が切れ下が空いた）。
+   先頭カードは横1行いっぱいに使い、画像（左半分・高さ約310px）と本文（右半分）を横に並べる */
+@media (min-width: 1025px) {
+  .news-index-page .article-grid > .article-card-lead { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .news-index-page .article-grid > .article-card-lead .article-card-media { align-self: start; }
+  .news-index-page .article-grid > .article-card-lead .article-card-body { justify-content: center; padding: 1.4rem 1.6rem; }
+}
+
+/* M4 手動の広告枠で広告が届かなかったとき：空の広告の高さ（90px）を畳み、自社案内だけを空白なしで出す。
+   広告の枠（ins）・数・位置・読み込み処理は変えない（広告が届けば is-filled になり、元の高さに戻る） */
+/* AdSense が最適化した未配信枠（unfill-optimized → is-optimized）は畳まず、filled と同じ枠・「広告」の札で中身を見せる
+   （本家 PR #33 と同じ扱い、2026-11-19。AdSlot.tsx の説明を参照）。以前はここで is-optimized も畳み、自社案内を重ねて出していた */
+.ad-shell.is-unfilled { min-height: 0; }
+.ad-shell.is-unfilled .ad-slot { min-height: 0; margin-top: 0; }
+.ad-shell.is-unfilled .ad-fallback { min-height: 0; padding: 2.1rem 1rem 1rem; background: transparent; }
+/* ↑ 地色は枠（.ad-shell）の白に任せる。SP は枠が overflow:visible のため、自社案内の四角い白地が枠の角丸の外に出ていた */
+.ad-fallback strong { font-size: .875rem; line-height: 1.6; }
+.ad-fallback b { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 1rem; }
+
+/* M5 44px 未満の押せる部品：見た目の大きさは変えず、押せる範囲（当たり判定）を 44px 以上に広げる */
+/* （フッター・ヘッダー・駅レールの分は network.css の末尾。network.css が後から読み込まれるため） */
+/* 記事内・/route/ のフォームの注記の文中リンク（高さ 18px） */
+.newsletter-form-note a { position: relative; }
+.newsletter-form-note a::after { content: ""; position: absolute; inset: -14px -2px; }
+/* 記事末の共有ボタン（40px） */
+.career-share-actions a,
+.career-share-actions button { min-height: 44px; }
+
+/* 追加の手動広告枠（AdSlot の fold。オーナー判断 2026-11-19 14:38：外した広告の分を手動枠で補う）。
+   配信されるまでは枠の高さ・余白・線を取らず（CLS を出さない）、filled になってから既存の枠と同じ見た目になる。
+   未配信（unfilled）のときも同じく高さ 0 のまま畳み、空白を残さない。広告そのものは隠さない。
+   AdSense が最適化した未配信枠（is-optimized）は畳まず、filled と同じ見た目と「広告」の札で表示する（本家 PR #33 と同じ、2026-11-19） */
+.ad-shell--fold:not(.is-filled):not(.is-optimized) { min-height: 0; margin: 0; border: 0; background: none; }
+.ad-shell--fold:not(.is-filled):not(.is-optimized) .ad-slot { min-height: 0; margin-top: 0; }
+/* PC 記事の追従する目次：目次の高さ（約560px）が「画面 − ヘッダー − 下端のアンカー広告（275px）」より高く、
+   最後の項目（05）が広告の下に入って押せなかった（仮の広告で確認、2026-11-19）。目次の箱を広告の上 16px までに収め、
+   入りきらないときだけ箱の中でスクロールする（広告が無いときは従来と同じ高さで収まる） */
+.article-toc { max-height: calc(100vh - var(--sticky-under-header, 96px) - var(--ad-anchor-bottom, 0px) - 16px); overflow-y: auto; overscroll-behavior: contain; }
+
+/* 手動広告枠の配信待ち（2026-11-19）：どの枠も、data-ad-status が付くまでは高さ・余白・線を取らずに待つ（CLS を出さない）。
+   以前は既存の枠が配信待ちの間 112px の空の枠を取り、12秒で自社案内に替えていた。広告そのものは隠さない */
+.ad-shell.is-pending { min-height: 0; margin: 0; border: 0; background: none; }
+.ad-shell.is-pending .ad-slot { min-height: 0; margin-top: 0; }

@@ -110,3 +110,14 @@
     font-size: 21px;
   }
 }
+
+/* 独立監査 2026-11-18 L1：白地の質問の行で、文字が左端から 6px と枠に接していた → 左右 16px */
+.info-page .faq-list summary { padding: 15px 16px; }
+.info-page .faq-list details p { padding-left: 16px; padding-right: 16px; }
+
+/* 独立監査 2026-11-18 L4：情報ページの本文の最後とフッターの間が約190px 空いていた（本文 70px＋ページ 80px＋フッター上 32px）。
+   本文側の下余白を除いて、ページの下余白だけにする */
+.info-page .prose { padding-bottom: 0; }
+@media (max-width: 640px) {
+  .page-shell.info-page { padding-bottom: 56px; }
+}

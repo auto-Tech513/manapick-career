@@ -73,3 +73,5 @@
   text-decoration: underline;
   text-underline-offset: 0.2rem;
 }
+/* 事前登録フォーム（項目が2つ）：2つ目の項目名が1つ目の入力欄に詰まっていた → 間をあける */
+.newsletter-form-row + .newsletter-form-label { margin-top: 14px; }

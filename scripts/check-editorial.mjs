@@ -540,6 +540,15 @@ if (!ogGenerator.includes("check-editorial.mjs") || !ogGenerator.includes("--bef
 for (const reviewField of ["item.status === \"published\"", "item.publishedAt", "item.reviewedAt", "item.reviewedBy", "item.reviewedByHumanAt"]) {
   if (!ogGenerator.includes(reviewField)) failures.push(`OG公開条件不足: ${reviewField}`);
 }
+// サイト共通の OG 画像 public/og.png は手作りの画像（1e493af で6駅の型にそろえたもの）。
+// 生成処理で上書きされていないことを SHA-256 で確かめる（2026-11-19 上書き事故の再発防止）。
+// 画像を意図して差し替えるときは、ここの値も同じコミットで更新する。
+const SITE_OG_SHA256 = "48ddb9f76ce115227d94eab5c2d663f61322cbbab270a9f86b6659adef59a1fa";
+const siteOgPath = path.join(root, "public/og.png");
+if (!fs.existsSync(siteOgPath)) failures.push("サイト共通のOG画像 public/og.png がない");
+else if (createHash("sha256").update(fs.readFileSync(siteOgPath)).digest("hex") !== SITE_OG_SHA256) {
+  failures.push("サイト共通のOG画像 public/og.png が手作りの画像（1e493af）と違う。生成処理で上書きされていないか確認する");
+}
 
 const baseNews = extractArray("const newsItemsData").map((item) => ({
   ...baseNewsFromSource(item),

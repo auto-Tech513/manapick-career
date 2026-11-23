@@ -1,4 +1,4 @@
-// 記事ごとの固有OG画像（1200x675 PNG、16:9）をローカル生成する。
+// 記事ごとの固有OG画像（1200x675 PNG、16:9）をローカル生成する（2026-11-17 career のデザイン言語へ刷新）。
 // Google Discoverの大きな画像表示に合わせ、タイトル文字主体ではなく
 // ビジュアル主体の構成にする。記事にグラフ（article-charts）がある場合は
 // その実データを描き、ない場合はデータモチーフを大きく描く。
@@ -10,6 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { Resvg } from "@resvg/resvg-js";
 import { layoutOgTitle } from "./lib/og-title-layout.mjs";
+import { newsTopicFor } from "./lib/news-topic-map.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const outputRoot = process.env.OG_OUTPUT_DIR
@@ -85,41 +86,69 @@ const articleCharts = parseArticleCharts();
 
 const graphemeCount = (value) => [...String(value)].length;
 
+// --- career のデザイン言語（2026-11-17 刷新） ---
+// クリーム地・濃紺(#172033)の太い線・角丸の枠・黄色(#FFD700)のアクセント。
+// トップの「しごとの街」と同じアイソメトリックの箱と木のイラスト調で描く。
+// 紺一色の背景＋グラデーション＋白い矢印の旧デザインは使わない。
+const OG = {
+  paper: "#f5f2ea",
+  card: "#fbfaf7",
+  ink: "#172033",
+  yellow: "#ffd700",
+  yellowPale: "#fff6c7",
+  side: "#ece7da",
+  green: "#a9d8b8",
+  muted: "#5b6476",
+};
+
 function chartVisual(chart, dy = 0, rowPitch = 52, maxBars = 5) {
   const bars = (chart?.bars ?? []).filter((bar) => Number.isFinite(bar.value) && bar.value > 0).slice(0, maxBars);
   if (bars.length < 2) return "";
   const max = Math.max(...bars.map((bar) => bar.value));
   if (!(max > 0)) return "";
+  if (bars.length <= 3) rowPitch = Math.max(rowPitch, 66);
   const barTop = 330 + dy;
+  const barX = 420;
+  const trackWidth = 560;
   const rows = bars.map((bar, index) => {
     const y = barTop + index * rowPitch;
-    const width = Math.max(36, Math.round((bar.value / max) * 560));
+    const width = Math.max(34, Math.round((bar.value / max) * (trackWidth - 130)));
     const isMax = bar.value === max;
-    const labelSize = graphemeCount(bar.label) > 12 ? 21 : 25;
-    return `<rect x="388" y="${y}" width="640" height="30" rx="8" fill="#ffffff" opacity="0.13"/>
-  <rect x="388" y="${y}" width="${width}" height="30" rx="8" fill="${isMax ? "#ffd700" : "#8fb0ea"}"/>
-  ${textElement(bar.label, { x: 72, y: y + 3, size: labelSize, color: "#e8edf8" })}
-  ${textElement(bar.display, { x: 400 + width, y: y + 1, size: 27, weight: fontFiles.bold.weight, color: isMax ? "#ffd700" : "#ffffff" })}`;
+    const labelSize = Math.min(24, Math.floor(300 / Math.max(1, graphemeCount(bar.label))));
+    return `<rect x="${barX}" y="${y}" width="${width}" height="30" rx="15" fill="${isMax ? OG.yellow : OG.side}" stroke="${OG.ink}" stroke-width="3.5"/>
+  ${textElement(bar.label, { x: 96, y: y + 3, size: labelSize, weight: fontFiles.bold.weight, color: OG.ink })}
+  ${textElement(bar.display, { x: barX + width + 16, y: y + 1, size: 27, weight: fontFiles.bold.weight, color: OG.ink })}`;
   }).join("\n  ");
-  return `${textElement(chart.title, { x: 72, y: 288 + dy, size: 27, color: "#d8dfef" })}
+  return `${textElement(chart.title, { x: 96, y: 288 + dy, size: 25, color: OG.muted })}
+  <line x1="${barX}" y1="${barTop - 10}" x2="${barX}" y2="${barTop + (bars.length - 1) * rowPitch + 40}" stroke="${OG.ink}" stroke-width="3" stroke-linecap="round"/>
   ${rows}`;
 }
 
+// 右側のイラスト：黄色い天面の箱（資料箱）と、資料カード、街の木。
 function motifVisual() {
-  const bars = [
-    { x: 806, height: 168, fill: "#8fb0ea", opacity: 0.55 },
-    { x: 890, height: 286, fill: "#ffd700", opacity: 0.85 },
-    { x: 974, height: 224, fill: "#8fb0ea", opacity: 0.7 },
-    { x: 1058, height: 372, fill: "#ffd700", opacity: 0.95 },
-  ];
-  const rects = bars.map((bar) => `<rect x="${bar.x}" y="${675 - bar.height}" width="56" height="${bar.height}" rx="10" fill="${bar.fill}" opacity="${bar.opacity}"/>`).join("\n  ");
-  return `${rects}
-  <path d="M786 500 L898 372 L972 436 L1104 252" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
-  <path d="M1052 252 H1104 V304" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>`;
+  const ink = OG.ink;
+  const box = (cx, cy, s, h) => `<polygon points="${cx - s},${cy} ${cx},${cy + s * 0.5} ${cx},${cy + s * 0.5 + h} ${cx - s},${cy + h}" fill="#ffffff" stroke="${ink}" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="${cx},${cy + s * 0.5} ${cx + s},${cy} ${cx + s},${cy + h} ${cx},${cy + s * 0.5 + h}" fill="${OG.side}" stroke="${ink}" stroke-width="5" stroke-linejoin="round"/>
+  <polygon points="${cx},${cy - s * 0.5} ${cx + s},${cy} ${cx},${cy + s * 0.5} ${cx - s},${cy}" fill="${OG.yellow}" stroke="${ink}" stroke-width="5" stroke-linejoin="round"/>
+  <line x1="${cx - s * 0.5}" y1="${cy - s * 0.25}" x2="${cx + s * 0.5}" y2="${cy + s * 0.25}" stroke="${ink}" stroke-width="4" stroke-linecap="round"/>
+  ${[0.25, 0.5, 0.75].map((t) => `<line x1="${cx - s + s * t}" y1="${cy + s * 0.5 * t + 18}" x2="${cx - s + s * t}" y2="${cy + s * 0.5 * t + h - 18}" stroke="${ink}" stroke-width="3.5" stroke-linecap="round"/>`).join("")}`;
+  const tree = (x, y, r) => `<line x1="${x}" y1="${y}" x2="${x}" y2="${y + r * 1.5}" stroke="${ink}" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="${x}" cy="${y}" r="${r}" fill="${OG.green}" stroke="${ink}" stroke-width="4"/>`;
+  return `<path d="M800 556 L1010 462 L1128 520" fill="none" stroke="${OG.yellow}" stroke-width="7" stroke-dasharray="16 14" stroke-linecap="round"/>
+  <g transform="rotate(-5 870 230)">
+    <rect x="790" y="140" width="176" height="164" rx="6" fill="#ffffff" stroke="${ink}" stroke-width="4"/>
+    <rect x="810" y="164" width="136" height="18" rx="9" fill="${ink}"/>
+    <rect x="810" y="198" width="108" height="12" rx="6" fill="${OG.side}" stroke="${ink}" stroke-width="2.5"/>
+    <rect x="810" y="224" width="124" height="12" rx="6" fill="${OG.side}" stroke="${ink}" stroke-width="2.5"/>
+    <rect x="810" y="256" width="72" height="22" rx="11" fill="${OG.yellow}" stroke="${ink}" stroke-width="3"/>
+  </g>
+  ${box(1040, 342, 100, 112)}
+  ${tree(1108, 206, 28)}
+  ${tree(830, 452, 22)}`;
 }
 
 function renderSvg({ title, label, date, type, chart }) {
-  const badgeWidth = type === "NEWS" ? 124 : type === "GUIDE" ? 142 : type === "OCCUPATION" ? 248 : 168;
+  const typeWidth = 44 + [...type].length * 18;
   const hasChart = Boolean(chartVisual(chart));
   let chartDy = 0;
   let chartPitch = 52;
@@ -129,10 +158,10 @@ function renderSvg({ title, label, date, type, chart }) {
     // 禁則の都合で特定のサイズ階梯だけ配置できないタイトルがあるため、
     // 階梯を変えた候補を順に試す。3行になる場合はグラフ側を詰める。
     const attempts = [
-      { options: { maxLines: 2, maxWidth: 1056, fontSizes: [46, 42, 38, 34, 30] }, dy: 0, pitch: 52, maxBars: 5 },
-      { options: { maxLines: 2, maxWidth: 1056 }, dy: 0, pitch: 52, maxBars: 5 },
-      { options: { maxLines: 3, maxWidth: 1056, fontSizes: [40, 36, 32, 30] }, dy: 30, pitch: 46, maxBars: 5 },
-      { options: { maxLines: 3, maxWidth: 1056 }, dy: 84, pitch: 40, maxBars: 4 },
+      { options: { maxLines: 2, maxWidth: 1000, fontSizes: [46, 42, 38, 34, 30] }, dy: 0, pitch: 50, maxBars: 5 },
+      { options: { maxLines: 2, maxWidth: 1000 }, dy: 0, pitch: 50, maxBars: 5 },
+      { options: { maxLines: 3, maxWidth: 1000, fontSizes: [40, 36, 32, 30] }, dy: 30, pitch: 44, maxBars: 5 },
+      { options: { maxLines: 3, maxWidth: 1000 }, dy: 84, pitch: 40, maxBars: 4 },
     ];
     for (const attempt of attempts) {
       try {
@@ -145,40 +174,53 @@ function renderSvg({ title, label, date, type, chart }) {
     }
     if (!layout) throw new Error(`OGタイトルを配置できません: ${title}`);
   } else {
-    try {
-      layout = layoutOgTitle(title, { maxLines: 3, maxWidth: 660, fontSizes: [44, 40, 36, 32] });
-    } catch {
-      layout = layoutOgTitle(title, { maxLines: 3, maxWidth: 660 });
+    for (const options of [
+      { maxLines: 3, maxWidth: 640, fontSizes: [44, 40, 36, 32] },
+      { maxLines: 3, maxWidth: 640 },
+      { maxLines: 4, maxWidth: 640, fontSizes: [34, 32, 30, 28] },
+      { maxLines: 4, maxWidth: 640 },
+    ]) {
+      try { layout = layoutOgTitle(title, options); break; } catch { /* 次の候補へ */ }
     }
+    if (!layout) throw new Error(`OGタイトルを配置できません: ${title}`);
   }
   const titleHeight = layout.fontSize + (layout.lines.length - 1) * layout.lineHeight;
-  const firstLineTop = hasChart ? 132 : Math.round(330 - titleHeight / 2);
+  const firstLineTop = hasChart ? 138 : Math.round(338 - titleHeight / 2);
   const titleLines = layout.lines.map((line, index) => textElement(line, {
-    x: 72,
+    x: 96,
     y: firstLineTop + index * layout.lineHeight,
     size: layout.fontSize,
     weight: fontFiles.bold.weight,
+    color: OG.ink,
   })).join("");
+  const underline = hasChart ? "" : `<rect x="96" y="${firstLineTop + titleHeight + 26}" width="120" height="10" rx="5" fill="${OG.yellow}" stroke="${OG.ink}" stroke-width="3"/>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675">
-  <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101d3d"/><stop offset="1" stop-color="#182b58"/></linearGradient>
-    <radialGradient id="glow" cx="1" cy="0"><stop offset="0" stop-color="#ffd700" stop-opacity=".42"/><stop offset="1" stop-color="#ffd700" stop-opacity="0"/></radialGradient>
-  </defs>
-  <rect width="1200" height="675" fill="url(#background)"/>
-  <rect width="1200" height="675" fill="url(#glow)"/>
-  <rect x="0" y="0" width="14" height="675" fill="#ffd700"/>
+  <rect width="1200" height="675" fill="${OG.paper}"/>
+  <rect x="34" y="34" width="1144" height="619" rx="40" fill="${OG.ink}"/>
+  <rect x="24" y="24" width="1144" height="619" rx="40" fill="${OG.card}" stroke="${OG.ink}" stroke-width="6"/>
+  ${hasChart ? "" : `<rect x="764" y="58" width="378" height="510" rx="30" fill="${OG.yellowPale}"/>`}
   ${hasChart ? chartVisual(chart, chartDy, chartPitch, chartMaxBars) : motifVisual()}
-  <rect x="72" y="48" rx="22" width="${badgeWidth}" height="54" fill="#ffd700"/>
-  ${textElement(type, { x: 94, y: 57, size: 28, weight: fontFiles.bold.weight, color: "#101d3d" })}
-  ${textElement(label, { x: 72 + badgeWidth + 26, y: 57, size: 28, color: "#d8dfef" })}
+  <rect x="96" y="62" width="66" height="52" rx="12" fill="${OG.yellow}" stroke="${OG.ink}" stroke-width="4"/>
+  <text x="129" y="74" text-anchor="middle" dominant-baseline="hanging" fill="${OG.ink}" font-family="${fontFamily}" font-size="26" font-weight="700">CA</text>
+  <rect x="178" y="64" width="${typeWidth}" height="48" rx="24" fill="${OG.ink}"/>
+  <text x="${178 + typeWidth / 2}" y="76" text-anchor="middle" dominant-baseline="hanging" fill="#ffffff" font-family="${fontFamily}" font-size="24" font-weight="700" letter-spacing="1">${esc(type)}</text>
+  ${textElement(label, { x: 178 + typeWidth + 20, y: 74, size: 27, weight: fontFiles.bold.weight, color: OG.ink })}
   ${titleLines}
-  <text x="72" y="584" dominant-baseline="hanging" font-family="${fontFamily}" font-size="30" font-weight="700"><tspan fill="#ffffff">manapick</tspan><tspan fill="#ffd700"> career</tspan></text>
-  ${textElement(date ? `career.manapick.app　・　${date}` : "career.manapick.app", { x: 72, y: 626, size: 21, color: "#bac5dc" })}
+  ${underline}
+  <line x1="96" y1="584" x2="1104" y2="584" stroke="${OG.ink}" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
+  ${textElement("manapick", { x: 96, y: 598, size: 30, weight: fontFiles.bold.weight, color: OG.ink })}
+  <rect x="270" y="596" width="118" height="38" rx="8" fill="${OG.yellow}"/>
+  <text x="329" y="603" text-anchor="middle" dominant-baseline="hanging" fill="${OG.ink}" font-family="${fontFamily}" font-size="24" font-weight="700" letter-spacing="2">CAREER</text>
+  <text x="1104" y="604" text-anchor="end" dominant-baseline="hanging" fill="${OG.muted}" font-family="${fontFamily}" font-size="21">${esc(date ? `career.manapick.app　・　${date}` : "career.manapick.app")}</text>
   </svg>`;
 }
 
+// 手で作って管理している画像。生成処理からは書き込まない（上書き防止）。
+const HAND_MADE_IMAGES = new Set([path.join(root, "public/og.png")]);
+
 async function render(item, type, directory, outputPath) {
-  const output = outputPath ?? path.join(outputRoot, directory, `${item.slug}.png`);
+  const output = path.resolve(outputPath ?? path.join(outputRoot, directory, `${item.slug}.png`));
+  if (HAND_MADE_IMAGES.has(output)) throw new Error(`手作りの画像は生成処理で上書きしません: ${path.relative(root, output)}`);
   fs.mkdirSync(path.dirname(output), { recursive: true });
   const renderer = new Resvg(renderSvg({ title: item.title, label: item.label, date: item.date, type, chart: articleCharts.get(item.slug) }), {
     font: {
@@ -247,7 +289,8 @@ const newsWithPublication = [...baseNews, ...expanded]
     return {
       slug: item.slug,
       title: item.title,
-      label: item.label ?? item.kind,
+      // 記事カバー（OG）の札も表示用の7分類で描く（独立監査2 2026-11-19 M1）。記事データの kind は変えない
+      label: newsTopicFor(item.slug, item.label ?? item.kind),
       date: publication.publishedAt ?? publication.createdAt,
     };
   });
@@ -341,12 +384,7 @@ for (const item of newsWithPublication) await render(item, "NEWS", "news");
 await render(newsIndexOg, "NEWS", "news");
 for (const career of careers) await render(career, "CAREER", "career");
 for (const page of staticPages) await render(page, page.type, "page");
-if (usesPublicOutput) {
-  await render(
-    { slug: "site-default", title: "なりたい仕事まで、迷わせない。", label: "職業情報サイト", date: "" },
-    "CAREER",
-    "page",
-    path.join(root, "public/og.png"),
-  );
-}
+// サイト共通の OG 画像 public/og.png は手で作った画像（1e493af で6駅の型にそろえたもの）をそのまま使う。
+// 以前はここで生成画像を public/og.png に書き込んでおり、og:generate（prebuild・qa）のたびに上書きされていた。
+// 生成しないうえで、万一ほかの処理から書き込もうとした場合も render() で止める。
 console.log(`OG generated with BIZ UDPGothic font files: newsArticles=${newsWithPublication.length} newsIndex=1 guides=${guides.length} guideIndex=1 careers=${careers.length}`);

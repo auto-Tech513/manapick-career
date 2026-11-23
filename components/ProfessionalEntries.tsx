@@ -1,5 +1,7 @@
 import Link from "next/link";
+import "./professional-entries.css";
 import profiles from "@/content/professional-careers.json";
+import { PhraseText } from "@/components/PhraseTitle";
 
 /** Occupation-page ids for the four profiled occupations (仕事内容/資格/年収 anchors). */
 const occupationIdBySlug: Record<string, string> = {
@@ -60,13 +62,13 @@ function BuildingIcon({ slug }: { slug: string }) {
  */
 export function ProfessionalEntries() {
   return (
-    <section className="sec" id="professional" aria-labelledby="professional-title">
+    <section className="sec pro-entries" id="professional" aria-labelledby="professional-title">
       <div className="eh">
         <div>
           <span className="code">CA-01 · CLOSE TO YOU</span>
-          <h2 id="professional-title">身近な仕事を、具体的に知る</h2>
+          <h2 id="professional-title" className="phrase-breaks"><PhraseText text="身近な仕事を、具体的に知る" /></h2>
         </div>
-        <p>実際の働き方・資格・日本企業と公的機関の例・統計の数値を整理しています。</p>
+        <p className="phrase-breaks"><PhraseText text="実際の働き方・資格・日本企業と公的機関の例・統計の数値を整理しています。" /></p>
       </div>
       <div className="jobs">
         {profiles.items.map((item) => {

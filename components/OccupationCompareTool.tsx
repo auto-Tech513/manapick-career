@@ -1,8 +1,9 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, X } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { rankMatches, SuggestPanel } from "./SuggestPanel";
 
 export type OccupationCompareItem = {
   catalogId: string;
@@ -36,6 +37,17 @@ export function OccupationCompareTool({ items }: { items: OccupationCompareItem[
     return pool.filter((item) => !selected.includes(item.catalogId));
   }, [items, query, selected]);
   const shown = filtered.slice(0, MAX_OPTIONS_SHOWN);
+  const [suggestOpen, setSuggestOpen] = useState(false);
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const suggestions = useMemo(() => rankMatches(items.filter((item) => !selected.includes(item.catalogId)), query, (item) => item.name, (item) => item.aliases), [items, query, selected]);
+  useEffect(() => {
+    if (!suggestOpen) return;
+    const onPointerDown = (event: PointerEvent) => {
+      if (wrapRef.current && !wrapRef.current.contains(event.target as Node)) setSuggestOpen(false);
+    };
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
+  }, [suggestOpen]);
 
   function toggle(id: string) {
     setSelected((current) => {
@@ -65,16 +77,33 @@ export function OccupationCompareTool({ items }: { items: OccupationCompareItem[
           ))}
           {!chosen.length ? <p className="compare-none">まだ選ばれていません。下の候補から選んでください。</p> : null}
         </div>
-        <label className="compare-filter">
-          <span>職業名で絞り込む</span>
-          <input
-            type="search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="例：看護師、調理師、保育"
-            aria-label="比較候補を職業名で絞り込む"
-          />
-        </label>
+        <div className="compare-filter-wrap sg-wrap" ref={wrapRef} onBlur={(event) => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setSuggestOpen(false); }}>
+          <label className="compare-filter">
+            <span>職業名で絞り込む</span>
+            <input
+              type="search"
+              value={query}
+              enterKeyHint="search"
+              autoComplete="off"
+              onChange={(event) => { setQuery(event.target.value); setSuggestOpen(true); }}
+              onFocus={() => setSuggestOpen(true)}
+              onKeyDown={(event) => { if (event.key === "Escape") setSuggestOpen(false); }}
+              placeholder="例：看護師、調理師、保育"
+              aria-label="比較候補を職業名で絞り込む"
+            />
+          </label>
+          {suggestOpen && query.trim() ? (
+            <SuggestPanel
+              query={query}
+              total={suggestions.total}
+              onClose={() => setSuggestOpen(false)}
+              label="比較に追加する職業の候補"
+              items={suggestions.items.map((item) => ({ key: item.catalogId, name: item.name, action: "add" as const, meta: selected.length >= 3 ? "最大3つまで選べます。上のチップで外してから追加してください" : `比較に追加${item.income ? ` ・ 年収の目安 ${item.income.annual}` : ""}`, onSelect: () => { if (selected.length < 3) { toggle(item.catalogId); setQuery(""); } } }))}
+              emptyText={`「${query.trim()}」に一致する職業がありません。表記や別名でも探せます。`}
+              footText={`上位${suggestions.items.length}件を表示しています。残りは下の候補ボタンから選べます。`}
+            />
+          ) : null}
+        </div>
         <div className="compare-options" aria-label="職業の候補">
           {shown.map((item) => (
             <button key={item.catalogId} disabled={selected.length >= 3} onClick={() => toggle(item.catalogId)} aria-pressed="false">

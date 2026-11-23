@@ -3,6 +3,7 @@ import { careerCard } from "@/lib/career-card";
 import Link from "next/link";
 import { categories, publishedJobs } from "@/content/jobs";
 import { CareerExplorer } from "@/components/CareerExplorer";
+import { AdSlot } from "@/components/AdSlot";
 import { CareerBriefing } from "@/components/CareerBriefing";
 import { DailyCareerLoop } from "@/components/DailyCareerLoop";
 import { EditorialPreview } from "@/components/EditorialPreview";
@@ -14,6 +15,7 @@ import profiles from "@/content/professional-careers.json";
 import { ProfessionalEntries } from "@/components/ProfessionalEntries";
 import { TownMap, TownScene } from "@/components/TownMap";
 import { TransferCards } from "@/components/TransferCards";
+import { PhraseText } from "@/components/PhraseTitle";
 
 const sideNav = [
   { label: "トップ", href: "/", current: true },
@@ -87,7 +89,7 @@ export default function Home() {
             <TownScene variant="care" />
             <span>保育の現場</span>
           </div>
-          <div className="town-pic sp-x" style={{ width: "180px", height: "130px", left: "330px", top: "520px", transform: "rotate(3deg)" }}>
+          <div className="town-pic sp-x" style={{ width: "180px", height: "130px", right: "14px", top: "520px", transform: "rotate(3deg)" }}>
             <TownScene variant="it" />
             <span>ITの現場</span>
           </div>
@@ -119,7 +121,7 @@ export default function Home() {
             <br />
             キャリア候補の入口へ。
             <br />
-            回答は端末内にだけ保存。
+            回答は端末内に<wbr />だけ保存。
           </div>
         </aside>
       </section>
@@ -145,6 +147,9 @@ export default function Home() {
 
       <ProfessionalEntries />
       <CareerBriefing />
+      {/* 追加の手動広告枠（オーナー判断 2026-11-19 14:38：ヘッダー等から外した広告の分を補う）。
+          CareerBriefing（7つの入口）と DailyCareerLoop の間。配信されるまで高さを取らず、未配信なら畳む */}
+      <div className="home-ad"><AdSlot slot="1438236565" fold placement="home-after-briefing" /></div>
       <DailyCareerLoop latestNews={publishedNews[0]} />
       <div id="jobs" className="scroll-anchor" />
       <CareerExplorer jobs={publishedJobs.map(careerCard)} categories={categories.map(x => ({ ...x }))} />
@@ -153,10 +158,10 @@ export default function Home() {
         <div className="entry">
           <div className="entry-a">
             <span className="code code-on-dark">CA-04 · ENTRANCE</span>
-            <h2 id="entry-title">
-              3つの質問だけで、
+            <h2 id="entry-title" className="phrase-breaks">
+              <PhraseText text="3つの質問だけで、" />
               <br />
-              キャリア候補の入口へ。
+              <PhraseText text="キャリア候補の入口へ。" />
             </h2>
             <p>好きなこと・得意なこと・働き方の希望から、最初に読む職業を3つ選びます。</p>
             <Link className="entry-go" href="/route/">
@@ -182,7 +187,7 @@ export default function Home() {
         <div className="eh">
           <div>
             <span className="code">TRANSFER</span>
-            <h2 id="transfer-title">仕事が見えたら、乗り換える。</h2>
+            <h2 id="transfer-title" className="phrase-breaks"><PhraseText text="仕事が見えたら、乗り換える。" /></h2>
           </div>
         </div>
         <TransferCards

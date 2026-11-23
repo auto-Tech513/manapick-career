@@ -15,3 +15,16 @@ test('configuration and early events queue before the external library loads', (
 test('an embedded less-than sign cannot terminate the inline script', () => {
   assert(!analyticsBootstrap('</script>').includes('<'));
 });
+test('automated browsers (navigator.webdriver === true) do not queue js or config', () => {
+  const window = { dataLayer: [] };
+  vm.runInNewContext(analyticsBootstrap('G-WW5XWW0YFE'), { window, navigator: { webdriver: true } });
+  assert.equal(typeof window.gtag, 'function');
+  assert.equal(window.dataLayer.length, 0);
+});
+test('regular browsers (navigator.webdriver === false) queue js and config as before', () => {
+  const window = { dataLayer: [] };
+  vm.runInNewContext(analyticsBootstrap('G-WW5XWW0YFE'), { window, navigator: { webdriver: false } });
+  assert.equal(window.dataLayer[0][0], 'js');
+  assert.equal(window.dataLayer[1][0], 'config');
+  assert.equal(window.dataLayer[1][1], 'G-WW5XWW0YFE');
+});

@@ -1,8 +1,10 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Search } from "lucide-react";
 import type { CareerCard } from "@/lib/career-card";
+import { PhraseText } from "./PhraseTitle";
+import { rankMatches, SuggestPanel } from "./SuggestPanel";
 
 type Category = { key: string; label: string; description: string };
 
@@ -61,24 +63,45 @@ function CategoryIcon({ category }: { category: string }) {
 export function CareerExplorer({ jobs, categories }: { jobs: CareerCard[]; categories: Category[] }) {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState("all");
+  // 検索対象：職業名・作業・スキル・入口スキル・結論・カテゴリ名と説明
+  // （例示の「数字」「人を支える」はカテゴリ説明や結論に含まれるため、名前と作業だけでは0件になっていた）
+  const keywordsOf = useMemo(() => {
+    const map = new Map<string, string[]>();
+    for (const job of jobs) {
+      const cat = categories.find((c) => c.key === job.category);
+      map.set(job.slug, [...job.tasks, ...job.skills, ...job.entrySkills, ...job.conclusion, cat?.label ?? "", cat?.description ?? ""]);
+    }
+    return map;
+  }, [jobs, categories]);
   const filtered = useMemo(
     () =>
       jobs.filter(
         (job) =>
           (category === "all" || job.category === category) &&
-          `${job.name} ${job.tasks.join(" ")} ${job.skills.join(" ")}`
+          `${job.name} ${(keywordsOf.get(job.slug) ?? []).join(" ")}`
             .toLowerCase()
             .includes(query.trim().toLowerCase()),
       ),
-    [jobs, query, category],
+    [jobs, query, category, keywordsOf],
   );
   const labelFor = (key: string) => categories.find((c) => c.key === key)?.label ?? "";
+  const [suggestOpen, setSuggestOpen] = useState(false);
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const suggestions = useMemo(() => rankMatches(jobs, query, (job) => job.name, (job) => keywordsOf.get(job.slug) ?? []), [jobs, query, keywordsOf]);
+  useEffect(() => {
+    if (!suggestOpen) return;
+    const onPointerDown = (event: PointerEvent) => {
+      if (wrapRef.current && !wrapRef.current.contains(event.target as Node)) setSuggestOpen(false);
+    };
+    document.addEventListener("pointerdown", onPointerDown);
+    return () => document.removeEventListener("pointerdown", onPointerDown);
+  }, [suggestOpen]);
   return (
     <section className="sec sec-tight" aria-labelledby="explorer-title">
       <div className="eh">
         <div>
           <span className="code">CA-03 · JOBS</span>
-          <h2 id="explorer-title">仕事内容まで読める職業を探す</h2>
+          <h2 id="explorer-title" className="phrase-breaks"><PhraseText text="仕事内容まで読める職業を探す" /></h2>
         </div>
         <Link className="hd-btn more" href="/all/">
           個別ページのある職業すべて
@@ -100,15 +123,31 @@ export function CareerExplorer({ jobs, categories }: { jobs: CareerCard[]; categ
             </button>
           ))}
         </div>
-        <label className="filt-search">
-          <Search aria-hidden="true" />
-          <span className="sr-only">職業を検索</span>
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="例：数字、デザイン、人を支える"
-          />
-        </label>
+        <div className="filt-search-wrap sg-wrap" ref={wrapRef} onBlur={(event) => { if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) setSuggestOpen(false); }}>
+          <label className="filt-search">
+            <Search aria-hidden="true" />
+            <span className="sr-only">職業を検索</span>
+            <input
+              value={query}
+              enterKeyHint="search"
+              autoComplete="off"
+              onChange={(e) => { setQuery(e.target.value); setSuggestOpen(true); }}
+              onFocus={() => setSuggestOpen(true)}
+              onKeyDown={(e) => { if (e.key === "Escape") setSuggestOpen(false); }}
+              placeholder="例：数字、デザイン、人を支える"
+            />
+          </label>
+          {suggestOpen && query.trim() ? (
+            <SuggestPanel
+              query={query}
+              total={suggestions.total}
+              onClose={() => setSuggestOpen(false)}
+              items={suggestions.items.map((job) => ({ key: job.slug, name: job.name, href: `/career/${job.slug}/`, meta: `${labelFor(job.category)}${job.qualifications.length ? ` ・ 関連資格 ${job.qualifications.length}` : ""} ・ career解説あり` }))}
+              emptyText={`「${query.trim()}」に一致する職業は見つかりませんでした。556職業の一覧では、別名でも探せます。`}
+              footText={`上位${suggestions.items.length}件を表示しています。残りは下の一覧で確認できます。`}
+            />
+          ) : null}
+        </div>
       </div>
       <p className="result-count" aria-live="polite">
         {filtered.length}件を表示
@@ -120,7 +159,7 @@ export function CareerExplorer({ jobs, categories }: { jobs: CareerCard[]; categ
               <CategoryIcon category={job.category} />
             </span>
             <span className="jr-main">
-              <b>{job.name}</b>
+              <b className="phrase-breaks"><PhraseText text={job.name} /></b>
               <span>
                 {labelFor(job.category)}
                 {job.qualifications.length ? ` ／ 関連資格 ${job.qualifications.length}` : ""}

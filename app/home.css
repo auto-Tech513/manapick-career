@@ -19,7 +19,15 @@
 .town-txt {
   padding-top: 40px;
   position: relative;
-  z-index: 2;
+  /* Owner real-device fix 2026-11-17: the map's photo cards (z 2) and pins
+     (z 3) are later siblings in the same stacking context and were painted
+     over the search suggestions on iPhone. Keep the text column above them,
+     and lift it above the stats band / later sections while the list is open. */
+  z-index: 4;
+}
+.town-txt:has(.sg-panel),
+.town-txt:focus-within {
+  z-index: 60;
 }
 .town-kick {
   display: flex;
@@ -100,7 +108,7 @@
   position: absolute;
   left: 8px;
   bottom: 4px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
 }
 .town-pin {
@@ -128,7 +136,7 @@
   font-style: normal;
   color: var(--ink);
   font-family: var(--num);
-  font-size: 11px;
+  font-size: 12px;
   flex: none;
 }
 .town-side {
@@ -173,6 +181,8 @@
   font-weight: 700;
   line-height: 1.6;
   color: var(--ink);
+  /* 語の途中で折らない（「保｜存。」の1字落ち対策）。折る位置は <wbr> で指定 */
+  word-break: keep-all;
 }
 .town-side-box b {
   display: block;
@@ -197,6 +207,10 @@
   border: 2px solid var(--ink);
   border-radius: 16px;
   background: #fff;
+}
+.home-search:focus-within {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
 }
 .home-search > svg {
   width: 18px;
@@ -250,7 +264,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.55rem 0.9rem;
+  padding: 0 0.5rem 0 0.9rem;
   border-bottom: 1px solid var(--line);
   color: var(--ink);
   font-size: 0.85rem;
@@ -263,8 +277,8 @@
   font: inherit;
   font-size: 0.78rem;
   font-weight: 700;
-  min-height: 32px;
-  padding: 0 0.2rem;
+  min-height: 44px;
+  padding: 0 0.4rem;
   cursor: pointer;
 }
 .home-suggest-panel ul {
@@ -273,6 +287,8 @@
   padding: 0;
   max-height: 46vh;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 .home-suggest-panel li + li {
   border-top: 1px solid var(--line);
@@ -297,7 +313,7 @@
 }
 .home-suggest-meta {
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 12px;
   line-height: 1.5;
 }
 .home-suggest-empty {
@@ -312,7 +328,7 @@
   padding: 0.5rem 0.9rem;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 12px;
 }
 
 /* ---------- 数字の帯 ---------- */
@@ -400,84 +416,6 @@
   margin-left: auto;
 }
 
-/* ---------- 職業カード ---------- */
-.jobs {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-.job {
-  background: #fff;
-  border: 2px solid var(--ink);
-  border-radius: 22px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.job-top {
-  height: 150px;
-  background: var(--yp);
-  position: relative;
-  border-bottom: 2px solid var(--ink);
-}
-.job-top > svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -46%);
-  width: 130px;
-  height: 120px;
-}
-.job-tag {
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  font-size: 11px;
-  font-weight: 700;
-  background: #fff;
-  border: 1.5px solid var(--ink);
-  border-radius: 999px;
-  padding: 1px 9px;
-  z-index: 1;
-}
-.job-bd {
-  padding: 16px 18px 18px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-.job-bd h3 {
-  font-family: var(--mincho);
-  font-weight: 700;
-  font-size: 24px;
-}
-.job-bd h3 a {
-  color: var(--ink);
-}
-.job-bd p {
-  font-size: 12.5px;
-  color: #4a5468;
-  line-height: 1.75;
-  margin: 4px 0 12px;
-}
-.job-lk {
-  margin-top: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1.5px solid var(--ink);
-}
-.job-lk a {
-  text-align: center;
-  padding: 9px 0 0;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--ink);
-  min-height: 44px;
-}
-.job-lk a + a {
-  border-left: 1px dashed #c9c2b0;
-}
-
 /* ---------- DAILY CAREER LOOP ---------- */
 .loop {
   display: grid;
@@ -534,13 +472,19 @@
 }
 .ring-p em {
   font-style: normal;
-  font-family: var(--num);
+  /* Owner real-device fix 2026-11-17: when Barlow Condensed is not loaded
+     the fallback is far wider and COMPARE / RECORD touched or overflowed
+     the circle. Fall back to the condensed faces iOS / macOS ship with. */
+  font-family: "Barlow Condensed", "Avenir Next Condensed", "Arial Narrow", "Zen Kaku Gothic New", sans-serif;
+  font-stretch: condensed;
   font-weight: 700;
-  font-size: 20px;
-  letter-spacing: 0.06em;
+  font-size: 19px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  max-width: calc(100% - 16px);
 }
 .ring-p small {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
 }
 .ring-p.on {
@@ -809,6 +753,37 @@
 .news-preview-list a {
   border-radius: 18px;
 }
+/* Owner real-device fix 2026-11-17: the lead is a white rounded card here,
+   so the editorial "rule only" padding (0 on the sides) put the text on the
+   card edge. Give it card padding and a full hairline frame. */
+.career-briefing .briefing-lead {
+  padding: 24px 24px 22px;
+  border: 1.5px solid #e3dcc6;
+  border-top: 3px solid var(--ink);
+}
+@media (max-width: 640px) {
+  .career-briefing .briefing-lead {
+    padding: 20px 18px 18px;
+  }
+  /* 全ページ監査 2026-11-17：2列ではテーマ名と説明が語の途中で折れていた
+     （「公的支援の選｜び方」）。スマホは1列の行リストにする。 */
+  .career-briefing .briefing-hubs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-inline: 0;
+    padding: 0;
+    overflow: visible;
+  }
+  .career-briefing .briefing-hubs > a {
+    min-height: 64px;
+    border: 1.5px solid #e3dcc6;
+    border-radius: 16px;
+  }
+  .career-briefing .briefing-hubs small {
+    white-space: normal;
+  }
+}
 .xrow {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -842,6 +817,20 @@
   .town-pin.sp-x {
     display: none;
   }
+  /* Owner real-device fix 2026-11-16: the IT pin (3rd pin, top:410px on the
+     desktop map) is bottom-clipped by the 430px SP map window and reads as a
+     broken chip above the stats band. Move it fully inside the window. */
+  .town-map a.town-pin:nth-of-type(3) {
+    top: 372px !important;
+  }
+  /* Owner real-device fix 2026-11-16: shrink/shift the first photo card on SP
+     so it covers less of the map buildings (mock deviation, owner-directed). */
+  .town-map div.town-pic:nth-of-type(1) {
+    width: 148px !important;
+    height: 122px !important;
+    left: 18px !important;
+    top: 52px !important;
+  }
   .town-side {
     display: none;
   }
@@ -870,10 +859,19 @@
     height: 40px;
     padding: 0 14px;
   }
+  /* 以前は overflow:hidden で、右の「保育士」「仕事を比べる」「働き方から探す」が見切れたまま押せなかった。
+     横にスクロールできるようにする（スクロールバーは隠す） */
   .town-quick {
     flex-wrap: nowrap;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     margin-right: -16px;
+    padding-right: 16px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .town-quick::-webkit-scrollbar {
+    display: none;
   }
   .town-quick a {
     flex: none;
@@ -910,38 +908,6 @@
   .eh .more {
     margin-left: 0;
   }
-  .jobs {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-  .job {
-    border-radius: 16px;
-  }
-  .job-top {
-    height: 110px;
-  }
-  .job-top > svg {
-    width: 96px;
-    height: 96px;
-  }
-  .job-bd h3 {
-    font-size: 19px;
-  }
-  .job-bd p {
-    display: none;
-  }
-  .job-lk {
-    grid-template-columns: 1fr;
-  }
-  .job-lk a {
-    padding: 7px 0;
-    border-left: 0 !important;
-    border-top: 1px dashed #c9c2b0;
-    min-height: 40px;
-  }
-  .job-lk a:first-child {
-    border-top: 0;
-  }
   .loop {
     padding: 32px 18px;
     border-radius: 24px;
@@ -957,11 +923,15 @@
     border-width: 8px;
   }
   .ring-p {
-    width: 84px;
-    height: 84px;
+    width: 88px;
+    height: 88px;
   }
   .ring-p em {
-    font-size: 17px;
+    /* Owner real-device fix 2026-11-17: 15px still touched/clipped on a real
+       iPhone. 14px on an 88px circle leaves >= 10px inside the ring border
+       for all four codes, with or without Barlow Condensed. */
+    font-size: 14px;
+    letter-spacing: 0.02em;
   }
   .ring-c b {
     font-size: 21px;
@@ -1009,4 +979,55 @@
   .xrow {
     grid-template-columns: 1fr;
   }
+}
+
+/* 独立監査 2026-11-18 H2：円図の中央の文（「終わらせない、」7字）が左右の丸（RECORD・COMPARE）に食い込んでいた。
+   中央の文字の大きさを、左右の丸の間の幅（円図の幅−丸2つ分）に収まるように決める。SP は円図を欄の幅いっぱいまで広げる */
+.ring { container-type: inline-size; }
+.ring-c b { font-size: min(28px, calc((100cqw - 216px) / 7.4)); }
+@media (max-width: 640px) {
+  .ring { width: min(340px, 100%); }
+  .ring-c b { font-size: min(21px, calc((100cqw - 184px) / 7.2)); }
+  .ring-c span { font-size: 11px; letter-spacing: 0.14em; }
+}
+
+/* 独立監査 2026-11-18 PC L2：ほかのページと同じく、PC はトップも内容の幅 1200px（左右 40px）で中央にそろえる
+   （1920px ではヘッダーだけ中央、本文は画面いっぱいに広がっていた） */
+@media (min-width: 1025px) {
+  main:has(> .town-hero) > * { max-width: 1280px; margin-left: auto; margin-right: auto; box-sizing: border-box; }
+  main:has(> .town-hero) > .sec,
+  main:has(> .town-hero) > .career-briefing,
+  main:has(> .town-hero) > .editorial-preview { padding-left: 40px; padding-right: 40px; }
+  main:has(> .town-hero) > .town-stats { max-width: 1200px; }
+  main:has(> .town-hero) > .town-hero { padding-left: 40px; }
+}
+
+/* ============================================================
+   独立監査2 2026-11-19（career）
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* L3 ヒーローの右欄（190px）が内容の右端（左右 40px）を越えて画面の端まで伸び、黄色の「3つの質問」箱が右端より 14px 外に出て、
+     地図の「ITの現場」カード（地図の幅を越えて右欄へはみ出していた）に重なっていた。
+     右欄を内容の右端（40px 内側）で止め、カードは地図の右端から位置を決める（app/page.tsx） */
+  .town-hero { grid-template-columns: 560px minmax(0, 1fr) 204px; }
+  .town-side { padding-right: 40px; }
+  /* L2「働く・学ぶを、一次情報から考える。」の7つの入口：2列の格子で最後の段が1枚だけになり、各カード（高さ約158px）に空きが多かった → 1列の一覧に */
+  .career-briefing .briefing-hubs { grid-template-columns: minmax(0, 1fr); }
+  .career-briefing .briefing-hubs > a { min-height: 64px; }
+}
+
+/* M5 SP トップの検索ボタン（40px）→ 44px（検索欄の外枠 56px の中に収まる） */
+@media (max-width: 640px) {
+  .town-hero .home-search button { height: 44px; }
+}
+
+/* 追加の手動広告枠（トップ。AdSlot の fold：配信されるまで高さ 0、未配信なら畳む） */
+.home-ad { padding: 0 36px; }
+.home-ad .ad-shell.is-filled,
+.home-ad .ad-shell.is-optimized { margin: 24px 0 0; }
+@media (max-width: 640px) {
+  .home-ad { padding: 0 14px; }
+}
+@media (min-width: 1025px) {
+  main:has(> .town-hero) > .home-ad { padding-left: 40px; padding-right: 40px; }
 }

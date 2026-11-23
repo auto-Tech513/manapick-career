@@ -1,6 +1,7 @@
 /* Source: manapick AI app/globals.css, SiteHeader, Footer, ToolCard, Breadcrumbs (2026-10-24).
    Career implementation of the common specification. Career colours follow the original career palette; layout primitives follow AI. */
 :root{--font-sans:"Zen Kaku Gothic New","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP",system-ui,-apple-system,"Meiryo",sans-serif;--mincho:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;--num:"Barlow Condensed","Zen Kaku Gothic New",sans-serif;--it:"Cormorant Garamond",serif;--mp:#1F3A8A;--ai:#FF4438;--li:#15803D;--ca:#FFD700;--co:#BE185D;--po:#6D28D9;--ai-ink:#B92118;--ca-ink:#665500;--paper:#F5F2EA;--paper-2:#ECE7DA;--rule:#D8D2C2;--night:#111318;--ink:#172033;--muted:#667085;--line:#e5e1d8;--bg:#fbfaf7;--surface:#fff;--primary:#ffd700;--primary-aa:#665500;--primary-strong:#665500;--primary-dark:#665500;--primary-ink:#14213d;--primary-soft:#fff8c7;--surface-soft:#fbfaf7;--bg-soft:#fff8c7;--accent:#ffd700;--radius-1:8px;--radius-2:12px;--radius-3:16px;--radius-4:24px;--radius:12px;--shadow-1:0 1px 2px #0e11170d;--shadow-2:0 6px 18px #0e111714,0 2px 4px #0e11170d;--shadow-card:none;--shadow-card-hover:none;--shadow-button:none;--shadow:none;--shadow-soft:var(--shadow-1);--shadow-line:none;--font-jp:var(--font-sans);--font-latin:var(--font-sans)}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 html body{font-family:var(--font-sans);color:var(--ink);background:var(--bg)}
 .mp-header{position:sticky;top:0;z-index:200;height:70px;background:var(--bg);border-bottom:1px solid var(--line);box-shadow:none;color:var(--ink)}
 .mp-header-inner{display:flex;align-items:center;gap:24px;height:70px;margin:0 auto;padding:0 36px;flex-wrap:nowrap}
@@ -128,7 +129,9 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .fit-points{display:grid;gap:18px;margin:24px 0}
 .fit-points>div{padding:0 0 18px;border-bottom:1px solid var(--line)}
 .fit-points h3{font-size:18px;line-height:1.65;margin:0 0 8px}
-.depth-list,.depth-exercise ul{padding-left:1.4em;line-height:1.95}
+.depth-list,.depth-exercise ul{padding-left:1.4em;line-height:1.95;list-style:disc}
+/* 字下げだけあって印（・）が無く、段落のずれに見えていた（リセットで list-style:none になっていた） */
+.depth-list li::marker,.depth-exercise li::marker{color:var(--ca-ink, var(--primary-aa))}
 .depth-list li,.depth-exercise li{margin:10px 0}
 .depth-exercise{margin:24px 0;padding:20px;border:1px solid var(--line);border-radius:12px;background:var(--primary-soft)}
 .depth-exercise h3{margin-top:0}.depth-exercise small{display:block;font-size:12px;line-height:1.8;color:var(--primary-ink)}
@@ -257,7 +260,7 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .mp-newsletter-band{max-width:880px;margin:0 auto;padding:40px 24px 8px}
 
 /* Footer route map */
-.route{background:var(--night);color:#fff;padding:56px 48px 40px;margin-top:48px}
+.route{background:var(--night);color:#fff;padding:56px 48px 40px;margin-top:48px;scroll-margin-top:76px}
 .route .route-kick{font-family:var(--num);font-weight:600;letter-spacing:.2em;font-size:12px;opacity:.6;margin:0 0 6px}
 .route-lead{font-family:var(--mincho);font-weight:700;font-size:26px;line-height:1.5;margin:0 0 34px;color:#fff}
 .route-lead .nw,.xfer-sheet-head .nw{white-space:nowrap}
@@ -273,6 +276,45 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 .route-legal{display:flex;gap:22px;flex-wrap:wrap;margin-top:44px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);font-size:12px}
 .route-legal a{color:rgba(255,255,255,.75);display:inline-flex;align-items:center;min-height:44px;padding:0 4px;margin:0 -4px}
 .route-legal span{color:rgba(255,255,255,.6);display:inline-flex;align-items:center}
+
+/* フッター骨格（FOOTER_SPEC 2026-11-18）：1枚の墨色の帯に メルマガ → サイトの案内 → 駅 → 注記・最下段 */
+.foot{padding:56px 40px 24px}
+.foot-inner{max-width:1200px;margin:0 auto}
+.foot-news{padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot .newsletter-form--footer{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"kick form" "title form" "text note";column-gap:56px;align-items:start;margin:0;padding:0;border:0;border-radius:0;background:none;color:#fff}
+.foot .newsletter-form-kick{grid-area:kick;font-family:var(--num);font-weight:600;letter-spacing:.2em;font-size:12px;color:rgba(255,255,255,.6);margin:0 0 6px}
+.foot .newsletter-form-title{grid-area:title;color:#fff;font-family:var(--mincho);font-size:22px;margin:0 0 8px}
+.foot .newsletter-form-title svg{color:var(--ca)}
+.foot .newsletter-form-text{grid-area:text;color:rgba(255,255,255,.8);font-size:15px;line-height:1.8;margin:0}
+.foot .newsletter-form--footer form{grid-area:form;align-self:end}
+.foot .newsletter-form-label{color:rgba(255,255,255,.85)}
+.foot .newsletter-form-row input{background:#fff;color:var(--ink);border-color:transparent}
+.foot .newsletter-form-row button{background:var(--ca);color:#111318;border-color:var(--ca)}
+.foot .newsletter-form-note{grid-area:note;color:rgba(255,255,255,.65);font-size:13px;margin:10px 0 0}
+.foot .newsletter-form-note a{color:#fff}
+.foot-guide{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px;padding:36px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.foot-logo{display:inline-flex;min-height:44px;align-items:center}
+.foot-brand .wm{color:#fff}
+.foot-brand p{margin:10px 0 0;color:rgba(255,255,255,.75);font-size:14px;line-height:1.8}
+.foot-col-title{font-size:13px;font-weight:800;color:var(--ca);margin:0 0 6px;letter-spacing:.06em}
+.foot-col ul{list-style:none;margin:0;padding:0}
+.foot-col a{display:flex;align-items:center;min-height:32px;color:rgba(255,255,255,.85);font-size:14px}
+.foot-col a:hover{color:#fff;text-decoration:underline;text-underline-offset:.2em}
+.foot-net{padding:36px 0 0}
+.foot .route-lead{margin:0 0 24px}
+.foot-note{margin:24px 0 0;color:rgba(255,255,255,.6);font-size:13px;line-height:1.7}
+.foot .route-legal{margin-top:10px;padding-top:6px;border-top:0}
+@media(min-width:1025px){
+  .foot.route{margin-top:32px}
+  /* PC は駅の説明文を1行に */
+  .foot .route-st{padding:0}
+  .foot .route-st span{white-space:nowrap;letter-spacing:-.01em}
+}
+@media(max-width:1024px){
+  .foot{padding:56px 28px 28px}
+  .foot-guide{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .foot-brand{grid-column:1/-1}
+}
 
 /* SP bottom tab bar + transfer sheet */
 .spbar{display:none}
@@ -298,32 +340,52 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
 @media(max-width:640px){
   .rail{height:34px;padding:0 12px;gap:10px;overflow:hidden}
   .rail-lbl{display:none}
-  .rail-line{pointer-events:none}
-  .rail-s{margin-right:2px;padding-right:6px;gap:0;min-height:34px;min-width:44px;justify-content:center}
+  /* SP の路線帯は飾り（押せない）。駅の最小幅 44px だと 375px 以下で右端の駅が見切れていたので、
+     最小幅を 30px にして帯の幅いっぱいに均等に並べる（レイアウト監査 2026-11-17） */
+  .rail-line{pointer-events:none;flex:1;min-width:0;justify-content:space-between}
+  .rail-s{margin-right:2px;padding-right:6px;gap:0;min-height:34px;min-width:30px;justify-content:center}
   .rail-s i{width:11px;height:11px}
   .rail-s-name{display:none}
   .rail-s.on{gap:6px}
-  .rail-s.on .rail-s-name{display:inline;font-size:11px}
+  .rail-s.on .rail-s-name{display:inline;font-size:12px}
   .rail-s.on b{display:none}
   .mp-header{height:58px}
   .mp-header-inner{height:58px;padding:0 14px;gap:8px}
   .wm-m{font-size:21px}
-  .wm-sub{font-size:11px}
+  .wm-sub{font-size:12px}
   .mp-header-actions .hd-btn:not(.y){display:none}
-  .mp-header-actions .hd-btn.y{height:38px;font-size:12px;padding:0 12px}
-  .mp-menu{display:none}
+  .mp-header-actions .hd-btn.y{height:44px;font-size:12px;padding:0 12px}
+  /* SP ではヘッダーのメニューボタンだけを隠し、details 本体は残す。下部タブバーの「メニュー」が mp-open-menu でこの details を開くため、本体ごと display:none にするとメニューが表示できない */
+  .mp-menu>summary{display:none}
+  .mp-menu>nav{top:30px}
   .route{padding:40px 20px 110px}
   .route-lead{font-size:20px}
   .route-map{grid-template-columns:1fr}
   .route-map::before{left:24px;right:auto;top:20px;bottom:20px;width:6px;height:auto;background:linear-gradient(180deg,var(--mp) 0 16.66%,var(--ai) 16.66% 33.33%,var(--li) 33.33% 50%,var(--ca) 50% 66.66%,var(--co) 66.66% 83.33%,var(--po) 83.33%)}
   .route-st{display:grid;grid-template-columns:54px 1fr;text-align:left;align-items:center;padding:6px 0}
-  .route-st i{width:42px;height:42px;margin:0;border-width:5px;grid-row:span 3}
+  .route{scroll-margin-top:66px}
+  .route-st i{width:42px;height:42px;margin:0 auto;border-width:5px;grid-row:span 3}
   .spbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));height:62px;border-radius:18px;background:var(--night);color:#fff;z-index:300;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-  .spbar a,.spbar button{display:grid;place-items:center;align-content:center;gap:3px;font-size:10px;font-weight:700;opacity:.7;color:#fff;background:none;border:0;cursor:pointer;font-family:inherit;padding:0}
+  .spbar a,.spbar button{display:grid;place-items:center;align-content:center;gap:3px;font-size:12px;font-weight:700;opacity:.7;color:#fff;background:none;border:0;cursor:pointer;font-family:inherit;padding:0}
   .spbar a.on,.spbar button.on{opacity:1}
   .spbar svg{width:22px;height:22px}
   .spbar .spbar-star{color:var(--ca);fill:var(--ca)}
   .mp-newsletter-band{padding:32px 16px 0}
+  /* フッター骨格の SP：メルマガは縦積み、サイトの案内は2列のリンク格子 */
+  /* SP のフッター全体を 1,900px 以下に（FOOTER_SPEC）：ロゴはヘッダーにあるので案内のロゴ欄は省き、駅の行間を詰める */
+  .foot.route{margin-top:32px}
+  .foot-news{padding-bottom:32px}
+  .foot .newsletter-form--footer{display:block}
+  .foot .newsletter-form-title{font-size:20px}
+  .foot .newsletter-form-text{margin-bottom:14px}
+  .foot-brand{display:none}
+  .foot .route-st{padding:2px 0}
+  .foot-guide{grid-template-columns:minmax(0,1fr);gap:18px;padding:28px 0}
+  .foot-col ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}
+  .foot-col-title{font-size:12px;margin-bottom:2px}
+  .foot-col a{min-height:44px;font-size:14px}
+  .foot-net{padding-top:28px}
+  .foot-note{margin-top:20px}
 }
 
 /* ============================================================
@@ -521,3 +583,232 @@ h1 mark,h1 span{background:none!important;color:var(--ink)!important;text-shadow
     font-size: 24px;
   }
 }
+
+/* 本番監査（2026-11-16）：和文 12px 未満をなくす（数字用の書体の枠に入っていた「現在地」） */
+.rail-s.on b, .xfer-sheet-current { font-size: 12px; }
+
+/* ============================================================
+   サイトメニュー（2026-11-17 作り直し）
+   career のデザイン言語：クリーム地・黄色・濃紺の太い線・角丸。
+   番号付きの区分／各項目の短い説明／現在地／候補つき検索／姉妹サイト。
+   ============================================================ */
+.mp-menu-btn{display:flex;align-items:center;justify-content:center;gap:6px;flex:none;min-width:64px;min-height:44px;padding:0 14px;white-space:nowrap;border:2px solid var(--ink);border-radius:999px;background:#fff;color:var(--ink);font:inherit;font-size:13px;font-weight:800;cursor:pointer}
+.mp-menu-btn.on,.mp-menu-btn:hover{background:var(--ca)}
+.mp-menu-btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.mp-main-nav a[aria-current=page]{box-shadow:inset 0 -4px 0 var(--ca)}
+.cm-scrim{position:fixed;inset:0;z-index:500;background:rgba(17,19,24,.5)}
+.cm-drawer{position:fixed;top:0;right:0;bottom:0;z-index:510;display:flex;flex-direction:column;width:min(440px,100vw);background:var(--paper);border-left:3px solid var(--ink);color:var(--ink)}
+.cm-top{display:flex;align-items:center;gap:12px;flex:none;height:64px;padding:0 14px 0 18px;padding-top:env(safe-area-inset-top);box-sizing:content-box;background:var(--ca);border-bottom:3px solid var(--ink)}
+.cm-top p{display:flex;align-items:center;gap:10px;margin:0;flex:1}
+.cm-top .code{background:var(--ink);color:var(--ca);font-size:13px;padding:4px 9px 3px;line-height:1}
+.cm-drawer:focus{outline:none}
+.cm-top b{font-family:var(--mincho);font-weight:700;font-size:20px;line-height:1}
+.cm-close{display:grid;place-items:center;width:44px;height:44px;flex:none;border:2px solid var(--ink);border-radius:50%;background:#fff;color:var(--ink);cursor:pointer}
+.cm-close svg{width:20px;height:20px}
+.cm-close:focus-visible,.cm-drawer a:focus-visible,.cm-drawer button:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.cm-body{flex:1;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;padding:16px 16px calc(32px + env(safe-area-inset-bottom))}
+.cm-here{display:flex;align-items:center;gap:12px;margin:0;padding:12px 14px;border:2px solid var(--ink);border-radius:16px;background:#fff}
+.cm-here>span:last-child{display:grid;gap:2px;min-width:0}
+.cm-here small{font-size:12px;font-weight:700;color:var(--primary-aa);letter-spacing:.06em}
+.cm-here b{font-size:15px;font-weight:700;line-height:1.45}
+.cm-search{margin:12px 0 4px}
+.cm-search-box{display:flex;align-items:center;gap:8px;height:56px;padding:0 6px 0 16px;border:2px solid var(--ink);border-radius:16px;background:#fff}
+.cm-search-box:focus-within{outline:3px solid var(--ink);outline-offset:2px}
+.cm-search-box>svg{width:18px;height:18px;flex:none}
+.cm-search-box input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:16px;color:var(--ink)}
+.cm-search-box button{flex:none;height:44px;padding:0 16px;border:2px solid var(--ink);border-radius:11px;background:var(--ca);color:var(--ink);font:inherit;font-size:14px;font-weight:700;cursor:pointer}
+.cm-sec,.cm-net{margin-top:24px}
+.cm-sec h2,.cm-net h2{display:flex;align-items:center;gap:10px;margin:0 0 10px;font-family:var(--mincho);font-weight:700;font-size:18px;line-height:1.4;color:var(--ink)}
+.cm-no{display:inline-grid;place-items:center;min-width:34px;height:26px;padding:0 6px;border-radius:6px;background:var(--ink);color:var(--ca);font-size:16px;font-weight:700;letter-spacing:.06em;line-height:1}
+.cm-sec ul,.cm-net ul{list-style:none;margin:0;padding:0;border:2px solid var(--ink);border-radius:16px;background:#fff;overflow:hidden}
+.cm-sec li+li{border-top:1px dashed #c9c2b0}
+.cm-sec a,.cm-net a{display:flex;align-items:center;gap:12px;min-height:60px;padding:10px 12px 10px 16px;color:var(--ink);text-decoration:none}
+.cm-sec a:hover,.cm-net a:hover{background:var(--primary-soft)}
+.cm-sec a[aria-current=page]{background:var(--primary-soft);box-shadow:inset 6px 0 0 var(--ca)}
+.cm-t{display:grid;gap:2px;flex:1;min-width:0}
+.cm-t b{font-size:15px;font-weight:700;line-height:1.45}
+.cm-t small{font-size:12px;line-height:1.55;color:#4a5468}
+.cm-go{display:grid;place-items:center;flex:none;width:30px;height:30px;border:1.5px solid var(--ink);border-radius:50%;background:#fff}
+.cm-go svg{width:15px;height:15px}
+.cm-cur{flex:none;font-style:normal;font-size:12px;font-weight:700;line-height:1;padding:6px 10px;border:1.5px solid var(--ink);border-radius:999px;background:var(--ca);color:var(--ink)}
+.cm-net-lead{margin:-2px 0 10px;font-size:13px;line-height:1.7;color:#4a5468}
+.cm-net ul{position:relative;padding:6px 0}
+.cm-net ul::before{content:"";position:absolute;left:28px;top:36px;bottom:36px;width:4px;border-radius:2px;background:linear-gradient(180deg,var(--mp) 0 16.66%,var(--ai) 16.66% 33.33%,var(--li) 33.33% 50%,var(--ca) 50% 66.66%,var(--co) 66.66% 83.33%,var(--po) 83.33%)}
+.cm-net i{position:relative;z-index:1;flex:none;width:28px;height:28px;border-radius:50%;border:5px solid var(--c);background:#fff}
+.cm-net a[aria-current=page] i{background:var(--c)}
+.cm-net a[aria-current=page]{background:var(--primary-soft)}
+@media(max-width:700px){.cm-drawer{width:100vw;border-left:0}}
+body.cm-lock{overflow:hidden}
+
+/* ============================================================
+   検索候補パネル（career 内のすべての検索欄で共通）
+   ============================================================ */
+.sg-wrap{position:relative}
+.sg-panel{position:absolute;top:calc(100% + 8px);left:0;right:0;z-index:60;background:#fff;border:2px solid var(--ink);border-radius:16px;box-shadow:0 14px 32px rgba(17,19,24,.18);overflow:hidden;text-align:left;color:var(--ink)}
+.sg-panel--inline{position:static;margin-top:8px;box-shadow:none}
+.sg-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 6px 0 14px;border-bottom:2px solid var(--ink);background:var(--paper);font-size:13px;font-weight:700}
+.sg-head b{display:inline-block;margin-right:4px;padding:1px 7px;border-radius:4px;background:var(--ca);font-size:16px;line-height:1.3}
+.sg-head button{min-height:44px;padding:0 10px;border:0;background:transparent;color:var(--ink);font:inherit;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.sg-panel ul{list-style:none;margin:0;padding:0;max-height:min(46vh,420px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.sg-panel--inline ul{max-height:none}
+.sg-panel li+li{border-top:1px solid var(--line)}
+.sg-panel li a,.sg-panel li button{display:flex;align-items:center;gap:10px;width:100%;min-height:56px;padding:9px 12px 9px 14px;border:0;background:none;color:var(--ink);font:inherit;text-align:left;text-decoration:none;cursor:pointer}
+.sg-panel li a:hover,.sg-panel li button:hover,.sg-panel li a:focus-visible,.sg-panel li button:focus-visible{background:var(--primary-soft)}
+.sg-text{display:grid;gap:2px;flex:1;min-width:0}
+.sg-name{font-size:15px;font-weight:700;line-height:1.45;overflow-wrap:anywhere}
+.sg-meta{font-size:12px;line-height:1.5;color:var(--muted)}
+.sg-go{display:grid;place-items:center;flex:none;width:28px;height:28px;border:1.5px solid var(--ink);border-radius:50%}
+.sg-go svg{width:14px;height:14px}
+.sg-empty,.sg-foot,.sg-loading{margin:0;padding:12px 14px;font-size:13px;line-height:1.7;color:var(--muted)}
+.sg-foot{border-top:1px solid var(--line);font-size:12px}
+.sg-loading{margin-top:8px;border:2px dashed #c9c2b0;border-radius:16px;background:#fff}
+.filt-search-wrap{margin-left:auto}
+.filt-search-wrap .filt-search{margin-left:0}
+.filt-search-wrap .sg-panel{left:auto;width:min(380px,calc(100vw - 32px))}
+.compare-filter-wrap .sg-panel{z-index:30}
+@media(max-width:700px){.filt-search-wrap{margin-left:0;width:100%}.filt-search-wrap .sg-panel{left:0;width:auto}}
+.compare-picker>.compare-filter-wrap{display:block;margin-top:.8rem}
+.sg-panel li a,.sg-panel li button,.sg-head button{border-radius:0}
+.compare-picker .sg-panel li button{font-size:inherit;font-weight:inherit}
+/* スマホのヘッダーにもメニュー（ハンバーガー）を置く。幅が狭いので丸いアイコンボタンにする */
+@media(max-width:640px){
+  .mp-header-actions{margin-left:auto}
+  .mp-menu-btn{width:44px;min-width:44px;height:44px;padding:0;border-radius:50%}
+  .mp-menu-btn span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+  .cm-top{height:58px}
+}
+/* 全ページ監査 2026-11-17：共通の .phead（左右余白0）が商店の濃紺カードにも効き、見出しと本文がカードの左端に密着していた */
+.phead.career-shop-hero{padding:clamp(1.5rem,3.5vw,2.4rem)}
+@media(max-width:760px){.phead.career-shop-hero{padding:22px 18px 24px}}
+/* PC では 78px の列に本文が流し込まれ、1文字ずつ縦に並んでいた。見出し・本文・確認チップを縦に積む */
+.phead.career-shop-hero{display:block}
+.phead.career-shop-hero .phead-eyebrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.phead.career-shop-hero h1{margin:.35em 0 .4em}
+.phead.career-shop-hero .phead-lead{max-width:46em}
+/* ページ内リンクの着地点（ヘッダーに隠れないよう余白をとる） */
+.income-method-anchor{margin:18px 0 6px;padding-top:14px;border-top:1px dashed #c9c2b0;font-size:16px;font-weight:800;scroll-margin-top:96px}
+#popularity,#income,#extra{scroll-margin-top:84px}
+#popularity>.sh{margin:28px 0 8px}
+/* 目次・チップから飛んだ見出しが固定ヘッダーの下に隠れないようにする（職業ページの「仕事内容」などが top:0 に着地していた） */
+main section[id],main .occ-sec[id]{scroll-margin-top:84px}
+/* 入力欄は16px（PCの職業名録の「大分類」「並び順」が13px台だった） */
+.catalog-controls select{font-size:16px}
+
+/* PC デザイン改善 2026-11-18（PC のみ）：ページ見出しの小さな丸チップで、文字が枠の上下に寄っていた → 少しゆとりを持たせる */
+@media(min-width:1025px){
+  .phead-meta span{padding:7px 16px;min-height:38px}
+  .info-page .prose p{max-width:45em}
+}
+/* PC デザイン改善 2026-11-18（PC のみ）：乗り換えカードの並び（.xrow）はトップの CSS にしか無く、
+   ほかのページでは 1100px 幅のカードが縦に4枚積まれて横に間延びしていた → 幅に応じて横に並べる（狭い欄では1列のまま） */
+@media(min-width:1025px){
+  .xrow{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
+}
+
+/* 独立監査 2026-11-18 M3：SP では body の下余白（下部固定ナビ分 68px）が墨色のフッターの下に明るい帯として出ていた。
+   フッターの帯自体が下部ナビ分の余白（110px）を持つので、フッターのあるページでは body の下余白を0にし、帯の色を画面の下端まで続ける */
+@media(max-width:760px){
+  body:has(> footer.foot){padding-bottom:0}
+}
+@media(max-width:640px){
+  .foot.route{padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+}
+
+/* ============================================================
+   独立監査 2026-11-18 PC の指摘
+   ============================================================ */
+/* M9 フッター：案内リンクを 44px に、メルマガ注記のリンクも 44px の当たり判定に。
+   ブロックの間は 44px 前後、帯の下 56px に寄せつつ、main の後ろ 900px 以内に収める */
+.foot .newsletter-form-note a{display:inline-block;padding:13px 2px;margin:-13px -2px;line-height:1}
+@media(min-width:1025px){
+  .foot.route{margin-top:20px}
+  .foot{padding:40px 40px 52px}
+  .foot-news{padding-bottom:22px}
+  .foot-guide{padding:22px 0}
+  .foot-col-title{margin-bottom:0}
+  .foot-col a{min-height:44px}
+  .foot-net{padding-top:22px}
+  .foot .route-lead{margin-bottom:20px}
+  .foot-note{margin-top:36px}
+  .foot .route-legal{margin-top:4px;padding-top:0}
+}
+
+/* M5 乗り換えカード：小見出しがサイト名の途中で折れ、題の長さでカードの高さ・行頭が不揃いだった。
+   小見出しは1行（入らない分は…）、題は2行・説明は2行まで、中身は上そろえ */
+.xfer{align-items:start}
+.xfer > span:nth-child(2){min-width:0}
+.xfer .k{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.08em}
+.xfer .t,.xfer .d{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.xfer .stn,.xfer .go{margin-top:2px}
+
+/* L3 ページ冒頭の前提文の折りたたみ */
+.phead-fold{margin:10px 0 0;max-width:760px}
+.phead-fold>summary{display:inline-flex;align-items:center;gap:6px;min-height:44px;cursor:pointer;font-size:14px;font-weight:700;color:var(--ca-ink)}
+.phead-fold>p{margin:0 0 6px;font-size:14px;line-height:1.85;color:#4a5468}
+
+/* L2 内容の幅と左端：テンプレートごとに 1004〜1360px・左端 38〜138px とばらばらだった。
+   PC は本文の箱を幅 1200px（左右 40px）で中央にそろえ、ヘッダーも同じ左端に */
+@media(min-width:1025px){
+  main > .page-shell,
+  main > .detail-shell,
+  main .occ-wrap{max-width:1280px!important;width:100%;box-sizing:border-box;margin-left:auto!important;margin-right:auto!important;padding-left:40px!important;padding-right:40px!important}
+  .mp-header-inner{max-width:1280px;margin:0 auto;padding:0 40px}
+}
+.phead-fold>summary{list-style:none}
+.phead-fold>summary::-webkit-details-marker{display:none}
+.phead-fold>summary::before{content:"+";display:inline-grid;place-items:center;width:20px;height:20px;border:1.5px solid currentColor;border-radius:50%;font-size:14px;line-height:1}
+.phead-fold[open]>summary::before{content:"−"}
+
+/* AdSense 自動広告のアンカー広告（オーナー決定 2026-11-18 21:44：自動広告は消さずに表示する）。
+   アンカー広告は最前面（z-index 最大）に固定されるため、SP で上に出るとヘッダー・メニュー、下に出ると下部ナビ・乗り換えシートを覆って操作できなくなる。
+   AdSenseScript がアンカー広告の上端・下端の高さを --ad-anchor-top / --ad-anchor-bottom に入れるので、固定・追従する自サイトの部品をその分だけずらす（広告そのものは動かさない） */
+:root{--ad-anchor-top:0px;--ad-anchor-bottom:0px}
+.mp-header{top:var(--ad-anchor-top)}
+.cm-drawer{top:var(--ad-anchor-top);bottom:var(--ad-anchor-bottom)}
+.xfer-sheet-backdrop{padding-top:var(--ad-anchor-top);padding-bottom:var(--ad-anchor-bottom)}
+@media(max-width:640px){
+  .spbar{bottom:calc(10px + env(safe-area-inset-bottom) + var(--ad-anchor-bottom))}
+}
+/* ページの末尾：AdSense は下端のアンカー広告を出すと body に下余白を inline で付けるが、広告の高さより小さいことがある
+   （PC：広告 275px に対し余白 154px）。そのためフッター最下段（作成方法〜お問い合わせ）が広告の下になって押せなかった。
+   足りない分（--ad-anchor-bottom-cover。AdSenseScript が「下端の広告の高さ − body の下余白」で求める。広告が無ければ 0）だけ
+   最下段の下に足し、暗いフッターの中で広告の上に出す（本家 PR #31・politics PR #23・company PR #21 と同じ求め方） */
+:root{--ad-anchor-bottom-cover:0px}
+.foot .route-legal{margin-bottom:var(--ad-anchor-bottom-cover)}
+/* フッターの下の明るい帯（2026-11-19）：AdSense が body に付ける下余白（PC 154px）は body の地の色のままで、
+   暗いフッターの下、広告の左右に明るい帯として見えていた。余白と同じ太さの暗い下線をフッターに付け、同じ分だけ負の下余白で
+   引き戻す（ページの長さと最下段の位置は変わらない。politics PR #23 と同じく、フッターの暗い地を AdSense の余白の上まで伸ばす）。
+   値は AdSenseScript が入れる --ad-anchor-bottom-pad（下端のアンカー広告があるときの body の下余白。無ければ 0） */
+:root{--ad-anchor-bottom-pad:0px}
+.foot.route{border-bottom:var(--ad-anchor-bottom-pad) solid var(--night);margin-bottom:calc(-1 * var(--ad-anchor-bottom-pad))}
+/* SP の乗り換えシート：高さ 82dvh のまま下端に置くと、上端のアンカー広告（390px 幅で 427px）があるときに
+   見出しと「閉じる」が広告の下に入っていた（仮の広告で確認、2026-11-19）。上下の広告の分を除いた高さに収め、中身はシートの中でスクロール */
+.xfer-sheet{max-height:min(82dvh,calc(100dvh - var(--ad-anchor-top) - var(--ad-anchor-bottom) - 16px))}
+
+/* ============================================================
+   独立監査2 2026-11-19（career）M5：44px 未満の押せる部品（見た目は変えず、当たり判定を広げる）
+   ============================================================ */
+/* フッターのメルマガ注記「プライバシーポリシー」：行の高さ1（13px）＋上下 13px で 39px だった（#252 の 44px は未達）→ 上下 16px で 45px。
+   前後の文字の上に当たり判定が来るよう重なり順を上げる */
+.foot .newsletter-form-note a{position:relative;z-index:1;padding:16px 2px;margin:-16px -2px}
+.foot .newsletter-form-note a::after{content:none}
+/* PC ヘッダーのボタン（42px） */
+.hd-btn{height:44px}
+/* PC の駅レール（高さ 40px の帯）：帯の高さは変えず、各駅の当たり判定を下へ 6px 広げて 46px に（帯はヘッダーより手前の重なり順） */
+@media(min-width:641px){
+  .rail-s::after{content:"";position:absolute;left:0;right:0;top:0;bottom:-6px}
+}
+
+/* L10 PC：駅レールが画面の左端（24px）から始まり、中央にそろえた本文・ヘッダー（1920px で 360px）とずれていた → ヘッダーと同じ左端に */
+@media(min-width:1025px){
+  .rail{padding-left:max(24px,calc(50% - 600px));padding-right:max(24px,calc(50% - 600px))}
+}
+/* L6 SP フッター：注記の「（」が行末に残り「プライバシーポリシー）」が次の行へ → 括弧ごと1かたまり（NewsletterForm の .nw）。
+   最下段のリンクは flex の折り返しで「お問い合わせ」だけが2行目に落ちていた → SP は3列にそろえ、© は次の行に */
+.newsletter-form-note .nw{white-space:nowrap}
+@media(max-width:640px){
+  .foot .route-legal{display:grid;grid-template-columns:repeat(3,max-content);justify-content:start;column-gap:22px;row-gap:0}
+  .foot .route-legal span{grid-column:1/-1}
+}
+/* M5 パンくず：見た目 24px＋上下 10px の広げで当たり判定が 43〜44px ちょうどだった → 上下 11px（46px）、幅の短い「トップ」も左右 5px 広げる */
+.crumb a::after{inset:-11px -5px}

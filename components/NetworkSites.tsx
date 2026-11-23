@@ -1,11 +1,12 @@
 import { ArrowUpRight } from "lucide-react";
 import config from "../content/network-site.json";
 import { networkUrl } from "../lib/network-shared";
+import { PhraseText } from "@/components/PhraseTitle";
 
 /** Cross-site section: 学ぶ・選ぶ・証明する・仕事につなぐ・企業を読む. Uses only the five sites' own names, roles and descriptions from network-site.json. */
 export function NetworkSites({ heading = "manapickの6サイトで、学びから仕事まで" }: { heading?: string }) {
   return <section className="mp-relations network-sites" aria-label="manapick 6サイト連携">
-    <h2>{heading}</h2>
+    <h2 className="phrase-breaks"><PhraseText text={heading} /></h2>
     <p>仕事を知るだけで終わらせず、動画で学び、AIツールを選び、資格で証明し、企業を読み、仕事につなぐ。各サイトは役割ごとに分かれています。</p>
     <ul>{config.sites.map(site => <li key={site.id}>
       <a href={site.id === config.id ? "/" : networkUrl(site.url, config.id, "network-sites")} aria-current={site.id === config.id ? "page" : undefined}>
