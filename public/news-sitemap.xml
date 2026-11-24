@@ -24,6 +24,28 @@
     </news:news>
   </url>
   <url>
+    <loc>https://career.manapick.app/news/care-worker-pay-survey-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24</news:publication_date>
+      <news:title>介護職員の平均給与は月34万8,690円、1年で1万6,690円アップ——前年の増加額の2倍超、基本給にも届いたか</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/monthly-economic-report-november-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24</news:publication_date>
+      <news:title>景気判断に「総じてみれば」が付いた11月。GDPは4四半期ぶりマイナス、消費は足踏み——でも雇用は改善が続く月例経済報告</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/high-school-job-offer-september-2026/</loc>
     <news:news>
       <news:publication>
@@ -43,6 +65,17 @@
       </news:publication>
       <news:publication_date>2026-11-24</news:publication_date>
       <news:title>大卒内定率73.0%、わずかに低下。理系76.9%と文系72.2%、「文理の差」が広がった2027年卒の現在地</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/private-salary-survey-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-24</news:publication_date>
+      <news:title>民間の事務課長は月66万9,778円、部長は79万9,856円——人事院調査で判明した役職別の給与と初任給の実額</news:title>
     </news:news>
   </url>
 </urlset>

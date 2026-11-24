@@ -1,13 +1,13 @@
 {
- "batchId": "news-2026-11-24-expansion-98",
+ "batchId": "news-2026-11-24-expansion-101",
  "preparedAt": "2026-11-24",
- "targetCount": 98,
+ "targetCount": 101,
  "status": "published",
  "publishedAt": "2026-11-24",
  "approvedAt": "2026-11-24",
  "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
- "authorizationNote": "2026-11-24のオーナー指示に基づき、最新の公的統計4件をニュースへ追加する。厚生労働省・文部科学省「大学等卒業予定者の就職内定状況（2026年10月1日現在）」（2026年11月20日公表）、厚生労働省「高校・中学新卒者のハローワーク求人に係る求人・求職・就職内定状況（2026年9月末現在）」（2026年11月20日公表）、総務省統計局「サービス産業動態統計調査 2026年9月分速報」（2026年11月24日公表）、消費者庁「令和8年度消費生活意識調査（第3回）」（2026年11月12日公表）。",
- "reviewDecision": "オーナー指示と既存の運用方針に基づき新規4件を公開し、公開済みは全98件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+ "authorizationNote": "2026-11-24のオーナー指示に基づき、最新の公的統計3件をニュースへ追加する。人事院「民間給与の実態——令和8年職種別民間給与実態調査の結果」（2026年11月12日公表）、厚生労働省「令和8年度介護従事者処遇状況等調査の結果について（案）」（2026年11月16日公表）、内閣府「月例経済報告 令和8年11月分」（2026年11月24日公表）。",
+ "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全101件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
  "reviewedScope": [
   "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
   "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -130,18 +130,21 @@
   "university-job-offer-rate-october-2026",
   "high-school-job-offer-september-2026",
   "service-industry-sales-september-2026",
-  "ethical-consumption-awareness-survey-2026"
+  "ethical-consumption-awareness-survey-2026",
+  "private-salary-survey-2026",
+  "care-worker-pay-survey-2026",
+  "monthly-economic-report-november-2026"
  ],
  "previousBatch": {
-  "batchId": "news-2026-11-22-expansion-94",
-  "preparedAt": "2026-11-22",
-  "targetCount": 94,
+  "batchId": "news-2026-11-24-expansion-98",
+  "preparedAt": "2026-11-24",
+  "targetCount": 98,
   "status": "published",
-  "publishedAt": "2026-11-22",
-  "approvedAt": "2026-11-22",
+  "publishedAt": "2026-11-24",
+  "approvedAt": "2026-11-24",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-  "authorizationNote": "2026-11-22のオーナー指示に基づき、最新の公的統計5件をニュースへ追加する。内閣府「消費動向調査2026年10月実施分」（2026年10月29日公表）・「景気動向指数2026年9月分速報」（2026年11月9日公表）、観光庁「宿泊旅行統計調査2026年9月分第1次速報」（2026年10月30日公表）、日本銀行「生活意識に関するアンケート調査2026年9月調査」（2026年10月13日公表）、経済産業省「商業動態統計速報2026年9月分」（2026年10月30日公表）。",
-  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規5件を公開し、公開済みは全94件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+  "authorizationNote": "2026-11-24のオーナー指示に基づき、最新の公的統計4件をニュースへ追加する。厚生労働省・文部科学省「大学等卒業予定者の就職内定状況（2026年10月1日現在）」（2026年11月20日公表）、厚生労働省「高校・中学新卒者のハローワーク求人に係る求人・求職・就職内定状況（2026年9月末現在）」（2026年11月20日公表）、総務省統計局「サービス産業動態統計調査 2026年9月分速報」（2026年11月24日公表）、消費者庁「令和8年度消費生活意識調査（第3回）」（2026年11月12日公表）。",
+  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規4件を公開し、公開済みは全98件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
   "reviewedScope": [
    "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
    "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -260,7 +263,11 @@
    "business-conditions-september-2026",
    "lodging-travel-september-2026",
    "boj-household-survey-september-2026",
-   "commerce-sales-september-2026"
+   "commerce-sales-september-2026",
+   "university-job-offer-rate-october-2026",
+   "high-school-job-offer-september-2026",
+   "service-industry-sales-september-2026",
+   "ethical-consumption-awareness-survey-2026"
   ]
  }
 }

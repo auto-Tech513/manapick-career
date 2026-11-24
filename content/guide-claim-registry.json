@@ -5321,5 +5321,81 @@
     "critical": true
    }
   ]
+ },
+ {
+  "guideSlug": "education-training-leave-benefit-guide",
+  "claims": [
+   {
+    "claimId": "education-training-leave-days",
+    "text": "教育訓練休暇給付金の給付日数は、雇用保険の加入期間が5年以上10年未満で90日、10年以上20年未満で120日、20年以上で150日であり、受給期間は休暇開始日から起算して1年間である。",
+    "sourceIds": [
+     "mhlw-education-training-leave-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "education-training-leave-requirements",
+    "text": "教育訓練休暇給付金の受給には、就業規則等に基づく連続30日以上の無給の教育訓練休暇であることに加え、休暇開始前2年間に12か月以上の被保険者期間があることと、休暇開始前に5年以上雇用保険に加入していた期間があることの両方が必要である。",
+    "sourceIds": [
+     "mhlw-education-training-leave-2025"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "childcare-short-time-benefit-guide",
+  "claims": [
+   {
+    "claimId": "childcare-shorttime-rate-10",
+    "text": "育児時短就業給付金の支給額は原則として支給対象月に支払われた賃金額の10％であり、その月の賃金が育児時短就業開始時賃金月額の90％を超えて100％未満の場合は、賃金と支給額の合計が開始時賃金月額を超えないよう支給率が調整される。",
+    "sourceIds": [
+     "mhlw-childcare-shorttime-2026-08"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   },
+   {
+    "claimId": "childcare-shorttime-limits-2026",
+    "text": "育児時短就業給付金の支給限度額は484,121円、最低限度額は2,562円、育児時短就業開始時賃金月額の上限額は496,200円・下限額は96,090円であり、いずれも2027年7月31日までの額で毎年8月1日に改定される。",
+    "sourceIds": [
+     "mhlw-childcare-shorttime-2026-08"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 180,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "income-106-wall-guide",
+  "claims": [
+   {
+    "claimId": "income-106-wage-requirement-removed",
+    "text": "短時間労働者の社会保険加入の賃金要件（所定内賃金が月額8.8万円以上、いわゆる106万円の壁）は、2025年の年金制度改正法により2026年10月に撤廃され、撤廃後は51人以上の企業等・週の所定労働時間20時間以上・学生でないことが加入条件として残る。",
+    "sourceIds": [
+     "mhlw-nenkin-wall-2026",
+     "nenkin-expansion-2026"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "income-106-company-size-schedule",
+    "text": "短時間労働者の社会保険適用の企業規模要件は、2027年10月に36人以上、2029年10月に21人以上、2032年10月に11人以上へ段階的に縮小され、2035年10月に企業規模要件自体が撤廃される。",
+    "sourceIds": [
+     "nenkin-expansion-2026"
+    ],
+    "lastCheckedAt": "2026-11-24",
+    "freshnessDays": 365,
+    "critical": true
+   }
+  ]
  }
 ]
