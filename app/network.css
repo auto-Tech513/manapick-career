@@ -812,3 +812,36 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
 }
 /* M5 パンくず：見た目 24px＋上下 10px の広げで当たり判定が 43〜44px ちょうどだった → 上下 11px（46px）、幅の短い「トップ」も左右 5px 広げる */
 .crumb a::after{inset:-11px -5px}
+
+/* 評価チーム 2026-11-23：SP の駅レール（高さ 34px）の当たり判定が最小 30×34px で 44px 未満だった。
+   共通仕様（00_共通プロンプト「SP：…他の駅は丸だけ。タップでその駅へ移動」）どおり SP でも押せるようにし、
+   見た目（帯の高さ・丸の位置・駅名）は変えずに、各駅の当たり判定だけを透明な ::after で広げる。
+   ・縦：帯の 34px＋下へ 10px＝44px（帯はヘッダーより手前の重なり順。PC の 46px と同じ考え方）
+   ・横：駅は space-between で並ぶので、隣どうしの間隔（360px で約 40px）を左右で分け合うと 44px に届かない。
+     後ろの駅の ::after が前の駅の広げた部分の上に来る（並び順で手前）ことを使い、帯の左右の余白 12px まで含めて
+     左の3駅・右の2駅で区切りをずらす：各駅の当たり判定＝隣の駅との間隔＋4px（360px で約 44.3px、幅が広いほど大きい）。
+     現在地の駅（駅名つきの幅の広い駅）は自分の箱の幅のまま。隣の駅の当たり判定は現在地の駅の箱にかからない */
+@media(max-width:640px){
+  /* 帯の overflow:hidden は下へ広げた当たり判定まで切ってしまうので、横だけ切る（縦は見せる）。
+     横に広げた当たり判定（右へ 80px）は帯の左右の端で切れ、横スクロールにならない */
+  .rail{overflow-x:clip;overflow-y:visible}
+  .rail-line{pointer-events:auto}
+  .rail-s::after{content:"";position:absolute;top:0;bottom:-10px;left:-4px;right:-80px}
+  .rail-s:nth-child(1)::after{left:-12px}
+  .rail-s:nth-child(2)::after{left:-7px}
+  .rail-s.on::after{left:0;right:0}
+  /* 右の2駅：現在地の駅の箱（右に 2px の間）にかからないよう左へ 8px。右の駅（後ろ）が手前なので、
+     company の右への広げは politics の当たり判定の始まりまで届けば足り、帯の右端を越えない量（間隔の伸びに合わせて 20vw−63px）にする */
+  .rail-s.on~.rail-s::after{left:-8px;right:calc(-1 * max(0px, 20vw - 63px))}
+  .rail-s.on~.rail-s:last-child::after{left:-4px;right:-14px}
+  /* 帯の当たり判定が下へ 10px 出るぶん、ヘッダーのボタン（上端が帯の下端から 7px）の上 3px が帯の下に入る。
+     ヘッダーのロゴ・入口案内・メニューの当たり判定を下へ広げて、44px 以上を保つ（見た目は変えない。ヘッダーの下端は越えない。
+     ::after は枠線の内側から測るので、枠 2px のボタンは 8px、枠なしのロゴは 6px） */
+  .mp-header-inner>a,.mp-header-actions .hd-btn.y,.mp-menu-btn{position:relative}
+  .mp-header-inner>a::after,.mp-header-actions .hd-btn.y::after,.mp-menu-btn::after{content:"";position:absolute;left:0;right:0;top:0;bottom:-8px}
+  .mp-header-inner>a::after{bottom:-6px}
+}
+/* overflow:clip を知らないブラウザ（iOS 15 以前）は従来どおり帯で切る（当たり判定は帯の 34px のまま、横スクロールは出さない） */
+@supports not (overflow:clip){
+  @media(max-width:640px){.rail{overflow:hidden}}
+}
