@@ -1307,6 +1307,45 @@
       "reviewedByHumanAt": "2026-11-24",
       "reviewEvidence": "git:1f693de0a4282dd66703bd6d97c9128b8ca2af32",
       "contentSha256": "16c4a3714d8fb6fb695d241ba78a52a14a6ef61f2b5fb6f6e8a1a6921f7e01f3"
+    },
+    {
+      "slug": "private-salary-survey-2026",
+      "createdAt": "2026-11-24",
+      "status": "published",
+      "primarySourceId": "jinji-private-salary-2026",
+      "sourcePublishedAt": "2026-11-12",
+      "publishedAt": "2026-11-24",
+      "reviewedAt": "2026-11-24",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-24",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "f46a8b77145d1a3e3e68560fae96e44e4f9ad5cc7b72ff8b974d98649beab4f4"
+    },
+    {
+      "slug": "care-worker-pay-survey-2026",
+      "createdAt": "2026-11-24",
+      "status": "published",
+      "primarySourceId": "mhlw-care-worker-pay-2026-11",
+      "sourcePublishedAt": "2026-11-16",
+      "publishedAt": "2026-11-24",
+      "reviewedAt": "2026-11-24",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-24",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "bf3e99a25af798bc3e822711573e603046ed972af28f319c56fdef42940f28c9"
+    },
+    {
+      "slug": "monthly-economic-report-november-2026",
+      "createdAt": "2026-11-24",
+      "status": "published",
+      "primarySourceId": "cao-monthly-economic-2026-11",
+      "sourcePublishedAt": "2026-11-24",
+      "publishedAt": "2026-11-24",
+      "reviewedAt": "2026-11-24",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-24",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "c8ab3de638af3d781386521166de00060ff781608e67454a958fa3044bde14a3"
     }
   ]
 }
