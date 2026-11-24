@@ -31,6 +31,7 @@ import { networkUrl } from "@/lib/network";
 import { absoluteUrl, metaDescription, occupationOgUrl } from "@/lib/site";
 import { PhraseText } from "@/components/PhraseTitle";
 import { phraseSegments } from "@/lib/phrase";
+import { externalRel } from "@/lib/network-links";
 
 export const dynamicParams = false;
 
@@ -445,13 +446,13 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               </div>
               <p className="occ-action">
                 実際の求人・募集の状況は、厚生労働省の職業情報サイトで確認できます：
-                <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer">
+                <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel={externalRel(occupationJobTagUrl(occupation.recordNumber))}>
                   job tagで{occupation.name}の職業詳細を見る <ArrowUpRight aria-hidden="true" />
                 </a>
               </p>
               <p className="occ-action">
                 現在募集中の求人は、ハローワークの求人検索でも確認できます。リンク先は検索の入口です（ハローワークの検索は条件をURLで共有できないため、開いた先でフリーワードに「{occupation.name}」と入力して検索してください）：
-                <a href={helloworkSearchUrl} target="_blank" rel="noopener noreferrer">
+                <a href={helloworkSearchUrl} target="_blank" rel={externalRel(helloworkSearchUrl)}>
                   ハローワーク求人検索を開く <ArrowUpRight aria-hidden="true" />
                 </a>
               </p>
@@ -481,7 +482,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                     return (
                       <li key={name}>
                         {slug ? (
-                          <a href={`https://license.manapick.app/license/${slug}/`} target="_blank" rel="noopener noreferrer">
+                          <a href={`https://license.manapick.app/license/${slug}/`} target="_blank" rel={externalRel(`https://license.manapick.app/license/${slug}/`)}>
                             <span className="phrase-breaks"><PhraseText text={name} /></span> <ArrowUpRight aria-hidden="true" />
                           </a>
                         ) : (
@@ -519,7 +520,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                             </div>
                             <p>{employer.description}</p>
                             {company ? (
-                              <a className="co" href={company.url} target="_blank" rel="noopener noreferrer">
+                              <a className="co" href={company.url} target="_blank" rel={externalRel(company.url)}>
                                 manapick company で読む<span aria-hidden="true">↗</span>
                               </a>
                             ) : (
@@ -535,7 +536,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                       <span key={`${employer.name}-${employer.role}`}>
                         {index > 0 ? "、" : ""}
                         {employer.name}「
-                        <a href={employer.source.url} target="_blank" rel="noopener noreferrer">{employer.source.title}</a>
+                        <a href={employer.source.url} target="_blank" rel={externalRel(employer.source.url)}>{employer.source.title}</a>
                         」（確認日 {employer.source.checkedAt}）
                       </span>
                     ))}
@@ -565,7 +566,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                 <ul className="occ-colist">
                   {industryEntry.companies.map((company) => (
                     <li key={company.code}>
-                      <a href={`https://company.manapick.app/company/${company.slug}/`} target="_blank" rel="noopener noreferrer">
+                      <a href={`https://company.manapick.app/company/${company.slug}/`} target="_blank" rel={externalRel(`https://company.manapick.app/company/${company.slug}/`)}>
                         {/* 長い社名は「・」の後でだけ折る（語中で割れて「ー」が行頭に来ないように） */}
                         {company.name.split("・").map((part, i) => <Fragment key={i}>{i ? <>・<wbr /></> : null}{part}</Fragment>)}<span className="nb-paren">（証券コード {company.code}） <ArrowUpRight aria-hidden="true" /></span>
                       </a>
@@ -574,7 +575,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                 </ul>
                 {industryEntry.industries.filter((industry) => industry.directoryUrl).map((industry) => (
                   <p key={industry.name}>
-                    <a href={industry.directoryUrl} target="_blank" rel="noopener noreferrer">
+                    <a href={industry.directoryUrl} target="_blank" rel={externalRel(industry.directoryUrl)}>
                       {industry.name}の上場企業（全{industry.total}社）を manapick company で見る <ArrowUpRight aria-hidden="true" />
                     </a>
                   </p>
@@ -616,13 +617,13 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                 <ul>
                   {sources.map((source) => (
                     <li key={source.sourceId}>
-                      <a href={source.url} target="_blank" rel="noopener noreferrer">
+                      <a href={source.url} target="_blank" rel={externalRel(source.url)}>
                         {source.provider}：{source.title}
                       </a>
                     </li>
                   ))}
                   <li>
-                    <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel="noopener noreferrer">
+                    <a href={occupationJobTagUrl(occupation.recordNumber)} target="_blank" rel={externalRel(occupationJobTagUrl(occupation.recordNumber))}>
                       厚生労働省 job tag：{occupation.name}の職業詳細
                     </a>
                   </li>
