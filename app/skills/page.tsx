@@ -5,6 +5,7 @@ import { ArrowRight, BadgeCheck, BarChart3, Blocks, FileText, MessageCircle, Pal
 import { publishedJobs } from "@/content/jobs";
 import { PhraseText } from "@/components/PhraseTitle";
 import { siteOpenGraph } from "@/lib/site";
+import "./skills.css";
 
 export const metadata: Metadata = { title: "仕事から見るスキル", description: "職業ページで確認したスキルを、技術、データ、対人、制作、業務運営、安全の6群に整理し、使う職業と場面から探せます。気になるスキルから、関連する職業ページへそのまま進めます。スキルから職業を探すことも、職業ページから必要なスキルを確認することもできます。気になるスキルを選ぶと、そのスキルを使う職業の一覧へ進めます。", alternates: { canonical: "/skills/", types: { "application/rss+xml": "/feed.xml" } }, openGraph: siteOpenGraph("/skills/") };
 
@@ -17,6 +18,25 @@ const groups = [
   { key: "safety", label: "安全・法令・倫理", description: "権利、制度、安全、個人情報を確認する", icon: ShieldCheck, words: ["セキュリティ", "著作権", "法務", "法令", "感染", "事故", "医薬品", "介護", "権利", "倫理"] },
 ] as const;
 
+function SkillCard({ skill, groupLabel }: { skill: string; groupLabel: string }) {
+  const jobs = publishedJobs.filter((job) => job.skills.includes(skill));
+  return (
+    <article className="ce-skill">
+      <div className="hd">
+        <span className="cat">{groupLabel}</span>
+        <span className="cnt"><b className="num">{jobs.length}</b>職業で使う</span>
+      </div>
+      <h3>{skill}</h3>
+      <div className="jobs">
+        <span className="k">使う仕事</span>
+        {jobs.slice(0, 5).map((job) => (
+          <Link key={job.slug} href={`/career/${job.slug}/`}>{job.name}</Link>
+        ))}
+      </div>
+    </article>
+  );
+}
+
 export default function SkillsPage() {
   const allSkills = [...new Set(publishedJobs.flatMap((job) => job.skills))].sort((a, b) => a.localeCompare(b, "ja"));
   const assigned = new Set<string>();
@@ -28,9 +48,8 @@ export default function SkillsPage() {
   const foundation = allSkills.filter((skill) => !assigned.has(skill));
   return <div className="page-shell skills-page"><nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">スキル</span></nav><header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-SKILL · スキル</p><h1 className="phrase-breaks"><PhraseText text="スキルを、使う場面で整理する" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>似た言葉を一列に並べず、仕事で果たす役割ごとにまとめました。点数や優劣ではなく、どの職業のどの作業で使うかを確認できます。</PhraseChildren></p></header>
     <nav className="skill-group-nav" aria-label="スキル分類">{sections.map((section) => <a key={section.key} href={`#${section.key}`}>{section.label}<small>{section.skills.length}</small></a>)}<a href="#foundation">基礎・その他<small>{foundation.length}</small></a></nav>
-    <div className="skill-group-grid">{sections.map((section) => { const Icon = section.icon; return <section id={section.key} className="skill-group" key={section.key}><header><span><Icon aria-hidden="true" /></span><div><h2 className="phrase-breaks"><PhraseText text={section.label} /></h2><p>{section.description}</p></div></header><div className="skill-tags">{section.skills.map((skill) => <span key={skill}>{skill}</span>)}</div><div className="skill-jobs"><strong>使う職業</strong>{publishedJobs.filter((job) => job.skills.some((skill) => section.skills.includes(skill))).slice(0, 5).map((job) => <Link href={`/career/${job.slug}/`} key={job.slug}>{job.name}</Link>)}</div></section>; })}
-      <section id="foundation" className="skill-group"><header><span><BadgeCheck aria-hidden="true" /></span><div><h2 className="phrase-breaks"><PhraseText text="基礎・その他" /></h2><p>複数の仕事を支える、分野固有または横断的な力</p></div></header><div className="skill-tags">{foundation.map((skill) => <span key={skill}>{skill}</span>)}</div></section>
-    </div>
+    {sections.map((section) => { const Icon = section.icon; return <section id={section.key} className="skill-group" key={section.key}><header><span><Icon aria-hidden="true" /></span><div><h2 className="phrase-breaks"><PhraseText text={section.label} /></h2><p>{section.description}</p></div></header><div className="ce-skgrid">{section.skills.map((skill) => <SkillCard key={skill} skill={skill} groupLabel={section.label} />)}</div></section>; })}
+    <section id="foundation" className="skill-group"><header><span><BadgeCheck aria-hidden="true" /></span><div><h2 className="phrase-breaks"><PhraseText text="基礎・その他" /></h2><p>複数の仕事を支える、分野固有または横断的な力</p></div></header><div className="ce-skgrid">{foundation.map((skill) => <SkillCard key={skill} skill={skill} groupLabel="基礎・その他" />)}</div></section>
     <section className="skill-learning"><div><span className="eyebrow">次の一歩</span><h2 className="phrase-breaks"><PhraseText text="覚える前に、1つの作業で試す" /></h2><p>ツール名だけを覚えず、仕事の課題を1つ選び、成果物・確認手順・注意点まで一周します。</p></div><Link className="button primary" href="/all/">556職業から使う場面を見る <ArrowRight aria-hidden="true" /></Link></section>
   </div>;
 }

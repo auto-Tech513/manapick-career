@@ -1,0 +1,415 @@
+/* 商店（CE-04・career design-extra）
+   価格データは持たないため、価格欄は「—」＋Amazonでの確認案内（デザインの未確認時の形）。
+   商品と関係する職業のデータが無いため、カード末尾の「この仕事に関係」行は未実装。
+   詳細本文（向いている人・選ぶ理由・購入前確認）はカード内の開閉部に収め、既定では閉じる
+   （モックのカード高さに合わせるため。再確認 2026-11-16 の指摘による）。
+   SP はモックどおり説明を省き、画像・分類・名前・価格・購入ボタンのみ表示する。 */
+.ce-shopmark {
+  display: inline-grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 9px;
+  background: var(--ca);
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  vertical-align: -8px;
+  margin-right: 8px;
+}
+.ce-shopmark svg {
+  width: 16px;
+  height: 16px;
+}
+.ce-prbar {
+  position: sticky;
+  top: 70px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* モックどおり画面幅いっぱい・角丸なし・中身の左端は本文と同じ（再検証 2026-11-23 の指摘）。
+     負のマージンでシェルの余白を打ち消す方法は、シェルの最大幅（1920px で左右に余白）と
+     SP の余白の差（帯が画面端を 1.6px ずつ越える）に弱かったので、箱は本文の幅のまま、
+     地の白と上下の線だけを border-image の外側への張り出しで画面の端まで描く（張り出しはレイアウトの幅・横スクロールに数えられない） */
+  margin-inline: 0;
+  padding: 10px 0;
+  background: #fff;
+  border-block: 1px solid var(--ink);
+  border-radius: 0;
+  border-image: linear-gradient(to bottom, var(--ink) 0 1px, #fff 1px calc(100% - 1px), var(--ink) calc(100% - 1px)) 0 fill / 0 / 0 100vmax;
+  font-size: 13.5px;
+}
+.ce-prbar b {
+  font-family: var(--num);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  background: var(--ink);
+  color: #fff;
+  padding: 2px 9px;
+  border-radius: 3px;
+  font-size: 13px;
+  flex: none;
+}
+.ce-prbar p {
+  margin: 0;
+  font-weight: 700;
+}
+.ce-prbar a {
+  margin-left: auto;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--ca-ink);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+.ce-shopbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 22px 0 16px;
+}
+.ce-shopbar .cnt {
+  font-size: 14px;
+}
+.ce-shopbar .cnt b {
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 4px;
+  font-family: var(--num);
+}
+.filt2 {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filt2 a {
+  display: inline-flex;
+  align-items: center;
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 2px solid var(--ink);
+  background: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  text-decoration: none;
+}
+.ce-pgrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.ce-prod {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 2px solid var(--ink);
+  border-radius: 22px;
+  overflow: hidden;
+  scroll-margin-top: 140px;
+  min-width: 0;
+}
+.ce-prod .im {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  border-bottom: 2px solid var(--ink);
+  display: block;
+}
+.ce-prod .im img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+}
+.ce-prod .pr {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-family: var(--num);
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  background: var(--ink);
+  color: #fff;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+.ce-prod .credit {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  background: #fff;
+  padding: 0 4px;
+}
+.ce-prod .bd {
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ce-prod .cat {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ca-ink);
+}
+.ce-prod h3 {
+  font-family: var(--mincho);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.45;
+  margin: 2px 0 6px;
+}
+.ce-prod .hook {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.7;
+  margin: 0 0 8px;
+}
+.ce-prod .points {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: grid;
+  gap: 4px;
+}
+.ce-prod .points li {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.ce-prod .points svg {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin-top: 4px;
+  color: var(--ca-ink);
+}
+.ce-prod .fit {
+  padding: 10px 12px;
+  border-left: 3px solid var(--ca);
+  background: var(--bg);
+  margin-bottom: 10px;
+}
+.ce-prod .fit strong {
+  font-size: 12.5px;
+  color: var(--ca-ink);
+}
+.ce-prod .fit p {
+  margin: 2px 0 0;
+  font-size: 13.5px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+.ce-prod .reason {
+  font-size: 13.5px;
+  line-height: 1.8;
+  color: #2b3245;
+  margin: 0 0 10px;
+}
+.ce-prod .checks {
+  margin-bottom: 12px;
+}
+.ce-prod .checks > strong {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.ce-prod .checks ul {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 3px;
+}
+.ce-prod .checks li {
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #2b3245;
+}
+.ce-prod .checks svg {
+  width: 14px;
+  height: 14px;
+  flex: none;
+  margin-top: 3px;
+  color: var(--ca-ink);
+}
+.ce-prod .ce-more {
+  margin-bottom: 4px;
+}
+.ce-prod .ce-more > summary {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--ca-ink);
+  cursor: pointer;
+  list-style: none;
+}
+.ce-prod .ce-more > summary::-webkit-details-marker {
+  display: none;
+}
+.ce-prod .ce-more > summary::after {
+  content: "＋";
+  margin-left: auto;
+  font-size: 14px;
+}
+.ce-prod .ce-more[open] > summary::after {
+  content: "－";
+}
+.ce-prod .pz {
+  margin: auto 0 12px;
+  padding-top: 8px;
+  border-top: 1.5px solid var(--ink);
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+.ce-prod .pz b {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: var(--num);
+}
+.ce-prod .pz small {
+  font-size: 12px;
+  color: #4a5468;
+}
+.ce-prod .buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 48px;
+  border-radius: 999px;
+  background: var(--ca);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font-weight: 900;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 0 12px;
+  text-align: center;
+}
+.ce-prod .buy svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+.ce-prod .buy .buy-short {
+  display: none;
+}
+.ce-prod .official {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 44px;
+  margin-top: 6px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.ce-prod .official svg {
+  width: 14px;
+  height: 14px;
+}
+/* PC：閉じた状態のカードをモック（1440px で 648px）の高さに収めるため、要点とメーカー公式仕様のリンクは開閉部の中へ（再検証 2026-11-23）。
+   SP は開閉部ごと省くので、開閉部の外にある SP 用のリンクを出す */
+.ce-prod .official-sp {
+  display: none;
+}
+.ce-prod .ce-more .points {
+  margin-top: 2px;
+}
+@media (max-width: 1024px) {
+  .ce-pgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  /* SP の PR帯：PR札・開示文・リンクを1つの段落として流す。右端にリンクの列を取ると本文が細くなり、
+     幅で高さが 64〜136px と大きく変わっていた（再検証 2026-11-23）。2〜3行に収める */
+  .ce-prbar {
+    top: 58px;
+    display: block;
+    min-height: 46px;
+    padding-block: 4px;
+    font-size: 12px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+  .ce-prbar b {
+    display: inline-block;
+    margin-right: 6px;
+    line-height: 18px;
+  }
+  .ce-prbar p {
+    display: inline;
+  }
+  /* リンクは文の続きに置き、当たり判定だけを上下に広げて帯の高さいっぱい（44px 以上）にする（帯の外へは出さない） */
+  .ce-prbar a {
+    display: inline;
+    min-height: 0;
+    margin-left: 6px;
+    padding-block: 40px;
+    white-space: nowrap;
+  }
+  /* SP はモックどおり説明を省く（メーカー公式仕様のリンクは開閉部の外の SP 用を出す） */
+  .ce-prod .hook,
+  .ce-prod .ce-more {
+    display: none;
+  }
+  .ce-prod .official-sp {
+    display: inline-flex;
+  }
+  .ce-prod .buy {
+    white-space: nowrap;
+  }
+  .ce-prod .buy .buy-long {
+    display: none;
+  }
+  .ce-prod .buy .buy-short {
+    display: inline;
+  }
+  .ce-pgrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .ce-prod {
+    border-radius: 16px;
+  }
+  .ce-prod .bd {
+    padding: 10px 12px 12px;
+  }
+  .ce-prod h3 {
+    font-size: 16px;
+  }
+  .ce-prod .pz b {
+    font-size: 22px;
+  }
+  .ce-prod .buy {
+    font-size: 14px;
+  }
+  .filt2 {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+    padding-bottom: 4px;
+  }
+  .filt2 a {
+    flex: none;
+  }
+}
