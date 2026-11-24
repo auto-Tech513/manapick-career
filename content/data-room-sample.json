@@ -1,0 +1,141 @@
+{
+  "slug": "sample-layout",
+  "status": "sample",
+  "category": "雇用・求人",
+  "title": "職業別の有効求人倍率（2026年9月）",
+  "lead": "仕事の探しやすさを、求人と求職の数の比で見ます。数値は表示例です。",
+  "publishedAt": "2026-11-24",
+  "checkedAt": "2026-11-24",
+  "readMinutes": 3,
+  "author": "manapick career編集部",
+  "editor": "manapick career編集部",
+  "kpi": {
+    "items": [
+      {
+        "label": "全体",
+        "value": "1.20",
+        "unit": "倍",
+        "note": "前月から ±0.00"
+      },
+      {
+        "label": "最も高い（表示例）",
+        "value": "5.20",
+        "unit": "倍",
+        "note": "建設の職業"
+      },
+      {
+        "label": "最も低い（表示例）",
+        "value": "0.38",
+        "unit": "倍",
+        "note": "事務の職業"
+      }
+    ],
+    "source": "出典：厚生労働省「一般職業紹介状況」（2026年9月分・取得日 2026-11-15）"
+  },
+  "sections": [
+    {
+      "id": "by-occupation",
+      "heading": "職業ごとの求人倍率",
+      "blocks": [
+        {
+          "type": "figure",
+          "tag": "FIG. 1",
+          "title": "職業別の有効求人倍率",
+          "note": "パートを含む・季節調整なし",
+          "scaleMax": 6,
+          "baseline": {
+            "value": 1,
+            "label": "1.0倍＝求人と求職が同じ"
+          },
+          "bars": [
+            {
+              "label": "事務職",
+              "value": 0.38,
+              "display": "0.38"
+            },
+            {
+              "label": "販売",
+              "value": 2.15,
+              "display": "2.15"
+            },
+            {
+              "label": "建設",
+              "value": 5.2,
+              "display": "5.20"
+            },
+            {
+              "label": "介護",
+              "value": 3.95,
+              "display": "3.95"
+            },
+            {
+              "label": "IT",
+              "value": 1.6,
+              "display": "1.60"
+            }
+          ],
+          "fine": "棒の長さは同じ尺度。色は1色（濃紺）で、良い悪いの色分けはしません。"
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "heading": "数字の表",
+      "blocks": [
+        {
+          "type": "table",
+          "head": [
+            "職業",
+            "有効求人倍率",
+            "前年同月"
+          ],
+          "rows": [
+            {
+              "label": "事務職",
+              "cells": [
+                "0.38",
+                "—"
+              ]
+            },
+            {
+              "label": "販売",
+              "cells": [
+                "2.15",
+                "—"
+              ]
+            },
+            {
+              "label": "建設",
+              "cells": [
+                "5.20",
+                "—"
+              ]
+            },
+            {
+              "label": "介護",
+              "cells": [
+                "3.95",
+                "—"
+              ]
+            },
+            {
+              "label": "IT",
+              "cells": [
+                "1.60",
+                "—"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "note",
+          "label": "注意",
+          "text": "ハローワークを通した求人だけの数字で、すべての求人ではありません。"
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "mhlw-job-openings-2026-09"
+  ]
+}

@@ -59,6 +59,20 @@ for (const record of newsPublication.records.filter((item) => item.status !== "p
   if (await exists(path.join(out, "news", record.slug, "index.html"))) failures.push(`static output exposes unapproved news ${record.slug}`);
 }
 
+// データ室の記事（/data/{slug}/）：下書きは出力しない・サイトマップに載せない。見本は出力されても noindex でサイトマップに載せない
+const dataRoom = JSON.parse(await read("content/data-room.json"));
+const dataSample = JSON.parse(await read("content/data-room-sample.json"));
+for (const record of dataRoom.items.filter((item) => item.status !== "published")) {
+  if (sitemap.includes(`/data/${record.slug}/`)) failures.push(`sitemap exposes draft data article ${record.slug}`);
+  if (await exists(path.join(out, "data", record.slug, "index.html"))) failures.push(`static output exposes draft data article ${record.slug}`);
+}
+if (sitemap.includes(`/data/${dataSample.slug}/`)) failures.push(`sitemap exposes data room sample ${dataSample.slug}`);
+const dataSampleOutput = path.join(out, "data", dataSample.slug, "index.html");
+if (await exists(dataSampleOutput)) {
+  const robots = (await fs.readFile(dataSampleOutput, "utf8")).match(/<meta name="robots" content="([^"]+)"/i)?.[1] ?? "";
+  if (!/noindex/i.test(robots)) failures.push(`data room sample ${dataSample.slug} is not noindex (${robots || "missing"})`);
+}
+
 const careerDir = path.join(out, "career");
 const careerEntries = (await fs.readdir(careerDir, { withFileTypes: true })).filter((entry) => entry.isDirectory());
 const professional = new Set(JSON.parse(await read('content/professional-careers.json')).items.map(item=>item.slug));
