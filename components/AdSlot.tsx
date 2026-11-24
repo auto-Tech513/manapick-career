@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { ShoppingBag } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { watchAdSlotStatus } from "../lib/adsense-slot-status";
 
 const DEFAULT_CLIENT = "ca-pub-4108900975353940";
 const DEFAULT_SLOT = "8041327454";
@@ -33,6 +34,8 @@ export function AdSlot({ label = "広告", placement = "editorial-after-section-
     if (!element) return;
     let disposed = false;
     let timeout: number | undefined;
+    // GA4 へ枠の状態（adsense_slot_status）を送る。表示・畳み方には触れない（2026-11-24、■5 T1-3）
+    const statusWatch = watchAdSlotStatus(element, placement, slot);
 
     const inspect = () => {
       if (disposed) return;
@@ -47,7 +50,10 @@ export function AdSlot({ label = "広告", placement = "editorial-after-section-
 
     try {
       const adsWindow = window as AdsWindow;
-      if (!element.getAttribute("data-adsbygoogle-status")) (adsWindow.adsbygoogle = adsWindow.adsbygoogle || []).push({});
+      if (!element.getAttribute("data-adsbygoogle-status")) {
+        (adsWindow.adsbygoogle = adsWindow.adsbygoogle || []).push({});
+        statusWatch.report("requested");
+      }
       // 配信待ち（data-ad-status が付く前）は畳まずに待つ。AdSense はページ下部の枠を、読者が近づいてから配信するため、
       // 時間で畳むと下部の枠が配信前に自社案内へ替わっていた（本家 PR #32 と同じ直し方、2026-11-19）。
       // 8秒たっても広告のスクリプト自体が読み込まれていない環境（広告ブロック・通信の遮断など）のときだけ未配信として扱う
@@ -56,6 +62,7 @@ export function AdSlot({ label = "広告", placement = "editorial-after-section-
         if (!(window as AdsWindow).adsbygoogle?.loaded) setState("unfilled");
       }, 8000);
     } catch {
+      statusWatch.report("request_error");
       timeout = window.setTimeout(() => {
         if (!disposed) setState("unfilled");
       }, 0);
@@ -64,6 +71,7 @@ export function AdSlot({ label = "広告", placement = "editorial-after-section-
     return () => {
       disposed = true;
       observer.disconnect();
+      statusWatch.dispose();
       if (timeout) window.clearTimeout(timeout);
     };
   }, [placement, slot]);

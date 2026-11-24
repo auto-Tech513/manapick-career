@@ -13,6 +13,7 @@ import sourceRegistry from "@/content/source-registry.json";
 import { dataArticleBySlug, renderableDataArticles, type DataBlock } from "@/lib/data-room";
 import { buildDataStaticParams, EMPTY_DATA_ROUTE_SLUG } from "@/lib/data-room-static-params.mjs";
 import { absoluteUrl, metaDescription } from "@/lib/site";
+import { externalRel } from "@/lib/network-links";
 
 export const dynamicParams = false;
 export function generateStaticParams() { return buildDataStaticParams(renderableDataArticles); }
@@ -65,7 +66,7 @@ export default async function DataArticlePage({ params }: { params: Promise<{ sl
       <article className="editorial-article">
         {article.kpi && <DataKpiBand items={article.kpi.items} source={article.kpi.source} />}
         {article.sections.map((section, index) => <section key={section.id} id={section.id} className="article-section"><span className="article-section-number">SECTION {String(index + 1).padStart(2, "0")}</span><h2 className="phrase-breaks"><PhraseText text={section.heading} /></h2>{section.blocks.map((block, blockIndex) => <Block key={blockIndex} block={block} />)}</section>)}
-        <section className="article-review"><h2 className="phrase-breaks"><PhraseText text="執筆・確認情報" /></h2><dl><div><dt>執筆</dt><dd>{article.author}</dd></div><div><dt>編集</dt><dd>{article.editor}</dd></div><div><dt>出典台帳の記録日</dt><dd>{article.checkedAt}</dd></div><div><dt>確認方法</dt><dd>公的資料と一次情報を出典付きで整理。自動監視による資料の変化検知と、本文の正確性の確認は区別します</dd></div></dl><h3 className="phrase-breaks"><PhraseText text="参照した公式情報" /></h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul><p className="correction-note">誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>へお知らせください。過去の資料に基づく記事は、その時点の記録として案内します。</p></section>
+        <section className="article-review"><h2 className="phrase-breaks"><PhraseText text="執筆・確認情報" /></h2><dl><div><dt>執筆</dt><dd>{article.author}</dd></div><div><dt>編集</dt><dd>{article.editor}</dd></div><div><dt>出典台帳の記録日</dt><dd>{article.checkedAt}</dd></div><div><dt>確認方法</dt><dd>公的資料と一次情報を出典付きで整理。自動監視による資料の変化検知と、本文の正確性の確認は区別します</dd></div></dl><h3 className="phrase-breaks"><PhraseText text="参照した公式情報" /></h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel={externalRel(source.url)}>{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul><p className="correction-note">誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>へお知らせください。過去の資料に基づく記事は、その時点の記録として案内します。</p></section>
         <p className="article-checked"><CalendarDays aria-hidden="true" />この記事の内容確認日：{article.checkedAt}</p>
       </article>
     </div>

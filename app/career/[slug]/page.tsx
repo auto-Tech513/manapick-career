@@ -27,6 +27,7 @@ import { relatedPublishedOccupationsForCareer } from "@/content/catalog";
 import "./dossier.css";
 import { PhraseText } from "@/components/PhraseTitle";
 import { newsTopic } from "@/lib/news-topics";
+import { externalRel } from "@/lib/network-links";
 
 export const dynamicParams = false;
 
@@ -166,7 +167,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
         <Link href={`/category/${job.category}/`}>{category?.label ?? job.category}</Link><span aria-hidden="true">／</span>
         <span aria-current="page">{job.name}</span>
       </nav>
-      {claimComparisons.filter(record=>record.careerSlug===job.slug).map(record=><aside className="claim-comparison-notice" key={record.id}><h2 className="phrase-breaks"><PhraseText text="制度説明の一部を一次資料と照合" /></h2><p>AIによる照合記録：{record.verifiedAt}。{record.scope} 人による確認や視聴確認の記録ではありません。</p><ul>{record.sources.map(source=><li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.supportingSummary}</a></li>)}</ul></aside>)}
+      {claimComparisons.filter(record=>record.careerSlug===job.slug).map(record=><aside className="claim-comparison-notice" key={record.id}><h2 className="phrase-breaks"><PhraseText text="制度説明の一部を一次資料と照合" /></h2><p>AIによる照合記録：{record.verifiedAt}。{record.scope} 人による確認や視聴確認の記録ではありません。</p><ul>{record.sources.map(source=><li key={source.url}><a href={source.url} target="_blank" rel={externalRel(source.url)}>{source.supportingSummary}</a></li>)}</ul></aside>)}
 
       <header className="dos-head" id="summary">
         <p className="dos-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-DOSSIER · {category?.label}</p>
@@ -231,7 +232,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
               <Resource title="関連資格を確認" tone="green" items={job.qualifications.map((item) => ({ ...item, href: networkUrl(item.networkId), description: "公式要件と試験範囲を確認" }))} empty="必須と断定できる関連資格は設定していません。成果物と仕事の確認手順を優先します。" />
             </div>
             <AiDeepLinks path={`/career/${job.slug}/`} />
-            {insight.qualificationUses.length ? <div className="qualification-uses"><h3 className="phrase-breaks"><PhraseText text="licenseをどう活かす？" /></h3>{insight.qualificationUses.map((item) => { const qualification = job.qualifications.find((candidate) => candidate.networkId === item.networkId); return qualification ? <div key={item.networkId}><Link href={networkUrl(item.networkId)} target="_blank" rel="noopener noreferrer">{qualification.label}<ArrowUpRight aria-hidden="true" /></Link><dl><div><dt>転職で</dt><dd>{item.jobChangeUse}</dd></div><div><dt>社内で</dt><dd>{item.internalUse}</dd></div></dl></div> : null; })}</div> : null}
+            {insight.qualificationUses.length ? <div className="qualification-uses"><h3 className="phrase-breaks"><PhraseText text="licenseをどう活かす？" /></h3>{insight.qualificationUses.map((item) => { const qualification = job.qualifications.find((candidate) => candidate.networkId === item.networkId); return qualification ? <div key={item.networkId}><Link href={networkUrl(item.networkId)} target="_blank" rel={externalRel(networkUrl(item.networkId))}>{qualification.label}<ArrowUpRight aria-hidden="true" /></Link><dl><div><dt>転職で</dt><dd>{item.jobChangeUse}</dd></div><div><dt>社内で</dt><dd>{item.internalUse}</dd></div></dl></div> : null; })}</div> : null}
           </section>
 
           <section id="news">
@@ -245,7 +246,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
           <section className="editorial-block" id="sources">
             <h2 className="phrase-breaks"><i>13</i><PhraseText text="出典と作成記録" /></h2><p>仕事内容の追加解説、作業から考える相性、資格の位置づけ、企業例は、公式資料をAIが照合・整理したものです。下記の既存本文の編集記録と、今回の追加解説の照合日は別の記録です。</p><p>追加解説の照合日：{dossier.researchedAt}。現場取材、就業体験、視聴確認の記録は追加していません。</p>
             <dl><div><dt>執筆</dt><dd>{job.author}</dd></div><div><dt>既存本文の編集記録</dt><dd>{job.editor}</dd></div><div><dt>既存本文の記録日</dt><dd>{job.checkedAt}</dd></div><div><dt>作成方法</dt><dd>{job.editorNote}</dd></div></dl>
-            <h3 className="phrase-breaks"><PhraseText text="追加解説の根拠" /></h3><ul className="source-list">{dossier.sourceIds.map(id => {const source=careerEvidenceById.get(id);return source ? <li key={id}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}「{source.title}」<ArrowUpRight aria-hidden="true" /></a><small>AI出典照合 {source.accessedAt}／{source.support}</small></li> : null;})}</ul><h3 className="phrase-breaks"><PhraseText text="既存本文の出典" /></h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul>
+            <h3 className="phrase-breaks"><PhraseText text="追加解説の根拠" /></h3><ul className="source-list">{dossier.sourceIds.map(id => {const source=careerEvidenceById.get(id);return source ? <li key={id}><a href={source.url} target="_blank" rel={externalRel(source.url)}>{source.provider}「{source.title}」<ArrowUpRight aria-hidden="true" /></a><small>AI出典照合 {source.accessedAt}／{source.support}</small></li> : null;})}</ul><h3 className="phrase-breaks"><PhraseText text="既存本文の出典" /></h3><ul className="source-list">{sources.map((source) => <li key={source.sourceId}><a href={source.url} target="_blank" rel={externalRel(source.url)}>{source.provider}<ArrowUpRight aria-hidden="true" /></a><small>確認日 {source.checkedAt}／{source.notes}</small></li>)}</ul>
             <p>出典URLと記録された確認日を表示しています。自動取得による変化検知は、人による内容確認や視聴確認を意味しません。誤りにお気づきの場合は<Link href="/contact/">訂正窓口</Link>をご利用ください。</p>
           </section>
         </article>

@@ -61,7 +61,7 @@ export default function ShopPage() {
         <div className="career-shop-scene-head"><h2 className="phrase-breaks"><PhraseText text={scene.title} /></h2><p>{scene.lead}</p></div>
         <div className="ce-pgrid">
           {items.map((product) => <article className="ce-prod" id={product.id} key={product.id}>
-            <a className="im" href={amazonUrl(product.amazonUrl)} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`${product.name}をAmazonで確認（PR）`}><Image src={product.image} alt={product.imageAlt} width={900} height={560} sizes="(max-width: 760px) 50vw, (max-width: 1200px) 25vw, 300px" loading="lazy"/><span className="pr">PR・Amazon</span><small className="credit">{product.imageCredit}</small></a>
+            <a className="im" href={amazonUrl(product.amazonUrl)} target="_blank" rel="sponsored nofollow noopener noreferrer" data-affiliate-network="amazon" data-affiliate-program={product.name} data-affiliate-placement="shop-card-image" aria-label={`${product.name}をAmazonで確認（PR）`}><Image src={product.image} alt={product.imageAlt} width={900} height={560} sizes="(max-width: 760px) 50vw, (max-width: 1200px) 25vw, 300px" loading="lazy"/><span className="pr">PR・Amazon</span><small className="credit">{product.imageCredit}</small></a>
             <div className="bd">
               <div className="cat">{product.category} ・ {product.maker}</div>
               <h3 className="phrase-breaks"><PhraseText text={product.name} /></h3>
@@ -75,7 +75,7 @@ export default function ShopPage() {
                 {product.officialUrl ? <a className="official" href={product.officialUrl} target="_blank" rel="noopener noreferrer">メーカー公式仕様 <ArrowUpRight aria-hidden="true" /></a> : null}
               </details>
               <div className="pz"><b className="num">—</b><small>価格・在庫はAmazonで確認（掲載内容確認日 {careerShopPolicy.checkedAt}）</small></div>
-              <a className="buy" href={amazonUrl(product.amazonUrl)} target="_blank" rel="sponsored nofollow noopener noreferrer" aria-label={`${product.name}の価格・在庫をAmazonで見る（PR）`}><span className="buy-long">Amazonで価格・在庫を見る</span><span className="buy-short">Amazonで見る</span><ExternalLink aria-hidden="true" /></a>
+              <a className="buy" href={amazonUrl(product.amazonUrl)} target="_blank" rel="sponsored nofollow noopener noreferrer" data-affiliate-network="amazon" data-affiliate-program={product.name} data-affiliate-placement="shop-card-button" aria-label={`${product.name}の価格・在庫をAmazonで見る（PR）`}><span className="buy-long">Amazonで価格・在庫を見る</span><span className="buy-short">Amazonで見る</span><ExternalLink aria-hidden="true" /></a>
               {product.officialUrl ? <a className="official official-sp" href={product.officialUrl} target="_blank" rel="noopener noreferrer">メーカー公式仕様 <ArrowUpRight aria-hidden="true" /></a> : null}
             </div>
           </article>)}

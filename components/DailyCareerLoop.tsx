@@ -70,7 +70,7 @@ export function DailyCareerLoop({ latestNews }: { latestNews?: NewsItem }) {
               className="step4"
               href="https://manapick.app/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
             >
               <em>03 TRY</em>
               <b>動画を1本見る</b>
