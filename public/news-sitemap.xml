@@ -2,113 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://career.manapick.app/news/boj-household-survey-september-2026/</loc>
+    <loc>https://career.manapick.app/news/ethical-consumption-awareness-survey-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-22</news:publication_date>
-      <news:title>「5年後も物価は上がる」が86.5%、19年ぶりの高水準。なのに収入の実感は過去いちばん良い。日銀調査のねじれを読む</news:title>
+      <news:publication_date>2026-11-24</news:publication_date>
+      <news:title>エシカル消費、「知っている」は29.9%どまり。実践は25.6%、いちばん知っているのは10代だった</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/lodging-travel-september-2026/</loc>
+    <loc>https://career.manapick.app/news/service-industry-sales-september-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-22</news:publication_date>
-      <news:title>9月の宿泊者は5,282万人泊で2.6%減。外国人は9.2%減、日本人も微減。ホテル・旅館の現場は秋口に一服した</news:title>
+      <news:publication_date>2026-11-24</news:publication_date>
+      <news:title>サービス産業の売上高40.6兆円、9産業すべて増加。運輸+7.6%・情報通信+5.8%が引っ張った9月</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/commerce-sales-september-2026/</loc>
+    <loc>https://career.manapick.app/news/high-school-job-offer-september-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-22</news:publication_date>
-      <news:title>9月の商業販売額55.9兆円、前年比5.4%増 小売は自動車が15.6%増でけん引、家電は2.7%減</news:title>
+      <news:publication_date>2026-11-24</news:publication_date>
+      <news:title>高卒内定率59.1%、前年から4.3ポイント低下。求人倍率3.85倍でも「決まらない」2027年卒の序盤戦</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://career.manapick.app/news/business-conditions-september-2026/</loc>
+    <loc>https://career.manapick.app/news/university-job-offer-rate-october-2026/</loc>
     <news:news>
       <news:publication>
         <news:name>manapick career</news:name>
         <news:language>ja</news:language>
       </news:publication>
-      <news:publication_date>2026-11-22</news:publication_date>
-      <news:title>景気の足元は改善、先行きは17か月ぶりの低下。一致指数119.5と先行指数116.4が逆を向いた9月</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/consumer-confidence-october-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-22</news:publication_date>
-      <news:title>消費者マインドが2か月連続で冷えた。それでも「1年後は物価が上がる」が90.8%。家計の本音は割れている</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/corporate-goods-prices-october-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21</news:publication_date>
-      <news:title>企業物価7.1%上昇、輸入物価は24.8%の急騰。値上げの波は川上から、まだ押し寄せている</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/construction-orders-september-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21</news:publication_date>
-      <news:title>建設受注12.1兆円、6か月連続増。でも元請は3.5%減、設備工事だけ25か月連続増という異変</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/population-estimates-november-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21</news:publication_date>
-      <news:title>総人口1億2,243万人、1年で53万人減。働く世代7,332万人という数字の重み</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/consumer-prices-october-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21</news:publication_date>
-      <news:title>物価2.2%上昇、電気・ガス代が押し上げ、うるち米は29.8%下落。値上がりの主役が入れ替わった</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/trade-statistics-october-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-21</news:publication_date>
-      <news:title>輸出も輸入も過去最大、それでも貿易赤字4,765億円。原油の値段が日本の稼ぎを食いつぶす構図</news:title>
+      <news:publication_date>2026-11-24</news:publication_date>
+      <news:title>大卒内定率73.0%、わずかに低下。理系76.9%と文系72.2%、「文理の差」が広がった2027年卒の現在地</news:title>
     </news:news>
   </url>
 </urlset>
