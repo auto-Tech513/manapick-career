@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://career.manapick.app/news/middle-aged-longitudinal-survey-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25</news:publication_date>
+      <news:title>70歳を過ぎても働く人は3割、資格を持つ人は4割。20年追い続けた調査が示す働き方の差</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/national-civil-servant-pay-revision-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25</news:publication_date>
+      <news:title>公務員の給与、官民較差3.51％を解消へ。俸給表は平均3.3％引上げ、ボーナス4.70月に</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/building-sanitation-manager-exam-56/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-25</news:publication_date>
+      <news:title>合格率30.6％→16.2％、合格者は約半分に。ビル管理技術者試験で何が起きたのか</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/ethical-consumption-awareness-survey-2026/</loc>
     <news:news>
       <news:publication>
