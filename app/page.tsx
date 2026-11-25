@@ -9,7 +9,7 @@ import { DailyCareerLoop } from "@/components/DailyCareerLoop";
 import { EditorialPreview } from "@/components/EditorialPreview";
 import { guides, publishedNews } from "@/content/editorial";
 import { humanReviewedSlugByOccupation, occupationCatalog, occupationCatalogCategories, occupationDirectory, publishedOccupationCatalog } from "@/content/catalog";
-import { HomeSearch, type HomeSearchItem } from "@/components/HomeSearch";
+import { HomeSearch, type HomeSearchGuide, type HomeSearchItem } from "@/components/HomeSearch";
 import profiles from "@/content/professional-careers.json";
 
 import { ProfessionalEntries } from "@/components/ProfessionalEntries";
@@ -53,6 +53,11 @@ export default function Home() {
       note: detail ? "career解説あり" : hasPage ? "個別ページあり" : "職業一覧で見る",
     };
   });
+  const homeSearchGuides: HomeSearchGuide[] = guides.map((guide) => ({
+    title: guide.title,
+    category: guide.category,
+    href: `/guide/${guide.slug}/`,
+  }));
   return (
     <>
       <section className="town-hero">
@@ -68,7 +73,7 @@ export default function Home() {
           <p className="town-lead">
             {occupationCatalog.length}職業の名録から、仕事内容・必要な資格・年収の目安まで。地図を歩くように、近い仕事へ寄り道しながら探せます。
           </p>
-          <HomeSearch items={homeSearchItems} />
+          <HomeSearch items={homeSearchItems} guides={homeSearchGuides} />
           <nav className="town-quick" aria-label="職業情報の探し方">
             <Link className="k" href="/all/">{occupationCatalog.length}職業から探す</Link>
             <Link href="/career/tax-accountant/">税理士</Link>
