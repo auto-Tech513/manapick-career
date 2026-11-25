@@ -15,6 +15,7 @@ export default function Page() {
     <h2 className="phrase-breaks"><PhraseText text="ランキングの扱い" /></h2><p>年収は公式統計の分類値として、根拠とあわせて示します。職業の総合点や将来性順のような、根拠の置けない順位付けは掲載していません。</p>
     <h2 className="phrase-breaks"><PhraseText text="AIと人の仕事" /></h2><p>変化する作業と、目的・安全・例外・関係者調整の責任を分けて考えます。</p>
     <h2 className="phrase-breaks"><PhraseText text="収益との分離" /></h2><p>掲載順と結論は、広告報酬と切り分けて編集します。広告はPRとして示します。</p>
+    <h2 className="phrase-breaks"><PhraseText text="検索エンジン・AIのクローラー" /></h2><p>検索エンジンやAIサービスのクローラー（学習用を含む）を区別せず、robots.txtで同じ条件でアクセスを許可しています。</p>
     <h2>訂正</h2><p>誤りにお気づきの場合は訂正窓口へお知らせください。出典の記録と過去資料の表示を区別し、訂正内容を明らかにします。</p>
   </InfoPage>;
 }
