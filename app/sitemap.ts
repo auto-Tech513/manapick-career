@@ -6,6 +6,7 @@ import { employerCategories } from "@/lib/employers";
 import { absoluteUrl } from "@/lib/site";
 import profiles from '@/content/professional-careers.json';
 import { publishedDataArticles } from "@/lib/data-room";
+import { careerShopPolicy } from "@/content/shop-products";
 export const dynamic="force-static";
 
 const latest = (...dates: string[]) => dates.filter(Boolean).sort().at(-1);
@@ -17,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const latestEditorialCheck = latest(latestGuideCheck ?? "", latestNewsCheck ?? "");
   const latestSiteCheck = latest(latestJobCheck ?? "", latestEditorialCheck ?? "", occupationCatalogSource.datasetUpdatedAt);
   // lastModified は、コンテンツ由来の日付を引けるページにだけ付ける。
-  // 日付の根拠がない固定ページ（/shop/ /privacy/ など）には付けない。
+  // 日付の根拠がない固定ページ（/privacy/ など）には付けない。
   const contentDerivedDates: Record<string, string | undefined> = {
     "/": latestSiteCheck,
     "/route/": latestJobCheck,
@@ -29,6 +30,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/research/": latestNewsCheck,
     "/employers/": latest(latestJobCheck ?? "", occupationCatalogSource.datasetUpdatedAt),
     "/all/": latest(latestJobCheck ?? "", occupationCatalogSource.datasetUpdatedAt),
+    // /shop/ はページに表示している掲載内容の確認日（careerShopPolicy.checkedAt）を使う。
+    "/shop/": careerShopPolicy.checkedAt,
   };
   const fixed = ["/", "/route/", "/compare/", "/ranking/", "/skills/", "/guide/", "/news/", "/research/", "/shop/", "/employers/", "/tools/net-income/", "/glossary/", "/faq/", "/about-method/", "/operator/", "/privacy/", "/affiliate/", "/disclaimer/", "/contact/", "/all/"];
 
