@@ -12,11 +12,18 @@ export type HomeSearchItem = {
   note: string;
 };
 
-export function HomeSearch({ items }: { items: HomeSearchItem[] }) {
+export type HomeSearchGuide = {
+  title: string;
+  category: string;
+  href: string;
+};
+
+export function HomeSearch({ items, guides = [] }: { items: HomeSearchItem[]; guides?: HomeSearchGuide[] }) {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const wrapRef = useRef<HTMLDivElement>(null);
   const suggestions = useMemo(() => rankMatches(items, query, (item) => item.name, (item) => item.aliases), [items, query]);
+  const guideSuggestions = useMemo(() => rankMatches(guides, query, (guide) => guide.title, () => [], 5), [guides, query]);
   const show = open && query.trim().length > 0;
   useEffect(() => {
     if (!open) return;
@@ -47,7 +54,12 @@ export function HomeSearch({ items }: { items: HomeSearchItem[] }) {
             const aliasText = matchedAlias ? ` ・ 別名「${matchedAlias}」に一致` : item.aliases.length ? ` ・ 別名：${item.aliases.slice(0, 2).join("、")}` : "";
             return { key: item.name, name: item.name, href: item.href, meta: `${item.category} ・ ${item.note}${aliasText}` };
           })}
-          emptyText={`「${query.trim()}」に一致する職業は見つかりませんでした。別名や、かな表記でも試してみてください。`}
+          groups={guideSuggestions.total ? [{
+            label: "ガイド",
+            total: guideSuggestions.total,
+            items: guideSuggestions.items.map((guide) => ({ key: guide.href, name: guide.title, href: guide.href, meta: guide.category })),
+          }] : undefined}
+          emptyText={`「${query.trim()}」に一致する職業・ガイドは見つかりませんでした。別名や、かな表記でも試してみてください。`}
           footText={`上位${suggestions.items.length}件を表示しています。「検索」で残りも含めて一覧で確認できます。`}
         />
       ) : null}

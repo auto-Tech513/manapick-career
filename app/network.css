@@ -649,6 +649,7 @@ body.cm-lock{overflow:hidden}
 .sg-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:0 6px 0 14px;border-bottom:2px solid var(--ink);background:var(--paper);font-size:13px;font-weight:700}
 .sg-head b{display:inline-block;margin-right:4px;padding:1px 7px;border-radius:4px;background:var(--ca);font-size:16px;line-height:1.3}
 .sg-head button{min-height:44px;padding:0 10px;border:0;background:transparent;color:var(--ink);font:inherit;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.sg-group-head{margin:0;padding:8px 14px;border-top:2px solid var(--ink);background:var(--paper);font-size:13px;font-weight:700}
 .sg-panel ul{list-style:none;margin:0;padding:0;max-height:min(46vh,420px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .sg-panel--inline ul{max-height:none}
 .sg-panel li+li{border-top:1px solid var(--line)}
