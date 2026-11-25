@@ -845,3 +845,30 @@ main section[id],main .occ-sec[id]{scroll-margin-top:84px}
 @supports not (overflow:clip){
   @media(max-width:640px){.rail{overflow:hidden}}
 }
+
+/* 評価チーム 2026-11-25（CA-RAIL）：641px 以上の駅名が 768px で3行・1024px で2行に折れ、帯（40px）の上下で切れていた。
+   1440px 以上と同じ並びが入る幅で段階を分ける（本家 #41 と同じ考え方。色・大きさ・駅の並びは変えない）。
+   ・1101px 以上：今のまま（manapick network＋駅名）。駅名・現在地は折り返さない
+   ・960〜1100px：「manapick network」を出さない（駅名は1行のまま入る。Chrome・WebKit 実測で右に 29px 以上の余り）
+   ・641〜959px：SP と同じ「現在地だけ駅名」の段階。ほかの駅は丸だけにし、丸だけの駅の当たり判定を左右に 11px 広げて 44px に
+     （駅の間隔は 18px → 22px。当たり判定どうしは重ならない） */
+@media(min-width:641px){
+  .rail{overflow-x:clip;overflow-y:visible}
+  .rail-s-name,.rail-s.on b{white-space:nowrap}
+}
+@media(min-width:641px) and (max-width:1100px){
+  .rail-lbl{display:none}
+}
+@media(min-width:641px) and (max-width:959px){
+  .rail-s{margin-right:22px}
+  .rail-s-name{display:none}
+  .rail-s.on .rail-s-name{display:inline}
+  .rail-s.on b{display:none}
+  .rail-s::after{left:-11px;right:-11px}
+}
+/* SP 360px：AI の駅（2番目）の当たり判定が 43.3px だった。左の3駅（manapick・AI・license）で使える幅は、画面の左端から
+   現在地の駅の箱までの約 133px。3駅の区切りを 3等分に近づけ、3駅とも 44px 以上にする（AI の左の広げ 7px→7.5px、license 4px→3.75px） */
+@media(max-width:640px){
+  .rail-s:nth-child(2)::after{left:-7.5px}
+  .rail-s:nth-child(3)::after{left:-3.75px}
+}
