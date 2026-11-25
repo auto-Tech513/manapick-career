@@ -24,6 +24,10 @@
  ],
  "excluded": [
   {
+   "slug": "labor-force-detailed-q3-2026",
+   "reason": "自動監査で作成したdraft候補。全主張・公式リンク・OGの人による確認前のため、現行の公開済みバッチから除外"
+  },
+  {
    "slug": "jpsed-2026-survey-design",
    "reason": "一次資料の公表日が未確認"
   },
