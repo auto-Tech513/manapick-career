@@ -5397,5 +5397,122 @@
     "critical": true
    }
   ]
+ },
+ {
+  "guideSlug": "pension-deferred-claim-guide",
+  "claims": [
+   {
+    "claimId": "pension-deferral-rate-07",
+    "text": "老齢基礎（厚生）年金の繰下げ受給の増額率は0.7%×65歳に達した月から繰下げ申出月の前月までの月数で、早見表では66歳8.4%、67歳16.8%、68歳25.2%、69歳33.6%、70歳42.0%、75歳84.0%であり、増額は一生続く。老齢基礎年金と老齢厚生年金は別々に繰り下げることができる。",
+    "sourceIds": [
+     "nenkin-kurisage-2026"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "pension-deferral-cap-70",
+    "text": "昭和27年4月1日以前生まれの方（または平成29年3月31日以前に老齢基礎（厚生）年金を受け取る権利が発生している方）は繰下げの上限年齢が70歳までで増額率は最大42%となる。",
+    "sourceIds": [
+     "nenkin-kurisage-2026"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "pension-deferral-exclusions",
+    "text": "加給年金額や振替加算額は繰下げによる増額の対象にならず、繰下げ待機期間中は受け取ることができない。在職老齢年金制度により支給停止される額も増額の対象にならない。75歳に達した月を過ぎて請求しても増額率は増えない。繰下げ加算額は遺族厚生年金に反映されず、繰下げ請求は遺族が代わって行うことはできない。",
+    "sourceIds": [
+     "nenkin-kurisage-2026"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "pension-deferral-kyosai-limits",
+    "text": "日本年金機構と共済組合等から複数の老齢厚生年金を受け取ることができる場合は、すべての老齢厚生年金について同時に繰下げ受給の請求をしなくてはいけない。すでに共済組合等から老齢厚生年金を受給している人が、新たに日本年金機構から老齢厚生年金を受給できるようになった場合、日本年金機構分の繰下げ請求はできない。65歳の誕生日の前日から66歳の誕生日の前日までの間に、障害給付や遺族給付を受け取る権利があるときは、繰下げ受給の申出ができない。",
+    "sourceIds": [
+     "nenkin-kurisage-2026"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "retirement-income-tax-deduction",
+  "claims": [
+   {
+    "claimId": "retirement-deduction-formula",
+    "text": "退職所得控除額は、勤続年数20年以下の場合は40万円×勤続年数（80万円に満たない場合は80万円）、20年超の場合は800万円+70万円×（勤続年数-20年）であり、勤続年数の1年未満の端数は1年に切り上げる。",
+    "sourceIds": [
+     "nta-retirement-income-1420"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "retirement-taxable-half",
+    "text": "退職所得の金額は（収入金額-退職所得控除額）×1/2で計算する。特定役員退職手当等については2分の1計算の適用はない。",
+    "sourceIds": [
+     "nta-retirement-income-1420"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "retirement-declaration-2042",
+    "text": "「退職所得の受給に関する申告書」を提出した場合は源泉徴収で完結し原則として確定申告は不要である。提出していない場合は支給額の20.42%が源泉徴収され、確定申告で精算する。障害者になったことが直接の原因で退職した場合は退職所得控除額に100万円を加える。",
+    "sourceIds": [
+     "nta-retirement-income-1420"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   }
+  ]
+ },
+ {
+  "guideSlug": "childbirth-benefit-guide",
+  "claims": [
+   {
+    "claimId": "childbirth-lump-sum-500k",
+    "text": "出産育児一時金は医療保険から子ども一人につき原則50万円（産科医療補償制度に加入する病院などにおいて出産した場合。それ以外の場合は48.8万円）が支給される。直接支払制度により医療機関が代わりに受け取ることで、窓口での支払額を50万円（48.8万円）を超える費用のみとすることもできる。",
+    "sourceIds": [
+     "wam-childbirth-support-2026",
+     "kyoukaikenpo-childbirth-2026"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "childbirth-allowance-two-thirds",
+    "text": "出産手当金は産前・産後休業中で無給の場合（被保険者のみが対象）に健康保険から支給され、対象期間は出産日（出産が予定日より後になった場合は出産予定日）以前42日（多胎妊娠の場合は98日）から出産日の翌日以降56日までの範囲内で、1日につき標準報酬月額を30で除した額の3分の2に相当する金額が支給される。",
+    "sourceIds": [
+     "wam-childbirth-support-2026",
+     "kyoukaikenpo-childbirth-2026"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   },
+   {
+    "claimId": "childbirth-premium-exemption",
+    "text": "産前・産後休業中および育児休業等期間中の社会保険料（健康保険・厚生年金保険、国民年金）が免除される。届出しないと免除にならない。年金額の計算に際しては育児休業取得直前の標準報酬で保険料納付が行われたものとして取り扱われる。",
+    "sourceIds": [
+     "wam-childbirth-support-2026"
+    ],
+    "lastCheckedAt": "2026-11-25",
+    "freshnessDays": 365,
+    "critical": true
+   }
+  ]
  }
 ]

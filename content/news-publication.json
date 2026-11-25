@@ -1346,6 +1346,45 @@
       "reviewedByHumanAt": "2026-11-24",
       "reviewEvidence": "git:1d1bd445973646f8d3e8b54f318f5d92cae01eba",
       "contentSha256": "c8ab3de638af3d781386521166de00060ff781608e67454a958fa3044bde14a3"
+    },
+    {
+      "slug": "national-civil-servant-pay-revision-2026",
+      "createdAt": "2026-11-25",
+      "status": "published",
+      "primarySourceId": "jinji-kankoku-2026-08",
+      "sourcePublishedAt": "2026-08-07",
+      "publishedAt": "2026-11-25",
+      "reviewedAt": "2026-11-25",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-25",
+      "reviewEvidence": "git:7373aa825853a07e7ecfb61cc58adddf6b75b256",
+      "contentSha256": "e575feef375e8b6c5337153e37be398ec83863e68c7db2096e40ca9f39b30c59"
+    },
+    {
+      "slug": "middle-aged-longitudinal-survey-2026",
+      "createdAt": "2026-11-25",
+      "status": "published",
+      "primarySourceId": "mhlw-middle-aged-longitudinal-2026",
+      "sourcePublishedAt": "2026-11-25",
+      "publishedAt": "2026-11-25",
+      "reviewedAt": "2026-11-25",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-25",
+      "reviewEvidence": "git:7373aa825853a07e7ecfb61cc58adddf6b75b256",
+      "contentSha256": "b2d638427e0db0f0f9454567d2be7c97cb1a3e619a02afbebb5ee6425d3ca653"
+    },
+    {
+      "slug": "building-sanitation-manager-exam-56",
+      "createdAt": "2026-11-25",
+      "status": "published",
+      "primarySourceId": "mhlw-building-sanitation-exam-56",
+      "sourcePublishedAt": "2026-11-10",
+      "publishedAt": "2026-11-25",
+      "reviewedAt": "2026-11-25",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-25",
+      "reviewEvidence": "git:7373aa825853a07e7ecfb61cc58adddf6b75b256",
+      "contentSha256": "63305d350f01d477d1a358d948ac7b30f517bfecb6387100f30d1307f71e899b"
     }
   ]
 }
