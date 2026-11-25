@@ -40,7 +40,13 @@ export function HomeSearch({ items }: { items: HomeSearchItem[] }) {
           query={query}
           total={suggestions.total}
           onClose={() => setOpen(false)}
-          items={suggestions.items.map((item) => ({ key: item.name, name: item.name, href: item.href, meta: `${item.category} ・ ${item.note}${item.aliases.length ? ` ・ 別名：${item.aliases.slice(0, 2).join("、")}` : ""}` }))}
+          items={suggestions.items.map((item) => {
+            // 職業名ではなく別名で一致したときは、どの別名に一致したかを小字で示す（CE-02、#231 から移植）
+            const needle = query.trim().toLocaleLowerCase("ja");
+            const matchedAlias = item.name.toLocaleLowerCase("ja").includes(needle) ? undefined : item.aliases.find((alias) => alias.toLocaleLowerCase("ja").includes(needle));
+            const aliasText = matchedAlias ? ` ・ 別名「${matchedAlias}」に一致` : item.aliases.length ? ` ・ 別名：${item.aliases.slice(0, 2).join("、")}` : "";
+            return { key: item.name, name: item.name, href: item.href, meta: `${item.category} ・ ${item.note}${aliasText}` };
+          })}
           emptyText={`「${query.trim()}」に一致する職業は見つかりませんでした。別名や、かな表記でも試してみてください。`}
           footText={`上位${suggestions.items.length}件を表示しています。「検索」で残りも含めて一覧で確認できます。`}
         />
