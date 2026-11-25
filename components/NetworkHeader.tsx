@@ -24,9 +24,16 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
   const here = currentMenuItem(pathname);
   const button = useRef<HTMLButtonElement>(null);
   const panel = useRef<HTMLElement>(null);
-  const close = useCallback((restoreFocus = true) => { setOpenedAt(null); if (restoreFocus) requestAnimationFrame(() => button.current?.focus()); }, []);
+  // SP の下部バーの「メニュー」から開いたときは、閉じた後にそのボタンへフォーカスを戻す（見えないときはヘッダーのボタンへ）
+  const opener = useRef<HTMLElement | null>(null);
+  const close = useCallback((restoreFocus = true) => {
+    setOpenedAt(null);
+    const from = opener.current;
+    opener.current = null;
+    if (restoreFocus) requestAnimationFrame(() => (from && document.contains(from) && from.getClientRects().length > 0 ? from : button.current)?.focus());
+  }, []);
   useEffect(() => {
-    const openMenu = () => setOpen(true);
+    const openMenu = () => { opener.current = document.activeElement instanceof HTMLElement && document.activeElement !== document.body ? document.activeElement : null; setOpen(true); };
     window.addEventListener("mp-open-menu", openMenu);
     return () => window.removeEventListener("mp-open-menu", openMenu);
   }, [setOpen]);
@@ -59,7 +66,7 @@ export default function NetworkHeader({ children }: { children?: ReactNode }) {
       {children ? <div className="mp-header-search">{children}</div> : null}
       <nav className="mp-main-nav" aria-label="主要ナビゲーション">{mainNavHrefs.map((href) => { const item = navItem(href); return item ? <a key={href} href={href} aria-current={isCurrent(href) ? "page" : undefined}>{item.label}</a> : null; })}</nav>
       <div className="mp-header-actions"><a className="hd-btn" href="/tools/net-income/">手取りシミュレーター</a><a className="hd-btn y" href="/route/">迷ったら入口案内</a></div>
-      <button ref={button} type="button" className={`mp-menu-btn${open ? " on" : ""}`} aria-expanded={open} aria-controls="site-menu" aria-haspopup="dialog" onClick={() => (open ? close() : setOpen(true))}>
+      <button ref={button} type="button" className={`mp-menu-btn${open ? " on" : ""}`} aria-expanded={open} aria-controls="site-menu" aria-haspopup="dialog" onClick={() => { if (open) close(); else { opener.current = null; setOpen(true); } }}>
         {open ? <X size={20} strokeWidth={2.4} aria-hidden="true" /> : <Menu size={20} strokeWidth={2.4} aria-hidden="true" />}<span>メニュー</span>
       </button>
     </div></header>

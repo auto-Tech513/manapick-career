@@ -22,10 +22,14 @@ export function MenuSearch({ onNavigate }: { onNavigate: () => void }) {
   const show = open && query.trim().length > 0;
   return (
     <div className="cm-search sg-wrap">
-      <form className="cm-search-box" action="/all/#catalog-title" method="get" role="search" onSubmit={onNavigate}>
+      {/* 送信の処理の中でメニューを閉じると、フォームが外れて送信が取り消される（Enter・「検索」を押しても移らなかった）。送信が始まってから閉じる */}
+      <form className="cm-search-box" action="/all/#catalog-title" method="get" role="search" onSubmit={() => { window.setTimeout(onNavigate, 0); }}>
         <label className="sr-only" htmlFor="cm-search-input">職業・ガイド・ニュースを検索</label>
         <Search aria-hidden="true" />
-        <input id="cm-search-input" name="q" enterKeyHint="search" autoComplete="off" value={query} placeholder="職業名・記事名で検索" onFocus={() => { ensure(); setOpen(true); }} onChange={(event) => { ensure(); setQuery(event.target.value); setOpen(true); }} onKeyDown={(event) => { if (event.key === "Escape" && open && query) { event.stopPropagation(); setOpen(false); } }} />
+        <input id="cm-search-input" name="q" enterKeyHint="search" autoComplete="off" value={query} placeholder="職業名・記事名で検索" onFocus={() => { ensure(); setOpen(true); }} onChange={(event) => { ensure(); setQuery(event.target.value); setOpen(true); }} onKeyDown={(event) => {
+          // 候補だけを閉じる。メニューは document の keydown で閉じるため、同じ document の後続の受け手にも渡さない
+          if (event.key === "Escape" && open && query) { event.stopPropagation(); event.nativeEvent.stopImmediatePropagation(); setOpen(false); }
+        }} />
         <button type="submit">検索</button>
       </form>
       {show ? (
