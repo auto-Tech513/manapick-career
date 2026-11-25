@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { AdFreeScreen } from "@/components/AdFreeScreen";
 import { PhraseText } from "@/components/PhraseTitle";
 
 export default function NotFound() {
   return <div className="page-shell">
+    {/* 404 では AdSense を読み込まない（2026-11-26） */}
+    <AdFreeScreen />
     <div className="e404">
       <p className="e404-code">404</p>
       <h1 className="phrase-breaks"><PhraseText text="この駅には、ページがありません。" /></h1>

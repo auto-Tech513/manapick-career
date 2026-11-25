@@ -105,6 +105,8 @@ export function AdSenseScript() {
     // 自動操作のブラウザ（navigator.webdriver === true。Playwright・Selenium 等）では読み込まない（無効トラフィック対策。2026-11-21）
     if (navigator.webdriver === true) return;
     if (document.getElementById("manapick-career-adsense")) return;
+    // 404 など中身の無い画面（components/AdFreeScreen.tsx の目印 data-ad-free-screen がある文書）では読み込まない（2026-11-26、AdSense のポリシー上の懸念）
+    if (document.querySelector("[data-ad-free-screen]")) return;
     const script = document.createElement("script");
     script.id = "manapick-career-adsense";
     script.async = true;
