@@ -46,27 +46,36 @@ if (!adSlot.includes('data-ad-format="auto"') || !adSlot.includes('data-full-wid
 if (!adSlot.includes('data-ad-status') || !adSlot.includes('state === "unfilled"')) failures.push("未充填判定または自社案内フォールバックがない");
 if (/\.ad-slot\[data-ad-status=[^\]]+\][^{]*\{[^}]*display\s*:\s*none/is.test(globalCss)) failures.push("未充填広告を独自CSSで非表示にしている");
 if (!editorialArticle.includes("index === 1 && <AdSlot")) failures.push("広告枠が本文2番目のセクション後に限定されていない");
+// 配置の拡張（オーナー指示 2026-11-26：広告は減らさず、コンテンツの邪魔にならない箇所に置く）。
+// 記事は最初の節の前にも1枠（タイトル・結論・要点の後、本文の流れは中断しない位置）
+if (!editorialArticle.includes("index === 0 && <AdSlot") || !editorialArticle.includes("before-section-1")) failures.push("記事の先頭の広告枠が最初の節の前でない");
 if (!editorialArticle.includes("<AdSenseScript />")) failures.push("長文記事にAdSense scriptがない");
 // 追加の手動枠（オーナー判断 2026-11-19 14:38：デザインを壊す広告を外した分を手動枠で補う）。
 // 本家の汎用レスポンシブユニット 1438236565 を fold（配信まで高さ 0・未配信なら畳む）で、記事の最後の節の後（5節以上）とトップの1か所だけに置く
 const EXTRA_SLOT = "1438236565";
 if (!/index === sections\.length - 1 && sections\.length >= 5 && <AdSlot slot="1438236565" fold /.test(editorialArticle)) failures.push("記事の追加広告枠が最後の節の後（5節以上の記事だけ）でない");
-if ((editorialArticle.match(/<AdSlot\b/g) ?? []).length !== 2) failures.push("記事の広告枠が2つでない");
+if ((editorialArticle.match(/<AdSlot\b/g) ?? []).length !== 3) failures.push("記事の広告枠が3つでない");
 {
   const slots = (homePage.match(/<AdSlot\b/g) ?? []).length;
-  if (slots !== 1) failures.push(`トップの広告枠が1つでない: ${slots}`);
+  if (slots !== 2) failures.push(`トップの広告枠が2つでない: ${slots}`);
   if (!homePage.includes(`<AdSlot slot="${EXTRA_SLOT}" fold placement="home-after-briefing" />`)) failures.push("トップの広告枠が指定位置・指定ユニットでない");
+  // トップの末尾（乗り換え案内の後）にも fold 枠を1つ（オーナー指示 2026-11-26）
+  if (!homePage.includes(`<AdSlot slot="${EXTRA_SLOT}" fold placement="home-after-transfer" />`)) failures.push("トップ末尾の広告枠が指定位置・指定ユニットでない");
 }
 for (const [label, source] of [["職業ページ", careerPage], ["専門職ページ", professionalCareerPage]]) {
   const slots = (source.match(/<AdSlot\b/g) ?? []).length;
-  if (slots !== 1) failures.push(`${label}の広告枠が1つでない: ${slots}`);
+  if (slots !== 2) failures.push(`${label}の広告枠が2つでない: ${slots}`);
   if (!source.includes('placement="career-after-section-3"')) failures.push(`${label}の広告配置が指定位置でない`);
+  // 出典の後・乗り換え案内の前に1枠（オーナー指示 2026-11-26）
+  if (!source.includes('placement="career-after-sources"')) failures.push(`${label}の末尾の広告配置が指定位置でない`);
   if (!source.includes("<AdSenseScript />")) failures.push(`${label}にAdSense scriptがない`);
 }
 {
   const slots = (occupationPage.match(/<AdSlot\b/g) ?? []).length;
-  if (slots !== 1) failures.push(`職業個別ページの広告枠が1つでない: ${slots}`);
+  if (slots !== 2) failures.push(`職業個別ページの広告枠が2つでない: ${slots}`);
   if (!occupationPage.includes('placement="occupation-after-work"')) failures.push("職業個別ページの広告配置が指定位置でない");
+  // 出典の節の後に1枠（オーナー指示 2026-11-26）
+  if (!occupationPage.includes('placement="occupation-after-sources"')) failures.push("職業個別ページの末尾の広告配置が指定位置でない");
   if (!occupationPage.includes("<AdSenseScript />")) failures.push("職業個別ページにAdSense scriptがない");
 }
 if (!layout.includes('"google-adsense-account"')) failures.push("AdSense accountメタタグがない");
@@ -76,12 +85,14 @@ for (const origin of ["https://www.googletagmanager.com", "https://pagead2.googl
 
 const unexpectedAdImports = [...walk("app"), ...walk("components")]
   .filter((file) => /\.(?:tsx|ts)$/.test(file))
-  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx") && !file.endsWith("app/occupation/[id]/page.tsx") && file !== path.join("app", "page.tsx"))
+  .filter((file) => !file.endsWith("components/EditorialArticle.tsx") && !file.endsWith("components/AdSlot.tsx") && !file.endsWith("components/AdSenseScript.tsx") && !file.endsWith("app/career/[slug]/page.tsx") && !file.endsWith("components/ProfessionalCareerPage.tsx") && !file.endsWith("app/occupation/[id]/page.tsx") && file !== path.join("app", "page.tsx") && file !== path.join("app", "news", "page.tsx") && file !== path.join("app", "guide", "page.tsx") && file !== path.join("app", "all", "page.tsx"))
   // AdSense 自動広告のスクリプトは全ページ（app/layout.tsx）で読み込む（オーナー決定 2026-11-18 22:32）。手動の広告枠 AdSlot は従来の3か所と、
-  // 2026-11-19 14:38 のオーナー判断で足したトップ（app/page.tsx）・記事の最後の節の後だけ
+  // 2026-11-19 14:38 のオーナー判断で足したトップ（app/page.tsx）・記事の最後の節の後だけだったが、
+  // 2026-11-26 のオーナー指示（減らさず、邪魔にならない箇所に置く）で、記事の最初の節の前、職業・ドシエの出典の後、
+  // トップの末尾、一覧ページ（ニュース・ガイド・全職業）の末尾を承認済みの配置に追加した
   .filter((file) => file.endsWith("app/layout.tsx") ? /AdSlot/.test(fs.readFileSync(file, "utf8")) : /(?:AdSenseScript|AdSlot)/.test(fs.readFileSync(file, "utf8")));
 if (!layout.includes("<AdSenseScript/>") && !layout.includes("<AdSenseScript />")) failures.push("全ページ用のAdSense script（layout）がない");
 if (unexpectedAdImports.length) failures.push(`広告が承認外ページへ混入: ${unexpectedAdImports.join(", ")}`);
 
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
-console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} slots are articles(+${EXTRA_SLOT} after last section)+career+occupation+home(${EXTRA_SLOT}) only; auto ads script on all pages`);
+console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} slots are articles(before section 1, after section 2, +${EXTRA_SLOT} after last section)+career(after section 3, after sources)+occupation(after work, after sources)+home(${EXTRA_SLOT} after briefing and after transfer)+indexes(news/guide/all, after list) only; auto ads script on all pages`);
