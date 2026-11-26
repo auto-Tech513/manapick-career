@@ -1,9 +1,13 @@
 {
-  "source": "manapick license content/licenses.json（資格224件）＋ content/income-links.json の career 対応20組",
-  "note": "職業ページ分は資格名の正規化完全一致のみ（推測の対応付けなし）。ドシエ分は license 側で検証済みの対応の逆引きで、資格欄にリンク済みの資格は除く。",
-  "generatedAt": "2026-11-03",
+  "source": "manapick license content/licenses.json（資格225件）＋ content/income-links.json の career 対応20組",
+  "note": "職業ページ分は、資格名の正規化完全一致を最優先し、一致しない場合は license 側の名称から決定的に導ける別名（末尾の国家試験・試験・免許を外した形、括弧内の別名）と、職業側の区分つき・修了者を外した形だけで対応付ける（推測の対応付けなし）。ドシエ分は license 側で検証済みの対応の逆引きで、資格欄にリンク済みの資格は除く。",
+  "generatedAt": "2026-11-26",
   "occupations": {
     "21": [
+      {
+        "name": "一級建築士",
+        "slug": "kenchikushi-1"
+      },
       {
         "name": "二級建築士",
         "slug": "kenchikushi-2"
@@ -45,6 +49,10 @@
       {
         "name": "第三種電気主任技術者",
         "slug": "denken-3"
+      },
+      {
+        "name": "第一種電気工事士",
+        "slug": "denki-1"
       },
       {
         "name": "第二種電気工事士",
@@ -113,6 +121,10 @@
     ],
     "85": [
       {
+        "name": "一級建築士",
+        "slug": "kenchikushi-1"
+      },
+      {
         "name": "二級建築士",
         "slug": "kenchikushi-2"
       },
@@ -147,6 +159,12 @@
       {
         "name": "公認会計士",
         "slug": "cpa"
+      }
+    ],
+    "90": [
+      {
+        "name": "弁理士",
+        "slug": "benrishi"
       }
     ],
     "91": [
@@ -221,11 +239,23 @@
     ],
     "131": [
       {
+        "name": "介護支援専門員（ケアマネジャー）",
+        "slug": "care-manager"
+      },
+      {
+        "name": "看護師",
+        "slug": "nurse"
+      },
+      {
         "name": "介護福祉士",
         "slug": "kaigo-fukushi"
       }
     ],
     "132": [
+      {
+        "name": "介護職員初任者研修修了者",
+        "slug": "kaigo-shoninsha"
+      },
       {
         "name": "介護福祉士",
         "slug": "kaigo-fukushi"
@@ -233,11 +263,25 @@
     ],
     "133": [
       {
+        "name": "介護職員初任者研修修了者",
+        "slug": "kaigo-shoninsha"
+      },
+      {
         "name": "介護福祉士",
         "slug": "kaigo-fukushi"
       }
     ],
+    "154": [
+      {
+        "name": "救急救命士",
+        "slug": "emergency-medical-technician"
+      }
+    ],
     "155": [
+      {
+        "name": "看護師",
+        "slug": "nurse"
+      },
       {
         "name": "准看護師",
         "slug": "assistant-nurse"
@@ -255,6 +299,16 @@
       {
         "name": "助産師",
         "slug": "midwife"
+      },
+      {
+        "name": "看護師",
+        "slug": "nurse"
+      }
+    ],
+    "157": [
+      {
+        "name": "薬剤師",
+        "slug": "pharmacist"
       }
     ],
     "158": [
@@ -265,8 +319,24 @@
     ],
     "159": [
       {
+        "name": "看護師",
+        "slug": "nurse"
+      },
+      {
         "name": "保健師",
         "slug": "public-health-nurse"
+      }
+    ],
+    "160": [
+      {
+        "name": "臨床検査技師",
+        "slug": "medical-technologist"
+      }
+    ],
+    "162": [
+      {
+        "name": "診療放射線技師",
+        "slug": "radiological-technologist"
       }
     ],
     "163": [
@@ -279,6 +349,44 @@
       {
         "name": "歯科技工士",
         "slug": "dental-technician"
+      }
+    ],
+    "165": [
+      {
+        "name": "歯科衛生士",
+        "slug": "dental-hygienist"
+      }
+    ],
+    "166": [
+      {
+        "name": "理学療法士",
+        "slug": "physical-therapist"
+      },
+      {
+        "name": "作業療法士",
+        "slug": "occupational-therapist"
+      }
+    ],
+    "167": [
+      {
+        "name": "作業療法士",
+        "slug": "occupational-therapist"
+      },
+      {
+        "name": "理学療法士",
+        "slug": "physical-therapist"
+      }
+    ],
+    "168": [
+      {
+        "name": "言語聴覚士",
+        "slug": "speech-language-hearing-therapist"
+      }
+    ],
+    "170": [
+      {
+        "name": "管理栄養士",
+        "slug": "registered-dietitian"
       }
     ],
     "172": [
@@ -321,6 +429,48 @@
         "slug": "seishin-fukushi"
       }
     ],
+    "291": [
+      {
+        "name": "危険物取扱者（甲種）",
+        "slug": "kikenbutsu-ko"
+      },
+      {
+        "name": "危険物取扱者（丙種）",
+        "slug": "kikenbutsu-heishu"
+      }
+    ],
+    "308": [
+      {
+        "name": "基本情報技術者",
+        "slug": "fe"
+      },
+      {
+        "name": "応用情報技術者",
+        "slug": "ap"
+      }
+    ],
+    "309": [
+      {
+        "name": "基本情報技術者",
+        "slug": "fe"
+      }
+    ],
+    "316": [
+      {
+        "name": "基本情報技術者",
+        "slug": "fe"
+      },
+      {
+        "name": "情報処理安全確保支援士",
+        "slug": "sc"
+      }
+    ],
+    "376": [
+      {
+        "name": "救急救命士",
+        "slug": "emergency-medical-technician"
+      }
+    ],
     "384": [
       {
         "name": "社会福祉士",
@@ -349,6 +499,10 @@
         "slug": "sharoshi"
       },
       {
+        "name": "キャリアコンサルタント",
+        "slug": "career-consultant"
+      },
+      {
         "name": "第二種衛生管理者",
         "slug": "eisei-kanri-2"
       }
@@ -367,6 +521,40 @@
       {
         "name": "登録販売者（一般医薬品)",
         "slug": "touroku-hanbai"
+      }
+    ],
+    "449": [
+      {
+        "name": "運行管理者（貨物）",
+        "slug": "transport-operation-manager"
+      },
+      {
+        "name": "危険物取扱者（甲種）",
+        "slug": "kikenbutsu-ko"
+      },
+      {
+        "name": "危険物取扱者（丙種）",
+        "slug": "kikenbutsu-heishu"
+      }
+    ],
+    "457": [
+      {
+        "name": "危険物取扱者（甲種）",
+        "slug": "kikenbutsu-ko"
+      },
+      {
+        "name": "危険物取扱者（丙種）",
+        "slug": "kikenbutsu-heishu"
+      },
+      {
+        "name": "クレーン・デリック運転士（クレーン限定）",
+        "slug": "crane-derrick-operator"
+      }
+    ],
+    "482": [
+      {
+        "name": "愛玩動物看護師",
+        "slug": "aigan-doubutsu-kangoshi"
       }
     ],
     "527": [
