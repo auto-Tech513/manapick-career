@@ -24,6 +24,10 @@ const FOOTER_STATION_TEXT: Record<string, string> = {
   politics: "政治と法律 — コミカルに易しく",
 };
 
+// メルマガ登録ブロックの表示はオーナー指示（2026-11-26）で取りやめ。
+// Kit 側のフォーム（10147210）と NewsletterForm は残し、表示だけをこの定数で止める。戻すときは true にする。
+const SHOW_NEWSLETTER_BLOCK = false;
+
 // サイトの案内に出すまとまり（メニューと同じ区分・名前）。「このサイトについて」は最下段の小さなリンクへ。
 const GUIDE_SECTIONS = menuSections.filter((section) => section.key !== "about").map((section) => ({
   ...section,
@@ -34,9 +38,11 @@ export default function NetworkFooter() {
   return (
     <footer className="route foot" aria-label="manapick career のフッター">
       <div className="foot-inner">
-        <section className="foot-news" aria-label="manapick メルマガ登録">
-          <NewsletterForm context="footer" />
-        </section>
+        {SHOW_NEWSLETTER_BLOCK ? (
+          <section className="foot-news" aria-label="manapick メルマガ登録">
+            <NewsletterForm context="footer" />
+          </section>
+        ) : null}
 
         <nav className="foot-guide" aria-label="サイトの案内">
           <div className="foot-brand">
