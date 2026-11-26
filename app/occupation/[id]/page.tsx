@@ -634,6 +634,7 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
                 収入は{incomeMetadata.surveyYear}年賃金構造基本統計調査の対応分類による平均年収換算です。
               </p>
             </section>
+            <AdSlot unit="career" placement="occupation-after-sources" />
           </div>
           <aside className="occ-side">
             <div className="occ-box2 occ-box2-y">

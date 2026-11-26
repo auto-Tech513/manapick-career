@@ -4,6 +4,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { PhraseText } from "@/components/PhraseTitle";
 import { GuideExplorer, type GuideCardItem } from "@/components/GuideExplorer";
+import { AdSlot } from "@/components/AdSlot";
 import { guides } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 import "../article.css";
@@ -72,5 +73,6 @@ export default function GuideIndex() {
     </header>
 
     <GuideExplorer items={items} topics={topics} />
+    <AdSlot placement="guide-index-after-list" />
   </div></>;
 }

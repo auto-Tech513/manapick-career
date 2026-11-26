@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowRight, CalendarCheck2, CalendarDays, Newspaper, ShieldCheck } from "lucide-react";
 import { JsonLd } from "@/components/JsonLd";
 import { NewsExplorer, type NewsCardItem } from "@/components/NewsExplorer";
+import { AdSlot } from "@/components/AdSlot";
 import { newsModifiedAt, newsNeedsRefresh, publishedNews } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 import { newsTopic, orderedNewsTopics } from "@/lib/news-topics";
@@ -58,5 +59,6 @@ export default function NewsIndex() {
       <p><ShieldCheck aria-hidden="true"/>一次資料の公表日、サイトの公開日、出典の記録日を分けて表示します。確認期限を超えた過去資料の記事が{archiveCount}件あります。現在の状況は公式出典をご覧ください。</p>
     </section>
     <NewsExplorer items={publishedNews.map((item): NewsCardItem => ({ slug: item.slug, title: item.title, kind: newsTopic(item), summary: item.summary, sourcePublishedAt: item.sourcePublishedAt, publishedAt: item.publishedAt, needsRefresh: newsNeedsRefresh(item), image: `/card/news/${item.slug}.png` }))} kinds={kinds} />
+    <AdSlot placement="news-index-after-list" />
   </div></>;
 }

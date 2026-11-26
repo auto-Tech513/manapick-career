@@ -205,6 +205,7 @@ export default function Home() {
           ]}
         />
       </section>
+      <div className="home-ad"><AdSlot slot="1438236565" fold placement="home-after-transfer" /></div>
     </>
   );
 }

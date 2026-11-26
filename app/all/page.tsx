@@ -16,6 +16,7 @@ import { ProfessionalEntries } from '@/components/ProfessionalEntries';
 import profiles from '@/content/professional-careers.json';
 import { PhraseText } from "@/components/PhraseTitle";
 import { externalRel } from "@/lib/network-links";
+import { AdSlot } from "@/components/AdSlot";
 const title = `${occupationCatalog.length}職業の名録｜仕事内容・関連資格・年収の目安と出典`;
 const description = `${occupationCatalog.length}職業の仕事内容・入職条件・労働条件・関連資格と年収の目安を、出典つきで検索・閲覧できる名録です。そのうち${publishedOccupationCatalog.length}職業には個別ページ、${publishedJobs.length + profiles.items.length}職業には独自解説があります。名前や分野から検索でき、気になる職業は個別ページで仕事内容と出典を詳しく確認できます。年収の目安は、対応する統計分類がある職業にのみ示しています。`;
 const image = absoluteUrl("/og.png");
@@ -35,5 +36,6 @@ export default function AllPage() {
     <ProfessionalEntries/>
     <section id="income-scope" className="income-method-panel"><h2 className="phrase-breaks"><PhraseText text="556職業の年収：何を比較している？" /></h2><p>544職業は公式対応表から2025年の賃金統計へ対応付けています。12職業は対応分類がなく「対応する年収統計なし」と表示します。職業ごとの個別集計とは限らず、同じ分類に属する仕事には同じ値が表示されます。</p><h3 id="income-method" className="income-method-anchor">計算方法と出典</h3><p>平均年収換算＝6月の「きまって支給する現金給与額」×12＋「年間賞与その他特別給与額」。一覧の金額は小数第1位の万円へ四捨五入しています。</p>{incomeMetadata.limitations.map(text=><p key={text}>{text}</p>)}<p>{incomeMetadata.annualMedian.reason}</p><ul>{incomeMetadata.sources.map(source=><li key={source.id}><a href={source.url} target="_blank" rel={externalRel(source.url)}>{source.title}</a></li>)}</ul></section>
     <section className="reviewed-jobs" aria-labelledby="reviewed-title"><div className="sh"><div><p className="sh-k">DOSSIERS — 職業解説</p><h2 id="reviewed-title" className="phrase-breaks"><PhraseText text="公開中の職業解説" /></h2><p>年収順・将来性順では並べません。仕事内容、必要スキル、入口、注意点を比較できます。</p></div></div><div className="job-grid">{publishedJobs.map((job) => <JobCard key={job.slug} job={job} />)}</div></section>
+    <AdSlot placement="all-index-after-list" />
   </div></>;
 }
