@@ -1,13 +1,13 @@
 {
- "batchId": "news-2026-11-25-daily3-104",
- "preparedAt": "2026-11-25",
- "targetCount": 104,
+ "batchId": "news-2026-11-26-daily3-107",
+ "preparedAt": "2026-11-26",
+ "targetCount": 107,
  "status": "published",
- "publishedAt": "2026-11-25",
- "approvedAt": "2026-11-25",
+ "publishedAt": "2026-11-26",
+ "approvedAt": "2026-11-26",
  "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
- "authorizationNote": "2026-11-25のオーナー指示（日次運用）に基づき、最新の公的公表3件をニュースへ追加する。人事院「令和8年 人事院勧告・報告の概要」（2026年8月7日、改正給与法は2026年11月11日に成立・11月18日に公布）、厚生労働省「第21回中高年者縦断調査」（2026年11月25日公表）、厚生労働省「第56回建築物環境衛生管理技術者試験の合格発表」（2026年11月10日公表）。",
- "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全104件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+ "authorizationNote": "2026-11-26のオーナー指示（日次運用）に基づき、最新の公的公表3件をニュースへ追加する。厚生労働省「令和8年版過労死等防止対策白書」（2026年10月9日公表）、厚生労働省「2025年国民生活基礎調査の概況」（2026年7月15日公表）、厚生労働省「毎月勤労統計調査 2026年9月分結果確報」（2026年11月25日公表）。労働者派遣事業の速報（2026年3月31日公表）は鮮度不足のため差し替え、9月分確報を採用した。",
+ "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全107件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
  "reviewedScope": [
   "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
   "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -136,18 +136,21 @@
   "monthly-economic-report-november-2026",
   "national-civil-servant-pay-revision-2026",
   "middle-aged-longitudinal-survey-2026",
-  "building-sanitation-manager-exam-56"
+  "building-sanitation-manager-exam-56",
+  "karoshi-whitepaper-2026",
+  "national-living-survey-2026",
+  "monthly-earnings-september-2026-final"
  ],
  "previousBatch": {
-  "batchId": "news-2026-11-24-expansion-101",
-  "preparedAt": "2026-11-24",
-  "targetCount": 101,
+  "batchId": "news-2026-11-25-daily3-104",
+  "preparedAt": "2026-11-25",
+  "targetCount": 104,
   "status": "published",
-  "publishedAt": "2026-11-24",
-  "approvedAt": "2026-11-24",
+  "publishedAt": "2026-11-25",
+  "approvedAt": "2026-11-25",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-  "authorizationNote": "2026-11-24のオーナー指示に基づき、最新の公的統計3件をニュースへ追加する。人事院「民間給与の実態——令和8年職種別民間給与実態調査の結果」（2026年11月12日公表）、厚生労働省「令和8年度介護従事者処遇状況等調査の結果について（案）」（2026年11月16日公表）、内閣府「月例経済報告 令和8年11月分」（2026年11月24日公表）。",
-  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全101件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+  "authorizationNote": "2026-11-25のオーナー指示（日次運用）に基づき、最新の公的公表3件をニュースへ追加する。人事院「令和8年 人事院勧告・報告の概要」（2026年8月7日、改正給与法は2026年11月11日に成立・11月18日に公布）、厚生労働省「第21回中高年者縦断調査」（2026年11月25日公表）、厚生労働省「第56回建築物環境衛生管理技術者試験の合格発表」（2026年11月10日公表）。",
+  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全104件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
   "reviewedScope": [
    "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
    "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -273,7 +276,10 @@
    "ethical-consumption-awareness-survey-2026",
    "private-salary-survey-2026",
    "care-worker-pay-survey-2026",
-   "monthly-economic-report-november-2026"
+   "monthly-economic-report-november-2026",
+   "national-civil-servant-pay-revision-2026",
+   "middle-aged-longitudinal-survey-2026",
+   "building-sanitation-manager-exam-56"
   ]
  }
 }

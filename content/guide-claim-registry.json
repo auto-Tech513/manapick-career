@@ -5514,5 +5514,162 @@
     "critical": true
    }
   ]
+ },
+ {
+  "claims": [
+   {
+    "claimId": "housing-loan-rate-07",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-housing-loan-2026"
+    ],
+    "text": "住宅借入金等特別控除の控除額は年末残高等×0.7％で、100円未満の端数金額は切り捨てる。対象は令和4年1月1日から令和12年12月31日までの間に自己の居住の用に供した場合である。"
+   },
+   {
+    "claimId": "housing-loan-limits-2026",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-kurashi-housing-2026"
+    ],
+    "text": "令和8年入居の新築・買取再販は、認定住宅が借入限度額4,500万円・控除期間13年・最大控除額年31.5万円、ZEH水準省エネ住宅が3,500万円・13年・年24.5万円、省エネ基準適合住宅が2,000万円・13年・年14万円、その他の住宅が2,000万円・10年・年14万円（ただし新築のその他住宅は、令和5年12月31日までに建築確認を受けたもの又は令和6年6月30日までに建築されたものに限る）である。中古住宅は認定住宅とZEH水準省エネ住宅が3,500万円・13年・年24.5万円、省エネ基準適合住宅が2,000万円・13年・年14万円、その他の住宅が2,000万円・10年・年14万円である。増改築等は2,000万円・10年・年14万円である。"
+   },
+   {
+    "claimId": "housing-loan-uplift-2026",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-housing-loan-2026",
+     "nta-kurashi-housing-2026"
+    ],
+    "text": "特例対象個人（年齢40歳未満であって配偶者を有する方、年齢40歳以上であって年齢40歳未満の配偶者を有する方、または年齢19歳未満の扶養親族を有する方）に該当する場合は、新築・買取再販で認定住宅が5,000万円・年35万円、ZEH水準省エネ住宅が4,500万円・年31.5万円、省エネ基準適合住宅が3,000万円・年21万円に限度額が上乗せされる。判定は居住年の12月31日時点で行う。上乗せは床面積50平方メートル以上の認定住宅等に限られ、令和8年1月1日以降に特例認定住宅等（40平方メートル以上50平方メートル未満）に居住した場合は適用できない。"
+   },
+   {
+    "claimId": "housing-loan-requirements",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-housing-loan-2026"
+    ],
+    "text": "控除を受けるには、新築等の日から6か月以内に居住の用に供し、その年の合計所得金額が2,000万円以下で、床面積が50平方メートル以上（特例居住用家屋等は40平方メートル以上50平方メートル未満で合計所得金額1,000万円以下）、返済期間が10年以上であることなどの要件を満たす必要がある。親族や知人からの借入金はすべて対象外で、勤務先からの無利子または0.2パーセントに満たない利率の借入金も対象外である。"
+   },
+   {
+    "claimId": "housing-loan-first-year",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-housing-loan-2026",
+     "nta-kurashi-housing-2026"
+    ],
+    "text": "控除を受ける最初の年分は確定申告書に必要書類を添付して所轄税務署長に提出する必要があり、給与所得者は2年目以後の年分を年末調整で受けることができる。増改築等で控除を受ける場合は、補助金等の額を差し引いた工事費用が100万円を超えることと、自己の居住の用に供される部分の工事費用が工事費用の総額の2分の1以上であることが要件である。"
+   }
+  ],
+  "guideSlug": "housing-loan-tax-credit-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "medical-expense-formula",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-medical-expense-2026"
+    ],
+    "text": "医療費控除の金額は（実際に支払った医療費の合計額−保険金などで補てんされる金額）−10万円で計算した金額（最高で200万円）である。その年の総所得金額等が200万円未満の人は、10万円ではなく総所得金額等の5パーセントの金額を引く。対象はその年の1月1日から12月31日までの間に自己または自己と生計を一にする配偶者やその他の親族のために支払った医療費で、未払いの医療費は現実に支払った年の対象になる。"
+   },
+   {
+    "claimId": "medical-expense-compensation-limit",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-medical-expense-2026"
+    ],
+    "text": "保険金などで補てんされる金額は、その給付の目的となった医療費の金額を限度として差し引き、引ききれない金額が生じた場合であっても他の医療費からは差し引かない。補てんの例は生命保険契約などで支給される入院費給付金や健康保険などで支給される高額療養費・家族療養費・出産育児一時金などである。"
+   },
+   {
+    "claimId": "medical-expense-selfmedication",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-medical-expense-2026"
+    ],
+    "text": "セルフメディケーション税制は、健康診断や予防接種などの取組を行っている方が特定一般用医薬品等購入費を支払った場合に、通常の医療費控除との選択により、その年中の購入費の合計額（保険金等により補填される部分の金額を除く）のうち12,000円を超える部分の金額（88,000円を限度）を控除額とする特例である。"
+   },
+   {
+    "claimId": "medical-expense-procedure",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "nta-medical-expense-2026"
+    ],
+    "text": "医療費控除を受けるには確定申告書に「医療費控除の明細書」または「セルフメディケーション税制の明細書」を添付する。医療費通知がある場合は医療費通知を添付することで明細書の記載を簡略化できる。医療費の領収書は確定申告期限等から5年を経過する日までの間、提示または提出を求める場合がある。"
+   }
+  ],
+  "guideSlug": "medical-expense-deduction-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "health-after-retirement-3choices",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "kyoukaikenpo-voluntary-continuation-2026"
+    ],
+    "text": "退職後の健康保険には、「健康保険任意継続」、「国民健康保険」、「ご家族の健康保険（被扶養者）」の3つの選択がある。国民健康保険の保険料は加入する世帯の人数や前年の所得などによって決まり減免制度がある。ご家族の健康保険は被扶養者の保険料負担はないが、扶養の条件を満たす必要がある。"
+   },
+   {
+    "claimId": "health-voluntary-conditions",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "kyoukaikenpo-voluntary-continuation-2026"
+    ],
+    "text": "協会けんぽの任意継続に入るには、退職日までに被保険者期間が継続して2か月以上あることと、退職日の翌日から20日以内（20日目が土日、祝日の場合は翌営業日）に「健康保険任意継続被保険者資格取得申出書」を提出することが条件である。郵送の場合は20日以内に必着するよう送る。任意継続の被保険者期間は2年間である。"
+   },
+   {
+    "claimId": "health-voluntary-premium",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "kyoukaikenpo-voluntary-continuation-2026"
+    ],
+    "text": "任意継続の保険料は退職時の健康保険料の2倍となるが上限がある。実際の算出方法は退職時の標準報酬月額×お住まいの都道府県別保険料率（子ども・子育て支援金率を含む）で、退職時の標準報酬月額が32万円を超えていた場合は32万円で計算する。40歳から64歳までの介護保険第2号被保険者に該当する方は介護保険料が加わる。保険料は原則2年間変わらない。"
+   },
+   {
+    "claimId": "health-voluntary-prepayment",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "kyoukaikenpo-voluntary-continuation-2026"
+    ],
+    "text": "保険料の前納制度を利用して保険料を事前に一括して納付すると、保険料が年4％（複利現価法による）割引になる。前納できる期間は6か月分（4月分から9月分まで、または10月分から翌年3月分まで）と12か月分（4月分から翌年3月分まで）である。納付した保険料は所得税申告時に社会保険料控除の対象となる。"
+   },
+   {
+    "claimId": "health-voluntary-benefits-limit",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-26",
+    "sourceIds": [
+     "kyoukaikenpo-voluntary-continuation-2026"
+    ],
+    "text": "任意継続の医療機関等での窓口負担は在職中と同様の負担割合で、原則として在職中と同様の給付を受けることができる。傷病手当金と出産手当金については、在職中から継続して給付されている場合に限り引き続き申請でき、任意継続被保険者期間中に発生した病気・ケガによる傷病手当金及び出産手当金は支給されない。"
+   }
+  ],
+  "guideSlug": "health-insurance-after-retirement-guide"
  }
 ]
