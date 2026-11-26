@@ -1385,6 +1385,45 @@
       "reviewedByHumanAt": "2026-11-25",
       "reviewEvidence": "git:7373aa825853a07e7ecfb61cc58adddf6b75b256",
       "contentSha256": "63305d350f01d477d1a358d948ac7b30f517bfecb6387100f30d1307f71e899b"
+    },
+    {
+      "slug": "karoshi-whitepaper-2026",
+      "createdAt": "2026-11-26",
+      "status": "published",
+      "primarySourceId": "mhlw-karoshi-whitepaper-2026",
+      "sourcePublishedAt": "2026-10-09",
+      "publishedAt": "2026-11-26",
+      "reviewedAt": "2026-11-26",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-26",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "a979fcace92f4b8dd14b239976cf819591f7e67c477882f210362c95fee2e7c6"
+    },
+    {
+      "slug": "national-living-survey-2026",
+      "createdAt": "2026-11-26",
+      "status": "published",
+      "primarySourceId": "mhlw-national-living-survey-2025",
+      "sourcePublishedAt": "2026-07-15",
+      "publishedAt": "2026-11-26",
+      "reviewedAt": "2026-11-26",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-26",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "f6611c71093fae5e243db81ef44bfa76e8a1eee2e9807d6931f0ba7fadc8384c"
+    },
+    {
+      "slug": "monthly-earnings-september-2026-final",
+      "createdAt": "2026-11-26",
+      "status": "published",
+      "primarySourceId": "mhlw-monthly-labor-2026-09-final",
+      "sourcePublishedAt": "2026-11-25",
+      "publishedAt": "2026-11-26",
+      "reviewedAt": "2026-11-26",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-26",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "4a2a1a5fac1fc3ff8ed6d05882dbee1f909a4d4351d606b2638757388e765fa9"
     }
   ]
 }
