@@ -44,6 +44,7 @@ export default function NetIncomePage() {
         <ul className="source-list">
           <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm" target="_blank" rel="noopener noreferrer">国税庁 No.1410 給与所得控除</a></li>
           <li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1199.htm" target="_blank" rel="noopener noreferrer">国税庁 No.1199 基礎控除</a></li>
+          <li><a href="https://jsite.mhlw.go.jp/ehime-roudoukyoku/content/contents/002602395.pdf" target="_blank" rel="noopener noreferrer">厚生労働省「令和8（2026）年度 雇用保険料率のご案内」</a></li>
           <li><a href="https://www.kyoukaikenpo.or.jp/" target="_blank" rel="noopener noreferrer">全国健康保険協会（協会けんぽ）</a></li>
           <li><a href="https://www.nenkin.go.jp/" target="_blank" rel="noopener noreferrer">日本年金機構（厚生年金保険料率）</a></li>
         </ul>

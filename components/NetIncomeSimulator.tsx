@@ -5,6 +5,9 @@ import { useEffect, useMemo, useState } from "react";
 // 手取りシミュレーター（簡易試算）
 // 根拠: 国税庁 No.1410 給与所得控除（令和8年分）、No.1199 基礎控除（令和8年分）、
 // 所得税速算表、住民税は基礎控除43万円・税率10%・均等割5,000円の前提。
+// 雇用保険料率の初期値: 厚生労働省「令和8（2026）年度 雇用保険料率のご案内」
+// （一般の事業・労働者負担 5/1,000）。介護保険料率の初期値: 協会けんぽ令和8年度
+// 料率（全国一律 1.62%）。いずれも 2026-11-26 に一次情報で確認。
 // 社会保険料率は初期値を表示し、利用者が変更できる前提条件として扱う。
 const BASIC_DEDUCTION_BRACKETS: Array<[number, number]> = [
   [1_320_000, 1_040_000],
@@ -83,8 +86,8 @@ export function NetIncomeSimulator() {
   const [ageBand, setAgeBand] = useState<"under40" | "40to64" | "65plus">("under40");
   const [dependents, setDependents] = useState(0);
   const [healthText, setHealthText] = useState("10");
-  const [nursingText, setNursingText] = useState("1.59");
-  const [unemploymentText, setUnemploymentText] = useState("0.6");
+  const [nursingText, setNursingText] = useState("1.62");
+  const [unemploymentText, setUnemploymentText] = useState("0.5");
   const grossMan = parseNum(grossText);
   const healthRate = parseNum(healthText);
   const nursingRate = parseNum(nursingText);
@@ -169,11 +172,11 @@ export function NetIncomeSimulator() {
             <input type="text" value={healthText} onChange={(e) => setHealthText(sanitizeNumeric(e.target.value, true))} onBlur={() => setHealthText((t) => normalizeOnBlur(t, 15))} inputMode="decimal" autoComplete="off" aria-label="健康保険料率（%）" />
           </label>
           <label>
-            介護保険料率（全体・%）※初期値は令和7年度の協会けんぽ料率
+            介護保険料率（全体・%）※初期値は令和8年度の協会けんぽ料率（全国一律）
             <input type="text" value={nursingText} onChange={(e) => setNursingText(sanitizeNumeric(e.target.value, true))} onBlur={() => setNursingText((t) => normalizeOnBlur(t, 5))} inputMode="decimal" autoComplete="off" aria-label="介護保険料率（%）" />
           </label>
           <label>
-            雇用保険料率（本人負担・%）※初期値は一般の事業の令和7年度料率
+            雇用保険料率（本人負担・%）※初期値は令和8年度・一般の事業の労働者負担率（5/1,000）
             <input type="text" value={unemploymentText} onChange={(e) => setUnemploymentText(sanitizeNumeric(e.target.value, true))} onBlur={() => setUnemploymentText((t) => normalizeOnBlur(t, 3))} inputMode="decimal" autoComplete="off" aria-label="雇用保険料率（%）" />
           </label>
           <p>厚生年金保険料率は18.3%（本人負担は半分）で固定しています。健康保険料は本人負担が半分として計算します。</p>
@@ -198,6 +201,7 @@ export function NetIncomeSimulator() {
             </tbody>
           </table>
         </div>
+        <p className="sim-result-sub">料率の初期値の根拠：雇用保険料率は令和8年度（2026年4月1日〜2027年3月31日）・一般の事業・労働者負担 5/1,000（0.5%）で、厚生労働省「令和8（2026）年度 雇用保険料率のご案内」で2026年11月26日に確認しました。介護保険料率は協会けんぽの令和8年度料率（全国一律1.62%）です。</p>
       </div>
     </div>
   );
