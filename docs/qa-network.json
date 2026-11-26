@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-16T11:31:32.000Z",
+  "checkedAt": "2026-11-26T01:13:55.796Z",
   "report": [
     {
       "itemId": "learning:home",
@@ -250,6 +250,12 @@
     {
       "itemId": "politics:industrial-safety-health-act",
       "url": "https://politics.manapick.app/law/industrial-safety-health-act/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "politics:insurance-business-act",
+      "url": "https://politics.manapick.app/law/insurance-business-act/",
       "status": 200,
       "state": "ok"
     },
