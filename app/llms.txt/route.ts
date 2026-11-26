@@ -67,7 +67,7 @@ export function GET() {
     `- [manapick company](https://company.manapick.app/): 企業を物語と数字で読む。`,
     `- [manapick politics](https://politics.manapick.app/): 政治と法律を易しく学ぶ。職業ページから、関係する法律のページ（保険業法など）へリンクしています。`,
     "",
-    "## Policies",
+    "## Optional",
     `- [manapi商店](${absoluteUrl("/shop/")}): 学び直し・面接・仕事準備の道具。PRは編集判断と分離。`,
     `- [作成方法・編集方針](${absoluteUrl("/about-method/")})`,
     `- [免責事項](${absoluteUrl("/disclaimer/")})`,
