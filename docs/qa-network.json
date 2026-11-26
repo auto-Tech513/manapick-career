@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-26T01:13:55.796Z",
+  "checkedAt": "2026-11-26T03:17:04.478826Z",
   "report": [
     {
       "itemId": "learning:home",
@@ -154,6 +154,384 @@
     {
       "itemId": "license:kaigo-fukushi",
       "url": "https://license.manapick.app/license/kaigo-fukushi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:aigan-doubutsu-kangoshi",
+      "url": "https://license.manapick.app/license/aigan-doubutsu-kangoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:ap",
+      "url": "https://license.manapick.app/license/ap/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:assistant-nurse",
+      "url": "https://license.manapick.app/license/assistant-nurse/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:auto-mechanic-2",
+      "url": "https://license.manapick.app/license/auto-mechanic-2/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:benrishi",
+      "url": "https://license.manapick.app/license/benrishi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:biyoshi",
+      "url": "https://license.manapick.app/license/biyoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:care-manager",
+      "url": "https://license.manapick.app/license/care-manager/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:career-consultant",
+      "url": "https://license.manapick.app/license/career-consultant/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:chori",
+      "url": "https://license.manapick.app/license/chori/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:chosashi",
+      "url": "https://license.manapick.app/license/chosashi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:clinical-engineer",
+      "url": "https://license.manapick.app/license/clinical-engineer/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:cpa",
+      "url": "https://license.manapick.app/license/cpa/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:crane-derrick-operator",
+      "url": "https://license.manapick.app/license/crane-derrick-operator/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:denken-1",
+      "url": "https://license.manapick.app/license/denken-1/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:denken-2",
+      "url": "https://license.manapick.app/license/denken-2/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:denken-3",
+      "url": "https://license.manapick.app/license/denken-3/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:denki-1",
+      "url": "https://license.manapick.app/license/denki-1/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:denki-2",
+      "url": "https://license.manapick.app/license/denki-2/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:dental-hygienist",
+      "url": "https://license.manapick.app/license/dental-hygienist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:dental-technician",
+      "url": "https://license.manapick.app/license/dental-technician/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:dentist",
+      "url": "https://license.manapick.app/license/dentist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:eisei-kanri-2",
+      "url": "https://license.manapick.app/license/eisei-kanri-2/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:emergency-medical-technician",
+      "url": "https://license.manapick.app/license/emergency-medical-technician/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:fudosan-kanteishi",
+      "url": "https://license.manapick.app/license/fudosan-kanteishi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:gijutsushi",
+      "url": "https://license.manapick.app/license/gijutsushi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:gyoseishoshi",
+      "url": "https://license.manapick.app/license/gyoseishoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:hisho-2",
+      "url": "https://license.manapick.app/license/hisho-2/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:hoikushi",
+      "url": "https://license.manapick.app/license/hoikushi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:judo-therapist",
+      "url": "https://license.manapick.app/license/judo-therapist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:kaigo-shoninsha",
+      "url": "https://license.manapick.app/license/kaigo-shoninsha/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:kenchikushi-1",
+      "url": "https://license.manapick.app/license/kenchikushi-1/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:kenchikushi-2",
+      "url": "https://license.manapick.app/license/kenchikushi-2/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:kikenbutsu-heishu",
+      "url": "https://license.manapick.app/license/kikenbutsu-heishu/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:kikenbutsu-ko",
+      "url": "https://license.manapick.app/license/kikenbutsu-ko/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:kisho-yohoshi",
+      "url": "https://license.manapick.app/license/kisho-yohoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:medical-technologist",
+      "url": "https://license.manapick.app/license/medical-technologist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:midwife",
+      "url": "https://license.manapick.app/license/midwife/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:nurse",
+      "url": "https://license.manapick.app/license/nurse/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:occupational-therapist",
+      "url": "https://license.manapick.app/license/occupational-therapist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:pharmacist",
+      "url": "https://license.manapick.app/license/pharmacist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:physical-therapist",
+      "url": "https://license.manapick.app/license/physical-therapist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:public-health-nurse",
+      "url": "https://license.manapick.app/license/public-health-nurse/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:radiological-technologist",
+      "url": "https://license.manapick.app/license/radiological-technologist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:registered-dietitian",
+      "url": "https://license.manapick.app/license/registered-dietitian/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:riyoshi",
+      "url": "https://license.manapick.app/license/riyoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:sc",
+      "url": "https://license.manapick.app/license/sc/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:seishin-fukushi",
+      "url": "https://license.manapick.app/license/seishin-fukushi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:sensuishi",
+      "url": "https://license.manapick.app/license/sensuishi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:shakai-fukushi",
+      "url": "https://license.manapick.app/license/shakai-fukushi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:sharoshi",
+      "url": "https://license.manapick.app/license/sharoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:shiho-shiken",
+      "url": "https://license.manapick.app/license/shiho-shiken/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:shihoshoshi",
+      "url": "https://license.manapick.app/license/shihoshoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:shindanshi",
+      "url": "https://license.manapick.app/license/shindanshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:sokuryo-ho",
+      "url": "https://license.manapick.app/license/sokuryo-ho/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:sokuryoshi",
+      "url": "https://license.manapick.app/license/sokuryoshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:speech-language-hearing-therapist",
+      "url": "https://license.manapick.app/license/speech-language-hearing-therapist/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:takken",
+      "url": "https://license.manapick.app/license/takken/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:transport-operation-manager",
+      "url": "https://license.manapick.app/license/transport-operation-manager/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:tsukanshi",
+      "url": "https://license.manapick.app/license/tsukanshi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:veterinarian",
+      "url": "https://license.manapick.app/license/veterinarian/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:water-supply-equipment-chief-technician",
+      "url": "https://license.manapick.app/license/water-supply-equipment-chief-technician/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:zeirishi",
+      "url": "https://license.manapick.app/license/zeirishi/",
+      "status": 200,
+      "state": "ok"
+    },
+    {
+      "itemId": "license:zenkei-boki-jokyu",
+      "url": "https://license.manapick.app/license/zenkei-boki-jokyu/",
       "status": 200,
       "state": "ok"
     },

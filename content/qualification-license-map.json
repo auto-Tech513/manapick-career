@@ -1,0 +1,337 @@
+{
+  "source": "manapick license の資格ページ（2026-11-26 に資格一覧と llms.txt で実在を確認）への対応づけ。職業ページの「元データに掲載されている関連資格」の名称と、license 側の資格が同一であるものだけを登録する。級・種別・部門が異なるもの、研修修了と国家資格など制度が異なるものは登録しない",
+  "note": "職業ページでの表示（リンク化）は表示側の受け皿が決まってから有効化する。このファイルは対応づけの正本であり、リンク先は content/network-map.json の itemId で参照し、QA台帳（docs/qa-network.json）で生存確認済みのものだけを登録する",
+  "generatedAt": "2026-11-26",
+  "map": {
+    "キャリアコンサルタント": {
+      "itemId": "license:career-consultant",
+      "licenseName": "キャリアコンサルタント試験",
+      "url": "https://license.manapick.app/license/career-consultant/"
+    },
+    "クレーン・デリック運転士（クレーン限定）": {
+      "itemId": "license:crane-derrick-operator",
+      "licenseName": "クレーン・デリック運転士免許",
+      "url": "https://license.manapick.app/license/crane-derrick-operator/"
+    },
+    "一級建築士": {
+      "itemId": "license:kenchikushi-1",
+      "licenseName": "一級建築士試験",
+      "url": "https://license.manapick.app/license/kenchikushi-1/"
+    },
+    "不動産鑑定士": {
+      "itemId": "license:fudosan-kanteishi",
+      "licenseName": "不動産鑑定士",
+      "url": "https://license.manapick.app/license/fudosan-kanteishi/"
+    },
+    "中小企業診断士": {
+      "itemId": "license:shindanshi",
+      "licenseName": "中小企業診断士",
+      "url": "https://license.manapick.app/license/shindanshi/"
+    },
+    "二級建築士": {
+      "itemId": "license:kenchikushi-2",
+      "licenseName": "二級建築士",
+      "url": "https://license.manapick.app/license/kenchikushi-2/"
+    },
+    "二級自動車整備士": {
+      "itemId": "license:auto-mechanic-2",
+      "licenseName": "二級自動車整備士",
+      "url": "https://license.manapick.app/license/auto-mechanic-2/"
+    },
+    "介護支援専門員（ケアマネジャー）": {
+      "itemId": "license:care-manager",
+      "licenseName": "ケアマネジャー（介護支援専門員）",
+      "url": "https://license.manapick.app/license/care-manager/"
+    },
+    "介護福祉士": {
+      "itemId": "license:kaigo-fukushi",
+      "licenseName": "介護福祉士",
+      "url": "https://license.manapick.app/license/kaigo-fukushi/"
+    },
+    "介護職員初任者研修修了者": {
+      "itemId": "license:kaigo-shoninsha",
+      "licenseName": "介護職員初任者研修",
+      "url": "https://license.manapick.app/license/kaigo-shoninsha/"
+    },
+    "作業療法士": {
+      "itemId": "license:occupational-therapist",
+      "licenseName": "作業療法士国家試験",
+      "url": "https://license.manapick.app/license/occupational-therapist/"
+    },
+    "保健師": {
+      "itemId": "license:public-health-nurse",
+      "licenseName": "保健師",
+      "url": "https://license.manapick.app/license/public-health-nurse/"
+    },
+    "保育士": {
+      "itemId": "license:hoikushi",
+      "licenseName": "保育士",
+      "url": "https://license.manapick.app/license/hoikushi/"
+    },
+    "公認会計士": {
+      "itemId": "license:cpa",
+      "licenseName": "公認会計士",
+      "url": "https://license.manapick.app/license/cpa/"
+    },
+    "准看護師": {
+      "itemId": "license:assistant-nurse",
+      "licenseName": "准看護師",
+      "url": "https://license.manapick.app/license/assistant-nurse/"
+    },
+    "助産師": {
+      "itemId": "license:midwife",
+      "licenseName": "助産師",
+      "url": "https://license.manapick.app/license/midwife/"
+    },
+    "危険物取扱者（丙種）": {
+      "itemId": "license:kikenbutsu-heishu",
+      "licenseName": "危険物取扱者丙種",
+      "url": "https://license.manapick.app/license/kikenbutsu-heishu/"
+    },
+    "危険物取扱者（甲種）": {
+      "itemId": "license:kikenbutsu-ko",
+      "licenseName": "危険物取扱者 甲種",
+      "url": "https://license.manapick.app/license/kikenbutsu-ko/"
+    },
+    "司法書士": {
+      "itemId": "license:shihoshoshi",
+      "licenseName": "司法書士",
+      "url": "https://license.manapick.app/license/shihoshoshi/"
+    },
+    "司法試験": {
+      "itemId": "license:shiho-shiken",
+      "licenseName": "司法試験",
+      "url": "https://license.manapick.app/license/shiho-shiken/"
+    },
+    "土地家屋調査士": {
+      "itemId": "license:chosashi",
+      "licenseName": "土地家屋調査士",
+      "url": "https://license.manapick.app/license/chosashi/"
+    },
+    "基本情報技術者": {
+      "itemId": "license:fe",
+      "licenseName": "基本情報技術者試験（FE）",
+      "url": "https://license.manapick.app/license/fe/"
+    },
+    "宅地建物取引士（旧：宅地建物取引主任者）": {
+      "itemId": "license:takken",
+      "licenseName": "宅地建物取引士（宅建士）",
+      "url": "https://license.manapick.app/license/takken/"
+    },
+    "弁理士": {
+      "itemId": "license:benrishi",
+      "licenseName": "弁理士試験",
+      "url": "https://license.manapick.app/license/benrishi/"
+    },
+    "応用情報技術者": {
+      "itemId": "license:ap",
+      "licenseName": "応用情報技術者試験（AP）",
+      "url": "https://license.manapick.app/license/ap/"
+    },
+    "情報処理安全確保支援士": {
+      "itemId": "license:sc",
+      "licenseName": "情報処理安全確保支援士試験（SC）",
+      "url": "https://license.manapick.app/license/sc/"
+    },
+    "愛玩動物看護師": {
+      "itemId": "license:aigan-doubutsu-kangoshi",
+      "licenseName": "愛玩動物看護師",
+      "url": "https://license.manapick.app/license/aigan-doubutsu-kangoshi/"
+    },
+    "技術士（建設部門）": {
+      "itemId": "license:gijutsushi",
+      "licenseName": "技術士",
+      "url": "https://license.manapick.app/license/gijutsushi/"
+    },
+    "救急救命士": {
+      "itemId": "license:emergency-medical-technician",
+      "licenseName": "救急救命士国家試験",
+      "url": "https://license.manapick.app/license/emergency-medical-technician/"
+    },
+    "柔道整復師": {
+      "itemId": "license:judo-therapist",
+      "licenseName": "柔道整復師",
+      "url": "https://license.manapick.app/license/judo-therapist/"
+    },
+    "歯科医師": {
+      "itemId": "license:dentist",
+      "licenseName": "歯科医師",
+      "url": "https://license.manapick.app/license/dentist/"
+    },
+    "歯科技工士": {
+      "itemId": "license:dental-technician",
+      "licenseName": "歯科技工士",
+      "url": "https://license.manapick.app/license/dental-technician/"
+    },
+    "歯科衛生士": {
+      "itemId": "license:dental-hygienist",
+      "licenseName": "歯科衛生士国家試験",
+      "url": "https://license.manapick.app/license/dental-hygienist/"
+    },
+    "気象予報士": {
+      "itemId": "license:kisho-yohoshi",
+      "licenseName": "気象予報士",
+      "url": "https://license.manapick.app/license/kisho-yohoshi/"
+    },
+    "測量士": {
+      "itemId": "license:sokuryoshi",
+      "licenseName": "測量士",
+      "url": "https://license.manapick.app/license/sokuryoshi/"
+    },
+    "測量士補": {
+      "itemId": "license:sokuryo-ho",
+      "licenseName": "測量士補",
+      "url": "https://license.manapick.app/license/sokuryo-ho/"
+    },
+    "潜水士": {
+      "itemId": "license:sensuishi",
+      "licenseName": "潜水士",
+      "url": "https://license.manapick.app/license/sensuishi/"
+    },
+    "獣医師": {
+      "itemId": "license:veterinarian",
+      "licenseName": "獣医師",
+      "url": "https://license.manapick.app/license/veterinarian/"
+    },
+    "理学療法士": {
+      "itemId": "license:physical-therapist",
+      "licenseName": "理学療法士国家試験",
+      "url": "https://license.manapick.app/license/physical-therapist/"
+    },
+    "理容師": {
+      "itemId": "license:riyoshi",
+      "licenseName": "理容師",
+      "url": "https://license.manapick.app/license/riyoshi/"
+    },
+    "登録販売者（一般医薬品)": {
+      "itemId": "license:touroku-hanbai",
+      "licenseName": "登録販売者",
+      "url": "https://license.manapick.app/license/touroku-hanbai/"
+    },
+    "看護師": {
+      "itemId": "license:nurse",
+      "licenseName": "看護師国家試験",
+      "url": "https://license.manapick.app/license/nurse/"
+    },
+    "社会保険労務士": {
+      "itemId": "license:sharoshi",
+      "licenseName": "社会保険労務士（社労士）",
+      "url": "https://license.manapick.app/license/sharoshi/"
+    },
+    "社会福祉士": {
+      "itemId": "license:shakai-fukushi",
+      "licenseName": "社会福祉士",
+      "url": "https://license.manapick.app/license/shakai-fukushi/"
+    },
+    "秘書検定2級": {
+      "itemId": "license:hisho-2",
+      "licenseName": "秘書検定 2級",
+      "url": "https://license.manapick.app/license/hisho-2/"
+    },
+    "税理士": {
+      "itemId": "license:zeirishi",
+      "licenseName": "税理士",
+      "url": "https://license.manapick.app/license/zeirishi/"
+    },
+    "第一種電気主任技術者": {
+      "itemId": "license:denken-1",
+      "licenseName": "第一種電気主任技術者（電験一種）",
+      "url": "https://license.manapick.app/license/denken-1/"
+    },
+    "第一種電気工事士": {
+      "itemId": "license:denki-1",
+      "licenseName": "第一種電気工事士試験",
+      "url": "https://license.manapick.app/license/denki-1/"
+    },
+    "第三種電気主任技術者": {
+      "itemId": "license:denken-3",
+      "licenseName": "第三種電気主任技術者（電験三種）",
+      "url": "https://license.manapick.app/license/denken-3/"
+    },
+    "第二種衛生管理者": {
+      "itemId": "license:eisei-kanri-2",
+      "licenseName": "第二種衛生管理者",
+      "url": "https://license.manapick.app/license/eisei-kanri-2/"
+    },
+    "第二種電気主任技術者": {
+      "itemId": "license:denken-2",
+      "licenseName": "第二種電気主任技術者（電験二種）",
+      "url": "https://license.manapick.app/license/denken-2/"
+    },
+    "第二種電気工事士": {
+      "itemId": "license:denki-2",
+      "licenseName": "第二種電気工事士",
+      "url": "https://license.manapick.app/license/denki-2/"
+    },
+    "管理栄養士": {
+      "itemId": "license:registered-dietitian",
+      "licenseName": "管理栄養士国家試験",
+      "url": "https://license.manapick.app/license/registered-dietitian/"
+    },
+    "簿記能力検定（全経上級）": {
+      "itemId": "license:zenkei-boki-jokyu",
+      "licenseName": "全経簿記能力検定試験 上級",
+      "url": "https://license.manapick.app/license/zenkei-boki-jokyu/"
+    },
+    "精神保健福祉士": {
+      "itemId": "license:seishin-fukushi",
+      "licenseName": "精神保健福祉士（PSW）",
+      "url": "https://license.manapick.app/license/seishin-fukushi/"
+    },
+    "給水装置工事主任技術者": {
+      "itemId": "license:water-supply-equipment-chief-technician",
+      "licenseName": "給水装置工事主任技術者",
+      "url": "https://license.manapick.app/license/water-supply-equipment-chief-technician/"
+    },
+    "美容師": {
+      "itemId": "license:biyoshi",
+      "licenseName": "美容師",
+      "url": "https://license.manapick.app/license/biyoshi/"
+    },
+    "臨床工学技士": {
+      "itemId": "license:clinical-engineer",
+      "licenseName": "臨床工学技士",
+      "url": "https://license.manapick.app/license/clinical-engineer/"
+    },
+    "臨床検査技師": {
+      "itemId": "license:medical-technologist",
+      "licenseName": "臨床検査技師国家試験",
+      "url": "https://license.manapick.app/license/medical-technologist/"
+    },
+    "薬剤師": {
+      "itemId": "license:pharmacist",
+      "licenseName": "薬剤師国家試験",
+      "url": "https://license.manapick.app/license/pharmacist/"
+    },
+    "行政書士": {
+      "itemId": "license:gyoseishoshi",
+      "licenseName": "行政書士",
+      "url": "https://license.manapick.app/license/gyoseishoshi/"
+    },
+    "言語聴覚士": {
+      "itemId": "license:speech-language-hearing-therapist",
+      "licenseName": "言語聴覚士国家試験",
+      "url": "https://license.manapick.app/license/speech-language-hearing-therapist/"
+    },
+    "診療放射線技師": {
+      "itemId": "license:radiological-technologist",
+      "licenseName": "診療放射線技師国家試験",
+      "url": "https://license.manapick.app/license/radiological-technologist/"
+    },
+    "調理師": {
+      "itemId": "license:chori",
+      "licenseName": "調理師",
+      "url": "https://license.manapick.app/license/chori/"
+    },
+    "通関士": {
+      "itemId": "license:tsukanshi",
+      "licenseName": "通関士",
+      "url": "https://license.manapick.app/license/tsukanshi/"
+    },
+    "運行管理者（貨物）": {
+      "itemId": "license:transport-operation-manager",
+      "licenseName": "運行管理者試験",
+      "url": "https://license.manapick.app/license/transport-operation-manager/"
+    }
+  }
+}
