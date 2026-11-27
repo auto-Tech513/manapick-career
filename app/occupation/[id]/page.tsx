@@ -583,6 +583,8 @@ export default async function OccupationPage({ params }: { params: Promise<{ id:
               </section>
             ) : null}
 
+            <AdSlot unit="career" placement="occupation-after-employers" />
+
             <section className="occ-sec" id="editorial">
               <h2><i>{num("editorial")}</i>編集部の確認ポイント</h2>
               {paragraphs(record.uniqueEditorialBody ?? "").map((part, index) => (

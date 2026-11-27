@@ -16,6 +16,7 @@ import { ProfessionalEntries } from '@/components/ProfessionalEntries';
 import profiles from '@/content/professional-careers.json';
 import { PhraseText } from "@/components/PhraseTitle";
 import { externalRel } from "@/lib/network-links";
+import { AdSlot } from "@/components/AdSlot";
 const title = `${occupationCatalog.length}職業の名録｜仕事内容・関連資格・年収の目安と出典`;
 const description = `${occupationCatalog.length}職業の仕事内容・入職条件・労働条件・関連資格と年収の目安を、出典つきで検索・閲覧できる名録です。そのうち${publishedOccupationCatalog.length}職業には個別ページ、${publishedJobs.length + profiles.items.length}職業には独自解説があります。名前や分野から検索でき、気になる職業は個別ページで仕事内容と出典を詳しく確認できます。年収の目安は、対応する統計分類がある職業にのみ示しています。`;
 const image = absoluteUrl("/og.png");
@@ -30,6 +31,7 @@ export default function AllPage() {
   return <><JsonLd data={graph}/><div className="page-shell wide occupation-directory">
     <nav className="crumb" aria-label="パンくずリスト"><Link href="/">トップ</Link><span aria-hidden="true">／</span><span aria-current="page">職業一覧</span></nav>
     <header className="phead"><p className="phead-eyebrow"><span className="stn lg" aria-hidden="true">CA</span> CA-LIST · 職業名録</p><h1 className="phrase-breaks"><PhraseText text="職業を、名前と中身から探す" /></h1><p className="phead-lead phrase-breaks"><PhraseChildren>{occupationCatalog.length}職業の説明をこのページで読めます。そのうち{publishedOccupationCatalog.length}職業には個別ページがあり、仕事内容・年収の目安・なり方を出典と確認日つきで読めます。</PhraseChildren></p><div className="phead-meta"><span><b>職業名録</b>{occupationCatalog.length}件</span><span><b>個別ページ</b>{publishedOccupationCatalog.length}件</span><span><b>独自解説</b>{publishedJobs.length + profiles.items.length}件</span></div></header>
+    <AdSlot placement="all-index-before-list" />
     <OccupationCatalog incomeStatistics={incomeStatistics} occupations={occupationDirectory} categories={occupationCatalogCategories} detailedLinks={{...humanReviewedSlugByOccupation,...Object.fromEntries(profiles.items.map(item=>[item.name,item.slug]))}} briefVersion={occupationBriefVersion} employersById={Object.fromEntries(employersData.items.map(item => [item.catalogId, item.employers.map(employer => employer.name)]))} publishedIds={publishedOccupationCatalog.map(item => item.catalogId)} companyUrlByName={Object.fromEntries(Object.entries(companyLinks.links as unknown as Record<string, { url: string }>).map(([name, company]) => [name, company.url]))} />
     <section aria-label="個別ページ公開中の職業" className="published-occupation-index"><div className="sh"><div><p className="sh-k">INDEX — 個別ページ</p><h2 className="phrase-breaks"><PhraseText text={`個別ページ公開中の職業（${publishedOccupationCatalog.length}件）`} /></h2><p>仕事内容・年収の目安・なり方・企業例を、出典と確認日つきの専用ページで読める職業です。分野ごとに開いて選べます。</p></div></div>{occupationCatalogCategories.map(category => { const items = publishedOccupationCatalog.filter(item => item.categoryKey === category.key); return items.length ? <details key={category.key} className="published-occupation-group"><summary>{category.label}（{items.length}件）</summary><ul>{items.map(item => <li key={item.catalogId}><Link href={`/occupation/${item.catalogId}/`}>{item.name}</Link></li>)}</ul></details> : null; })}</section>
     <ProfessionalEntries/>

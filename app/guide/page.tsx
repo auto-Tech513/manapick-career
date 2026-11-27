@@ -4,6 +4,7 @@ import Link from "next/link";
 import { JsonLd } from "@/components/JsonLd";
 import { PhraseText } from "@/components/PhraseTitle";
 import { GuideExplorer, type GuideCardItem } from "@/components/GuideExplorer";
+import { AdSlot } from "@/components/AdSlot";
 import { guides } from "@/content/editorial";
 import { absoluteUrl, articleOgUrl } from "@/lib/site";
 import "../article.css";
@@ -71,6 +72,7 @@ export default function GuideIndex() {
       <p className="phead-lead phrase-breaks"><PhraseChildren>職業名だけで決めず、仕事内容・注意点・出典を読み、次に試す学びへつなげます。すべての記事に先に結論、目次、公式出典、確認日があります。テーマを選ぶと、その場で絞り込めます。各カードには、読む・試す目安の時間と、出典の確認日と新しさを表示します。</PhraseChildren></p>
     </header>
 
+    <AdSlot placement="guide-index-before-list" />
     <GuideExplorer items={items} topics={topics} />
   </div></>;
 }
