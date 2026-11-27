@@ -285,11 +285,11 @@
           "sourceId": "ly-data"
         },
         {
-          "name": "さくらインターネット",
-          "role": "データアナリスト",
-          "description": "KPI設計、施策効果の検証、経営・事業への提案、分析環境改善を掲載しています。",
-          "scope": "事業の意思決定支援を担う例。",
-          "sourceId": "sakura-data"
+          "name": "株式会社Cygames",
+          "role": "データアナリスト／ゲーム・サービス／東京",
+          "description": "KPI設計とダッシュボードの設計・運用、施策の効果測定、課題発見と改善提案を掲載しています。",
+          "scope": "ゲーム・サービス事業に近い分析職の例。",
+          "sourceId": "cygames-data"
         }
       ],
       "exercise": {
@@ -303,7 +303,7 @@
       "sourceIds": [
         "dataset",
         "ly-data",
-        "sakura-data",
+        "cygames-data",
         "statistics",
         "mos"
       ],
