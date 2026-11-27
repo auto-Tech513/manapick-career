@@ -46,17 +46,6 @@
       "support": "事業課題の発見、仮説・分析設計、KPI可視化、A/Bテストと提案。"
     },
     {
-      "id": "sakura-data",
-      "provider": "さくらインターネット",
-      "title": "データアナリスト",
-      "url": "https://www.sakura.ad.jp/recruit/midcareer/935/",
-      "kind": "employer",
-      "accessedAt": "2026-10-27",
-      "method": "AI-readable-primary-source-comparison",
-      "humanReview": false,
-      "support": "KPI設計、施策効果の検証、経営・事業部門への提案、分析環境改善。"
-    },
-    {
       "id": "japanet",
       "provider": "ジャパネットグループ",
       "title": "WEB広告運用",
@@ -583,6 +572,17 @@
       "accessedAt": "2026-10-27",
       "method": "AI-readable-primary-source-comparison",
       "humanReview": false
+    },
+    {
+      "id": "cygames-data",
+      "provider": "株式会社Cygames",
+      "title": "データアナリスト／ゲーム・サービス／東京",
+      "url": "https://hrmos.co/pages/cygames/jobs/0000091",
+      "kind": "employer",
+      "accessedAt": "2026-11-27",
+      "method": "AI-readable-primary-source-comparison",
+      "humanReview": false,
+      "support": "KPI設計、ダッシュボード設計・運用、施策の効果測定、課題発見と改善提案。"
     }
   ]
 }
