@@ -2,6 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://career.manapick.app/news/tokyo-consumer-prices-november-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-27</news:publication_date>
+      <news:title>電気代9.5％・都市ガス代13.7％で物価は2.9％上昇。うるち米（コシヒカリを除く）は33.8％下落——11月の東京都区部CPI</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/karoshi-whitepaper-2026/</loc>
     <news:news>
       <news:publication>
@@ -32,39 +43,6 @@
       </news:publication>
       <news:publication_date>2026-11-26</news:publication_date>
       <news:title>平均575万円でも『真ん中』は451万円。国民生活基礎調査が示す世帯の所得と『苦しい』55.4％の読み方</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/middle-aged-longitudinal-survey-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25</news:publication_date>
-      <news:title>70歳を過ぎても働く人は3割、資格を持つ人は4割。20年追い続けた調査が示す働き方の差</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/national-civil-servant-pay-revision-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25</news:publication_date>
-      <news:title>公務員の給与、官民較差3.51％を解消へ。俸給表は平均3.3％引上げ、ボーナス4.70月に</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/building-sanitation-manager-exam-56/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-25</news:publication_date>
-      <news:title>合格率30.6％→16.2％、合格者は約半分に。ビル管理技術者試験で何が起きたのか</news:title>
     </news:news>
   </url>
 </urlset>

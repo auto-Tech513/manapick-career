@@ -1424,6 +1424,19 @@
       "reviewedByHumanAt": "2026-11-26",
       "reviewEvidence": "git:a832dbe1900cfc9efab85cf50f731c8bd972d64a",
       "contentSha256": "4a2a1a5fac1fc3ff8ed6d05882dbee1f909a4d4351d606b2638757388e765fa9"
+    },
+    {
+      "slug": "tokyo-consumer-prices-november-2026",
+      "createdAt": "2026-11-27",
+      "status": "published",
+      "primarySourceId": "stat-cpi-tokyo-november-2026",
+      "sourcePublishedAt": "2026-11-27",
+      "publishedAt": "2026-11-27",
+      "reviewedAt": "2026-11-27",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-27",
+      "reviewEvidence": "git:a4b3afe6d2459a752f3f34626fdffb7ab8f8fc82",
+      "contentSha256": "7cf2b0d9a4505ee0117a6b124b9a1430da1c49f8c2f03f54c5f1f4df50bad2d5"
     }
   ]
 }
