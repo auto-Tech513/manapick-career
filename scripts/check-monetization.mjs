@@ -59,23 +59,23 @@ if ((editorialArticle.match(/<AdSlot\b/g) ?? []).length !== 3) failures.push("�
   const slots = (homePage.match(/<AdSlot\b/g) ?? []).length;
   if (slots !== 2) failures.push(`トップの広告枠が2つでない: ${slots}`);
   if (!homePage.includes(`<AdSlot slot="${EXTRA_SLOT}" fold placement="home-after-briefing" />`)) failures.push("トップの広告枠が指定位置・指定ユニットでない");
-  // トップの末尾（乗り換え案内の後）にも fold 枠を1つ（オーナー指示 2026-11-26）
-  if (!homePage.includes(`<AdSlot slot="${EXTRA_SLOT}" fold placement="home-after-transfer" />`)) failures.push("トップ末尾の広告枠が指定位置・指定ユニットでない");
+  // トップにもう1枠（オーナー指示 2026-11-26 で末尾に追加、2026-11-27 の配置の原則で乗り換え案内の前へ移設）
+  if (!homePage.includes(`<AdSlot slot="${EXTRA_SLOT}" fold placement="home-before-transfer" />`)) failures.push("トップの広告枠（乗り換え案内の前）が指定位置・指定ユニットでない");
 }
 for (const [label, source] of [["職業ページ", careerPage], ["専門職ページ", professionalCareerPage]]) {
   const slots = (source.match(/<AdSlot\b/g) ?? []).length;
   if (slots !== 2) failures.push(`${label}の広告枠が2つでない: ${slots}`);
   if (!source.includes('placement="career-after-section-3"')) failures.push(`${label}の広告配置が指定位置でない`);
-  // 出典の後・乗り換え案内の前に1枠（オーナー指示 2026-11-26）
-  if (!source.includes('placement="career-after-sources"')) failures.push(`${label}の末尾の広告配置が指定位置でない`);
+  // 企業例の後・次の節の前に1枠（オーナー指示 2026-11-26 で出典の後に追加、2026-11-27 の配置の原則で企業例の後へ移設）
+  if (!source.includes('placement="career-after-employers"')) failures.push(`${label}の広告配置（企業例の後）が指定位置でない`);
   if (!source.includes("<AdSenseScript />")) failures.push(`${label}にAdSense scriptがない`);
 }
 {
   const slots = (occupationPage.match(/<AdSlot\b/g) ?? []).length;
   if (slots !== 2) failures.push(`職業個別ページの広告枠が2つでない: ${slots}`);
   if (!occupationPage.includes('placement="occupation-after-work"')) failures.push("職業個別ページの広告配置が指定位置でない");
-  // 出典の節の後に1枠（オーナー指示 2026-11-26）
-  if (!occupationPage.includes('placement="occupation-after-sources"')) failures.push("職業個別ページの末尾の広告配置が指定位置でない");
+  // 企業例・関連業種の後・編集部の確認ポイントの前に1枠（オーナー指示 2026-11-26 で出典の後に追加、2026-11-27 の配置の原則で企業例の後へ移設）
+  if (!occupationPage.includes('placement="occupation-after-employers"')) failures.push("職業個別ページの広告配置（企業例の後）が指定位置でない");
   if (!occupationPage.includes("<AdSenseScript />")) failures.push("職業個別ページにAdSense scriptがない");
 }
 if (!layout.includes('"google-adsense-account"')) failures.push("AdSense accountメタタグがない");
@@ -89,10 +89,12 @@ const unexpectedAdImports = [...walk("app"), ...walk("components")]
   // AdSense 自動広告のスクリプトは全ページ（app/layout.tsx）で読み込む（オーナー決定 2026-11-18 22:32）。手動の広告枠 AdSlot は従来の3か所と、
   // 2026-11-19 14:38 のオーナー判断で足したトップ（app/page.tsx）・記事の最後の節の後だけだったが、
   // 2026-11-26 のオーナー指示（減らさず、邪魔にならない箇所に置く）で、記事の最初の節の前、職業・ドシエの出典の後、
-  // トップの末尾、一覧ページ（ニュース・ガイド・全職業）の末尾を承認済みの配置に追加した
+  // トップの末尾、一覧ページ（ニュース・ガイド・全職業）の末尾を承認済みの配置に追加した。
+  // 2026-11-27 の配置の原則（見えない場所への配置は配置と数えない）で、末尾寄りだった枠を目に入る位置へ移設した：
+  // 職業・ドシエは企業例の後、トップは乗り換え案内の前、一覧ページは一覧の前
   .filter((file) => file.endsWith("app/layout.tsx") ? /AdSlot/.test(fs.readFileSync(file, "utf8")) : /(?:AdSenseScript|AdSlot)/.test(fs.readFileSync(file, "utf8")));
 if (!layout.includes("<AdSenseScript/>") && !layout.includes("<AdSenseScript />")) failures.push("全ページ用のAdSense script（layout）がない");
 if (unexpectedAdImports.length) failures.push(`広告が承認外ページへ混入: ${unexpectedAdImports.join(", ")}`);
 
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
-console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} slots are articles(before section 1, after section 2, +${EXTRA_SLOT} after last section)+career(after section 3, after sources)+occupation(after work, after sources)+home(${EXTRA_SLOT} after briefing and after transfer)+indexes(news/guide/all, after list) only; auto ads script on all pages`);
+console.log(`monetization check: PR separation OK; manual responsive AdSense ${publisher}/${slotId} slots are articles(before section 1, after section 2, +${EXTRA_SLOT} after last section)+career(after section 3, after employers)+occupation(after work, after employers)+home(${EXTRA_SLOT} after briefing and before transfer)+indexes(news/guide/all, before list) only; auto ads script on all pages`);

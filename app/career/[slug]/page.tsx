@@ -192,6 +192,7 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
           <AdSlot unit="career" placement="career-after-section-3" />
           <QualificationDepth dossier={dossier} />
           <EmployerDepth dossier={dossier} />
+          <AdSlot unit="career" placement="career-after-employers" />
           <section id="industry">
             <h2 className="phrase-breaks"><i>06</i><PhraseText text="業界で担う役割と、いま確認する変化" /></h2>
             <div className="insight-lead"><strong>業界での役割</strong><p>{insight.industryRole}</p></div>
@@ -253,7 +254,6 @@ export default async function CareerPage({ params }: { params: Promise<{ slug: s
 
         <aside className="detail-aside"><div className="daily-action-card"><span>TODAY / 15 MIN</span><strong>今日、一つだけ進める</strong><ol>{insight.dailyActions.map((item) => <li key={item}>{item}</li>)}</ol><Link href="/compare/">ほかの仕事と比較する <ArrowRight aria-hidden="true" /></Link></div></aside>
       </div>
-      <AdSlot unit="career" placement="career-after-sources" />
       <section className="dos-transfer" aria-label="ほかの駅へ">
         <div className="dos-sh">
           <div>
