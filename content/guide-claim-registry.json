@@ -5671,5 +5671,227 @@
    }
   ],
   "guideSlug": "health-insurance-after-retirement-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "year-end-basic-deduction-2025",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nta-year-end-2025",
+     "nta-nencho-2025"
+    ],
+    "text": "令和7年分の基礎控除は、合計所得金額が132万円以下の場合は95万円、132万円を超え336万円以下の場合は88万円、336万円を超え489万円以下の場合は68万円、489万円を超え655万円以下の場合は63万円、655万円を超え2,350万円以下の場合は58万円である。改正前の基礎控除は合計所得金額2,400万円以下の場合は48万円であった。88万円、68万円、63万円の区分は令和9年分以後は58万円になる。"
+   },
+   {
+    "claimId": "year-end-amendment-effective-2025",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nta-year-end-2025"
+    ],
+    "text": "令和7年度税制改正は原則として令和7年12月1日に施行され、令和7年12月の年末調整から適用される。令和7年分の年末調整では、改正後の基礎控除と給与所得控除が使われる。"
+   },
+   {
+    "claimId": "year-end-salary-deduction-2025",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nta-year-end-2025",
+     "nta-nencho-2025"
+    ],
+    "text": "給与所得控除の最低保障額は55万円から65万円に引き上げられた。給与の収入金額が190万円以下の場合の給与所得控除額は65万円になる。"
+   },
+   {
+    "claimId": "year-end-specific-relative-2025",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nta-year-end-2025",
+     "nta-nencho-2025"
+    ],
+    "text": "「特定親族特別控除」が創設された。生計を一にする19歳以上23歳未満の親族（配偶者と青色・白色事業専従者を除く）で、合計所得金額が58万円を超え123万円以下の場合に、1人につき最高63万円の控除を受けられる。合計所得金額が58万円以下の親族は扶養控除の対象になる。"
+   },
+   {
+    "claimId": "year-end-dependent-threshold-2025",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nta-year-end-2025",
+     "nta-nencho-2025"
+    ],
+    "text": "扶養親族と同一生計配偶者の合計所得金額の要件は48万円以下から58万円以下に引き上げられた。勤労学生の合計所得金額の要件は75万円以下から85万円以下に引き上げられた。"
+   },
+   {
+    "claimId": "year-end-forms-2025",
+    "critical": false,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nta-nencho-2025"
+    ],
+    "text": "令和7年分の年末調整で提出する申告書は、「扶養控除等（異動）申告書」（令和7年分は様式の変更なし）、「基礎控除申告書兼配偶者控除等申告書兼特定親族特別控除申告書兼所得金額調整控除申告書」（令和7年分で変更あり）、「保険料控除申告書」である。"
+   },
+   {
+    "claimId": "year-end-commuting-allowance-2025",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nta-nencho-2025"
+    ],
+    "text": "令和7年11月20日の施行で、マイカーなどの交通用具を使う人に支給する通勤手当の非課税限度額が引き上げられた。令和7年4月1日以後支払分の通勤手当が対象で、改正前の限度額を超えた通勤手当を受けていた場合は年末調整での対応が必要なことがある。"
+   }
+  ],
+  "guideSlug": "year-end-adjustment-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "teikibin-sent-birthday-month",
+    "critical": false,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-teikibin-2026"
+    ],
+    "text": "ねんきん定期便は、国民年金と厚生年金保険の加入者に毎年誕生月に送付される。自分の年金加入記録と将来の年金の見込額を確認できる通知である。"
+   },
+   {
+    "claimId": "teikibin-under-50-postcard",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-teikibin-2026",
+     "nenkin-teikibin-r7-2026"
+    ],
+    "text": "50歳未満の加入者（35歳と45歳を除く）にはハガキが送付され、保険料納付額、月別状況（直近13月）、年金加入期間、「これまでの加入実績に応じた年金額」が記載される。"
+   },
+   {
+    "claimId": "teikibin-over-50-estimate",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-teikibin-guide-50ijyou-2026"
+    ],
+    "text": "50歳以上の加入者（59歳を除く）にはハガキが送付され、老齢年金の種類と見込額が記載される。60歳未満の方は現在の年金加入制度に60歳まで継続して加入したと仮定して、65歳から受け取れる年金見込額が表示される。60歳以上65歳未満の方は作成時点の年金加入実績に応じて65歳から受け取れる年金見込額が表示され、65歳以上の方は65歳時点の年金加入実績に基づき計算される。"
+   },
+   {
+    "claimId": "teikibin-envelope-ages",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-teikibin-2026",
+     "nenkin-teikibin-r7-2026"
+    ],
+    "text": "35歳、45歳、59歳の加入者には封書が送付され、ハガキの内容に加えて加入履歴と月別状況（全期間）も記載される。35歳と45歳は節目の年齢、59歳は年金受給が近づく年齢として、加入記録の全体を確認できる形になっている。"
+   },
+   {
+    "claimId": "teikibin-record-correction",
+    "critical": false,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-teikibin-2026"
+    ],
+    "text": "ねんきん定期便に記録の「もれ」や「誤り」があった場合は、日本年金機構へ調査・確認を依頼する案内がある。ねんきんネットでは電子版の確認と将来の見込額の試算ができ、二次元コードから厚生労働省の「公的年金シミュレーター」で登録なしに簡易試算ができる。"
+   },
+   {
+    "claimId": "teikibin-qualification-120months",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-teikibin-guide-50mimann-2026",
+     "nenkin-teikibin-guide-50ijyou-2026"
+    ],
+    "text": "老齢年金を受け取るには、原則として120月以上の受給資格期間が必要である。ねんきん定期便に記載される年金加入期間で、自分の受給資格期間がどれだけ積み上がっているかを確認できる。"
+   }
+  ],
+  "guideSlug": "nenkin-teikibin-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "menjo-four-types",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-menjo-2026"
+    ],
+    "text": "国民年金保険料の免除は、本人・配偶者・世帯主の前年所得が一定額以下の場合や失業した場合などに、申請して承認を受けることで受けられる。免除には全額免除、4分の3免除、半額免除、4分の1免除の4種類がある。"
+   },
+   {
+    "claimId": "menjo-deferment-conditions",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-menjo-2026"
+    ],
+    "text": "納付猶予は、20歳以上50歳未満で、本人と配偶者の前年所得が一定額以下の場合に受けられる。学生、生活扶助を受けている方、障害年金を受けている方、出産前後の方は納付猶予の対象外で、別制度がある。"
+   },
+   {
+    "claimId": "menjo-income-thresholds",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-menjo-2026"
+    ],
+    "text": "所得基準（前年所得）は、全額免除と納付猶予が（扶養親族等の数＋1）×35万円＋32万円、4分の3免除が88万円＋扶養親族等控除額＋社会保険料控除額等、半額免除が128万円＋扶養親族等控除額＋社会保険料控除額等、4分の1免除が168万円＋扶養親族等控除額＋社会保険料控除額等である。"
+   },
+   {
+    "claimId": "menjo-application-period",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-menjo-2026"
+    ],
+    "text": "免除と納付猶予を申請できる期間は、納付期限から2年を経過していない期間で、申請時点から2年1カ月前までである。原則として毎年度申請が必要で、全額免除と納付猶予の承認者は継続審査がある。失業等による特例免除の承認者は翌年度も申請が必要である。"
+   },
+   {
+    "claimId": "menjo-pension-reflection",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-menjo-2026"
+    ],
+    "text": "免除期間の保険料は年金額に反映される割合が決まっている。全額免除は全額納付した場合の2分の1、4分の3免除は8分の5、半額免除は8分の6、4分の1免除は8分の7である。納付猶予の期間は受給資格期間には算入されるが、年金額には反映されない。免除・猶予期間の保険料は10年以内なら追納できる。"
+   },
+   {
+    "claimId": "menjo-unpaid-risk",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-menjo-2026"
+    ],
+    "text": "保険料を未納のままにすると、障害基礎年金や遺族基礎年金を受け取れない場合や、老齢基礎年金の受給資格期間（10年）を満たせず老齢基礎年金を受け取れない場合がある。"
+   },
+   {
+    "claimId": "menjo-unemployment-special",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-27",
+    "sourceIds": [
+     "nenkin-menjo-2026"
+    ],
+    "text": "失業等による特例免除では、失業、倒産、事業の廃止などが確認できれば、前年所得にかかわらず免除・納付猶予を受けられる。証拠書類は雇用保険被保険者離職票の写し、雇用保険受給資格者証・受給資格通知の写しなどである。"
+   }
+  ],
+  "guideSlug": "national-pension-premium-exemption-guide"
  }
 ]
