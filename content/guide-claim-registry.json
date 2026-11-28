@@ -5893,5 +5893,195 @@
    }
   ],
   "guideSlug": "national-pension-premium-exemption-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "tax-return-definition",
+    "critical": false,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nta-final-tax-return-2020-2026"
+    ],
+    "text": "確定申告とは、1月1日から12月31日までの1年間に得た所得を計算し、所得税を確定させる手続である。"
+   },
+   {
+    "claimId": "tax-return-seven-cases",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nta-final-tax-return-1900-2026"
+    ],
+    "text": "給与所得者で確定申告が必要なのは、給与の年間収入金額が2,000万円を超える場合、給与を1か所から受けていて給与の全部が源泉徴収の対象となる場合に給与以外の所得が20万円を超える場合、給与を2か所以上から受けていて給与の全部が源泉徴収の対象となる場合に年末調整されなかった給与と給与以外の所得の合計が20万円を超える場合など、7つの場合である。"
+   },
+   {
+    "claimId": "tax-return-two-employers-150m",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nta-final-tax-return-1900-2026"
+    ],
+    "text": "給与を2か所以上から受けている場合でも、給与の収入金額の合計額から、所得控除の合計額（雑損控除、医療費控除、寄附金控除、基礎控除を除く。）を差し引いた金額が150万円以下で、かつ給与所得・退職所得以外の所得の金額の合計額が20万円以下である場合は申告の必要がない。"
+   },
+   {
+    "claimId": "tax-return-filing-period",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nta-final-tax-return-2020-2026",
+     "nta-final-tax-return-2030-2026",
+     "nta-final-tax-return-qa-2026"
+    ],
+    "text": "確定申告は原則として2月16日から3月15日までに行う。令和7年分の申告期間は2026年2月16日から3月16日までだった。令和8年分の申告期間は2027年2月16日（火）から3月15日（月）までとなる見込みで、国税庁の確定申告特集で最終確認する。"
+   },
+   {
+    "claimId": "tax-return-refund-five-years",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nta-final-tax-return-2030-2026"
+    ],
+    "text": "払いすぎた税金を取り戻す還付申告は、翌年1月1日から5年間提出できる。法定申告期限は原則として翌年3月15日である。"
+   }
+  ],
+  "guideSlug": "salaried-worker-final-tax-return-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "hyojun-grades",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nenkin-premium-rate-2026",
+     "nenkin-hyojun-hoshu-faq-2026"
+    ],
+    "text": "標準報酬月額は、報酬月額を1等級88,000円から32等級650,000円までの32等級に当てはめたものである。報酬月額とは、税引き前の給与のことで、基本給のほか、残業手当や通勤手当などの各種手当、現物給与も含まれる。"
+   },
+   {
+    "claimId": "hyojun-premium-rate",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nenkin-premium-rate-2026"
+    ],
+    "text": "厚生年金保険の保険料率は18.3％で固定されており、平成29年9月を最後に引上げは終了している。保険料は事業主と被保険者が半分ずつ負担する。"
+   },
+   {
+    "claimId": "hyojun-example-300k",
+    "critical": false,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nenkin-premium-rate-2026",
+     "nenkin-hyojun-hoshu-faq-2026"
+    ],
+    "text": "標準報酬月額300,000円の場合、保険料は月額54,900円で、本人負担はその半分の27,450円である（公表値からの計算）。"
+   },
+   {
+    "claimId": "hyojun-teiji",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nenkin-teiji-kettei-2026"
+    ],
+    "text": "標準報酬月額は毎年9月の定時決定で見直され、4月から6月の報酬月額を基に決まる。算定基礎届は7月1日現在の全被保険者について提出する。ただし、6月1日以降に資格取得した方など、一部の人は算定基礎届の提出が不要である。"
+   },
+   {
+    "claimId": "hyojun-zuiji",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nenkin-zuiji-kaitei-2026"
+    ],
+    "text": "随時改定は、固定的賃金に変動があり、変動月以後3カ月の報酬の平均額による標準報酬月額と従前との間に2等級以上の差が生じ、変動月以後3カ月の支払基礎日数が17日以上ある場合に行われる。改定は変更後の報酬を初めて受けた月から起算して4カ月目からである。"
+   },
+   {
+    "claimId": "hyojun-bonus",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "nenkin-hyojun-hoshu-faq-2026"
+    ],
+    "text": "標準賞与額は、税引き前の賞与から1,000円未満の端数を切り捨てた金額で、支給1回につき150万円が上限である。賞与の保険料額は標準賞与額に保険料率を掛けて計算する。"
+   }
+  ],
+  "guideSlug": "standard-remuneration-monthly-amount-guide"
+ },
+ {
+  "claims": [
+   {
+    "claimId": "roudou-notice-law",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "mhlw-labor-conditions-pamphlet-2024"
+    ],
+    "text": "労働条件の明示は労働基準法第15条と労働基準法施行規則第5条で定められており、書面による交付が原則である。労働者が希望した場合は、FAXや電子メールなど出力できる方法でも明示できる。"
+   },
+   {
+    "claimId": "roudou-seven-items",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "mhlw-labor-conditions-pamphlet-2024"
+    ],
+    "text": "必ず明示する項目は、契約期間、更新の基準、就業場所・業務、始業・終業時刻などの労働時間、賃金、退職、無期転換申込の7つである。このうち、契約期間から退職までの6つの事項（賃金の昇給に関する事項を除く）と、就業場所・業務の変更の範囲、更新上限の有無と内容、無期転換申込機会、無期転換後の労働条件は、書面で交付しなければならない。"
+   },
+   {
+    "claimId": "roudou-conditional-items",
+    "critical": false,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "mhlw-labor-conditions-pamphlet-2024"
+    ],
+    "text": "定めがある場合に明示する項目は、退職手当、臨時に支払われる賃金、賞与、最低賃金額、食費・作業用品などの労働者の負担、安全衛生、職業訓練、災害補償、表彰・制裁、休職である。"
+   },
+   {
+    "claimId": "roudou-2024-additions",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "mhlw-labor-conditions-pamphlet-2024"
+    ],
+    "text": "2024年4月からは、就業場所・業務の変更の範囲、更新上限の有無と内容、無期転換申込機会と無期転換後の労働条件の明示が追加された。更新上限を新たに設けるときや短縮するときは、その理由をあらかじめ説明しなければならない。"
+   },
+   {
+    "claimId": "roudou-conversion-five-years",
+    "critical": true,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "mhlw-labor-conditions-pamphlet-2024"
+    ],
+    "text": "同一の使用者との有期労働契約が通算5年を超えて更新された場合、労働者は無期労働契約への転換を申し込むことができ、申込みをすれば無期労働契約が成立し、使用者は断ることができない。1回の契約期間の上限は原則として3年で、専門的知識等を有する者と満60歳以上の者は5年である。"
+   },
+   {
+    "claimId": "roudou-consultation",
+    "critical": false,
+    "freshnessDays": 365,
+    "lastCheckedAt": "2026-11-28",
+    "sourceIds": [
+     "mhlw-labor-conditions-notice-2024",
+     "mhlw-check-roudou-qa-2026"
+    ],
+    "text": "労働条件の明示に違反していると思われる場合は都道府県労働局や労働基準監督署に、無期転換ルールや民事上の紛争については都道府県労働局の雇用環境・均等部（室）に相談できる。"
+   }
+  ],
+  "guideSlug": "labor-conditions-notice-guide"
  }
 ]

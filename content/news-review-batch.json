@@ -1,13 +1,13 @@
 {
- "batchId": "news-2026-11-27-daily3-108",
- "preparedAt": "2026-11-27",
- "targetCount": 108,
+ "batchId": "news-2026-11-28-daily3-111",
+ "preparedAt": "2026-11-28",
+ "targetCount": 111,
  "status": "published",
- "publishedAt": "2026-11-27",
- "approvedAt": "2026-11-27",
+ "publishedAt": "2026-11-28",
+ "approvedAt": "2026-11-28",
  "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
- "authorizationNote": "2026-11-27のオーナー指示（日次運用）に基づき、最新の公的公表1件をニュースへ追加する。総務省統計局「消費者物価指数 東京都区部 2026年11月分（中旬速報値）」（2026年11月27日公表）。ニュース3本目は、家計調査9月分が2026年11月10日に既公開（重複）のため見送り、賃金引上げ調査2026は2026年10月30日に既公開（wage-increase-survey-latest）のため見送り、他の公表は2026年11月30日以降のため本日は1本とする。",
- "reviewDecision": "オーナー指示と既存の運用方針に基づき新規1件を公開し、公開済みは全108件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+ "authorizationNote": "2026-11-28のオーナー指示（日次運用）に基づき、最新の公的公表3件をニュースへ追加する。厚生労働省「令和8年9月末現在 国民年金保険料の月次納付率」（2026年11月27日公表）、国土交通省「建設労働需給調査結果（令和8年10月分調査）」（2026年11月25日公表）、厚生労働省「12月は『職場のハラスメント撲滅月間』です」（2026年11月24日掲載）。",
+ "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全111件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
  "reviewedScope": [
   "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
   "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -140,18 +140,21 @@
   "karoshi-whitepaper-2026",
   "national-living-survey-2026",
   "monthly-earnings-september-2026-final",
-  "tokyo-consumer-prices-november-2026"
+  "tokyo-consumer-prices-november-2026",
+  "national-pension-premium-payment-rate-2026",
+  "construction-labor-supply-demand-october-2026",
+  "harassment-prevention-month-2026"
  ],
  "previousBatch": {
-  "batchId": "news-2026-11-26-daily3-107",
-  "preparedAt": "2026-11-26",
-  "targetCount": 107,
+  "batchId": "news-2026-11-27-daily3-108",
+  "preparedAt": "2026-11-27",
+  "targetCount": 108,
   "status": "published",
-  "publishedAt": "2026-11-26",
-  "approvedAt": "2026-11-26",
+  "publishedAt": "2026-11-27",
+  "approvedAt": "2026-11-27",
   "approvedBy": "manapick運営者（GitHub: auto-Tech513）",
-  "authorizationNote": "2026-11-26のオーナー指示（日次運用）に基づき、最新の公的公表3件をニュースへ追加する。厚生労働省「令和8年版過労死等防止対策白書」（2026年10月9日公表）、厚生労働省「2025年国民生活基礎調査の概況」（2026年7月15日公表）、厚生労働省「毎月勤労統計調査 2026年9月分結果確報」（2026年11月25日公表）。労働者派遣事業の速報（2026年3月31日公表）は鮮度不足のため差し替え、9月分確報を採用した。",
-  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規3件を公開し、公開済みは全107件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
+  "authorizationNote": "2026-11-27のオーナー指示（日次運用）に基づき、最新の公的公表1件をニュースへ追加する。総務省統計局「消費者物価指数 東京都区部 2026年11月分（中旬速報値）」（2026年11月27日公表）。ニュース3本目は、家計調査9月分が2026年11月10日に既公開（重複）のため見送り、賃金引上げ調査2026は2026年10月30日に既公開（wage-increase-survey-latest）のため見送り、他の公表は2026年11月30日以降のため本日は1本とする。",
+  "reviewDecision": "オーナー指示と既存の運用方針に基づき新規1件を公開し、公開済みは全108件となった。出典は一次資料に限定し、公表日・主要数値と公式資料の一致を確認したうえで公開する",
   "reviewedScope": [
    "出典がすべて官公庁・公的機関の一次資料であり、公表日と主要数値を出典ページ本文で確認したこと",
    "タイトル・本文の数字（倍率・割合・金額・件数等）が各記事の一次資料の公表値と一致すること",
@@ -283,7 +286,8 @@
    "building-sanitation-manager-exam-56",
    "karoshi-whitepaper-2026",
    "national-living-survey-2026",
-   "monthly-earnings-september-2026-final"
+   "monthly-earnings-september-2026-final",
+   "tokyo-consumer-prices-november-2026"
   ]
  }
 }
