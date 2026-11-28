@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://career.manapick.app/news/harassment-prevention-month-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28</news:publication_date>
+      <news:title>12月は「職場のハラスメント撲滅月間」——カスハラ対策が義務になって初めての12月、相談窓口と防止措置の確認を</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/national-pension-premium-payment-rate-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28</news:publication_date>
+      <news:title>国民年金保険料、最終的な納付率は85.5％——令和6年9月分の2年経過は86.2％。都道府県で11.7ポイントの差も</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://career.manapick.app/news/construction-labor-supply-demand-october-2026/</loc>
+    <news:news>
+      <news:publication>
+        <news:name>manapick career</news:name>
+        <news:language>ja</news:language>
+      </news:publication>
+      <news:publication_date>2026-11-28</news:publication_date>
+      <news:title>鉄筋工（土木）は5.1％不足、新規募集では20.4％不足——建設技能労働者の需給、10月も1.3％不足が続く</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://career.manapick.app/news/tokyo-consumer-prices-november-2026/</loc>
     <news:news>
       <news:publication>
@@ -10,39 +43,6 @@
       </news:publication>
       <news:publication_date>2026-11-27</news:publication_date>
       <news:title>電気代9.5％・都市ガス代13.7％で物価は2.9％上昇。うるち米（コシヒカリを除く）は33.8％下落——11月の東京都区部CPI</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/karoshi-whitepaper-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26</news:publication_date>
-      <news:title>残業は減ったのに労災請求は増えた。令和8年版過労死白書が示した『時間だけでは説明できない』理由</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/monthly-earnings-september-2026-final/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26</news:publication_date>
-      <news:title>速報2.2％増が確報で2.0％増に下がった。でも実質賃金は9か月連続プラス——9月分確報と1〜8月分の訂正を読む</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://career.manapick.app/news/national-living-survey-2026/</loc>
-    <news:news>
-      <news:publication>
-        <news:name>manapick career</news:name>
-        <news:language>ja</news:language>
-      </news:publication>
-      <news:publication_date>2026-11-26</news:publication_date>
-      <news:title>平均575万円でも『真ん中』は451万円。国民生活基礎調査が示す世帯の所得と『苦しい』55.4％の読み方</news:title>
     </news:news>
   </url>
 </urlset>
