@@ -137,6 +137,22 @@
       "placements": [
         "/guide/veterinarian-vs-animal-nurse/"
       ]
+    },
+    {
+      "offerId": "rakuten-books-qualification",
+      "label": "楽天ブックスで資格の参考書を探す",
+      "provider": "楽天ブックス",
+      "network": "楽天アフィリエイト",
+      "url": "https://hb.afl.rakuten.co.jp/ichiba/54a3df97.7b517783.54a3df98.4a5688eb/?pc=https%3A%2F%2Fbooks.rakuten.co.jp%2Fsearch%2F%3Fsv%3D30%26sitem%3D%25E8%25B3%2587%25E6%25A0%25BC%2520%25E5%258F%2582%25E8%2580%2583%25E6%259B%25B8&link_type=text",
+      "officialDomain": "books.rakuten.co.jp",
+      "description": "資格の勉強は、公式の出題範囲に合った参考書を1冊決めるところから始まります。楽天ブックスでは資格・検定の参考書を出版社や資格名から探せます。価格と在庫はリンク先で確認できます。",
+      "disclosure": "PR：このリンクを経由した購入等により、運営者が報酬を受け取る場合があります。",
+      "verifiedAt": "2026-11-28",
+      "placements": [
+        "/guide/learning-stop-rules/",
+        "/guide/qualification-study-before-application/",
+        "/guide/build-a-learning-route-from-tasks/"
+      ]
     }
   ]
 }
