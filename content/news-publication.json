@@ -1437,6 +1437,45 @@
       "reviewedByHumanAt": "2026-11-27",
       "reviewEvidence": "git:a4b3afe6d2459a752f3f34626fdffb7ab8f8fc82",
       "contentSha256": "7cf2b0d9a4505ee0117a6b124b9a1430da1c49f8c2f03f54c5f1f4df50bad2d5"
+    },
+    {
+      "slug": "national-pension-premium-payment-rate-2026",
+      "createdAt": "2026-11-28",
+      "status": "published",
+      "primarySourceId": "mhlw-pension-payment-rate-2026-09",
+      "sourcePublishedAt": "2026-11-27",
+      "publishedAt": "2026-11-28",
+      "reviewedAt": "2026-11-28",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-28",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "93d770ec30bcb59dd03085200facc3672ac8a91955b88554115bdda50a5ef24c"
+    },
+    {
+      "slug": "construction-labor-supply-demand-october-2026",
+      "createdAt": "2026-11-28",
+      "status": "published",
+      "primarySourceId": "mlit-construction-labor-2026-10",
+      "sourcePublishedAt": "2026-11-25",
+      "publishedAt": "2026-11-28",
+      "reviewedAt": "2026-11-28",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-28",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "130d510dd009fccd647713b83d6b2539ec71878ee2a030830426b012aae0b340"
+    },
+    {
+      "slug": "harassment-prevention-month-2026",
+      "createdAt": "2026-11-28",
+      "status": "published",
+      "primarySourceId": "mhlw-harassment-month-2026",
+      "sourcePublishedAt": "2026-11-24",
+      "publishedAt": "2026-11-28",
+      "reviewedAt": "2026-11-28",
+      "reviewedBy": "manapick運営者（GitHub: auto-Tech513）",
+      "reviewedByHumanAt": "2026-11-28",
+      "reviewEvidence": "git:PLACEHOLDER",
+      "contentSha256": "d63e38bce7ec3792b9ab3a8417416ba6a06eb5d477f4b9abc66a47a72c5aaaf5"
     }
   ]
 }
